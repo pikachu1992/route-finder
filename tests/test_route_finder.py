@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from route_finder import RouteFinder, RouteMap, Node
+from find_neighbours import FindNeighbours
 
 class TestRouteFinder(TestCase):
     def test_ALeadsToB_returnsBparentA(self):
@@ -39,3 +40,8 @@ class TestRouteFinderSLeadsToAALeadsToE(TestCase):
         route = test_finder.find_route(Node(0, 0, 'S'), Node(1, 1, 'E'))
         self.assertEqual(route[Node(1, 1, 'E')], Node(0, 1, 'A'))
         self.assertEqual(route[Node(0, 1, 'A')], Node(0, 0, 'S'))
+
+class TestRouteFinderFromAIRAC(TestCase):
+    class DIGALleadstoBABEX(FindNeighbours):
+        def __init__(self):
+            print(FindNeighbours().get_neighbours("DIGAL"))
