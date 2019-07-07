@@ -1,12 +1,12 @@
-from route_finder import Node
 from collections import defaultdict
 import math
 
 
 class FindNeighbours(): #devolver o node e os 2 vizinhos
+    
     def parseline(self, line):
-        node = line.split("\t")[:6]
-        neighbours = line.split("\t")[6:] 
+        node = line[:6]
+        neighbours = line[6:] 
         
         return [node, neighbours]
     
@@ -40,3 +40,14 @@ class FindNeighbours(): #devolver o node e os 2 vizinhos
         a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
 
         return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+    
+    def find_node_lines(self, node_name):
+        node_lines = []
+        with open('airac/AIRWAY.txt', 'r') as file:
+            lines = file.readlines()
+        for line in lines:
+            if line.startswith(';'):
+                continue
+            elif line.split("\t")[0] == node_name:
+                node_lines.append(self.parseline(line.split('\t')))
+        return node_lines

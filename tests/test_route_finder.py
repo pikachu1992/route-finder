@@ -5,8 +5,8 @@ from find_neighbours import FindNeighbours
 
 class TestRouteFinder(TestCase):
     def test_ALeadsToB_returnsBparentA(self):
-        node_a = Node(0, 0, 'A')
-        node_b = Node(0, 0, 'B')
+        node_a = Node(0, 0, 'A', 0)
+        node_b = Node(0, 0, 'B', 0)
         class ALeadsToB(RouteMap):
             def get_node_neighbours(self, node):
                 return ((1, node_b),)
@@ -21,9 +21,9 @@ class TestRouteFinder(TestCase):
 class TestRouteFinderSLeadsToAALeadsToE(TestCase):
     class SLeadsToAALeadsToE(RouteMap):
         def __init__(self):
-            self.node_s = Node(0, 0, 'S')
-            self.node_a = Node(0, 1, 'A')
-            self.node_e = Node(1, 1, 'E')
+            self.node_s = Node(0, 0, 'S', 0)
+            self.node_a = Node(0, 1, 'A', 0)
+            self.node_e = Node(1, 1, 'E', 0)
             self.neighbours = {
                 self.node_s: [(1, self.node_a)],
                 self.node_a: [(1, self.node_e)],
@@ -37,11 +37,6 @@ class TestRouteFinderSLeadsToAALeadsToE(TestCase):
         class TestRouteFinder(RouteFinder, TestRouteFinderSLeadsToAALeadsToE.SLeadsToAALeadsToE):
             pass
         test_finder = TestRouteFinder()
-        route = test_finder.find_route(Node(0, 0, 'S'), Node(1, 1, 'E'))
-        self.assertEqual(route[Node(1, 1, 'E')], Node(0, 1, 'A'))
-        self.assertEqual(route[Node(0, 1, 'A')], Node(0, 0, 'S'))
-
-class TestRouteFinderFromAIRAC(TestCase):
-    class DIGALleadstoBABEX(FindNeighbours):
-        def __init__(self):
-            print(FindNeighbours().get_neighbours("DIGAL"))
+        route = test_finder.find_route(Node(0, 0, 'S', 0), Node(1, 1, 'E', 0))
+        self.assertEqual(route[Node(1, 1, 'E', 0)], Node(0, 1, 'A', 0))
+        self.assertEqual(route[Node(0, 1, 'A', 0)], Node(0, 0, 'S', 0))

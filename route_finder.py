@@ -1,11 +1,13 @@
 import heapq
 from heuristics import Heuristics
+from find_neighbours import FindNeighbours
 
 class Node:
-    def __init__(self, x, y, name, parent=None):
+    def __init__(self, x, y, name, min_altitude, parent=None):
         self.x = x
         self.y = y
         self.name = name
+        self.min_altitude = min_altitude
 
     def __eq__(self, other):
         return self.name == other.name if isinstance(other, Node) else False
