@@ -12,13 +12,13 @@ class Node:
 
     def __gt__(self, other):
         return self.name > other.name
-        
+
     def __hash__(self):
         return self.name.__hash__() * 13
 
     def __repr__(self):
         return self.name
-    
+
 class RouteMap:
     def get_node_neighbours(self, node):
         """Returns: (tuple) cost, node
@@ -53,14 +53,14 @@ class RouteFinder(RouteMap, Heuristics):
 
             if node == end_node:
                 break
-            for neighbour_cost, neighbour in super().get_node_neighbours(node):
+            for neighbour_g, neighbour in super().get_node_neighbours(node):
                 if neighbour in closed_list:
                     continue
 
                 h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
-                g = neighbour_cost + node_g
+                g = neighbour_g + node_g
                 f = g + h
 
                 open_list.push((f, g, neighbour, node))
-                
+
         return closed_list
