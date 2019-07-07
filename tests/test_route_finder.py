@@ -8,7 +8,7 @@ class TestRouteFinder(TestCase):
         node_b = Node(0, 0, 'B')
         class ALeadsToB(RouteMap):
             def get_node_neighbours(self, node):
-                return (node_b,)
+                return ((1, node_b),)
 
         class TestRouteFinder(RouteFinder, ALeadsToB):
             pass
@@ -22,13 +22,11 @@ class TestRouteFinderSLeadsToAALeadsToE(TestCase):
         def __init__(self):
             self.node_s = Node(0, 0, 'S')
             self.node_a = Node(0, 1, 'A')
-            self.node_a.cost = 1
             self.node_e = Node(1, 1, 'E')
-            self.node_e.cost = 1
             self.neighbours = {
-                self.node_s: [self.node_a],
-                self.node_a: [self.node_e],
-                self.node_e: [self.node_a]
+                self.node_s: [(1, self.node_a)],
+                self.node_a: [(1, self.node_e)],
+                self.node_e: [(1, self.node_a)]
             }
 
         def get_node_neighbours(self, node):

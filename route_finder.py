@@ -4,7 +4,6 @@ class Node:
         self.x = x
         self.y = y
         self.name = name
-        self.parent = parent
 
     def __eq__(self, other):
         return self.name == other.name if isinstance(other, Node) else False
@@ -14,6 +13,8 @@ class Node:
 
 class RouteMap:
     def get_node_neighbours(self, node):
+        """Returns: (tuple) cost, node
+        """
         raise NotImplemented()
 
 class RouteFinder(RouteMap):
@@ -23,7 +24,7 @@ class RouteFinder(RouteMap):
 
         while len(open_list) > 0:
             node = open_list.pop()
-            for neighbour in super().get_node_neighbours(node):
+            for cost, neighbour in super().get_node_neighbours(node):
                 if neighbour in closed_list:
                     continue
 
