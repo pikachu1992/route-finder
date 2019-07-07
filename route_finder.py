@@ -10,9 +10,15 @@ class Node:
     def __eq__(self, other):
         return self.name == other.name if isinstance(other, Node) else False
 
+    def __gt__(self, other):
+        return self.name > other.name
+        
     def __hash__(self):
         return self.name.__hash__() * 13
 
+    def __repr__(self):
+        return self.name
+    
 class RouteMap:
     def get_node_neighbours(self, node):
         """Returns: (tuple) cost, node
@@ -38,23 +44,23 @@ class HeapQueue:
 
 class RouteFinder(RouteMap, Heuristics):
     def find_route(self, start_node, end_node):
-        open_list = HeapQueue([(0, start_node)])
+        open_list = HeapQueue([(0, 0, start_node, None)])
         closed_list = {}
 
         while len(open_list) > 0:
-            node_cost, node = open_list.pop()
+            node_f, node_g, node, parent = open_list.pop()
+            closed_list[node] = (node_g, parent)
+
+            if node == end_node:
+                break
             for neighbour_cost, neighbour in super().get_node_neighbours(node):
                 if neighbour in closed_list:
                     continue
 
                 h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
-                f = neighbour_cost + h
+                g = neighbour_cost + node_g
+                f = g + h
 
-                closed_list[neighbour] = node
-
-                if neighbour == end_node:
-                    break
-
-                open_list.push((f, neighbour))
-
+                open_list.push((f, g, neighbour, node))
+                
         return closed_list
