@@ -1,4 +1,5 @@
 from unittest import TestCase
+from math import sqrt
 
 from heuristics import compute_heuristic
 
@@ -28,36 +29,36 @@ class TestHeuristicsFunc(TestCase):
         a = (0, 0)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 0)
+        self.assertEqual(sqrt(h), 0)
 
     def test_callingConvention(self):
         a = (0, 0)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 0)
+        self.assertEqual(sqrt(h), 0)
 
         a = (0, 0)
         b = (0, 0)
         h = compute_heuristic(*(*a, *b))
-        self.assertEqual(h, 0)
+        self.assertEqual(sqrt(h), 0)
 
     def test_aStraigthLine_returnsStraigthLineDistance(self):
         a = (1, 0)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 1)
+        self.assertEqual(sqrt(h), 1)
 
         a = (5, 0)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 5)
+        self.assertEqual(sqrt(h), 5)
 
         a = (-5, 0)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 5)
+        self.assertEqual(sqrt(h), 5)
 
         a = (0, 5)
         b = (0, 0)
         h = compute_heuristic(a, b)
-        self.assertEqual(h, 5)
+        self.assertEqual(sqrt(h), 5)
