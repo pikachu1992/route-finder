@@ -19,20 +19,20 @@ class RouteMap:
 
 class RouteFinder(RouteMap):
     def find_route(self, start_node, end_node):
-        open_list = [start_node,]
+        open_list = [(0, start_node, None),]
         closed_list = {}
 
         while len(open_list) > 0:
-            node = open_list.pop()
-            for cost, neighbour in super().get_node_neighbours(node):
+            cost, node, parent = open_list.pop()
+            closed_list[node] = (cost, parent)
+
+            if node == end_node:
+                break
+
+            for n_cost, neighbour in super().get_node_neighbours(node):
                 if neighbour in closed_list:
                     continue
 
-                closed_list[neighbour] = node
-
-                if neighbour == end_node:
-                    break
-
-                open_list.append(neighbour)
+                open_list.append((n_cost + cost, neighbour, node))
 
         return closed_list

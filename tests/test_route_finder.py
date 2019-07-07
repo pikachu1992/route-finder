@@ -15,7 +15,7 @@ class TestRouteFinder(TestCase):
 
         test_finder = TestRouteFinder()
         route = test_finder.find_route(node_a, node_b)
-        self.assertEqual(route[node_b], node_a)
+        self.assertEqual(route[node_b], (1, node_a))
 
 class TestRouteFinderSLeadsToAALeadsToE(TestCase):
     class SLeadsToAALeadsToE(RouteMap):
@@ -37,5 +37,5 @@ class TestRouteFinderSLeadsToAALeadsToE(TestCase):
             pass
         test_finder = TestRouteFinder()
         route = test_finder.find_route(Node(0, 0, 'S'), Node(1, 1, 'E'))
-        self.assertEqual(route[Node(1, 1, 'E')], Node(0, 1, 'A'))
-        self.assertEqual(route[Node(0, 1, 'A')], Node(0, 0, 'S'))
+        self.assertEqual(route[Node(1, 1, 'E')], (2, Node(0, 1, 'A')))
+        self.assertEqual(route[Node(0, 1, 'A')], (1, Node(0, 0, 'S')))
