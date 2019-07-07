@@ -43,24 +43,25 @@ class TestRouteFinderTwoNodeMap(TestCase):
     def test_startAtAEndAtB_returnsAB(self):
         class TestRouteFinder(RouteFinder, TwoNodeMap):
             pass
-        test_finder = TestRouteFinder()
-        route = test_finder.find_route(TestMap.node_a, TestMap.node_b)
-        self.assertEqual(route[TestMap.node_b], (1, TestMap.node_a))
+        route = TestRouteFinder(TestMap.node_a, TestMap.node_b)
+        route.find()
+        self.assertEqual(route.nodes, [TestMap.node_a, TestMap.node_b])
+        # self.assertEqual(route.distance, 1)
 
 class TestRouteFinderThreeNodeMap(TestCase):
     def test_startAtSEndAtE_returnsSAE(self):
         class TestRouteFinder(RouteFinder, ThreeNodeMap):
             pass
-        test_finder = TestRouteFinder()
-        route = test_finder.find_route(TestMap.node_s, TestMap.node_e)
-        self.assertEqual(route[TestMap.node_e], (2, TestMap.node_a))
-        self.assertEqual(route[TestMap.node_a], (1, TestMap.node_s))
+        route = TestRouteFinder(TestMap.node_s, TestMap.node_e)
+        route.find()
+        self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
+        # self.assertEqual(route.distance, 3)
 
 class TestRouteFinderTestMap(TestCase):
     def test_startAtSEndAtE_returnsSAE(self):
         class TestRouteFinder(RouteFinder, TestMap):
             pass
-        test_finder = TestRouteFinder()
-        route = test_finder.find_route(TestMap.node_s, TestMap.node_e)
-        self.assertEqual(route[TestMap.node_e], (2, TestMap.node_a))
-        self.assertEqual(route[TestMap.node_a], (1, TestMap.node_s))
+        route = TestRouteFinder(TestMap.node_s, TestMap.node_e)
+        route.find()
+        self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
+        # self.assertEqual(route.distance, 3)
