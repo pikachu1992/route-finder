@@ -43,18 +43,24 @@ class HeapQueue:
         return len(self._heap)
 
 class RouteFinder(RouteMap, Heuristics):
-    def find_route(self, start_node, end_node):
-        open_list = HeapQueue([(0, 0, start_node, None)])
-        closed_list = {}
+    def __init__(self, start_node, end_node):
+        super().__init__()
+        self.start_node = start_node
+        self.end_node = end_node
+        self.closed_list = {}
+
+    def find(self):
+        open_list = HeapQueue([(0, 0, self.start_node, None)])
+        self.closed_list = {}
 
         while len(open_list) > 0:
             node_f, node_g, node, parent = open_list.pop()
-            closed_list[node] = (node_g, parent)
+            self.closed_list[node] = (node_g, parent)
 
-            if node == end_node:
+            if node == self.end_node:
                 break
             for neighbour_g, neighbour in super().get_node_neighbours(node):
-                if neighbour in closed_list:
+                if neighbour in self.closed_list:
                     continue
 
                 h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
@@ -63,4 +69,12 @@ class RouteFinder(RouteMap, Heuristics):
 
                 open_list.push((f, g, neighbour, node))
 
-        return closed_list
+    @property
+    def nodes(self):
+        result = []
+        node = self.end_node
+        while node:
+            result.append(node)
+            _, node = self.closed_list[node]
+        result.reverse()
+        return result
