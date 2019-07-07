@@ -3,7 +3,7 @@ from collections import defaultdict
 
 class FindNeighbours():
     airways = []
-    file = open('airac/wpnavrte.txt', 'r')
+    file = open('airac/wpNavRTE.txt', 'r')
     lines = file.readlines()
 
     def __init__(self):
