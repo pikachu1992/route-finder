@@ -1,5 +1,3 @@
-import math
-
 def compute_heuristic(*args):
     try:
         if len(args) == 2:
@@ -8,7 +6,7 @@ def compute_heuristic(*args):
     except TypeError as crap:
         raise ValueError() from crap
 
-    return math.sqrt(((float(xa) - float(xb)) ** 2) + ((float(ya) - float(yb)) ** 2))
+    return ((float(xa) - float(xb)) ** 2) + ((float(ya) - float(yb)) ** 2)
 
 class Heuristics:
     def astar_heuristic(self, *args):
