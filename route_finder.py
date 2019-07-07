@@ -24,14 +24,15 @@ class RouteFinder(RouteMap):
 
         while len(open_list) > 0:
             node = open_list.pop()
+            if node == end_node:
+                break
+            print("visiting " + node.name)
             for cost, neighbour in super().get_node_neighbours(node):
+               
                 if neighbour in closed_list:
                     continue
 
                 closed_list[neighbour] = node
-
-                if neighbour == end_node:
-                    break
 
                 open_list.append(neighbour)
 
