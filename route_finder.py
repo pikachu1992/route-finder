@@ -1,3 +1,5 @@
+import heapq
+from heuristics import Heuristics
 
 class Node:
     def __init__(self, x, y, name, parent=None):
@@ -17,22 +19,42 @@ class RouteMap:
         """
         raise NotImplemented()
 
-class RouteFinder(RouteMap):
+class HeapQueue:
+    def __init__(self, items):
+        self._heap = items
+        heapq.heapify(self._heap)
+
+    def push(self, item):
+        heapq.heappush(self._heap, item)
+
+    def pop(self):
+        return heapq.heappop(self._heap)
+
+    def pushpop(self, item):
+        return heapq.heappushpop(self._heap, item)
+
+    def __len__(self):
+        return len(self._heap)
+
+class RouteFinder(RouteMap, Heuristics):
     def find_route(self, start_node, end_node):
-        open_list = [start_node,]
+        open_list = HeapQueue([(0, start_node)])
         closed_list = {}
 
         while len(open_list) > 0:
-            node = open_list.pop()
-            for cost, neighbour in super().get_node_neighbours(node):
+            node_cost, node = open_list.pop()
+            for neighbour_cost, neighbour in super().get_node_neighbours(node):
                 if neighbour in closed_list:
                     continue
+
+                h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
+                f = neighbour_cost + h
 
                 closed_list[neighbour] = node
 
                 if neighbour == end_node:
                     break
 
-                open_list.append(neighbour)
+                open_list.push((f, neighbour))
 
         return closed_list

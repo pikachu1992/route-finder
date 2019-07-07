@@ -9,3 +9,7 @@ def compute_heuristic(*args):
         raise ValueError() from crap
 
     return math.sqrt(((float(xa) - float(xb)) ** 2) + ((float(ya) - float(yb)) ** 2))
+
+class Heuristics:
+    def astar_heuristic(self, *args):
+        return compute_heuristic(*args)
