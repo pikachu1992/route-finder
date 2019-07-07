@@ -1,36 +1,42 @@
 from route_finder import Node
 from collections import defaultdict
+import math
 
-class FindNeighbours():
-    airways = []
-    file = open('airac/wpNavRTE.txt', 'r')
-    lines = file.readlines()
 
-    def __init__(self):
-        self.airways = self.get_airways(self.lines)
+class FindNeighbours(): #devolver o node e os 2 vizinhos
+    def parseline(self, line):
+        node = line.split("\t")[:6]
+        neighbours = line.split("\t")[6:] 
+        
+        return [node, neighbours]
     
-    def get_airways(self, lines_from_file):
-        airways = defaultdict(list)
-        for line in lines_from_file:
-            if line.startswith(';'):
-                continue
-            exploded_line = line.split()
-            airways[exploded_line[0]].append(exploded_line)
-        return airways
+    def parse_neighbours(self, neighbours):
+        neighbours_list = []
 
-    def get_neighbours(self, node_name):
-        neighbours = []
-        for line in self.lines:
-            if line.startswith(';'):
-                continue
-            elif len([x for x in line.split() if x == node_name]) != 0:
-                for airway, nodes in self.airways.items():
-                    for ref_node in nodes:
-                        if node_name == ref_node[2]:
-                            if int(ref_node[1]) != 1:
-                                neighbours.append(Node(nodes[nodes.index(ref_node) - 1][3], nodes[nodes.index(ref_node) - 1][4], nodes[nodes.index(ref_node) - 1][2]))
-                            elif int(nodes[nodes.index(ref_node) + 1][1]) == 1:
-                                continue
-                            neighbours.append(Node(nodes[nodes.index(ref_node) + 1][3], nodes[nodes.index(ref_node) + 1][4], nodes[nodes.index(ref_node) + 1][2]))
+        if neighbours[4] == "Y":
+            neighbours_list.append(neighbours[:5])
 
-        return neighbours
+        if neighbours[9] == "Y":
+            neighbours_list.append(neighbours[5:])
+
+        
+        return neighbours_list
+
+    def calculate_cost(self, *args):
+        try:
+            if len(args) == 2:
+                args = (*args[0], *args[1])
+            xa, ya, xb, yb = args
+        except TypeError as crap:
+            raise ValueError() from crap
+
+        R = 6378137 # earth radius in meters
+        # (source: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html)
+
+        phi1, phi2 = math.radians(xa), math.radians(xb)
+        dphi       = math.radians(xb - xa)
+        dlambda    = math.radians(yb - ya)
+
+        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
+
+        return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
