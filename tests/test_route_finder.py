@@ -10,17 +10,12 @@ class TestMap(RouteMap):
     node_c = Node(1, 2, 'C')
 
     def __init__(self):
-        self.node_s = TestMap.node_s
-        self.node_a = TestMap.node_a
-        self.node_e = TestMap.node_e
-        self.node_b = TestMap.node_b
-        self.node_c = TestMap.node_c
         self.neighbours = {
-            self.node_s: [(1, self.node_a)],
-            self.node_a: [(1, self.node_e), (1, self.node_b)],
-            self.node_e: [(1, self.node_c), (1, self.node_a)],
-            self.node_b: [(1, self.node_a), (1, self.node_c)],
-            self.node_c: [(1, self.node_e), (1, self.node_b)]
+            TestMap.node_s: [(10, TestMap.node_a)],
+            TestMap.node_a: [(10, TestMap.node_e), (10, TestMap.node_s), (10, TestMap.node_b)],
+            TestMap.node_e: [(10, TestMap.node_c), (10, TestMap.node_a)],
+            TestMap.node_b: [(10, TestMap.node_a), (10, TestMap.node_c)],
+            TestMap.node_c: [(10, TestMap.node_e), (10, TestMap.node_b)]
         }
 
     def get_node_neighbours(self, node):
@@ -28,15 +23,15 @@ class TestMap(RouteMap):
 
 class TwoNodeMap(TestMap):
     def get_node_neighbours(self, node):
-        return [(1, self.node_b)]
+        return [(10, self.node_b)]
 
 class ThreeNodeMap(TestMap):
     def __init__(self):
         super().__init__()
         self.neighbours = {
-            self.node_s: [(1, self.node_a)],
-            self.node_a: [(1, self.node_e)],
-            self.node_e: [(1, self.node_a)]
+            self.node_s: [(10, self.node_a)],
+            self.node_a: [(10, self.node_e)],
+            self.node_e: [(10, self.node_a)]
         }
 
 class TestRouteFinderTwoNodeMap(TestCase):
@@ -65,3 +60,18 @@ class TestRouteFinderTestMap(TestCase):
         route.find()
         self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
         # self.assertEqual(route.distance, 3)
+
+class TestRouteFinderDoesntWalkRoutesThatGetFarther(TestCase):
+    def test_startAtAEndAtC_doesNotWalkS(self):
+        class WalkSFailsMap(TestMap):
+            def get_node_neighbours(self, node):
+                if node == TestMap.node_s:
+                    raise RuntimeError()
+                else:
+                    return super().get_node_neighbours(node)
+        class TestRouteFinder(RouteFinder, WalkSFailsMap):
+            pass
+        route = TestRouteFinder(TestMap.node_a, TestMap.node_c)
+        route.find()
+        self.assertEqual(route.nodes,
+            [TestMap.node_a, TestMap.node_b, TestMap.node_c])
