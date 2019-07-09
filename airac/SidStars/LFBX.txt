@@ -1,0 +1,42 @@
+//LFBX (BASSILLAC)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BX290 LATLON N 45 13.075 E 0 44.943334
+FIX BX291 LATLON N 45 10.815 E 1 5.465
+FIX BX292 LATLON N 45 4.716667 E 1 6.981667
+FIX BX293 LATLON N 45 13.575 E 1 1.371667
+FIX CN29 LATLON N 45 9.164333 E 0 57.3485
+FIX FBX29 LATLON N 45 9.531667 E 0 56.39
+FIX IBX29 LATLON N 45 7.921667 E 1 1.563334
+FIX MN29 LATLON N 45 11.12 E 0 51.137
+FIX PXNB LATLON N 45 9.978334 E 0 54.766667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB29 FIX CN29 AT OR ABOVE 2300 FIX PXNB 1850 FIX MN29 841 RNW 29 TRK 294 UNTIL 1300 TURN RIGHT DIRECT FIX PXNB 2300 SPEED 220
+ TRANSITION PX HOLD AT FIX PXNB RIGHT TURN INBOUNDCOURSE 294 ALT 2300 SPEED 220 LEGTIME 1
+APPROACH RNV29 FIX IBX29 2300 SPEED 185 FIX FBX29 2300 RNW 29 FIX OVERFLY BX290 AT OR BELOW 2300 SPEED 185 TURN RIGHT DIRECT FIX BX293 2300 SPEED 185 FIX BX291 2300 SPEED 185
+ TRANSITION BX291 FIX BX291 AT OR BELOW 3500 SPEED 185
+ TRANSITION BX292 FIX BX292 AT OR BELOW 4000 SPEED 220
+ TRANSITION PX FIX PXNB AT OR BELOW 5000 SPEED 220 TURN RIGHT DIRECT FIX BX293 2300 SPEED 220 FIX BX291 2300 SPEED 185
+ENDAPPROACHES

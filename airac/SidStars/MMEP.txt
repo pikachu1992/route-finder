@@ -1,0 +1,43 @@
+//MMEP (TEPIC)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40VOR LATLON N 21 29.3865 W 104 48.822334
+FIX 50VOR LATLON N 21 21.0805 W 104 52.566833
+FIX CF02 LATLON N 21 15.667166 W 104 55.3815
+FIX CF20 LATLON N 21 36.028166 W 104 46.375667
+FIX FF02 LATLON N 21 18.374 W 104 53.974667
+FIX FF20 LATLON N 21 33.181834 W 104 47.424667
+FIX TNY LATLON N 21 25.591 W 104 50.218834
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID TNY3A RNW 02 TRK 018 UNTIL 3420 TRK 011 UNTIL 7.0 FROM FIX TNY TURN LEFT DIRECT FIX TNY
+SID TNY3B RNW 20 TRK 198 UNTIL 3420 TRK 198 UNTIL 7.0 FROM FIX TNY TURN RIGHT DIRECT FIX TNY
+ENDSIDS
+
+APPROACHES
+APPROACH VDM02 FIX CF02 AT OR ABOVE 6200 FIX FF02 5300 FIX 50VOR AT OR ABOVE 4300 RNW 02 FIX TNY TRK 011 UNTIL 7.0 FROM FIX TNY TURN LEFT DIRECT FIX TNY AT OR ABOVE 10000
+ TRANSITION TNY FIX TNY AT OR ABOVE 10000 TRK 218 UNTIL 11.0 FROM FIX TNY
+APPROACH VDM20 FIX CF20 AT OR ABOVE 6900 FIX FF20 6000 FIX 40VOR AT OR ABOVE 4500 FIX TNY 3026 RNW 20 TRK 198 UNTIL 7.0 FROM FIX TNY TURN RIGHT DIRECT FIX TNY AT OR ABOVE 10000
+ TRANSITION TNY FIX TNY AT OR ABOVE 10000 TRK 351 UNTIL 11.0 FROM FIX TNY
+ENDAPPROACHES

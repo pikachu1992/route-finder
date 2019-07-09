@@ -1,0 +1,37 @@
+//9TE2 (JL BAR RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANDIA LATLON N 30 23.892334 W 100 19.904666
+FIX ASLYA LATLON N 30 32.244167 W 100 25.421666
+FIX JACHR LATLON N 30 44.218166 W 100 33.365167
+FIX JEFSW LATLON N 30 29.263834 W 100 23.451
+FIX JLBAR LATLON N 30 38.893166 W 100 29.827667
+FIX LOISA LATLON N 30 35.959667 W 100 27.882167
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX JACHR AT OR ABOVE 4000 FIX JLBAR 4000 FIX LOISA AT OR ABOVE 2920 RNW 14 TRK 145 UNTIL 2680 FIX OVERFLY ANDIA AT OR ABOVE 4000 HOLD AT FIX ANDIA RIGHT TURN INBOUNDCOURSE 325 LEGDIST 4
+ TRANSITION JACHR HOLD AT FIX JACHR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4
+APPROACH RNV32 FIX ANDIA AT OR ABOVE 4000 FIX JEFSW 4000 FIX ASLYA AT OR ABOVE 2900 RNW 32 TRK 325 UNTIL 2620 FIX OVERFLY JACHR AT OR ABOVE 4000 HOLD AT FIX JACHR RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4
+ TRANSITION ANDIA HOLD AT FIX ANDIA RIGHT TURN INBOUNDCOURSE 325 ALT 4000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//CPV7 (POPLAR HILL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARLYE LATLON N 52 9.983167 W 94 32.942333
+FIX AXOKO LATLON N 52 3.556834 W 93 57.731666
+FIX EMIBI LATLON N 51 59.891 W 94 3.228167
+FIX ENENA LATLON N 52 13.653833 W 94 27.433667
+FIX ETBEK LATLON N 52 17.320166 W 94 21.909833
+FIX IKLEB LATLON N 51 56.220833 W 94 8.7095
+FIX MOBUV LATLON N 52 3.2865 W 94 9.163333
+FIX OLIPO LATLON N 52 9.994166 W 94 20.9585
+FIX PISAX LATLON N 52 4.507166 W 94 11.302834
+FIX TIGIB LATLON N 52 3.609833 W 94 9.73
+FIX XETIN LATLON N 52 10.273834 W 94 21.452333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX ENENA AT OR ABOVE 2800 FIX XETIN 2700 RNW 13 FIX OVERFLY TIGIB 2700 HOLD AT FIX TIGIB RIGHT TURN INBOUNDCOURSE 132 LEGTIME 1
+ TRANSITION ARLYE FIX ARLYE
+ TRANSITION ETBEK FIX ETBEK
+APPROACH RNV31 FIX EMIBI AT OR ABOVE 2800 FIX MOBUV 2700 FIX PISAX AT OR ABOVE 2120 RNW 31 FIX OVERFLY OLIPO 2700 HOLD AT FIX OLIPO RIGHT TURN INBOUNDCOURSE 312 LEGTIME 1
+ TRANSITION AXOKO FIX AXOKO
+ TRANSITION IKLEB FIX IKLEB
+ENDAPPROACHES

@@ -1,0 +1,46 @@
+//CYVZ (DEER LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXOSA LATLON N 52 36.701833 W 93 58.161667
+FIX EMONO LATLON N 52 41.997 W 94 9.2315
+FIX ESTUM LATLON N 52 33.607166 W 93 51.729
+FIX FN13 LATLON N 52 42.475 W 94 8.503
+FIX IKUSU LATLON N 52 41.141333 W 94 20.767
+FIX IPTUR LATLON N 52 29.6895 W 93 56.804333
+FIX MIVES LATLON N 52 45.075833 W 94 15.705334
+FIX MUTIV LATLON N 52 42.257666 W 94 9.778667
+FIX OTUPT LATLON N 52 37.521 W 93 46.6385
+FIX TEXUV LATLON N 52 36.440333 W 93 57.616834
+FIX XEVEV LATLON N 52 49.006834 W 94 10.6285
+FIX YVZNB LATLON N 52 38.927167 W 94 3.422666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDB13 FIX FN13 2400 RNW 13 FIX YVZNB TRK 139 UNTIL 2500 TURN RIGHT DIRECT FIX YVZNB 2500
+APPROACH RNV13 FIX MIVES AT OR ABOVE 2500 FIX EMONO 2400 RNW 13 FIX OVERFLY TEXUV 2600 HOLD AT FIX TEXUV RIGHT TURN INBOUNDCOURSE 128 LEGTIME 1
+ TRANSITION IKUSU FIX IKUSU
+ TRANSITION XEVEV FIX XEVEV
+APPROACH RNV31 FIX ESTUM AT OR ABOVE 2500 FIX AXOSA 2410 RNW 31 FIX OVERFLY MUTIV 2600 HOLD AT FIX MUTIV RIGHT TURN INBOUNDCOURSE 308 LEGTIME 1
+ TRANSITION IPTUR FIX IPTUR
+ TRANSITION OTUPT FIX OTUPT
+ENDAPPROACHES

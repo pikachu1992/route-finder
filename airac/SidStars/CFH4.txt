@@ -1,0 +1,44 @@
+//CFH4 (FOX HARBOUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPVOS LATLON N 45 51.975833 W 63 27.196667
+FIX MESBU LATLON N 45 57.703667 W 63 38.9425
+FIX MUPTU LATLON N 45 42.134666 W 63 19.588667
+FIX MUSVU LATLON N 45 46.230167 W 63 15.495667
+FIX ROVRI LATLON N 46 1.797167 W 63 34.8265
+FIX TARGU LATLON N 45 54.8435 W 63 33.066833
+FIX VEVKO LATLON N 45 53.607667 W 63 43.048333
+FIX VIGVU LATLON N 45 50.323333 W 63 11.392667
+FIX VIPLA LATLON N 45 49.1055 W 63 21.341167
+FIX YQM LATLON N 46 11.333333 W 64 34.25
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX MESBU AT OR ABOVE 1200 SPEED 180 FIX TARGU 1100 RNW 15 FIX OVERFLY VIPLA 1600 HOLD AT FIX VIPLA RIGHT TURN INBOUNDCOURSE 143 SPEED 250 LEGTIME 1
+ TRANSITION ROVRI FIX ROVRI SPEED 210
+ TRANSITION VEVKO FIX VEVKO SPEED 210
+ TRANSITION YQM FIX YQM
+APPROACH RNV33 FIX MUSVU AT OR ABOVE 1700 SPEED 180 FIX VIPLA 1700 FIX OVERFLY EPVOS 106 RNW 33 FIX OVERFLY TARGU 1600 HOLD AT FIX TARGU RIGHT TURN INBOUNDCOURSE 323 SPEED 250 LEGTIME 1
+ TRANSITION VIGVU FIX VIGVU SPEED 210
+ TRANSITION YQM FIX YQM FIX MUPTU AT OR ABOVE 1700 SPEED 210
+ENDAPPROACHES

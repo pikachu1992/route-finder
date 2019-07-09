@@ -1,0 +1,35 @@
+//WITN (MAIMUN SALEH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF28 LATLON N 5 51.577 E 95 27.3915
+FIX SABAN LATLON N 5 51.039334 E 95 30.798833
+FIX TN401 LATLON N 5 51.728666 E 95 25.829167
+FIX WENB LATLON N 5 52.584167 E 95 20.241334
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB28 FIX FF28 2500 RNW 28 FIX OVERFLY WENB AT OR ABOVE 940 TRK 310 UNTIL 3500 TURN RIGHT DIRECT FIX WENB HOLD AT FIX WENB LEFT TURN INBOUNDCOURSE 083 ALT 3500 LEGTIME 1
+ TRANSITION WE FIX WENB AT OR ABOVE 3500 TRK 083 UNTIL 7.5 FROM FIX WENB
+APPROACH RNV28 FIX SABAN AT OR ABOVE 3500 FIX TN401 2000 RNW 28 TURN RIGHT DIRECT FIX SABAN 3500 HOLD AT FIX SABAN LEFT TURN INBOUNDCOURSE 279 ALT 3500 LEGTIME 1
+ TRANSITION SABAN HOLD AT FIX SABAN LEFT TURN INBOUNDCOURSE 279 ALT 3500 LEGTIME 1
+ENDAPPROACHES

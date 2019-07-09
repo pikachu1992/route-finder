@@ -1,0 +1,44 @@
+//CYVL (TOMMY KOCHON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERBEG LATLON N 67 12.369334 W 125 58.454333
+FIX IMOBU LATLON N 67 11.086667 W 126 23.921666
+FIX MEBUX LATLON N 66 50.1785 W 126 16.845334
+FIX MOGOR LATLON N 67 11.7365 W 126 11.193667
+FIX OMRIP LATLON N 66 51.443167 W 125 51.7345
+FIX PIGVI LATLON N 67 5.807666 W 126 9.218167
+FIX SAVAV LATLON N 66 50.819167 W 126 4.295333
+FIX SIBTO LATLON N 66 56.6495 W 126 6.198167
+FIX TAGPU LATLON N 66 56.749 W 126 6.230833
+FIX VIGSI LATLON N 67 5.891833 W 126 9.246
+FIX XOXET LATLON N 66 58.183667 W 126 6.701333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX MOGOR AT OR ABOVE 2300 FIX PIGVI 2300 RNW 17 FIX OVERFLY SIBTO 3500 HOLD AT FIX SIBTO RIGHT TURN INBOUNDCOURSE 015 LEGTIME 1
+ TRANSITION ERBEG FIX ERBEG SPEED 210
+ TRANSITION IMOBU FIX IMOBU SPEED 210
+APPROACH RNV35 FIX SAVAV AT OR ABOVE 2600 FIX TAGPU 2300 FIX XOXET AT OR ABOVE 1840 RNW 35 FIX OVERFLY VIGSI 3500 HOLD AT FIX VIGSI RIGHT TURN INBOUNDCOURSE 033 LEGTIME 1
+ TRANSITION MEBUX FIX MEBUX SPEED 210
+ TRANSITION OMRIP FIX OMRIP SPEED 210
+ENDAPPROACHES

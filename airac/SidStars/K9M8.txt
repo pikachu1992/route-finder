@@ -1,0 +1,36 @@
+//K9M8 (SHERIDAN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUNYA LATLON N 34 24.898166 W 92 19.686334
+FIX ECROS LATLON N 34 14.381333 W 92 22.475833
+FIX JOVES LATLON N 34 31.745833 W 92 17.863834
+FIX NEONS LATLON N 34 9.489167 W 92 23.769334
+FIX PYINS LATLON N 34 21.768 W 92 20.517833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX NEONS AT OR ABOVE 1900 FIX ECROS 1900 RNW 01 TRK 012 UNTIL 636 FIX OVERFLY JOVES AT OR ABOVE 2100 HOLD AT FIX JOVES RIGHT TURN INBOUNDCOURSE 192 LEGDIST 4
+ TRANSITION NEONS HOLD AT FIX NEONS RIGHT TURN INBOUNDCOURSE 012 ALT 1900 LEGDIST 4
+APPROACH RNV19 FIX JOVES AT OR ABOVE 2100 FIX BUNYA 1900 FIX PYINS AT OR ABOVE 880 RNW 19 TRK 192 UNTIL 590 FIX OVERFLY NEONS AT OR ABOVE 1900 HOLD AT FIX NEONS RIGHT TURN INBOUNDCOURSE 012 LEGDIST 4
+ TRANSITION JOVES HOLD AT FIX JOVES RIGHT TURN INBOUNDCOURSE 192 ALT 2100 LEGDIST 4
+ENDAPPROACHES

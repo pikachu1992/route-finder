@@ -1,0 +1,44 @@
+//CJQ3 (CARLYLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXEDI LATLON N 49 48.329167 W 102 30.3265
+FIX BEVIB LATLON N 49 42.9505 W 102 33.653833
+FIX DUSOT LATLON N 49 37.57 W 102 36.969167
+FIX EBKET LATLON N 49 39.680167 W 101 57.401
+FIX EMLIT LATLON N 49 40.717333 W 102 25.077667
+FIX GOTAD LATLON N 49 39.9655 W 102 22.202333
+FIX ILUNA LATLON N 49 36.578333 W 102 9.316667
+FIX LEVUK LATLON N 49 28.951333 W 102 4.1405
+FIX MIVEB LATLON N 49 36.139 W 102 7.660333
+FIX OVOMA LATLON N 49 34.3165 W 102 0.777
+FIX TABOB LATLON N 49 41.158 W 102 26.772334
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX BEVIB AT OR ABOVE 3900 SPEED 180 FIX EMLIT 3800 FIX GOTAD AT OR ABOVE 3160 RNW 11 FIX OVERFLY MIVEB 4800 HOLD AT FIX MIVEB RIGHT TURN INBOUNDCOURSE 105 SPEED 200 LEGTIME 1
+ TRANSITION AXEDI FIX AXEDI SPEED 210
+ TRANSITION DUSOT FIX DUSOT SPEED 210
+APPROACH RNV29 FIX OVOMA AT OR ABOVE 3900 SPEED 180 FIX ILUNA 3800 RNW 29 FIX OVERFLY TABOB 4800 HOLD AT FIX TABOB RIGHT TURN INBOUNDCOURSE 284 SPEED 200 LEGTIME 1
+ TRANSITION EBKET FIX EBKET SPEED 210
+ TRANSITION LEVUK FIX LEVUK SPEED 210
+ENDAPPROACHES

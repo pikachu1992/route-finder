@@ -1,0 +1,36 @@
+//K1B6 (HOPEDALE INDUSTRIAL PARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GRAYM LATLON N 42 6.071167 W 72 1.8915
+FIX GRIPE LATLON N 42 8.147833 W 71 54.541166
+FIX HOPUL LATLON N 42 8.197834 W 71 31.197
+FIX WISUG LATLON N 42 15.667834 W 71 44.746333
+FIX YADPU LATLON N 42 17.573833 W 71 34.279834
+FIX ZAMKI LATLON N 42 10.772 W 71 32.039666
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA18 FIX YADPU AT OR ABOVE 3100 FIX ZAMKI 2000 FIX HOPUL AT OR ABOVE 1040 RNW 18 TRK 182 UNTIL 669 TURN RIGHT DIRECT FIX OVERFLY GRIPE AT OR ABOVE 3000 HOLD AT FIX GRIPE RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4
+ TRANSITION GRAYM FIX GRAYM FIX WISUG AT OR ABOVE 3100
+ TRANSITION YADPU HOLD AT FIX YADPU RIGHT TURN INBOUNDCOURSE 182 ALT 3100 LEGDIST 4
+ENDAPPROACHES

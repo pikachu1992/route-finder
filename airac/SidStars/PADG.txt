@@ -1,0 +1,33 @@
+//PADG (RED DOG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AWAMY LATLON N 67 50.334667 W 163 19.260667
+FIX EGGEN LATLON N 67 56.985667 W 163 4.832167
+FIX OQKNB LATLON N 67 34.206667 W 162 58.3575
+FIX ZIHCE LATLON N 68 0.903833 W 162 56.246167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX AWAMY AT OR ABOVE 3800 FIX EGGEN 3100 FIX ZIHCE 1322 RNW 03 TRK 024 UNTIL 1369 TURN LEFT DIRECT FIX OVERFLY AWAMY AT OR ABOVE 3800 HOLD AT FIX AWAMY RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1
+ TRANSITION OQK FIX OQKNB
+ENDAPPROACHES

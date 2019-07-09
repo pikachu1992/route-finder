@@ -1,0 +1,40 @@
+//PFTO (TOK JUNCTION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIMGO LATLON N 63 6.314833 W 142 26.536834
+FIX DETEY LATLON N 63 12.508 W 142 22.739167
+FIX EGAXE LATLON N 63 26.527333 W 143 36.838166
+FIX GEYET LATLON N 63 21.000167 W 143 2.803166
+FIX HUMIK LATLON N 63 15.5015 W 142 36.717
+FIX JUKAN LATLON N 63 18.176167 W 142 49.338167
+FIX KUNNE LATLON N 63 23.1385 W 143 23.072833
+FIX LISEY LATLON N 63 20.683834 W 143 10.003166
+FIX NUNIC LATLON N 63 18.8005 W 142 43.931167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX KUNNE AT OR ABOVE 4700 FIX LISEY 3500 RNW 07 TRK 070 UNTIL 2039 FIX NUNIC FIX OVERFLY CIMGO AT OR ABOVE 8000 HOLD AT FIX CIMGO RIGHT TURN INBOUNDCOURSE 274 LEGDIST 7
+ TRANSITION EGAXE FIX EGAXE
+APPROACH RNVA25 FIX DETEY AT OR ABOVE 5900 FIX HUMIK 4800 FIX JUKAN AT OR ABOVE 2740 RNW 25 TRK 266 UNTIL 2580 FIX GEYET FIX OVERFLY EGAXE AT OR ABOVE 8000 HOLD AT FIX EGAXE LEFT TURN INBOUNDCOURSE 094 LEGDIST 6
+ TRANSITION CIMGO FIX CIMGO
+ENDAPPROACHES

@@ -1,0 +1,31 @@
+//AYGR (GIRUA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF130 LATLON S 8 41.843833 E 148 12.444167
+FIX GUANB LATLON S 8 44.735 E 148 15.25
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH NDMB03 FIX FF130 2000 FIX GUANB 1250 RNW 03 TRK 080 UNTIL 2000
+APPROACH NDMB21 FIX FF130 2000 FIX GUANB 1250 RNW 21 TRK 080 UNTIL 2000
+ENDAPPROACHES

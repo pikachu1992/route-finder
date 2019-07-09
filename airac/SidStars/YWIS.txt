@@ -1,0 +1,37 @@
+//YWIS (WILLIAMSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WISWA LATLON S 22 17.424 E 150 4.289333
+FIX WISWB LATLON S 22 17.916 E 150 9.180667
+FIX WISWF LATLON S 22 24.472333 E 150 8.420167
+FIX WISWH LATLON S 22 30.640166 E 150 12.0365
+FIX WISWI LATLON S 22 20.948333 E 150 6.353833
+FIX WISWM LATLON S 22 27.997 E 150 10.486
+FIX WISWX LATLON S 22 27.845167 E 149 55.909834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WISWI AT OR ABOVE 2670 FIX WISWF 1400 FIX OVERFLY WISWM 125 RNW 14 FIX OVERFLY WISWH TURN RIGHT DIRECT FIX WISWX AT OR ABOVE 4000
+ TRANSITION WISWA FIX WISWA AT OR ABOVE 2700 SPEED 210
+ TRANSITION WISWB FIX WISWB AT OR ABOVE 2700 SPEED 210
+ENDAPPROACHES

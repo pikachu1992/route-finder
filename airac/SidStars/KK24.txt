@@ -1,0 +1,37 @@
+//KK24 (RUSSELL CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIKIT LATLON N 37 12.968833 W 85 7.421167
+FIX FIGLA LATLON N 37 3.588 W 85 6.468667
+FIX GIYEL LATLON N 36 57.376 W 85 5.839834
+FIX JASUL LATLON N 37 6.172333 W 85 6.730667
+FIX LAGNE LATLON N 36 54.8345 W 85 5.583167
+FIX TEYOS LATLON N 36 48.194167 W 85 4.913833
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX CIKIT AT OR ABOVE 4000 FIX JASUL 2700 FIX FIGLA AT OR ABOVE 1860 RNW 17 TRK 179 UNTIL 1346 FIX OVERFLY TEYOS AT OR ABOVE 4000 HOLD AT FIX TEYOS RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4
+ TRANSITION CIKIT HOLD AT FIX CIKIT RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4
+APPROACH RNV35 FIX TEYOS AT OR ABOVE 4000 FIX LAGNE 2700 FIX GIYEL AT OR ABOVE 1880 RNW 35 TRK 359 UNTIL 1240 FIX OVERFLY CIKIT AT OR ABOVE 4000 HOLD AT FIX CIKIT RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4
+ TRANSITION TEYOS HOLD AT FIX TEYOS RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4
+ENDAPPROACHES

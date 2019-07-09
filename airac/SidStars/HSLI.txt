@@ -1,0 +1,47 @@
+//HSLI (KADUGLI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOROM LATLON N 11 14.61 E 29 54.43
+FIX BOXAD LATLON N 10 59.64 E 29 25.2
+FIX DAPAS LATLON N 11 19.07 E 29 52.09
+FIX EGPUK LATLON N 11 6.41 E 29 27.37
+FIX EMATO LATLON N 11 10.16 E 29 56.77
+FIX GEXUD LATLON N 10 57.49 E 29 32.05
+FIX IMPID LATLON N 11 1.95 E 29 29.71
+FIX MUTPO LATLON N 11 5.65 E 29 36.93
+FIX PATUR LATLON N 11 11.66 E 29 48.67
+FIX SIMRU LATLON N 11 16.93 E 29 58.95
+FIX SINPA LATLON N 11 10.91 E 29 47.2
+FIX TOTIT LATLON N 11 3.97 E 29 33.66
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX MUTPO 3500 RNW 06 TRK 060 UNTIL 2250 FIX PATUR 4300
+ TRANSITION BOXAD FIX BOXAD AT OR ABOVE 7700 FIX IMPID AT OR ABOVE 6100
+ TRANSITION EGPUK FIX EGPUK AT OR ABOVE 7700 FIX IMPID AT OR ABOVE 6100
+ TRANSITION GEXUD FIX GEXUD AT OR ABOVE 7700 FIX IMPID AT OR ABOVE 6100
+APPROACH RNV24 FIX SINPA 3500 RNW 24 TRK 240 UNTIL 2250 FIX TOTIT 4700
+ TRANSITION DAPAS FIX DAPAS AT OR ABOVE 7600 FIX BOROM AT OR ABOVE 6000
+ TRANSITION EMATO FIX EMATO AT OR ABOVE 7600 FIX BOROM AT OR ABOVE 6000
+ TRANSITION SIMRU FIX SIMRU AT OR ABOVE 7600 FIX BOROM AT OR ABOVE 6000
+ENDAPPROACHES

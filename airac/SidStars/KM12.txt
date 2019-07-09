@@ -1,0 +1,36 @@
+//KM12 (STEELE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOYOS LATLON N 36 0.372167 W 89 51.5625
+FIX EQUID LATLON N 36 11.105833 W 89 51.574
+FIX HERSO LATLON N 36 7.467 W 89 51.57
+FIX PIGOE LATLON N 35 54.263333 W 89 51.555833
+FIX UBIGE LATLON N 36 17.2145 W 89 51.5805
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX UBIGE AT OR ABOVE 2500 FIX EQUID 1900 FIX HERSO AT OR ABOVE 740 RNW 18 TRK 181 UNTIL 531 FIX OVERFLY PIGOE AT OR ABOVE 2500 HOLD AT FIX PIGOE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION UBIGE HOLD AT FIX UBIGE RIGHT TURN INBOUNDCOURSE 181 ALT 2500 LEGDIST 4
+APPROACH RNV36 FIX PIGOE AT OR ABOVE 2500 FIX BOYOS 1900 RNW 36 TRK 001 UNTIL 532 FIX OVERFLY UBIGE AT OR ABOVE 2500 HOLD AT FIX UBIGE RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION PIGOE HOLD AT FIX PIGOE RIGHT TURN INBOUNDCOURSE 001 ALT 2500 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//K0J6 (HEADLAND MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUNLU LATLON N 31 21.787333 W 85 15.964834
+FIX DEKKE LATLON N 31 21.9845 W 85 31.056667
+FIX EMVUF LATLON N 31 21.861334 W 85 21.363334
+FIX ERUCA LATLON N 31 21.895166 W 85 23.934667
+FIX WAGKY LATLON N 31 21.644833 W 85 6.272333
+FIX YUCUL LATLON N 31 21.750667 W 85 13.398334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 17
+RNW 27
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX DEKKE AT OR ABOVE 2000 FIX ERUCA 1700 FIX EMVUF AT OR ABOVE 980 RNW 09 TRK 094 UNTIL 628 FIX OVERFLY WAGKY AT OR ABOVE 2000 HOLD AT FIX WAGKY RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION DEKKE HOLD AT FIX DEKKE RIGHT TURN INBOUNDCOURSE 094 ALT 2000 LEGDIST 4
+APPROACH RNV27 FIX WAGKY AT OR ABOVE 2000 FIX YUCUL 1700 FIX CUNLU AT OR ABOVE 1000 RNW 27 TRK 274 UNTIL 900 TURN RIGHT DIRECT FIX OVERFLY WAGKY AT OR ABOVE 2000 HOLD AT FIX WAGKY RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION WAGKY HOLD AT FIX WAGKY RIGHT TURN INBOUNDCOURSE 274 ALT 2000 LEGDIST 4
+ENDAPPROACHES

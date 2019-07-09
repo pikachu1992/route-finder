@@ -1,0 +1,36 @@
+//FTTC (ABECHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ABNB LATLON N 13 50.716667 E 20 50.733334
+FIX FN09 LATLON N 13 51.315334 E 20 43.7085
+FIX FN27 LATLON N 13 50.715167 E 20 57.3735
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDB09 FIX FN09 3700 RNW 09 FIX OVERFLY ABNB TRK 093 UNTIL 3400 TURN RIGHT DIRECT FIX ABNB 4000
+ TRANSITION AB1 FIX ABNB AT OR ABOVE 4000 TRK 300 UNTIL 7.0 FROM FIX ABNB
+ TRANSITION AB2 FIX ABNB AT OR ABOVE 4000 TRK 289 UNTIL 7.0 FROM FIX ABNB
+APPROACH NDB27 FIX FN27 3700 RNW 27 FIX OVERFLY ABNB TRK 268 UNTIL 3400 TURN LEFT DIRECT FIX ABNB 4000
+ TRANSITION AB1 FIX ABNB AT OR ABOVE 4000 TRK 061 UNTIL 7.0 FROM FIX ABNB
+ TRANSITION AB2 FIX ABNB AT OR ABOVE 4000 TRK 072 UNTIL 7.0 FROM FIX ABNB
+ENDAPPROACHES

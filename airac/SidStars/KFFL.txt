@@ -1,0 +1,46 @@
+//KFFL (FAIRFIELD MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIRRM LATLON N 40 51.5565 W 91 58.7065
+FIX KYHOM LATLON N 40 57.804833 W 91 58.761
+FIX PANSE LATLON N 41 1.162166 W 91 58.790333
+FIX RUBIO LATLON N 41 15.275 W 91 58.914167
+FIX SULME LATLON N 40 51.520166 W 92 5.296
+FIX UTKUW LATLON N 41 9.0165 W 91 58.859167
+FIX VOPGE LATLON N 41 15.238667 W 92 5.543167
+FIX WAGTU LATLON N 40 51.5865 W 91 52.117
+FIX WIZEH LATLON N 41 15.305 W 91 52.285
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX RUBIO AT OR ABOVE 3000 FIX UTKUW 2500 RNW 18 FIX OVERFLY BIRRM AT OR ABOVE 3000 HOLD AT FIX BIRRM RIGHT TURN INBOUNDCOURSE 000 LEGDIST 5
+ TRANSITION RUBIO HOLD AT FIX RUBIO RIGHT TURN INBOUNDCOURSE 180 ALT 3000 LEGDIST 5
+ TRANSITION VOPGE FIX VOPGE AT OR ABOVE 3000
+ TRANSITION WIZEH FIX WIZEH AT OR ABOVE 3000
+APPROACH RNV36 FIX BIRRM AT OR ABOVE 3000 FIX KYHOM 2500 FIX PANSE AT OR ABOVE 1400 RNW 36 FIX OVERFLY RUBIO AT OR ABOVE 3000 HOLD AT FIX RUBIO RIGHT TURN INBOUNDCOURSE 180 LEGDIST 5
+ TRANSITION BIRRM HOLD AT FIX BIRRM RIGHT TURN INBOUNDCOURSE 000 ALT 3000 LEGDIST 5
+ TRANSITION SULME FIX SULME AT OR ABOVE 3000
+ TRANSITION WAGTU FIX WAGTU AT OR ABOVE 3000
+ENDAPPROACHES

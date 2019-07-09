@@ -1,0 +1,43 @@
+//CJX4 (ROSETOWN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KITIR LATLON N 51 33.8685 W 108 3.404167
+FIX LESIP LATLON N 51 38.852833 W 108 13.040333
+FIX MIVUK LATLON N 51 28.865333 W 108 12.997667
+FIX NADOM LATLON N 51 33.859166 W 108 13.019
+FIX OKUGU LATLON N 51 33.847667 W 107 44.122333
+FIX OTUTI LATLON N 51 33.853333 W 107 46.593
+FIX PUTAX LATLON N 51 28.833 W 107 37.022666
+FIX SEKAT LATLON N 51 33.826667 W 107 36.978334
+FIX TAVPU LATLON N 51 33.867334 W 108 5.89
+FIX VIVAG LATLON N 51 38.820334 W 107 36.933833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX NADOM AT OR ABOVE 3600 FIX KITIR 3600 RNW 08 FIX OVERFLY OKUGU 4200 HOLD AT FIX OKUGU RIGHT TURN INBOUNDCOURSE 079 SPEED 175 LEGTIME 1
+ TRANSITION LESIP FIX LESIP
+ TRANSITION MIVUK FIX MIVUK
+APPROACH RNV26 FIX SEKAT AT OR ABOVE 3600 FIX OTUTI 3600 RNW 26 FIX OVERFLY TAVPU 4200 HOLD AT FIX TAVPU RIGHT TURN INBOUNDCOURSE 259 SPEED 175 LEGTIME 1
+ TRANSITION PUTAX FIX PUTAX
+ TRANSITION VIVAG FIX VIVAG
+ENDAPPROACHES

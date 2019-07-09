@@ -1,0 +1,37 @@
+//VTUN (KHORAT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF24 LATLON N 14 59.769334 E 102 11.941667
+FIX KRT LATLON N 14 55.039166 E 102 8.388667
+FIX PIMAI LATLON N 14 55.039166 E 102 8.388667
+FIX SEEMA LATLON N 15 12.839666 E 102 15.751333
+FIX SURAA LATLON N 14 58.151833 E 102 29.5435
+FIX YARMO LATLON N 15 2.102333 E 102 16.510166
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH ILS24 FIX YARMO AT OR ABOVE 4000 FIX FF24 3000 RNW 24 TRK 243 UNTIL 2600 TURN LEFT DIRECT FIX KRT FIX YARMO 4000 HOLD AT FIX YARMO RIGHT TURN INBOUNDCOURSE 243 ALT 4000 SPEED 230 LEGTIME 1
+ TRANSITION PIMAI FIX PIMAI AT OR ABOVE 5000 FIX YARMO AT OR ABOVE 4000 HOLD AT FIX YARMO RIGHT TURN INBOUNDCOURSE 243 ALT 4000 SPEED 230 LEGTIME 1
+ TRANSITION SEEMA FIX SEEMA AT OR ABOVE 7000 TRK 177 UNTIL 6.7 FROM FIX SEEMA
+ TRANSITION SURAA FIX SURAA AT OR ABOVE 7000 TRK 288 UNTIL 9.2 FROM FIX SURAA
+ENDAPPROACHES

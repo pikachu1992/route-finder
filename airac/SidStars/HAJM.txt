@@ -1,0 +1,40 @@
+//HAJM (ABA JIFAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JM001 LATLON N 7 39.11 E 37 11.586667
+FIX JM002 LATLON N 7 22.538333 E 36 58.51
+FIX JM003 LATLON N 7 26.716667 E 36 59.611667
+FIX JM004 LATLON N 7 31.575 E 37 0.893333
+FIX JM005 LATLON N 7 32.893333 E 36 58.991666
+FIX JM006 LATLON N 7 34.04 E 36 57.338333
+FIX JM007 LATLON N 7 35.185 E 36 55.683334
+FIX JM008 LATLON N 7 37.476667 E 36 52.375
+FIX JM009 LATLON N 7 33.483334 E 36 36.57
+FIX JM010 LATLON N 7 26.115 E 36 19.361666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX JM005 AT OR ABOVE 8300 FIX JM006 AT OR ABOVE 7870 FIX JM007 7870 FIX JM008 AT OR ABOVE 6600 RNW 31 FIX JM009 AT OR ABOVE 8700 SPEED 185 FIX JM010 12000
+ TRANSITION JM001 FIX JM001 AT OR ABOVE 13000
+ TRANSITION JM002 FIX JM002 AT OR ABOVE 12000 FIX JM003 AT OR ABOVE 10600 FIX JM004 AT OR ABOVE 8900 SPEED 185
+ENDAPPROACHES

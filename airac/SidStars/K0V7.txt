@@ -1,0 +1,42 @@
+//K0V7 (KAYENTA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HEKEN LATLON N 36 41.485166 W 109 50.635
+FIX HUTGI LATLON N 36 47.797834 W 110 0.3165
+FIX JOXED LATLON N 36 45.314833 W 110 7.239833
+FIX ROUGH LATLON N 36 26.79 W 109 41.101667
+FIX WODSO LATLON N 36 36.8505 W 109 53.198833
+FIX YIKLO LATLON N 36 24.567667 W 109 52.287833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+SIDS
+SID ROUGH1
+ RNW 05 HDG 053 UNTIL 6188 TURN RIGHT DIRECT FIX ROUGH AT OR ABOVE 12000
+ RNW 23 HDG 233 UNTIL 6188 TURN RIGHT DIRECT FIX WODSO FIX ROUGH AT OR ABOVE 12000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV23 FIX HUTGI AT OR ABOVE 8200 FIX JOXED 7300 RNW 23 TRK 233 UNTIL 6500 TURN RIGHT DIRECT FIX OVERFLY ROUGH AT OR ABOVE 12000 HOLD AT FIX ROUGH RIGHT TURN INBOUNDCOURSE 064 LEGDIST 7
+ TRANSITION ROUGH FIX ROUGH FIX HEKEN AT OR ABOVE 10000
+ TRANSITION YIKLO FIX YIKLO FIX HEKEN AT OR ABOVE 10000
+ENDAPPROACHES

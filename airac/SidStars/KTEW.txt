@@ -1,0 +1,38 @@
+//KTEW (MASON JEWETT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EYUZU LATLON N 42 33.951167 W 84 28.815334
+FIX LESSY LATLON N 42 26.221 W 84 33.0495
+FIX UJEXY LATLON N 42 33.908666 W 84 11.636666
+FIX WEXUS LATLON N 42 33.930334 W 84 18.402833
+FIX WULOM LATLON N 42 33.956167 W 84 38.7045
+FIX YIPUY LATLON N 42 33.954334 W 84 31.938167
+FIX ZEGUG LATLON N 42 33.939833 W 84 22.24
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX WULOM AT OR ABOVE 3000 FIX YIPUY 2400 FIX EYUZU AT OR ABOVE 1660 RNW 10 TRK 095 UNTIL 1300 FIX OVERFLY UJEXY AT OR ABOVE 3000 HOLD AT FIX UJEXY RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION WULOM HOLD AT FIX WULOM RIGHT TURN INBOUNDCOURSE 095 ALT 3000 LEGDIST 4
+APPROACH RNV28 FIX UJEXY AT OR ABOVE 3000 FIX WEXUS 2500 FIX ZEGUG AT OR ABOVE 1580 RNW 28 TRK 275 UNTIL 1300 FIX YIPUY FIX OVERFLY LESSY AT OR ABOVE 3000 HOLD AT FIX LESSY RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4
+ TRANSITION UJEXY HOLD AT FIX UJEXY RIGHT TURN INBOUNDCOURSE 275 ALT 3000 LEGDIST 4
+ENDAPPROACHES

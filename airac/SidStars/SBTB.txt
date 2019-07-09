@@ -1,0 +1,54 @@
+//SBTB (TROMBETAS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CABU LATLON S 1 43 W 56 0.66
+FIX FF09 LATLON S 1 31.408 W 56 28.399667
+FIX FF27 LATLON S 1 28.477166 W 56 18.872833
+FIX MNS LATLON S 3 2.401834 W 60 3.284333
+FIX MURA LATLON S 1 39.58 W 56 48.77
+FIX PTTNB LATLON S 1 29.183833 W 56 23.868167
+FIX RITA LATLON S 1 42.08 W 56 2.49
+FIX RUCO LATLON S 1 38.81 W 56 46.93
+FIX SOBID LATLON S 2 5.14 W 55 23.46
+FIX STM LATLON S 2 25.585166 W 54 49.053833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID CABU FIX SOBID
+ RNW 09 TRK 091 UNTIL 800 HDG 166 INTERCEPT RADIAL 139 TO FIX CABU FIX CABU
+ RNW 27 TRK 271 UNTIL 800 HDG 106 INTERCEPT RADIAL 139 TO FIX CABU FIX CABU
+SID MURA FIX MNS
+ RNW 09 TRK 091 UNTIL 800 HDG 233 INTERCEPT RADIAL 265 TO FIX MURA FIX MURA
+ RNW 27 TRK 271 UNTIL 800 HDG 293 INTERCEPT RADIAL 265 TO FIX MURA FIX MURA
+SID RITA FIX STM
+ RNW 09 TRK 091 UNTIL 700 HDG 166 INTERCEPT RADIAL 139 TO FIX RITA FIX RITA
+ RNW 27 TRK 271 UNTIL 700 HDG 106 INTERCEPT RADIAL 139 TO FIX RITA FIX RITA
+SID RUCO FIX MNS
+ RNW 09 TRK 091 UNTIL 700 TURN LEFT DIRECT FIX PTTNB FIX RUCO
+ RNW 27 TRK 271 UNTIL 700 FIX PTTNB FIX RUCO
+ENDSIDS
+
+APPROACHES
+APPROACH NDB09 FIX FF09 1800 RNW 09 FIX PTTNB TRK 078 UNTIL 2000
+APPROACH NDB27 FIX FF27 1800 RNW 27 FIX PTTNB TRK 276 UNTIL 2000
+ENDAPPROACHES

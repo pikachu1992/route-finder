@@ -1,0 +1,38 @@
+//CTN6 (TREHERNE SOUTH NORFOLK AIRPAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APGUG LATLON N 49 33.327334 W 98 39.954334
+FIX IPVEN LATLON N 49 37.223833 W 98 39.9335
+FIX LEPAN LATLON N 49 28.331833 W 98 39.981
+FIX MUXAP LATLON N 49 28.345 W 98 47.646833
+FIX NANBI LATLON N 49 23.336333 W 98 40.0075
+FIX OMTIM LATLON N 49 28.310333 W 98 32.315333
+FIX SEGAG LATLON N 49 31.845167 W 98 59.9025
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX LEPAN AT OR ABOVE 3600 FIX APGUG 2400 FIX IPVEN AT OR ABOVE 2100 RNW 35 TURN LEFT DIRECT FIX OVERFLY SEGAG 3300 HOLD AT FIX SEGAG RIGHT TURN INBOUNDCOURSE 234 LEGTIME 1
+ TRANSITION MUXAP FIX MUXAP
+ TRANSITION NANBI FIX NANBI
+ TRANSITION OMTIM FIX OMTIM
+ENDAPPROACHES

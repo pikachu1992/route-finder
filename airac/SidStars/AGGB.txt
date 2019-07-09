@@ -1,0 +1,45 @@
+//AGGB (BELLONA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GGBED LATLON S 11 21.832333 E 159 56.740667
+FIX GGBEE LATLON S 11 18.4505 E 159 56.0095
+FIX GGBEF LATLON S 11 19.480333 E 159 51.115166
+FIX GGBEH LATLON S 11 17.126167 E 159 45.491
+FIX GGBEI LATLON S 11 20.656667 E 159 53.927666
+FIX GGBEM LATLON S 11 18.3035 E 159 48.302833
+FIX GGBWB LATLON S 11 14.414666 E 159 39.0265
+FIX GGBWC LATLON S 11 12.5825 E 159 41.9975
+FIX GGBWF LATLON S 11 16.770833 E 159 44.649
+FIX GGBWH LATLON S 11 19.125167 E 159 50.272834
+FIX GGBWI LATLON S 11 15.593 E 159 41.8375
+FIX GGBWM LATLON S 11 17.948333 E 159 47.460667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH GPS11 FIX GGBWI AT OR ABOVE 1700 FIX GGBWF 1130 FIX GGBWM 176 RNW 11 TRK 104 UNTIL 540 FIX OVERFLY GGBWH TRK 300 UNTIL 1700
+ TRANSITION GGBWB FIX GGBWB AT OR ABOVE 1700 SPEED 180
+ TRANSITION GGBWC FIX GGBWC AT OR ABOVE 1700 SPEED 180
+APPROACH GPS29 FIX GGBEI AT OR ABOVE 1700 FIX GGBEF 1125 FIX GGBEM 171 RNW 29 TRK 284 UNTIL 540 FIX OVERFLY GGBEH TRK 085 UNTIL 1700
+ TRANSITION GGBED FIX GGBED AT OR ABOVE 1700 SPEED 180
+ TRANSITION GGBEE FIX GGBEE AT OR ABOVE 1700 SPEED 180
+ENDAPPROACHES

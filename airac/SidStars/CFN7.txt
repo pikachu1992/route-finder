@@ -1,0 +1,47 @@
+//CFN7 (SUNDRE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IGSOV LATLON N 51 59.122166 W 114 38.002
+FIX IGTOD LATLON N 51 33.576833 W 114 45.141
+FIX IGTUG LATLON N 51 48.289166 W 114 41.632834
+FIX KANIV LATLON N 51 50.938166 W 114 42.971333
+FIX KAVDI LATLON N 51 55.870834 W 114 54.648
+FIX KAVNU LATLON N 51 37.445 W 114 25.242667
+FIX LEPAG LATLON N 51 57.501334 W 114 46.33
+FIX LEPEX LATLON N 51 35.518 W 114 35.198833
+FIX MASOD LATLON N 51 51.787333 W 114 43.4125
+FIX MAVOV LATLON N 51 41.237666 W 114 38.071
+FIX SAXID LATLON N 51 42.001333 W 114 38.446166
+FIX SEBAR LATLON N 51 44.172167 W 114 39.5495
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 15
+RNW 24
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA15 FIX LEPAG AT OR ABOVE 7000 SPEED 200 FIX MASOD 4800 FIX IGTUG AT OR ABOVE 4440 RNW 15 FIX OVERFLY SAXID SPEED 210 HOLD AT FIX SAXID LEFT TURN INBOUNDCOURSE 147 ALT 9700 SPEED 175 LEGTIME 1
+ TRANSITION IGSOV FIX IGSOV SPEED 200
+ TRANSITION KAVDI FIX KAVDI SPEED 200
+APPROACH RNV33 FIX LEPEX AT OR ABOVE 6500 SPEED 200 FIX MAVOV 4900 FIX SEBAR AT OR ABOVE 4500 RNW 33 FIX OVERFLY KANIV SPEED 210 HOLD AT FIX KANIV RIGHT TURN INBOUNDCOURSE 327 ALT 9700 SPEED 175 LEGTIME 1
+ TRANSITION IGTOD FIX IGTOD SPEED 200
+ TRANSITION KAVNU FIX KAVNU SPEED 200
+ENDAPPROACHES

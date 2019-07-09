@@ -1,0 +1,42 @@
+//KGNG (GOODING MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALKAL LATLON N 43 0.9725 W 115 19.687667
+FIX FEVDO LATLON N 42 53.814667 W 115 2.005
+FIX GOODE LATLON N 42 50.379667 W 114 44.986667
+FIX JEGAP LATLON N 42 54.458833 W 114 53.5395
+FIX JEROT LATLON N 42 45.061166 W 114 26.656834
+FIX KINZE LATLON N 43 4.863334 W 114 23.3205
+FIX MEVLE LATLON N 42 55.572 W 114 38.554
+FIX SOCDO LATLON N 42 51.993334 W 114 52.952666
+FIX WABNU LATLON N 42 56.186666 W 114 30.076333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX FEVDO AT OR ABOVE 5900 FIX JEGAP 5400 RNW 07 FIX MEVLE FIX OVERFLY KINZE AT OR ABOVE 7200 HOLD AT FIX KINZE RIGHT TURN INBOUNDCOURSE 171 LEGDIST 7
+ TRANSITION ALKAL FIX ALKAL
+ TRANSITION GOODE FIX GOODE FIX SOCDO AT OR ABOVE 6500 FIX OVERFLY FEVDO AT OR ABOVE 5900 HOLD AT FIX FEVDO RIGHT TURN INBOUNDCOURSE 068 ALT 5900 LEGDIST 5
+APPROACH RNV25 FIX WABNU AT OR ABOVE 6300 FIX MEVLE 5400 RNW 25 FIX OVERFLY FEVDO AT OR ABOVE 5900 HOLD AT FIX FEVDO RIGHT TURN INBOUNDCOURSE 068 LEGDIST 5
+ TRANSITION JEROT FIX JEROT
+ TRANSITION KINZE FIX KINZE
+ENDAPPROACHES

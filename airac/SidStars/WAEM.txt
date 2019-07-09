@@ -1,0 +1,32 @@
+//WAEM (BULI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EM401 LATLON N 0 53.006167 E 128 32.915666
+FIX EM402 LATLON N 0 56.945833 E 128 32.122834
+FIX EM403 LATLON N 0 56.147833 E 128 28.209
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV25 FIX EM402 AT OR ABOVE 2500 FIX EM403 1700 RNW 25 TURN LEFT DIRECT FIX EM401 3000 HOLD AT FIX EM401 RIGHT TURN INBOUNDCOURSE 348 ALT 3000 LEGTIME 1
+ TRANSITION EM401 FIX EM401 AT OR ABOVE 3000
+ENDAPPROACHES

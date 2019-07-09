@@ -1,0 +1,44 @@
+//KWLW (WILLOWS-GLENN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DALON LATLON N 39 4.127333 W 122 15.983167
+FIX ILA LATLON N 39 4.2705 W 122 1.636166
+FIX PAPAY LATLON N 39 24.888833 W 122 12.936667
+FIX UVXUZ LATLON N 39 30.124166 W 122 13.148833
+FIX WETEM LATLON N 39 25.1265 W 122 10.912166
+FIX WIMUL LATLON N 39 18.8335 W 122 12.692
+FIX WUNIP LATLON N 39 18.780833 W 122 8.079167
+FIX YACUG LATLON N 39 28.617334 W 122 13.087667
+FIX ZOKOP LATLON N 39 45.921 W 122 13.801333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 16
+RNW 31
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM34 FIX WUNIP AT OR ABOVE 3000 FIX WETEM 2000 FIX UVXUZ 317 RNW 34 TRK 323 UNTIL 550 HDG 200 INTERCEPT RADIAL 143 TO FIX WUNIP FIX WUNIP AT OR ABOVE 3000 HOLD AT FIX WUNIP RIGHT TURN INBOUNDCOURSE 323 LEGTIME 1
+ TRANSITION ILA FIX ILA
+APPROACH RNV34 FIX WIMUL AT OR ABOVE 2900 FIX PAPAY 2000 FIX YACUG AT OR ABOVE 800 RNW 34 TRK 344 UNTIL 460 FIX OVERFLY ZOKOP AT OR ABOVE 3000 HOLD AT FIX ZOKOP RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4
+ TRANSITION DALON FIX DALON
+ TRANSITION ILA FIX ILA
+ TRANSITION WIMUL HOLD AT FIX WIMUL RIGHT TURN INBOUNDCOURSE 315 ALT 2900 LEGDIST 4
+ENDAPPROACHES

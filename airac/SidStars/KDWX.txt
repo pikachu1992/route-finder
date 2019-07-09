@@ -1,0 +1,51 @@
+//KDWX (DIXON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEDNO LATLON N 41 23.558333 W 107 39.332167
+FIX DAKDE LATLON N 41 21.947833 W 107 25.069
+FIX DYNES LATLON N 41 2.572 W 107 43.7355
+FIX EPIKY LATLON N 41 17.330833 W 107 19.1505
+FIX FABGA LATLON N 41 11.688667 W 107 18.515
+FIX GONEF LATLON N 41 9.083833 W 107 19.955
+FIX HIBNU LATLON N 41 6.478834 W 107 21.393
+FIX ILEUS LATLON N 41 4.754833 W 107 24.349
+FIX JULAB LATLON N 41 2.676167 W 107 27.907
+FIX KHEDA LATLON N 41 3.682834 W 107 43.302334
+FIX NEDAE LATLON N 41 17.265667 W 107 40.729333
+FIX UCIGA LATLON N 41 15.784667 W 107 28.149334
+FIX VOGIE LATLON N 41 13.790666 W 107 19.7635
+FIX WIBSO LATLON N 41 7.967167 W 107 19.126667
+FIX YEGUS LATLON N 41 4.034833 W 107 24.101333
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+SIDS
+SID CRBN1
+ RNW 06 HDG 062 UNTIL 6973 FIX YEGUS FIX WIBSO FIX VOGIE FIX UCIGA FIX NEDAE
+SID DIXON1
+ RNW 24 HDG 242 UNTIL 7049 FIX DYNES
+ENDSIDS
+
+APPROACHES
+APPROACH RNV24 FIX FABGA AT OR ABOVE 9900 FIX GONEF AT OR ABOVE 9700 FIX HIBNU 9000 FIX ILEUS AT OR ABOVE 8000 FIX OVERFLY JULAB 6837 RNW 24 TRK 223 UNTIL 6949 FIX OVERFLY KHEDA AT OR ABOVE 9500 HOLD AT FIX KHEDA RIGHT TURN INBOUNDCOURSE 180 LEGDIST 7
+ TRANSITION CEDNO FIX CEDNO FIX DAKDE AT OR ABOVE 10000 FIX EPIKY AT OR ABOVE 9900
+ENDAPPROACHES

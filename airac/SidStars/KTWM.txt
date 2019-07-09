@@ -1,0 +1,43 @@
+//KTWM (HELGESON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANATE LATLON N 47 5.496833 W 91 37.782833
+FIX FOSUP LATLON N 47 2.687167 W 92 6.932833
+FIX GIBEY LATLON N 47 0.074833 W 91 52.8455
+FIX SUZLI LATLON N 47 18.202834 W 91 16.7605
+FIX TARUE LATLON N 46 57.2605 W 92 0.608167
+FIX WARIL LATLON N 47 8.374333 W 91 29.730833
+FIX WIPAD LATLON N 47 4.013167 W 91 41.918833
+FIX WIZNU LATLON N 47 1.673333 W 91 48.419333
+FIX ZENKU LATLON N 46 59.376 W 91 54.776167
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 15
+RNW 24
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX TARUE AT OR ABOVE 3100 FIX ZENKU AT OR ABOVE 3100 FIX GIBEY 3000 FIX WIZNU AT OR ABOVE 1900 RNW 06 TRK 061 UNTIL 1420 FIX OVERFLY WARIL AT OR ABOVE 3000 HOLD AT FIX WARIL RIGHT TURN INBOUNDCOURSE 241 LEGDIST 4
+ TRANSITION FOSUP FIX FOSUP
+APPROACH RNV24 FIX WARIL AT OR ABOVE 3000 FIX ANATE 2700 FIX WIPAD AT OR ABOVE 1680 RNW 24 TRK 241 UNTIL 1320 FIX GIBEY FIX OVERFLY FOSUP AT OR ABOVE 3600 HOLD AT FIX FOSUP RIGHT TURN INBOUNDCOURSE 189 LEGDIST 4
+ TRANSITION SUZLI FIX SUZLI
+ TRANSITION WARIL HOLD AT FIX WARIL RIGHT TURN INBOUNDCOURSE 241 ALT 3000 LEGDIST 4
+ENDAPPROACHES

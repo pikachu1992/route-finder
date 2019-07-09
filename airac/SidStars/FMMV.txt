@@ -1,0 +1,35 @@
+//FMMV (MORONDAVA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EN10 LATLON S 20 17.253334 E 44 18.884167
+FIX FN10 LATLON S 20 17.0395 E 44 12.453833
+FIX FN28 LATLON S 20 16.314667 E 44 26.128667
+FIX VSONB LATLON S 20 17.258333 E 44 19.031666
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB10 FIX FN10 2000 FIX OVERFLY EN10 74 FIX OVERFLY VSONB AT OR ABOVE 430 RNW 10 TRK 108 UNTIL 800 TURN LEFT DIRECT FIX VSONB 3000
+ TRANSITION VSO FIX VSONB AT OR ABOVE 3000 TRK 317 UNTIL 7.0 FROM FIX VSONB
+APPROACH NDB28 FIX FN28 2000 RNW 28 FIX OVERFLY VSONB TRK 278 UNTIL 800 TURN LEFT DIRECT FIX VSONB 3000
+ TRANSITION VSO FIX VSONB AT OR ABOVE 3000 TRK 127 UNTIL 7.0 FROM FIX VSONB
+ENDAPPROACHES

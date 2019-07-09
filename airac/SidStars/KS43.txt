@@ -1,0 +1,36 @@
+//KS43 (HARVEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEDBE LATLON N 47 49.285667 W 122 4.151
+FIX HAVHO LATLON N 47 40.636166 W 122 5.689333
+FIX PAE LATLON N 47 55.19 W 122 16.668
+FIX USUXY LATLON N 47 57.01 W 122 7.218334
+FIX WATON LATLON N 48 4.563334 W 122 9.236666
+ENDFIXES
+
+RNWS
+RNW 15L
+RNW 15R
+RNW 33L
+RNW 33R
+ENDRNWS
+
+APPROACHES
+APPROACH RNV33RA FIX HAVHO AT OR ABOVE 3100 FIX DEDBE 2000 RNW 33R FIX USUXY FIX OVERFLY WATON AT OR ABOVE 2000 HOLD AT FIX WATON LEFT TURN INBOUNDCOURSE 342 LEGDIST 4
+ TRANSITION PAE FIX PAE FIX HAVHO AT OR ABOVE 3100 HOLD AT FIX HAVHO RIGHT TURN INBOUNDCOURSE 350 ALT 3100 LEGDIST 4
+ENDAPPROACHES

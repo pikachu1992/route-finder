@@ -1,0 +1,32 @@
+//FKKL (MAROUA-SALAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN31 LATLON N 10 23.213833 E 14 20.084666
+FIX TJLNB LATLON N 10 27.735 E 14 14.643334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDB31 FIX FN31 3600 RNW 31 FIX OVERFLY TJLNB TRK 295 UNTIL 3600 HDG 295 VECTORS
+ TRANSITION TJL1 FIX TJLNB AT OR ABOVE 4500 TRK 150 UNTIL 8.8 FROM FIX TJLNB
+ TRANSITION TJL2 FIX TJLNB AT OR ABOVE 4500 TRK 141 UNTIL 7.0 FROM FIX TJLNB
+ENDAPPROACHES

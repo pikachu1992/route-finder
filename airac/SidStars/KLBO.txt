@@ -1,0 +1,43 @@
+//KLBO (JONES LEBANON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EXDUW LATLON N 37 27.814 W 92 45.843833
+FIX KUPIW LATLON N 37 34.3225 W 92 39.3175
+FIX PYLER LATLON N 37 27.667333 W 92 39.5665
+FIX RUXJY LATLON N 37 27.515167 W 92 33.2895
+FIX TIHCY LATLON N 37 49.166333 W 92 32.4465
+FIX ULIKY LATLON N 37 43.518 W 92 38.972333
+FIX UTMIH LATLON N 37 49.465 W 92 45.061667
+FIX WIKGI LATLON N 37 49.3185 W 92 38.753833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX WIKGI AT OR ABOVE 3500 FIX ULIKY 2700 RNW 18 TRK 179 UNTIL 1721 FIX KUPIW AT OR ABOVE 3500 HOLD AT FIX KUPIW RIGHT TURN INBOUNDCOURSE 179 LEGDIST 4
+ TRANSITION TIHCY FIX TIHCY AT OR ABOVE 3500
+ TRANSITION UTMIH FIX UTMIH AT OR ABOVE 3500
+ TRANSITION WIKGI HOLD AT FIX WIKGI RIGHT TURN INBOUNDCOURSE 179 ALT 3500 LEGDIST 4
+APPROACH RNV36 FIX PYLER AT OR ABOVE 3500 FIX KUPIW 2700 RNW 36 TRK 359 UNTIL 1721 FIX ULIKY AT OR ABOVE 3500 HOLD AT FIX ULIKY LEFT TURN INBOUNDCOURSE 359 LEGDIST 4
+ TRANSITION EXDUW FIX EXDUW AT OR ABOVE 3500
+ TRANSITION PYLER HOLD AT FIX PYLER LEFT TURN INBOUNDCOURSE 359 ALT 3500 LEGDIST 4
+ TRANSITION RUXJY FIX RUXJY AT OR ABOVE 3500
+ENDAPPROACHES

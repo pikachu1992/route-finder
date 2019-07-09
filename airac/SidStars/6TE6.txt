@@ -1,0 +1,38 @@
+//6TE6 (6666 RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASOTE LATLON N 33 33.259834 W 100 22.67
+FIX BISNE LATLON N 33 43.658666 W 100 19.048667
+FIX FILED LATLON N 33 35.585 W 100 21.861334
+FIX GTH LATLON N 33 46.696667 W 100 20.171833
+FIX PUTTI LATLON N 33 48.467333 W 100 17.369
+FIX QUAKE LATLON N 33 28.449833 W 100 24.34
+FIX SALRE LATLON N 33 41.2015 W 100 19.905667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA01 FIX QUAKE AT OR ABOVE 4000 FIX ASOTE 3400 FIX FILED AT OR ABOVE 2620 RNW 01 TRK 010 UNTIL 2177 FIX OVERFLY PUTTI AT OR ABOVE 4000 HOLD AT FIX PUTTI RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4
+ TRANSITION GTH FIX GTH FIX OVERFLY QUAKE AT OR ABOVE 4000 HOLD AT FIX QUAKE RIGHT TURN INBOUNDCOURSE 010 ALT 4000 LEGDIST 4
+APPROACH RNVB19 FIX PUTTI AT OR ABOVE 4000 FIX BISNE 3400 FIX SALRE AT OR ABOVE 2580 RNW 19 TRK 190 UNTIL 2500 FIX OVERFLY QUAKE AT OR ABOVE 4000 HOLD AT FIX QUAKE RIGHT TURN INBOUNDCOURSE 010 LEGDIST 4
+ TRANSITION GTH FIX GTH FIX OVERFLY PUTTI AT OR ABOVE 4000 HOLD AT FIX PUTTI RIGHT TURN INBOUNDCOURSE 190 ALT 4000 LEGDIST 4
+ENDAPPROACHES

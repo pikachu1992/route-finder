@@ -1,0 +1,37 @@
+//K02G (COLUMBIANA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUTTA LATLON N 40 52.575167 W 80 38.594167
+FIX EWC LATLON N 40 49.496 W 80 12.692666
+FIX FEYPU LATLON N 40 45.929167 W 80 25.5405
+FIX ITUHU LATLON N 40 42.971333 W 80 32.475667
+FIX TWICE LATLON N 40 42.657667 W 80 32.1825
+FIX VEKTE LATLON N 40 50.294 W 80 28.758334
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV25 FIX FEYPU AT OR ABOVE 3000 FIX ITUHU 2800 RNW 25 TRK 249 UNTIL 1560 TURN RIGHT DIRECT FIX OVERFLY CUTTA AT OR ABOVE 3000 HOLD AT FIX CUTTA RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4
+ TRANSITION CUTTA FIX CUTTA FIX VEKTE AT OR ABOVE 3000
+ TRANSITION EWC FIX EWC
+APPROACH VOR25 FIX EWC AT OR ABOVE 3000 FIX TWICE 2800 RNW 25 TRK 253 UNTIL 2500 TURN RIGHT DIRECT FIX EWC AT OR ABOVE 3000 HOLD AT FIX EWC RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1
+ENDAPPROACHES

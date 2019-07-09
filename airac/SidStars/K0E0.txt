@@ -1,0 +1,44 @@
+//K0E0 (MORIARTY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CYOTE LATLON N 34 57.594833 W 106 22.746667
+FIX MEKUE LATLON N 34 55.489834 W 105 37.592
+FIX ORNEE LATLON N 34 58.940333 W 106 9.310667
+FIX OTO LATLON N 35 4.336166 W 105 56.164834
+FIX PIETA LATLON N 34 58.901833 W 105 46.669
+FIX RIDSE LATLON N 34 58.942 W 106 15.970166
+FIX SALGE LATLON N 35 4.9795 W 105 40.117
+FIX SOWAR LATLON N 34 58.919666 W 105 52.371833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX RIDSE AT OR ABOVE 9700 FIX ORNEE 8400 RNW 08 TRK 079 UNTIL 6454 FIX OVERFLY PIETA AT OR ABOVE 8700 HOLD AT FIX PIETA RIGHT TURN INBOUNDCOURSE 259 LEGDIST 7
+ TRANSITION CYOTE FIX CYOTE
+ TRANSITION RIDSE HOLD AT FIX RIDSE RIGHT TURN INBOUNDCOURSE 079 ALT 9700 LEGDIST 6
+APPROACH RNV26 FIX PIETA AT OR ABOVE 8900 FIX SOWAR 8100 RNW 26 TRK 259 UNTIL 6443 FIX OVERFLY RIDSE AT OR ABOVE 9700 HOLD AT FIX RIDSE RIGHT TURN INBOUNDCOURSE 079 ALT 9700 LEGDIST 6
+ TRANSITION MEKUE FIX MEKUE
+ TRANSITION OTO FIX OTO FIX OVERFLY PIETA AT OR ABOVE 8900 HOLD AT FIX PIETA RIGHT TURN INBOUNDCOURSE 259 ALT 8900 LEGDIST 7
+ TRANSITION SALGE FIX SALGE
+ENDAPPROACHES

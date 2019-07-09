@@ -1,0 +1,38 @@
+//KCHU (HOUSTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AUTOS LATLON N 43 40.7945 W 91 29.738333
+FIX CF184 LATLON N 43 44.779667 W 91 29.259334
+FIX FALAR LATLON N 43 34.434 W 91 30.305333
+FIX MAFYE LATLON N 43 35.971834 W 91 30.316667
+FIX ODI LATLON N 43 54.739667 W 91 28.051
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA13 FIX CF184 AT OR ABOVE 2800 FIX AUTOS 2800 FIX MAFYE 1820 RNW 13 TRK 184 UNTIL 2800 TURN LEFT DIRECT FIX AUTOS HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 LEGTIME 1
+ TRANSITION FALAR FIX FALAR FIX AUTOS AT OR ABOVE 2800 HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 ALT 2800 LEGTIME 1
+ TRANSITION ODI FIX ODI FIX AUTOS AT OR ABOVE 2800 HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 ALT 2800 LEGTIME 1
+APPROACH VDMA31 FIX CF184 AT OR ABOVE 2800 FIX AUTOS 2800 FIX MAFYE 1820 RNW 31 TRK 184 UNTIL 2800 TURN LEFT DIRECT FIX AUTOS HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 LEGTIME 1
+ TRANSITION FALAR FIX FALAR FIX AUTOS AT OR ABOVE 2800 HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 ALT 2800 LEGTIME 1
+ TRANSITION ODI FIX ODI FIX AUTOS AT OR ABOVE 2800 HOLD AT FIX AUTOS RIGHT TURN INBOUNDCOURSE 184 ALT 2800 LEGTIME 1
+ENDAPPROACHES

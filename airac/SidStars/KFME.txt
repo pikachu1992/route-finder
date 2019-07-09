@@ -1,0 +1,41 @@
+//KFME (TIPTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEVGE LATLON N 39 4.669166 W 76 37.307333
+FIX CUTOP LATLON N 39 10.086167 W 76 58.2745
+FIX FATEN LATLON N 39 4.967666 W 76 42.822167
+FIX FATIR LATLON N 39 6.1525 W 76 51.501833
+FIX GEEMO LATLON N 39 2.984333 W 76 30.588833
+FIX HORTU LATLON N 39 4.672834 W 76 44.0325
+FIX PALEO LATLON N 39 1.679666 W 76 22.3635
+FIX POGKI LATLON N 39 5.165666 W 76 46.521833
+FIX WOOLY LATLON N 39 20.319667 W 77 2.186167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX CUTOP AT OR ABOVE 2100 FIX FATIR 1600 FIX OVERFLY POGKI 313 RNW 10 TRK 114 UNTIL 550 FIX HORTU FIX OVERFLY GEEMO AT OR ABOVE 2200 HOLD AT FIX GEEMO LEFT TURN INBOUNDCOURSE 297 LEGDIST 4
+ TRANSITION WOOLY FIX WOOLY
+APPROACH RNV28 FIX GEEMO AT OR ABOVE 2200 FIX BEVGE 2200 FIX FATEN AT OR ABOVE 800 RNW 28 TRK 284 UNTIL 550 TURN LEFT DIRECT FIX OVERFLY GEEMO AT OR ABOVE 2200 HOLD AT FIX GEEMO LEFT TURN INBOUNDCOURSE 298 LEGDIST 4
+ TRANSITION GEEMO HOLD AT FIX GEEMO LEFT TURN INBOUNDCOURSE 298 ALT 2200 LEGDIST 4
+ TRANSITION PALEO FIX PALEO
+ENDAPPROACHES

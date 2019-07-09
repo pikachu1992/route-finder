@@ -1,0 +1,45 @@
+//KPSX (PALACIOS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIGER LATLON N 28 45.052834 W 96 16.804
+FIX GUDFY LATLON N 28 47.5235 W 96 19.590667
+FIX LOLIT LATLON N 28 52.487666 W 96 27.9955
+FIX NAPTE LATLON N 28 53.208833 W 96 26.016
+FIX PI001 LATLON N 28 47.771048 W 96 21.720391
+FIX PI002 LATLON N 28 46.875614 W 96 26.519258
+FIX PI003 LATLON N 28 51.306264 W 96 27.946414
+FIX PSX LATLON N 28 45.8655 W 96 18.370834
+FIX VCT LATLON N 28 54.019166 W 96 58.736
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 13
+RNW 18
+RNW 26
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX NAPTE AT OR ABOVE 2100 FIX GUDFY 1700 FIX FIGER AT OR ABOVE 580 RNW 13 TRK 132 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY NAPTE AT OR ABOVE 2100 HOLD AT FIX NAPTE RIGHT TURN INBOUNDCOURSE 132 LEGDIST 4
+ TRANSITION NAPTE HOLD AT FIX NAPTE RIGHT TURN INBOUNDCOURSE 132 ALT 2100 LEGDIST 4
+APPROACH VOR13 FIX PSX 1100 RNW 13 TRK 120 UNTIL 415 TURN RIGHT DIRECT FIX PSX AT OR ABOVE 2000 HOLD AT FIX PSX RIGHT TURN INBOUNDCOURSE 120 LEGTIME 1
+ TRANSITION PSX FIX PI001 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2000 SPEED 210 FIX PI003 AT OR ABOVE 2000 SPEED 210
+ TRANSITION VCT FIX VCT FIX LOLIT AT OR ABOVE 2000
+ENDAPPROACHES

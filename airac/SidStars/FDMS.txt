@@ -1,0 +1,36 @@
+//FDMS (MATSAPHA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI07 LATLON S 26 38.074667 E 31 9.068666
+FIX MM07 LATLON S 26 32.566667 E 31 17.2
+FIX MSNB LATLON S 26 30.6295 E 31 20.061
+FIX MWNB LATLON S 26 37.464833 E 31 9.955834
+FIX OMNB LATLON S 26 34.459166 E 31 14.4
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH ILS07 FIX CI07 AT OR ABOVE 5300 FIX MWNB 5300 RNW 07 TRK 073 UNTIL 3100 TURN RIGHT DIRECT FIX MWNB 6000 HOLD AT FIX MWNB RIGHT TURN INBOUNDCOURSE 073 LEGTIME 1
+ TRANSITION MW HOLD AT FIX MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1
+APPROACH NDB07 FIX MWNB AT OR ABOVE 5300 FIX OMNB 3500 FIX MM07 2351 RNW 07 FIX OVERFLY MSNB TURN RIGHT DIRECT FIX MWNB 6000 HOLD AT FIX MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1
+ TRANSITION MW HOLD AT FIX MWNB RIGHT TURN INBOUNDCOURSE 073 ALT 6000 LEGTIME 1
+ENDAPPROACHES

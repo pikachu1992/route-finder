@@ -1,0 +1,35 @@
+//KM20 (LEITCHFIELD-GRAYSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COPIK LATLON N 37 18.800333 W 86 17.857166
+FIX HUPDI LATLON N 37 34.654 W 86 11.170333
+FIX REBBE LATLON N 37 13.104667 W 86 20.247334
+FIX ZEBUG LATLON N 37 28.960834 W 86 13.5775
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX REBBE AT OR ABOVE 4000 FIX COPIK 2400 RNW 02 TRK 023 UNTIL 1140 FIX OVERFLY HUPDI AT OR ABOVE 4000 HOLD AT FIX HUPDI RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4
+ TRANSITION REBBE HOLD AT FIX REBBE RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGDIST 4
+APPROACH RNV20 FIX HUPDI AT OR ABOVE 4000 FIX ZEBUG 2400 RNW 20 TRK 203 UNTIL 1088 FIX OVERFLY REBBE AT OR ABOVE 4000 HOLD AT FIX REBBE RIGHT TURN INBOUNDCOURSE 023 ALT 4000 LEGDIST 4
+ TRANSITION HUPDI HOLD AT FIX HUPDI RIGHT TURN INBOUNDCOURSE 203 ALT 4000 LEGDIST 4
+ENDAPPROACHES

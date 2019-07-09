@@ -1,0 +1,40 @@
+//KW63 (LAKE COUNTRY REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALDAN LATLON N 36 23.876 W 78 56.047667
+FIX DIVTY LATLON N 36 25.66 W 78 40.161167
+FIX HARVY LATLON N 36 44.77 W 78 28.316333
+FIX HUDGI LATLON N 36 40.318 W 78 30.6275
+FIX KARBY LATLON N 36 30.9815 W 78 36.7075
+FIX WUMVA LATLON N 36 18.2765 W 78 47.151167
+FIX YITUP LATLON N 36 17.865334 W 78 37.960834
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA04 FIX DIVTY AT OR ABOVE 3000 FIX KARBY 2000 RNW 04 TRK 036 UNTIL 819 FIX OVERFLY HARVY AT OR ABOVE 3000 HOLD AT FIX HARVY RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4
+ TRANSITION ALDAN FIX ALDAN
+ TRANSITION WUMVA FIX WUMVA
+ TRANSITION YITUP FIX YITUP
+APPROACH RNVB22 FIX HARVY AT OR ABOVE 3000 FIX HUDGI 2000 RNW 22 TRK 216 UNTIL 819 TURN LEFT DIRECT FIX OVERFLY HARVY AT OR ABOVE 3000 HOLD AT FIX HARVY LEFT TURN INBOUNDCOURSE 269 LEGDIST 4
+ TRANSITION HARVY HOLD AT FIX HARVY LEFT TURN INBOUNDCOURSE 269 ALT 3000 LEGDIST 4
+ENDAPPROACHES

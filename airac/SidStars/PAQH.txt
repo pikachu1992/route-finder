@@ -1,0 +1,44 @@
+//PAQH (QUINHAGAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVNAC LATLON N 59 50.095 W 162 18.051167
+FIX BATTU LATLON N 59 58.889833 W 162 1.261667
+FIX BEVNE LATLON N 59 26.991 W 161 30.821666
+FIX CUTEB LATLON N 59 32.895667 W 161 25.5555
+FIX HOTKU LATLON N 59 52.961666 W 162 6.4905
+FIX JOSAD LATLON N 59 48.850667 W 161 58.000333
+FIX OLATE LATLON N 59 43.202833 W 161 46.424167
+FIX VIVUC LATLON N 59 38.2695 W 161 36.395
+FIX ZALIB LATLON N 59 35.6855 W 161 14.02
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX HOTKU AT OR ABOVE 2500 FIX JOSAD 1600 RNW 12 TRK 123 UNTIL 292 FIX OVERFLY CUTEB AT OR ABOVE 5200 HOLD AT FIX CUTEB RIGHT TURN INBOUNDCOURSE 303 ALT 5200 LEGDIST 5
+ TRANSITION AVNAC FIX AVNAC
+ TRANSITION BATTU FIX BATTU
+ TRANSITION HOTKU HOLD AT FIX HOTKU RIGHT TURN INBOUNDCOURSE 123 ALT 2500 LEGDIST 4
+APPROACH RNV30 FIX CUTEB AT OR ABOVE 5200 FIX VIVUC 3300 FIX OLATE AT OR ABOVE 960 RNW 30 TRK 303 UNTIL 292 FIX OVERFLY HOTKU AT OR ABOVE 2500 HOLD AT FIX HOTKU RIGHT TURN INBOUNDCOURSE 123 LEGDIST 4
+ TRANSITION BEVNE FIX BEVNE
+ TRANSITION CUTEB HOLD AT FIX CUTEB RIGHT TURN INBOUNDCOURSE 303 ALT 5200 LEGDIST 5
+ TRANSITION ZALIB FIX ZALIB
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//NZPN (PICTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVPOD LATLON S 41 19.212667 E 174 20.426833
+FIX IGMUL LATLON S 41 26.822833 E 174 22.7585
+FIX IPMIR LATLON S 41 16.295333 E 174 14.089166
+FIX SEDSI LATLON S 41 23.608333 E 174 6.9975
+FIX VASLU LATLON S 41 26.215667 E 174 3.187
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID SEDS2R RNW 18 RNW 36 FIX VASLU AT OR ABOVE 1200 FIX SEDSI
+  TRANSITION AVPOD FIX AVPOD
+  TRANSITION IGMUL FIX IGMUL
+  TRANSITION IPMIR FIX IPMIR AT OR BELOW 6000
+ENDSIDS

@@ -1,0 +1,32 @@
+//OIKP (HAVADARYA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BND LATLON N 27 11.823334 E 56 22.005
+FIX FD26 LATLON N 27 10.779 E 56 16.520666
+FIX MD26 LATLON N 27 10.2345 E 56 13.669667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VDM26 FIX FD26 1500 FIX MD26 818 RNW 26 HDG 180 UNTIL 1500 TRK 070 INTERCEPT RADIAL 040 TO FIX BND FIX BND 3000 HOLD AT FIX BND LEFT TURN INBOUNDCOURSE 256 SPEED 230 LEGTIME 1
+ TRANSITION BND FIX BND AT OR ABOVE 3000
+ENDAPPROACHES

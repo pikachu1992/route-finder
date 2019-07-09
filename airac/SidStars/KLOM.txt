@@ -1,0 +1,45 @@
+//KLOM (WINGS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARD LATLON N 40 15.2005 W 74 54.456667
+FIX HOMWE LATLON N 40 14.976833 W 75 4.206334
+FIX JEKEP LATLON N 40 9.458 W 75 13.817333
+FIX LASBE LATLON N 40 3.608833 W 75 32.2275
+FIX MAZIE LATLON N 40 19.325833 W 75 6.588
+FIX MXE LATLON N 39 55.083 W 75 40.249333
+FIX PHILA LATLON N 40 1.409167 W 75 27.749666
+FIX PLAYS LATLON N 40 5.040334 W 75 21.477
+FIX PTW LATLON N 40 13.333834 W 75 33.615
+FIX YUWSO LATLON N 40 11.343667 W 75 10.539167
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX PHILA AT OR ABOVE 2200 FIX PLAYS 2000 RNW 06 FIX OVERFLY HOMWE AT OR ABOVE 2000 HOLD AT FIX HOMWE RIGHT TURN INBOUNDCOURSE 245 LEGDIST 4
+ TRANSITION MXE FIX MXE
+ TRANSITION PHILA HOLD AT FIX PHILA RIGHT TURN INBOUNDCOURSE 065 ALT 2200 LEGDIST 4
+ TRANSITION PTW FIX PTW FIX LASBE AT OR ABOVE 2200
+APPROACH RNV24 FIX HOMWE AT OR ABOVE 2000 FIX YUWSO 1900 FIX JEKEP AT OR ABOVE 880 RNW 24 FIX OVERFLY PHILA AT OR ABOVE 2200 HOLD AT FIX PHILA RIGHT TURN INBOUNDCOURSE 065 LEGDIST 4
+ TRANSITION ARD FIX ARD
+ TRANSITION HOMWE HOLD AT FIX HOMWE RIGHT TURN INBOUNDCOURSE 245 ALT 2000 LEGDIST 4
+ TRANSITION MAZIE FIX MAZIE
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//WAEW (LEO WATTIMENA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EW401 LATLON N 2 2.5315 E 128 9.844
+FIX EW402 LATLON N 2 2.628334 E 128 13.838167
+FIX EW403 LATLON N 2 2.8215 E 128 21.8275
+FIX EW501 LATLON N 2 2.997167 E 128 29.112667
+FIX EW502 LATLON N 2 2.900833 E 128 25.118333
+FIX EW503 LATLON N 2 2.708 E 128 17.129
+FIX MOROT LATLON N 2 2.434667 E 128 5.849833
+FIX ROTAI LATLON N 2 3.093167 E 128 33.107
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX EW401 AT OR ABOVE 2500 FIX EW402 1700 RNW 09 FIX OVERFLY EW403 TURN RIGHT DIRECT FIX MOROT 3800 HOLD AT FIX MOROT LEFT TURN INBOUNDCOURSE 088 ALT 3800 LEGTIME 1
+ TRANSITION MOROT FIX MOROT AT OR ABOVE 3800
+APPROACH RNV27 FIX EW501 AT OR ABOVE 2500 FIX EW502 1750 RNW 27 FIX OVERFLY EW503 TURN LEFT DIRECT FIX ROTAI 3500 HOLD AT FIX ROTAI LEFT TURN INBOUNDCOURSE 268 ALT 3500 LEGTIME 1
+ TRANSITION ROTAI FIX ROTAI AT OR ABOVE 3500
+ENDAPPROACHES

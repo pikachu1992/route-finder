@@ -1,0 +1,43 @@
+//PAIM (INDIAN MOUNTAIN LRRS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHAZY LATLON N 65 53.919 W 153 8.885167
+FIX CLYDD LATLON N 65 57.138167 W 153 5.930167
+FIX DARTN LATLON N 66 0.532166 W 153 29.264333
+FIX ELCON LATLON N 65 20.033 W 153 18.379333
+FIX FATUR LATLON N 66 1.762166 W 153 12.388834
+FIX FF24 LATLON N 65 59.851166 W 153 17.158166
+FIX FODUV LATLON N 66 9.615 W 153 15.776167
+FIX UTONB LATLON N 65 59.709667 W 153 41.6255
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+SIDS
+SID CLYDD2 RNW 06 HDG 063 UNTIL 2000 FIX CLYDD FIX ELCON
+ENDSIDS
+
+APPROACHES
+APPROACH NDB24 FIX FF24 4800 FIX UTONB 966 RNW 24 TRK 252 UNTIL 5000 TURN LEFT DIRECT FIX UTONB AT OR ABOVE 6600 HOLD AT FIX UTONB RIGHT TURN INBOUNDCOURSE 252 ALT 8000 SPEED 310 LEGTIME 1
+APPROACH RNV24 FIX FATUR AT OR ABOVE 4500 FIX DARTN 2600 RNW 24 TRK 243 UNTIL 2180 TURN LEFT DIRECT FIX OVERFLY CHAZY 7000 HOLD AT FIX CHAZY RIGHT TURN INBOUNDCOURSE 095 ALT 7000 SPEED 310 LEGDIST 4
+ TRANSITION CHAZY FIX CHAZY AT OR ABOVE 7000
+ TRANSITION FODUV FIX FODUV AT OR ABOVE 7000
+ENDAPPROACHES

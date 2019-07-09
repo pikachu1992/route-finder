@@ -1,0 +1,37 @@
+//K4D9 (ALMA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APUNE LATLON N 40 12.625166 W 99 20.9545
+FIX FOXEM LATLON N 40 9.112 W 99 20.852833
+FIX HUSTO LATLON N 40 4.283 W 99 20.7135
+FIX JESOB LATLON N 40 1.1515 W 99 20.623166
+FIX PERDY LATLON N 40 18.828167 W 99 21.134167
+FIX SHEND LATLON N 39 54.447833 W 99 20.430167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX PERDY AT OR ABOVE 5000 FIX APUNE 3900 FIX FOXEM AT OR ABOVE 2780 RNW 17 TRK 174 UNTIL 2404 FIX OVERFLY SHEND AT OR ABOVE 5000 HOLD AT FIX SHEND RIGHT TURN INBOUNDCOURSE 354 LEGDIST 5
+ TRANSITION PERDY HOLD AT FIX PERDY LEFT TURN INBOUNDCOURSE 174 ALT 5000 LEGDIST 5
+APPROACH RNV35 FIX SHEND AT OR ABOVE 5000 FIX JESOB 3800 FIX HUSTO AT OR ABOVE 2800 RNW 35 TRK 354 UNTIL 2403 FIX OVERFLY PERDY AT OR ABOVE 5000 HOLD AT FIX PERDY LEFT TURN INBOUNDCOURSE 174 LEGDIST 5
+ TRANSITION SHEND HOLD AT FIX SHEND RIGHT TURN INBOUNDCOURSE 354 ALT 5000 LEGDIST 5
+ENDAPPROACHES

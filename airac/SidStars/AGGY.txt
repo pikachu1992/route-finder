@@ -1,0 +1,38 @@
+//AGGY (YANDINA/RUSSELL ISLANDS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GGYSA LATLON S 9 10.013167 E 159 26.567333
+FIX GGYSB LATLON S 9 15.768167 E 159 26.269667
+FIX GGYSC LATLON S 9 17.457833 E 159 20.723833
+FIX GGYSF LATLON S 9 9.5895 E 159 18.2965
+FIX GGYSH LATLON S 9 7.384 E 159 17.395166
+FIX GGYSI LATLON S 9 12.679166 E 159 22.2825
+FIX GGYSM LATLON S 9 6.499 E 159 14.3115
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH GPS30 FIX GGYSI AT OR ABOVE 1900 FIX GGYSF 1900 FIX GGYSM 425 RNW 30 TRK 299 UNTIL 566 TURN RIGHT DIRECT FIX OVERFLY GGYSH SPEED 100 TRK 097 UNTIL 3200
+ TRANSITION GGYSA FIX GGYSA AT OR ABOVE 3200
+ TRANSITION GGYSB FIX GGYSB AT OR ABOVE 3200
+ TRANSITION GGYSC FIX GGYSC AT OR ABOVE 3200
+ENDAPPROACHES

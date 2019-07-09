@@ -1,0 +1,39 @@
+//KPHG (PHILLIPSBURG MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMEGE LATLON N 39 49.24 W 99 24.053167
+FIX ANEBE LATLON N 39 39.648667 W 99 14.603
+FIX BANRE LATLON N 39 33.986833 W 99 9.062
+FIX BOLVE LATLON N 39 54.888 W 99 29.645333
+FIX CETAX LATLON N 39 42.277333 W 99 17.187167
+FIX VEBBU LATLON N 39 46.293 W 99 21.143333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX BOLVE AT OR ABOVE 4000 FIX AMEGE 3900 FIX VEBBU AT OR ABOVE 2720 RNW 13 TRK 138 UNTIL 2157 FIX OVERFLY BANRE AT OR ABOVE 4000 HOLD AT FIX BANRE RIGHT TURN INBOUNDCOURSE 318 LEGDIST 4
+ TRANSITION BOLVE HOLD AT FIX BOLVE RIGHT TURN INBOUNDCOURSE 138 ALT 4000 LEGDIST 4
+APPROACH RNV31 FIX BANRE AT OR ABOVE 4000 FIX ANEBE 3600 FIX CETAX AT OR ABOVE 2540 RNW 31 TRK 318 UNTIL 2150 FIX OVERFLY BOLVE AT OR ABOVE 4000 HOLD AT FIX BOLVE RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4
+ TRANSITION BANRE HOLD AT FIX BANRE RIGHT TURN INBOUNDCOURSE 318 ALT 4000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//HK01 (MANDA BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OGUME LATLON S 2 3.876 E 40 52.913167
+FIX POKDE LATLON S 1 54.907 E 40 51.7555
+FIX RILNE LATLON S 1 53.5565 E 41 2.085667
+FIX SHOOE LATLON S 2 10.982 E 40 54.027334
+FIX TEPVE LATLON S 2 15.492167 E 40 57.244667
+FIX WOKSA LATLON S 2 22.841333 E 41 2.487667
+FIX ZOBET LATLON S 2 16.835167 E 41 10.806667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX POKDE AT OR ABOVE 4800 FIX OGUME 2000 RNW 16 TRK 173 UNTIL 440 TURN LEFT DIRECT FIX OVERFLY RILNE AT OR ABOVE 4800 SPEED 230 HOLD AT FIX RILNE RIGHT TURN INBOUNDCOURSE 263 ALT 14800 LEGDIST 4
+ TRANSITION POKDE HOLD AT FIX POKDE RIGHT TURN INBOUNDCOURSE 173 ALT 4800 SPEED 310 LEGDIST 4
+ TRANSITION RILNE FIX RILNE AT OR ABOVE 4800
+APPROACH RNV34 FIX WOKSA AT OR ABOVE 4000 FIX TEPVE 2200 FIX OVERFLY SHOOE 239 RNW 34 TRK 325 UNTIL 440 TURN RIGHT DIRECT FIX OVERFLY ZOBET AT OR ABOVE 4000 HOLD AT FIX ZOBET RIGHT TURN INBOUNDCOURSE 235 ALT 14000 LEGDIST 4
+ TRANSITION WOKSA HOLD AT FIX WOKSA RIGHT TURN INBOUNDCOURSE 325 ALT 4000 SPEED 230 LEGDIST 4
+ TRANSITION ZOBET FIX ZOBET AT OR ABOVE 4000
+ENDAPPROACHES

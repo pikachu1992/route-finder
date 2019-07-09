@@ -1,0 +1,42 @@
+//KRUG (RUGBY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADUTE LATLON N 48 17.278333 W 99 49.928833
+FIX AXMAN LATLON N 48 25.802 W 100 5.945167
+FIX BALTA LATLON N 48 11.444833 W 100 2.853334
+FIX BANAW LATLON N 48 21.070166 W 99 57.034166
+FIX CAREW LATLON N 48 9.472834 W 99 31.8795
+FIX CUYAK LATLON N 48 19.554833 W 99 54.187667
+FIX IROSE LATLON N 48 29.826 W 100 13.562167
+FIX MOT LATLON N 48 15.620167 W 101 17.224333
+FIX OKDUC LATLON N 48 26.681 W 100 21.238667
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX IROSE AT OR ABOVE 3200 FIX AXMAN 2700 RNW 12 TRK 121 UNTIL 1900 FIX CUYAK FIX OVERFLY BALTA AT OR ABOVE 3600 HOLD AT FIX BALTA RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION BALTA FIX BALTA FIX OVERFLY IROSE AT OR ABOVE 3200 HOLD AT FIX IROSE RIGHT TURN INBOUNDCOURSE 120 ALT 3200 LEGDIST 4
+ TRANSITION MOT FIX MOT FIX OKDUC AT OR ABOVE 3300
+APPROACH RNV30 FIX ADUTE AT OR ABOVE 3200 FIX BANAW 2700 RNW 30 TRK 301 UNTIL 1948 FIX OVERFLY IROSE AT OR ABOVE 3200 HOLD AT FIX IROSE RIGHT TURN INBOUNDCOURSE 120 LEGDIST 4
+ TRANSITION BALTA FIX BALTA FIX OVERFLY ADUTE AT OR ABOVE 3200 HOLD AT FIX ADUTE RIGHT TURN INBOUNDCOURSE 301 ALT 3200 LEGDIST 4
+ TRANSITION CAREW FIX CAREW
+ENDAPPROACHES

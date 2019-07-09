@@ -1,0 +1,37 @@
+//SURV (PRESIDENTE GENERAL DON OSCAR D)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANKIR LATLON S 31 6.297 W 55 36.729
+FIX KUDEN LATLON S 31 2.570333 W 55 32.836834
+FIX MASOL LATLON S 31 7.1 W 56 11.4
+FIX ORELO LATLON S 31 0.615 W 55 30.8
+FIX PUKAL LATLON S 30 59.289 W 55 29.415833
+FIX TMB LATLON S 31 45.016667 W 55 55.431667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ANKIR AT OR ABOVE 3000 FIX KUDEN 2300 FIX OVERFLY ORELO AT OR ABOVE 1480 FIX OVERFLY PUKAL 909 RNW 05 TRK 053 UNTIL 2000 TURN RIGHT DIRECT FIX OVERFLY ANKIR AT OR ABOVE 3000 HOLD AT FIX ANKIR RIGHT TURN INBOUNDCOURSE 053 LEGTIME 1
+ TRANSITION ANKIR HOLD AT FIX ANKIR RIGHT TURN INBOUNDCOURSE 053 ALT 3000 LEGTIME 1
+ TRANSITION MASOL FIX MASOL
+ TRANSITION TMB FIX TMB
+ENDAPPROACHES

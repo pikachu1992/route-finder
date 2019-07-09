@@ -1,0 +1,36 @@
+//VOMY (MYSORE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD09 LATLON N 12 13.972834 E 76 33.2985
+FIX FD27 LATLON N 12 14.348833 E 76 43.880333
+FIX MD09 LATLON N 12 13.809167 E 76 38.0955
+FIX MD27 LATLON N 12 13.8965 E 76 40.129667
+FIX MSR LATLON N 12 13.775 E 76 39.116666
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX FD09 4100 FIX MD09 2612 RNW 09 TRK 094 UNTIL 4800 TURN RIGHT DIRECT FIX MSR 4800 HOLD AT FIX MSR LEFT TURN INBOUNDCOURSE 262 LEGTIME 1
+ TRANSITION MSR FIX MSR AT OR ABOVE 4800 TRK 262 UNTIL 8.0 FROM FIX MSR
+APPROACH VDM27 FIX FD27 3700 FIX MD27 2530 RNW 27 TRK 265 UNTIL 4800 TURN LEFT DIRECT FIX MSR 4800 HOLD AT FIX MSR RIGHT TURN INBOUNDCOURSE 098 LEGTIME 1
+ TRANSITION MSR FIX MSR AT OR ABOVE 4800 TRK 098 UNTIL 7.0 FROM FIX MSR
+ENDAPPROACHES

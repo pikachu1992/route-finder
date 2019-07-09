@@ -1,0 +1,45 @@
+//CYYW (ARMSTRONG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MUTOG LATLON N 50 19.754333 W 89 0.642833
+FIX OMOPI LATLON N 50 16.323 W 88 50.877667
+FIX PIKMU LATLON N 50 22.626667 W 89 8.865167
+FIX REROL LATLON N 50 15.521833 W 88 48.606667
+FIX ROPRA LATLON N 50 27.011666 W 89 5.122834
+FIX SEDOB LATLON N 50 18.2395 W 89 12.596167
+FIX TAGAX LATLON N 50 12.625667 W 88 40.425167
+FIX TETIB LATLON N 50 8.253667 W 88 44.1865
+FIX UKOKI LATLON N 50 15.388166 W 88 48.228167
+FIX VIPVO LATLON N 50 16.995667 W 88 36.652333
+FIX XORDI LATLON N 50 18.803333 W 88 57.930167
+FIX XUGLA LATLON N 50 19.878334 W 89 0.996667
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX PIKMU AT OR ABOVE 2700 FIX MUTOG 2400 FIX XORDI AT OR ABOVE 1770 RNW 12 FIX OVERFLY UKOKI 2700 HOLD AT FIX UKOKI RIGHT TURN INBOUNDCOURSE 123 LEGTIME 1
+ TRANSITION ROPRA FIX ROPRA SPEED 210
+ TRANSITION SEDOB FIX SEDOB SPEED 210
+APPROACH RNV30 FIX TAGAX AT OR ABOVE 2400 FIX REROL 2400 FIX OMOPI AT OR ABOVE 1870 RNW 30 FIX OVERFLY XUGLA 2700 HOLD AT FIX XUGLA RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1
+ TRANSITION TETIB FIX TETIB SPEED 210
+ TRANSITION VIPVO FIX VIPVO SPEED 210
+ENDAPPROACHES

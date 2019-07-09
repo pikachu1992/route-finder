@@ -1,0 +1,34 @@
+//K7W5 (HENRY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOTUK LATLON N 41 21.475166 W 83 57.267334
+FIX IZUMY LATLON N 41 20.342167 W 83 49.469333
+FIX OHZUF LATLON N 41 7.170667 W 83 43.0435
+FIX ZOPKI LATLON N 41 22.113 W 84 1.685833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX IZUMY AT OR ABOVE 2300 FIX HOTUK 2300 FIX ZOPKI AT OR ABOVE 1200 RNW 28 TRK 286 UNTIL 1083 TURN LEFT DIRECT FIX OVERFLY IZUMY AT OR ABOVE 2300 HOLD AT FIX IZUMY LEFT TURN INBOUNDCOURSE 286 LEGDIST 4
+ TRANSITION IZUMY HOLD AT FIX IZUMY LEFT TURN INBOUNDCOURSE 286 ALT 2300 LEGDIST 4
+ TRANSITION OHZUF FIX OHZUF
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//EPPR (PRUSZCZ GDANSKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CN27Z LATLON N 54 13.654166 E 18 52.290833
+FIX FN27X LATLON N 54 14.011667 E 18 48.726167
+FIX NE LATLON N 54 14.708333 E 18 42.013333
+FIX NET LATLON N 54 14.438333 E 18 44.74
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDBX27 FIX FN27X 1400 FIX NE 243 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT FIX NE 1640
+APPROACH NDBY27 FIX NET 800 FIX NE 251 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT FIX NET 1700
+ TRANSITION NET HOLD AT FIX NET LEFT TURN INBOUNDCOURSE 274 ALT 1400 LEGTIME 1
+APPROACH NDBZ27 FIX CN27Z AT OR ABOVE 1400 FIX NET 800 FIX NE 251 RNW 27 TRK 274 UNTIL 1000 TURN LEFT DIRECT FIX NET 1700
+ TRANSITION NET FIX NET AT OR ABOVE 1700 TRK 117 UNTIL 4.5 FROM FIX NET
+ENDAPPROACHES

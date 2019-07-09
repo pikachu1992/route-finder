@@ -1,0 +1,39 @@
+//WAJI (ORAI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JI401 LATLON S 2 1.1665 E 138 53.752333
+FIX JI402 LATLON S 1 58.295167 E 138 50.9565
+FIX JI403 LATLON S 1 56.1415 E 138 48.859834
+FIX JI404 LATLON S 1 50.3985 E 138 43.2685
+FIX JI501 LATLON S 1 43.647833 E 138 36.697
+FIX JI502 LATLON S 1 46.519 E 138 39.492
+FIX JI503 LATLON S 1 48.672667 E 138 41.5885
+FIX JI504 LATLON S 1 54.415834 E 138 47.1795
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX JI502 AT OR ABOVE 2200 FIX JI503 1600 RNW 13 FIX OVERFLY JI504 TURN LEFT DIRECT FIX JI501 AT OR ABOVE 3000 HOLD AT FIX JI501 RIGHT TURN INBOUNDCOURSE 133 ALT 3000 LEGTIME 1
+ TRANSITION JI501 HOLD AT FIX JI501 RIGHT TURN INBOUNDCOURSE 133 ALT 3000 LEGTIME 1
+APPROACH RNV31 FIX JI402 AT OR ABOVE 2230 FIX JI403 1600 RNW 31 FIX OVERFLY JI404 TURN RIGHT DIRECT FIX JI401 AT OR ABOVE 3500 HOLD AT FIX JI401 RIGHT TURN INBOUNDCOURSE 313 ALT 3500 LEGTIME 1
+ TRANSITION JI401 HOLD AT FIX JI401 RIGHT TURN INBOUNDCOURSE 313 ALT 3500 LEGTIME 1
+ENDAPPROACHES

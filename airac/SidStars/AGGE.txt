@@ -1,0 +1,45 @@
+//AGGE (BALLALAE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GGES1 LATLON S 6 47.284 E 156 15.111
+FIX GGES2 LATLON S 7 17.767834 E 156 9.813667
+FIX GGES3 LATLON S 7 19.614667 E 155 38.185667
+FIX GGESA LATLON S 7 5.151334 E 156 3.204833
+FIX GGESB LATLON S 7 9.630833 E 156 2.114833
+FIX GGESC LATLON S 7 10.1395 E 155 57.526166
+FIX GGESF LATLON S 7 3.595667 E 155 56.799334
+FIX GGESH LATLON S 6 58.318834 E 155 57.466
+FIX GGESI LATLON S 7 6.613333 E 155 59.456833
+FIX GGESM LATLON S 7 0.577667 E 155 54.1425
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH GPSC04 FIX GGESI AT OR ABOVE 2800 FIX GGESF 1700 FIX OVERFLY GGESM 1050 RNW 04 TURN RIGHT DIRECT FIX OVERFLY GGESH SPEED 180 HDG 120 VECTORS
+ TRANSITION GGES1 FIX GGES1 FIX GGESA AT OR ABOVE 3200 SPEED 180
+ TRANSITION GGES2 FIX GGES2 FIX GGESB AT OR ABOVE 3200 SPEED 180
+ TRANSITION GGES3 FIX GGES3 FIX GGESC AT OR ABOVE 3200 SPEED 180
+APPROACH GPSC22 FIX GGESI AT OR ABOVE 2800 FIX GGESF 1700 FIX OVERFLY GGESM 1050 RNW 22 TURN RIGHT DIRECT FIX OVERFLY GGESH SPEED 180 HDG 120 VECTORS
+ TRANSITION GGES1 FIX GGES1 FIX GGESA AT OR ABOVE 3200 SPEED 180
+ TRANSITION GGES2 FIX GGES2 FIX GGESB AT OR ABOVE 3200 SPEED 180
+ TRANSITION GGES3 FIX GGES3 FIX GGESC AT OR ABOVE 3200 SPEED 180
+ENDAPPROACHES

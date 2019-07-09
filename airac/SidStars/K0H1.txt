@@ -1,0 +1,43 @@
+//K0H1 (TREGO WAKEENEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CORLO LATLON N 38 46.936667 W 100 6.316333
+FIX FISOX LATLON N 39 13.8 W 100 6.493333
+FIX HUTIM LATLON N 39 13.856 W 99 40.754833
+FIX JIPLO LATLON N 38 54.983833 W 99 53.5565
+FIX JUPOB LATLON N 39 13.839833 W 99 53.624167
+FIX RANPE LATLON N 39 5.8325 W 99 53.595334
+FIX WILOB LATLON N 38 46.976167 W 99 53.528
+FIX WOKDA LATLON N 38 46.992334 W 99 40.7395
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA17 FIX JUPOB AT OR ABOVE 6000 FIX RANPE 4100 RNW 17 TRK 175 UNTIL 2839 FIX OVERFLY WILOB AT OR ABOVE 6000 HOLD AT FIX WILOB RIGHT TURN INBOUNDCOURSE 355 LEGDIST 5
+ TRANSITION FISOX FIX FISOX
+ TRANSITION HUTIM FIX HUTIM
+ TRANSITION JUPOB HOLD AT FIX JUPOB RIGHT TURN INBOUNDCOURSE 175 ALT 6000 LEGDIST 5
+APPROACH RNVB35 FIX WILOB AT OR ABOVE 6000 FIX JIPLO 4100 RNW 35 TRK 355 UNTIL 2839 FIX OVERFLY JUPOB AT OR ABOVE 6000 HOLD AT FIX JUPOB RIGHT TURN INBOUNDCOURSE 175 LEGDIST 5
+ TRANSITION CORLO FIX CORLO
+ TRANSITION WILOB HOLD AT FIX WILOB RIGHT TURN INBOUNDCOURSE 355 ALT 6000 LEGDIST 5
+ TRANSITION WOKDA FIX WOKDA
+ENDAPPROACHES

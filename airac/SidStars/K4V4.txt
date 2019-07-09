@@ -1,0 +1,37 @@
+//K4V4 (NORTHWOOD MUN-VINCE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BORPE LATLON N 47 43.573 W 97 18.97
+FIX CAGOS LATLON N 47 48.569833 W 97 19.036
+FIX DAKME LATLON N 47 38.576167 W 97 18.89
+FIX FARBA LATLON N 47 43.513667 W 97 27.856834
+FIX GFK LATLON N 47 57.29 W 97 11.122166
+FIX JOCOR LATLON N 47 37.655 W 97 5.571
+FIX UNIZY LATLON N 47 32.587333 W 97 47.841667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX BORPE AT OR ABOVE 3000 FIX FARBA 2700 RNW 26 TRK 262 UNTIL 1800 FIX UNIZY AT OR ABOVE 3500 HOLD AT FIX UNIZY RIGHT TURN INBOUNDCOURSE 065 LEGDIST 4
+ TRANSITION GFK FIX GFK FIX CAGOS AT OR ABOVE 3000
+ TRANSITION JOCOR FIX JOCOR FIX DAKME AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//WASA (AYAWASI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SA401 LATLON S 1 7.513834 E 132 14.344166
+FIX SA402 LATLON S 1 7.968833 E 132 17.302834
+FIX SA403 LATLON S 1 8.800333 E 132 22.725
+FIX SA404 LATLON S 1 10.009333 E 132 30.616667
+FIX SA405 LATLON S 1 20.400167 E 132 32.6515
+FIX SA406 LATLON S 1 14.137 E 132 37.646666
+FIX SA407 LATLON S 1 10.3725 E 132 32.974
+FIX SA408 LATLON S 1 9.161 E 132 25.0825
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX SA402 AT OR ABOVE 4500 FIX SA403 3150 RNW 09 FIX OVERFLY SA404 TURN LEFT DIRECT FIX SA401 AT OR ABOVE 4500 HOLD AT FIX SA401 RIGHT TURN INBOUNDCOURSE 097 ALT 4500 LEGTIME 1
+ TRANSITION SA401 FIX SA401 AT OR ABOVE 4500
+APPROACH RNV27 FIX SA406 AT OR ABOVE 4500 FIX SA407 3000 RNW 27 FIX OVERFLY SA408 TURN LEFT DIRECT FIX SA405 AT OR ABOVE 4500
+ TRANSITION SA405 FIX SA405 AT OR ABOVE 4500
+ENDAPPROACHES

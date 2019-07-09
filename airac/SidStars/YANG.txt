@@ -1,0 +1,45 @@
+//YANG (WEST ANGELAS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WLPNE LATLON S 23 1.593667 E 118 57.412834
+FIX WLPNF LATLON S 23 4.105166 E 118 46.9155
+FIX WLPNG LATLON S 23 6.985166 E 118 55.236833
+FIX WLPNH LATLON S 23 10.427833 E 118 39.9445
+FIX WLPNI LATLON S 23 2.850833 E 118 52.165
+FIX WLPNM LATLON S 23 7.6185 E 118 43.044
+FIX WLPSA LATLON S 23 19.424666 E 118 31.9365
+FIX WLPSB LATLON S 23 16.932833 E 118 26.32
+FIX WLPSF LATLON S 23 12.014 E 118 35.783666
+FIX WLPSH LATLON S 23 7.578667 E 118 44.291
+FIX WLPSI LATLON S 23 14.474666 E 118 31.053167
+FIX WLPSM LATLON S 23 9.058 E 118 41.456167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX WLPSI AT OR ABOVE 5300 FIX WLPSF 4700 FIX OVERFLY WLPSM 2585 RNW 04 FIX OVERFLY WLPSH HDG 090 VECTORS
+ TRANSITION WLPSA FIX WLPSA AT OR ABOVE 5300 SPEED 210
+ TRANSITION WLPSB FIX WLPSB AT OR ABOVE 5300 SPEED 210
+APPROACH RNV22 FIX WLPNI AT OR ABOVE 5300 FIX WLPNF 4250 FIX OVERFLY WLPNM 2499 RNW 22 FIX WLPNH TRK 224 UNTIL 5300
+ TRANSITION WLPNE FIX WLPNE AT OR ABOVE 5300 SPEED 210
+ TRANSITION WLPNG FIX WLPNG AT OR ABOVE 5300 SPEED 210
+ENDAPPROACHES

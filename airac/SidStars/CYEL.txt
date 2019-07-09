@@ -1,0 +1,43 @@
+//CYEL (ELLIOT LAKE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPMIV LATLON N 46 19.428833 W 82 27.8325
+FIX KEBDO LATLON N 46 23.89 W 82 43
+FIX OLILU LATLON N 46 12.899167 W 82 23.928167
+FIX OMEGU LATLON N 46 17.5165 W 82 21.168667
+FIX PI001 LATLON N 46 23.743184 W 82 42.360286
+FIX PI002 LATLON N 46 22.199742 W 82 48.178264
+FIX PI003 LATLON N 46 26.375778 W 82 50.980898
+FIX UDLOV LATLON N 46 22.1325 W 82 18.401333
+FIX XEVAB LATLON N 46 23.190167 W 82 47.983834
+FIX YELNB LATLON N 46 22.321166 W 82 37.724167
+FIX YZENB LATLON N 45 55.671334 W 82 36.867833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA12 FIX KEBDO AT OR ABOVE 2800 FIX YELNB 2600 RNW 12 TRK 123 UNTIL 2800 TURN RIGHT DIRECT FIX YELNB 2800 HOLD AT FIX YELNB RIGHT TURN INBOUNDCOURSE 123 LEGTIME 1
+ TRANSITION YZE FIX YZENB FIX YELNB AT OR ABOVE 2800 FIX PI001 AT OR ABOVE 2800 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2800 SPEED 210 FIX PI003 AT OR ABOVE 2800 SPEED 210
+APPROACH RNV30 FIX OMEGU AT OR ABOVE 2400 FIX EPMIV 2380 RNW 30 FIX OVERFLY XEVAB 2800 HOLD AT FIX XEVAB RIGHT TURN INBOUNDCOURSE 291 LEGTIME 1
+ TRANSITION OLILU FIX OLILU
+ TRANSITION UDLOV FIX UDLOV
+ENDAPPROACHES

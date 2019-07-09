@@ -1,0 +1,47 @@
+//KRJD (RIDGELY AIRPARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANAYA LATLON N 39 6.6675 W 76 3.662333
+FIX BROSS LATLON N 39 11.473333 W 75 52.831333
+FIX CHOPS LATLON N 38 45.696833 W 75 57.603
+FIX DAKEY LATLON N 39 1.937833 W 76 5.761166
+FIX DONIL LATLON N 39 4.590667 W 75 18.315334
+FIX FIBNA LATLON N 38 59.953834 W 75 58.4235
+FIX GRACO LATLON N 38 56.496833 W 76 11.987
+FIX LAFLN LATLON N 38 47.456666 W 75 30.795334
+FIX ORLOE LATLON N 38 49.797334 W 75 40.600667
+FIX PALEO LATLON N 39 1.679666 W 76 22.3635
+FIX PEKME LATLON N 38 54.52 W 75 38.481667
+FIX TELNE LATLON N 38 56.521834 W 75 45.8025
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX DAKEY AT OR ABOVE 2000 FIX FIBNA 1700 RNW 12 TRK 121 UNTIL 464 FIX OVERFLY PEKME AT OR ABOVE 2000 HOLD AT FIX PEKME RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4
+ TRANSITION BROSS FIX BROSS FIX ANAYA AT OR ABOVE 2000
+ TRANSITION CHOPS FIX CHOPS FIX GRACO AT OR ABOVE 2000
+ TRANSITION PALEO FIX PALEO
+APPROACH RNV30 FIX PEKME AT OR ABOVE 2000 FIX TELNE 1700 RNW 30 TRK 301 UNTIL 464 FIX OVERFLY DAKEY AT OR ABOVE 2000 HOLD AT FIX DAKEY RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4
+ TRANSITION CHOPS FIX CHOPS FIX ORLOE AT OR ABOVE 2000
+ TRANSITION DONIL FIX DONIL
+ TRANSITION LAFLN FIX LAFLN
+ENDAPPROACHES

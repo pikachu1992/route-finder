@@ -1,0 +1,37 @@
+//KD98 (ROMEO STATE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX UFSIW LATLON N 42 45.452333 W 82 58.322666
+FIX UTEBE LATLON N 42 59.6035 W 82 59.1295
+FIX VOCUV LATLON N 42 50.6305 W 82 58.617334
+FIX WELAS LATLON N 42 36.349667 W 82 57.806
+FIX YALUG LATLON N 42 53.1075 W 82 58.758667
+FIX ZADBO LATLON N 42 42.346166 W 82 58.146167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX UTEBE AT OR ABOVE 2900 FIX YALUG 2400 FIX VOCUV AT OR ABOVE 1600 RNW 18 TRK 184 UNTIL 1139 FIX OVERFLY WELAS AT OR ABOVE 2900 HOLD AT FIX WELAS RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4
+ TRANSITION UTEBE HOLD AT FIX UTEBE RIGHT TURN INBOUNDCOURSE 184 ALT 2900 LEGDIST 4
+APPROACH RNV36 FIX WELAS AT OR ABOVE 2900 FIX ZADBO 2400 FIX UFSIW AT OR ABOVE 1400 RNW 36 TRK 004 UNTIL 1139 FIX OVERFLY UTEBE AT OR ABOVE 2900 HOLD AT FIX UTEBE RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4
+ TRANSITION WELAS HOLD AT FIX WELAS RIGHT TURN INBOUNDCOURSE 004 ALT 2900 LEGDIST 4
+ENDAPPROACHES

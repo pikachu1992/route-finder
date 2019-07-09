@@ -1,0 +1,39 @@
+//KM95 (ARTHUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BESOM LATLON N 33 35.178833 W 87 39.3915
+FIX JARVA LATLON N 33 46.061333 W 87 48.7215
+FIX JIMGO LATLON N 33 36.7145 W 87 49.229167
+FIX LODLE LATLON N 33 48.609 W 87 48.582833
+FIX POBLE LATLON N 33 39.531667 W 87 49.076333
+FIX PUGME LATLON N 33 29.913833 W 87 49.597333
+FIX TASEE LATLON N 33 55.4185 W 87 48.2115
+FIX WOGVA LATLON N 33 36.553667 W 87 49.237834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX PUGME AT OR ABOVE 2600 FIX JIMGO 2100 FIX POBLE AT OR ABOVE 1200 RNW 01 TRK 006 UNTIL 679 FIX OVERFLY TASEE AT OR ABOVE 2600 HOLD AT FIX TASEE RIGHT TURN INBOUNDCOURSE 186 LEGDIST 4
+ TRANSITION PUGME HOLD AT FIX PUGME RIGHT TURN INBOUNDCOURSE 006 ALT 2600 LEGDIST 4
+APPROACH RNV19 FIX TASEE AT OR ABOVE 2600 FIX LODLE 2200 FIX JARVA AT OR ABOVE 1380 RNW 19 TRK 186 UNTIL 757 FIX WOGVA FIX OVERFLY BESOM AT OR ABOVE 2600 HOLD AT FIX BESOM RIGHT TURN INBOUNDCOURSE 266 LEGDIST 4
+ TRANSITION TASEE HOLD AT FIX TASEE RIGHT TURN INBOUNDCOURSE 186 ALT 2600 LEGDIST 4
+ENDAPPROACHES

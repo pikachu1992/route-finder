@@ -1,0 +1,39 @@
+//ZMKB (KHANBUMBAT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN16 LATLON N 43 14.939 E 106 46.46
+FIX FN34 LATLON N 43 2.715833 E 106 55.619833
+FIX KB LATLON N 43 8.223334 E 106 50.745
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB16 FIX FN16 5910 RNW 16 FIX OVERFLY KB TRK 159 UNTIL 5910 TURN LEFT DIRECT FIX KB 6890 HOLD AT FIX KB RIGHT TURN INBOUNDCOURSE 159 ALT 6890 LEGTIME 1
+APPROACH NDB34 FIX FN34 5910 RNW 34 FIX OVERFLY KB TRK 331 UNTIL 5910 TURN LEFT DIRECT FIX KB 6890 HOLD AT FIX KB LEFT TURN INBOUNDCOURSE 126 ALT 6890 LEGTIME 1
+ TRANSITION KB1 FIX KB AT OR ABOVE 6890 TRK 126 UNTIL 8.8 FROM FIX KB
+ TRANSITION KB2 FIX KB AT OR ABOVE 6890 TRK 141 UNTIL 10.5 FROM FIX KB
+ENDAPPROACHES
+
+GATES
+GATE 1 N 43 8.129666 E 106 50.846666
+GATE 2 N 43 8.1185 E 106 50.819
+ENDGATES

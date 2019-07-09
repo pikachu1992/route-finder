@@ -1,0 +1,40 @@
+//KW29 (BAY BRIDGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGARD LATLON N 39 2.614834 W 76 4.185667
+FIX AZLOM LATLON N 38 57.453 W 76 13.454
+FIX GEEMO LATLON N 39 2.984333 W 76 30.588833
+FIX HIPMA LATLON N 38 59.567167 W 76 25.3085
+FIX MYTHY LATLON N 39 0.235333 W 76 29.081833
+FIX XITPY LATLON N 38 58.046666 W 76 16.769167
+FIX XONIQ LATLON N 38 59.1045 W 76 22.702834
+FIX ZAKLY LATLON N 38 56.298667 W 76 7.024
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX MYTHY AT OR ABOVE 2000 FIX HIPMA 1600 FIX XONIQ AT OR ABOVE 820 RNW 11 TRK 114 UNTIL 265 FIX OVERFLY ZAKLY AT OR ABOVE 2100 HOLD AT FIX ZAKLY RIGHT TURN INBOUNDCOURSE 294 LEGDIST 4
+ TRANSITION GEEMO FIX GEEMO
+APPROACH RNV29 FIX ZAKLY AT OR ABOVE 2100 FIX AZLOM 1600 FIX XITPY AT OR ABOVE 740 RNW 29 TRK 294 UNTIL 415 TURN RIGHT DIRECT FIX OVERFLY ZAKLY AT OR ABOVE 2100 HOLD AT FIX ZAKLY RIGHT TURN INBOUNDCOURSE 294 LEGDIST 4
+ TRANSITION AGARD FIX AGARD
+ TRANSITION ZAKLY HOLD AT FIX ZAKLY RIGHT TURN INBOUNDCOURSE 294 ALT 2100 LEGDIST 4
+ENDAPPROACHES

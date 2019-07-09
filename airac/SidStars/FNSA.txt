@@ -1,0 +1,34 @@
+//FNSA (SAURIMO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX G040P LATLON S 9 38 E 20 14
+FIX G130E LATLON S 9 37.4 E 20 21.2
+FIX G130J LATLON S 9 34.2 E 20 17.3
+FIX G220P LATLON S 9 30.3 E 20 20.5
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX G130J AT OR ABOVE 5300 FIX G130E 5300 RNW 13 TRK 133 UNTIL 3990 TURN RIGHT DIRECT FIX G040P 6100
+ TRANSITION G040P FIX G040P
+ TRANSITION G220P FIX G220P
+ENDAPPROACHES

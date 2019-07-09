@@ -1,0 +1,40 @@
+//KLRJ (LE MARS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATUXE LATLON N 42 49.083833 W 96 11.163334
+FIX CREEC LATLON N 42 52.497 W 96 10.5125
+FIX ECUTU LATLON N 42 44.270333 W 96 12.079333
+FIX ETNOE LATLON N 42 58.741834 W 96 9.319
+FIX FEXAT LATLON N 42 33.765167 W 96 0.815167
+FIX HEDBA LATLON N 42 41.1685 W 96 12.668333
+FIX JAGBU LATLON N 42 42.645 W 96 12.388
+FIX KAGTE LATLON N 42 34.9285 W 96 13.850333
+FIX NISDE LATLON N 42 37.405166 W 96 13.381667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX ETNOE AT OR ABOVE 4000 FIX CREEC 3000 FIX ATUXE AT OR ABOVE 1900 RNW 18 TRK 185 UNTIL 1444 FIX JAGBU FIX OVERFLY FEXAT AT OR ABOVE 4500 HOLD AT FIX FEXAT RIGHT TURN INBOUNDCOURSE 043 LEGDIST 5
+ TRANSITION ETNOE HOLD AT FIX ETNOE RIGHT TURN INBOUNDCOURSE 185 ALT 4000 LEGDIST 4
+APPROACH RNV36 FIX KAGTE AT OR ABOVE 4400 FIX NISDE AT OR ABOVE 4000 FIX HEDBA 2900 FIX ECUTU AT OR ABOVE 1900 RNW 36 TRK 005 UNTIL 1444 FIX OVERFLY ETNOE AT OR ABOVE 4000 HOLD AT FIX ETNOE RIGHT TURN INBOUNDCOURSE 185 LEGDIST 4
+ TRANSITION KAGTE HOLD AT FIX KAGTE RIGHT TURN INBOUNDCOURSE 005 ALT 4400 LEGDIST 5
+ENDAPPROACHES

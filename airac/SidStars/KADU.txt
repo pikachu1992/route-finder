@@ -1,0 +1,36 @@
+//KADU (AUDUBON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 15THR LATLON N 41 40.577833 W 94 53.926
+FIX BOPKE LATLON N 41 30.467333 W 94 53.177833
+FIX CALUR LATLON N 41 35.875333 W 94 41.972167
+FIX OMHIH LATLON N 41 37.398334 W 94 51.196834
+FIX TUYMO LATLON N 41 33.173666 W 94 47.578834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX TUYMO AT OR ABOVE 3000 FIX OMHIH 3000 FIX 15THR AT OR ABOVE 1800 RNW 32 TRK 323 UNTIL 2500 TURN RIGHT DIRECT FIX OVERFLY TUYMO AT OR ABOVE 3000 HOLD AT FIX TUYMO RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4
+ TRANSITION BOPKE FIX BOPKE AT OR ABOVE 3800
+ TRANSITION CALUR FIX CALUR AT OR ABOVE 3000
+ TRANSITION TUYMO HOLD AT FIX TUYMO RIGHT TURN INBOUNDCOURSE 323 ALT 3000 LEGDIST 4
+ENDAPPROACHES

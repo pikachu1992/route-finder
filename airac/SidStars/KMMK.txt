@@ -1,0 +1,42 @@
+//KMMK (MERIDEN MARKHAM MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACELA LATLON N 41 26.3315 W 72 46.851167
+FIX DIKIE LATLON N 41 21.824 W 72 45.9435
+FIX JANOL LATLON N 41 27.811166 W 72 48.5745
+FIX JUMGO LATLON N 41 28.088167 W 72 48.100166
+FIX MAD LATLON N 41 18.831667 W 72 41.532167
+FIX MIDDL LATLON N 41 32.833 W 72 44.830333
+FIX NESSA LATLON N 41 25.623667 W 72 47.612167
+FIX WEGOT LATLON N 41 32.423 W 72 35.5365
+FIX YODEL LATLON N 41 23.422834 W 72 39.508667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX DIKIE AT OR ABOVE 2000 FIX NESSA 1700 FIX JANOL AT OR ABOVE 960 RNW 36 TRK 356 UNTIL 800 TURN RIGHT DIRECT FIX OVERFLY WEGOT AT OR ABOVE 2500 HOLD AT FIX WEGOT LEFT TURN INBOUNDCOURSE 212 LEGDIST 4
+ TRANSITION MAD FIX MAD
+ TRANSITION YODEL FIX YODEL
+APPROACH VOR36 FIX ACELA 1800 FIX JUMGO AT OR ABOVE 1060 RNW 36 TRK 345 UNTIL 510 TURN RIGHT DIRECT FIX MIDDL AT OR ABOVE 2700 HOLD AT FIX MIDDL LEFT TURN INBOUNDCOURSE 071 ALT 2700 LEGTIME 1
+ TRANSITION ACELA HOLD AT FIX ACELA LEFT TURN INBOUNDCOURSE 345 ALT 2100 LEGTIME 1
+ TRANSITION MAD FIX MAD
+ENDAPPROACHES

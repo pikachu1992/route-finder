@@ -1,0 +1,35 @@
+//K7G0 (LEDGEDALE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CESON LATLON N 43 10.939 W 77 59.9235
+FIX CLUNG LATLON N 43 3.286166 W 78 0.223
+FIX JEBEM LATLON N 43 10.8215 W 77 51.451
+FIX OBILY LATLON N 43 10.772333 W 77 48.113666
+FIX QEBZA LATLON N 43 10.6425 W 77 39.781834
+FIX ROC LATLON N 43 7.0775 W 77 40.367666
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX QEBZA AT OR ABOVE 3500 FIX OBILY 2200 FIX JEBEM AT OR ABOVE 1420 RNW 28 TRK 282 UNTIL 1060 FIX CESON FIX OVERFLY CLUNG AT OR ABOVE 3500 HOLD AT FIX CLUNG RIGHT TURN INBOUNDCOURSE 086 ALT 3500 LEGDIST 4
+ TRANSITION ROC FIX ROC FIX OVERFLY QEBZA AT OR ABOVE 4300 HOLD AT FIX QEBZA RIGHT TURN INBOUNDCOURSE 282 ALT 3500 LEGDIST 4
+ENDAPPROACHES

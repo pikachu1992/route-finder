@@ -1,0 +1,44 @@
+//KLUX (LAURENS CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMFAB LATLON N 34 28.944667 W 82 2.4485
+FIX EECEE LATLON N 34 26.686667 W 81 38.977834
+FIX EGADE LATLON N 34 31.921 W 81 51.1175
+FIX JOEEM LATLON N 34 34.3315 W 81 41.880667
+FIX REINR LATLON N 34 26.508 W 82 11.6655
+FIX SPIIN LATLON N 34 34.139666 W 82 14.618167
+FIX SRCLE LATLON N 34 18.875 W 82 8.721833
+FIX TEEAR LATLON N 34 41.975 W 81 44.792167
+FIX WIBOM LATLON N 34 29.870833 W 81 58.931167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX REINR AT OR ABOVE 3000 FIX AMFAB 2200 FIX WIBOM AT OR ABOVE 1220 RNW 08 TRK 079 UNTIL 948 FIX OVERFLY JOEEM AT OR ABOVE 3000 HOLD AT FIX JOEEM RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4
+ TRANSITION REINR HOLD AT FIX REINR RIGHT TURN INBOUNDCOURSE 079 ALT 3000 LEGDIST 4
+ TRANSITION SPIIN FIX SPIIN
+ TRANSITION SRCLE FIX SRCLE
+APPROACH RNV26 FIX JOEEM AT OR ABOVE 3000 FIX EGADE 2200 RNW 26 TRK 259 UNTIL 1098 FIX OVERFLY REINR AT OR ABOVE 3000 HOLD AT FIX REINR RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4
+ TRANSITION EECEE FIX EECEE
+ TRANSITION JOEEM HOLD AT FIX JOEEM RIGHT TURN INBOUNDCOURSE 260 ALT 3000 LEGDIST 4
+ TRANSITION TEEAR FIX TEEAR
+ENDAPPROACHES

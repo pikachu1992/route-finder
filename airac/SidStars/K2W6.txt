@@ -1,0 +1,40 @@
+//K2W6 (ST MARYS CO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASIZE LATLON N 38 17.654167 W 76 25.663667
+FIX COLIN LATLON N 38 5.987167 W 76 39.8475
+FIX DUYEV LATLON N 38 19.6975 W 76 37.528166
+FIX FABAV LATLON N 38 8.713667 W 76 21.401833
+FIX GOFER LATLON N 38 25.130666 W 76 16.755
+FIX JAGUX LATLON N 38 16.534166 W 76 19.214167
+FIX LEKVE LATLON N 38 21.121667 W 76 45.875167
+FIX ONAFE LATLON N 38 20.077667 W 76 39.750667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX LEKVE AT OR ABOVE 2000 FIX ONAFE 1800 FIX DUYEV AT OR ABOVE 1220 RNW 11 TRK 112 UNTIL 620 FIX OVERFLY GOFER AT OR ABOVE 2000 HOLD AT FIX GOFER RIGHT TURN INBOUNDCOURSE 226 LEGDIST 4
+ TRANSITION LEKVE HOLD AT FIX LEKVE RIGHT TURN INBOUNDCOURSE 148 ALT 2000 LEGDIST 4
+APPROACH RNV29 FIX JAGUX AT OR ABOVE 2000 FIX ASIZE 2000 RNW 29 TRK 292 UNTIL 700 TURN LEFT DIRECT FIX OVERFLY COLIN AT OR ABOVE 5000 HOLD AT FIX COLIN RIGHT TURN INBOUNDCOURSE 081 LEGDIST 5
+ TRANSITION COLIN FIX COLIN FIX FABAV AT OR ABOVE 2000
+ TRANSITION GOFER FIX GOFER
+ENDAPPROACHES

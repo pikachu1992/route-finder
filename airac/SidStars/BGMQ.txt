@@ -1,0 +1,33 @@
+//BGMQ (MANIITSOQ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FQ34 LATLON N 65 21.6105 W 52 46.410167
+FIX MANB LATLON N 65 24.391834 W 52 55.239167
+FIX MS LATLON N 65 24.698167 W 52 55.802333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDM34 FIX FQ34 2100 FIX MANB 290 RNW 34 TRK 336 UNTIL 500 TRK 302 UNTIL 2400 TURN LEFT DIRECT FIX MANB 4100 HOLD AT FIX MANB RIGHT TURN INBOUNDCOURSE 147 LEGTIME 1
+ TRANSITION MA1 FIX MANB AT OR ABOVE 4100 TRK 173 UNTIL 5.5 FROM FIX MS
+ TRANSITION MA2 FIX MANB AT OR ABOVE 4100 TRK 170 UNTIL 5.5 FROM FIX MS
+ENDAPPROACHES

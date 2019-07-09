@@ -1,0 +1,35 @@
+//KPLU (PIERCE CO-THUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALDER LATLON N 46 49.293667 W 122 24.853166
+FIX ARWEL LATLON N 46 55.736 W 122 17.398333
+FIX BANFO LATLON N 47 0.249667 W 122 17.326834
+FIX PULLI LATLON N 47 2.936666 W 122 17.284333
+FIX TCM LATLON N 47 8.860166 W 122 28.502333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX ARWEL AT OR ABOVE 3800 FIX BANFO 2400 FIX PULLI AT OR ABOVE 1540 RNW 35 TRK 346 UNTIL 1900 TURN LEFT DIRECT FIX OVERFLY ARWEL AT OR ABOVE 3800 HOLD AT FIX ARWEL LEFT TURN INBOUNDCOURSE 000 LEGDIST 4
+ TRANSITION ALDER FIX ALDER
+ TRANSITION TCM FIX TCM FIX OVERFLY ARWEL AT OR ABOVE 3800 HOLD AT FIX ARWEL LEFT TURN INBOUNDCOURSE 000 ALT 3800 LEGDIST 4
+ENDAPPROACHES

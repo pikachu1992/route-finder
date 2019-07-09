@@ -1,0 +1,37 @@
+//KBWC (BRAWLEY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUSAM LATLON N 32 59.600333 W 115 30.964166
+FIX HIIHO LATLON N 33 4.563167 W 115 31.116833
+FIX IPL LATLON N 32 44.932 W 115 30.515
+FIX JAMON LATLON N 33 12.468833 W 115 31.361
+FIX SECAN LATLON N 33 16.276166 W 115 37.093834
+FIX TRM LATLON N 33 37.685666 W 116 9.611833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VORB08 FIX JAMON AT OR ABOVE 2200 FIX HIIHO 1300 FIX CUSAM 560 RNW 08 FIX IPL AT OR ABOVE 3000 HOLD AT FIX IPL RIGHT TURN INBOUNDCOURSE 254 LEGTIME 1
+ TRANSITION TRM FIX TRM FIX SECAN AT OR ABOVE 3700
+APPROACH VORB26 FIX JAMON AT OR ABOVE 2200 FIX HIIHO 1300 FIX CUSAM 560 RNW 26 FIX IPL AT OR ABOVE 3000 HOLD AT FIX IPL RIGHT TURN INBOUNDCOURSE 254 LEGTIME 1
+ TRANSITION TRM FIX TRM FIX SECAN AT OR ABOVE 3700
+ENDAPPROACHES

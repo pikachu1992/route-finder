@@ -1,0 +1,35 @@
+//ETHF (FRITZLAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FTZNB LATLON N 51 5.055334 E 9 24.914666
+FIX GED LATLON N 50 24.716833 E 9 14.949833
+FIX RW30 LATLON N 51 6.74 E 9 17.544
+FIX WRB LATLON N 51 30.341833 E 9 6.654833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB30 FIX FTZNB 2200 RNW 30 TRK 287 UNTIL 2500 TURN LEFT DIRECT FIX FTZNB 4300 SPEED 180
+ TRANSITION FTZ HOLD AT FIX FTZNB LEFT TURN INBOUNDCOURSE 287 ALT 3100 LEGTIME 1
+ TRANSITION GED FIX GED FIX FTZNB AT OR BELOW 6000 AT OR ABOVE 4300 HOLD AT FIX FTZNB LEFT TURN INBOUNDCOURSE 287 ALT 3100 SPEED 180 LEGTIME 1
+ TRANSITION WRB FIX WRB FIX FTZNB AT OR BELOW 6000 AT OR ABOVE 4300 HOLD AT FIX FTZNB LEFT TURN INBOUNDCOURSE 287 ALT 3100 SPEED 180 LEGTIME 1
+ENDAPPROACHES

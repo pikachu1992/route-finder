@@ -1,0 +1,46 @@
+//KD25 (MANITOWISH WATERS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERBUH LATLON N 46 15.951334 W 90 3.0715
+FIX HENUG LATLON N 46 11.266834 W 89 57.641833
+FIX ILUGY LATLON N 45 51.843 W 89 49.99
+FIX JIBRA LATLON N 46 20.961667 W 89 54.077
+FIX KOLRE LATLON N 46 5.745167 W 89 51.267667
+FIX KRSMS LATLON N 45 53.117167 W 90 1.5765
+FIX RAREW LATLON N 45 58.391666 W 89 42.820834
+FIX RAVGY LATLON N 46 10.929167 W 90 12.038666
+FIX RHI LATLON N 45 38.0265 W 89 27.467333
+FIX UPEPE LATLON N 46 3.611333 W 89 48.81
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 14
+RNW 22
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ERBUH AT OR ABOVE 3500 FIX HENUG 3200 RNW 14 TRK 142 UNTIL 2010 TURN LEFT DIRECT FIX OVERFLY ERBUH AT OR ABOVE 3500 HOLD AT FIX ERBUH RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4
+ TRANSITION ERBUH HOLD AT FIX ERBUH RIGHT TURN INBOUNDCOURSE 142 ALT 3500 LEGDIST 4
+ TRANSITION JIBRA FIX JIBRA
+ TRANSITION RAVGY FIX RAVGY
+APPROACH RNV32 FIX RAREW AT OR ABOVE 3500 FIX UPEPE 3300 FIX KOLRE AT OR ABOVE 2280 RNW 32 TRK 322 UNTIL 2000 FIX OVERFLY ERBUH AT OR ABOVE 3500 HOLD AT FIX ERBUH RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4
+ TRANSITION KRSMS FIX KRSMS FIX ILUGY AT OR ABOVE 3500
+ TRANSITION RHI FIX RHI
+ENDAPPROACHES

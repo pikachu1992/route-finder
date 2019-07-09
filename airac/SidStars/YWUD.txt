@@ -1,0 +1,40 @@
+//YWUD (WUDINNA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WUDSA LATLON S 33 9.730834 E 135 39.865667
+FIX WUDSB LATLON S 33 15.156167 E 135 37.611833
+FIX WUDSC LATLON S 33 15.227167 E 135 30.772667
+FIX WUDSF LATLON S 33 7.020667 E 135 30.657334
+FIX WUDSH LATLON S 33 0.507334 E 135 25.109167
+FIX WUDSI LATLON S 33 11.089166 E 135 34.131833
+FIX WUDSM LATLON S 33 2.950333 E 135 27.188167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 14
+RNW 25
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX WUDSI AT OR ABOVE 2700 FIX WUDSF 2010 FIX OVERFLY WUDSM 413 RNW 32 FIX WUDSH HDG 318 VECTORS
+ TRANSITION WUDSA FIX WUDSA AT OR ABOVE 2700 SPEED 210
+ TRANSITION WUDSB FIX WUDSB AT OR ABOVE 2700 SPEED 210
+ TRANSITION WUDSC FIX WUDSC AT OR ABOVE 2700 SPEED 210
+ENDAPPROACHES

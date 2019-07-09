@@ -1,0 +1,38 @@
+//KFPK (BEACH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERRYS LATLON N 42 51.758333 W 84 8.907334
+FIX HURES LATLON N 42 38.198167 W 84 46.787333
+FIX LESSY LATLON N 42 26.221 W 84 33.0495
+FIX LUYRI LATLON N 42 45.038333 W 84 43.292833
+FIX UNSUN LATLON N 42 45.078667 W 85 4.828333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 15
+RNW 21
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV21 FIX LUYRI AT OR ABOVE 3000 FIX HURES 2500 RNW 21 TRK 207 UNTIL 1300 FIX OVERFLY LESSY AT OR ABOVE 3000 HOLD AT FIX LESSY RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4
+ TRANSITION ERRYS FIX ERRYS
+ TRANSITION LESSY FIX LESSY FIX OVERFLY LUYRI AT OR ABOVE 3000 HOLD AT FIX LUYRI RIGHT TURN INBOUNDCOURSE 207 ALT 3000 LEGDIST 4
+ TRANSITION UNSUN FIX UNSUN FIX OVERFLY LUYRI AT OR ABOVE 3000 HOLD AT FIX LUYRI RIGHT TURN INBOUNDCOURSE 207 ALT 3000 LEGDIST 4
+ENDAPPROACHES

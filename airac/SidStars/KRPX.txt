@@ -1,0 +1,38 @@
+//KRPX (ROUNDUP)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BAYAM LATLON N 46 27.301667 W 108 40.475666
+FIX KENPE LATLON N 46 27.8845 W 108 36.615833
+FIX LUNNA LATLON N 46 29.738333 W 108 24.236666
+FIX PULAE LATLON N 46 31.287167 W 108 13.767
+FIX SWIVL LATLON N 46 25.688167 W 108 51.079667
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 16
+RNW 25
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX SWIVL AT OR ABOVE 6600 FIX BAYAM 5200 FIX KENPE AT OR ABOVE 4320 RNW 07 TRK 067 UNTIL 3890 FIX OVERFLY PULAE AT OR ABOVE 6300 HOLD AT FIX PULAE RIGHT TURN INBOUNDCOURSE 247 LEGDIST 7
+ TRANSITION SWIVL HOLD AT FIX SWIVL RIGHT TURN INBOUNDCOURSE 067 ALT 6600 LEGDIST 7
+APPROACH RNV25 FIX PULAE AT OR ABOVE 6300 FIX LUNNA 5200 RNW 25 TRK 247 UNTIL 3746 FIX OVERFLY SWIVL AT OR ABOVE 6600 HOLD AT FIX SWIVL RIGHT TURN INBOUNDCOURSE 067 LEGDIST 7
+ TRANSITION PULAE HOLD AT FIX PULAE RIGHT TURN INBOUNDCOURSE 247 ALT 6300 LEGDIST 7
+ENDAPPROACHES

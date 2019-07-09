@@ -1,0 +1,43 @@
+//KUUV (SULLIVAN REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEXVE LATLON N 38 11.318167 W 91 15.812333
+FIX CELUL LATLON N 38 24.062666 W 91 0.315
+FIX FEBEM LATLON N 38 15.361166 W 90 54.032
+FIX KAHHO LATLON N 38 3.937 W 91 19.3655
+FIX NARFU LATLON N 38 12.6155 W 91 25.684
+FIX OKUMY LATLON N 38 19.712666 W 90 57.170333
+FIX PAPSY LATLON N 38 16.689667 W 91 3.9045
+FIX WINIL LATLON N 38 8.277 W 91 22.521667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX WINIL AT OR ABOVE 3000 FIX BEXVE 2600 RNW 06 FIX OVERFLY OKUMY AT OR ABOVE 3000 HOLD AT FIX OKUMY RIGHT TURN INBOUNDCOURSE 238 LEGDIST 4
+ TRANSITION KAHHO FIX KAHHO AT OR ABOVE 3100
+ TRANSITION NARFU FIX NARFU AT OR ABOVE 3000
+ TRANSITION WINIL HOLD AT FIX WINIL RIGHT TURN INBOUNDCOURSE 058 ALT 3000 LEGDIST 4
+APPROACH RNV24 FIX OKUMY AT OR ABOVE 3000 FIX PAPSY 2600 RNW 24 FIX OVERFLY WINIL AT OR ABOVE 3000 HOLD AT FIX WINIL RIGHT TURN INBOUNDCOURSE 058 LEGDIST 4
+ TRANSITION CELUL FIX CELUL AT OR ABOVE 3000
+ TRANSITION FEBEM FIX FEBEM AT OR ABOVE 3000
+ TRANSITION OKUMY HOLD AT FIX OKUMY RIGHT TURN INBOUNDCOURSE 238 ALT 3000 LEGDIST 4
+ENDAPPROACHES

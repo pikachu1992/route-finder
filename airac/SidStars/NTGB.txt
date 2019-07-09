@@ -1,0 +1,34 @@
+//NTGB (FANGATAU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF076 LATLON S 15 49.413667 W 140 57.688834
+FIX FF250 LATLON S 15 48.664667 W 140 48.786667
+FIX FNNB LATLON S 15 49.261667 W 140 53.168333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA07 FIX FF076 1200 FIX FNNB 610 RNW 07 TRK 076 UNTIL 1500 TURN RIGHT DIRECT FIX FNNB
+APPROACH NDBB07 FIX FF250 1200 FIX FNNB 600 RNW 07 TRK 250 UNTIL 1500 TURN RIGHT DIRECT FIX FNNB
+APPROACH NDBA25 FIX FF076 1200 FIX FNNB 610 RNW 25 TRK 076 UNTIL 1500 TURN RIGHT DIRECT FIX FNNB
+APPROACH NDBB25 FIX FF250 1200 FIX FNNB 600 RNW 25 TRK 250 UNTIL 1500 TURN RIGHT DIRECT FIX FNNB
+ENDAPPROACHES

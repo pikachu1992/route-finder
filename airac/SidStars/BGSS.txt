@@ -1,0 +1,43 @@
+//BGSS (SISIMIUT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMVEP LATLON N 67 5.15 W 54 14.716667
+FIX D315K LATLON N 66 59.623834 W 54 8.495333
+FIX FQ13 LATLON N 66 58.120667 W 54 4.096834
+FIX GUBDA LATLON N 67 1.45 W 54 30.083333
+FIX LUTEV LATLON N 66 55.466666 W 54 20.616667
+FIX MQ13 LATLON N 66 57.5935 W 53 52.729333
+FIX NODBA LATLON N 67 0.3 W 54 17.683333
+FIX OSVOV LATLON N 66 59.15 W 54 5.3
+FIX PIXIV LATLON N 66 57.966667 W 53 52.933333
+FIX SMNB LATLON N 66 57.090667 W 53 42.152333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDM13 FIX FQ13 2000 FIX MQ13 1204 RNW 13 TRK 272 UNTIL 4600 TURN RIGHT DIRECT FIX SMNB 4600 HOLD AT FIX SMNB RIGHT TURN INBOUNDCOURSE 315 LEGTIME 1
+ TRANSITION SM FIX SMNB AT OR ABOVE 4600 FIX OVERFLY D315K AT OR ABOVE 2000 SPEED 120
+APPROACH RNV13 FIX OSVOV 2100 FIX OVERFLY PIXIV 1198 RNW 13 TURN RIGHT DIRECT FIX LUTEV 3700 HOLD AT FIX LUTEV LEFT TURN INBOUNDCOURSE 045 LEGTIME 1
+ TRANSITION AMVEP FIX AMVEP AT OR ABOVE 3700 SPEED 130 FIX NODBA AT OR ABOVE 2100
+ TRANSITION GUBDA FIX GUBDA AT OR ABOVE 3700 SPEED 130 FIX NODBA AT OR ABOVE 2100
+ TRANSITION LUTEV FIX LUTEV AT OR ABOVE 3700 SPEED 130 FIX NODBA AT OR ABOVE 2100
+ENDAPPROACHES

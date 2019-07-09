@@ -1,0 +1,45 @@
+//CCK4 (ST LEWIS FOX HARBOUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVSIN LATLON N 52 20.9575 W 55 41.935
+FIX EPSAD LATLON N 52 23.935 W 55 39.525334
+FIX EPTIB LATLON N 52 18.863833 W 55 44.154667
+FIX ITNUR LATLON N 52 14.675666 W 55 48.587167
+FIX ITSEN LATLON N 52 31.531166 W 55 35.475667
+FIX MEPRU LATLON N 52 19.1865 W 55 42.046166
+FIX NANRU LATLON N 52 25.142833 W 55 37.485167
+FIX PESNA LATLON N 52 33.1525 W 55 43.220666
+FIX SILPU LATLON N 52 11.952833 W 55 41.772
+FIX TAKMU LATLON N 52 29.9015 W 55 27.740333
+FIX VEVPI LATLON N 52 26.783666 W 55 38.008333
+FIX VIGDA LATLON N 52 17.391833 W 55 55.416167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ITNUR AT OR ABOVE 1800 FIX EPTIB 1380 FIX OVERFLY AVSIN 586 RNW 05 FIX OVERFLY NANRU 2700 HOLD AT FIX NANRU RIGHT TURN INBOUNDCOURSE 054 LEGTIME 1
+ TRANSITION SILPU FIX SILPU
+ TRANSITION VIGDA FIX VIGDA
+APPROACH RNV23 FIX ITSEN AT OR ABOVE 1600 FIX VEVPI 1560 FIX OVERFLY EPSAD 599 RNW 23 FIX OVERFLY MEPRU 2400 HOLD AT FIX MEPRU RIGHT TURN INBOUNDCOURSE 219 LEGTIME 1
+ TRANSITION PESNA FIX PESNA
+ TRANSITION TAKMU FIX TAKMU
+ENDAPPROACHES

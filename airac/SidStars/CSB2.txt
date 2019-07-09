@@ -1,0 +1,36 @@
+//CSB2 (SABLE ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADSIB LATLON N 43 47.5825 W 60 4.093166
+FIX DAVNI LATLON N 43 52.7575 W 59 57.434833
+FIX GOVOT LATLON N 43 47.76 W 59 57.194167
+FIX KEGMO LATLON N 43 55.733333 W 59 57.5785
+FIX LEPOX LATLON N 44 0.730667 W 59 57.820333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA11 FIX GOVOT AT OR ABOVE 1400 SPEED 140 FIX DAVNI 1000 FIX OVERFLY KEGMO 520 RNW 11 FIX OVERFLY LEPOX 1400 HOLD AT FIX LEPOX RIGHT TURN INBOUNDCOURSE 016 SPEED 175 LEGTIME 1
+ TRANSITION ADSIB FIX ADSIB SPEED 140
+APPROACH RNVA29 FIX GOVOT AT OR ABOVE 1400 SPEED 140 FIX DAVNI 1000 FIX OVERFLY KEGMO 520 RNW 29 FIX OVERFLY LEPOX 1400 HOLD AT FIX LEPOX RIGHT TURN INBOUNDCOURSE 016 SPEED 175 LEGTIME 1
+ TRANSITION ADSIB FIX ADSIB SPEED 140
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//CED5 (TABER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGDAS LATLON N 49 47.830166 W 112 17.079
+FIX BEXUB LATLON N 49 51.477833 W 112 4.375
+FIX DERVO LATLON N 49 58.7755 W 112 1.765667
+FIX IGSUN LATLON N 49 45.7935 W 112 24.123
+FIX KAPOG LATLON N 49 51.273667 W 112 5.089166
+FIX NOPUB LATLON N 49 51.264 W 112 27.909667
+FIX ODGAM LATLON N 49 53.290834 W 111 58.018667
+FIX TAPRU LATLON N 49 40.320833 W 112 20.350667
+FIX VEVNA LATLON N 49 47.804167 W 111 54.285667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 13
+RNW 23
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX IGSUN AT OR ABOVE 4600 SPEED 180 FIX AGDAS 3970 RNW 05 FIX OVERFLY BEXUB 4600 HOLD AT FIX BEXUB RIGHT TURN INBOUNDCOURSE 052 SPEED 200 LEGTIME 1
+ TRANSITION NOPUB FIX NOPUB SPEED 200
+ TRANSITION TAPRU FIX TAPRU SPEED 200
+APPROACH RNV23 FIX ODGAM AT OR ABOVE 4000 SPEED 180 FIX KAPOG 3960 RNW 23 TURN RIGHT DIRECT FIX OVERFLY DERVO 4000 HOLD AT FIX DERVO RIGHT TURN INBOUNDCOURSE 142 SPEED 230 LEGTIME 1
+ TRANSITION DERVO FIX DERVO SPEED 200
+ TRANSITION VEVNA FIX VEVNA SPEED 200
+ENDAPPROACHES

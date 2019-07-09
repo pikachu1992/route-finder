@@ -1,0 +1,43 @@
+//K6P7 (MCVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUCTS LATLON N 40 39.7515 W 79 30.157166
+FIX FIDSO LATLON N 40 48.380167 W 79 41.319167
+FIX HUBIT LATLON N 40 35.913 W 79 25.2145
+FIX JIDAS LATLON N 40 53.629166 W 79 48.144667
+FIX JUVAR LATLON N 40 30.3055 W 79 32.704667
+FIX KURBE LATLON N 40 41.512333 W 79 17.7035
+FIX NERDY LATLON N 40 59.253 W 79 40.6325
+FIX SKIED LATLON N 40 47.997 W 79 55.635667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX JIDAS AT OR ABOVE 3600 FIX FIDSO 3000 RNW 14 TRK 145 UNTIL 1505 FIX OVERFLY HUBIT AT OR ABOVE 4000 HOLD AT FIX HUBIT RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION JIDAS HOLD AT FIX JIDAS RIGHT TURN INBOUNDCOURSE 145 ALT 3600 LEGDIST 4
+ TRANSITION NERDY FIX NERDY
+ TRANSITION SKIED FIX SKIED
+APPROACH RNV32 FIX HUBIT AT OR ABOVE 3800 FIX DUCTS 3000 RNW 32 TRK 326 UNTIL 2200 TURN RIGHT DIRECT FIX OVERFLY HUBIT AT OR ABOVE 4000 HOLD AT FIX HUBIT RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION HUBIT HOLD AT FIX HUBIT RIGHT TURN INBOUNDCOURSE 326 ALT 3800 LEGDIST 4
+ TRANSITION JUVAR FIX JUVAR
+ TRANSITION KURBE FIX KURBE
+ENDAPPROACHES

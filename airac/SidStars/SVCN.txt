@@ -1,0 +1,47 @@
+//SVCN (CANAIMA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 6 6.354351 W 62 56.481855
+FIX AF002 LATLON N 6 5.504284 W 62 54.561048
+FIX AF003 LATLON N 6 5.069764 W 62 52.504538
+FIX ASOSU LATLON N 6 18.650167 W 62 51.839
+FIX CMA LATLON N 6 15.015 W 62 51.453334
+FIX D188J LATLON N 6 5.021666 W 62 50.404
+FIX DALNI LATLON N 6 22.289666 W 62 52.26
+FIX EKEBI LATLON N 6 26.280667 W 62 49.2095
+FIX ERIVO LATLON N 6 25.478333 W 62 56.141
+FIX FF36 LATLON N 6 8.019667 W 62 50.718667
+FIX GAVOP LATLON N 6 44.575 W 62 49.659667
+FIX ILRUT LATLON N 6 42.705667 W 63 1.943
+FIX KALAV LATLON N 6 13.3545 W 62 51.225667
+FIX SELVA LATLON N 6 7.55 W 62 58.183333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM36 FIX FF36 3600 RNW 36 FIX OVERFLY CMA TURN LEFT DIRECT FIX SELVA AT OR ABOVE 3600
+ TRANSITION CMA FIX CMA AT OR ABOVE 5500 TRK 208 UNTIL 7.0 FROM FIX CMA SPEED 160
+ TRANSITION SELVA FIX SELVA AT OR ABOVE 3600 FIX AF001 FIX AF002 FIX AF003 FIX D188J
+APPROACH RNV18 FIX DALNI AT OR ABOVE 3900 FIX ASOSU 2700 RNW 18 FIX OVERFLY KALAV AT OR ABOVE 1740 TURN RIGHT DIRECT FIX ERIVO AT OR ABOVE 4900 HOLD AT FIX ERIVO RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4
+ TRANSITION GAVOP FIX GAVOP FIX EKEBI AT OR ABOVE 3900
+ TRANSITION ILRUT FIX ILRUT FIX ERIVO AT OR ABOVE 3900
+ENDAPPROACHES

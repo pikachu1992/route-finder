@@ -1,0 +1,38 @@
+//KEOD (SABRE AAF FT CAMPBELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GNSHP LATLON N 36 53.082167 W 87 19.4995
+FIX NIXAE LATLON N 36 43.879166 W 87 17.246666
+FIX OJLUW LATLON N 36 25.817167 W 87 38.601833
+FIX QUWRE LATLON N 36 31.9485 W 87 31.381
+FIX VUSNY LATLON N 36 30.209167 W 87 33.432334
+FIX WARUX LATLON N 36 37.9555 W 87 24.2765
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNVX05 FIX OJLUW AT OR ABOVE 2500 FIX VUSNY 2200 FIX QUWRE AT OR ABOVE 1440 RNW 05 TRK 047 UNTIL 995 FIX OVERFLY NIXAE AT OR ABOVE 2400 HOLD AT FIX NIXAE RIGHT TURN INBOUNDCOURSE 227 ALT 6000 LEGDIST 6
+ TRANSITION GNSHP FIX GNSHP FIX OVERFLY OJLUW AT OR ABOVE 2500 HOLD AT FIX OJLUW RIGHT TURN INBOUNDCOURSE 047 ALT 2500 LEGDIST 6
+APPROACH RNVX23 FIX NIXAE AT OR ABOVE 2400 FIX WARUX 2200 RNW 23 TRK 227 UNTIL 995 TURN LEFT DIRECT FIX OVERFLY NIXAE AT OR ABOVE 2400 HOLD AT FIX NIXAE RIGHT TURN INBOUNDCOURSE 227 ALT 6000 LEGDIST 6
+ TRANSITION GNSHP FIX GNSHP
+ TRANSITION NIXAE HOLD AT FIX NIXAE RIGHT TURN INBOUNDCOURSE 227 ALT 2400 LEGDIST 6
+ENDAPPROACHES

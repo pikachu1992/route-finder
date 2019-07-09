@@ -1,0 +1,36 @@
+//7FL6 (SPRUCE CREEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GAMGY LATLON N 29 1.450834 W 81 7.646167
+FIX GUANO LATLON N 29 5.978833 W 81 23.3155
+FIX KIZER LATLON N 28 55.433333 W 81 22.297166
+FIX PIXEE LATLON N 29 2.7795 W 81 5.730667
+FIX POBNE LATLON N 28 57.684833 W 81 13.068
+FIX SMYRA LATLON N 29 0.324667 W 80 59.575166
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX POBNE AT OR ABOVE 2800 FIX GAMGY 1700 FIX PIXEE AT OR ABOVE 1020 RNW 06 TRK 057 UNTIL 1200 TURN RIGHT DIRECT FIX OVERFLY SMYRA AT OR ABOVE 2000 HOLD AT FIX SMYRA LEFT TURN INBOUNDCOURSE 341 LEGDIST 4
+ TRANSITION GUANO FIX GUANO
+ TRANSITION KIZER FIX KIZER
+ENDAPPROACHES

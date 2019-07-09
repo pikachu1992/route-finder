@@ -1,0 +1,39 @@
+//EGHE (ST MARYS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN27 LATLON N 49 54.837667 W 6 6.940166
+FIX FN32 LATLON N 49 51.317 W 6 13.204
+FIX LANLO LATLON N 49 59.45 W 5 57.133333
+FIX LND LATLON N 50 8.177 W 5 38.216
+FIX STMNB LATLON N 49 54.845666 W 6 17.4665
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 14
+RNW 27
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH NDB27 FIX FN27 1500 FIX STMNB 123 RNW 27 TRK 272 UNTIL 1500 TURN LEFT DIRECT FIX STMNB 1500
+ TRANSITION LND FIX LND FIX LANLO
+ TRANSITION STM2 FIX STMNB 1500 TRK 106 UNTIL 7.5 FROM FIX STMNB
+APPROACH NDB32 FIX FN32 1500 RNW 32 FIX OVERFLY STMNB TRK 324 UNTIL 1500 TURN LEFT DIRECT FIX STMNB 1500
+ TRANSITION STM2 FIX STMNB 1500 TRK 159 UNTIL 7.5 FROM FIX STMNB
+ENDAPPROACHES

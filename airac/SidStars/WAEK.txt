@@ -1,0 +1,40 @@
+//WAEK (KUABANG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD18 LATLON N 1 20.0325 E 127 55.055167
+FIX CD36 LATLON N 1 2.067334 E 127 54.119666
+FIX FD18 LATLON N 1 16.5585 E 127 54.5085
+FIX FD36 LATLON N 1 6.081667 E 127 53.910667
+FIX KAO LATLON N 1 11.0995 E 127 53.6495
+FIX MD18 LATLON N 1 13.0845 E 127 53.961833
+FIX MD36 LATLON N 1 9.493667 E 127 53.733
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM18 FIX CD18 AT OR ABOVE 2300 FIX FD18 1600 FIX MD18 527 RNW 18 FIX KAO TRK 188 UNTIL 1500 TURN RIGHT DIRECT FIX KAO AT OR ABOVE 4000 HOLD AT FIX KAO RIGHT TURN INBOUNDCOURSE 021 LEGTIME 1
+ TRANSITION KAO1 FIX KAO AT OR ABOVE 4000 TRK 021 UNTIL 9.0 FROM FIX KAO SPEED 185
+ TRANSITION KAO2 FIX KAO AT OR ABOVE 4000 TRK 015 UNTIL 9.0 FROM FIX KAO
+APPROACH VDM36 FIX CD36 AT OR ABOVE 2300 FIX FD36 1550 FIX MD36 499 RNW 36 FIX KAO TRK 356 UNTIL 1500 TURN RIGHT DIRECT FIX KAO AT OR ABOVE 4000 HOLD AT FIX KAO RIGHT TURN INBOUNDCOURSE 192 LEGTIME 1
+ TRANSITION KAO1 FIX KAO AT OR ABOVE 4000 TRK 192 UNTIL 9.0 FROM FIX KAO SPEED 185
+ TRANSITION KAO2 FIX KAO AT OR ABOVE 4000 TRK 186 UNTIL 9.0 FROM FIX KAO
+ENDAPPROACHES

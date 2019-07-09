@@ -1,0 +1,35 @@
+//NGTB (ABEMAMA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEMAM LATLON N 0 30.619166 E 173 41.568667
+FIX KIDIS LATLON N 0 34.551167 E 173 40.738333
+FIX SUMIG LATLON N 0 27.07 E 173 39.694
+FIX TB901 LATLON N 0 30.057 E 173 45.522334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX BEMAM AT OR ABOVE 2500 FIX TB901 1300 RNW 09 TRK 089 UNTIL 1000 TURN LEFT DIRECT FIX BEMAM AT OR ABOVE 2500
+ TRANSITION BEMAM HOLD AT FIX BEMAM RIGHT TURN INBOUNDCOURSE 089 ALT 2500 LEGTIME 1
+ TRANSITION KIDIS FIX KIDIS
+ TRANSITION SUMIG FIX SUMIG
+ENDAPPROACHES

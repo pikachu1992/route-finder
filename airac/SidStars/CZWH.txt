@@ -1,0 +1,44 @@
+//CZWH (LAC BROCHET)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ILEDU LATLON N 58 38.743834 W 101 25.675333
+FIX IMAPU LATLON N 58 26.202833 W 101 30.451834
+FIX NUBED LATLON N 58 29.001667 W 101 38.3305
+FIX ONDIB LATLON N 58 31.792333 W 101 46.23
+FIX RIDAG LATLON N 58 33.131333 W 101 32.983667
+FIX SIKDO LATLON N 58 40.742 W 101 23.061833
+FIX UDMIG LATLON N 58 44.680333 W 101 17.8925
+FIX ULBOK LATLON N 58 41.860834 W 101 9.982333
+FIX VIGRI LATLON N 58 40.561333 W 101 23.2985
+FIX XOMLA LATLON N 58 32.968333 W 101 33.195
+FIX XOVMO LATLON N 58 47.491834 W 101 25.824
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX NUBED AT OR ABOVE 2800 FIX RIDAG 2600 RNW 03 FIX OVERFLY SIKDO 2900 HOLD AT FIX SIKDO RIGHT TURN INBOUNDCOURSE 028 LEGTIME 1
+ TRANSITION IMAPU FIX IMAPU SPEED 210
+ TRANSITION ONDIB FIX ONDIB SPEED 210
+APPROACH RNV21 FIX UDMIG AT OR ABOVE 2600 FIX VIGRI 2600 FIX ILEDU AT OR ABOVE 1900 RNW 21 FIX OVERFLY XOMLA 2900 HOLD AT FIX XOMLA RIGHT TURN INBOUNDCOURSE 208 LEGTIME 1
+ TRANSITION ULBOK FIX ULBOK SPEED 210
+ TRANSITION XOVMO FIX XOVMO SPEED 210
+ENDAPPROACHES

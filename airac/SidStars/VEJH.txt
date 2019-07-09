@@ -1,0 +1,32 @@
+//VEJH (JHARSUGUDA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN24 LATLON N 21 56.9035 E 84 10.141333
+FIX JHNB LATLON N 21 55.308334 E 84 2.076667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH NDB24 FIX FN24 2800 FIX JHNB 1780 RNW 24 TRK 258 UNTIL 3700 TURN RIGHT DIRECT FIX JHNB 3700 HOLD AT FIX JHNB LEFT TURN INBOUNDCOURSE 097 ALT 3700 LEGTIME 1
+ TRANSITION JH1 FIX JHNB AT OR ABOVE 3700 SPEED 200 TRK 097 UNTIL 8.3 FROM FIX JHNB
+ TRANSITION JH2 FIX JHNB AT OR ABOVE 3700 SPEED 200 TRK 089 UNTIL 8.3 FROM FIX JHNB
+ENDAPPROACHES

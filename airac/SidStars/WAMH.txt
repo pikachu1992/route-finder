@@ -1,0 +1,35 @@
+//WAMH (NAHA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HAFIZ LATLON N 3 44.291 E 125 18.322166
+FIX MH502 LATLON N 3 49.256833 E 125 27.013667
+FIX MH503 LATLON N 3 45.7625 E 125 28.9915
+FIX MH504 LATLON N 3 43.140833 E 125 30.475333
+FIX RESTI LATLON N 3 52.749167 E 125 25.036667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX MH502 AT OR ABOVE 2400 FIX MH503 1700 FIX OVERFLY MH504 784 RNW 15 TURN LEFT DIRECT FIX RESTI 3500 HOLD AT FIX RESTI LEFT TURN INBOUNDCOURSE 150 ALT 3500 LEGTIME 1
+ TRANSITION HAFIZ FIX HAFIZ AT OR ABOVE 3500
+ TRANSITION RESTI FIX RESTI AT OR ABOVE 3500
+ENDAPPROACHES

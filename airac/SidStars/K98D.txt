@@ -1,0 +1,39 @@
+//K98D (ONIDA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUSRE LATLON N 44 38.050166 W 100 1.1835
+FIX VUJTE LATLON N 44 39.693167 W 100 3.176333
+FIX WUKVA LATLON N 44 50.599 W 100 16.468
+FIX XUSDY LATLON N 44 33.513833 W 99 55.694833
+FIX ZENEV LATLON N 44 46.0725 W 100 10.937666
+FIX ZIMAP LATLON N 44 44.169667 W 100 8.618666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 13
+RNW 26
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX WUKVA AT OR ABOVE 4100 FIX ZENEV 3500 FIX ZIMAP AT OR ABOVE 2680 RNW 13 TRK 133 UNTIL 2140 FIX OVERFLY XUSDY AT OR ABOVE 4200 HOLD AT FIX XUSDY RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4
+ TRANSITION WUKVA HOLD AT FIX WUKVA RIGHT TURN INBOUNDCOURSE 133 ALT 4100 LEGDIST 4
+APPROACH RNV31 FIX XUSDY AT OR ABOVE 4200 FIX DUSRE 3500 FIX VUJTE AT OR ABOVE 2800 RNW 31 TRK 313 UNTIL 2220 FIX OVERFLY WUKVA AT OR ABOVE 4100 HOLD AT FIX WUKVA RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4
+ TRANSITION XUSDY HOLD AT FIX XUSDY RIGHT TURN INBOUNDCOURSE 313 ALT 4200 LEGDIST 4
+ENDAPPROACHES

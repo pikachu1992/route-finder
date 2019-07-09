@@ -1,0 +1,44 @@
+//CYBT (BROCHET)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADSUS LATLON N 57 49.522166 W 101 59.212667
+FIX BENER LATLON N 57 56.665166 W 101 35.431667
+FIX DAPIV LATLON N 58 0.445333 W 101 29.305166
+FIX GADIN LATLON N 58 3.689333 W 101 36.449666
+FIX IGROR LATLON N 57 46.278667 W 101 52.114
+FIX KASAK LATLON N 57 57.194666 W 101 22.182167
+FIX LEVAL LATLON N 57 49.797 W 101 46.4875
+FIX NOXEN LATLON N 57 55.1005 W 101 37.958833
+FIX OMPEK LATLON N 57 56.934667 W 101 34.995667
+FIX TAKAM LATLON N 57 43.0285 W 101 45.036334
+FIX URLUM LATLON N 57 50.0725 W 101 46.046
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX IGROR AT OR ABOVE 2600 FIX URLUM 2500 RNW 03 FIX OVERFLY OMPEK 2800 HOLD AT FIX OMPEK RIGHT TURN INBOUNDCOURSE 034 LEGTIME 1
+ TRANSITION ADSUS FIX ADSUS
+ TRANSITION TAKAM FIX TAKAM
+APPROACH RNV21 FIX DAPIV AT OR ABOVE 2600 FIX BENER 2500 FIX NOXEN AT OR ABOVE 1820 RNW 21 FIX OVERFLY LEVAL 2800 HOLD AT FIX LEVAL RIGHT TURN INBOUNDCOURSE 214 LEGTIME 1
+ TRANSITION GADIN FIX GADIN
+ TRANSITION KASAK FIX KASAK
+ENDAPPROACHES

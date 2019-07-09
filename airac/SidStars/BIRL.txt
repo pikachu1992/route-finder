@@ -1,0 +1,39 @@
+//BIRL (REYKJAHLID)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 3NM LATLON N 65 27.3375 W 16 53.557333
+FIX EKSAL LATLON N 65 30.497666 W 17 11.177833
+FIX GERDU LATLON N 65 23.9495 W 17 4.8875
+FIX INDIN LATLON N 65 26.542834 W 16 49.1645
+FIX RLF02 LATLON N 65 33.101833 W 16 55.397666
+FIX RLI02 LATLON N 65 28.526 W 17 0.156667
+FIX RLM02 LATLON N 65 38.111333 W 16 55.148
+FIX RLT02 LATLON N 65 42.043667 W 17 9.115
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX RLF02 3000 FIX OVERFLY RLM02 1400 RNW 02 TURN LEFT DIRECT FIX EKSAL 4300 HOLD AT FIX EKSAL LEFT TURN INBOUNDCOURSE 126 ALT 4300 LEGTIME 1
+ TRANSITION EKSAL FIX EKSAL AT OR ABOVE 5500 FIX RLI02 AT OR ABOVE 4300
+ TRANSITION GERDU FIX GERDU AT OR ABOVE 5500 FIX RLI02 AT OR ABOVE 4300
+ TRANSITION INDIN FIX INDIN AT OR ABOVE 5500 FIX 3NM AT OR ABOVE 5000 FIX RLI02 AT OR ABOVE 4300
+ENDAPPROACHES

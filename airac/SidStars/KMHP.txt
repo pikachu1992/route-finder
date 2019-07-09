@@ -1,0 +1,40 @@
+//KMHP (METTER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CABUX LATLON N 32 22.551833 W 82 7.730167
+FIX CERDO LATLON N 32 22.714 W 82 11.860667
+FIX CULIX LATLON N 32 22.319833 W 82 1.923667
+FIX GAYEP LATLON N 32 22.9795 W 82 19.067
+FIX JAMEB LATLON N 32 22.187833 W 81 58.670666
+FIX KLICK LATLON N 32 33.783334 W 82 33.0245
+FIX LOTTS LATLON N 32 20.194 W 81 51.307
+FIX TRUET LATLON N 32 18.0785 W 82 35.155166
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX GAYEP AT OR ABOVE 2000 FIX CERDO 2000 FIX CABUX AT OR ABOVE 880 RNW 10 TRK 100 UNTIL 700 TURN RIGHT DIRECT FIX OVERFLY LOTTS AT OR ABOVE 3000 HOLD AT FIX LOTTS RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4
+ TRANSITION KLICK FIX KLICK
+ TRANSITION TRUET FIX TRUET
+APPROACH RNV28 FIX LOTTS AT OR ABOVE 3000 FIX JAMEB 1800 FIX CULIX AT OR ABOVE 920 RNW 28 TRK 280 UNTIL 700 TURN LEFT DIRECT FIX OVERFLY LOTTS AT OR ABOVE 3000 HOLD AT FIX LOTTS RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4
+ TRANSITION LOTTS HOLD AT FIX LOTTS RIGHT TURN INBOUNDCOURSE 291 ALT 3000 LEGDIST 4
+ENDAPPROACHES

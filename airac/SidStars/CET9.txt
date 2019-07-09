@@ -1,0 +1,43 @@
+//CET9 (JEAN MARIE RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEMUX LATLON N 61 24.836167 W 120 21.131666
+FIX BIBUG LATLON N 61 41.6535 W 120 47.273833
+FIX DARIT LATLON N 61 32.7445 W 120 41.0445
+FIX DUXED LATLON N 61 37.815334 W 120 53.967167
+FIX GRUUS LATLON N 61 20.993 W 120 27.752666
+FIX IKLIG LATLON N 61 33.971666 W 121 0.633
+FIX KISEM LATLON N 61 28.674 W 120 14.483333
+FIX OBSUN LATLON N 61 34.6485 W 120 45.882334
+FIX URTON LATLON N 61 28.0275 W 120 29.132167
+FIX XOXUK LATLON N 61 28.291 W 120 29.794834
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX DUXED AT OR ABOVE 2200 FIX OBSUN 2100 FIX DARIT AT OR ABOVE 1140 RNW 11 FIX OVERFLY XOXUK 1800 HOLD AT FIX XOXUK RIGHT TURN INBOUNDCOURSE 109 SPEED 230 LEGTIME 1
+ TRANSITION BIBUG FIX BIBUG
+ TRANSITION IKLIG FIX IKLIG
+APPROACH RNV29 FIX BEMUX AT OR ABOVE 2200 FIX URTON 2100 RNW 29 TURN RIGHT DIRECT FIX OVERFLY KISEM 2300 HOLD AT FIX KISEM RIGHT TURN INBOUNDCOURSE 199 LEGTIME 1
+ TRANSITION GRUUS FIX GRUUS
+ TRANSITION KISEM FIX KISEM
+ENDAPPROACHES

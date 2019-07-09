@@ -1,0 +1,43 @@
+//PAMB (MANOKOTAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASOVY LATLON N 59 8.329333 W 158 33.657334
+FIX BUZUV LATLON N 58 50.675666 W 159 15.235
+FIX GIGZO LATLON N 58 44.259334 W 159 0.520166
+FIX KACPO LATLON N 59 11.565667 W 158 41.048333
+FIX LUSBY LATLON N 59 5.086 W 158 26.289667
+FIX MAJLE LATLON N 58 47.471 W 159 7.866334
+FIX PUBME LATLON N 58 52.204 W 159 0.184333
+FIX UBBOQ LATLON N 59 0.7375 W 158 46.215667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX MAJLE AT OR ABOVE 2800 FIX PUBME 1600 RNW 03 TRK 024 UNTIL 400 FIX OVERFLY ASOVY AT OR ABOVE 3600 HOLD AT FIX ASOVY RIGHT TURN INBOUNDCOURSE 205 LEGDIST 4
+ TRANSITION BUZUV FIX BUZUV
+ TRANSITION GIGZO FIX GIGZO
+ TRANSITION MAJLE HOLD AT FIX MAJLE RIGHT TURN INBOUNDCOURSE 024 ALT 2800 LEGDIST 4
+APPROACH RNV21 FIX ASOVY AT OR ABOVE 3600 FIX UBBOQ 2100 RNW 21 TRK 204 UNTIL 400 FIX OVERFLY MAJLE AT OR ABOVE 2800 HOLD AT FIX MAJLE RIGHT TURN INBOUNDCOURSE 024 LEGDIST 4
+ TRANSITION ASOVY HOLD AT FIX ASOVY RIGHT TURN INBOUNDCOURSE 205 ALT 3600 LEGDIST 4
+ TRANSITION KACPO FIX KACPO
+ TRANSITION LUSBY FIX LUSBY
+ENDAPPROACHES

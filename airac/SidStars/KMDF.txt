@@ -1,0 +1,36 @@
+//KMDF (MOORELAND MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX NATPE LATLON N 36 39.377666 W 99 5.418167
+FIX PEDAE LATLON N 36 39.387334 W 99 11.632166
+FIX ROBVE LATLON N 36 18.358667 W 99 11.668667
+FIX UYUPE LATLON N 36 34.302667 W 99 11.641
+FIX WEKIM LATLON N 36 39.391667 W 99 17.846167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX PEDAE AT OR ABOVE 3800 FIX UYUPE 3600 RNW 17 TRK 172 UNTIL 2370 FIX ROBVE AT OR ABOVE 3800 HOLD AT FIX ROBVE RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4
+ TRANSITION NATPE FIX NATPE AT OR ABOVE 3800
+ TRANSITION PEDAE HOLD AT FIX PEDAE RIGHT TURN INBOUNDCOURSE 172 ALT 3800 LEGDIST 4
+ TRANSITION WEKIM FIX WEKIM AT OR ABOVE 3800
+ENDAPPROACHES

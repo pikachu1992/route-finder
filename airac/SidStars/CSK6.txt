@@ -1,0 +1,45 @@
+//CSK6 (SNAP LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUNPU LATLON N 63 41.623834 W 110 29.67
+FIX IKLUN LATLON N 63 35.087833 W 111 6.615334
+FIX IKNOT LATLON N 63 36.124 W 110 42.067834
+FIX OMSEV LATLON N 63 34.494 W 111 19.973333
+FIX PILPA LATLON N 62 41.9 W 112 44.8
+FIX SUTKU LATLON N 63 36.2205 W 110 39.691834
+FIX TAKEP LATLON N 63 34.985333 W 111 8.953333
+FIX ULATI LATLON N 63 39.452666 W 111 21.106333
+FIX ULEGU LATLON N 63 36.659 W 110 28.684834
+FIX VEVMU LATLON N 63 29.535167 W 111 18.846833
+FIX VIBNI LATLON N 63 29.211167 W 110 27.217834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX OMSEV AT OR ABOVE 3200 FIX IKLUN 3200 RNW 09 FIX OVERFLY SUTKU 3000 HOLD AT FIX SUTKU RIGHT TURN INBOUNDCOURSE 007 SPEED 200 LEGTIME 1
+ TRANSITION PILPA FIX PILPA
+ TRANSITION ULATI FIX ULATI
+ TRANSITION VEVMU FIX VEVMU
+APPROACH RNV27 FIX ULEGU AT OR ABOVE 3200 FIX IKNOT 3200 RNW 27 FIX OVERFLY TAKEP 3000 HOLD AT FIX TAKEP RIGHT TURN INBOUNDCOURSE 025 SPEED 200 LEGTIME 1
+ TRANSITION DUNPU FIX DUNPU
+ TRANSITION PILPA FIX PILPA FIX VIBNI AT OR ABOVE 3200 SPEED 230
+ENDAPPROACHES

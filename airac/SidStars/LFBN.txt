@@ -1,0 +1,39 @@
+//LFBN (MARAIS POITEVIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BN408 LATLON N 46 21.545 W 0 14.126666
+FIX BN410 LATLON N 46 17.718334 W 0 27.438334
+FIX NIGAG LATLON N 46 15.383333 W 0 16.725
+FIX NIPLO LATLON N 46 18.828334 W 0 4.705
+FIX NIRAP LATLON N 46 28.071667 W 0 10.205
+FIX NITUB LATLON N 46 23.45 W 0 7.45
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 07L
+RNW 25
+RNW 25R
+ENDRNWS
+
+APPROACHES
+APPROACH RNV25 FIX NITUB AT OR ABOVE 2500 SPEED 190 FIX BN408 2500 RNW 25 FIX OVERFLY BN410 TURN LEFT DIRECT FIX NIGAG 2500
+ TRANSITION NIGAG FIX NIGAG AT OR ABOVE 2500 FIX NIPLO SPEED 210
+ TRANSITION NIPLO FIX NIPLO AT OR ABOVE 2500 SPEED 210
+ TRANSITION NIRAP FIX NIRAP AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

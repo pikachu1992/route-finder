@@ -1,0 +1,43 @@
+//KCQB (CHANDLER REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEPLE LATLON N 35 53.786 W 96 55.322
+FIX CADUT LATLON N 35 53.769334 W 96 49.168
+FIX CALKI LATLON N 35 33.1805 W 96 49.265
+FIX DERPE LATLON N 35 53.7475 W 96 43.014
+FIX EPASE LATLON N 35 33.158666 W 96 43.137334
+FIX FEDAL LATLON N 35 33.197167 W 96 55.392667
+FIX RIPWU LATLON N 35 48.756833 W 96 49.191667
+FIX UBIRY LATLON N 35 38.1975 W 96 49.2415
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX CADUT AT OR ABOVE 2600 FIX RIPWU 2600 RNW 17 TRK 174 UNTIL 1384 FIX OVERFLY CALKI AT OR ABOVE 2600 HOLD AT FIX CALKI RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION BEPLE FIX BEPLE AT OR ABOVE 2600
+ TRANSITION CADUT HOLD AT FIX CADUT RIGHT TURN INBOUNDCOURSE 174 ALT 2600 LEGDIST 4
+ TRANSITION DERPE FIX DERPE AT OR ABOVE 2600
+APPROACH RNV35 FIX CALKI AT OR ABOVE 2600 FIX UBIRY 2600 RNW 35 TRK 354 UNTIL 1384 FIX OVERFLY CADUT AT OR ABOVE 2600 HOLD AT FIX CADUT RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION CALKI HOLD AT FIX CALKI RIGHT TURN INBOUNDCOURSE 354 ALT 2600 LEGDIST 4
+ TRANSITION EPASE FIX EPASE
+ TRANSITION FEDAL FIX FEDAL
+ENDAPPROACHES

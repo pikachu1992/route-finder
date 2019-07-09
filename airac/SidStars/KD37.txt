@@ -1,0 +1,37 @@
+//KD37 (WARREN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EYOJE LATLON N 48 8.107333 W 96 36.803333
+FIX QAVMY LATLON N 48 4.845833 W 96 31.134334
+FIX UHEVU LATLON N 48 1.055833 W 96 35.991
+FIX ZOCXE LATLON N 48 8.632333 W 96 26.265833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 12
+RNW 22
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV30 FIX QAVMY AT OR ABOVE 2700 FIX EYOJE 2500 RNW 30 TRK 306 UNTIL 2000 TURN RIGHT DIRECT FIX QAVMY AT OR ABOVE 2700 HOLD AT FIX QAVMY RIGHT TURN INBOUNDCOURSE 306 LEGDIST 4
+ TRANSITION QAVMY HOLD AT FIX QAVMY RIGHT TURN INBOUNDCOURSE 306 ALT 2700 LEGDIST 4
+ TRANSITION UHEVU FIX UHEVU AT OR ABOVE 2700
+ TRANSITION ZOCXE FIX ZOCXE AT OR ABOVE 2700
+ENDAPPROACHES

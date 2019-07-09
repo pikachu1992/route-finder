@@ -1,0 +1,40 @@
+//5TE0 (COMANCHE RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CORBN LATLON N 28 32.848834 W 100 6.525
+FIX COT LATLON N 28 27.721 W 99 7.112666
+FIX DANYE LATLON N 28 42.416 W 100 12.8395
+FIX DBRAA LATLON N 28 47.611333 W 100 16.278667
+FIX RYINN LATLON N 28 27.648167 W 100 3.102
+FIX SUZEE LATLON N 28 30.165334 W 99 58.195166
+FIX SVANA LATLON N 28 50.136833 W 100 11.361667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX DBRAA AT OR ABOVE 2400 FIX DANYE 2400 RNW 15 FIX OVERFLY RYINN AT OR ABOVE 2400 HOLD AT FIX RYINN RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4
+ TRANSITION COT FIX COT FIX SVANA AT OR ABOVE 3000
+ TRANSITION DBRAA HOLD AT FIX DBRAA RIGHT TURN INBOUNDCOURSE 143 ALT 2400 LEGDIST 4
+APPROACH RNV33 FIX RYINN AT OR ABOVE 2400 FIX CORBN 2400 RNW 33 FIX OVERFLY DBRAA AT OR ABOVE 2400 HOLD AT FIX DBRAA RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4
+ TRANSITION COT FIX COT FIX SUZEE AT OR ABOVE 3000
+ TRANSITION RYINN HOLD AT FIX RYINN RIGHT TURN INBOUNDCOURSE 323 ALT 2400 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//WAKT (TANAH MERAH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KT401 LATLON S 6 2.1555 E 140 29.992834
+FIX KT402 LATLON S 6 3.050167 E 140 27.116
+FIX KT403 LATLON S 6 4.240667 E 140 23.279666
+FIX KT405 LATLON S 6 6.600833 E 140 15.611333
+FIX KT501 LATLON S 6 9.465833 E 140 6.423334
+FIX KT502 LATLON S 6 8.549833 E 140 9.3005
+FIX KT503 LATLON S 6 7.378166 E 140 13.1395
+FIX KT504 LATLON S 6 5.0035 E 140 20.813833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX KT502 AT OR ABOVE 2450 FIX KT503 1600 RNW 07 FIX OVERFLY KT504 TURN RIGHT DIRECT FIX KT501 3000 HOLD AT FIX KT501 LEFT TURN INBOUNDCOURSE 069 LEGTIME 1
+ TRANSITION KT501 HOLD AT FIX KT501 LEFT TURN INBOUNDCOURSE 069 ALT 3000 LEGTIME 1
+APPROACH RNV25 FIX KT402 AT OR ABOVE 2500 FIX KT403 1700 RNW 25 FIX OVERFLY KT405 TURN LEFT DIRECT FIX KT401 3000 HOLD AT FIX KT401 RIGHT TURN INBOUNDCOURSE 249 LEGTIME 1
+ TRANSITION KT401 HOLD AT FIX KT401 RIGHT TURN INBOUNDCOURSE 249 ALT 3000 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KAUN (AUBURN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVPEY LATLON N 38 57.926167 W 120 56.9605
+FIX CITXU LATLON N 38 56.162 W 121 18.688
+FIX EKUJA LATLON N 39 6.310166 W 121 3.973333
+FIX MRGGO LATLON N 39 13.3375 W 121 16.719667
+FIX ROZZY LATLON N 38 44.7075 W 121 15.029167
+FIX YADFY LATLON N 38 56.791834 W 121 11.027333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX CITXU AT OR ABOVE 3000 FIX YADFY 3000 RNW 07 TRK 068 UNTIL 1848 FIX AVPEY FIX EKUJA FIX OVERFLY MRGGO AT OR ABOVE 5000 HOLD AT FIX MRGGO RIGHT TURN INBOUNDCOURSE 304 LEGDIST 5
+ TRANSITION CITXU HOLD AT FIX CITXU RIGHT TURN INBOUNDCOURSE 068 ALT 3000 LEGDIST 4
+ TRANSITION MRGGO FIX MRGGO
+ TRANSITION ROZZY FIX ROZZY
+ENDAPPROACHES

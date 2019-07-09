@@ -1,0 +1,34 @@
+//HHMS (MASSAWA INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI07 LATLON N 15 37.367833 E 39 11.245667
+FIX D282J LATLON N 15 42.156167 E 39 11.082
+FIX FI07 LATLON N 15 38.6625 E 39 16.252
+FIX MSNB LATLON N 15 39.799 E 39 20.7845
+FIX RW07 LATLON N 15 39.956 E 39 21.2625
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH ILS07 FIX CI07 AT OR ABOVE 3000 FIX FI07 1870 RNW 07 TRK 073 UNTIL 2000 TURN RIGHT DIRECT FIX MSNB 5000 HOLD AT FIX MSNB RIGHT TURN INBOUNDCOURSE 282 LEGTIME 1
+ TRANSITION MS FIX MSNB AT OR ABOVE 5000 FIX OVERFLY D282J AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//DNZA (ZARIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DIDLU LATLON N 11 5.1525 E 7 28.973167
+FIX EBSEV LATLON N 11 14.983 E 7 49.681667
+FIX GAMAV LATLON N 11 1.108834 E 7 31.9895
+FIX KITKI LATLON N 10 58.127167 E 7 27.8985
+FIX KYSYL LATLON N 10 57.064667 E 7 35.0045
+FIX ODVUM LATLON N 11 18.2355 E 7 53.560834
+FIX TISIL LATLON N 11 11.157167 E 7 52.9795
+FIX XUSEN LATLON N 11 18.808333 E 7 46.385333
+FIX ZA400 LATLON N 11 11.729666 E 7 45.807
+FIX ZA600 LATLON N 11 4.089667 E 7 36.082
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX GAMAV AT OR ABOVE 4500 SPEED 200 FIX ZA600 4000 RNW 05 TRK 055 UNTIL 2580 TURN LEFT DIRECT FIX DIDLU TURN LEFT DIRECT FIX GAMAV HOLD AT FIX GAMAV LEFT TURN INBOUNDCOURSE 055 ALT 4500 SPEED 230 LEGTIME 1
+ TRANSITION DIDLU FIX DIDLU
+ TRANSITION KITKI FIX KITKI
+ TRANSITION KYSYL FIX KYSYL
+APPROACH RNV23 FIX EBSEV AT OR ABOVE 4500 SPEED 200 FIX ZA400 4000 RNW 23 TRK 231 UNTIL 2580 TURN RIGHT DIRECT FIX XUSEN TURN RIGHT DIRECT FIX EBSEV HOLD AT FIX EBSEV RIGHT TURN INBOUNDCOURSE 231 ALT 4500 SPEED 230 LEGTIME 1
+ TRANSITION ODVUM FIX ODVUM
+ TRANSITION TISIL FIX TISIL
+ TRANSITION XUSEN FIX XUSEN
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//VYKT (KAWTHOUNG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF02 LATLON N 9 58.484666 E 98 29.557834
+FIX KTNB LATLON N 10 3.0005 E 98 32.404166
+FIX MA02 LATLON N 10 1.262666 E 98 31.308667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH NDB02 FIX FF02 1700 FIX MA02 590 RNW 02 HDG 330 UNTIL 2000 TURN LEFT DIRECT FIX KTNB 3500 HOLD AT FIX KTNB RIGHT TURN INBOUNDCOURSE 240 LEGTIME 1
+ TRANSITION KT1 FIX KTNB AT OR ABOVE 3500 TRK 240 UNTIL 5.3 FROM FIX KTNB
+ TRANSITION KT2 FIX KTNB AT OR ABOVE 3500 TRK 240 UNTIL 7.5 FROM FIX KTNB
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//KSOA (SONORA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HEMRY LATLON N 30 38.914667 W 100 38.579666
+FIX JCT LATLON N 30 35.881333 W 99 49.048834
+FIX KEMPL LATLON N 30 43.220666 W 100 49.908
+FIX PI001 LATLON N 30 38.403534 W 100 38.6031
+FIX PI002 LATLON N 30 41.598343 W 100 41.949095
+FIX PI003 LATLON N 30 44.894605 W 100 38.207034
+FIX RSG LATLON N 30 0.876167 W 100 17.990666
+FIX SOANB LATLON N 30 34.908334 W 100 38.816
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH NDB18 FIX HEMRY 3291 RNW 18 FIX SOANB HOLD AT FIX SOANB RIGHT TURN INBOUNDCOURSE 175 ALT 4000 LEGTIME 1
+ TRANSITION JCT FIX JCT FIX SOANB AT OR ABOVE 4000 FIX PI001 AT OR ABOVE 4000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4000 SPEED 210 FIX PI003 AT OR ABOVE 4000 SPEED 210
+ TRANSITION KEMPL FIX KEMPL FIX SOANB AT OR ABOVE 4000 FIX PI001 AT OR ABOVE 4000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4000 SPEED 210 FIX PI003 AT OR ABOVE 4000 SPEED 210
+ TRANSITION RSG FIX RSG FIX SOANB AT OR ABOVE 4000 FIX PI001 AT OR ABOVE 4000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4000 SPEED 210 FIX PI003 AT OR ABOVE 4000 SPEED 210
+ENDAPPROACHES

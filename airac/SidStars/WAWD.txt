@@ -1,0 +1,37 @@
+//WAWD (MATAHORA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WD401 LATLON S 5 5.4715 E 123 28.288166
+FIX WD402 LATLON S 5 9.3535 E 123 31.469167
+FIX WD403 LATLON S 5 13.235167 E 123 34.651
+FIX WD404 LATLON S 5 29.592833 E 123 48.067834
+FIX WD405 LATLON S 5 25.712167 E 123 44.884333
+FIX WD406 LATLON S 5 21.831167 E 123 41.699666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WD402 AT OR ABOVE 2800 FIX WD403 1700 RNW 14 TURN LEFT DIRECT FIX WD401 4000 HOLD AT FIX WD401 RIGHT TURN INBOUNDCOURSE 140 ALT 4000 LEGTIME 1
+ TRANSITION WD401 FIX WD401 AT OR ABOVE 4000
+APPROACH RNV32 FIX WD405 AT OR ABOVE 2700 FIX WD406 1690 RNW 32 TURN RIGHT DIRECT FIX WD404 4000 HOLD AT FIX WD404 RIGHT TURN INBOUNDCOURSE 320 ALT 4000 LEGTIME 1
+ TRANSITION WD404 FIX WD404 AT OR ABOVE 4000
+ENDAPPROACHES

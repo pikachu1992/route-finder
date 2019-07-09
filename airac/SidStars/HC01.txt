@@ -1,0 +1,43 @@
+//HC01 (BALEDOGLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CODGO LATLON N 2 35.896166 E 44 43.634167
+FIX DEJAH LATLON N 2 28.481833 E 44 36.889667
+FIX ELLSE LATLON N 2 35.2645 E 44 29.517
+FIX FALES LATLON N 2 21.6985 E 44 44.261
+FIX GENFA LATLON N 2 44.5915 E 44 51.546334
+FIX HAPIB LATLON N 2 52.0045 E 44 58.293667
+FIX JUGNO LATLON N 2 45.219167 E 45 5.6655
+FIX MADYE LATLON N 2 58.789 E 44 50.9205
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX DEJAH AT OR ABOVE 3500 FIX CODGO 1900 RNW 04 FIX OVERFLY HAPIB AT OR ABOVE 3500 HOLD AT FIX HAPIB RIGHT TURN INBOUNDCOURSE 223 ALT 13500 SPEED 310 LEGDIST 3
+ TRANSITION DEJAH HOLD AT FIX DEJAH RIGHT TURN INBOUNDCOURSE 043 ALT 3500 SPEED 310 LEGDIST 5
+ TRANSITION ELLSE FIX ELLSE AT OR ABOVE 3500
+ TRANSITION FALES FIX FALES AT OR ABOVE 3500
+APPROACH RNV22 FIX HAPIB AT OR ABOVE 3500 FIX GENFA 1900 RNW 22 FIX OVERFLY DEJAH AT OR ABOVE 3500 HOLD AT FIX DEJAH RIGHT TURN INBOUNDCOURSE 043 ALT 13500 SPEED 310 LEGDIST 3
+ TRANSITION HAPIB HOLD AT FIX HAPIB RIGHT TURN INBOUNDCOURSE 223 ALT 3500 SPEED 310 LEGDIST 5
+ TRANSITION JUGNO FIX JUGNO AT OR ABOVE 3500
+ TRANSITION MADYE FIX MADYE AT OR ABOVE 3500
+ENDAPPROACHES

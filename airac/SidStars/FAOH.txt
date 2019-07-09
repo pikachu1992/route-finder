@@ -1,0 +1,36 @@
+//FAOH (OUDTSHOORN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN290 LATLON S 33 35.666666 E 22 18.3145
+FIX OHNB LATLON S 33 36.1 E 22 11.15
+FIX PI001 LATLON S 33 35.73298 E 22 15.328843
+FIX PI002 LATLON S 33 32.390545 E 22 18.57548
+FIX PI003 LATLON S 33 35.257657 E 22 20.700767
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA04 FIX FN290 3700 FIX OHNB 2200 RNW 04 TRK 290 UNTIL 3000 TURN RIGHT DIRECT FIX OHNB 5200
+ TRANSITION OH FIX OHNB AT OR ABOVE 5200 FIX PI001 AT OR ABOVE 3700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3700 SPEED 210 FIX PI003 AT OR ABOVE 3700 SPEED 210
+APPROACH NDBA22 FIX FN290 3700 FIX OHNB 2200 RNW 22 TRK 290 UNTIL 3000 TURN RIGHT DIRECT FIX OHNB 5200
+ TRANSITION OH FIX OHNB AT OR ABOVE 5200 FIX PI001 AT OR ABOVE 3700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3700 SPEED 210 FIX PI003 AT OR ABOVE 3700 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//CYWM (ATHABASCA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGLEP LATLON N 54 55.831333 W 113 12.331333
+FIX DARAK LATLON N 54 33.343834 W 113 3.7065
+FIX IGSIG LATLON N 54 39.913166 W 113 12.304834
+FIX IMUKU LATLON N 54 33.344167 W 113 12.293833
+FIX OVOGO LATLON N 54 49.237834 W 113 12.320333
+FIX URSAS LATLON N 54 39.333667 W 113 12.303833
+FIX URTER LATLON N 54 55.831 W 113 3.664333
+FIX USDAG LATLON N 54 46.243166 W 113 12.315334
+FIX VETVU LATLON N 54 42.907834 W 113 12.309667
+FIX VINKI LATLON N 54 33.334333 W 113 20.881333
+FIX VOKOR LATLON N 54 49.842167 W 113 12.321334
+FIX XOTUX LATLON N 54 55.821334 W 113 20.998333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX AGLEP AT OR ABOVE 3600 FIX VOKOR 3600 RNW 17 FIX VETVU FIX OVERFLY IGSIG 4000 HOLD AT FIX IGSIG RIGHT TURN INBOUNDCOURSE 165 SPEED 200 LEGTIME 1
+ TRANSITION URTER FIX URTER
+ TRANSITION XOTUX FIX XOTUX
+APPROACH RNV35 FIX IMUKU AT OR ABOVE 3700 FIX URSAS 3570 RNW 35 FIX USDAG FIX OVERFLY OVOGO 4000 HOLD AT FIX OVOGO RIGHT TURN INBOUNDCOURSE 345 SPEED 200 LEGTIME 1
+ TRANSITION DARAK FIX DARAK
+ TRANSITION VINKI FIX VINKI
+ENDAPPROACHES

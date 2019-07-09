@@ -1,0 +1,41 @@
+//ESNV (VILHELMINA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI28 LATLON N 64 32.563834 E 17 11.471833
+FIX D097L LATLON N 64 32.098667 E 17 15.975334
+FIX DK LATLON N 64 35.47 E 16 43.321667
+FIX FI28 LATLON N 64 32.948666 E 17 7.726333
+FIX FQ10 LATLON N 64 35.763334 E 16 40.407833
+FIX NV LATLON N 64 33.608333 E 17 1.938334
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH ILS28 FIX CI28 3600 FIX FI28 3600 RNW 28 TRK 277 UNTIL 2500 TURN RIGHT DIRECT FIX NV 3600
+ TRANSITION D097L FIX D097L AT OR ABOVE 3600 SPEED 200
+ TRANSITION NV HOLD AT FIX NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 SPEED 200 LEGDIST 5
+APPROACH NDB28 FIX NV 2780 RNW 28 TRK 277 UNTIL 2500 TURN RIGHT DIRECT FIX NV 3600
+ TRANSITION NV1 HOLD AT FIX NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 LEGTIME 1
+ TRANSITION NV2 HOLD AT FIX NV RIGHT TURN INBOUNDCOURSE 277 ALT 3600 LEGTIME 2
+APPROACH NDM10 FIX FQ10 2400 RNW 10 TRK 098 UNTIL 2500 TURN RIGHT DIRECT FIX DK 3300
+ TRANSITION DK HOLD AT FIX DK RIGHT TURN INBOUNDCOURSE 098 ALT 2800 SPEED 200 LEGDIST 5
+ENDAPPROACHES

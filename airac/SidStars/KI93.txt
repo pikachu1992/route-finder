@@ -1,0 +1,36 @@
+//KI93 (BRECKINRIDGE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOITE LATLON N 37 46.4045 W 86 19.308167
+FIX ERESE LATLON N 37 47.749667 W 86 33.4805
+FIX MCHLL LATLON N 37 45.727667 W 86 12.290167
+FIX MOPAE LATLON N 37 46.7155 W 86 22.557
+FIX RICKZ LATLON N 37 48.420833 W 86 40.6705
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX RICKZ AT OR ABOVE 4000 FIX ERESE 2500 RNW 10 TRK 101 UNTIL 1036 FIX OVERFLY MCHLL AT OR ABOVE 4000 HOLD AT FIX MCHLL RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4
+ TRANSITION RICKZ HOLD AT FIX RICKZ RIGHT TURN INBOUNDCOURSE 101 ALT 4000 LEGDIST 4
+APPROACH RNV28 FIX MCHLL AT OR ABOVE 4000 FIX BOITE 2500 FIX MOPAE AT OR ABOVE 1660 RNW 28 TRK 281 UNTIL 1040 FIX OVERFLY RICKZ AT OR ABOVE 4000 HOLD AT FIX RICKZ RIGHT TURN INBOUNDCOURSE 101 ALT 4000 LEGDIST 4
+ TRANSITION MCHLL HOLD AT FIX MCHLL RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4
+ENDAPPROACHES

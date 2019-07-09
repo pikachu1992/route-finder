@@ -1,0 +1,44 @@
+//KFDR (FREDERICK REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EHIPO LATLON N 34 15.59 W 98 59.3665
+FIX FAWCI LATLON N 34 9.5695 W 98 59.372833
+FIX HOTEX LATLON N 34 9.555 W 98 49.127333
+FIX HUNBI LATLON N 34 26.1895 W 98 49.0785
+FIX JIVUG LATLON N 34 26.204167 W 98 59.355167
+FIX SPS LATLON N 33 59.237167 W 98 35.608333
+FIX VASTY LATLON N 34 7.4635 W 99 11.327833
+FIX WEXAV LATLON N 34 18.223667 W 98 59.363666
+FIX YETKU LATLON N 34 9.571333 W 99 5.395667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 12
+RNW 17
+RNW 21
+RNW 30
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX FAWCI AT OR ABOVE 4000 FIX EHIPO 2900 FIX WEXAV AT OR ABOVE 2040 RNW 35 FIX JIVUG TURN RIGHT DIRECT FIX HUNBI FIX HOTEX FIX OVERFLY FAWCI AT OR ABOVE 4000 HOLD AT FIX FAWCI LEFT TURN INBOUNDCOURSE 353 LEGDIST 4
+ TRANSITION FAWCI HOLD AT FIX FAWCI LEFT TURN INBOUNDCOURSE 353 ALT 4000 LEGDIST 4
+ TRANSITION SPS FIX SPS
+ TRANSITION VASTY FIX VASTY FIX YETKU AT OR ABOVE 4000
+ENDAPPROACHES

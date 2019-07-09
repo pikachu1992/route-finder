@@ -1,0 +1,36 @@
+//KN43 (BRADEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASMEC LATLON N 40 34.736833 W 75 7.061333
+FIX BUDRY LATLON N 40 34.038667 W 75 20.1525
+FIX COWPA LATLON N 40 39.8685 W 75 13.047
+FIX FABDU LATLON N 40 36.470333 W 75 11.934167
+FIX FJC LATLON N 40 43.602 W 75 27.285334
+FIX SBJ LATLON N 40 34.9825 W 74 44.5075
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA36 FIX FABDU AT OR ABOVE 2500 FIX COWPA 2000 RNW 36 TRK 359 UNTIL 797 TURN RIGHT DIRECT FIX OVERFLY ASMEC AT OR ABOVE 3000 HOLD AT FIX ASMEC RIGHT TURN INBOUNDCOURSE 282 LEGDIST 4
+ TRANSITION FJC FIX FJC FIX BUDRY AT OR ABOVE 2500
+ TRANSITION SBJ FIX SBJ FIX ASMEC AT OR ABOVE 2500
+ENDAPPROACHES

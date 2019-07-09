@@ -1,0 +1,49 @@
+//YFBS (FORBES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FRBED LATLON S 33 19.012 E 148 10.747166
+FIX FRBEE LATLON S 33 24.179167 E 148 13.743833
+FIX FRBEF LATLON S 33 22.601167 E 148 1.949666
+FIX FRBEG LATLON S 33 28.308833 E 148 8.977667
+FIX FRBEH LATLON S 33 21.178166 E 147 51.3385
+FIX FRBEI LATLON S 33 23.390167 E 148 7.846333
+FIX FRBEM LATLON S 33 21.812167 E 147 56.054
+FIX FRBWA LATLON S 33 24.499 E 147 40.5825
+FIX FRBWB LATLON S 33 19.328833 E 147 37.593334
+FIX FRBWC LATLON S 33 15.202834 E 147 42.356
+FIX FRBWF LATLON S 33 20.9145 E 147 49.378667
+FIX FRBWH LATLON S 33 22.339 E 147 59.989
+FIX FRBWI LATLON S 33 20.121667 E 147 43.4855
+FIX FRBWM LATLON S 33 21.707333 E 147 55.272667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ09 FIX FRBWI AT OR ABOVE 3000 FIX FRBWF 2400 FIX OVERFLY FRBWM 807 RNW 09 FIX FRBWH HDG 240 VECTORS
+ TRANSITION FRBWA FIX FRBWA AT OR ABOVE 3000
+ TRANSITION FRBWB FIX FRBWB AT OR ABOVE 3000
+ TRANSITION FRBWC FIX FRBWC AT OR ABOVE 3000
+APPROACH RNVZ27 FIX FRBEI AT OR ABOVE 3700 FIX FRBEF 2400 FIX OVERFLY FRBEM 807 RNW 27 FIX FRBEH HDG 268 VECTORS
+ TRANSITION FRBED FIX FRBED AT OR ABOVE 3700
+ TRANSITION FRBEE FIX FRBEE AT OR ABOVE 3700
+ TRANSITION FRBEG FIX FRBEG AT OR ABOVE 3700
+ENDAPPROACHES

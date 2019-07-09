@@ -1,0 +1,35 @@
+//NCAT (ATIU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARUSU LATLON S 19 56.15 W 158 17.9715
+FIX AT934 LATLON S 19 57.078833 W 158 12.754
+FIX KIMIR LATLON S 19 51.195667 W 158 18.831
+FIX MANIS LATLON S 20 0.4675 W 158 20.681333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ARUSU AT OR ABOVE 2500 FIX AT934 1600 RNW 09 TRK 087 UNTIL 1000 TURN LEFT DIRECT FIX ARUSU 2500
+ TRANSITION ARUSU HOLD AT FIX ARUSU RIGHT TURN INBOUNDCOURSE 087 ALT 2500 LEGTIME 1
+ TRANSITION KIMIR FIX KIMIR
+ TRANSITION MANIS FIX MANIS
+ENDAPPROACHES

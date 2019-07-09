@@ -1,0 +1,41 @@
+//GMAT (PLAGE BLANCHE INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD03 LATLON N 28 21.268333 W 11 13.02
+FIX FN03 LATLON N 28 21.410833 W 11 12.966833
+FIX FS03 LATLON N 28 22.165166 W 11 12.513667
+FIX TNANB LATLON N 28 25.873333 W 11 10.285
+FIX TNN LATLON N 28 25.706666 W 11 10.385
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH VDM03 FIX FD03 2500 FIX TNN 958 RNW 03 TRK 032 UNTIL 2000 TURN RIGHT DIRECT FIX TNN 3000
+ TRANSITION TNN1 FIX TNN AT OR ABOVE 3000 SPEED 220 TRK 244 UNTIL 6.5 FROM FIX TNN
+ TRANSITION TNN2 FIX TNN AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 6.5 FROM FIX TNN
+APPROACH NDB03 FIX FN03 2000 FIX TNANB 898 RNW 03 TRK 032 UNTIL 2000 TURN RIGHT DIRECT FIX TNANB 3000
+ TRANSITION TNA1 FIX TNANB 3000 SPEED 220 TRK 245 UNTIL 5.5 FROM FIX TNANB
+ TRANSITION TNA2 FIX TNANB 3000 SPEED 140 TRK 226 UNTIL 5.8 FROM FIX TNANB
+APPROACH VOR03 FIX FS03 2000 FIX TNN 958 RNW 03 TRK 032 UNTIL 2000 TURN RIGHT DIRECT FIX TNN 3000
+ TRANSITION TNN1 FIX TNN AT OR ABOVE 3000 SPEED 220 TRK 246 UNTIL 5.5 FROM FIX TNN
+ TRANSITION TNN2 FIX TNN AT OR ABOVE 3000 SPEED 140 TRK 226 UNTIL 5.8 FROM FIX TNN
+ENDAPPROACHES

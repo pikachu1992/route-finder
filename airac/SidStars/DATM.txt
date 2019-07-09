@@ -1,0 +1,32 @@
+//DATM (BORDJ MOKHTAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D053G LATLON N 21 27.279334 E 1 2.955
+FIX FD26 LATLON N 21 23.702333 E 1 1.146
+FIX MOK LATLON N 21 22.956 E 0 57.0415
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VDM26 FIX FD26 2790 FIX MOK 1547 RNW 26 TRK 260 UNTIL 1710 TRK 035 INTERCEPT RADIAL 350 FROM FIX MOK TRK 350 VECTORS
+ TRANSITION MOK FIX MOK AT OR ABOVE 3450 FIX OVERFLY D053G AT OR ABOVE 2790
+ENDAPPROACHES

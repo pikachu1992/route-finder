@@ -1,0 +1,41 @@
+//KFWQ (ROSTRAVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGC LATLON N 40 16.718666 W 80 2.451334
+FIX AKSAR LATLON N 40 9.556667 W 80 17.246833
+FIX DECSA LATLON N 40 10.789333 W 79 55.515667
+FIX EROCU LATLON N 40 8.068667 W 80 4.0115
+FIX EYOPO LATLON N 40 10.380334 W 79 56.7955
+FIX FURIX LATLON N 40 17.718 W 79 33.6755
+FIX HOMEE LATLON N 40 30.611333 W 79 24.2115
+FIX MILWO LATLON N 40 18.0535 W 79 23.148167
+FIX OSSAR LATLON N 40 14.755667 W 79 43.049
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX EROCU AT OR ABOVE 3000 FIX EYOPO 3000 RNW 08 TRK 076 UNTIL 1628 FIX OVERFLY FURIX AT OR ABOVE 3700 HOLD AT FIX FURIX LEFT TURN INBOUNDCOURSE 076 LEGDIST 4
+ TRANSITION AKSAR FIX AKSAR
+APPROACH RNV26 FIX FURIX AT OR ABOVE 3700 FIX OSSAR 3000 RNW 26 FIX DECSA FIX OVERFLY AGC AT OR ABOVE 3000 HOLD AT FIX AGC RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4
+ TRANSITION HOMEE FIX HOMEE
+ TRANSITION MILWO FIX MILWO
+ENDAPPROACHES

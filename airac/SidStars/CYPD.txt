@@ -1,0 +1,45 @@
+//CYPD (PORT HAWKESBURY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUTIT LATLON N 45 39.3685 W 61 14.387167
+FIX DUVIX LATLON N 45 38.1145 W 61 16.5025
+FIX DUVUR LATLON N 45 41.929166 W 61 37.188334
+FIX EBKIG LATLON N 45 40.6645 W 61 30.287833
+FIX IGVAT LATLON N 45 39.340667 W 61 7.258834
+FIX IMELO LATLON N 45 37.095334 W 61 39.005333
+FIX LIBIK LATLON N 45 44.3395 W 61 7.235
+FIX VISOX LATLON N 45 39.687833 W 61 28.6315
+FIX XEROK LATLON N 45 39.393 W 61 23.392667
+FIX XESEP LATLON N 45 34.341833 W 61 7.282667
+FIX XOVOG LATLON N 45 40.029667 W 61 26.839667
+FIX XUDAB LATLON N 45 46.7625 W 61 35.366167
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX DUVUR AT OR ABOVE 2200 FIX EBKIG 2130 FIX XOVOG AT OR ABOVE 1330 FIX OVERFLY XEROK 535 RNW 11 FIX OVERFLY DUVIX 2600 HOLD AT FIX DUVIX LEFT TURN INBOUNDCOURSE 123 LEGTIME 1
+ TRANSITION IMELO FIX IMELO
+ TRANSITION XUDAB FIX XUDAB
+APPROACH RNV29 FIX IGVAT AT OR ABOVE 2100 FIX DUTIT 2020 RNW 29 FIX OVERFLY VISOX 2600 HOLD AT FIX VISOX RIGHT TURN INBOUNDCOURSE 292 LEGTIME 1
+ TRANSITION LIBIK FIX LIBIK
+ TRANSITION XESEP FIX XESEP
+ENDAPPROACHES

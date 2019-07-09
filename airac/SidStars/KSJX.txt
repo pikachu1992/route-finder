@@ -1,0 +1,39 @@
+//KSJX (BEAVER I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMILE LATLON N 45 41.466833 W 85 25.3095
+FIX BODAY LATLON N 45 41.432167 W 85 16.036667
+FIX DIPLE LATLON N 45 46.353167 W 85 16.266334
+FIX PLN LATLON N 45 37.838833 W 84 39.8465
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 09
+RNW 14
+RNW 23
+RNW 27
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX BODAY AT OR ABOVE 2600 FIX AMILE 2600 RNW 27 TRK 275 UNTIL 1069 TURN RIGHT DIRECT FIX OVERFLY BODAY AT OR ABOVE 2600 HOLD AT FIX BODAY RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION BODAY HOLD AT FIX BODAY RIGHT TURN INBOUNDCOURSE 275 ALT 2600 LEGDIST 4
+ TRANSITION DIPLE FIX DIPLE
+ TRANSITION PLN FIX PLN
+ENDAPPROACHES

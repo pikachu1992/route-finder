@@ -1,0 +1,39 @@
+//LROD (ORADEA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF19 LATLON N 47 10.659334 E 21 56.786
+FIX D007E LATLON N 47 11.221667 E 21 56.931
+FIX D056I LATLON N 47 8.851667 E 22 2.546666
+FIX FF19 LATLON N 47 9.69 E 21 56.51
+FIX O LATLON N 47 2.711666 E 21 54.488333
+FIX ORANB LATLON N 47 6.021667 E 21 55.448333
+FIX RW19 LATLON N 47 1.995167 E 21 54.282
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH ILS19 FIX CF19 AT OR ABOVE 3000 FIX FF19 3000 RNW 19 TRK 187 UNTIL 1500 TURN RIGHT DIRECT FIX ORANB 4000 HOLD AT FIX ORANB RIGHT TURN INBOUNDCOURSE 056 LEGTIME 1
+ TRANSITION ORA FIX ORANB AT OR ABOVE 4000 FIX OVERFLY D056I AT OR ABOVE 3000
+APPROACH NDB19 FIX ORANB 1800 FIX O 735 RNW 19 TRK 187 UNTIL 1500 TURN RIGHT DIRECT FIX ORANB 4000 SPEED 185 HOLD AT FIX ORANB RIGHT TURN INBOUNDCOURSE 007 LEGTIME 1
+ TRANSITION ORA1 FIX ORANB AT OR ABOVE 4000 TRK 040 UNTIL 5.3 FROM FIX ORANB TURN LEFT DIRECT FIX D007E AT OR ABOVE 3000
+ TRANSITION ORA2 FIX ORANB AT OR ABOVE 4000 TRK 025 UNTIL 6.0 FROM FIX ORANB TURN LEFT DIRECT FIX D007E AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,42 @@
+//K7W4 (LAKE ANNA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRV LATLON N 38 20.1755 W 77 21.172
+FIX BUDYY LATLON N 37 54.860167 W 77 24.158666
+FIX BUMPP LATLON N 37 56.5495 W 77 51.1755
+FIX GVE LATLON N 38 0.816 W 78 9.181667
+FIX HHANK LATLON N 37 59.342 W 77 38.335166
+FIX MILHI LATLON N 38 8.7075 W 77 26.422166
+FIX RIC LATLON N 37 30.141 W 77 19.216667
+FIX SHLBE LATLON N 38 1.172 W 77 29.854
+FIX STPBY LATLON N 37 54.696 W 77 59.632667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX STPBY AT OR ABOVE 3000 FIX BUMPP 2000 RNW 08 TRK 085 UNTIL 751 FIX OVERFLY SHLBE AT OR ABOVE 3000 HOLD AT FIX SHLBE RIGHT TURN INBOUNDCOURSE 085 LEGDIST 4
+ TRANSITION GVE FIX GVE
+ TRANSITION RIC FIX RIC FIX OVERFLY STPBY AT OR ABOVE 3000 HOLD AT FIX STPBY RIGHT TURN INBOUNDCOURSE 084 ALT 3000 LEGDIST 4
+APPROACH RNV26 FIX SHLBE AT OR ABOVE 3000 FIX HHANK 2000 RNW 26 TRK 265 UNTIL 751 FIX OVERFLY STPBY AT OR ABOVE 3000 HOLD AT FIX STPBY RIGHT TURN INBOUNDCOURSE 084 LEGDIST 4
+ TRANSITION BRV FIX BRV FIX MILHI AT OR ABOVE 4000
+ TRANSITION RIC FIX RIC FIX BUDYY AT OR ABOVE 3000
+ENDAPPROACHES

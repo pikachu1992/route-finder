@@ -1,0 +1,46 @@
+//KMPZ (MT PLEASANT MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JUHCI LATLON N 40 54.615 W 91 29.162666
+FIX LUVQI LATLON N 41 9.549833 W 91 32.017
+FIX ODOZO LATLON N 40 46.319666 W 91 23.465666
+FIX RIMGE LATLON N 40 44.006167 W 91 29.299166
+FIX RIPAE LATLON N 40 48.628166 W 91 17.625334
+FIX RUNRE LATLON N 40 51.729334 W 91 27.177833
+FIX SEHVI LATLON N 41 7.228333 W 91 37.879
+FIX WOLEG LATLON N 41 1.834834 W 91 34.144
+FIX ZEVER LATLON N 41 4.901833 W 91 43.734167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 15
+RNW 21
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX SEHVI AT OR ABOVE 3500 FIX WOLEG 2500 RNW 15 FIX OVERFLY ODOZO AT OR ABOVE 3500 HOLD AT FIX ODOZO RIGHT TURN INBOUNDCOURSE 332 LEGDIST 4
+ TRANSITION LUVQI FIX LUVQI AT OR ABOVE 4000
+ TRANSITION SEHVI HOLD AT FIX SEHVI RIGHT TURN INBOUNDCOURSE 152 ALT 3500 LEGDIST 4
+ TRANSITION ZEVER FIX ZEVER AT OR ABOVE 4000
+APPROACH RNV33 FIX ODOZO AT OR ABOVE 3500 FIX RUNRE 2500 FIX JUHCI AT OR ABOVE 1420 RNW 33 FIX OVERFLY SEHVI AT OR ABOVE 3500 HOLD AT FIX SEHVI RIGHT TURN INBOUNDCOURSE 152 LEGDIST 4
+ TRANSITION ODOZO HOLD AT FIX ODOZO RIGHT TURN INBOUNDCOURSE 332 ALT 3500 LEGDIST 4
+ TRANSITION RIMGE FIX RIMGE AT OR ABOVE 4000
+ TRANSITION RIPAE FIX RIPAE AT OR ABOVE 4000
+ENDAPPROACHES

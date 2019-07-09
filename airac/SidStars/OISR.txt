@@ -1,0 +1,60 @@
+//OISR (LAMERD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD29 LATLON N 27 18.769667 E 53 21.519334
+FIX D084Y LATLON N 27 23.889667 E 53 39.073
+FIX D085Y LATLON N 27 23.724833 E 53 39.0835
+FIX D107P LATLON N 27 17.010667 E 53 27.971333
+FIX D109P LATLON N 27 16.603166 E 53 27.8025
+FIX FD29 LATLON N 27 20.571334 E 53 16.280167
+FIX KUPTO LATLON N 28 24.3 E 52 54.533333
+FIX LAM LATLON N 27 22.37 E 53 11.038333
+FIX LAMNB LATLON N 27 22.028333 E 53 11.713333
+FIX LVA LATLON N 26 48.723334 E 53 21.351667
+FIX MD29 LATLON N 27 21.650833 E 53 13.135333
+FIX ROTAL LATLON N 27 32.683333 E 53 53.333333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID KUPT1D RNW 11 TRK 112 UNTIL 1740 TRK 107 UNTIL 4400 TURN LEFT DIRECT FIX LAM AT OR ABOVE 7500 FIX KUPTO
+ENDSIDS
+
+STARS
+STAR LAM1U FIX LAM FIX D109P
+  RNW 29
+STAR LAM1V FIX LAMNB FIX D107P
+  RNW 29
+STAR LVA1N FIX LVA FIX D109P
+  RNW 29
+STAR LVA1P FIX LVA FIX D107P
+  RNW 29
+STAR ROTA1N FIX ROTAL FIX D085Y FIX D109P
+  RNW 29
+STAR ROTA1P FIX ROTAL FIX D084Y FIX D107P
+  RNW 29
+ENDSTARS
+
+APPROACHES
+APPROACH VDM29 FIX CD29 AT OR ABOVE 4000 FIX FD29 2850 FIX MD29 1737 RNW 29 FIX LAM AT OR ABOVE 2010 TRK 289 UNTIL 7.0 FROM FIX LAM HDG 079 INTERCEPT RADIAL 109 TO FIX D109P FIX D109P 6800 HOLD AT FIX D109P RIGHT TURN INBOUNDCOURSE 289 SPEED 230 LEGTIME 1
+ TRANSITION D109P FIX D109P AT OR ABOVE 6800
+ENDAPPROACHES

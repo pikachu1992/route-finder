@@ -1,0 +1,31 @@
+//KSUO (ROSEBUD SIOUX TRIBAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GLUGS LATLON N 43 4.779 W 100 48.890833
+FIX ROLFS LATLON N 43 10.682666 W 100 50.363167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV34 FIX GLUGS AT OR ABOVE 5000 FIX ROLFS 4200 RNW 34 TRK 344 UNTIL 3400 TURN RIGHT DIRECT FIX OVERFLY GLUGS AT OR ABOVE 5000 SPEED 165 HOLD AT FIX GLUGS RIGHT TURN INBOUNDCOURSE 344 LEGDIST 5
+ TRANSITION GLUGS HOLD AT FIX GLUGS RIGHT TURN INBOUNDCOURSE 344 ALT 5000 LEGDIST 5
+ENDAPPROACHES

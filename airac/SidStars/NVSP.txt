@@ -1,0 +1,32 @@
+//NVSP (NORSUP)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATGIN LATLON S 15 54.631667 E 167 21.650833
+FIX SP912 LATLON S 16 2.537167 E 167 23.0565
+FIX SP934 LATLON S 15 58.584334 E 167 22.3535
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX ATGIN AT OR ABOVE 3300 FIX SP934 2020 FIX OVERFLY SP912 728 RNW 13 TURN LEFT DIRECT FIX ATGIN 3300
+ TRANSITION ATGIN HOLD AT FIX ATGIN LEFT TURN INBOUNDCOURSE 159 ALT 3300 LEGTIME 1
+ENDAPPROACHES

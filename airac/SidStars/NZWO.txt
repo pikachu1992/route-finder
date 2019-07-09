@@ -1,0 +1,40 @@
+//NZWO (WAIROA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BURLY LATLON S 39 10.177834 E 177 19.8535
+FIX GOTNO LATLON S 39 3.678334 E 177 24.745
+FIX MARKS LATLON S 39 9.935666 E 177 24.987167
+FIX OPOHO LATLON S 39 9.689833 E 177 30.120334
+FIX WO411 LATLON S 39 2.942333 E 177 24.438833
+FIX WO422 LATLON S 39 5.9395 E 177 24.673667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID GOTNO1 RNW 16 TRK 158 UNTIL 550 FIX OVERFLY GOTNO TRK 151 UNTIL 2000 HDG 151 VECTORS
+ENDSIDS
+
+APPROACHES
+APPROACH RNV34 FIX MARKS AT OR ABOVE 2800 FIX WO422 1600 FIX WO411 700 RNW 34 TRK 335 UNTIL 700 TURN RIGHT DIRECT FIX MARKS 2800 HOLD AT FIX MARKS RIGHT TURN INBOUNDCOURSE 335 ALT 2800 LEGTIME 1
+ TRANSITION BURLY FIX BURLY
+ TRANSITION OPOHO FIX OPOHO
+ENDAPPROACHES

@@ -1,0 +1,34 @@
+//KS87 (WEISER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EMETT LATLON N 43 54.8415 W 116 38.1235
+FIX FOVAK LATLON N 44 17.062 W 117 4.101334
+FIX GACEP LATLON N 44 7.982167 W 116 51.8395
+FIX HOVEL LATLON N 44 21.544667 W 117 11.520667
+FIX WUVOK LATLON N 44 3.597 W 116 45.9505
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA30 FIX WUVOK AT OR ABOVE 4400 FIX GACEP 4000 RNW 30 FIX FOVAK FIX OVERFLY HOVEL AT OR ABOVE 9000 HOLD AT FIX HOVEL RIGHT TURN INBOUNDCOURSE 145 LEGDIST 7
+ TRANSITION EMETT FIX EMETT
+ENDAPPROACHES

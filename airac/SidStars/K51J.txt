@@ -1,0 +1,44 @@
+//K51J (LAKE CITY MUN EVANS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOSGI LATLON N 33 56.389166 W 79 45.4105
+FIX INECA LATLON N 34 2.462666 W 79 44.614667
+FIX JUMEG LATLON N 34 1.916666 W 79 38.634
+FIX KIVPE LATLON N 33 46.040333 W 79 46.762333
+FIX LOYCI LATLON N 33 40.495834 W 79 53.510833
+FIX NUYIP LATLON N 34 3.003833 W 79 50.596667
+FIX ONVAE LATLON N 33 39.412 W 79 41.599834
+FIX UTIKE LATLON N 33 47.924 W 79 46.516667
+FIX YUBUD LATLON N 33 39.956333 W 79 47.554667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX YUBUD AT OR ABOVE 2000 FIX KIVPE 1700 FIX UTIKE AT OR ABOVE 1060 RNW 01 TRK 012 UNTIL 480 FIX OVERFLY INECA AT OR ABOVE 2000 HOLD AT FIX INECA RIGHT TURN INBOUNDCOURSE 192 LEGDIST 4
+ TRANSITION LOYCI FIX LOYCI AT OR ABOVE 2000
+ TRANSITION ONVAE FIX ONVAE AT OR ABOVE 2000
+ TRANSITION YUBUD HOLD AT FIX YUBUD RIGHT TURN INBOUNDCOURSE 012 ALT 2000 LEGDIST 4
+APPROACH RNV19 FIX INECA AT OR ABOVE 2000 FIX HOSGI 1700 RNW 19 TRK 192 UNTIL 480 FIX OVERFLY YUBUD AT OR ABOVE 2000 HOLD AT FIX YUBUD RIGHT TURN INBOUNDCOURSE 012 LEGDIST 4
+ TRANSITION INECA HOLD AT FIX INECA RIGHT TURN INBOUNDCOURSE 192 ALT 2000 LEGDIST 4
+ TRANSITION JUMEG FIX JUMEG
+ TRANSITION NUYIP FIX NUYIP
+ENDAPPROACHES

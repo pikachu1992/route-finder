@@ -1,0 +1,43 @@
+//CZGR (LITTLE GRAND RAPIDS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ESRUR LATLON N 51 52.550666 W 95 36.968333
+FIX IKNEM LATLON N 51 52.277333 W 95 28.913167
+FIX IRGUK LATLON N 52 13.440334 W 95 35.1355
+FIX KAVGO LATLON N 52 13.164833 W 95 27.017666
+FIX KEMSO LATLON N 51 51.994834 W 95 20.859667
+FIX LIVKI LATLON N 52 12.880166 W 95 18.901667
+FIX MAXIK LATLON N 52 7.1825 W 95 27.563666
+FIX MEGEV LATLON N 51 58.260167 W 95 28.373333
+FIX MUPKU LATLON N 52 7.4475 W 95 27.5395
+FIX NIDSU LATLON N 51 57.9355 W 95 28.402667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX KAVGO AT OR ABOVE 2400 FIX MAXIK 2400 RNW 18 FIX OVERFLY NIDSU 2500 HOLD AT FIX NIDSU RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1
+ TRANSITION IRGUK FIX IRGUK SPEED 210
+ TRANSITION LIVKI FIX LIVKI SPEED 210
+APPROACH RNV36 FIX IKNEM AT OR ABOVE 2400 FIX MEGEV 2400 RNW 36 FIX OVERFLY MUPKU 2500 HOLD AT FIX MUPKU RIGHT TURN INBOUNDCOURSE 001 LEGTIME 1
+ TRANSITION ESRUR FIX ESRUR SPEED 210
+ TRANSITION KEMSO FIX KEMSO SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//LFLH (CHAMPFORGEUIL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CCNB LATLON N 46 43.273333 E 4 50.581667
+FIX LH401 LATLON N 46 41.595 E 4 59.116667
+FIX LH402 LATLON N 46 39.376667 E 4 55.186667
+FIX LH403 LATLON N 46 43.24 E 4 50.58
+FIX LH501 LATLON N 46 51.243334 E 4 48.65
+FIX LH502 LATLON N 46 45.46 E 4 54.513334
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH NDB35 FIX CCNB 2800 RNW 35 TRK 350 UNTIL 1800 TURN RIGHT DIRECT FIX CCNB 3000 SPEED 190
+ TRANSITION CC HOLD AT FIX CCNB RIGHT TURN INBOUNDCOURSE 320 ALT 2800 LEGTIME 1
+APPROACH RNV35 FIX LH403 2800 SPEED 190 RNW 35 FIX OVERFLY LH501 SPEED 190 TURN RIGHT DIRECT FIX LH502 AT OR ABOVE 3000 SPEED 190 FIX LH401 3000 SPEED 190
+ TRANSITION LH401 FIX LH401 AT OR ABOVE 3000 SPEED 190 FIX LH402 AT OR ABOVE 3000 SPEED 190
+ TRANSITION LH402 FIX LH402 AT OR ABOVE 3000 SPEED 190
+ TRANSITION LH403 FIX LH403 AT OR ABOVE 3000 SPEED 190 FIX LH502 AT OR ABOVE 3000 SPEED 190 FIX LH401 AT OR ABOVE 3000 SPEED 190 FIX LH402 AT OR ABOVE 3000 SPEED 190
+ENDAPPROACHES

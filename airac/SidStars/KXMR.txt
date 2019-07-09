@@ -1,0 +1,45 @@
+//KXMR (CAPE CANAVERAL AFS SKID STRIP)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BITHO LATLON N 28 37.8565 W 81 3.5645
+FIX COZMO LATLON N 28 47.946334 W 81 4.360333
+FIX GIGLE LATLON N 28 31.929167 W 80 39.677333
+FIX HODUB LATLON N 28 35.6005 W 80 45.075334
+FIX JESUP LATLON N 28 53.305834 W 81 4.784
+FIX LAMMA LATLON N 29 0.865166 W 81 5.382833
+FIX NODBE LATLON N 28 24.475834 W 80 28.778833
+FIX OMN LATLON N 29 18.195167 W 81 6.761833
+FIX WESMA LATLON N 28 18.3475 W 80 19.807834
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+STARS
+STAR BITHO7 FIX OMN FIX LAMMA FIX JESUP FIX COZMO FIX BITHO
+  RNW 13 RNW 31
+ENDSTARS
+
+APPROACHES
+APPROACH RNV13 FIX HODUB AT OR ABOVE 3000 FIX GIGLE 1800 RNW 13 FIX OVERFLY WESMA AT OR ABOVE 3000 HOLD AT FIX WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 8000 SPEED 310 LEGDIST 7
+ TRANSITION HODUB HOLD AT FIX HODUB LEFT TURN INBOUNDCOURSE 135 ALT 3000 SPEED 310 LEGDIST 7
+APPROACH RNV31 FIX WESMA AT OR ABOVE 3000 FIX NODBE 1700 RNW 31 TRK 315 UNTIL 410 TURN LEFT DIRECT FIX WESMA AT OR ABOVE 3000 HOLD AT FIX WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 8000 SPEED 310 LEGDIST 7
+ TRANSITION WESMA HOLD AT FIX WESMA RIGHT TURN INBOUNDCOURSE 315 ALT 3000 SPEED 310 LEGDIST 7
+ENDAPPROACHES

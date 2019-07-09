@@ -1,0 +1,43 @@
+//KSZY (SIBLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CILEL LATLON N 35 0.3095 W 88 32.486666
+FIX CODGA LATLON N 35 21.897667 W 88 39.259333
+FIX JOVMI LATLON N 35 24.391834 W 88 27.4145
+FIX OTGUE LATLON N 35 2.792 W 88 20.690333
+FIX PEVYI LATLON N 35 17.288167 W 88 31.501
+FIX PUYBI LATLON N 35 7.413833 W 88 28.415
+FIX YIPUB LATLON N 35 23.147167 W 88 33.3385
+FIX ZABAB LATLON N 35 1.553167 W 88 26.59
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX YIPUB AT OR ABOVE 2600 FIX PEVYI 2200 RNW 17 FIX OVERFLY ZABAB AT OR ABOVE 2600 HOLD AT FIX ZABAB RIGHT TURN INBOUNDCOURSE 345 LEGDIST 4
+ TRANSITION CODGA FIX CODGA AT OR ABOVE 2600
+ TRANSITION JOVMI FIX JOVMI AT OR ABOVE 2600
+ TRANSITION YIPUB HOLD AT FIX YIPUB RIGHT TURN INBOUNDCOURSE 165 ALT 2600 LEGDIST 4
+APPROACH RNV35 FIX ZABAB AT OR ABOVE 2600 FIX PUYBI 2100 RNW 35 FIX OVERFLY YIPUB AT OR ABOVE 2600 HOLD AT FIX YIPUB RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4
+ TRANSITION CILEL FIX CILEL AT OR ABOVE 2600
+ TRANSITION OTGUE FIX OTGUE AT OR ABOVE 2600
+ TRANSITION ZABAB HOLD AT FIX ZABAB RIGHT TURN INBOUNDCOURSE 345 ALT 2600 LEGDIST 4
+ENDAPPROACHES

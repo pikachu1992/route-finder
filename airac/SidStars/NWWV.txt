@@ -1,0 +1,34 @@
+//NWWV (OULOUP)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF13 LATLON S 20 34.753166 E 166 32.101333
+FIX FF31 LATLON S 20 41.749333 E 166 37.299334
+FIX OANB LATLON S 20 38.528333 E 166 34.323334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDB13 FIX FF13 1300 RNW 13 FIX OANB TRK 138 UNTIL 1500 TURN RIGHT DIRECT FIX OANB
+ TRANSITION OA FIX OANB AT OR ABOVE 1500 TRK 303 UNTIL 7.5 FROM FIX OANB
+APPROACH NDB31 FIX FF31 1300 RNW 31 FIX OANB TRK 306 UNTIL 1500 TURN RIGHT DIRECT FIX OANB
+ TRANSITION OA FIX OANB AT OR ABOVE 1500 TRK 141 UNTIL 7.5 FROM FIX OANB
+ENDAPPROACHES

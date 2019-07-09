@@ -1,0 +1,42 @@
+//K11R (BRENHAM MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUVAC LATLON N 30 9.718166 W 96 21.8565
+FIX DUDYA LATLON N 30 26.072167 W 96 24.735167
+FIX EYUBE LATLON N 30 27.581666 W 96 13.298167
+FIX FASHU LATLON N 30 7.463333 W 96 21.461167
+FIX FEFEP LATLON N 30 18.693667 W 96 23.434166
+FIX JELBA LATLON N 30 24.549334 W 96 36.166834
+FIX JINGA LATLON N 29 59.4615 W 96 20.060666
+FIX KILSE LATLON N 30 0.960833 W 96 8.673167
+FIX OCADO LATLON N 29 57.945667 W 96 31.4425
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX DUDYA AT OR ABOVE 3100 FIX FEFEP 2000 RNW 16 TRK 165 UNTIL 594 FIX OVERFLY JINGA AT OR ABOVE 2200 HOLD AT FIX JINGA RIGHT TURN INBOUNDCOURSE 345 LEGDIST 4
+ TRANSITION EYUBE FIX EYUBE
+ TRANSITION JELBA FIX JELBA
+APPROACH RNV34 FIX JINGA AT OR ABOVE 2200 FIX FASHU 2000 FIX BUVAC AT OR ABOVE 1240 RNW 34 TRK 345 UNTIL 500 FIX OVERFLY DUDYA AT OR ABOVE 3100 HOLD AT FIX DUDYA RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4
+ TRANSITION KILSE FIX KILSE
+ TRANSITION OCADO FIX OCADO
+ENDAPPROACHES

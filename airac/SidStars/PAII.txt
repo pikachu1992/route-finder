@@ -1,0 +1,45 @@
+//PAII (EGEGIK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AWXAV LATLON N 58 5.599834 W 157 1.4315
+FIX CAMUL LATLON N 58 15.780833 W 157 42.522833
+FIX EDGUC LATLON N 58 22.791667 W 157 28.976167
+FIX IANNN LATLON N 58 14.665 W 157 28.267667
+FIX JIYOU LATLON N 58 19.294166 W 157 35.751667
+FIX LICUG LATLON N 58 6.968167 W 157 15.9225
+FIX OVKUY LATLON N 58 2.3915 W 157 8.6395
+FIX SELBE LATLON N 57 59.176333 W 157 15.825833
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 12
+RNW 21
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX JIYOU AT OR ABOVE 2500 FIX IANNN 1600 RNW 12 TRK 122 UNTIL 492 TURN LEFT DIRECT FIX OVERFLY EDGUC AT OR ABOVE 2500 HOLD AT FIX EDGUC RIGHT TURN INBOUNDCOURSE 208 LEGDIST 4
+ TRANSITION CAMUL FIX CAMUL AT OR ABOVE 2500
+ TRANSITION EDGUC FIX EDGUC AT OR ABOVE 2500
+ TRANSITION JIYOU HOLD AT FIX JIYOU RIGHT TURN INBOUNDCOURSE 122 ALT 2500 LEGDIST 4
+APPROACH RNV30 FIX OVKUY AT OR ABOVE 2500 FIX LICUG 1800 RNW 30 TRK 302 UNTIL 492 FIX OVERFLY JIYOU AT OR ABOVE 2500 HOLD AT FIX JIYOU RIGHT TURN INBOUNDCOURSE 122 LEGDIST 4
+ TRANSITION AWXAV FIX AWXAV AT OR ABOVE 2500
+ TRANSITION OVKUY HOLD AT FIX OVKUY RIGHT TURN INBOUNDCOURSE 302 ALT 2500 LEGDIST 4
+ TRANSITION SELBE FIX SELBE AT OR ABOVE 2500
+ENDAPPROACHES

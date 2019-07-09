@@ -1,0 +1,44 @@
+//KRZR (CLEVELAND REGL JETPORT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMZON LATLON N 35 7.886666 W 84 51.256
+FIX CULBO LATLON N 35 10.1085 W 84 49.744
+FIX HUVPO LATLON N 35 23.697334 W 84 30.744334
+FIX HWSEE LATLON N 35 17.808833 W 84 44.4935
+FIX KAYAC LATLON N 35 23.604667 W 84 40.528834
+FIX MMARS LATLON N 35 1.684667 W 84 55.465
+FIX WITIV LATLON N 35 30.491666 W 84 45.533
+FIX YODUL LATLON N 35 1.557833 W 85 5.204833
+FIX ZUBEB LATLON N 34 54.8045 W 84 50.475167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX MMARS AT OR ABOVE 4100 FIX AMZON 2700 FIX CULBO AT OR ABOVE 1780 RNW 03 TRK 034 UNTIL 1800 TURN RIGHT DIRECT FIX OVERFLY MMARS AT OR ABOVE 4100 HOLD AT FIX MMARS RIGHT TURN INBOUNDCOURSE 034 LEGDIST 5
+ TRANSITION MMARS HOLD AT FIX MMARS RIGHT TURN INBOUNDCOURSE 034 ALT 4100 LEGDIST 5
+ TRANSITION YODUL FIX YODUL
+ TRANSITION ZUBEB FIX ZUBEB
+APPROACH RNV21 FIX KAYAC AT OR ABOVE 3700 FIX HWSEE 2600 RNW 21 TRK 214 UNTIL 1066 FIX OVERFLY MMARS AT OR ABOVE 4100 HOLD AT FIX MMARS RIGHT TURN INBOUNDCOURSE 034 LEGDIST 5
+ TRANSITION HUVPO FIX HUVPO
+ TRANSITION KAYAC HOLD AT FIX KAYAC RIGHT TURN INBOUNDCOURSE 214 ALT 3700 LEGDIST 4
+ TRANSITION WITIV FIX WITIV
+ENDAPPROACHES

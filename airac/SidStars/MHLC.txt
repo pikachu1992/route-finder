@@ -1,0 +1,34 @@
+//MHLC (GOLOSON INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 60VOR LATLON N 15 43.3615 W 86 58.010167
+FIX ATLAN LATLON N 15 53.823167 W 86 59.343833
+FIX CF07 LATLON N 15 42.799834 W 87 2.116333
+FIX FF07 LATLON N 15 43.080833 W 87 0.063334
+FIX MA07 LATLON N 15 43.991666 W 86 53.390167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH VDM07 FIX CF07 AT OR ABOVE 3000 FIX FF07 2500 FIX 60VOR AT OR ABOVE 1900 FIX OVERFLY MA07 577 RNW 07 TURN LEFT DIRECT FIX ATLAN AT OR ABOVE 3000 HOLD AT FIX ATLAN LEFT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1
+ TRANSITION ATLAN FIX ATLAN
+ENDAPPROACHES

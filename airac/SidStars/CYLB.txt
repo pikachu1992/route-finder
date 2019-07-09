@@ -1,0 +1,43 @@
+//CYLB (LAC LA BICHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IKUVI LATLON N 54 57.537833 W 112 11.9175
+FIX IMENA LATLON N 54 42.547166 W 111 54.182333
+FIX ITSAL LATLON N 54 51.620833 W 112 13.3135
+FIX KAVON LATLON N 54 40.811167 W 111 50.550334
+FIX KEMTO LATLON N 54 49.8055 W 112 9.466
+FIX MEGVO LATLON N 54 49.646167 W 112 23.078833
+FIX NABAB LATLON N 54 34.8085 W 111 51.801833
+FIX OMPIP LATLON N 54 53.594167 W 112 17.507333
+FIX PEMGI LATLON N 54 38.732666 W 111 46.213667
+FIX VIDNI LATLON N 54 42.6525 W 111 40.607666
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX OMPIP AT OR ABOVE 3700 SPEED 180 FIX KEMTO 3600 RNW 11 FIX OVERFLY KAVON 4400 HOLD AT FIX KAVON RIGHT TURN INBOUNDCOURSE 115 SPEED 175 LEGTIME 1
+ TRANSITION IKUVI FIX IKUVI SPEED 200
+ TRANSITION MEGVO FIX MEGVO SPEED 200
+APPROACH RNV29 FIX PEMGI AT OR ABOVE 3600 SPEED 180 FIX IMENA 3600 RNW 29 FIX OVERFLY ITSAL 4400 HOLD AT FIX ITSAL RIGHT TURN INBOUNDCOURSE 295 SPEED 175 LEGTIME 1
+ TRANSITION NABAB FIX NABAB SPEED 200
+ TRANSITION VIDNI FIX VIDNI SPEED 200
+ENDAPPROACHES

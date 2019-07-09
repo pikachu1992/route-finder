@@ -1,0 +1,45 @@
+//YWWI (WOODIE WOODIE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WWZND LATLON S 21 33.793166 E 121 0.214
+FIX WWZNE LATLON S 21 26.732333 E 121 0.9715
+FIX WWZNF LATLON S 21 34.499333 E 121 7.762834
+FIX WWZNH LATLON S 21 41.419166 E 121 13.827
+FIX WWZNI LATLON S 21 30.616333 E 121 4.365667
+FIX WWZSA LATLON S 21 43.656667 E 121 22.738667
+FIX WWZSB LATLON S 21 50.718833 E 121 21.997333
+FIX WWZSC LATLON S 21 50.0235 E 121 14.433334
+FIX WWZSF LATLON S 21 42.961667 E 121 15.180667
+FIX WWZSH LATLON S 21 44.025 E 121 6.669167
+FIX WWZSI LATLON S 21 46.841 E 121 18.5875
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WWZNI AT OR ABOVE 2800 FIX WWZNF 2500 RNW 14 FIX WWZNH TRK 139 UNTIL 2800
+ TRANSITION WWZND FIX WWZND AT OR ABOVE 2800
+ TRANSITION WWZNE FIX WWZNE AT OR ABOVE 2800
+APPROACH RNV32 FIX WWZSI AT OR ABOVE 2800 FIX WWZSF 2500 RNW 32 TRK 319 UNTIL 1390 TURN LEFT DIRECT FIX WWZSH SPEED 210 HDG 140 VECTORS
+ TRANSITION WWZSA FIX WWZSA AT OR ABOVE 2800
+ TRANSITION WWZSB FIX WWZSB AT OR ABOVE 2800
+ TRANSITION WWZSC FIX WWZSC AT OR ABOVE 2800
+ENDAPPROACHES

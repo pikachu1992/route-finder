@@ -1,0 +1,37 @@
+//K3GM (GRAND HAVEN MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIRBO LATLON N 43 2.047333 W 86 5.131333
+FIX FIVLO LATLON N 43 2.036167 W 85 56.942666
+FIX SIBEE LATLON N 43 2.044834 W 86 18.384
+FIX WASOG LATLON N 43 2.001 W 86 36.2165
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX WASOG AT OR ABOVE 3000 FIX SIBEE 2100 RNW 09 TRK 095 UNTIL 1004 FIX FIVLO AT OR ABOVE 2700 HOLD AT FIX FIVLO LEFT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION WASOG HOLD AT FIX WASOG RIGHT TURN INBOUNDCOURSE 095 ALT 3000 LEGDIST 4
+APPROACH RNV27 FIX FIVLO AT OR ABOVE 2700 FIX CIRBO 2100 RNW 27 TRK 275 UNTIL 1000 FIX OVERFLY WASOG AT OR ABOVE 3000 HOLD AT FIX WASOG RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION FIVLO HOLD AT FIX FIVLO LEFT TURN INBOUNDCOURSE 275 ALT 2700 LEGDIST 4
+ENDAPPROACHES

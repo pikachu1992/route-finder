@@ -1,0 +1,47 @@
+//CJY3 (TISDALE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX RERIP LATLON N 53 2.66 W 104 6.776833
+FIX ROVGI LATLON N 52 37.7 W 104 1.162834
+FIX SEBIV LATLON N 52 56.558666 W 104 21.913333
+FIX SIBNO LATLON N 52 43.757833 W 103 46.087166
+FIX TAGEV LATLON N 52 59.613334 W 104 14.354
+FIX TULOT LATLON N 52 40.732834 W 103 53.633666
+FIX UBVIX LATLON N 52 54.6295 W 104 8.848834
+FIX URTOD LATLON N 52 45.728666 W 103 59.080667
+FIX VIBTU LATLON N 52 44.566333 W 103 57.811
+FIX VOBOT LATLON N 52 55.796666 W 104 10.135667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 14
+RNW 17
+RNW 26
+RNW 32
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX TAGEV AT OR ABOVE 3200 SPEED 180 FIX UBVIX 3200 RNW 14 FIX OVERFLY VIBTU 3200 HOLD AT FIX VIBTU RIGHT TURN INBOUNDCOURSE 137 SPEED 200 LEGTIME 1
+ TRANSITION RERIP FIX RERIP SPEED 200
+ TRANSITION SEBIV FIX SEBIV SPEED 200
+APPROACH RNV32 FIX TULOT AT OR ABOVE 3200 SPEED 180 FIX URTOD 3200 RNW 32 FIX OVERFLY VOBOT 3200 HOLD AT FIX VOBOT RIGHT TURN INBOUNDCOURSE 317 SPEED 200 LEGTIME 1
+ TRANSITION ROVGI FIX ROVGI SPEED 200
+ TRANSITION SIBNO FIX SIBNO SPEED 200
+ENDAPPROACHES

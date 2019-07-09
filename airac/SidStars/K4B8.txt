@@ -1,0 +1,36 @@
+//K4B8 (ROBERTSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRISS LATLON N 41 42.156 W 73 1.0025
+FIX DRESS LATLON N 41 31.099 W 72 53.16
+FIX JUBEB LATLON N 41 39.4665 W 72 52.118833
+FIX MAD LATLON N 41 18.831667 W 72 41.532167
+FIX UTUBE LATLON N 41 36.5805 W 72 52.479334
+FIX ZEPVI LATLON N 41 34.562167 W 72 52.731833
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX DRESS AT OR ABOVE 3000 FIX ZEPVI AT OR ABOVE 2000 FIX UTUBE 1900 FIX JUBEB AT OR ABOVE 820 RNW 02 TRK 019 UNTIL 1600 TURN LEFT DIRECT FIX OVERFLY BRISS AT OR ABOVE 3000 HOLD AT FIX BRISS LEFT TURN INBOUNDCOURSE 057 LEGDIST 4
+ TRANSITION DRESS HOLD AT FIX DRESS RIGHT TURN INBOUNDCOURSE 019 ALT 3000 LEGDIST 4
+ TRANSITION MAD FIX MAD
+ENDAPPROACHES

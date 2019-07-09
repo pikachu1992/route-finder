@@ -1,0 +1,43 @@
+//NFTL (HAAPAI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVNOX LATLON S 19 50.8345 W 174 12.859667
+FIX ELDIL LATLON S 19 38.448334 W 174 27.3215
+FIX PILUR LATLON S 19 44.953834 W 174 31.351333
+FIX SEKDA LATLON S 19 42.395666 W 174 28.085666
+FIX TL546 LATLON S 19 44.425333 W 174 24.429667
+FIX TL837 LATLON S 19 48.809167 W 174 16.520167
+FIX UPDIG LATLON S 19 48.271 W 174 9.597833
+FIX VIDEB LATLON S 19 54.782167 W 174 13.618166
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX SEKDA AT OR ABOVE 2500 FIX TL546 1300 RNW 11 TRK 107 UNTIL 1000 TURN LEFT DIRECT FIX SEKDA AT OR ABOVE 2500
+ TRANSITION ELDIL FIX ELDIL
+ TRANSITION PILUR FIX PILUR
+ TRANSITION SEKDA HOLD AT FIX SEKDA RIGHT TURN INBOUNDCOURSE 107 ALT 2500 LEGTIME 1
+APPROACH RNV29 FIX AVNOX AT OR ABOVE 2500 FIX TL837 1300 RNW 29 TRK 287 UNTIL 1000 TURN RIGHT DIRECT FIX AVNOX AT OR ABOVE 2500
+ TRANSITION AVNOX HOLD AT FIX AVNOX RIGHT TURN INBOUNDCOURSE 287 ALT 2500 LEGTIME 1
+ TRANSITION UPDIG FIX UPDIG
+ TRANSITION VIDEB FIX VIDEB
+ENDAPPROACHES

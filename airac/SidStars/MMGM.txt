@@ -1,0 +1,36 @@
+//MMGM (GEN JOSE MA YANEZ INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD20 LATLON N 28 5.825333 W 110 50.7395
+FIX FD20 LATLON N 28 3.195334 W 110 52.3855
+FIX GYM LATLON N 27 57.934 W 110 55.673333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID GYM1 RNW 02 TRK 018 UNTIL 460 TRK 018 UNTIL 6.0 FROM FIX GYM TURN LEFT DIRECT FIX GYM
+ENDSIDS
+
+APPROACHES
+APPROACH VDM20 FIX CD20 AT OR ABOVE 2800 FIX FD20 1900 RNW 20 TRK 198 UNTIL 460 TRK 257 UNTIL 7.0 FROM FIX GYM TURN LEFT DIRECT FIX GYM AT OR ABOVE 4000
+ TRANSITION GYM FIX GYM AT OR ABOVE 4000 TRK 038 UNTIL 9.0 FROM FIX GYM
+ENDAPPROACHES

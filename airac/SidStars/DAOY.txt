@@ -1,0 +1,36 @@
+//DAOY (EL BAYADH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 30VOR LATLON N 33 40.354333 E 1 2.345833
+FIX 60VOR LATLON N 33 38.1195 E 0 59.9425
+FIX BAY LATLON N 33 42.588334 E 1 4.751167
+FIX CD04 LATLON N 33 34.393333 E 0 55.941667
+FIX D246K LATLON N 33 37.921333 E 0 52.811
+FIX FD04 LATLON N 33 35.884166 E 0 57.541333
+FIX MD04 LATLON N 33 41.545834 E 1 3.628333
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH VDM04 FIX CD04 AT OR ABOVE 7390 FIX FD04 7390 FIX 60VOR AT OR ABOVE 6460 FIX 30VOR AT OR ABOVE 5510 FIX MD04 5005 RNW 04 FIX BAY TRK 028 UNTIL 4.0 FROM FIX BAY TURN LEFT DIRECT FIX BAY 7710 SPEED 220
+ TRANSITION BAY FIX BAY AT OR ABOVE 7710 TRK 246 UNTIL 5.0 FROM FIX BAY FIX OVERFLY D246K AT OR ABOVE 7390
+ENDAPPROACHES

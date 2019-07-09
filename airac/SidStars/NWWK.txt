@@ -1,0 +1,33 @@
+//NWWK (KOUMAC)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF051 LATLON S 20 35.344667 E 164 9.741167
+FIX KONB LATLON S 20 32.505 E 164 15.663334
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA06 FIX FF051 1900 FIX KONB 1250 RNW 06 HDG 242 VECTORS
+ TRANSITION KO FIX KONB TRK 242 UNTIL 8.2 FROM FIX KONB
+APPROACH NDBA24 FIX FF051 1900 FIX KONB 1250 RNW 24 HDG 242 VECTORS
+ TRANSITION KO FIX KONB TRK 242 UNTIL 8.2 FROM FIX KONB
+ENDAPPROACHES

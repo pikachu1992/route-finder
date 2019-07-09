@@ -1,0 +1,43 @@
+//NCMH (MANIHIKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUNTU LATLON S 10 13.904 W 161 5.3285
+FIX GUMBI LATLON S 10 10.017667 W 161 2.118
+FIX LEBEN LATLON S 10 31.823666 W 160 54.577667
+FIX LIMSA LATLON S 10 14.835667 W 161 10.3105
+FIX MATSO LATLON S 10 35.710834 W 160 57.7915
+FIX MH401 LATLON S 10 18.222 W 161 2.739667
+FIX MH501 LATLON S 10 27.506 W 160 57.169834
+FIX SUKEL LATLON S 10 30.888833 W 160 49.591166
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX BUNTU AT OR ABOVE 2500 FIX MH401 1550 RNW 14 TRK 139 UNTIL 1000 TURN LEFT DIRECT FIX BUNTU AT OR ABOVE 2500
+ TRANSITION BUNTU HOLD AT FIX BUNTU RIGHT TURN INBOUNDCOURSE 139 ALT 2500 LEGTIME 1
+ TRANSITION GUMBI FIX GUMBI
+ TRANSITION LIMSA FIX LIMSA
+APPROACH RNV32 FIX LEBEN AT OR ABOVE 2500 FIX MH501 1550 RNW 32 TRK 318 UNTIL 1000 TURN RIGHT DIRECT FIX LEBEN AT OR ABOVE 2500
+ TRANSITION LEBEN HOLD AT FIX LEBEN RIGHT TURN INBOUNDCOURSE 318 ALT 2500 LEGTIME 1
+ TRANSITION MATSO FIX MATSO
+ TRANSITION SUKEL FIX SUKEL
+ENDAPPROACHES

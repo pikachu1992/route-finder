@@ -1,0 +1,35 @@
+//NGTR (ARORAE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARURA LATLON S 2 35.752 E 176 40.005
+FIX OPENI LATLON S 2 39.2845 E 176 38.097833
+FIX TATOK LATLON S 2 31.813 E 176 39.208333
+FIX TR901 LATLON S 2 36.346166 E 176 43.958167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ARURA AT OR ABOVE 2500 FIX TR901 1300 RNW 09 TRK 089 UNTIL 1000 TURN LEFT DIRECT FIX ARURA AT OR ABOVE 2500
+ TRANSITION ARURA HOLD AT FIX ARURA RIGHT TURN INBOUNDCOURSE 089 ALT 2500 LEGTIME 1
+ TRANSITION OPENI FIX OPENI
+ TRANSITION TATOK FIX TATOK
+ENDAPPROACHES

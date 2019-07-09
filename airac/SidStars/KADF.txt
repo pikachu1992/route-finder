@@ -1,0 +1,37 @@
+//KADF (FLORENCE MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COVNO LATLON N 34 14.131333 W 92 55.061666
+FIX CUBUG LATLON N 33 57.140333 W 93 13.5975
+FIX FITIL LATLON N 34 1.5465 W 93 8.807167
+FIX ITVOW LATLON N 34 7.556167 W 93 2.254667
+FIX WIPTI LATLON N 34 3.383833 W 93 6.806
+FIX ZULSO LATLON N 34 10.426166 W 92 59.118167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX CUBUG AT OR ABOVE 2000 FIX FITIL 2000 FIX WIPTI AT OR ABOVE 1200 RNW 04 TRK 040 UNTIL 429 FIX OVERFLY COVNO AT OR ABOVE 2100 HOLD AT FIX COVNO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4
+ TRANSITION CUBUG HOLD AT FIX CUBUG LEFT TURN INBOUNDCOURSE 040 ALT 2000 LEGDIST 4
+APPROACH RNV22 FIX COVNO AT OR ABOVE 2100 FIX ZULSO 2000 FIX ITVOW AT OR ABOVE 760 RNW 22 TRK 220 UNTIL 582 FIX OVERFLY CUBUG AT OR ABOVE 2000 HOLD AT FIX CUBUG LEFT TURN INBOUNDCOURSE 040 LEGDIST 4
+ TRANSITION COVNO HOLD AT FIX COVNO RIGHT TURN INBOUNDCOURSE 220 ALT 2100 LEGDIST 4
+ENDAPPROACHES

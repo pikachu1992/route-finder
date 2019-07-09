@@ -1,0 +1,42 @@
+//VEMN (DIBRUGARH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI05Y LATLON N 27 24.1665 E 94 55.532167
+FIX CI05Z LATLON N 27 21.722 E 94 52.759333
+FIX D225T LATLON N 27 15.036833 E 94 45.446333
+FIX D255J LATLON N 27 25.394167 E 94 50.634833
+FIX DBRNB LATLON N 27 27.928333 E 95 1.116667
+FIX DRG LATLON N 27 29.301667 E 95 1.238333
+FIX FI05Y LATLON N 27 25.575334 E 94 57.131833
+FIX FI05Z LATLON N 27 25.949167 E 94 57.556667
+FIX FS05 LATLON N 27 25.482833 E 94 57.2485
+FIX NOMAG LATLON N 27 8.9 E 94 38.683333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH ILSY05 FIX CI05Y 1800 FIX FI05Y 1800 RNW 05 TRK 045 UNTIL 770 TURN LEFT DIRECT FIX DBRNB 3000 HOLD AT FIX DBRNB LEFT TURN INBOUNDCOURSE 051 LEGTIME 1
+ TRANSITION DBR FIX DBRNB AT OR ABOVE 3000 FIX OVERFLY D255J AT OR ABOVE 1800
+APPROACH ILSZ05 FIX CI05Z AT OR ABOVE 1800 FIX FI05Z 1630 RNW 05 FIX OVERFLY DRG TURN LEFT DIRECT FIX DRG 3000 HOLD AT FIX DRG LEFT TURN INBOUNDCOURSE 045 ALT 3000 LEGTIME 1
+ TRANSITION NOMAG FIX NOMAG FIX D225T AT OR ABOVE 3000
+APPROACH VOR05 FIX FS05 1800 RNW 05 FIX OVERFLY DRG TURN LEFT DIRECT FIX DRG 3000 HOLD AT FIX DRG LEFT TURN INBOUNDCOURSE 043 ALT 3000 LEGTIME 1
+ENDAPPROACHES

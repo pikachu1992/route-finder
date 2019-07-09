@@ -1,0 +1,43 @@
+//CKQ8 (MCARTHUR RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APDUD LATLON N 57 57.171667 W 104 56.335834
+FIX BOTAK LATLON N 57 34.821833 W 105 6.562667
+FIX DUVUL LATLON N 57 51.358 W 104 59.017
+FIX EMKID LATLON N 57 41.6185 W 105 3.475667
+FIX GORAG LATLON N 57 35.9955 W 105 15.592
+FIX IKDUS LATLON N 57 50.468167 W 104 59.426
+FIX IMEKI LATLON N 57 58.357166 W 105 5.452834
+FIX IRGES LATLON N 57 33.637667 W 104 57.543334
+FIX KERDO LATLON N 57 40.638334 W 105 3.922
+FIX URTAX LATLON N 57 55.975166 W 104 47.228666
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX APDUD AT OR ABOVE 3400 SPEED 180 FIX DUVUL 3400 RNW 18 FIX OVERFLY EMKID 3500 HOLD AT FIX EMKID RIGHT TURN INBOUNDCOURSE 184 SPEED 200 LEGTIME 1
+ TRANSITION IMEKI FIX IMEKI
+ TRANSITION URTAX FIX URTAX
+APPROACH RNV36 FIX BOTAK AT OR ABOVE 3400 SPEED 180 FIX KERDO 3400 RNW 36 FIX OVERFLY IKDUS 3500 HOLD AT FIX IKDUS RIGHT TURN INBOUNDCOURSE 004 SPEED 200 LEGTIME 1
+ TRANSITION GORAG FIX GORAG
+ TRANSITION IRGES FIX IRGES
+ENDAPPROACHES

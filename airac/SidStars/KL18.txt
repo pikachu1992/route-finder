@@ -1,0 +1,34 @@
+//KL18 (FALLBROOK COMMUNITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 31THR LATLON N 33 24.434333 W 117 14.093333
+FIX ADUNE LATLON N 33 29.1945 W 117 12.6615
+FIX IFLEV LATLON N 33 26.280167 W 117 13.5385
+FIX ROBNN LATLON N 33 12.208667 W 117 6.209666
+FIX UDHAY LATLON N 33 31.391 W 117 11.999833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH GPS18 FIX ADUNE AT OR ABOVE 3500 FIX IFLEV 2600 FIX 31THR AT OR ABOVE 1840 RNW 18 TRK 181 UNTIL 1108 FIX ROBNN AT OR ABOVE 5000 HOLD AT FIX ROBNN LEFT TURN INBOUNDCOURSE 290 LEGTIME 1
+ TRANSITION UDHAY HOLD AT FIX UDHAY LEFT TURN INBOUNDCOURSE 181 ALT 4000 LEGTIME 1
+ENDAPPROACHES

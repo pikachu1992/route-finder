@@ -1,0 +1,36 @@
+//CCE3 (JUNIPER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LITMI LATLON N 46 18.810833 W 67 15.142834
+FIX MEPMO LATLON N 46 20.793334 W 67 6.21
+FIX MUVSA LATLON N 46 40.094666 W 67 13.181167
+FIX PEVBU LATLON N 46 22.764167 W 66 57.2665
+FIX SEVMA LATLON N 46 28.410667 W 67 9.731167
+FIX TADRU LATLON N 46 30.735667 W 67 9.893167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX MEPMO AT OR ABOVE 3000 SPEED 180 FIX SEVMA 2500 FIX TADRU AT OR ABOVE 1760 RNW 02 FIX OVERFLY MUVSA 3500 HOLD AT FIX MUVSA LEFT TURN INBOUNDCOURSE 000 SPEED 200 LEGTIME 1
+ TRANSITION LITMI FIX LITMI SPEED 200
+ TRANSITION PEVBU FIX PEVBU SPEED 200
+ENDAPPROACHES

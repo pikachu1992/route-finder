@@ -1,0 +1,34 @@
+//OYRN (MUKALLA INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD24 LATLON N 14 44.415833 E 49 31.533833
+FIX PI001 LATLON N 14 41.897787 E 49 26.683201
+FIX PI002 LATLON N 14 40.639944 E 49 30.934024
+FIX PI003 LATLON N 14 45.884374 E 49 34.445502
+FIX RIN LATLON N 14 40.255 E 49 23.488333
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH VDM24 FIX FD24 3000 FIX RIN 188 RNW 24 TRK 241 UNTIL 454 HDG 199 VECTORS
+ TRANSITION RIN FIX RIN AT OR ABOVE 6000 FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+ENDAPPROACHES

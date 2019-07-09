@@ -1,0 +1,39 @@
+//KBIF (BIGGS AAF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CULAC LATLON N 31 55.357333 W 106 17.855333
+FIX ELP LATLON N 31 48.954667 W 106 16.913
+FIX EWM LATLON N 31 57.104666 W 106 16.344
+FIX GIFEN LATLON N 31 48.524666 W 106 8.715334
+FIX HIMUP LATLON N 31 59.686333 W 106 12.960833
+FIX PIERS LATLON N 31 56.924666 W 106 4.827
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV21 FIX HIMUP AT OR ABOVE 6800 FIX CULAC 5600 RNW 21 TRK 212 UNTIL 4348 TURN LEFT DIRECT FIX OVERFLY ELP AT OR ABOVE 7500 HOLD AT FIX ELP LEFT TURN INBOUNDCOURSE 261 LEGDIST 7
+ TRANSITION PIERS FIX PIERS
+APPROACH VOR21 FIX EWM 6500 RNW 21 TRK 210 UNTIL 4348 TURN LEFT DIRECT FIX ELP AT OR ABOVE 8000 FIX GIFEN HOLD AT FIX GIFEN LEFT TURN INBOUNDCOURSE 261 LEGTIME 1
+ TRANSITION ELP FIX ELP FIX EWM AT OR ABOVE 6500 HOLD AT FIX EWM RIGHT TURN INBOUNDCOURSE 210 ALT 6500 LEGTIME 1
+APPROACH TAC21 FIX EWM 6500 RNW 21 TRK 210 UNTIL 4348 TURN LEFT DIRECT FIX ELP AT OR ABOVE 8000 FIX GIFEN HOLD AT FIX GIFEN LEFT TURN INBOUNDCOURSE 261 LEGTIME 1
+ TRANSITION ELP FIX ELP FIX EWM AT OR ABOVE 6500 HOLD AT FIX EWM RIGHT TURN INBOUNDCOURSE 210 ALT 6500 LEGTIME 1
+ENDAPPROACHES

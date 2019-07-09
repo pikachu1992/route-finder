@@ -1,0 +1,43 @@
+//K22N (ARNER MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DIANO LATLON N 41 0.033167 W 76 13.563
+FIX EJEBA LATLON N 40 50.524333 W 75 39.004
+FIX ETX LATLON N 40 34.862167 W 75 41.042
+FIX FEYJA LATLON N 40 46.2995 W 75 53.428
+FIX FIENE LATLON N 40 47.506 W 75 27.535166
+FIX HAILS LATLON N 40 34.223833 W 76 3.5295
+FIX ILVER LATLON N 40 44.0935 W 76 0.906334
+FIX OCCEZ LATLON N 40 52.711 W 75 31.485
+FIX RACKI LATLON N 41 0.73 W 75 34.6175
+FIX WASIG LATLON N 40 49.917667 W 75 41.083333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX ILVER AT OR ABOVE 3600 FIX FEYJA 2500 RNW 08 TRK 081 UNTIL 934 TURN RIGHT DIRECT FIX OVERFLY ILVER AT OR ABOVE 3600 HOLD AT FIX ILVER RIGHT TURN INBOUNDCOURSE 081 LEGDIST 4
+ TRANSITION DIANO FIX DIANO
+ TRANSITION HAILS FIX HAILS
+APPROACH RNV26 FIX OCCEZ AT OR ABOVE 3700 FIX EJEBA 2200 FIX WASIG AT OR ABOVE 1660 RNW 26 TRK 261 UNTIL 934 FIX OVERFLY ILVER AT OR ABOVE 3600 HOLD AT FIX ILVER RIGHT TURN INBOUNDCOURSE 081 LEGDIST 4
+ TRANSITION ETX FIX ETX FIX FIENE AT OR ABOVE 3800
+ TRANSITION RACKI FIX RACKI
+ENDAPPROACHES

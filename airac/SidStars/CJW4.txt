@@ -1,0 +1,43 @@
+//CJW4 (PELICAN NARROWS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OTNID LATLON N 55 21.693 W 102 42.087
+FIX SIPDA LATLON N 55 24.914167 W 102 29.7065
+FIX SUVET LATLON N 55 28.721167 W 102 47.823833
+FIX TOXET LATLON N 55 26.823334 W 102 38.757833
+FIX UKTOK LATLON N 55 22.141667 W 102 41.796334
+FIX URPET LATLON N 55 12.774833 W 102 47.837666
+FIX VISOT LATLON N 55 5.746333 W 102 42.139
+FIX XOTMO LATLON N 55 9.523 W 103 0.130834
+FIX XOVER LATLON N 55 12.325667 W 102 48.126
+FIX XULDI LATLON N 55 7.640167 W 102 51.127834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX XULDI AT OR ABOVE 2900 SPEED 180 FIX XOVER 2870 RNW 01 FIX OVERFLY OTNID 2800 HOLD AT FIX OTNID RIGHT TURN INBOUNDCOURSE 012 SPEED 200 LEGTIME 1
+ TRANSITION VISOT FIX VISOT SPEED 210
+ TRANSITION XOTMO FIX XOTMO SPEED 210
+APPROACH RNV19 FIX TOXET AT OR ABOVE 3000 SPEED 180 FIX UKTOK 2910 RNW 19 FIX OVERFLY URPET 2800 HOLD AT FIX URPET RIGHT TURN INBOUNDCOURSE 192 SPEED 200 LEGTIME 1
+ TRANSITION SIPDA FIX SIPDA SPEED 210
+ TRANSITION SUVET FIX SUVET SPEED 210
+ENDAPPROACHES

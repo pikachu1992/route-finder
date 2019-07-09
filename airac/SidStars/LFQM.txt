@@ -1,0 +1,45 @@
+//LFQM (LA VEZE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BSVNB LATLON N 47 16.013333 E 6 12.156667
+FIX CN23 LATLON N 47 17.216 E 6 14.503
+FIX QM401 LATLON N 47 25.22 E 6 14.108333
+FIX QM402 LATLON N 47 18.52 E 6 17.075
+FIX QM403 LATLON N 47 14.675 E 6 25.663333
+FIX QM404 LATLON N 47 16.72 E 6 13.511666
+FIX QM406 LATLON N 47 16.645 E 6 13.363333
+FIX QM501 LATLON N 47 11.536667 E 6 3.298333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB23 FIX CN23 AT OR ABOVE 3500 FIX BSVNB 3100 RNW 23 TRK 232 UNTIL 1670 TURN LEFT DIRECT FIX BSVNB 3500
+ TRANSITION BSV HOLD AT FIX BSVNB RIGHT TURN INBOUNDCOURSE 232 ALT 3500 SPEED 170 LEGTIME 1
+APPROACH RNVY23 FIX QM402 AT OR ABOVE 3500 SPEED 150 FIX QM404 3500 RNW 23 TURN LEFT DIRECT FIX QM402 3500
+ TRANSITION QM401 FIX QM401 SPEED 150
+ TRANSITION QM402 HOLD AT FIX QM402 RIGHT TURN INBOUNDCOURSE 232 ALT 3500 SPEED 150 LEGTIME 1
+ TRANSITION QM403 FIX QM403 6300 SPEED 150
+APPROACH RNVZ23 FIX QM402 AT OR ABOVE 3500 SPEED 150 FIX QM406 3500 RNW 23 FIX OVERFLY QM501 TURN LEFT DIRECT FIX QM402 3500
+ TRANSITION QM401 FIX QM401 SPEED 150
+ TRANSITION QM402 HOLD AT FIX QM402 RIGHT TURN INBOUNDCOURSE 232 ALT 3500 SPEED 150 LEGTIME 1
+ TRANSITION QM403 FIX QM403 6300 SPEED 150
+ENDAPPROACHES

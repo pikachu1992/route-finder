@@ -1,0 +1,41 @@
+//KDRM (DRUMMOND I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EFVEV LATLON N 45 58.6675 W 83 29.594333
+FIX JIYIB LATLON N 45 58.728167 W 83 52.7195
+FIX JUNBU LATLON N 46 1.567333 W 83 40.1145
+FIX OKBIW LATLON N 45 56.867333 W 84 0.912
+FIX REEFY LATLON N 45 47.374166 W 83 57.308666
+FIX VUNPY LATLON N 46 3.429 W 83 31.777667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 08
+RNW 19
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX OKBIW AT OR ABOVE 3000 FIX JIYIB 2500 RNW 08 TRK 079 UNTIL 1068 FIX OVERFLY VUNPY AT OR ABOVE 2500 HOLD AT FIX VUNPY RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4
+ TRANSITION OKBIW HOLD AT FIX OKBIW RIGHT TURN INBOUNDCOURSE 079 ALT 3000 LEGDIST 4
+ TRANSITION REEFY FIX REEFY
+APPROACH RNV26 FIX VUNPY AT OR ABOVE 2500 FIX JUNBU 1700 RNW 26 TRK 259 UNTIL 1068 FIX OVERFLY OKBIW AT OR ABOVE 3000 HOLD AT FIX OKBIW RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4
+ TRANSITION REEFY FIX REEFY FIX EFVEV AT OR ABOVE 3000
+ TRANSITION VUNPY HOLD AT FIX VUNPY RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4
+ENDAPPROACHES

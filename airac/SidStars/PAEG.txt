@@ -1,0 +1,39 @@
+//PAEG (EAGLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYACO LATLON N 64 48.853667 W 141 23.0615
+FIX BAMVE LATLON N 64 56.0405 W 141 49.296833
+FIX DEYEP LATLON N 65 12.259834 W 145 31.33
+FIX IPERE LATLON N 64 47.029333 W 141 10.6885
+FIX WERVU LATLON N 64 49.969 W 141 30.698167
+FIX ZESIK LATLON N 65 8.8905 W 142 29.534333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA07 FIX BAMVE AT OR ABOVE 6600 FIX WERVU 4600 FIX AYACO AT OR ABOVE 3280 FIX OVERFLY IPERE 2720 RNW 07 TRK 088 UNTIL 2720 TURN LEFT DIRECT FIX OVERFLY BAMVE AT OR ABOVE 6600 SPEED 210 HOLD AT FIX BAMVE LEFT TURN INBOUNDCOURSE 096 LEGDIST 7
+ TRANSITION BAMVE HOLD AT FIX BAMVE LEFT TURN INBOUNDCOURSE 096 ALT 6600 LEGDIST 7
+ TRANSITION DEYEP FIX DEYEP FIX ZESIK AT OR ABOVE 7800
+APPROACH RNVA25 FIX BAMVE AT OR ABOVE 6600 FIX WERVU 4600 FIX AYACO AT OR ABOVE 3280 FIX OVERFLY IPERE 2720 RNW 25 TRK 088 UNTIL 2720 TURN LEFT DIRECT FIX OVERFLY BAMVE AT OR ABOVE 6600 SPEED 210 HOLD AT FIX BAMVE LEFT TURN INBOUNDCOURSE 096 LEGDIST 7
+ TRANSITION BAMVE HOLD AT FIX BAMVE LEFT TURN INBOUNDCOURSE 096 ALT 6600 LEGDIST 7
+ TRANSITION DEYEP FIX DEYEP FIX ZESIK AT OR ABOVE 7800
+ENDAPPROACHES

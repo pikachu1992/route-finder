@@ -1,0 +1,43 @@
+//CYNA (NATASHQUAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXIPO LATLON N 50 20.692834 W 61 58.1285
+FIX BOVUR LATLON N 50 16.276834 W 62 1.772833
+FIX DUTIS LATLON N 50 13.489834 W 61 53.497333
+FIX FF32 LATLON N 50 10.4015 W 61 40.075166
+FIX LIBAK LATLON N 50 11.858833 W 62 5.406167
+FIX OVOPA LATLON N 50 6.899666 W 61 34.107334
+FIX PI001 LATLON N 50 10.467062 W 61 41.455226
+FIX PI002 LATLON N 50 12.992425 W 61 36.018689
+FIX PI003 LATLON N 50 9.435314 W 61 31.436618
+FIX TOXEB LATLON N 50 9.608167 W 61 31.453834
+FIX YNA LATLON N 50 11.016667 W 61 46.852834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX BOVUR AT OR ABOVE 1600 FIX DUTIS 1400 RNW 14 FIX OVERFLY OVOPA 2100 HOLD AT FIX OVOPA RIGHT TURN INBOUNDCOURSE 138 LEGTIME 1
+ TRANSITION AXIPO FIX AXIPO
+ TRANSITION LIBAK FIX LIBAK
+APPROACH VOR32 FIX TOXEB AT OR ABOVE 1500 FIX FF32 1500 FIX YNA 160 RNW 32 TRK 299 UNTIL 2100 TURN RIGHT DIRECT FIX YNA 2100 HOLD AT FIX YNA RIGHT TURN INBOUNDCOURSE 299 LEGTIME 1
+ TRANSITION YNA FIX PI001 AT OR ABOVE 1500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 1500 SPEED 210 FIX PI003 AT OR ABOVE 1500 SPEED 210
+ENDAPPROACHES

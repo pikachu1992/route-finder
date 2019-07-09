@@ -1,0 +1,43 @@
+//FCOU (OUESSO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KIKTO LATLON N 1 27.32 E 15 54.7
+FIX MOLIS LATLON N 1 26.093333 E 15 59.541667
+FIX NAXAL LATLON N 1 51.468334 E 16 5.886667
+FIX OU501 LATLON N 1 30.966667 E 16 0.76
+FIX OU502 LATLON N 1 41.31 E 16 3.346667
+FIX OU503 LATLON N 1 43.476667 E 16 3.888334
+FIX OU504 LATLON N 1 33.143333 E 16 1.305
+FIX RUSMA LATLON N 1 24.868333 E 16 4.383334
+FIX TIXEP LATLON N 1 50.095 E 16 11.31
+FIX VITRA LATLON N 1 52.841666 E 16 0.463333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX MOLIS AT OR ABOVE 3000 FIX OU501 3000 RNW 01 FIX OVERFLY OU502 TURN LEFT DIRECT FIX KIKTO AT OR ABOVE 3000
+ TRANSITION KIKTO FIX KIKTO AT OR ABOVE 3000
+ TRANSITION RUSMA FIX RUSMA AT OR ABOVE 3000
+APPROACH RNV19 FIX NAXAL AT OR ABOVE 5100 FIX OU503 3000 RNW 19 FIX OVERFLY OU504 TURN RIGHT DIRECT FIX VITRA AT OR ABOVE 5100
+ TRANSITION TIXEP FIX TIXEP AT OR ABOVE 5100
+ TRANSITION VITRA FIX VITRA AT OR ABOVE 5100
+ENDAPPROACHES

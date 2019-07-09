@@ -1,0 +1,38 @@
+//PASV (SPARREVOHN LRRS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CRNNB LATLON N 61 6.105 W 155 34.118833
+FIX EDDEE LATLON N 60 52.288834 W 155 34.483667
+FIX FN34 LATLON N 60 56.257834 W 155 37.364167
+FIX JIXIB LATLON N 61 4.9835 W 155 34.488167
+FIX LIVME LATLON N 60 52.273667 W 155 18.120167
+FIX NICLS LATLON N 60 59.2695 W 155 34.486166
+FIX TOLCI LATLON N 60 52.270834 W 155 50.847
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB34 FIX FN34 4400 FIX CRNNB 3520 RNW 34 TRK 354 UNTIL 4200 TURN RIGHT DIRECT FIX CRNNB 5500 HOLD AT FIX CRNNB LEFT TURN INBOUNDCOURSE 354 SPEED 310 LEGTIME 1
+APPROACH RNV34 FIX EDDEE AT OR ABOVE 4000 FIX NICLS 3400 FIX OVERFLY JIXIB 1577 RNW 34 TRK 345 UNTIL 3120 TURN RIGHT DIRECT FIX OVERFLY LIVME 5500 HOLD AT FIX LIVME RIGHT TURN INBOUNDCOURSE 255 SPEED 310 LEGDIST 2
+ TRANSITION LIVME FIX LIVME AT OR ABOVE 5500
+ TRANSITION TOLCI FIX TOLCI AT OR ABOVE 5000
+ENDAPPROACHES

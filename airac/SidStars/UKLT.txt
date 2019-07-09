@@ -1,0 +1,43 @@
+//UKLT (TERNOPIL NATL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN10 LATLON N 49 32.255833 E 25 32.326667
+FIX FQ28 LATLON N 49 29.2145 E 25 51.276
+FIX MQ28 LATLON N 49 31.1695 E 25 43.873667
+FIX TE LATLON N 49 31.725 E 25 41.763334
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB10 FIX FN10 2960 RNW 10 FIX OVERFLY TE TRK 089 UNTIL 2470 TURN LEFT DIRECT FIX TE 2960
+APPROACH NDM28 FIX FQ28 2960 FIX MQ28 1311 RNW 28 FIX OVERFLY TE TRK 286 UNTIL 2470 TURN LEFT DIRECT FIX TE 2960
+ENDAPPROACHES
+
+GATES
+GATE 1 N 49 31.7 E 25 42
+GATE 2 N 49 31.6 E 25 42
+GATE 3 N 49 31.6 E 25 42
+GATE 4 N 49 31.6 E 25 42
+GATE 5 N 49 32.3 E 25 40.3
+GATE 6 N 49 32.3 E 25 40.3
+GATE 7 N 49 32.2 E 25 40.3
+ENDGATES

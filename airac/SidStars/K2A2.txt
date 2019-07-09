@@ -1,0 +1,47 @@
+//K2A2 (HOLLEY MOUNTAIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUDPE LATLON N 35 36.077333 W 92 29.781334
+FIX CACAL LATLON N 35 36.962666 W 92 39.307667
+FIX DUMPI LATLON N 34 56.295167 W 91 57.681
+FIX FIMOR LATLON N 35 32.777 W 92 35.9425
+FIX HAAWK LATLON N 35 16.042667 W 93 7.45
+FIX HENAR LATLON N 35 28.589833 W 92 32.583167
+FIX HOGEL LATLON N 35 49.511 W 92 15.790834
+FIX INNAM LATLON N 36 15.247834 W 92 27.8575
+FIX JASMA LATLON N 35 42.029333 W 92 18.622667
+FIX NACIL LATLON N 35 45.3145 W 92 12.4375
+FIX TUCUP LATLON N 35 41.1165 W 92 9.090167
+FIX VILLO LATLON N 36 10.485833 W 91 36.4385
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX FIMOR AT OR ABOVE 3700 FIX BUDPE 2900 RNW 05 TRK 055 UNTIL 1700 FIX NACIL AT OR ABOVE 3700 HOLD AT FIX NACIL RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4
+ TRANSITION DUMPI FIX DUMPI FIX HENAR AT OR ABOVE 3700
+ TRANSITION HAAWK FIX HAAWK
+ TRANSITION INNAM FIX INNAM FIX CACAL AT OR ABOVE 3700
+APPROACH RNV23 FIX NACIL AT OR ABOVE 3700 FIX JASMA 2900 RNW 23 TRK 235 UNTIL 1740 FIX FIMOR AT OR ABOVE 3700 HOLD AT FIX FIMOR RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4
+ TRANSITION DUMPI FIX DUMPI FIX TUCUP AT OR ABOVE 3700
+ TRANSITION INNAM FIX INNAM FIX HOGEL AT OR ABOVE 3700
+ TRANSITION VILLO FIX VILLO
+ENDAPPROACHES

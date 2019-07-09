@@ -1,0 +1,37 @@
+//KE16 (SAN MARTIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACETY LATLON N 36 56.0515 W 121 30.951833
+FIX GELVY LATLON N 37 0.092666 W 121 33.169834
+FIX HUXUM LATLON N 36 48.053666 W 121 36.113666
+FIX LICKE LATLON N 37 9.594667 W 121 41.8895
+FIX SNS LATLON N 36 39.830167 W 121 36.191167
+FIX ULENY LATLON N 36 51.699 W 121 22.089833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX ACETY AT OR ABOVE 3500 FIX GELVY 2100 RNW 32 TRK 321 UNTIL 1700 TURN LEFT DIRECT FIX OVERFLY ACETY AT OR ABOVE 3500 HOLD AT FIX ACETY RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4
+ TRANSITION LICKE FIX LICKE FIX OVERFLY ACETY AT OR ABOVE 3500 HOLD AT FIX ACETY RIGHT TURN INBOUNDCOURSE 316 ALT 3500 LEGDIST 4
+ TRANSITION SNS FIX SNS FIX HUXUM AT OR ABOVE 3500
+ TRANSITION ULENY FIX ULENY
+ENDAPPROACHES

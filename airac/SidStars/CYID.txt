@@ -1,0 +1,43 @@
+//CYID (ANNAPOLIS REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOVOR LATLON N 44 43.681 W 65 42.559
+FIX IPTIX LATLON N 44 29.189 W 66 1.2065
+FIX MUXEL LATLON N 44 40.288667 W 65 37.4095
+FIX OMTIV LATLON N 44 28.577333 W 65 52.512833
+FIX OVEXA LATLON N 44 25.810333 W 65 56.060333
+FIX TIBUX LATLON N 44 35.881166 W 65 43.110667
+FIX TORNL LATLON N 44 36.925 W 65 41.762333
+FIX URVEK LATLON N 44 30.228833 W 65 50.391833
+FIX VIKLO LATLON N 44 36.892333 W 65 32.270167
+FIX XOPRA LATLON N 44 22.427833 W 65 50.924
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX OVEXA AT OR ABOVE 1600 FIX URVEK 1500 RNW 06 FIX OVERFLY TORNL 2200 HOLD AT FIX TORNL RIGHT TURN INBOUNDCOURSE 060 LEGTIME 1
+ TRANSITION IPTIX FIX IPTIX SPEED 210
+ TRANSITION XOPRA FIX XOPRA SPEED 210
+APPROACH RNV24 FIX MUXEL AT OR ABOVE 2100 FIX TIBUX 1800 RNW 24 FIX OVERFLY OMTIV 2200 HOLD AT FIX OMTIV RIGHT TURN INBOUNDCOURSE 240 LEGTIME 1
+ TRANSITION GOVOR FIX GOVOR SPEED 210
+ TRANSITION VIKLO FIX VIKLO SPEED 210
+ENDAPPROACHES

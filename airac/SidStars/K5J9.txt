@@ -1,0 +1,35 @@
+//K5J9 (TWIN CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASHES LATLON N 34 4.801834 W 78 32.145667
+FIX HICKE LATLON N 34 6.7085 W 78 45.7445
+FIX JONPE LATLON N 34 12.860666 W 78 41.520667
+FIX MOKKA LATLON N 34 17.654 W 78 47.1435
+FIX UXTAR LATLON N 34 8.0285 W 78 39.934667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH GPS26 FIX UXTAR AT OR ABOVE 1900 FIX HICKE 1900 RNW 26 TRK 263 UNTIL 1000 TURN RIGHT DIRECT FIX JONPE AT OR ABOVE 1700 HOLD AT FIX JONPE RIGHT TURN INBOUNDCOURSE 173 LEGTIME 1
+ TRANSITION ASHES FIX ASHES
+ TRANSITION MOKKA FIX MOKKA FIX JONPE AT OR ABOVE 1900
+ENDAPPROACHES

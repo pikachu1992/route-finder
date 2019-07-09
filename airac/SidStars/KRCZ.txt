@@ -1,0 +1,40 @@
+//KRCZ (RICHMOND CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUPLI LATLON N 34 56.819833 W 79 50.858833
+FIX HODOG LATLON N 34 46.869667 W 79 34.5755
+FIX NIGTE LATLON N 34 52.290667 W 79 43.4315
+FIX NIMDE LATLON N 35 0.683167 W 79 43.750166
+FIX RAEFO LATLON N 34 57.759334 W 79 22.878833
+FIX TOWEY LATLON N 34 38.925 W 79 37.682333
+FIX ZIPPO LATLON N 34 50.481 W 79 40.471
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 14
+RNW 22
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX HODOG AT OR ABOVE 2100 FIX ZIPPO 1900 FIX NIGTE AT OR ABOVE 900 RNW 32 FIX CUPLI TURN RIGHT DIRECT FIX NIMDE FIX OVERFLY RAEFO AT OR ABOVE 2400 HOLD AT FIX RAEFO RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION HODOG HOLD AT FIX HODOG RIGHT TURN INBOUNDCOURSE 315 ALT 2100 LEGDIST 4
+ TRANSITION RAEFO FIX RAEFO
+ TRANSITION TOWEY FIX TOWEY
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//AGGL (SANTA CRUZ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANUTO LATLON S 10 44.171333 E 165 36.9315
+FIX DADUM LATLON S 10 46.979333 E 165 39.840167
+FIX GL742 LATLON S 10 43.928833 E 165 46.250333
+FIX GL850 LATLON S 10 45.2365 E 165 43.503334
+FIX SUSEK LATLON S 10 50.979167 E 165 40.243333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX DADUM AT OR ABOVE 2500 FIX GL850 1400 FIX OVERFLY GL742 515 RNW 05 TURN LEFT DIRECT FIX DADUM AT OR ABOVE 2500
+ TRANSITION ANUTO FIX ANUTO
+ TRANSITION DADUM HOLD AT FIX DADUM LEFT TURN INBOUNDCOURSE 054 ALT 2500 LEGTIME 1
+ TRANSITION SUSEK FIX SUSEK
+ENDAPPROACHES

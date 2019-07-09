@@ -1,0 +1,43 @@
+//CZAC (YORK LANDING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EBKOB LATLON N 56 12.721834 W 96 21.353
+FIX IGTUN LATLON N 56 7.875334 W 96 23.481833
+FIX IKDID LATLON N 56 4.227667 W 95 57.18
+FIX LIDAX LATLON N 56 7.662334 W 95 45.072833
+FIX MERNI LATLON N 56 2.826334 W 95 47.272667
+FIX OMVUG LATLON N 56 6.444334 W 96 13.0735
+FIX ONBES LATLON N 55 57.989666 W 95 49.4635
+FIX OVIBO LATLON N 56 6.507667 W 96 13.532167
+FIX VILVO LATLON N 56 3.028 W 96 25.601666
+FIX VOBIN LATLON N 56 4.2935 W 95 57.648667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX IGTUN AT OR ABOVE 2000 FIX OMVUG 2000 RNW 10 FIX OVERFLY IKDID 2000 HOLD AT FIX IKDID RIGHT TURN INBOUNDCOURSE 103 LEGTIME 1
+ TRANSITION EBKOB FIX EBKOB SPEED 210
+ TRANSITION VILVO FIX VILVO SPEED 210
+APPROACH RNV28 FIX MERNI AT OR ABOVE 2000 FIX VOBIN 2000 RNW 28 FIX OVERFLY OVIBO 2000 HOLD AT FIX OVIBO RIGHT TURN INBOUNDCOURSE 283 LEGTIME 1
+ TRANSITION LIDAX FIX LIDAX SPEED 210
+ TRANSITION ONBES FIX ONBES SPEED 210
+ENDAPPROACHES

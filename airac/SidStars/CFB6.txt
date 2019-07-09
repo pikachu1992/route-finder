@@ -1,0 +1,45 @@
+//CFB6 (JOSEPHBURG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IKNIR LATLON N 53 45.613166 W 113 24.436166
+FIX KATIL LATLON N 53 42.788167 W 112 56.498167
+FIX OBTEG LATLON N 53 50.5365 W 113 23.0445
+FIX OTEDU LATLON N 53 42.715834 W 112 55.795
+FIX PUROT LATLON N 53 44.618666 W 113 14.469334
+FIX RETUS LATLON N 53 46.71 W 112 45.0785
+FIX SIKDA LATLON N 53 36.799166 W 112 48.023333
+FIX ULBAV LATLON N 53 40.6895 W 113 25.8225
+FIX URLUP LATLON N 53 41.754833 W 112 46.553833
+FIX VIBMI LATLON N 53 43.989167 W 113 8.236333
+FIX VIGSU LATLON N 53 44.468333 W 113 12.975334
+FIX VILBI LATLON N 53 43.288 W 113 1.358666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX IKNIR AT OR ABOVE 4600 SPEED 180 FIX PUROT 3800 FIX VIBMI AT OR ABOVE 2580 RNW 08 FIX OVERFLY OTEDU 4200 HOLD AT FIX OTEDU LEFT TURN INBOUNDCOURSE 085 SPEED 175 LEGTIME 1
+ TRANSITION OBTEG FIX OBTEG SPEED 200
+ TRANSITION ULBAV FIX ULBAV SPEED 200
+APPROACH RNV26 FIX URLUP AT OR ABOVE 4600 SPEED 180 FIX KATIL 3700 FIX VILBI AT OR ABOVE 2740 RNW 26 FIX OVERFLY VIGSU 4200 HOLD AT FIX VIGSU RIGHT TURN INBOUNDCOURSE 265 SPEED 175 LEGTIME 1
+ TRANSITION RETUS FIX RETUS SPEED 200
+ TRANSITION SIKDA FIX SIKDA SPEED 200
+ENDAPPROACHES

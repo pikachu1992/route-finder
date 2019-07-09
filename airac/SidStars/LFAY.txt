@@ -1,0 +1,45 @@
+//LFAY (GLISY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMAXA LATLON N 49 46.47 E 2 41.846666
+FIX AY411 LATLON N 49 52.755 E 2 22.053334
+FIX BADGI LATLON N 49 50.433334 E 2 40.893334
+FIX CN30 LATLON N 49 49.189 E 2 33.249167
+FIX FAY30 LATLON N 49 49.55 E 2 32.165
+FIX GINB LATLON N 49 50.528333 E 2 29.056667
+FIX GIRAR LATLON N 49 44.87 E 2 34.623334
+FIX IAY30 LATLON N 49 48.01 E 2 36.998333
+FIX MAY30 LATLON N 49 51.974167 E 2 24.521333
+FIX MN30 LATLON N 49 51.973 E 2 24.5205
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 12R
+RNW 30
+RNW 30L
+ENDRNWS
+
+APPROACHES
+APPROACH NDB30 FIX CN30 AT OR ABOVE 2200 FIX GINB 1440 FIX MN30 439 RNW 30 TRK 296 UNTIL 610 TURN RIGHT DIRECT FIX GINB 2200
+ TRANSITION GI HOLD AT FIX GINB RIGHT TURN INBOUNDCOURSE 296 ALT 2200 LEGTIME 1
+APPROACH RNV30 FIX IAY30 AT OR ABOVE 2200 FIX FAY30 2200 FIX OVERFLY MAY30 447 RNW 30 FIX OVERFLY AY411 TURN RIGHT DIRECT FIX GINB 2200 HOLD AT FIX GINB RIGHT TURN INBOUNDCOURSE 296 SPEED 170 LEGTIME 1
+ TRANSITION AMAXA FIX AMAXA
+ TRANSITION BADGI FIX BADGI
+ TRANSITION GIRAR FIX GIRAR
+ENDAPPROACHES

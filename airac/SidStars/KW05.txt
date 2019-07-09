@@ -1,0 +1,38 @@
+//KW05 (GETTYSBURG REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CULEP LATLON N 39 46.6705 W 77 12.269666
+FIX EMI LATLON N 39 29.7005 W 76 58.714333
+FIX FONRA LATLON N 39 48.574834 W 77 14.373334
+FIX JOMET LATLON N 39 50.478167 W 77 16.479334
+FIX SUSLE LATLON N 39 42.021167 W 77 7.144834
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA06 FIX SUSLE AT OR ABOVE 2500 FIX CULEP 2500 FIX FONRA AT OR ABOVE 1840 FIX OVERFLY JOMET 1200 RNW 06 TURN RIGHT DIRECT FIX OVERFLY SUSLE AT OR ABOVE 2500 HOLD AT FIX SUSLE RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4
+ TRANSITION EMI FIX EMI
+ TRANSITION SUSLE HOLD AT FIX SUSLE RIGHT TURN INBOUNDCOURSE 331 ALT 2500 LEGDIST 4
+APPROACH RNVA24 FIX SUSLE AT OR ABOVE 2500 FIX CULEP 2500 FIX FONRA AT OR ABOVE 1840 FIX OVERFLY JOMET 1200 RNW 24 TURN RIGHT DIRECT FIX OVERFLY SUSLE AT OR ABOVE 2500 HOLD AT FIX SUSLE RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4
+ TRANSITION EMI FIX EMI
+ TRANSITION SUSLE HOLD AT FIX SUSLE RIGHT TURN INBOUNDCOURSE 331 ALT 2500 LEGDIST 4
+ENDAPPROACHES

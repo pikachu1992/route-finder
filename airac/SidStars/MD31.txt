@@ -1,0 +1,35 @@
+//MD31 (FOREST HILL AIRPARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CURVY LATLON N 39 37.520167 W 76 0.966833
+FIX LOVIC LATLON N 39 34.496666 W 76 4.938833
+FIX MRRTN LATLON N 39 32.959166 W 76 16.274167
+FIX ODESA LATLON N 39 29.483333 W 75 49.7395
+FIX YERUY LATLON N 39 34.393667 W 76 21.584666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX LOVIC AT OR ABOVE 3000 FIX MRRTN 2100 FIX OVERFLY YERUY 692 RNW 31 TRK 300 UNTIL 897 TURN RIGHT DIRECT FIX OVERFLY CURVY AT OR ABOVE 3000 HOLD AT FIX CURVY RIGHT TURN INBOUNDCOURSE 271 LEGDIST 5
+ TRANSITION CURVY FIX CURVY
+ TRANSITION ODESA FIX ODESA
+ENDAPPROACHES

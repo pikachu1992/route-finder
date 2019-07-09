@@ -1,0 +1,48 @@
+//KIYK (INYOKERN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASUYU LATLON N 35 16.5265 W 118 6.2955
+FIX BACRA LATLON N 35 25.134667 W 118 0.0465
+FIX BISAC LATLON N 35 34.597166 W 117 53.147167
+FIX CETEG LATLON N 35 12.2205 W 118 9.411667
+FIX DIVAC LATLON N 35 31.046 W 117 55.740334
+FIX JAGEG LATLON N 35 36.316834 W 117 51.889834
+FIX KOLEE LATLON N 35 27.744334 W 118 1.5645
+FIX LHS LATLON N 34 40.978333 W 118 34.616333
+FIX MIGPE LATLON N 35 28.857334 W 117 57.276167
+FIX MOVIA LATLON N 35 0.155833 W 118 18.107833
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 10
+RNW 15
+RNW 20
+RNW 28
+RNW 33
+ENDRNWS
+
+SIDS
+SID IYK2 RNW 20 TRK 197 UNTIL 2860 HDG 207 INTERCEPT RADIAL 195 TO FIX KOLEE FIX KOLEE FIX LHS AT OR ABOVE 10000
+SID LHS2 RNW 20 TRK 197 UNTIL 2857 FIX JAGEG FIX MOVIA AT OR ABOVE 8000 FIX LHS
+ENDSIDS
+
+APPROACHES
+APPROACH RNV02 FIX BACRA AT OR ABOVE 7000 FIX DIVAC 5700 FIX OVERFLY BISAC 4246 RNW 02 TRK 017 UNTIL 4246 TURN RIGHT DIRECT FIX MIGPE FIX OVERFLY ASUYU AT OR ABOVE 8600 HOLD AT FIX ASUYU RIGHT TURN INBOUNDCOURSE 017 LEGDIST 6
+ TRANSITION LHS FIX LHS FIX MOVIA AT OR ABOVE 11000 FIX CETEG AT OR ABOVE 10000 FIX ASUYU AT OR ABOVE 8600
+ENDAPPROACHES

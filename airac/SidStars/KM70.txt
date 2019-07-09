@@ -1,0 +1,38 @@
+//KM70 (POCAHONTAS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAPIS LATLON N 36 24.530666 W 90 57.153833
+FIX HAVUK LATLON N 36 1.08 W 90 57.5325
+FIX IDRUW LATLON N 36 11.920667 W 90 57.357833
+FIX JAPUD LATLON N 36 20.368333 W 90 57.221167
+FIX KADEY LATLON N 36 9.090833 W 90 57.4035
+FIX MUCIN LATLON N 36 17.5385 W 90 57.267
+FIX TACHS LATLON N 36 28.378667 W 90 57.091333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX TACHS AT OR ABOVE 3100 FIX CAPIS AT OR ABOVE 2100 FIX JAPUD 2000 FIX MUCIN AT OR ABOVE 1100 RNW 18 TRK 182 UNTIL 571 FIX OVERFLY HAVUK AT OR ABOVE 3100 HOLD AT FIX HAVUK RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION TACHS HOLD AT FIX TACHS RIGHT TURN INBOUNDCOURSE 182 ALT 3100 LEGDIST 4
+APPROACH RNV36 FIX HAVUK AT OR ABOVE 3100 FIX KADEY 2000 FIX IDRUW AT OR ABOVE 1100 RNW 36 TRK 002 UNTIL 541 FIX OVERFLY TACHS AT OR ABOVE 3100 HOLD AT FIX TACHS RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4
+ TRANSITION HAVUK HOLD AT FIX HAVUK RIGHT TURN INBOUNDCOURSE 002 ALT 3100 LEGDIST 4
+ENDAPPROACHES

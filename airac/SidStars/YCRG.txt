@@ -1,0 +1,38 @@
+//YCRG (CORRYONG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CRGNA LATLON S 35 55.657166 E 148 3.208667
+FIX CRGNC LATLON S 35 58.3515 E 148 14.015333
+FIX CRGND LATLON S 36 7.5295 E 148 14.609333
+FIX CRGNF LATLON S 36 6.356666 E 148 1.374
+FIX CRGNH LATLON S 36 11.822 E 147 51.132833
+FIX CRGNI LATLON S 36 3.280333 E 148 6.241166
+FIX CRGNM LATLON S 36 10.657834 E 147 54.5495
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV24 FIX CRGNI AT OR ABOVE 5300 FIX CRGNF 3620 FIX OVERFLY CRGNM 1257 RNW 24 FIX CRGNH TRK 235 UNTIL 6200
+ TRANSITION CRGNA FIX CRGNA AT OR ABOVE 8000
+ TRANSITION CRGNC FIX CRGNC AT OR ABOVE 8000
+ TRANSITION CRGND FIX CRGND AT OR ABOVE 8000
+ENDAPPROACHES

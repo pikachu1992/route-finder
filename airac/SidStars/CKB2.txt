@@ -1,0 +1,44 @@
+//CKB2 (PATUANAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVRUD LATLON N 55 55.253666 W 107 44.256
+FIX AXEGA LATLON N 56 2.908667 W 107 59.973833
+FIX BOMLU LATLON N 55 42.055834 W 107 42.427
+FIX IKLID LATLON N 55 58.8645 W 107 47.290166
+FIX IRDOG LATLON N 55 50.738333 W 107 40.476667
+FIX KAVPU LATLON N 55 46.033166 W 107 27.374
+FIX MUPNA LATLON N 56 3.376333 W 107 51.096
+FIX OMAPI LATLON N 55 50.1115 W 107 39.953333
+FIX OMEMO LATLON N 55 58.238333 W 107 46.763167
+FIX TIDOL LATLON N 56 6.9215 W 107 44.8155
+FIX UKTAS LATLON N 55 45.594 W 107 36.1905
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX MUPNA AT OR ABOVE 3200 SPEED 180 FIX IKLID 3140 FIX OVERFLY AVRUD 1863 RNW 14 FIX OVERFLY IRDOG 2800 HOLD AT FIX IRDOG RIGHT TURN INBOUNDCOURSE 143 SPEED 200 LEGTIME 1
+ TRANSITION AXEGA FIX AXEGA SPEED 210
+ TRANSITION TIDOL FIX TIDOL SPEED 210
+APPROACH RNV32 FIX UKTAS AT OR ABOVE 2800 SPEED 180 FIX OMAPI 2740 RNW 32 FIX OVERFLY OMEMO 2800 HOLD AT FIX OMEMO RIGHT TURN INBOUNDCOURSE 323 SPEED 200 LEGTIME 1
+ TRANSITION BOMLU FIX BOMLU SPEED 210
+ TRANSITION KAVPU FIX KAVPU SPEED 210
+ENDAPPROACHES

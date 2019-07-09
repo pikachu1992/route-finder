@@ -1,0 +1,38 @@
+//KY70 (IONIA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERXUT LATLON N 42 56.209166 W 84 56.343334
+FIX IJHUH LATLON N 42 56.373 W 85 18.110333
+FIX IJPUR LATLON N 42 56.143834 W 84 49.5375
+FIX LUJOJ LATLON N 43 1.144667 W 84 49.4435
+FIX OBKUW LATLON N 42 51.143 W 84 49.631167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX IJPUR AT OR ABOVE 3000 FIX ERXUT 2500 RNW 27 TRK 276 UNTIL 1218 FIX OVERFLY IJHUH AT OR ABOVE 3000 HOLD AT FIX IJHUH RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION IJPUR HOLD AT FIX IJPUR RIGHT TURN INBOUNDCOURSE 276 ALT 3000 LEGDIST 4
+ TRANSITION LUJOJ FIX LUJOJ AT OR ABOVE 3000
+ TRANSITION OBKUW FIX OBKUW AT OR ABOVE 3000
+ENDAPPROACHES

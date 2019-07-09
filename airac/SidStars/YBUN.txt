@@ -1,0 +1,43 @@
+//YBUN (BUNBURY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUNEA LATLON S 33 12.98 E 115 51.17
+FIX BUNEB LATLON S 33 15.69 E 115 57.2
+FIX BUNEC LATLON S 33 21.38 E 115 56.23
+FIX BUNEF LATLON S 33 20.21 E 115 46.55
+FIX BUNEH LATLON S 33 26.03 E 115 46.51
+FIX BUNEI LATLON S 33 17.96 E 115 51.88
+FIX BUNEM LATLON S 33 22.47 E 115 41.22
+FIX BUNET LATLON S 33 23.82 E 115 38.02
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNVE07 FIX BUNEI AT OR ABOVE 2800 FIX BUNEF 1780 FIX OVERFLY BUNEM 186 RNW 07 FIX OVERFLY BUNET AT OR BELOW 1400 TURN LEFT DIRECT FIX BUNEH AT OR BELOW 1400 HDG 095 VECTORS
+ TRANSITION BUNEA FIX BUNEA AT OR ABOVE 2800 SPEED 230
+ TRANSITION BUNEB FIX BUNEB AT OR ABOVE 2800 SPEED 230
+ TRANSITION BUNEC FIX BUNEC AT OR ABOVE 2800 SPEED 230
+APPROACH RNVE25 FIX BUNEI AT OR ABOVE 2800 FIX BUNEF 1780 FIX OVERFLY BUNEM 186 RNW 25 FIX OVERFLY BUNET AT OR BELOW 1400 TURN LEFT DIRECT FIX BUNEH AT OR BELOW 1400 HDG 095 VECTORS
+ TRANSITION BUNEA FIX BUNEA AT OR ABOVE 2800 SPEED 230
+ TRANSITION BUNEB FIX BUNEB AT OR ABOVE 2800 SPEED 230
+ TRANSITION BUNEC FIX BUNEC AT OR ABOVE 2800 SPEED 230
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//AGGK (KIRAKIRA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GGKN1 LATLON S 10 28.624 E 162 19.178666
+FIX GGKN2 LATLON S 10 14.974834 E 161 31.613833
+FIX GGKNA LATLON S 10 20.369167 E 161 37.416
+FIX GGKNC LATLON S 10 17.598334 E 161 44.0165
+FIX GGKNF LATLON S 10 23.756 E 161 45.874166
+FIX GGKNH LATLON S 10 20.4935 E 161 53.224
+FIX GGKNI LATLON S 10 22.251833 E 161 42.116
+FIX GGKNM LATLON S 10 26.011834 E 161 51.515666
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH GPS10 FIX GGKNI AT OR ABOVE 3500 FIX GGKNF 2655 FIX OVERFLY GGKNM 755 RNW 10 TURN LEFT DIRECT FIX OVERFLY GGKNH FIX GGKNC AT OR ABOVE 3500
+ TRANSITION GGKN1 FIX GGKN1 FIX OVERFLY GGKNH AT OR ABOVE 3500 FIX GGKNC AT OR ABOVE 3500
+ TRANSITION GGKNA FIX GGKN2 FIX GGKNA AT OR ABOVE 5000
+ TRANSITION GGKNC FIX GGKN2 FIX GGKNC AT OR ABOVE 3500
+ENDAPPROACHES

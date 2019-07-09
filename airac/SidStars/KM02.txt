@@ -1,0 +1,42 @@
+//KM02 (DICKSON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DMZNB LATLON N 36 7.6385 W 87 25.9425
+FIX EKJUP LATLON N 36 19.697666 W 87 21.580333
+FIX FF17 LATLON N 36 13.645333 W 87 25.9425
+FIX PI001 LATLON N 36 11.1385 W 87 25.9425
+FIX PI002 LATLON N 36 14.178074 W 87 22.172835
+FIX PI003 LATLON N 36 17.6385 W 87 25.9425
+FIX QUZMU LATLON N 36 19.019 W 87 27.710666
+FIX UNSEZ LATLON N 36 18.335167 W 87 33.839167
+FIX URFIG LATLON N 36 12.902666 W 87 26.674
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH NDB17 FIX FF17 2700 RNW 17 FIX DMZNB AT OR ABOVE 2700 HOLD AT FIX DMZNB LEFT TURN INBOUNDCOURSE 181 ALT 2700 LEGTIME 1
+ TRANSITION DMZ FIX PI001 AT OR ABOVE 2700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2700 SPEED 210 FIX PI003 AT OR ABOVE 2700 SPEED 210
+APPROACH RNV17 FIX QUZMU AT OR ABOVE 3000 FIX URFIG 2500 RNW 17 TRK 173 UNTIL 1292 TURN RIGHT DIRECT FIX OVERFLY QUZMU AT OR ABOVE 3000 HOLD AT FIX QUZMU RIGHT TURN INBOUNDCOURSE 173 LEGDIST 5
+ TRANSITION EKJUP FIX EKJUP
+ TRANSITION QUZMU HOLD AT FIX QUZMU RIGHT TURN INBOUNDCOURSE 173 ALT 3000 LEGDIST 5
+ TRANSITION UNSEZ FIX UNSEZ
+ENDAPPROACHES

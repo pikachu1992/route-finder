@@ -1,0 +1,37 @@
+//KA08 (VAIDEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUSCA LATLON N 32 42.419333 W 87 27.355834
+FIX HUXEB LATLON N 32 24.552667 W 87 20.895334
+FIX JURMU LATLON N 32 27.4415 W 87 21.9365
+FIX UYAHE LATLON N 32 17.035667 W 87 18.191666
+FIX WELAN LATLON N 32 33.242 W 87 24.031
+FIX ZIMIS LATLON N 32 36.6715 W 87 25.272167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX CUSCA AT OR ABOVE 4000 FIX ZIMIS 2100 FIX WELAN AT OR ABOVE 960 RNW 16 TRK 166 UNTIL 552 FIX OVERFLY UYAHE AT OR ABOVE 4000 HOLD AT FIX UYAHE RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4
+ TRANSITION CUSCA HOLD AT FIX CUSCA RIGHT TURN INBOUNDCOURSE 166 ALT 4000 LEGDIST 4
+APPROACH RNV34 FIX UYAHE AT OR ABOVE 4000 FIX HUXEB 2100 FIX JURMU AT OR ABOVE 1140 RNW 34 TRK 346 UNTIL 700 TURN RIGHT DIRECT FIX OVERFLY UYAHE AT OR ABOVE 4000 HOLD AT FIX UYAHE RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4
+ TRANSITION UYAHE HOLD AT FIX UYAHE RIGHT TURN INBOUNDCOURSE 346 ALT 4000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,51 @@
+//YPIR (PORT PIRIE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PIRED LATLON S 33 9.6 E 138 14.114333
+FIX PIREE LATLON S 33 14.296667 E 138 18.026833
+FIX PIREF LATLON S 33 14.296 E 138 6.104333
+FIX PIREG LATLON S 33 19.014667 E 138 14.0945
+FIX PIREH LATLON S 33 14.280667 E 137 56.566166
+FIX PIREI LATLON S 33 14.304 E 138 12.0655
+FIX PIREM LATLON S 33 14.287834 E 138 0.143
+FIX PIRWA LATLON S 33 19.270333 E 137 47.536
+FIX PIRWC LATLON S 33 9.251333 E 137 47.561
+FIX PIRWF LATLON S 33 14.273833 E 137 53.509667
+FIX PIRWH LATLON S 33 14.292167 E 138 3.047833
+FIX PIRWI LATLON S 33 14.261 E 137 47.5485
+FIX PIRWM LATLON S 33 14.286667 E 137 59.471
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 08
+RNW 17
+RNW 21
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX PIRWI AT OR ABOVE 1800 FIX PIRWF 1680 FIX OVERFLY PIRWM 85 RNW 08 FIX OVERFLY PIRWH HDG 263 VECTORS
+ TRANSITION PIRWA FIX PIRWA AT OR ABOVE 1800 SPEED 210
+ TRANSITION PIRWC FIX PIRWC AT OR ABOVE 1800 SPEED 210
+APPROACH RNV26 FIX PIREI AT OR ABOVE 3270 FIX PIREF 1680 FIX OVERFLY PIREM 88 RNW 26 FIX PIREH TRK 263 UNTIL 1800
+ TRANSITION PIRED FIX PIRED AT OR ABOVE 4400 SPEED 210
+ TRANSITION PIREE FIX PIREE AT OR ABOVE 4400 SPEED 210
+ TRANSITION PIREG FIX PIREG AT OR ABOVE 4400 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,48 @@
+//KFMM (FT MORGAN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAPVA LATLON N 40 36.3125 W 103 44.856
+FIX DEKTE LATLON N 40 26.770834 W 104 7.910833
+FIX ECUDI LATLON N 40 31.551334 W 103 56.396833
+FIX FEPAS LATLON N 40 25.042667 W 103 51.779167
+FIX GISEY LATLON N 40 22.716334 W 103 50.131
+FIX HARPU LATLON N 40 8.4585 W 103 40.091833
+FIX JADEK LATLON N 40 15.331166 W 103 44.921666
+FIX KASEC LATLON N 40 13.1925 W 103 28.596833
+FIX LAYCE LATLON N 40 3.7055 W 103 51.560167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 14
+RNW 17
+RNW 26
+RNW 32
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ECUDI AT OR ABOVE 7400 FIX FEPAS 6200 FIX GISEY AT OR ABOVE 5340 RNW 14 TRK 144 UNTIL 4845 FIX OVERFLY HARPU AT OR ABOVE 7400 HOLD AT FIX HARPU RIGHT TURN INBOUNDCOURSE 324 LEGDIST 7
+ TRANSITION CAPVA FIX CAPVA
+ TRANSITION DEKTE FIX DEKTE
+ TRANSITION ECUDI HOLD AT FIX ECUDI RIGHT TURN INBOUNDCOURSE 144 ALT 7400 LEGDIST 7
+APPROACH RNV32 FIX HARPU AT OR ABOVE 7400 FIX JADEK 6200 RNW 32 TRK 324 UNTIL 4796 FIX OVERFLY ECUDI AT OR ABOVE 7400 HOLD AT FIX ECUDI RIGHT TURN INBOUNDCOURSE 144 LEGDIST 7
+ TRANSITION HARPU HOLD AT FIX HARPU RIGHT TURN INBOUNDCOURSE 324 ALT 7400 LEGDIST 7
+ TRANSITION KASEC FIX KASEC
+ TRANSITION LAYCE FIX LAYCE
+ENDAPPROACHES

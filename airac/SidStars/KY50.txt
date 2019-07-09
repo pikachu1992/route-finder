@@ -1,0 +1,39 @@
+//KY50 (WAUTOMA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HUZVU LATLON N 43 58.959833 W 89 12.784333
+FIX LOYIT LATLON N 44 10.346167 W 89 30.502166
+FIX WOSMU LATLON N 44 6.025333 W 89 23.756666
+FIX YIYUT LATLON N 44 1.051 W 89 16.024166
+FIX ZIBTI LATLON N 44 4.276333 W 89 21.033667
+FIX ZOSMI LATLON N 43 54.620167 W 89 6.080333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 13
+RNW 26
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX LOYIT AT OR ABOVE 3300 FIX WOSMU 2500 FIX ZIBTI AT OR ABOVE 1660 RNW 13 TRK 134 UNTIL 1240 FIX OVERFLY ZOSMI AT OR ABOVE 3300 HOLD AT FIX ZOSMI RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4
+ TRANSITION LOYIT HOLD AT FIX LOYIT RIGHT TURN INBOUNDCOURSE 134 ALT 3300 LEGDIST 4
+APPROACH RNV31 FIX ZOSMI AT OR ABOVE 3300 FIX HUZVU 2500 FIX YIYUT AT OR ABOVE 1500 RNW 31 TRK 314 UNTIL 1240 FIX OVERFLY LOYIT AT OR ABOVE 3300 HOLD AT FIX LOYIT RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4
+ TRANSITION ZOSMI HOLD AT FIX ZOSMI RIGHT TURN INBOUNDCOURSE 314 ALT 3300 LEGDIST 4
+ENDAPPROACHES

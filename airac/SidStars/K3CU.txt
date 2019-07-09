@@ -1,0 +1,39 @@
+//K3CU (CABLE UNION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARAFE LATLON N 46 5.988 W 91 12.574333
+FIX CYETT LATLON N 46 1.710833 W 91 10.914
+FIX GRASS LATLON N 46 21.168667 W 91 6.881333
+FIX ONAVE LATLON N 46 0.011 W 91 19.915834
+FIX POYSI LATLON N 46 3.398833 W 91 1.903
+FIX QESCA LATLON N 45 35.508833 W 91 44.193
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 17
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX CYETT AT OR ABOVE 3200 FIX ARAFE 3200 RNW 35 TRK 347 UNTIL 3200 TURN RIGHT DIRECT FIX OVERFLY CYETT AT OR ABOVE 3200 HOLD AT FIX CYETT RIGHT TURN INBOUNDCOURSE 347 LEGDIST 4
+ TRANSITION CYETT HOLD AT FIX CYETT RIGHT TURN INBOUNDCOURSE 347 ALT 3200 LEGDIST 4
+ TRANSITION GRASS FIX GRASS FIX POYSI AT OR ABOVE 3200
+ TRANSITION QESCA FIX QESCA FIX ONAVE AT OR ABOVE 3200
+ENDAPPROACHES

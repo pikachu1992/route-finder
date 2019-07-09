@@ -1,0 +1,47 @@
+//YHBA (HERVEY BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HBAEA LATLON S 25 21.07 E 153 7.436666
+FIX HBAEB LATLON S 25 26.788333 E 153 8.146667
+FIX HBAEC LATLON S 25 29.35 E 153 2.471666
+FIX HBAEF LATLON S 25 21.988333 E 152 58.446667
+FIX HBAEH LATLON S 25 16.695 E 152 47.788333
+FIX HBAEI LATLON S 25 24.39 E 153 3.295
+FIX HBAWD LATLON S 25 17.428333 E 152 38.468333
+FIX HBAWE LATLON S 25 11.708333 E 152 37.78
+FIX HBAWF LATLON S 25 16.528333 E 152 47.451667
+FIX HBAWG LATLON S 25 9.163333 E 152 43.45
+FIX HBAWH LATLON S 25 20.376667 E 152 55.198333
+FIX HBAWI LATLON S 25 14.12 E 152 42.613333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ11 FIX HBAWI AT OR ABOVE 3000 FIX HBAWF 1700 RNW 11 FIX OVERFLY HBAWH HDG 326 VECTORS
+ TRANSITION HBAWD FIX HBAWD AT OR ABOVE 3000 SPEED 210
+ TRANSITION HBAWE FIX HBAWE AT OR ABOVE 3000 SPEED 210
+ TRANSITION HBAWG FIX HBAWG AT OR ABOVE 3000 SPEED 210
+APPROACH RNVZ29 FIX HBAEI AT OR ABOVE 2100 FIX HBAEF 1780 RNW 29 FIX OVERFLY HBAEH HDG 086 VECTORS
+ TRANSITION HBAEA FIX HBAEA AT OR ABOVE 2100 SPEED 210
+ TRANSITION HBAEB FIX HBAEB AT OR ABOVE 2100 SPEED 210
+ TRANSITION HBAEC FIX HBAEC AT OR ABOVE 2100 SPEED 210
+ENDAPPROACHES

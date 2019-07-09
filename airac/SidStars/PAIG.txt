@@ -1,0 +1,39 @@
+//PAIG (IGIUGIG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEKIT LATLON N 59 22.951166 W 155 32.786833
+FIX CEMOT LATLON N 59 17.860667 W 156 3.577166
+FIX FABMU LATLON N 59 5.6595 W 156 6.284333
+FIX GAGTE LATLON N 59 12.987334 W 155 25.6965
+FIX HABIB LATLON N 59 15.9875 W 156 14.6855
+FIX JADAM LATLON N 59 21.1225 W 155 43.951333
+FIX NUTUW LATLON N 59 33.293666 W 155 16.017334
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX HABIB AT OR ABOVE 2500 FIX CEMOT 1700 RNW 05 TRK 053 UNTIL 460 TURN RIGHT DIRECT FIX FABMU AT OR ABOVE 3000 HOLD AT FIX FABMU RIGHT TURN INBOUNDCOURSE 023 LEGDIST 4
+ TRANSITION FABMU FIX FABMU
+APPROACH RNV23 FIX CEKIT AT OR ABOVE 2700 FIX JADAM 1800 RNW 23 TRK 233 UNTIL 440 TURN LEFT DIRECT FIX GAGTE AT OR ABOVE 4000 HOLD AT FIX GAGTE RIGHT TURN INBOUNDCOURSE 035 LEGDIST 4
+ TRANSITION GAGTE FIX GAGTE
+ TRANSITION NUTUW FIX NUTUW
+ENDAPPROACHES

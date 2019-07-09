@@ -1,0 +1,47 @@
+//YGRM (GRUYERE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GRMED LATLON S 27 53.313833 E 123 56.782
+FIX GRMEE LATLON S 27 55.756333 E 124 4.275
+FIX GRMEF LATLON S 27 59.9685 E 123 54.0265
+FIX GRMEG LATLON S 28 2.413333 E 124 1.526167
+FIX GRMEH LATLON S 28 3.942167 E 123 44.317333
+FIX GRMEI LATLON S 27 57.864 E 123 59.1525
+FIX GRMWA LATLON S 28 10.8375 E 123 40.943333
+FIX GRMWB LATLON S 28 8.373833 E 123 33.441667
+FIX GRMWC LATLON S 28 1.726333 E 123 36.222
+FIX GRMWF LATLON S 28 4.187333 E 123 43.716833
+FIX GRMWH LATLON S 28 0.22 E 123 53.415833
+FIX GRMWI LATLON S 28 6.282167 E 123 38.581
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX GRMWI AT OR ABOVE 3000 FIX GRMWF 3000 RNW 06 FIX GRMWH TRK 063 UNTIL 3000
+ TRANSITION GRMWA FIX GRMWA AT OR ABOVE 3000
+ TRANSITION GRMWB FIX GRMWB AT OR ABOVE 3000
+ TRANSITION GRMWC FIX GRMWC AT OR ABOVE 3000
+APPROACH RNV24 FIX GRMEI AT OR ABOVE 3000 FIX GRMEF 3000 RNW 24 FIX GRMEH TRK 243 UNTIL 3000
+ TRANSITION GRMED FIX GRMED AT OR ABOVE 3000
+ TRANSITION GRMEE FIX GRMEE AT OR ABOVE 3000
+ TRANSITION GRMEG FIX GRMEG AT OR ABOVE 3000
+ENDAPPROACHES

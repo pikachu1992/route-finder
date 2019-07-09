@@ -1,0 +1,40 @@
+//HLKF (KUFRA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 10VOR LATLON N 24 8.264833 E 23 18.186
+FIX 30VOR LATLON N 24 6.326666 E 23 17.620166
+FIX 50VOR LATLON N 24 14.079167 E 23 19.884833
+FIX FD02 LATLON N 24 4.3885 E 23 17.054833
+FIX FD20 LATLON N 24 16.017167 E 23 20.451667
+FIX KFR LATLON N 24 9.234 E 23 18.469
+FIX MD20 LATLON N 24 12.141 E 23 19.318166
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 02L
+RNW 20
+RNW 20R
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX FD02 3000 FIX 30VOR AT OR ABOVE 2500 FIX 10VOR AT OR ABOVE 2000 FIX KFR 1577 RNW 02 TRK 012 UNTIL 3000 TURN LEFT DIRECT FIX KFR 3000 HOLD AT FIX KFR RIGHT TURN INBOUNDCOURSE 192 LEGTIME 1
+ TRANSITION KFR FIX KFR AT OR ABOVE 3000 SPEED 210 FIX FD02 AT OR ABOVE 3000 TRK 237 UNTIL 4.3 FROM FIX FD02
+APPROACH VDM20 FIX FD20 3000 FIX 50VOR AT OR ABOVE 2500 FIX MD20 1627 RNW 20 FIX KFR AT OR ABOVE 1770 TRK 192 UNTIL 3000 TURN RIGHT DIRECT FIX KFR 3000 HOLD AT FIX KFR LEFT TURN INBOUNDCOURSE 012 LEGTIME 1
+ TRANSITION KFR FIX KFR AT OR ABOVE 3000 SPEED 210 FIX FD20 AT OR ABOVE 3000 TRK 327 UNTIL 4.3 FROM FIX FD20
+ENDAPPROACHES

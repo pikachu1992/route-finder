@@ -1,0 +1,54 @@
+//UKHK (VELYKA KOKHNIVKA NATL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEKAD LATLON N 48 57 E 33 22
+FIX FF36 LATLON N 49 2.662667 E 33 28.545
+FIX KN LATLON N 49 5.683333 E 33 28.95
+FIX N LATLON N 49 7.333333 E 33 29.166667
+FIX PEKIT LATLON N 49 18.8 E 33 37
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 18
+RNW 19
+RNW 36
+ENDRNWS
+
+SIDS
+SID DEKA3A RNW 01 TRK 006 UNTIL 990 TURN RIGHT DIRECT FIX KN FIX DEKAD
+SID DEKA3B RNW 19 TRK 186 UNTIL 990 FIX DEKAD
+SID DEKA3C RNW 36 TRK 357 UNTIL 990 TURN RIGHT DIRECT FIX KN FIX DEKAD
+SID DEKA3D RNW 18 TRK 177 UNTIL 990 FIX DEKAD
+SID PEKI3A RNW 01 TRK 006 UNTIL 990 TRK 053 INTERCEPT RADIAL 014 TO FIX PEKIT FIX PEKIT
+SID PEKI3C RNW 36 TRK 357 UNTIL 990 TRK 066 INTERCEPT RADIAL 014 TO FIX PEKIT FIX PEKIT
+SID PEKI3D RNW 18 TRK 177 UNTIL 990 TRK 347 INTERCEPT RADIAL 014 TO FIX PEKIT FIX PEKIT
+SID PEKI3K RNW 19 TRK 186 UNTIL 990 TRK 355 INTERCEPT RADIAL 014 TO FIX PEKIT FIX PEKIT
+ENDSIDS
+
+STARS
+STAR DEKA3E FIX DEKAD FIX KN AT OR ABOVE 2470
+  RNW 01 RNW 18 RNW 19 RNW 36
+STAR PEKI3E FIX PEKIT FIX KN AT OR ABOVE 2470
+  RNW 01 RNW 18 RNW 19 RNW 36
+ENDSTARS
+
+APPROACHES
+APPROACH NDB36 FIX FF36 1970 FIX KN AT OR ABOVE 940 FIX N 476 RNW 36 TRK 357 UNTIL 990 TURN RIGHT DIRECT FIX KN AT OR ABOVE 2470
+ TRANSITION KN FIX KN AT OR ABOVE 2470 TRK 159 UNTIL 6.0 FROM FIX KN
+ENDAPPROACHES

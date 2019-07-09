@@ -1,0 +1,35 @@
+//CYSZ (STE-ANNE-DES-MONTS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVDOG LATLON N 49 5.006666 W 66 49.156834
+FIX DURID LATLON N 49 8.074834 W 66 34.191667
+FIX LOKTU LATLON N 49 9.187166 W 66 38.420666
+FIX NAKEP LATLON N 49 11.0405 W 66 45.495833
+FIX OBRAV LATLON N 49 17.0725 W 66 41.82
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX NAKEP AT OR ABOVE 2000 SPEED 180 FIX LOKTU 1400 FIX OVERFLY DURID 570 RNW 14 TURN LEFT DIRECT FIX OBRAV 2000 SPEED 165 HOLD AT FIX OBRAV RIGHT TURN INBOUNDCOURSE 232 SPEED 200 LEGTIME 1
+ TRANSITION AVDOG FIX AVDOG SPEED 210
+ TRANSITION OBRAV FIX OBRAV SPEED 210
+ENDAPPROACHES

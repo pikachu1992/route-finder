@@ -1,0 +1,48 @@
+//PAPN (PILOT POINT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FEDBO LATLON N 57 34.798333 W 157 53.3935
+FIX FILAD LATLON N 57 34.816333 W 157 44.106167
+FIX HUBID LATLON N 57 39.782 W 157 13.335167
+FIX OBUKE LATLON N 57 28.927 W 158 7.017167
+FIX OCENO LATLON N 57 34.793333 W 157 13.383833
+FIX RAPUE LATLON N 57 28.806833 W 157 13.442
+FIX TANIE LATLON N 57 58.184167 W 158 12.768334
+FIX WOBES LATLON N 57 34.816333 W 157 24.528667
+FIX ZILKO LATLON N 57 40.985167 W 157 54.587833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+SIDS
+SID ZILKO1
+ RNW 07 FIX OVERFLY WOBES SPEED 200 TURN LEFT DIRECT FIX ZILKO AT OR ABOVE 3000 SPEED 200
+ RNW 25 FIX OVERFLY FILAD FIX ZILKO AT OR ABOVE 3000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV07 FIX FEDBO AT OR ABOVE 2000 FIX FILAD 1700 RNW 07 TRK 073 UNTIL 457 TURN LEFT DIRECT FIX OVERFLY ZILKO AT OR ABOVE 2500 HOLD AT FIX ZILKO RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION OBUKE FIX OBUKE
+ TRANSITION TANIE FIX TANIE FIX ZILKO AT OR ABOVE 2500
+APPROACH RNV25 FIX OCENO AT OR ABOVE 2000 FIX WOBES 1700 RNW 25 TRK 253 UNTIL 457 FIX OVERFLY ZILKO AT OR ABOVE 2500 HOLD AT FIX ZILKO RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION OBUKE FIX OBUKE FIX RAPUE AT OR ABOVE 3000
+ TRANSITION ZILKO FIX ZILKO FIX HUBID AT OR ABOVE 2500
+ENDAPPROACHES

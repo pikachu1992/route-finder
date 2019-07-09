@@ -1,0 +1,30 @@
+//SBTR (TORRES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF23 LATLON S 29 20.241833 W 49 45.2365
+FIX TORNB LATLON S 29 24.859834 W 49 48.403
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB23 FIX FF23 1700 RNW 23 FIX OVERFLY TORNB TRK 215 UNTIL 3000 TURN LEFT DIRECT FIX TORNB AT OR ABOVE 4000 HOLD AT FIX TORNB RIGHT TURN INBOUNDCOURSE 067 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KF99 (HOLDENVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADIXE LATLON N 35 15.435833 W 96 25.006166
+FIX COSAN LATLON N 35 15.435833 W 96 18.900833
+FIX FIGPA LATLON N 35 15.430667 W 96 31.1115
+FIX HEPER LATLON N 34 54.834 W 96 24.993167
+FIX IZWID LATLON N 35 10.428 W 96 25.003
+FIX JIPIT LATLON N 34 54.834167 W 96 18.913166
+FIX MIMUW LATLON N 34 59.842166 W 96 24.996334
+FIX WAGAS LATLON N 34 54.828833 W 96 31.073167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ADIXE AT OR ABOVE 3000 FIX IZWID 2500 RNW 17 TRK 174 UNTIL 1261 FIX OVERFLY HEPER AT OR ABOVE 3000 HOLD AT FIX HEPER RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION ADIXE HOLD AT FIX ADIXE RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4
+ TRANSITION COSAN FIX COSAN
+ TRANSITION FIGPA FIX FIGPA
+APPROACH RNV35 FIX HEPER AT OR ABOVE 3000 FIX MIMUW 2500 RNW 35 TRK 354 UNTIL 1261 FIX OVERFLY ADIXE AT OR ABOVE 3000 HOLD AT FIX ADIXE RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION HEPER HOLD AT FIX HEPER RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4
+ TRANSITION JIPIT FIX JIPIT
+ TRANSITION WAGAS FIX WAGAS
+ENDAPPROACHES

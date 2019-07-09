@@ -1,0 +1,39 @@
+//K8A7 (TWIN LAKES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AZELL LATLON N 35 51.395833 W 80 14.202
+FIX BURCH LATLON N 36 9.964667 W 80 49.244167
+FIX BZM LATLON N 35 52.131167 W 81 14.431667
+FIX COXOV LATLON N 36 2.527333 W 80 40.979833
+FIX JUVAP LATLON N 35 54.739166 W 80 33.014167
+FIX WIPUS LATLON N 35 54.669334 W 80 35.478667
+FIX ZEMPO LATLON N 35 54.520834 W 80 40.625167
+FIX ZISER LATLON N 35 54.986666 W 80 24.0155
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX WIPUS AT OR ABOVE 2400 FIX JUVAP 2200 RNW 09 TRK 094 UNTIL 1218 FIX ZISER FIX OVERFLY AZELL AT OR ABOVE 3000 HOLD AT FIX AZELL RIGHT TURN INBOUNDCOURSE 054 LEGDIST 4
+ TRANSITION BURCH FIX BURCH FIX COXOV AT OR ABOVE 3700 FIX ZEMPO AT OR ABOVE 3400
+ TRANSITION BZM FIX BZM FIX ZEMPO AT OR ABOVE 3400
+ TRANSITION ZEMPO HOLD AT FIX ZEMPO LEFT TURN INBOUNDCOURSE 094 ALT 3400 LEGDIST 4
+ENDAPPROACHES

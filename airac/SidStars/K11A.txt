@@ -1,0 +1,36 @@
+//K11A (CLAYTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PERGE LATLON N 31 51.572 W 85 14.956333
+FIX ULWEG LATLON N 31 53.286167 W 85 31.990834
+FIX UNACO LATLON N 31 52.316 W 85 22.3025
+FIX YARCU LATLON N 31 54.478166 W 85 44.076167
+FIX ZOTPE LATLON N 31 53.6745 W 85 35.907334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX YARCU AT OR ABOVE 2200 FIX ZOTPE 2200 FIX ULWEG AT OR ABOVE 1120 RNW 09 TRK 101 UNTIL 725 FIX OVERFLY PERGE AT OR ABOVE 2200 HOLD AT FIX PERGE LEFT TURN INBOUNDCOURSE 281 LEGDIST 4
+ TRANSITION YARCU HOLD AT FIX YARCU RIGHT TURN INBOUNDCOURSE 101 ALT 2200 LEGDIST 4
+APPROACH RNV27 FIX PERGE AT OR ABOVE 2200 FIX UNACO 2200 RNW 27 TRK 281 UNTIL 835 FIX OVERFLY YARCU AT OR ABOVE 2200 HOLD AT FIX YARCU RIGHT TURN INBOUNDCOURSE 101 LEGDIST 4
+ TRANSITION PERGE HOLD AT FIX PERGE LEFT TURN INBOUNDCOURSE 281 ALT 2200 LEGDIST 4
+ENDAPPROACHES

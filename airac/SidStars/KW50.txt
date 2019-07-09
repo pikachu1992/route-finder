@@ -1,0 +1,41 @@
+//KW50 (DAVIS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASHLN LATLON N 39 15.244667 W 78 18.585167
+FIX DORRN LATLON N 37 31.900667 W 77 53.627
+FIX EZZZZ LATLON N 39 22.905167 W 77 51.457166
+FIX JOHOF LATLON N 37 48.818666 W 77 44.143166
+FIX KW50 LATLON N 39 14.600333 W 77 9.023167
+FIX LORAA LATLON N 37 23.830333 W 77 58.716334
+FIX PERKN LATLON N 37 39.198833 W 77 49.480166
+FIX RUANE LATLON N 39 26.766667 W 77 22.439
+FIX THHMP LATLON N 37 29.491166 W 77 19.145833
+FIX TRSTN LATLON N 38 5.2155 W 77 46.398
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+STARS
+STAR TRSTN3 FIX TRSTN FIX ASHLN FIX EZZZZ FIX OVERFLY RUANE HDG 090 VECTORS
+ TRANSITION LORAA FIX LORAA FIX DORRN FIX PERKN FIX JOHOF
+ TRANSITION THHMP FIX THHMP
+  RNW 08 RNW 26
+ENDSTARS

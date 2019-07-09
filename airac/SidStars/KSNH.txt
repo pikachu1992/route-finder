@@ -1,0 +1,44 @@
+//KSNH (SAVANNAH-HARDIN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADOFO LATLON N 35 4.653334 W 88 13.895666
+FIX AMLAZ LATLON N 35 15.578 W 88 12.141667
+FIX EPVIC LATLON N 34 59.305166 W 88 20.888833
+FIX ESPAC LATLON N 35 22.229666 W 88 17.236667
+FIX FABTO LATLON N 35 13.106167 W 88 12.539167
+FIX OBREY LATLON N 35 20.917166 W 88 5.116
+FIX VIDDO LATLON N 34 58.654834 W 88 14.855333
+FIX YOSUB LATLON N 35 21.576 W 88 11.1755
+FIX YUZZY LATLON N 34 57.9995 W 88 8.8235
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX VIDDO AT OR ABOVE 3000 FIX ADOFO 2200 RNW 01 FIX OVERFLY YOSUB AT OR ABOVE 3000 HOLD AT FIX YOSUB RIGHT TURN INBOUNDCOURSE 189 LEGDIST 4
+ TRANSITION EPVIC FIX EPVIC AT OR ABOVE 3000
+ TRANSITION VIDDO HOLD AT FIX VIDDO RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4
+ TRANSITION YUZZY FIX YUZZY AT OR ABOVE 3000
+APPROACH RNV19 FIX YOSUB AT OR ABOVE 3000 FIX AMLAZ 2100 FIX FABTO AT OR ABOVE 1280 RNW 19 FIX OVERFLY VIDDO AT OR ABOVE 3000 HOLD AT FIX VIDDO RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4
+ TRANSITION ESPAC FIX ESPAC AT OR ABOVE 3000
+ TRANSITION OBREY FIX OBREY AT OR ABOVE 3000
+ TRANSITION YOSUB HOLD AT FIX YOSUB RIGHT TURN INBOUNDCOURSE 189 ALT 3000 LEGDIST 4
+ENDAPPROACHES

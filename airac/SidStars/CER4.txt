@@ -1,0 +1,36 @@
+//CER4 (MILDRED LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IKLAK LATLON N 56 55.863833 W 111 18.6605
+FIX UKSAR LATLON N 56 46.533334 W 111 59.416667
+FIX VIRVI LATLON N 57 2.805667 W 111 43.002167
+FIX VODAV LATLON N 56 59.788834 W 111 26.936833
+FIX XOMSI LATLON N 56 59.625667 W 111 12.661
+FIX XUGAK LATLON N 56 52.097167 W 111 24.639667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV29 FIX IKLAK AT OR ABOVE 2800 SPEED 180 FIX VODAV 2700 RNW 29 FIX OVERFLY VIRVI 3500 SPEED 185 HOLD AT FIX VIRVI LEFT TURN INBOUNDCOURSE 244 ALT 3500 SPEED 200 LEGTIME 1
+ TRANSITION UKSAR FIX UKSAR FIX XUGAK AT OR ABOVE 3100 SPEED 210
+ TRANSITION XOMSI FIX XOMSI SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//CYNL (POINTS NORTH LANDING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IMABO LATLON N 58 29.0845 W 104 1.444667
+FIX IMAMI LATLON N 58 20.955667 W 104 7.1615
+FIX IMURI LATLON N 58 11.322167 W 104 2.297
+FIX IPRUR LATLON N 58 26.505334 W 104 19.8355
+FIX IPSOB LATLON N 58 12.242666 W 104 2.759833
+FIX IRGEP LATLON N 58 22.017667 W 104 7.7005
+FIX ITBIK LATLON N 58 27.8005 W 104 10.645667
+FIX ITSIX LATLON N 58 5.536 W 103 59.397167
+FIX KIXOM LATLON N 58 15.135334 W 104 4.217
+FIX NOSAL LATLON N 58 4.254334 W 104 8.498167
+FIX PELVI LATLON N 58 6.806833 W 103 50.285167
+FIX PIBKU LATLON N 58 18.063833 W 104 5.696333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX ITBIK AT OR ABOVE 3300 SPEED 180 FIX IRGEP 3300 RNW 16 FIX KIXOM FIX OVERFLY IPSOB 3400 HOLD AT FIX IPSOB RIGHT TURN INBOUNDCOURSE 156 SPEED 200 LEGTIME 1
+ TRANSITION IMABO FIX IMABO
+ TRANSITION IPRUR FIX IPRUR
+APPROACH RNV34 FIX ITSIX AT OR ABOVE 3200 SPEED 180 FIX IMURI 3200 RNW 34 FIX PIBKU FIX OVERFLY IMAMI 3400 HOLD AT FIX IMAMI RIGHT TURN INBOUNDCOURSE 336 SPEED 200 LEGTIME 1
+ TRANSITION NOSAL FIX NOSAL
+ TRANSITION PELVI FIX PELVI
+ENDAPPROACHES

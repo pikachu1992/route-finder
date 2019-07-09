@@ -1,0 +1,41 @@
+//KTNP (TWENTYNINE PALMS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HURDI LATLON N 34 6.9385 W 115 44.152834
+FIX JEHLI LATLON N 34 6.663334 W 115 34.151167
+FIX JUXIX LATLON N 34 8.069167 W 115 55.515167
+FIX TNP LATLON N 34 6.734 W 115 46.194334
+FIX WISIR LATLON N 34 6.2155 W 115 36.979333
+FIX ZEDAB LATLON N 34 7.416667 W 115 48.936334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 17
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX WISIR AT OR ABOVE 6000 FIX HURDI AT OR ABOVE 4800 FIX ZEDAB 3800 FIX OVERFLY JUXIX 1988 RNW 26 TRK 265 UNTIL 2288 TURN RIGHT DIRECT FIX OVERFLY WISIR AT OR ABOVE 6000 HOLD AT FIX WISIR LEFT TURN INBOUNDCOURSE 265 LEGDIST 5
+ TRANSITION JEHLI FIX JEHLI
+ TRANSITION TNP FIX TNP FIX OVERFLY WISIR AT OR ABOVE 6000 HOLD AT FIX WISIR LEFT TURN INBOUNDCOURSE 265 ALT 6000 LEGDIST 5
+APPROACH VOR26 FIX TNP 4600 RNW 26 TRK 264 UNTIL 2290 TURN RIGHT DIRECT FIX TNP AT OR ABOVE 5900 HOLD AT FIX TNP LEFT TURN INBOUNDCOURSE 255 LEGTIME 1
+ TRANSITION JEHLI FIX JEHLI
+ TRANSITION TNP HOLD AT FIX TNP LEFT TURN INBOUNDCOURSE 255 ALT 4900 LEGTIME 1
+ENDAPPROACHES

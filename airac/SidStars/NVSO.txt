@@ -1,0 +1,35 @@
+//NVSO (LONORORE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MOLSI LATLON S 15 39.656333 E 168 1.366166
+FIX SO912 LATLON S 15 49.644334 E 168 7.611
+FIX SO934 LATLON S 15 45.905167 E 168 6.104666
+FIX SO956 LATLON S 15 42.165833 E 168 4.599167
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA15 FIX SO956 AT OR ABOVE 3000 FIX SO934 1750 FIX OVERFLY SO912 540 RNW 15 TURN RIGHT DIRECT FIX MOLSI 3000
+ TRANSITION MOLSI FIX MOLSI AT OR ABOVE 3000
+APPROACH RNVA33 FIX SO956 AT OR ABOVE 3000 FIX SO934 1750 FIX OVERFLY SO912 540 RNW 33 TURN RIGHT DIRECT FIX MOLSI 3000
+ TRANSITION MOLSI FIX MOLSI AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//SKEB (EL TOMIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIVIG LATLON N 7 1.25 W 75 11.7
+FIX EB003 LATLON N 7 41.076833 W 74 48.141334
+FIX EB006 LATLON N 7 46.623334 W 74 53.764333
+FIX EB800 LATLON N 7 36.096 W 74 57.376333
+FIX OTU LATLON N 7 1.25 W 74 42.566666
+FIX SERVO LATLON N 7 42.933334 W 75 5.383333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+SIDS
+SID BIVI1D RNW 01 FIX OVERFLY EB003 AT OR ABOVE 1380 TURN LEFT DIRECT FIX SERVO AT OR ABOVE 6000 SPEED 165 FIX BIVIG AT OR ABOVE 11000
+ENDSIDS
+
+STARS
+STAR OTU1D FIX OTU AT OR ABOVE 11000 FIX EB800 AT OR ABOVE 6000 FIX EB006 AT OR ABOVE 5000
+  RNW 19
+ENDSTARS

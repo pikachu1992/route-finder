@@ -1,0 +1,37 @@
+//AYTA (TARI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SD339 LATLON S 5 56.474333 E 142 58.542
+FIX YTASB LATLON S 6 9.166834 E 143 0.137167
+FIX YTASF LATLON S 5 59.366666 E 142 59.390167
+FIX YTASI LATLON S 6 4.187167 E 143 0.804167
+FIX YTASM LATLON S 5 53.582 E 142 57.694166
+FIX YTAST LATLON S 5 50.689333 E 142 56.846333
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVC14 FIX YTASI AT OR ABOVE 7900 FIX YTASF 7700 FIX SD339 AT OR ABOVE 7200 FIX OVERFLY YTASM 6770 RNW 14 FIX OVERFLY YTAST TURN RIGHT DIRECT FIX YTASB AT OR ABOVE 10400 SPEED 160
+ TRANSITION YTASB FIX YTASB AT OR ABOVE 10400
+APPROACH RNVC32 FIX YTASI AT OR ABOVE 7900 FIX YTASF 7700 FIX SD339 AT OR ABOVE 7200 FIX OVERFLY YTASM 6770 RNW 32 FIX OVERFLY YTAST TURN RIGHT DIRECT FIX YTASB AT OR ABOVE 10400 SPEED 160
+ TRANSITION YTASB FIX YTASB AT OR ABOVE 10400
+ENDAPPROACHES

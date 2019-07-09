@@ -1,0 +1,45 @@
+//CJK3 (BEAUVAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMAVI LATLON N 55 5.638166 W 107 38.4875
+FIX ANTUP LATLON N 54 57.824833 W 107 29.755667
+FIX DENLO LATLON N 55 2.945833 W 107 26.313
+FIX KESGU LATLON N 55 5.125 W 108 3.076333
+FIX KISOL LATLON N 55 8.065166 W 107 22.855834
+FIX LITKA LATLON N 55 4.742 W 107 34.426333
+FIX LOPSA LATLON N 55 15.396334 W 107 56.298167
+FIX MUTAP LATLON N 55 10.2615 W 107 59.6945
+FIX NUBUP LATLON N 55 8.307334 W 107 50.689
+FIX ONBEN LATLON N 55 7.3215 W 107 46.171
+FIX OVDUL LATLON N 55 4.93 W 107 35.278667
+FIX PEKVI LATLON N 55 8.493334 W 107 51.543833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX MUTAP AT OR ABOVE 3100 SPEED 180 FIX PEKVI 3070 FIX ONBEN AT OR ABOVE 2020 RNW 10 FIX OVERFLY OVDUL 3000 HOLD AT FIX OVDUL RIGHT TURN INBOUNDCOURSE 099 SPEED 200 LEGTIME 1
+ TRANSITION KESGU FIX KESGU SPEED 210
+ TRANSITION LOPSA FIX LOPSA SPEED 210
+APPROACH RNV28 FIX DENLO AT OR ABOVE 3100 SPEED 180 FIX LITKA 3060 FIX AMAVI AT OR ABOVE 2270 RNW 28 FIX OVERFLY NUBUP 3000 HOLD AT FIX NUBUP RIGHT TURN INBOUNDCOURSE 279 SPEED 200 LEGTIME 1
+ TRANSITION ANTUP FIX ANTUP SPEED 210
+ TRANSITION KISOL FIX KISOL SPEED 210
+ENDAPPROACHES

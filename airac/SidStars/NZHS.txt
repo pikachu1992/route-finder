@@ -1,0 +1,39 @@
+//NZHS (HASTINGS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF01 LATLON S 39 43.333 E 176 42.646166
+FIX FF19 LATLON S 39 34.9295 E 176 48.705667
+FIX MA01 LATLON S 39 38.9625 E 176 45.800666
+FIX MA19 LATLON S 39 38.426833 E 176 46.186834
+FIX NR LATLON S 39 27.228167 E 176 52.1355
+FIX OPAPA LATLON S 39 47.623333 E 176 41.4065
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 11
+RNW 19
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX OPAPA AT OR ABOVE 2600 FIX FF01 1650 FIX OVERFLY MA01 127 RNW 01 TRK 007 UNTIL 900 TURN RIGHT DIRECT FIX OPAPA 2600
+ TRANSITION OPAPA HOLD AT FIX OPAPA RIGHT TURN INBOUNDCOURSE 001 ALT 2600 SPEED 170 LEGTIME 1
+APPROACH RNV19 FIX NR AT OR ABOVE 3000 FIX FF19 1350 FIX OVERFLY MA19 108 RNW 19 FIX FF01 FIX OPAPA 2600
+ TRANSITION NR HOLD AT FIX NR RIGHT TURN INBOUNDCOURSE 188 ALT 3000 SPEED 170 LEGTIME 1
+ENDAPPROACHES

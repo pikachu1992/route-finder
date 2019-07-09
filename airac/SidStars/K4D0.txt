@@ -1,0 +1,34 @@
+//K4D0 (ABRAMS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUTTY LATLON N 43 5.258333 W 84 42.825334
+FIX YEVUD LATLON N 42 45.6405 W 84 59.2215
+FIX ZABVU LATLON N 42 46.118167 W 84 51.083833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX YEVUD AT OR ABOVE 3000 FIX ZABVU 2500 RNW 09 TRK 090 UNTIL 1241 TURN LEFT DIRECT FIX OVERFLY CUTTY AT OR ABOVE 3000 HOLD AT FIX CUTTY RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION YEVUD HOLD AT FIX YEVUD RIGHT TURN INBOUNDCOURSE 090 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KHIG (HIGGINSVILLE INDL MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COGBI LATLON N 39 9.582667 W 93 42.384334
+FIX DEYBE LATLON N 39 16.844 W 93 38.156833
+FIX GITEY LATLON N 39 14.326166 W 93 50.6175
+FIX HEKOV LATLON N 39 15.587833 W 93 44.389
+FIX NULLI LATLON N 38 54.247834 W 93 30.677
+FIX PERIY LATLON N 38 52.998334 W 93 36.878333
+FIX RUCOT LATLON N 38 59.005834 W 93 38.867666
+FIX TIVOY LATLON N 38 51.743333 W 93 43.076167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX HEKOV AT OR ABOVE 3000 FIX COGBI 2500 RNW 16 FIX OVERFLY PERIY AT OR ABOVE 3000 HOLD AT FIX PERIY RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4
+ TRANSITION DEYBE FIX DEYBE AT OR ABOVE 3000
+ TRANSITION GITEY FIX GITEY AT OR ABOVE 3100
+ TRANSITION HEKOV HOLD AT FIX HEKOV RIGHT TURN INBOUNDCOURSE 163 ALT 3000 LEGDIST 4
+APPROACH RNV34 FIX PERIY AT OR ABOVE 3000 FIX RUCOT 2500 RNW 34 FIX OVERFLY HEKOV AT OR ABOVE 3000 HOLD AT FIX HEKOV RIGHT TURN INBOUNDCOURSE 163 LEGDIST 4
+ TRANSITION NULLI FIX NULLI AT OR ABOVE 3000
+ TRANSITION PERIY HOLD AT FIX PERIY RIGHT TURN INBOUNDCOURSE 344 ALT 3000 LEGDIST 4
+ TRANSITION TIVOY FIX TIVOY AT OR ABOVE 3100
+ENDAPPROACHES

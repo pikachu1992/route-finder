@@ -1,0 +1,45 @@
+//K3K8 (COMANCHE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATTAD LATLON N 37 18.359 W 99 20.4355
+FIX BOGVE LATLON N 37 8.3465 W 99 19.406
+FIX CAGIM LATLON N 37 16.135834 W 99 20.206667
+FIX DUKRE LATLON N 37 26.222 W 99 21.247166
+FIX EGANE LATLON N 37 29.211667 W 99 29.199167
+FIX FAXUL LATLON N 37 30.209167 W 99 14.015666
+FIX GECKS LATLON N 37 0.518833 W 99 18.604667
+FIX HAGMI LATLON N 37 10.607 W 99 19.638
+FIX IDICU LATLON N 36 56.526167 W 99 25.7845
+FIX JANAX LATLON N 36 57.518 W 99 10.709167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX DUKRE AT OR ABOVE 4600 FIX ATTAD 3600 FIX CAGIM AT OR ABOVE 2880 RNW 17 TRK 170 UNTIL 2447 FIX OVERFLY GECKS AT OR ABOVE 4600 HOLD AT FIX GECKS LEFT TURN INBOUNDCOURSE 350 LEGDIST 5
+ TRANSITION DUKRE HOLD AT FIX DUKRE RIGHT TURN INBOUNDCOURSE 170 ALT 4600 LEGDIST 5
+ TRANSITION EGANE FIX EGANE
+ TRANSITION FAXUL FIX FAXUL
+APPROACH RNV35 FIX GECKS AT OR ABOVE 4600 FIX BOGVE 3600 FIX HAGMI AT OR ABOVE 2860 RNW 35 TRK 350 UNTIL 2443 FIX OVERFLY DUKRE AT OR ABOVE 4600 HOLD AT FIX DUKRE RIGHT TURN INBOUNDCOURSE 170 LEGDIST 5
+ TRANSITION GECKS HOLD AT FIX GECKS LEFT TURN INBOUNDCOURSE 350 ALT 4600 LEGDIST 5
+ TRANSITION IDICU FIX IDICU
+ TRANSITION JANAX FIX JANAX
+ENDAPPROACHES

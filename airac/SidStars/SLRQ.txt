@@ -1,0 +1,38 @@
+//SLRQ (RURRENABAQUE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KIDAR LATLON S 14 25.497 W 67 20.455166
+FIX MAKLO LATLON S 14 20.107166 W 67 42.1955
+FIX NELIX LATLON S 14 13.512334 W 67 35.2735
+FIX OGTOS LATLON S 14 14.446667 W 67 41.100334
+FIX PABOL LATLON S 14 18.039 W 67 37.5025
+FIX REDUT LATLON S 14 21.632 W 67 33.904166
+FIX UTLAS LATLON S 14 24.796667 W 67 30.734666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVY14 FIX PABOL AT OR ABOVE 4000 FIX REDUT 2400 FIX OVERFLY UTLAS 952 RNW 14 FIX KIDAR 4000 HOLD AT FIX KIDAR RIGHT TURN INBOUNDCOURSE 283 ALT 4000 LEGTIME 1
+ TRANSITION MAKLO FIX MAKLO AT OR ABOVE 5800 SPEED 160
+ TRANSITION NELIX FIX NELIX AT OR ABOVE 5500 SPEED 160
+ TRANSITION OGTOS FIX OGTOS AT OR ABOVE 5000 SPEED 160
+ENDAPPROACHES

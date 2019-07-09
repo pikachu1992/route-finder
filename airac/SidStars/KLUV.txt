@@ -1,0 +1,45 @@
+//KLUV (LAMESA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BGS LATLON N 32 23.135333 W 101 29.021
+FIX HIPKO LATLON N 32 50.387167 W 101 56.571
+FIX MERGE LATLON N 32 17.103667 W 102 8.775
+FIX TUDOY LATLON N 32 31.670833 W 101 44.4355
+FIX WUVUR LATLON N 32 40.053833 W 101 53.374166
+FIX YOTUD LATLON N 33 13.802 W 101 45.452167
+FIX YUPUC LATLON N 32 33.2675 W 101 51.278333
+FIX ZIKEK LATLON N 32 29.042167 W 101 56.326333
+FIX ZOPNI LATLON N 33 4.744834 W 102 1.037833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 16
+RNW 25
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX ZOPNI AT OR ABOVE 5500 FIX HIPKO 4600 RNW 16 TRK 159 UNTIL 3245 FIX OVERFLY YUPUC AT OR ABOVE 5500 HOLD AT FIX YUPUC RIGHT TURN INBOUNDCOURSE 339 LEGDIST 5
+ TRANSITION YOTUD FIX YOTUD
+ TRANSITION ZOPNI HOLD AT FIX ZOPNI RIGHT TURN INBOUNDCOURSE 159 ALT 5500 LEGDIST 5
+APPROACH RNV34 FIX YUPUC AT OR ABOVE 5500 FIX WUVUR 4600 RNW 34 TRK 339 UNTIL 3194 FIX OVERFLY ZOPNI AT OR ABOVE 5500 HOLD AT FIX ZOPNI RIGHT TURN INBOUNDCOURSE 159 LEGDIST 5
+ TRANSITION BGS FIX BGS FIX TUDOY AT OR ABOVE 5500
+ TRANSITION MERGE FIX MERGE FIX ZIKEK AT OR ABOVE 5500
+ TRANSITION YUPUC HOLD AT FIX YUPUC RIGHT TURN INBOUNDCOURSE 339 ALT 5500 LEGDIST 5
+ENDAPPROACHES

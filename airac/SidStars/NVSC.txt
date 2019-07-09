@@ -1,0 +1,34 @@
+//NVSC (SOLA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SC624 LATLON S 13 47.261333 E 167 33.066833
+FIX SC875 LATLON S 13 43.2495 E 167 33.125666
+FIX SULVA LATLON S 13 38.234833 E 167 33.198667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA16 FIX SULVA AT OR ABOVE 3200 FIX SC875 1800 FIX OVERFLY SC624 580 RNW 16 TURN LEFT DIRECT FIX SULVA 3200
+ TRANSITION SULVA HOLD AT FIX SULVA RIGHT TURN INBOUNDCOURSE 170 ALT 3200 LEGTIME 1
+APPROACH RNVA34 FIX SULVA AT OR ABOVE 3200 FIX SC875 1800 FIX OVERFLY SC624 580 RNW 34 TURN LEFT DIRECT FIX SULVA 3200
+ TRANSITION SULVA HOLD AT FIX SULVA RIGHT TURN INBOUNDCOURSE 170 ALT 3200 LEGTIME 1
+ENDAPPROACHES

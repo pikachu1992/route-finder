@@ -1,0 +1,38 @@
+//K7M2 (MOUNTAIN VIEW WILCOX MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IBETE LATLON N 35 51.275167 W 91 49.504834
+FIX INNAM LATLON N 36 15.247834 W 92 27.8575
+FIX NORNE LATLON N 35 56.277 W 91 49.214833
+FIX SOCOB LATLON N 35 46.273333 W 91 49.794334
+FIX UKORE LATLON N 35 21.7555 W 91 36.038
+FIX VILLO LATLON N 36 10.485833 W 91 36.4385
+FIX ZOLTI LATLON N 35 51.590167 W 91 57.829667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX IBETE AT OR ABOVE 3000 FIX ZOLTI 2700 RNW 27 TRK 272 UNTIL 1205 TURN RIGHT DIRECT FIX OVERFLY IBETE AT OR ABOVE 3000 HOLD AT FIX IBETE RIGHT TURN INBOUNDCOURSE 272 LEGDIST 5
+ TRANSITION INNAM FIX INNAM FIX NORNE AT OR ABOVE 3000
+ TRANSITION UKORE FIX UKORE FIX SOCOB AT OR ABOVE 3000
+ TRANSITION VILLO FIX VILLO FIX NORNE AT OR ABOVE 3000
+ENDAPPROACHES

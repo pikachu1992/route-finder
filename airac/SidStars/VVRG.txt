@@ -1,0 +1,49 @@
+//VVRG (RACH GIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF08 LATLON N 9 56.363167 E 105 3.751834
+FIX FF26 LATLON N 9 58.269667 E 105 12.463834
+FIX PQU LATLON N 10 9.917833 E 104 2.336666
+FIX RGNB LATLON N 9 57.565 E 105 7.986667
+FIX TRN LATLON N 10 5.001667 E 105 42.328834
+FIX TSN LATLON N 10 48.986 E 106 38.7345
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID PQU
+ RNW 08 HDG 077 UNTIL 990 TURN RIGHT DIRECT FIX RGNB FIX PQU
+ RNW 26 HDG 257 UNTIL 990 FIX PQU
+SID TRN
+ RNW 08 HDG 077 UNTIL 990 FIX TRN
+ RNW 26 HDG 257 UNTIL 990 TURN LEFT DIRECT FIX RGNB FIX TRN
+SID TSN
+ RNW 08 HDG 077 UNTIL 990 FIX TSN
+ RNW 26 HDG 257 UNTIL 990 TURN LEFT DIRECT FIX RGNB FIX TSN
+ENDSIDS
+
+APPROACHES
+APPROACH NDB08 FIX FF08 1320 RNW 08 FIX OVERFLY RGNB TRK 075 UNTIL 1320 TURN LEFT DIRECT FIX RGNB 2960 HOLD AT FIX RGNB LEFT TURN INBOUNDCOURSE 230 ALT 2960 LEGTIME 1
+ TRANSITION RG FIX RGNB AT OR ABOVE 2960 TRK 230 UNTIL 4.5 FROM FIX RGNB
+APPROACH NDB26 FIX FF26 1320 RNW 26 FIX OVERFLY RGNB TRK 262 UNTIL 1450 TURN RIGHT DIRECT FIX RGNB 2960 HOLD AT FIX RGNB RIGHT TURN INBOUNDCOURSE 106 ALT 2960 LEGTIME 1
+ TRANSITION RG FIX RGNB AT OR ABOVE 2960 TRK 106 UNTIL 4.5 FROM FIX RGNB
+ENDAPPROACHES

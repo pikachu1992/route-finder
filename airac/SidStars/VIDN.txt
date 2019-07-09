@@ -1,0 +1,43 @@
+//VIDN (DEHRADUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF08 LATLON N 30 9.830666 E 78 1.0295
+FIX D254O LATLON N 30 7.4255 E 77 53.302
+FIX D258A LATLON N 30 11.266667 E 78 10.024667
+FIX DABGO LATLON N 30 8.732666 E 77 58.868666
+FIX DDN LATLON N 30 11.335 E 78 10.0095
+FIX DDN30 LATLON N 30 2.828 E 77 36.830833
+FIX FD08 LATLON N 30 9.515 E 78 2.209834
+FIX FF08 LATLON N 30 10.007333 E 78 2.165666
+FIX MD08 LATLON N 30 11.075333 E 78 8.894833
+FIX ML08 LATLON N 30 11.153333 E 78 9.312833
+FIX SPNB LATLON N 29 59.994667 E 77 25.9205
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VDM08 FIX FD08 4100 FIX MD08 2218 RNW 08 TRK 284 INTERCEPT RADIAL 254 TO FIX DABGO SPEED 185 FIX DABGO 5600 HOLD AT FIX DABGO RIGHT TURN INBOUNDCOURSE 074 ALT 5600 LEGDIST 5
+ TRANSITION SP FIX SPNB FIX DDN30 SPEED 185 FIX D254O AT OR ABOVE 5600 FIX DABGO AT OR ABOVE 4100
+APPROACH LOC08 FIX CF08 AT OR ABOVE 4100 FIX FF08 4100 FIX ML08 2101 RNW 08 FIX OVERFLY D258A HDG 290 INTERCEPT RADIAL 254 TO FIX DABGO FIX DABGO 5600 SPEED 185 HOLD AT FIX DABGO RIGHT TURN INBOUNDCOURSE 074 ALT 5600 LEGDIST 5
+ TRANSITION DABGO
+ TRANSITION SP FIX SPNB FIX DDN30 SPEED 185 FIX D254O AT OR ABOVE 5600 FIX OVERFLY DABGO AT OR ABOVE 4100
+ENDAPPROACHES

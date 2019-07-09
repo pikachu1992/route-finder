@@ -1,0 +1,37 @@
+//AYHK (HOSKINS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CQ115 LATLON S 5 22.3655 E 150 16.263
+FIX FN115 LATLON S 5 24.1695 E 150 19.257167
+FIX FQ115 LATLON S 5 23.918666 E 150 18.841
+FIX HKNNB LATLON S 5 27.542 E 150 24.857
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDMB12 FIX FN115 2000 FIX HKNNB 1000 RNW 12 TRK 350 UNTIL 5000
+ TRANSITION HKN FIX HKNNB AT OR ABOVE 5000 TRK 286 UNTIL 11.7 FROM FIX HKNNB
+APPROACH NDMM12 FIX CQ115 AT OR ABOVE 2000 FIX FQ115 2000 FIX HKNNB 1000 RNW 12 TRK 350 UNTIL 2000
+APPROACH NDMB30 FIX FN115 2000 FIX HKNNB 1000 RNW 30 TRK 350 UNTIL 5000
+ TRANSITION HKN FIX HKNNB AT OR ABOVE 5000 TRK 286 UNTIL 11.7 FROM FIX HKNNB
+APPROACH NDMM30 FIX CQ115 AT OR ABOVE 2000 FIX FQ115 2000 FIX HKNNB 1000 RNW 30 TRK 350 UNTIL 2000
+ENDAPPROACHES

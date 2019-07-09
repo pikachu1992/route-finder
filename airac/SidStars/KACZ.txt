@@ -1,0 +1,45 @@
+//KACZ (HENDERSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHALZ LATLON N 34 43.480834 W 77 54.476167
+FIX CILED LATLON N 34 49.7895 W 77 45.314167
+FIX EJABI LATLON N 34 43.9895 W 77 47.222833
+FIX ODJOB LATLON N 34 42.102833 W 78 13.599833
+FIX SKATR LATLON N 34 42.631333 W 78 6.3505
+FIX WEKAV LATLON N 34 38.534 W 77 44.170166
+FIX WODAS LATLON N 34 47.547334 W 78 16.689
+FIX WONAV LATLON N 34 42.897 W 78 2.670833
+FIX YEKUB LATLON N 34 43.2285 W 77 58.036834
+FIX ZOLIS LATLON N 34 36.295333 W 78 15.4715
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ODJOB AT OR ABOVE 2000 FIX SKATR 1600 FIX WONAV AT OR ABOVE 620 RNW 09 TRK 094 UNTIL 401 FIX OVERFLY EJABI AT OR ABOVE 2000 HOLD AT FIX EJABI RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION ODJOB HOLD AT FIX ODJOB RIGHT TURN INBOUNDCOURSE 094 ALT 2000 LEGDIST 4
+ TRANSITION WODAS FIX WODAS
+ TRANSITION ZOLIS FIX ZOLIS
+APPROACH RNV27 FIX EJABI AT OR ABOVE 2000 FIX CHALZ 1600 FIX YEKUB AT OR ABOVE 580 RNW 27 TRK 274 UNTIL 406 FIX OVERFLY ODJOB AT OR ABOVE 2000 HOLD AT FIX ODJOB RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4
+ TRANSITION CILED FIX CILED
+ TRANSITION EJABI HOLD AT FIX EJABI RIGHT TURN INBOUNDCOURSE 274 ALT 2000 LEGDIST 4
+ TRANSITION WEKAV FIX WEKAV
+ENDAPPROACHES

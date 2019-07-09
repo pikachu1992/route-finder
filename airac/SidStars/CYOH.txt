@@ -1,0 +1,43 @@
+//CYOH (OXFORD HOUSE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALNEL LATLON N 55 2.6435 W 95 2.982667
+FIX AMISU LATLON N 54 49.275 W 95 30.488333
+FIX BEXOX LATLON N 54 45.4695 W 95 24.900167
+FIX EBLUP LATLON N 54 53.076334 W 95 36.094
+FIX EMAXA LATLON N 55 6.465833 W 95 8.576
+FIX IKUNU LATLON N 54 58.791167 W 95 10.962167
+FIX IMIRI LATLON N 54 53.148833 W 95 22.571333
+FIX MISES LATLON N 54 52.971167 W 95 22.935334
+FIX UKSAN LATLON N 54 58.817 W 94 57.407167
+FIX ULINI LATLON N 54 59.003833 W 95 10.522834
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX AMISU AT OR ABOVE 2000 FIX IMIRI 2000 RNW 05 FIX OVERFLY ULINI 1900 HOLD AT FIX ULINI RIGHT TURN INBOUNDCOURSE 049 LEGTIME 1
+ TRANSITION BEXOX FIX BEXOX SPEED 210
+ TRANSITION EBLUP FIX EBLUP SPEED 210
+APPROACH RNV23 FIX ALNEL AT OR ABOVE 2000 FIX IKUNU 2000 RNW 23 FIX OVERFLY MISES 1900 HOLD AT FIX MISES RIGHT TURN INBOUNDCOURSE 229 LEGTIME 1
+ TRANSITION EMAXA FIX EMAXA SPEED 210
+ TRANSITION UKSAN FIX UKSAN SPEED 210
+ENDAPPROACHES

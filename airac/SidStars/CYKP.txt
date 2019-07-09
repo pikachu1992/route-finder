@@ -1,0 +1,43 @@
+//CYKP (OGOKI POST)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVTUT LATLON N 51 32.402333 W 86 8.9285
+FIX BEXEP LATLON N 51 38.557333 W 86 1.235167
+FIX DEBVU LATLON N 51 40.508 W 85 46.661833
+FIX DUSRI LATLON N 51 42.158167 W 86 12.364
+FIX EBLIM LATLON N 51 37.2805 W 86 10.643167
+FIX ELUNA LATLON N 51 46.615667 W 85 39.069
+FIX IGVEL LATLON N 51 41.73 W 85 37.405
+FIX LORGA LATLON N 51 40.485 W 85 46.835
+FIX MAVUV LATLON N 51 38.528 W 86 1.452334
+FIX TOVOM LATLON N 51 36.844 W 85 35.746834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX EBLIM AT OR ABOVE 2000 FIX BEXEP 2000 RNW 09 FIX OVERFLY DEBVU 2000 HOLD AT FIX DEBVU RIGHT TURN INBOUNDCOURSE 086 LEGTIME 1
+ TRANSITION AVTUT FIX AVTUT SPEED 210
+ TRANSITION DUSRI FIX DUSRI SPEED 210
+APPROACH RNV27 FIX IGVEL AT OR ABOVE 2000 FIX LORGA 2000 RNW 27 FIX OVERFLY MAVUV 2000 HOLD AT FIX MAVUV RIGHT TURN INBOUNDCOURSE 266 LEGTIME 1
+ TRANSITION ELUNA FIX ELUNA SPEED 210
+ TRANSITION TOVOM FIX TOVOM SPEED 210
+ENDAPPROACHES

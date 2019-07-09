@@ -1,0 +1,37 @@
+//KEKQ (WAYNE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIBKE LATLON N 37 2.366167 W 84 41.438833
+FIX OKACA LATLON N 36 54.020666 W 84 48.942833
+FIX OREWO LATLON N 36 46.348166 W 84 55.812
+FIX UNNOG LATLON N 36 40.656667 W 85 0.889333
+FIX ZOBKU LATLON N 36 48.691333 W 84 53.717167
+FIX ZUGTO LATLON N 36 56.423666 W 84 46.785667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX UNNOG AT OR ABOVE 4000 FIX OREWO 3000 FIX ZOBKU AT OR ABOVE 2000 RNW 03 TRK 039 UNTIL 1231 FIX OVERFLY FIBKE AT OR ABOVE 4000 HOLD AT FIX FIBKE RIGHT TURN INBOUNDCOURSE 219 LEGDIST 4
+ TRANSITION UNNOG HOLD AT FIX UNNOG RIGHT TURN INBOUNDCOURSE 039 ALT 4000 LEGDIST 4
+APPROACH RNV21 FIX FIBKE AT OR ABOVE 4000 FIX ZUGTO 2900 FIX OKACA AT OR ABOVE 1940 RNW 21 TRK 219 UNTIL 1257 FIX OVERFLY UNNOG AT OR ABOVE 4000 HOLD AT FIX UNNOG RIGHT TURN INBOUNDCOURSE 039 LEGDIST 4
+ TRANSITION FIBKE HOLD AT FIX FIBKE RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGDIST 4
+ENDAPPROACHES

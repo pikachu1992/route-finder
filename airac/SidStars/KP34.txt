@@ -1,0 +1,40 @@
+//KP34 (MIFFLINTOWN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IYIKA LATLON N 40 38.216666 W 77 12.6265
+FIX RASHE LATLON N 40 40.600667 W 77 38.649
+FIX SEG LATLON N 40 47.4515 W 76 53.0425
+FIX WOBKA LATLON N 40 38.965333 W 77 8.525833
+FIX YOYUL LATLON N 40 36.219833 W 77 23.4905
+FIX ZOXIX LATLON N 40 37.5615 W 77 16.202167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID WOBKA2 RNW 08 HDG 077 UNTIL 1060 FIX WOBKA
+ENDSIDS
+
+APPROACHES
+APPROACH RNV26 FIX WOBKA AT OR ABOVE 4000 FIX IYIKA AT OR ABOVE 3600 FIX ZOXIX 2800 FIX OVERFLY YOYUL 752 RNW 26 TRK 267 UNTIL 945 TURN LEFT DIRECT FIX OVERFLY WOBKA AT OR ABOVE 4000 HOLD AT FIX WOBKA RIGHT TURN INBOUNDCOURSE 268 LEGDIST 5
+ TRANSITION RASHE FIX RASHE FIX OVERFLY WOBKA AT OR ABOVE 4000 HOLD AT FIX WOBKA RIGHT TURN INBOUNDCOURSE 268 ALT 4000 LEGDIST 5
+ TRANSITION SEG FIX SEG
+ENDAPPROACHES

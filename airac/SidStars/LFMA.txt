@@ -1,0 +1,40 @@
+//LFMA (LES MILLES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALMNB LATLON N 43 30.466667 E 5 22.011667
+FIX CMNB LATLON N 43 54.496667 E 4 54.323333
+FIX D054H LATLON N 43 27.452167 E 5 29.033666
+FIX D117H LATLON N 43 32.860834 E 5 15.814
+FIX LANKO LATLON N 43 13.633333 E 6 0.866666
+FIX MJNB LATLON N 43 26.295 E 5 12.985
+FIX SALNB LATLON N 43 36.638333 E 5 6.065
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+STARS
+STAR CM1 FIX CMNB FIX SALNB FIX D117H FIX ALMNB
+  RNW 14 RNW 32
+STAR LANKO1 FIX LANKO AT OR BELOW 12000 FIX D054H FIX ALMNB
+  RNW 14 RNW 32
+STAR MJ1 FIX MJNB FIX ALMNB
+  RNW 14 RNW 32
+ENDSTARS

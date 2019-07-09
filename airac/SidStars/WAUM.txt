@@ -1,0 +1,33 @@
+//WAUM (JAHABRA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX UM401 LATLON S 1 36.447 E 133 34.869
+FIX UM402 LATLON S 1 36.015833 E 133 26.8945
+FIX UM403 LATLON S 1 35.775167 E 133 22.907333
+FIX UM404 LATLON S 1 35.293667 E 133 14.933
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX UM402 AT OR ABOVE 2000 FIX UM403 2000 RNW 27 FIX OVERFLY UM404 TURN LEFT DIRECT FIX UM401 4000 HOLD AT FIX UM401 LEFT TURN INBOUNDCOURSE 271 ALT 4000 LEGTIME 1
+ TRANSITION UM401 FIX UM401 AT OR ABOVE 4000
+ENDAPPROACHES

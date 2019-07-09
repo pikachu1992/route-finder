@@ -1,0 +1,37 @@
+//PAWM (WHITE MOUNTAIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EZEXY LATLON N 64 43.793666 W 163 26.38
+FIX JUKTI LATLON N 64 56.726666 W 163 35.015167
+FIX RIYOK LATLON N 64 49.393667 W 163 30.101333
+FIX WOVIB LATLON N 64 30.253333 W 163 17.494
+FIX ZEVIX LATLON N 64 36.0155 W 163 21.2565
+FIX ZUDRO LATLON N 64 46.52 W 163 28.188334
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX JUKTI AT OR ABOVE 3800 FIX RIYOK AT OR ABOVE 2500 FIX ZUDRO 1900 FIX EZEXY AT OR ABOVE 1100 RNW 15 TRK 152 UNTIL 667 FIX OVERFLY WOVIB AT OR ABOVE 3900 HOLD AT FIX WOVIB LEFT TURN INBOUNDCOURSE 332 LEGDIST 4
+ TRANSITION JUKTI HOLD AT FIX JUKTI LEFT TURN INBOUNDCOURSE 152 ALT 3800 LEGDIST 4
+APPROACH RNV33 FIX WOVIB AT OR ABOVE 3900 FIX ZEVIX 2000 RNW 33 TRK 332 UNTIL 580 FIX OVERFLY JUKTI AT OR ABOVE 3800 HOLD AT FIX JUKTI LEFT TURN INBOUNDCOURSE 152 LEGDIST 4
+ TRANSITION WOVIB HOLD AT FIX WOVIB LEFT TURN INBOUNDCOURSE 332 ALT 3900 LEGDIST 4
+ENDAPPROACHES

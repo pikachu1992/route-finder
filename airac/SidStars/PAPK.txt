@@ -1,0 +1,38 @@
+//PAPK (NAPASKIAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACIVE LATLON N 60 33.993334 W 161 56.579
+FIX BESAY LATLON N 60 50.772167 W 161 36.209333
+FIX CACAR LATLON N 60 38.285167 W 161 51.4085
+FIX FEDMA LATLON N 60 46.489333 W 161 41.448667
+FIX SAHKU LATLON N 60 30.9215 W 161 35.185834
+FIX URICA LATLON N 60 31.439833 W 161 47.883167
+FIX WEEKE LATLON N 60 48.8535 W 161 25.237667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX ACIVE AT OR ABOVE 2000 FIX CACAR 1500 RNW 02 TRK 016 UNTIL 420 TURN RIGHT DIRECT FIX SAHKU AT OR ABOVE 2500 HOLD AT FIX SAHKU LEFT TURN INBOUNDCOURSE 317 LEGDIST 4
+ TRANSITION SAHKU FIX SAHKU FIX URICA AT OR ABOVE 2500
+APPROACH RNV20 FIX BESAY AT OR ABOVE 2000 FIX FEDMA 1600 RNW 20 TRK 196 UNTIL 420 TURN LEFT DIRECT FIX WEEKE AT OR ABOVE 2000 HOLD AT FIX WEEKE LEFT TURN INBOUNDCOURSE 242 LEGDIST 4
+ TRANSITION WEEKE FIX WEEKE
+ENDAPPROACHES

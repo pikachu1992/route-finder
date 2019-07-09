@@ -1,0 +1,42 @@
+//K2R2 (HENDRICKS CO-GRAHAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CURGU LATLON N 39 42.843833 W 86 28.528333
+FIX EDMEW LATLON N 40 16.306834 W 86 10.196833
+FIX FOBAG LATLON N 39 50.066333 W 86 28.461334
+FIX GAKNE LATLON N 39 57.098833 W 86 28.396
+FIX JANPO LATLON N 39 46.871 W 86 28.491
+FIX JELLS LATLON N 40 0.789833 W 86 39.283667
+FIX KELLY LATLON N 39 24.820667 W 86 40.282333
+FIX OCOGU LATLON N 39 39.446167 W 86 28.559833
+FIX WOSOB LATLON N 39 32.4405 W 86 28.6245
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX GAKNE AT OR ABOVE 2700 FIX FOBAG 2500 FIX JANPO AT OR ABOVE 1480 RNW 18 TRK 183 UNTIL 1420 TURN RIGHT DIRECT FIX OVERFLY GAKNE AT OR ABOVE 2700 HOLD AT FIX GAKNE RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION EDMEW FIX EDMEW
+ TRANSITION GAKNE HOLD AT FIX GAKNE RIGHT TURN INBOUNDCOURSE 183 ALT 2700 LEGDIST 4
+ TRANSITION JELLS FIX JELLS
+APPROACH RNV36 FIX WOSOB AT OR ABOVE 2700 FIX OCOGU 2500 FIX CURGU AT OR ABOVE 1400 RNW 36 TRK 003 UNTIL 1168 FIX OVERFLY GAKNE AT OR ABOVE 2700 HOLD AT FIX GAKNE RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION KELLY FIX KELLY
+ENDAPPROACHES

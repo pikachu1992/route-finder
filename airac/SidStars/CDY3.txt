@@ -1,0 +1,43 @@
+//CDY3 (FOGO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALTED LATLON N 49 39.968167 W 54 7.865
+FIX AMBEM LATLON N 49 40.710167 W 53 58.699333
+FIX ELEBI LATLON N 49 38.841 W 54 21.501167
+FIX EPNAM LATLON N 49 33.188167 W 54 28.805
+FIX OBVIG LATLON N 49 38.143667 W 54 29.774666
+FIX VOBOG LATLON N 49 43.099 W 54 30.747667
+FIX XESAP LATLON N 49 40.039667 W 54 6.988333
+FIX XEVIN LATLON N 49 35.754667 W 53 57.73
+FIX XORTU LATLON N 49 45.665666 W 53 59.671834
+FIX XUKAG LATLON N 49 38.914667 W 54 20.6205
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX OBVIG AT OR ABOVE 1500 FIX XUKAG 1400 RNW 10 FIX OVERFLY XESAP 1600 HOLD AT FIX XESAP RIGHT TURN INBOUNDCOURSE 103 LEGTIME 1
+ TRANSITION EPNAM FIX EPNAM
+ TRANSITION VOBOG FIX VOBOG
+APPROACH RNV28 FIX AMBEM AT OR ABOVE 1500 FIX ALTED 1400 RNW 28 FIX OVERFLY ELEBI 1600 HOLD AT FIX ELEBI LEFT TURN INBOUNDCOURSE 283 LEGTIME 1
+ TRANSITION XEVIN FIX XEVIN
+ TRANSITION XORTU FIX XORTU
+ENDAPPROACHES

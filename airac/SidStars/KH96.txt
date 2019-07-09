@@ -1,0 +1,40 @@
+//KH96 (BENTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CISEV LATLON N 37 57.736834 W 88 56.0225
+FIX ENL LATLON N 38 25.2 W 89 9.539833
+FIX HARCE LATLON N 37 47.464667 W 88 45.337
+FIX IXIPY LATLON N 38 5.619167 W 88 56.147833
+FIX JIMDA LATLON N 38 15.2185 W 89 0.7895
+FIX JODPU LATLON N 38 11.725333 W 88 56.245
+FIX UYADI LATLON N 38 3.042334 W 88 56.106833
+FIX ZOBAM LATLON N 38 15.3075 W 88 51.813167
+FIX ZOLLI LATLON N 38 19.203833 W 88 52.178833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JODPU AT OR ABOVE 2100 FIX IXIPY 2000 FIX UYADI AT OR ABOVE 1180 RNW 18 TRK 181 UNTIL 844 FIX CISEV FIX OVERFLY HARCE AT OR ABOVE 2100 HOLD AT FIX HARCE RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4
+ TRANSITION ENL FIX ENL FIX JIMDA AT OR ABOVE 3000
+ TRANSITION JODPU HOLD AT FIX JODPU RIGHT TURN INBOUNDCOURSE 181 ALT 2100 LEGDIST 4
+ TRANSITION ZOLLI FIX ZOLLI FIX ZOBAM AT OR ABOVE 3000
+ENDAPPROACHES

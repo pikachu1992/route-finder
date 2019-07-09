@@ -1,0 +1,38 @@
+//SVSE (SANTA ELENA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANDOT LATLON N 4 34.136 W 61 12.673333
+FIX ASDAR LATLON N 4 39.113833 W 61 19.222333
+FIX CMA LATLON N 6 15.015 W 62 51.453334
+FIX GIKBO LATLON N 4 34.943666 W 61 16.4295
+FIX ICA LATLON N 4 20 W 61 44.283334
+FIX UKENE LATLON N 4 32.288333 W 61 20.68
+FIX UVBOK LATLON N 4 32.768333 W 61 6.318334
+FIX VAKIL LATLON N 4 52.183834 W 61 32.102833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX GIKBO AT OR ABOVE 5500 FIX ANDOT 4200 RNW 11 FIX OVERFLY UVBOK TURN LEFT DIRECT FIX OVERFLY ASDAR AT OR ABOVE 6600 HOLD AT FIX ASDAR RIGHT TURN INBOUNDCOURSE 161 LEGDIST 4
+ TRANSITION CMA FIX CMA FIX VAKIL AT OR ABOVE 9800 FIX OVERFLY ASDAR AT OR ABOVE 5600
+ TRANSITION ICA FIX ICA FIX UKENE AT OR ABOVE 5500
+ENDAPPROACHES

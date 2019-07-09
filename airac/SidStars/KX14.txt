@@ -1,0 +1,45 @@
+//KX14 (LA BELLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FORTL LATLON N 26 18.562834 W 81 21.141
+FIX LBV LATLON N 26 49.691167 W 81 23.486333
+FIX PUNAE LATLON N 26 48.865166 W 81 30.343333
+FIX QUNCY LATLON N 27 2.216833 W 81 38.3035
+FIX TIRTE LATLON N 26 35.115 W 81 15.9545
+FIX UROLE LATLON N 26 39.977167 W 81 21.033
+FIX UTELE LATLON N 26 56.338 W 81 31.339
+FIX VASES LATLON N 26 48.506833 W 81 42.0275
+FIX WINCO LATLON N 26 25.042166 W 80 58.309
+FIX WURNO LATLON N 26 53.271667 W 81 34.972834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WURNO AT OR ABOVE 2000 FIX PUNAE 1900 RNW 14 TRK 142 UNTIL 388 FIX OVERFLY TIRTE AT OR ABOVE 2000 HOLD AT FIX TIRTE RIGHT TURN INBOUNDCOURSE 322 LEGDIST 4
+ TRANSITION QUNCY FIX QUNCY
+ TRANSITION UTELE FIX UTELE
+ TRANSITION VASES FIX VASES
+APPROACH RNV32 FIX TIRTE AT OR ABOVE 2000 FIX UROLE 1900 RNW 32 TRK 322 UNTIL 420 FIX PUNAE AT OR ABOVE 2000 FIX OVERFLY UTELE HOLD AT FIX UTELE RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4
+ TRANSITION FORTL FIX FORTL
+ TRANSITION LBV FIX LBV FIX OVERFLY TIRTE AT OR ABOVE 2000 HOLD AT FIX TIRTE RIGHT TURN INBOUNDCOURSE 322 ALT 2000 LEGDIST 4
+ TRANSITION WINCO FIX WINCO
+ENDAPPROACHES

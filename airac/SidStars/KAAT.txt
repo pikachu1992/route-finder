@@ -1,0 +1,52 @@
+//KAAT (ALTURAS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BACHS LATLON N 41 15.707333 W 121 0.075
+FIX CHOIR LATLON N 41 31.515833 W 120 13.22
+FIX LUTIY LATLON N 41 18.866666 W 120 25.6865
+FIX MOMPE LATLON N 41 27.446666 W 120 36.045334
+FIX NARIC LATLON N 41 30.5485 W 120 31.737167
+FIX NILIY LATLON N 41 34.696333 W 120 25.961
+FIX NONIY LATLON N 41 15.196333 W 120 33.5945
+FIX RUCOR LATLON N 41 26.9625 W 120 32.299
+FIX SIDTO LATLON N 41 30.972 W 120 35.5855
+FIX TEFAN LATLON N 41 23.632834 W 120 29.575
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+SIDS
+SID BACHS2
+ RNW 03 TRK 030 UNTIL 4778 FIX OVERFLY NARIC TURN LEFT DIRECT FIX BACHS AT OR ABOVE 9000
+ RNW 13 TRK 132 UNTIL 4778 FIX RUCOR TURN RIGHT DIRECT FIX BACHS AT OR ABOVE 9000
+ RNW 21 TRK 210 UNTIL 4778 FIX MOMPE FIX BACHS AT OR ABOVE 9000
+ RNW 31 TRK 312 UNTIL 4778 FIX SIDTO TURN LEFT DIRECT FIX BACHS AT OR ABOVE 9000
+SID CHOIR3
+ RNW 03 TRK 030 UNTIL 4780 FIX NARIC FIX NILIY FIX CHOIR AT OR ABOVE 11000
+ RNW 13 TRK 132 UNTIL 4780 FIX RUCOR FIX CHOIR AT OR ABOVE 11000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV31 FIX LUTIY AT OR ABOVE 7200 FIX TEFAN 6300 RNW 31 TRK 312 UNTIL 5400 TURN LEFT DIRECT FIX BACHS AT OR ABOVE 9000 HOLD AT FIX BACHS RIGHT TURN INBOUNDCOURSE 133 LEGDIST 7
+ TRANSITION BACHS FIX BACHS FIX NONIY AT OR ABOVE 9300
+ENDAPPROACHES

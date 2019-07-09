@@ -1,0 +1,43 @@
+//KUSE (FULTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUSMA LATLON N 41 47.0325 W 83 42.656
+FIX DUCZZ LATLON N 41 36.440333 W 84 21.293333
+FIX EDGEE LATLON N 41 29.337667 W 84 39.375667
+FIX RANDL LATLON N 41 45.701666 W 84 12.321667
+FIX WEVUM LATLON N 41 36.704333 W 84 0.321667
+FIX XORSE LATLON N 41 36.531667 W 84 14.575834
+FIX YECUK LATLON N 41 38.077 W 83 53.859667
+FIX ZOXUK LATLON N 41 36.651167 W 84 4.9735
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX DUCZZ AT OR ABOVE 3000 FIX XORSE 2400 RNW 09 TRK 094 UNTIL 2100 TURN LEFT DIRECT FIX OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT FIX DUCZZ RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4
+ TRANSITION EDGEE FIX EDGEE
+ TRANSITION RANDL FIX RANDL FIX OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT FIX DUCZZ RIGHT TURN INBOUNDCOURSE 094 ALT 3000 LEGDIST 4
+APPROACH RNV27 FIX YECUK AT OR ABOVE 3000 FIX WEVUM 2500 FIX ZOXUK AT OR ABOVE 1340 RNW 27 TRK 274 UNTIL 1092 FIX OVERFLY DUCZZ AT OR ABOVE 3000 HOLD AT FIX DUCZZ RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4
+ TRANSITION CUSMA FIX CUSMA
+ TRANSITION RANDL FIX RANDL FIX OVERFLY YECUK AT OR ABOVE 3000 HOLD AT FIX YECUK RIGHT TURN INBOUNDCOURSE 259 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//K6S0 (BIG TIMBER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JUREP LATLON N 45 50.171666 W 109 49.854167
+FIX JUTIM LATLON N 45 46.8635 W 110 6.423
+FIX LVM LATLON N 45 42.148834 W 110 26.547167
+FIX ONROW LATLON N 45 47.863333 W 110 1.441166
+FIX REEPO LATLON N 45 45.5735 W 109 31.612667
+FIX SUBKY LATLON N 45 44.01 W 109 57.621167
+FIX WETIG LATLON N 45 51.531833 W 109 42.971333
+FIX ZELTI LATLON N 45 46.6305 W 110 15.898
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 18
+RNW 24
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX ZELTI AT OR ABOVE 7900 FIX JUTIM 6200 FIX ONROW AT OR ABOVE 5020 RNW 06 TRK 063 UNTIL 4740 FIX OVERFLY WETIG AT OR ABOVE 9500 HOLD AT FIX WETIG RIGHT TURN INBOUNDCOURSE 243 LEGDIST 7
+ TRANSITION LVM FIX LVM
+ TRANSITION SUBKY FIX SUBKY FIX OVERFLY ZELTI AT OR ABOVE 7900 HOLD AT FIX ZELTI RIGHT TURN INBOUNDCOURSE 083 ALT 7900 LEGDIST 7
+APPROACH RNV24 FIX WETIG AT OR ABOVE 7000 FIX JUREP 6400 RNW 24 TRK 243 UNTIL 4900 TURN RIGHT DIRECT FIX OVERFLY WETIG AT OR ABOVE 9500 HOLD AT FIX WETIG RIGHT TURN INBOUNDCOURSE 243 LEGDIST 7
+ TRANSITION REEPO FIX REEPO
+ TRANSITION SUBKY FIX SUBKY FIX OVERFLY WETIG AT OR ABOVE 7000 HOLD AT FIX WETIG RIGHT TURN INBOUNDCOURSE 243 ALT 7000 LEGDIST 7
+ENDAPPROACHES

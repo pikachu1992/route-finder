@@ -1,0 +1,44 @@
+//K65S (BOUNDARY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARHIY LATLON N 48 42.9135 W 116 18.480334
+FIX CLASS LATLON N 47 51.477167 W 116 8.8475
+FIX HEROX LATLON N 48 33.391834 W 116 24.216
+FIX HITOT LATLON N 48 15.756667 W 116 34.5835
+FIX HITRU LATLON N 48 19.5015 W 116 25.749667
+FIX JATLI LATLON N 48 35.270833 W 116 23.65
+FIX KARPS LATLON N 47 44.446333 W 116 45.165
+FIX ODXEW LATLON N 48 37.242 W 116 22.318834
+FIX WEBDA LATLON N 48 29.779834 W 116 27.345
+FIX ZAKNI LATLON N 48 40.949 W 116 20.826833
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID KARPS2 RNW 20 HDG 202 UNTIL 2840 FIX ZAKNI FIX HEROX FIX HITOT FIX KARPS
+ENDSIDS
+
+APPROACHES
+APPROACH RNV02 FIX WEBDA AT OR ABOVE 5800 FIX JATLI 5200 FIX ODXEW AT OR ABOVE 4540 FIX OVERFLY ARHIY 2516 RNW 02 TRK 008 UNTIL 2740 TURN LEFT DIRECT FIX WEBDA FIX OVERFLY HITRU AT OR ABOVE 8600 HOLD AT FIX HITRU LEFT TURN INBOUNDCOURSE 338 LEGDIST 7
+ TRANSITION CLASS FIX CLASS FIX HITRU AT OR ABOVE 8600
+ TRANSITION KARPS FIX KARPS FIX HITRU AT OR ABOVE 8600
+ENDAPPROACHES

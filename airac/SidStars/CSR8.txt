@@ -1,0 +1,43 @@
+//CSR8 (LA SARRE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALSIS LATLON N 48 42.699334 W 79 13.380833
+FIX AMOVI LATLON N 48 45.391166 W 78 58.833334
+FIX DURAG LATLON N 48 44.049 W 79 6.110333
+FIX EMKUM LATLON N 48 49.824 W 79 8.548
+FIX IKBUG LATLON N 48 59.445167 W 79 12.631333
+FIX SELEP LATLON N 49 6.335333 W 79 7.6705
+FIX SIGSU LATLON N 49 3.642833 W 79 22.319333
+FIX TUDOB LATLON N 49 4.993 W 79 14.998166
+FIX UDLUV LATLON N 49 0.182666 W 79 12.9455
+FIX VESMA LATLON N 48 50.567167 W 79 8.8625
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX TUDOB AT OR ABOVE 2800 FIX UDLUV 2710 RNW 18 FIX OVERFLY VESMA 3100 HOLD AT FIX VESMA RIGHT TURN INBOUNDCOURSE 177 LEGTIME 1
+ TRANSITION SELEP FIX SELEP
+ TRANSITION SIGSU FIX SIGSU
+APPROACH RNV36 FIX DURAG AT OR ABOVE 2800 FIX EMKUM 2700 RNW 36 FIX OVERFLY IKBUG 3100 HOLD AT FIX IKBUG RIGHT TURN INBOUNDCOURSE 357 LEGTIME 1
+ TRANSITION ALSIS FIX ALSIS
+ TRANSITION AMOVI FIX AMOVI
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//K2P7 (ALDERMAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AIR LATLON N 40 1.0215 W 80 49.033667
+FIX MA297 LATLON N 40 3.392333 W 80 57.7215
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VORA01 FIX AIR 3100 FIX MA297 1920 RNW 01 TRK 297 UNTIL 3100 TURN LEFT DIRECT FIX AIR HOLD AT FIX AIR LEFT TURN INBOUNDCOURSE 297 LEGTIME 1
+ TRANSITION AIR HOLD AT FIX AIR LEFT TURN INBOUNDCOURSE 297 ALT 3100 LEGTIME 1
+APPROACH VORA19 FIX AIR 3100 FIX MA297 1920 RNW 19 TRK 297 UNTIL 3100 TURN LEFT DIRECT FIX AIR HOLD AT FIX AIR LEFT TURN INBOUNDCOURSE 297 LEGTIME 1
+ TRANSITION AIR HOLD AT FIX AIR LEFT TURN INBOUNDCOURSE 297 ALT 3100 LEGTIME 1
+ENDAPPROACHES

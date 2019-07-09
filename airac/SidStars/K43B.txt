@@ -1,0 +1,39 @@
+//K43B (DEBLOIS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAANK LATLON N 44 36.581666 W 67 49.699166
+FIX MEEMS LATLON N 44 40.273166 W 67 44.470834
+FIX PAATI LATLON N 44 32.851 W 67 54.966
+FIX SEVIE LATLON N 44 40.346 W 67 54.9245
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+SIDS
+SID DEBLO1 RNW 33 HDG 331 UNTIL 1400 HDG 250 VECTORS
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA33 FIX DAANK AT OR ABOVE 3000 FIX SEVIE 1600 RNW 33 TRK 331 UNTIL 616 TURN RIGHT DIRECT FIX OVERFLY DAANK AT OR ABOVE 3000 HOLD AT FIX DAANK RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4
+ TRANSITION DAANK HOLD AT FIX DAANK RIGHT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4
+ TRANSITION MEEMS FIX MEEMS
+ TRANSITION PAATI FIX PAATI
+ENDAPPROACHES

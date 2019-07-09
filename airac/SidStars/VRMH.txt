@@ -1,0 +1,41 @@
+//VRMH (HANIMAADHOO INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKLUT LATLON N 6 34.376666 E 73 10.481666
+FIX DOSNI LATLON N 6 55.106666 E 73 9.818333
+FIX ISTOV LATLON N 6 38.96 E 73 1.54
+FIX MH403 LATLON N 6 52.815 E 73 14.291666
+FIX MH404 LATLON N 6 49.686667 E 73 12.686666
+FIX MH405 LATLON N 6 36.668333 E 73 6.01
+FIX MH406 LATLON N 6 39.798334 E 73 7.615
+FIX VIREM LATLON N 6 50.521667 E 73 18.765
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX MH405 AT OR ABOVE 1700 FIX MH406 1700 RNW 03 TRK 029 UNTIL 1000 TURN RIGHT DIRECT FIX OVERFLY AKLUT HOLD AT FIX AKLUT RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1
+ TRANSITION AKLUT FIX AKLUT
+ TRANSITION ISTOV FIX ISTOV
+APPROACH RNV21 FIX MH403 AT OR ABOVE 1700 FIX MH404 1700 RNW 21 TRK 209 UNTIL 1000 TURN LEFT DIRECT FIX OVERFLY VIREM HOLD AT FIX VIREM RIGHT TURN INBOUNDCOURSE 299 ALT 3000 LEGTIME 1
+ TRANSITION DOSNI FIX DOSNI
+ TRANSITION VIREM FIX VIREM
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CYWJ (DELINE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALOMO LATLON N 65 11.851834 W 123 15.264167
+FIX ALUKO LATLON N 65 15.517667 W 122 54.778834
+FIX BEPIT LATLON N 65 5.3875 W 122 59.235334
+FIX BESIK LATLON N 65 13.455334 W 123 36.842
+FIX DUKLI LATLON N 65 19.862 W 123 53.246167
+FIX DUPUV LATLON N 65 13.476167 W 123 37.1295
+FIX EBKOR LATLON N 65 10.792834 W 123 1.400666
+FIX EPLEK LATLON N 65 9.704333 W 123 57.3425
+FIX ILADI LATLON N 65 11.8625 W 123 15.404333
+FIX UKPEL LATLON N 65 14.469833 W 123 50.892167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX UKPEL AT OR ABOVE 2100 FIX BESIK 2100 RNW 08 FIX OVERFLY ALOMO 2700 HOLD AT FIX ALOMO RIGHT TURN INBOUNDCOURSE 079 LEGTIME 1
+ TRANSITION DUKLI FIX DUKLI
+ TRANSITION EPLEK FIX EPLEK
+APPROACH RNV26 FIX EBKOR AT OR ABOVE 2100 FIX ILADI 2100 RNW 26 FIX OVERFLY DUPUV 2700 HOLD AT FIX DUPUV LEFT TURN INBOUNDCOURSE 259 LEGTIME 1
+ TRANSITION ALUKO FIX ALUKO
+ TRANSITION BEPIT FIX BEPIT
+ENDAPPROACHES

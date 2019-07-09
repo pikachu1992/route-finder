@@ -1,0 +1,32 @@
+//MUBA (GUSTAVO RIZO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D347I LATLON N 20 29.870167 W 74 33.699667
+FIX FF16 LATLON N 20 28.039 W 74 32.953
+FIX UBANB LATLON N 20 21.437333 W 74 30.264
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB16 FIX FF16 2000 RNW 16 FIX UBANB TRK 167 UNTIL 2300 TURN LEFT DIRECT FIX UBANB AT OR ABOVE 5000 HOLD AT FIX UBANB RIGHT TURN INBOUNDCOURSE 347 LEGTIME 1
+ TRANSITION UBA FIX UBANB AT OR ABOVE 5000 FIX D347I AT OR ABOVE 2000 TRK 032 UNTIL 3.0 FROM FIX D347I
+ENDAPPROACHES

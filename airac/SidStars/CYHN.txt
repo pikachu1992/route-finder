@@ -1,0 +1,44 @@
+//CYHN (HORNEPAYNE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUVOM LATLON N 49 9.167167 W 84 51.7225
+FIX IKNIN LATLON N 49 9.263333 W 84 51.4775
+FIX IRGAP LATLON N 49 10.456 W 85 3.237833
+FIX ITREX LATLON N 49 1.895 W 84 55.391167
+FIX OMTOD LATLON N 49 13.997666 W 84 39.391
+FIX PIGPU LATLON N 49 6.176666 W 84 59.308834
+FIX PIRIP LATLON N 49 16.987 W 84 31.711166
+FIX SEGOR LATLON N 49 12.689833 W 84 27.819
+FIX SUTUX LATLON N 49 21.281833 W 84 35.6145
+FIX URLAV LATLON N 49 10.308833 W 84 48.8165
+FIX VOKOK LATLON N 49 13.922666 W 84 39.583166
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX PIGPU AT OR ABOVE 2700 FIX IKNIN 2500 FIX URLAV AT OR ABOVE 1850 RNW 07 FIX OVERFLY OMTOD 2800 HOLD AT FIX OMTOD RIGHT TURN INBOUNDCOURSE 067 LEGTIME 1
+ TRANSITION IRGAP FIX IRGAP SPEED 210
+ TRANSITION ITREX FIX ITREX SPEED 210
+APPROACH RNV25 FIX PIRIP AT OR ABOVE 2500 FIX VOKOK 2500 RNW 25 FIX OVERFLY DUVOM 2800 HOLD AT FIX DUVOM RIGHT TURN INBOUNDCOURSE 247 LEGTIME 1
+ TRANSITION SEGOR FIX SEGOR SPEED 210
+ TRANSITION SUTUX FIX SUTUX SPEED 210
+ENDAPPROACHES

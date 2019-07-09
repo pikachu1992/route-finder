@@ -1,0 +1,32 @@
+//WITC (CUT NYAK DHIEN NAGAN RAYA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX TC401 LATLON N 3 54.686666 E 96 22.273
+FIX TC402 LATLON N 3 58.3365 E 96 18.8395
+FIX ZUBER LATLON N 3 52.4965 E 96 24.332666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX TC401 AT OR ABOVE 2700 FIX TC402 1600 RNW 32 TRK 319 UNTIL 1000 TURN LEFT DIRECT FIX ZUBER 3500 HOLD AT FIX ZUBER LEFT TURN INBOUNDCOURSE 318 ALT 3500 LEGTIME 1
+ TRANSITION ZUBER FIX ZUBER AT OR ABOVE 3500
+ENDAPPROACHES

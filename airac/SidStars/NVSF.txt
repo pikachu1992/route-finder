@@ -1,0 +1,32 @@
+//NVSF (CRAIG COVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MERUM LATLON S 16 7.5895 E 167 50.4545
+FIX SF912 LATLON S 16 14.7595 E 167 53.828666
+FIX SF934 LATLON S 16 11.106833 E 167 52.109333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX MERUM AT OR ABOVE 3000 FIX SF934 1800 FIX OVERFLY SF912 578 RNW 11 TURN RIGHT DIRECT FIX MERUM 3000
+ TRANSITION MERUM HOLD AT FIX MERUM RIGHT TURN INBOUNDCOURSE 144 ALT 3000 LEGTIME 1
+ENDAPPROACHES

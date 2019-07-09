@@ -1,0 +1,37 @@
+//KSXK (SIOUX CO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HADKU LATLON N 43 5.385 W 96 10.500833
+FIX HALGA LATLON N 43 13.349833 W 96 11.548333
+FIX HAMUP LATLON N 43 1.9485 W 96 10.050334
+FIX SIPEE LATLON N 42 52.914167 W 96 8.869834
+FIX SKYLE LATLON N 42 45.944 W 96 7.963166
+FIX SNARK LATLON N 42 56.663333 W 96 9.359
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX HALGA AT OR ABOVE 4500 FIX HADKU 3300 FIX HAMUP AT OR ABOVE 2200 RNW 17 TRK 173 UNTIL 1609 FIX OVERFLY SKYLE AT OR ABOVE 4500 HOLD AT FIX SKYLE RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5
+ TRANSITION HALGA HOLD AT FIX HALGA RIGHT TURN INBOUNDCOURSE 172 ALT 4500 LEGDIST 5
+APPROACH RNV35 FIX SKYLE AT OR ABOVE 4500 FIX SIPEE 3300 FIX SNARK AT OR ABOVE 2100 RNW 35 TRK 353 UNTIL 1609 FIX OVERFLY HALGA AT OR ABOVE 4500 HOLD AT FIX HALGA RIGHT TURN INBOUNDCOURSE 172 LEGDIST 5
+ TRANSITION SKYLE HOLD AT FIX SKYLE RIGHT TURN INBOUNDCOURSE 353 ALT 4500 LEGDIST 5
+ENDAPPROACHES

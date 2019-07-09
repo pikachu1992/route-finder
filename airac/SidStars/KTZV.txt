@@ -1,0 +1,43 @@
+//KTZV (TOMPKINSVILLE-MONROE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AHUCA LATLON N 36 39.452 W 85 42.7965
+FIX CAVAS LATLON N 36 53.373 W 85 30.910166
+FIX CENUD LATLON N 36 56.407166 W 85 23.548667
+FIX DOHEP LATLON N 36 47.99 W 85 35.517667
+FIX GARVY LATLON N 36 38.943833 W 86 15.329666
+FIX HARME LATLON N 36 19.757167 W 86 2.550667
+FIX LVT LATLON N 36 35.0705 W 85 9.997333
+FIX UCASO LATLON N 36 32.927333 W 85 48.344167
+FIX UNTOW LATLON N 36 41.985334 W 85 40.64
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX UCASO AT OR ABOVE 4000 FIX AHUCA 2600 FIX UNTOW AT OR ABOVE 1640 RNW 04 TRK 038 UNTIL 1436 FIX OVERFLY CAVAS AT OR ABOVE 4000 HOLD AT FIX CAVAS RIGHT TURN INBOUNDCOURSE 219 LEGDIST 4
+ TRANSITION GARVY FIX GARVY
+ TRANSITION HARME FIX HARME
+ TRANSITION LVT FIX LVT FIX OVERFLY UCASO AT OR ABOVE 4000 HOLD AT FIX UCASO RIGHT TURN INBOUNDCOURSE 038 ALT 4000 LEGDIST 4
+APPROACH RNV22 FIX CAVAS AT OR ABOVE 4000 FIX DOHEP 2600 RNW 22 TRK 218 UNTIL 1385 FIX OVERFLY UCASO AT OR ABOVE 4000 HOLD AT FIX UCASO RIGHT TURN INBOUNDCOURSE 038 LEGDIST 4
+ TRANSITION CAVAS HOLD AT FIX CAVAS RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGDIST 4
+ TRANSITION CENUD FIX CENUD
+ENDAPPROACHES

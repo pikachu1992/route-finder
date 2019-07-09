@@ -1,0 +1,33 @@
+//WAVV (WAMENA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BALIM LATLON S 3 51.258334 E 138 42.69
+FIX POINX LATLON S 3 58.333333 E 138 53.5
+FIX PYRAM LATLON S 3 54.2 E 138 45.77
+FIX VV401 LATLON S 4 2.736667 E 138 55.543333
+FIX VV402 LATLON S 3 57.88 E 138 48.925
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX POINX 8500 FIX OVERFLY VV401 6606 RNW 15 TURN RIGHT DIRECT FIX VV402 SPEED 130 FIX PYRAM AT OR ABOVE 12000 FIX BALIM AT OR ABOVE 13000 HOLD AT FIX BALIM LEFT TURN INBOUNDCOURSE 120 ALT 13000 LEGTIME 1
+ENDAPPROACHES

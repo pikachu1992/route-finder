@@ -1,0 +1,44 @@
+//KI95 (HARDIN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EVAJI LATLON N 40 40.624166 W 83 34.277333
+FIX EYABU LATLON N 40 34.760833 W 83 40.662334
+FIX GUNNE LATLON N 40 21.825833 W 83 13.972
+FIX IREJU LATLON N 40 30.3085 W 83 55.2495
+FIX LAWTO LATLON N 40 46.3335 W 83 29.169
+FIX ROD LATLON N 40 17.268 W 84 2.585833
+FIX UZAZA LATLON N 40 32.644333 W 83 42.961333
+FIX WOKOP LATLON N 40 38.45 W 83 36.647666
+FIX YEDUK LATLON N 40 27.938333 W 83 48.0615
+FIX ZITMU LATLON N 40 24.749167 W 83 43.015667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX YEDUK AT OR ABOVE 3000 FIX UZAZA 2600 FIX EYABU AT OR ABOVE 1700 RNW 04 TRK 046 UNTIL 1429 FIX EVAJI FIX OVERFLY LAWTO AT OR ABOVE 3000 HOLD AT FIX LAWTO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4
+ TRANSITION GUNNE FIX GUNNE FIX ZITMU AT OR ABOVE 3000
+ TRANSITION IREJU FIX IREJU
+ TRANSITION ROD FIX ROD
+ TRANSITION YEDUK HOLD AT FIX YEDUK RIGHT TURN INBOUNDCOURSE 046 ALT 3000 LEGDIST 4
+APPROACH RNV22 FIX LAWTO AT OR ABOVE 3000 FIX EVAJI 2600 FIX WOKOP AT OR ABOVE 1680 RNW 22 TRK 226 UNTIL 1429 FIX OVERFLY YEDUK AT OR ABOVE 3000 HOLD AT FIX YEDUK RIGHT TURN INBOUNDCOURSE 046 LEGDIST 4
+ TRANSITION LAWTO HOLD AT FIX LAWTO RIGHT TURN INBOUNDCOURSE 220 ALT 3000 LEGDIST 4
+ENDAPPROACHES

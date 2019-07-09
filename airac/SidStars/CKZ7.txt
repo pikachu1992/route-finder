@@ -1,0 +1,46 @@
+//CKZ7 (WINKLER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVIBU LATLON N 49 10.216667 W 98 5.528333
+FIX DUSIM LATLON N 49 15.2315 W 97 37.798834
+FIX EMANA LATLON N 49 5.239834 W 97 37.829167
+FIX ENAPO LATLON N 49 10.241666 W 97 46.957
+FIX IMAPI LATLON N 49 15.188 W 98 13.072
+FIX IPSEK LATLON N 49 10.2305 W 97 59.350333
+FIX KAXEV LATLON N 49 10.235666 W 97 37.814
+FIX OMVOK LATLON N 49 10.192333 W 98 13.028167
+FIX SEKIR LATLON N 49 10.220833 W 98 3.885334
+FIX TIKEX LATLON N 49 5.196667 W 98 12.984334
+FIX UDKUB LATLON N 49 10.241333 W 97 44.874
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 17
+RNW 27
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX OMVOK AT OR ABOVE 3400 FIX SEKIR 2700 FIX IPSEK AT OR ABOVE 1730 RNW 09 FIX OVERFLY UDKUB 2500 SPEED 230 HOLD AT FIX UDKUB RIGHT TURN INBOUNDCOURSE 086 SPEED 200 LEGTIME 1
+ TRANSITION IMAPI FIX IMAPI
+ TRANSITION TIKEX FIX TIKEX
+APPROACH RNV27 FIX KAXEV AT OR ABOVE 3400 FIX ENAPO 2600 RNW 27 FIX OVERFLY AVIBU 2800 SPEED 230 HOLD AT FIX AVIBU RIGHT TURN INBOUNDCOURSE 266 SPEED 200 LEGTIME 1
+ TRANSITION DUSIM FIX DUSIM
+ TRANSITION EMANA FIX EMANA
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//KMNF (MOUNTAIN VIEW)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUNIM LATLON N 37 0.1235 W 91 47.1305
+FIX JETOB LATLON N 36 58.687166 W 91 36.127667
+FIX LEPER LATLON N 37 5.633 W 90 30.2685
+FIX MAP LATLON N 37 35.446 W 91 47.314166
+FIX TIYUR LATLON N 36 57.7125 W 91 28.7395
+FIX WEPSA LATLON N 36 59.036167 W 91 38.788166
+FIX YIGPU LATLON N 37 0.4185 W 91 49.409167
+FIX ZOLAK LATLON N 37 1.3715 W 91 56.810666
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX ZOLAK AT OR ABOVE 3700 FIX YIGPU 2800 FIX CUNIM AT OR ABOVE 2200 RNW 10 TRK 099 UNTIL 1582 FIX OVERFLY TIYUR AT OR ABOVE 3700 HOLD AT FIX TIYUR RIGHT TURN INBOUNDCOURSE 279 LEGDIST 4
+ TRANSITION ZOLAK HOLD AT FIX ZOLAK RIGHT TURN INBOUNDCOURSE 099 ALT 3700 LEGDIST 4
+APPROACH RNV28 FIX TIYUR AT OR ABOVE 3700 FIX JETOB 2800 FIX WEPSA AT OR ABOVE 2100 RNW 28 TRK 279 UNTIL 1560 FIX OVERFLY ZOLAK AT OR ABOVE 3700 HOLD AT FIX ZOLAK RIGHT TURN INBOUNDCOURSE 099 LEGDIST 4
+ TRANSITION LEPER FIX LEPER FIX OVERFLY TIYUR AT OR ABOVE 3700 HOLD AT FIX TIYUR RIGHT TURN INBOUNDCOURSE 279 ALT 3700 LEGDIST 4
+ TRANSITION MAP FIX MAP FIX OVERFLY TIYUR AT OR ABOVE 3700 HOLD AT FIX TIYUR RIGHT TURN INBOUNDCOURSE 279 ALT 3700 LEGDIST 4
+ENDAPPROACHES

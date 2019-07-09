@@ -1,0 +1,45 @@
+//CJE3 (WEYBURN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALNAM LATLON N 49 30.102833 W 103 40.871167
+FIX BIPTA LATLON N 49 34.151333 W 103 35.162
+FIX DEDRU LATLON N 49 37.337666 W 103 40.503
+FIX EBKER LATLON N 49 38.195 W 103 29.437333
+FIX KATOP LATLON N 49 53.5675 W 103 55.3465
+FIX NOXAR LATLON N 49 45.433166 W 104 6.7685
+FIX PEVSO LATLON N 49 49.502666 W 104 1.0655
+FIX RABIG LATLON N 49 38.204 W 103 41.958334
+FIX SEPKU LATLON N 49 45.468833 W 103 54.2165
+FIX UDLEK LATLON N 49 46.328666 W 103 55.674
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 12
+RNW 24
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX PEVSO AT OR ABOVE 3600 SPEED 180 FIX SEPKU 3600 RNW 12 FIX OVERFLY DEDRU 3800 HOLD AT FIX DEDRU RIGHT TURN INBOUNDCOURSE 124 ALT 3800 SPEED 250 LEGTIME 1
+ TRANSITION KATOP FIX KATOP SPEED 200
+ TRANSITION NOXAR FIX NOXAR SPEED 200
+APPROACH RNV30 FIX BIPTA AT OR ABOVE 3600 SPEED 180 FIX RABIG 3600 RNW 30 FIX OVERFLY UDLEK 3800 HOLD AT FIX UDLEK RIGHT TURN INBOUNDCOURSE 304 ALT 3800 SPEED 250 LEGTIME 1
+ TRANSITION ALNAM FIX ALNAM SPEED 200
+ TRANSITION EBKER FIX EBKER SPEED 200
+ENDAPPROACHES

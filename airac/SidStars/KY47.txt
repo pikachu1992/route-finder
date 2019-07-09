@@ -1,0 +1,36 @@
+//KY47 (OAKLAND SOUTHWEST)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MAJUW LATLON N 42 30.087833 W 83 37.384667
+FIX PI001 LATLON N 42 21.108123 W 83 34.568802
+FIX PI002 LATLON N 42 17.460829 W 83 37.649158
+FIX PI003 LATLON N 42 14.77413 W 83 32.595369
+FIX SVM LATLON N 42 24.5185 W 83 35.634167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VORA08 FIX SVM 2700 FIX MAJUW 1520 RNW 08 TRK 350 UNTIL 1520 TURN RIGHT DIRECT FIX SVM AT OR ABOVE 3000 HOLD AT FIX SVM RIGHT TURN INBOUNDCOURSE 350 LEGTIME 1
+ TRANSITION SVM FIX PI001 AT OR ABOVE 2700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2700 SPEED 210 FIX PI003 AT OR ABOVE 2700 SPEED 210
+APPROACH VORA26 FIX SVM 2700 FIX MAJUW 1520 RNW 26 TRK 350 UNTIL 1520 TURN RIGHT DIRECT FIX SVM AT OR ABOVE 3000 HOLD AT FIX SVM RIGHT TURN INBOUNDCOURSE 350 LEGTIME 1
+ TRANSITION SVM FIX PI001 AT OR ABOVE 2700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2700 SPEED 210 FIX PI003 AT OR ABOVE 2700 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//KISQ (SCHOOLCRAFT CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUCER LATLON N 45 58.4535 W 85 52.262333
+FIX EDLUC LATLON N 45 58.483667 W 86 2.149834
+FIX HALKI LATLON N 45 58.495333 W 86 28.3995
+FIX NEKIY LATLON N 45 58.493 W 86 6.887333
+FIX WUXUL LATLON N 45 58.501166 W 86 13.946333
+FIX ZIRET LATLON N 45 58.502666 W 86 18.5025
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX HALKI AT OR ABOVE 2600 FIX ZIRET 2400 FIX WUXUL AT OR ABOVE 1380 RNW 10 TRK 095 UNTIL 1060 FIX OVERFLY DUCER AT OR ABOVE 2600 HOLD AT FIX DUCER RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION HALKI HOLD AT FIX HALKI RIGHT TURN INBOUNDCOURSE 095 ALT 2600 LEGDIST 4
+APPROACH RNV28 FIX DUCER AT OR ABOVE 2600 FIX EDLUC 2400 FIX NEKIY AT OR ABOVE 1340 RNW 28 TRK 275 UNTIL 1020 FIX OVERFLY HALKI AT OR ABOVE 2600 HOLD AT FIX HALKI RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION DUCER HOLD AT FIX DUCER RIGHT TURN INBOUNDCOURSE 275 ALT 2600 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KJYG (ST JAMES MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMILY LATLON N 44 8.054 W 94 40.813166
+FIX CADAK LATLON N 44 1.612333 W 94 35.483833
+FIX CADLO LATLON N 43 56.491834 W 94 31.263334
+FIX JATTY LATLON N 43 54.593666 W 94 29.702167
+FIX KUBYE LATLON N 44 3.778 W 94 37.273
+FIX PUGJU LATLON N 43 50.301 W 94 26.178833
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX AMILY AT OR ABOVE 3200 FIX KUBYE 2700 FIX CADAK AT OR ABOVE 1880 RNW 15 TRK 148 UNTIL 1317 FIX OVERFLY PUGJU AT OR ABOVE 3200 HOLD AT FIX PUGJU RIGHT TURN INBOUNDCOURSE 328 LEGDIST 4
+ TRANSITION AMILY HOLD AT FIX AMILY RIGHT TURN INBOUNDCOURSE 148 ALT 3200 LEGDIST 4
+APPROACH RNV33 FIX PUGJU AT OR ABOVE 3200 FIX JATTY 2700 FIX CADLO AT OR ABOVE 1980 RNW 33 TRK 328 UNTIL 1343 FIX OVERFLY AMILY AT OR ABOVE 3200 HOLD AT FIX AMILY RIGHT TURN INBOUNDCOURSE 148 LEGDIST 4
+ TRANSITION PUGJU HOLD AT FIX PUGJU RIGHT TURN INBOUNDCOURSE 328 ALT 3200 LEGDIST 4
+ENDAPPROACHES

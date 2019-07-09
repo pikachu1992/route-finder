@@ -1,0 +1,41 @@
+//CDV2 (DOWNS GULCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUTUB LATLON N 47 41.414 W 67 29.058167
+FIX ELIXO LATLON N 47 48.8565 W 67 22.196666
+FIX EMDEB LATLON N 47 49.104833 W 67 21.967
+FIX EMGIV LATLON N 47 31.834166 W 67 30.473333
+FIX ESTUR LATLON N 47 56.587834 W 67 23.791667
+FIX IKDOS LATLON N 47 51.296 W 67 11.184667
+FIX ILOSI LATLON N 47 36.3175 W 67 33.734333
+FIX OVBAV LATLON N 47 53.944834 W 67 17.482834
+FIX XIBAB LATLON N 47 41.247833 W 67 29.210833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ILOSI AT OR ABOVE 2300 FIX DUTUB 2210 RNW 05 FIX OVERFLY EMDEB 3600 HOLD AT FIX EMDEB RIGHT TURN INBOUNDCOURSE 050 SPEED 200 LEGTIME 1
+ TRANSITION EMGIV FIX EMGIV SPEED 200
+APPROACH RNV23 FIX OVBAV AT OR ABOVE 3100 SPEED 180 FIX ELIXO 2210 RNW 23 FIX OVERFLY XIBAB 3600 HOLD AT FIX XIBAB RIGHT TURN INBOUNDCOURSE 230 SPEED 200 LEGTIME 1
+ TRANSITION ESTUR FIX ESTUR SPEED 200
+ TRANSITION IKDOS FIX IKDOS SPEED 200
+ENDAPPROACHES

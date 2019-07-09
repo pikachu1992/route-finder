@@ -1,0 +1,37 @@
+//KAIV (DOWNER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIKOB LATLON N 33 12.299167 W 87 58.813
+FIX FEPON LATLON N 33 7.932 W 88 8.465
+FIX JOGAM LATLON N 33 3.5205 W 88 18.170666
+FIX UDLEQ LATLON N 33 4.971 W 88 14.984666
+FIX ZESLO LATLON N 33 0.487166 W 88 24.818833
+FIX ZOLUG LATLON N 33 9.272666 W 88 5.5065
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX ZESLO AT OR ABOVE 3000 FIX JOGAM 2000 FIX UDLEQ AT OR ABOVE 1020 RNW 06 TRK 064 UNTIL 550 FIX OVERFLY CIKOB AT OR ABOVE 3000 HOLD AT FIX CIKOB RIGHT TURN INBOUNDCOURSE 244 LEGDIST 4
+ TRANSITION ZESLO HOLD AT FIX ZESLO RIGHT TURN INBOUNDCOURSE 064 ALT 3000 LEGDIST 4
+APPROACH RNV24 FIX CIKOB AT OR ABOVE 3000 FIX ZOLUG 2000 FIX FEPON AT OR ABOVE 1100 RNW 24 TRK 244 UNTIL 550 FIX OVERFLY ZESLO AT OR ABOVE 3000 HOLD AT FIX ZESLO RIGHT TURN INBOUNDCOURSE 064 LEGDIST 4
+ TRANSITION CIKOB HOLD AT FIX CIKOB RIGHT TURN INBOUNDCOURSE 244 ALT 3000 LEGDIST 4
+ENDAPPROACHES

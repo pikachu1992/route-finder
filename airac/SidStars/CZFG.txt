@@ -1,0 +1,44 @@
+//CZFG (PUKATAWAGAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALRAG LATLON N 55 53.389166 W 101 21.3345
+FIX BIGFA LATLON N 55 55.067 W 101 12.968833
+FIX EBLEB LATLON N 55 36.450667 W 101 10.6225
+FIX ENEMO LATLON N 55 40.477333 W 101 13.154
+FIX IKMIM LATLON N 55 41.1525 W 101 13.579333
+FIX KOBOS LATLON N 55 34.7755 W 101 18.923666
+FIX ONBAR LATLON N 55 48.690667 W 101 18.3465
+FIX USBUN LATLON N 55 38.1165 W 101 2.3095
+FIX VIBVI LATLON N 55 51.702 W 101 29.688167
+FIX VOKUD LATLON N 55 49.414 W 101 18.805667
+FIX XORPU LATLON N 55 47.058167 W 101 17.311333
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX ALRAG AT OR ABOVE 2400 FIX ONBAR 2200 FIX XORPU AT OR ABOVE 1650 RNW 15 FIX OVERFLY ENEMO 2400 HOLD AT FIX ENEMO RIGHT TURN INBOUNDCOURSE 154 LEGTIME 1
+ TRANSITION BIGFA FIX BIGFA SPEED 210
+ TRANSITION VIBVI FIX VIBVI SPEED 210
+APPROACH RNV33 FIX EBLEB AT OR ABOVE 2400 FIX IKMIM 2200 RNW 33 FIX OVERFLY VOKUD 2400 HOLD AT FIX VOKUD RIGHT TURN INBOUNDCOURSE 334 LEGTIME 1
+ TRANSITION KOBOS FIX KOBOS SPEED 210
+ TRANSITION USBUN FIX USBUN SPEED 210
+ENDAPPROACHES

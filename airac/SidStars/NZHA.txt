@@ -1,0 +1,41 @@
+//NZHA (HAWERA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HA522 LATLON S 39 32.879666 E 174 6.748667
+FIX HA893 LATLON S 39 30.623167 E 174 14.8615
+FIX HA906 LATLON S 39 38.184833 E 174 18.382
+FIX NUKTO LATLON S 39 41.212 E 174 26.680667
+FIX UPVOK LATLON S 39 44.602 E 174 14.487833
+FIX WAPOU LATLON S 39 42.909667 E 174 20.586667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 07
+RNW 14
+RNW 20
+RNW 25
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX WAPOU AT OR ABOVE 2500 FIX HA906 2010 RNW 32 FIX OVERFLY HA893 FIX HA522 SPEED 130 FIX UPVOK 3000
+ TRANSITION NUKTO FIX NUKTO
+ TRANSITION UPVOK FIX UPVOK
+ TRANSITION WAPOU HOLD AT FIX WAPOU RIGHT TURN INBOUNDCOURSE 319 ALT 2500 LEGTIME 1
+ENDAPPROACHES

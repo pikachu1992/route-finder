@@ -1,0 +1,51 @@
+//K2W5 (MARYLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BBONE LATLON N 38 37.502 W 78 49.430167
+FIX BYULA LATLON N 38 33.9195 W 77 4.544666
+FIX ESL LATLON N 39 13.5295 W 78 59.37
+FIX GILBT LATLON N 38 30.490667 W 77 4.8995
+FIX GILFF LATLON N 38 21.747667 W 77 26.089667
+FIX HIGPO LATLON N 38 22.268167 W 77 22.332833
+FIX JAAAK LATLON N 38 27.305833 W 77 6.758167
+FIX K2W5 LATLON N 38 35.823 W 77 4.3475
+FIX LLBEE LATLON N 38 35.120833 W 78 25.590667
+FIX LURAY LATLON N 38 35.915666 W 78 34.003834
+FIX SABBI LATLON N 38 22.913167 W 77 8.2525
+FIX SEALZ LATLON N 38 25.392667 W 79 17.436
+FIX TIKEE LATLON N 38 37.106167 W 78 14.927833
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+STARS
+STAR TIKEE3 FIX TIKEE FIX GILFF FIX OVERFLY HIGPO HDG 090 VECTORS
+ TRANSITION BBONE FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION ESL FIX ESL 19000 FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION SEALZ FIX SEALZ FIX LLBEE 9000
+  RNW 02 RNW 20
+ENDSTARS
+
+APPROACHES
+APPROACH RNV02 FIX JAAAK AT OR ABOVE 2000 FIX GILBT 1800 FIX BYULA AT OR ABOVE 700 RNW 02 TRK 014 UNTIL 575 TURN RIGHT DIRECT FIX OVERFLY JAAAK AT OR ABOVE 2000 HOLD AT FIX JAAAK LEFT TURN INBOUNDCOURSE 034 LEGDIST 4
+ TRANSITION JAAAK HOLD AT FIX JAAAK LEFT TURN INBOUNDCOURSE 034 ALT 2000 LEGDIST 4
+ TRANSITION SABBI FIX SABBI
+ENDAPPROACHES

@@ -1,0 +1,42 @@
+//NZSP (JACK F. PAULUS SKIWAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MINKE LATLON S 89 49.722334 W 152 9.2665
+FIX P3 LATLON S 88 20 E 166 50
+FIX P6 LATLON S 88 20 W 179 0
+FIX WIKTA LATLON S 89 44.03 W 156 20.66
+FIX WUDBO LATLON S 89 57.455 W 152 9.2665
+FIX ZADMO LATLON S 89 53.065 W 152 9.2665
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+STARS
+STAR WIKTA1 FIX WIKTA AT OR ABOVE 13000
+ TRANSITION P3 FIX P3 AT OR ABOVE 24500
+ TRANSITION P6 FIX P6 AT OR ABOVE 24500
+  RNW 02 RNW 20
+ENDSTARS
+
+APPROACHES
+APPROACH RNV02 FIX MINKE AT OR ABOVE 11700 FIX ZADMO 10900 FIX OVERFLY WUDBO 9495 RNW 02 TRK 002 UNTIL 9800 TURN LEFT DIRECT FIX OVERFLY WIKTA AT OR ABOVE 13000 HOLD AT FIX WIKTA RIGHT TURN INBOUNDCOURSE 002 ALT 15000 SPEED 230 LEGDIST 4
+ TRANSITION WIKTA FIX WIKTA AT OR ABOVE 13000
+ENDAPPROACHES

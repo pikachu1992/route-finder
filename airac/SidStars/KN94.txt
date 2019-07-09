@@ -1,0 +1,38 @@
+//KN94 (CARLISLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BADDI LATLON N 40 9.437666 W 77 25.130167
+FIX BRBER LATLON N 40 11.164667 W 76 55.514833
+FIX HUBDO LATLON N 40 10.3815 W 77 17.9175
+FIX SCLNK LATLON N 40 11.265 W 77 10.026167
+FIX WRSKI LATLON N 40 11.2935 W 77 2.896667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA10 FIX BADDI AT OR ABOVE 4000 FIX HUBDO 2300 RNW 10 TRK 090 UNTIL 910 TURN LEFT DIRECT FIX OVERFLY BADDI AT OR ABOVE 4000 HOLD AT FIX BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION BADDI HOLD AT FIX BADDI RIGHT TURN INBOUNDCOURSE 090 ALT 4000 LEGDIST 4
+APPROACH RNVB10 FIX BRBER AT OR ABOVE 4000 FIX WRSKI 2300 FIX OVERFLY SCLNK 559 RNW 10 TRK 280 UNTIL 910 FIX OVERFLY BADDI AT OR ABOVE 4000 HOLD AT FIX BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION BRBER HOLD AT FIX BRBER RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4
+APPROACH RNVB28 FIX BRBER AT OR ABOVE 4000 FIX WRSKI 2300 FIX OVERFLY SCLNK 559 RNW 28 TRK 280 UNTIL 910 FIX OVERFLY BADDI AT OR ABOVE 4000 HOLD AT FIX BADDI RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION BRBER HOLD AT FIX BRBER RIGHT TURN INBOUNDCOURSE 281 ALT 4000 LEGDIST 4
+ENDAPPROACHES

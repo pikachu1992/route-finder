@@ -1,0 +1,43 @@
+//CDA4 (POKEMOUCHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANTIB LATLON N 47 35.6485 W 64 41.160833
+FIX APKAX LATLON N 47 45.456833 W 65 6.622333
+FIX DUTED LATLON N 47 41.743166 W 64 46.149833
+FIX DUTNI LATLON N 47 44.218 W 64 59.745833
+FIX TIBEP LATLON N 47 50.281333 W 65 4.690667
+FIX TOBBR LATLON N 47 41.785 W 64 46.378
+FIX UDLAP LATLON N 47 40.631666 W 65 8.548166
+FIX VODUD LATLON N 47 45.297833 W 64 37.307333
+FIX VOGIP LATLON N 47 44.166334 W 64 59.464667
+FIX XUGET LATLON N 47 40.4735 W 64 39.237
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX APKAX AT OR ABOVE 1600 FIX VOGIP 1500 RNW 13 FIX OVERFLY DUTED 2200 HOLD AT FIX DUTED RIGHT TURN INBOUNDCOURSE 124 SPEED 250 LEGTIME 1
+ TRANSITION TIBEP FIX TIBEP
+ TRANSITION UDLAP FIX UDLAP
+APPROACH RNV31 FIX XUGET AT OR ABOVE 1600 FIX TOBBR 1500 RNW 31 FIX OVERFLY DUTNI 2100 HOLD AT FIX DUTNI RIGHT TURN INBOUNDCOURSE 304 LEGTIME 1
+ TRANSITION ANTIB FIX ANTIB
+ TRANSITION VODUD FIX VODUD
+ENDAPPROACHES

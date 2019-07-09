@@ -1,0 +1,36 @@
+//K4X4 (WESSINGTON SPRINGS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IHGEJ LATLON N 44 5.9435 W 98 35.485
+FIX UYEVE LATLON N 44 7.238167 W 98 37.5515
+FIX YUBUV LATLON N 44 11.202334 W 98 43.894
+FIX ZAMIB LATLON N 44 0.152666 W 98 26.273666
+FIX ZIGRU LATLON N 43 56.202667 W 98 20.019334
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX YUBUV AT OR ABOVE 4000 FIX UYEVE 3200 FIX IHGEJ AT OR ABOVE 2580 RNW 12 TRK 127 UNTIL 1945 FIX OVERFLY ZIGRU AT OR ABOVE 4000 HOLD AT FIX ZIGRU RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4
+ TRANSITION YUBUV HOLD AT FIX YUBUV RIGHT TURN INBOUNDCOURSE 127 ALT 4000 LEGDIST 4
+APPROACH RNV30 FIX ZIGRU AT OR ABOVE 4000 FIX ZAMIB 3200 RNW 30 TRK 307 UNTIL 1880 FIX OVERFLY YUBUV AT OR ABOVE 4000 HOLD AT FIX YUBUV RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4
+ TRANSITION ZIGRU HOLD AT FIX ZIGRU RIGHT TURN INBOUNDCOURSE 307 ALT 4000 LEGDIST 4
+ENDAPPROACHES

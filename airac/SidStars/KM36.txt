@@ -1,0 +1,36 @@
+//KM36 (FEDERER MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ICXAV LATLON N 35 0.818833 W 90 59.104834
+FIX LEYXO LATLON N 35 3.0045 W 91 4.583
+FIX OMILE LATLON N 34 58.093667 W 91 7.480166
+FIX OZLUR LATLON N 34 43.5025 W 91 16.0505
+FIX YOKOJ LATLON N 35 5.190833 W 91 10.063166
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV20 FIX LEYXO AT OR ABOVE 2800 FIX OMILE 2000 RNW 20 TRK 204 UNTIL 595 FIX OVERFLY OZLUR AT OR ABOVE 2800 HOLD AT FIX OZLUR RIGHT TURN INBOUNDCOURSE 024 LEGDIST 4
+ TRANSITION ICXAV FIX ICXAV
+ TRANSITION LEYXO HOLD AT FIX LEYXO RIGHT TURN INBOUNDCOURSE 204 ALT 2800 LEGDIST 4
+ TRANSITION YOKOJ FIX YOKOJ
+ENDAPPROACHES

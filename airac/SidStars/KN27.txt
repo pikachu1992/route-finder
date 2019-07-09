@@ -1,0 +1,43 @@
+//KN27 (BRADFORD CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DIPGE LATLON N 41 51.619166 W 76 21.181166
+FIX DOMVY LATLON N 41 52.282 W 76 13.766
+FIX FQM LATLON N 41 20.3135 W 76 46.492
+FIX JUNYA LATLON N 41 49.178333 W 76 22.337833
+FIX LACIE LATLON N 41 33.249167 W 76 8.406334
+FIX OKZUS LATLON N 41 54.059666 W 76 20.023166
+FIX TIVUC LATLON N 41 55.8315 W 76 26.286167
+FIX WITAD LATLON N 41 48.205834 W 76 23.261833
+FIX YULUS LATLON N 41 35.094 W 76 35.513333
+FIX ZEGUK LATLON N 41 37.592333 W 76 33.186833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA05 FIX YULUS AT OR ABOVE 3800 FIX ZEGUK 3300 RNW 05 TRK 047 UNTIL 1130 FIX WITAD FIX OVERFLY OKZUS AT OR ABOVE 3500 HOLD AT FIX OKZUS RIGHT TURN INBOUNDCOURSE 212 LEGDIST 4
+ TRANSITION FQM FIX FQM
+APPROACH RNV23 FIX OKZUS AT OR ABOVE 3500 FIX DIPGE AT OR ABOVE 2700 FIX JUNYA 2500 RNW 23 TRK 227 UNTIL 1800 TURN RIGHT DIRECT FIX OVERFLY OKZUS AT OR ABOVE 3500 HOLD AT FIX OKZUS RIGHT TURN INBOUNDCOURSE 212 LEGDIST 4
+ TRANSITION LACIE FIX LACIE FIX DOMVY AT OR ABOVE 4000
+ TRANSITION OKZUS HOLD AT FIX OKZUS RIGHT TURN INBOUNDCOURSE 212 ALT 3500 LEGDIST 4
+ TRANSITION TIVUC FIX TIVUC
+ENDAPPROACHES

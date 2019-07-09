@@ -1,0 +1,41 @@
+//KHEI (HETTINGER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DREST LATLON N 46 4.699333 W 102 44.628334
+FIX EVICT LATLON N 46 10.402 W 102 52.692667
+FIX HAYNI LATLON N 46 8.576167 W 102 50.109833
+FIX IBOXE LATLON N 45 52.8465 W 102 27.994166
+FIX JELRO LATLON N 45 48.7305 W 102 51.782666
+FIX KAKUH LATLON N 45 57.1655 W 102 34.037333
+FIX SISAE LATLON N 46 2.785834 W 102 41.9315
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 17
+RNW 30
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX EVICT AT OR ABOVE 5000 FIX DREST 4300 FIX SISAE AT OR ABOVE 3440 RNW 12 TRK 128 UNTIL 3200 TURN RIGHT DIRECT FIX OVERFLY JELRO AT OR ABOVE 9000 HOLD AT FIX JELRO RIGHT TURN INBOUNDCOURSE 175 LEGDIST 7
+ TRANSITION EVICT HOLD AT FIX EVICT RIGHT TURN INBOUNDCOURSE 127 ALT 5000 LEGDIST 5
+APPROACH RNV30 FIX IBOXE AT OR ABOVE 5000 FIX KAKUH 4300 RNW 30 TRK 308 UNTIL 2956 FIX OVERFLY HAYNI AT OR ABOVE 6000 HOLD AT FIX HAYNI LEFT TURN INBOUNDCOURSE 175 LEGDIST 6
+ TRANSITION HAYNI FIX HAYNI FIX OVERFLY IBOXE AT OR ABOVE 5000 HOLD AT FIX IBOXE RIGHT TURN INBOUNDCOURSE 308 ALT 5000 LEGDIST 5
+ TRANSITION JELRO FIX JELRO FIX OVERFLY IBOXE AT OR ABOVE 5000 HOLD AT FIX IBOXE RIGHT TURN INBOUNDCOURSE 308 ALT 5000 LEGDIST 5
+ENDAPPROACHES

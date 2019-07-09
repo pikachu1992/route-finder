@@ -1,0 +1,38 @@
+//VCCT (CHINA BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHBNB LATLON N 8 32 E 81 11
+FIX CN24 LATLON N 8 36.104833 E 81 16.474166
+FIX D246C LATLON N 8 30.484667 E 81 7.8795
+FIX FN06 LATLON N 8 29.559334 E 81 5.974667
+FIX FN24 LATLON N 8 34.533167 E 81 14.377834
+FIX MN06 LATLON N 8 30.220166 E 81 7.335167
+FIX MN24 LATLON N 8 33.565834 E 81 13.087834
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH NDB06 FIX FN06 1200 FIX MN06 1174 RNW 06 TRK 066 UNTIL 1500
+ TRANSITION CHB HOLD AT FIX CHBNB RIGHT TURN INBOUNDCOURSE 246 ALT 2000 LEGTIME 1 FIX D246C AT OR ABOVE 1200 TRK 201 UNTIL 4.4 FROM FIX D246C
+APPROACH NDB24 FIX CN24 AT OR ABOVE 1000 FIX FN24 1000 FIX MN24 677 RNW 24 HDG 179 UNTIL 1500
+ TRANSITION CHB FIX CHBNB AT OR ABOVE 2500 FIX CN24 AT OR ABOVE 1000 TRK 010 UNTIL 4.4 FROM FIX CN24
+ENDAPPROACHES

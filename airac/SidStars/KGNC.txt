@@ -1,0 +1,39 @@
+//KGNC (GAINES CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APQIT LATLON N 32 34.95 W 102 38.837333
+FIX ARIWU LATLON N 32 28.928167 W 102 38.759167
+FIX EPHOC LATLON N 32 37.895833 W 102 38.875667
+FIX HOZGI LATLON N 32 28.981 W 102 32.8485
+FIX OSHWA LATLON N 32 49.918834 W 102 39.032167
+FIX YOUDO LATLON N 32 28.870834 W 102 44.669666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 17
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX ARIWU AT OR ABOVE 6000 FIX APQIT 4900 FIX EPHOC AT OR ABOVE 3940 RNW 35 FIX OVERFLY OSHWA AT OR ABOVE 6000 HOLD AT FIX OSHWA RIGHT TURN INBOUNDCOURSE 170 LEGDIST 5
+ TRANSITION ARIWU HOLD AT FIX ARIWU RIGHT TURN INBOUNDCOURSE 350 ALT 6000 LEGDIST 5
+ TRANSITION HOZGI FIX HOZGI AT OR ABOVE 6000
+ TRANSITION YOUDO FIX YOUDO AT OR ABOVE 6000
+ENDAPPROACHES

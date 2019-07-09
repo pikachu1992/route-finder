@@ -1,0 +1,43 @@
+//PFKO (KOTLIK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ENM LATLON N 62 47.075333 W 164 29.252
+FIX GOYWI LATLON N 62 43.3105 W 163 30.186334
+FIX IYOKO LATLON N 62 57.320167 W 163 38.254
+FIX JADEV LATLON N 62 52.263 W 163 45.260167
+FIX KEGEY LATLON N 63 6.953167 W 163 24.774667
+FIX LACNI LATLON N 63 11.384333 W 163 18.508333
+FIX PICNI LATLON N 62 56.3375 W 163 59.4985
+FIX RICVO LATLON N 62 55.173167 W 163 41.243666
+FIX TAYKU LATLON N 63 6.344 W 163 25.629334
+FIX WARVI LATLON N 63 12.294 W 163 6.981667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX JADEV AT OR ABOVE 2500 FIX IYOKO 1600 RNW 02 TRK 017 UNTIL 414 FIX OVERFLY KEGEY AT OR ABOVE 3500 HOLD AT FIX KEGEY RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4
+ TRANSITION ENM FIX ENM
+ TRANSITION GOYWI FIX GOYWI
+ TRANSITION PICNI FIX PICNI
+APPROACH RNV20 FIX LACNI AT OR ABOVE 2500 FIX TAYKU 1600 RNW 20 TRK 198 UNTIL 440 FIX OVERFLY RICVO AT OR ABOVE 8000 HOLD AT FIX RICVO RIGHT TURN INBOUNDCOURSE 323 LEGDIST 6
+ TRANSITION WARVI FIX WARVI
+ENDAPPROACHES

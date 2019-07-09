@@ -1,0 +1,45 @@
+//CEA3 (OLDS-DIDSBURY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEROT LATLON N 51 44.7175 W 114 12.558667
+FIX DARSU LATLON N 51 41.655167 W 113 44.691833
+FIX IGTAR LATLON N 51 47.5155 W 114 21.099334
+FIX KAPOL LATLON N 51 32.060833 W 113 52.955666
+FIX MATOP LATLON N 51 37.839334 W 113 51.769834
+FIX NAKEL LATLON N 51 43.096333 W 114 24.846334
+FIX PELGO LATLON N 51 40.618333 W 114 0.134
+FIX SATIX LATLON N 51 37.795 W 113 51.6365
+FIX TAKDI LATLON N 51 47.489167 W 114 21.018833
+FIX TEVIT LATLON N 51 51.9325 W 114 17.340167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 10
+RNW 22
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX IGTAR AT OR ABOVE 4900 FIX BEROT 4700 RNW 10 FIX OVERFLY MATOP 5000 HOLD AT FIX MATOP RIGHT TURN INBOUNDCOURSE 103 LEGTIME 1
+ TRANSITION NAKEL FIX NAKEL SPEED 210
+ TRANSITION TEVIT FIX TEVIT SPEED 210
+APPROACH RNV28 FIX SATIX AT OR ABOVE 4700 FIX PELGO 4700 RNW 28 FIX OVERFLY TAKDI 5200 HOLD AT FIX TAKDI RIGHT TURN INBOUNDCOURSE 283 LEGTIME 1
+ TRANSITION DARSU FIX DARSU
+ TRANSITION KAPOL FIX KAPOL
+ENDAPPROACHES

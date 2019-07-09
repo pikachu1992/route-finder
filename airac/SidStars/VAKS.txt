@@ -1,0 +1,32 @@
+//VAKS (KESHOD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EN23 LATLON N 21 19.442167 E 70 16.414333
+FIX FN23 LATLON N 21 21.361667 E 70 20.270333
+FIX KSNB LATLON N 21 19.0855 E 70 15.698333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB23 FIX FN23 1500 FIX OVERFLY EN23 202 FIX KSNB AT OR ABOVE 570 RNW 23 TRK 242 UNTIL 1500 TURN RIGHT DIRECT FIX KSNB 1500 HOLD AT FIX KSNB LEFT TURN INBOUNDCOURSE 077 ALT 1500 LEGTIME 1
+ TRANSITION KS FIX KSNB AT OR ABOVE 1500 TRK 077 UNTIL 7.5 FROM FIX KSNB
+ENDAPPROACHES

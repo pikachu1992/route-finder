@@ -1,0 +1,42 @@
+//KXBP (BRIDGEPORT MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CINEN LATLON N 33 26.142833 W 97 49.3955
+FIX CONVI LATLON N 33 15.969833 W 97 49.567834
+FIX FIPAL LATLON N 33 6.843167 W 97 49.795166
+FIX HIBIS LATLON N 33 22.382167 W 98 8.6545
+FIX SKYLA LATLON N 33 16.125334 W 97 49.593
+FIX TIEON LATLON N 33 4.838 W 97 55.241833
+FIX UKW LATLON N 33 32.153167 W 97 49.276667
+FIX WISLO LATLON N 33 12.9535 W 97 49.643
+FIX ZEDAX LATLON N 33 22.068833 W 97 49.4155
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM18 FIX CINEN AT OR ABOVE 3000 FIX SKYLA 2500 RNW 18 TRK 175 UNTIL 1260 TURN RIGHT DIRECT FIX SKYLA AT OR ABOVE 2800 HOLD AT FIX SKYLA RIGHT TURN INBOUNDCOURSE 175 LEGTIME 1
+ TRANSITION SKYLA HOLD AT FIX SKYLA RIGHT TURN INBOUNDCOURSE 175 ALT 2800 LEGTIME 1
+ TRANSITION UKW FIX UKW
+APPROACH RNV18 FIX ZEDAX AT OR ABOVE 3000 FIX CONVI 2500 FIX WISLO AT OR ABOVE 1520 RNW 18 FIX FIPAL FIX OVERFLY TIEON AT OR ABOVE 3000 HOLD AT FIX TIEON LEFT TURN INBOUNDCOURSE 005 LEGDIST 4
+ TRANSITION HIBIS FIX HIBIS
+ TRANSITION ZEDAX HOLD AT FIX ZEDAX RIGHT TURN INBOUNDCOURSE 176 ALT 3000 LEGDIST 4
+ENDAPPROACHES

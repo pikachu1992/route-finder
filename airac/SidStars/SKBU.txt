@@ -1,0 +1,30 @@
+//SKBU (GERARDO TOBAR LOPEZ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUN LATLON N 3 49.516667 W 76 59.716667
+FIX FS09 LATLON N 3 48.4735 W 77 5.143166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX FS09 1900 FIX BUN 440 RNW 09 HOLD AT FIX BUN LEFT TURN INBOUNDCOURSE 084 ALT 4000 LEGTIME 1
+ENDAPPROACHES

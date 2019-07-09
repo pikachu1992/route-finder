@@ -1,0 +1,37 @@
+//KTQE (TEKAMAH MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANISY LATLON N 41 41.4775 W 96 7.799333
+FIX BRAVA LATLON N 41 36.100667 W 96 4.240667
+FIX GOCRE LATLON N 41 56.633167 W 96 17.891833
+FIX HIGVA LATLON N 41 51.262 W 96 14.304667
+FIX OTEKE LATLON N 41 42.829834 W 96 8.696
+FIX ZAPLI LATLON N 41 48.793834 W 96 12.66
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX GOCRE AT OR ABOVE 3400 FIX HIGVA 2900 FIX ZAPLI AT OR ABOVE 2020 RNW 15 TRK 151 UNTIL 1277 FIX OVERFLY BRAVA AT OR ABOVE 3000 HOLD AT FIX BRAVA RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4
+ TRANSITION GOCRE HOLD AT FIX GOCRE RIGHT TURN INBOUNDCOURSE 150 ALT 3400 LEGDIST 4
+APPROACH RNV33 FIX BRAVA AT OR ABOVE 3000 FIX ANISY 2500 FIX OTEKE AT OR ABOVE 2020 RNW 33 TRK 331 UNTIL 1276 FIX OVERFLY GOCRE AT OR ABOVE 3000 HOLD AT FIX GOCRE RIGHT TURN INBOUNDCOURSE 150 LEGDIST 4
+ TRANSITION BRAVA HOLD AT FIX BRAVA RIGHT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4
+ENDAPPROACHES

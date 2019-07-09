@@ -1,0 +1,38 @@
+//YJUN (JUNDEE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JUNWA LATLON S 26 31.495166 E 120 21.4265
+FIX JUNWB LATLON S 26 27.2055 E 120 17.157
+FIX JUNWC LATLON S 26 22.139 E 120 20.168333
+FIX JUNWF LATLON S 26 26.0125 E 120 28.219
+FIX JUNWH LATLON S 26 24.865667 E 120 38.724334
+FIX JUNWI LATLON S 26 26.610833 E 120 22.6885
+FIX JUNWM LATLON S 26 25.4105 E 120 33.7485
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ08 FIX JUNWI AT OR ABOVE 3600 FIX JUNWF 3600 FIX OVERFLY JUNWM 1988 RNW 08 FIX OVERFLY JUNWH HDG 240 VECTORS
+ TRANSITION JUNWA FIX JUNWA AT OR ABOVE 3600 SPEED 210
+ TRANSITION JUNWB FIX JUNWB AT OR ABOVE 3600 SPEED 210
+ TRANSITION JUNWC FIX JUNWC AT OR ABOVE 3600 SPEED 210
+ENDAPPROACHES

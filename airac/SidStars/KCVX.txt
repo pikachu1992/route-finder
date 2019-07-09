@@ -1,0 +1,47 @@
+//KCVX (CHARLEVOIX MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOCDA LATLON N 45 12.222167 W 85 31.971833
+FIX CESYA LATLON N 45 22.173334 W 85 33.349166
+FIX COKOS LATLON N 45 19.569167 W 84 56.897167
+FIX DUNAC LATLON N 45 17.784667 W 85 24.078667
+FIX GLR LATLON N 45 0.749167 W 84 42.256667
+FIX HISUM LATLON N 45 18.869 W 85 7.765667
+FIX HOMVO LATLON N 45 18.498334 W 85 13.412
+FIX IROTO LATLON N 45 11.339333 W 85 4.506667
+FIX JALPI LATLON N 45 17.197834 W 85 32.6595
+FIX PLN LATLON N 45 37.838833 W 84 39.8465
+FIX TVC LATLON N 44 40.075 W 85 33.000667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 09
+RNW 22
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX JALPI AT OR ABOVE 2700 FIX DUNAC 2300 RNW 09 TRK 090 UNTIL 919 FIX OVERFLY COKOS AT OR ABOVE 3000 HOLD AT FIX COKOS RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4
+ TRANSITION CESYA FIX CESYA
+ TRANSITION TVC FIX TVC FIX BOCDA AT OR ABOVE 2700
+APPROACH RNV27 FIX COKOS AT OR ABOVE 3000 FIX HISUM 2600 FIX HOMVO AT OR ABOVE 1300 RNW 27 TRK 270 UNTIL 1069 TURN LEFT DIRECT FIX OVERFLY COKOS AT OR ABOVE 3000 HOLD AT FIX COKOS RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4
+ TRANSITION GLR FIX GLR
+ TRANSITION IROTO FIX IROTO FIX OVERFLY COKOS AT OR ABOVE 3000 HOLD AT FIX COKOS RIGHT TURN INBOUNDCOURSE 270 ALT 3000 LEGDIST 4
+ TRANSITION PLN FIX PLN
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//KPSO (STEVENS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRAZO LATLON N 36 49.255834 W 106 39.107167
+FIX COKRI LATLON N 37 4.303667 W 107 28.573667
+FIX DUGNE LATLON N 37 8.325833 W 107 4.592833
+FIX FEMAD LATLON N 36 56.633333 W 107 3.172667
+FIX IBURE LATLON N 37 11.216666 W 107 4.352
+FIX VEPBU LATLON N 37 16.112167 W 107 3.946834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX FEMAD AT OR ABOVE 12100 FIX DUGNE 10300 FIX IBURE AT OR ABOVE 9380 FIX OVERFLY VEPBU 7819 RNW 01 TRK 354 UNTIL 8064 TURN RIGHT DIRECT FIX OVERFLY FEMAD AT OR ABOVE 12100 HOLD AT FIX FEMAD RIGHT TURN INBOUNDCOURSE 344 LEGDIST 8
+ TRANSITION BRAZO FIX BRAZO
+ TRANSITION COKRI FIX COKRI FIX OVERFLY FEMAD AT OR ABOVE 12100 HOLD AT FIX FEMAD RIGHT TURN INBOUNDCOURSE 344 ALT 12100 LEGDIST 8
+ENDAPPROACHES

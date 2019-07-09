@@ -1,0 +1,40 @@
+//HALL (LALIBELLA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LL001 LATLON N 11 54.623333 E 38 43.846667
+FIX LL002 LATLON N 12 0.73 E 38 40.553333
+FIX LL003 LATLON N 12 5.865 E 38 45.258334
+FIX LL004 LATLON N 12 2.341667 E 38 46.081667
+FIX LL005 LATLON N 11 57.845 E 38 45.516667
+FIX LL006 LATLON N 11 59.991667 E 38 46.63
+FIX LL007 LATLON N 11 59.45 E 38 51.086666
+FIX LL008 LATLON N 11 59.02 E 38 54.63
+FIX LL009 LATLON N 12 2.106667 E 38 29.085
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX LL006 AT OR ABOVE 9600 FIX LL007 8580 FIX OVERFLY LL008 7481 RNW 10 TURN RIGHT DIRECT FIX LL009 AT OR ABOVE 11900 SPEED 185
+ TRANSITION LL001 FIX LL001 AT OR ABOVE 11900 FIX LL005 AT OR ABOVE 10500
+ TRANSITION LL002 FIX LL002 AT OR ABOVE 11900
+ TRANSITION LL003 FIX LL003 AT OR ABOVE 11900 FIX LL004 AT OR ABOVE 10500
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//AYTB (TABUBIL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF321 LATLON S 5 28.7095 E 141 21.997667
+FIX OKTNB LATLON S 5 24.594 E 141 19.122
+FIX RIPNA LATLON S 5 32.824667 E 141 24.874166
+FIX YTBSB LATLON S 5 36.912667 E 141 27.7895
+FIX YTBSC LATLON S 5 36.9315 E 141 22.036667
+FIX YTBSF LATLON S 5 28.7005 E 141 22.010333
+FIX YTBSI LATLON S 5 32.806667 E 141 24.899666
+FIX YTBSM LATLON S 5 24.594 E 141 19.121833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH GPSC14 FIX YTBSI AT OR ABOVE 4700 FIX OVERFLY YTBSF 4000 FIX OVERFLY YTBSM 3150 RNW 14 TURN LEFT DIRECT FIX YTBSB AT OR ABOVE 5200 SPEED 150
+ TRANSITION YTBSB FIX YTBSB AT OR ABOVE 5200 SPEED 185
+ TRANSITION YTBSC FIX YTBSC AT OR ABOVE 5200 SPEED 185
+APPROACH GPSC32 FIX YTBSI AT OR ABOVE 4700 FIX OVERFLY YTBSF 4000 FIX OVERFLY YTBSM 3150 RNW 32 TURN LEFT DIRECT FIX YTBSB AT OR ABOVE 5200 SPEED 150
+ TRANSITION YTBSB FIX YTBSB AT OR ABOVE 5200 SPEED 185
+ TRANSITION YTBSC FIX YTBSC AT OR ABOVE 5200 SPEED 185
+APPROACH NDMM14 FIX RIPNA AT OR ABOVE 6000 FIX FF321 4000 FIX OKTNB 3100 RNW 14 HDG 180 VECTORS
+APPROACH NDMM32 FIX RIPNA AT OR ABOVE 6000 FIX FF321 4000 FIX OKTNB 3100 RNW 32 HDG 180 VECTORS
+ENDAPPROACHES

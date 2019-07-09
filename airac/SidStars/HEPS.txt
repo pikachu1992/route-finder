@@ -1,0 +1,33 @@
+//HEPS (PORT SAID)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD10 LATLON N 31 19.348 E 32 6.690334
+FIX FD10 LATLON N 31 18.598834 E 32 8.856
+FIX PSD LATLON N 31 16.728334 E 32 14.268334
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VDM10 FIX CD10 1400 FIX FD10 1400 RNW 10 FIX OVERFLY PSD TRK 108 UNTIL 2000 TURN LEFT DIRECT FIX PSD 2000 HOLD AT FIX PSD LEFT TURN INBOUNDCOURSE 316 LEGTIME 1
+ TRANSITION PSD1 FIX PSD AT OR ABOVE 3000 TRK 316 UNTIL 7.0 FROM FIX PSD
+ TRANSITION PSD2 FIX PSD AT OR ABOVE 3000 TRK 303 UNTIL 7.0 FROM FIX PSD
+ENDAPPROACHES

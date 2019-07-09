@@ -1,0 +1,42 @@
+//YWCK (WARWICK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WCKEA LATLON S 28 6.220333 E 152 11.259334
+FIX WCKEB LATLON S 28 11.381 E 152 14.123167
+FIX WCKEC LATLON S 28 15.530833 E 152 9.627667
+FIX WCKEF LATLON S 28 9.843667 E 152 2.9415
+FIX WCKEH LATLON S 28 8.612 E 151 53.998333
+FIX WCKEI LATLON S 28 10.612333 E 152 8.532
+FIX WCKEM LATLON S 28 9.075 E 151 57.351667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNVE09 FIX WCKEI AT OR ABOVE 5210 FIX WCKEF 3620 FIX OVERFLY WCKEM 2290 RNW 09 FIX OVERFLY WCKEH TRK 268 UNTIL 4200 HDG 045 VECTORS
+ TRANSITION WCKEA FIX WCKEA AT OR ABOVE 5700 SPEED 210
+ TRANSITION WCKEB FIX WCKEB AT OR ABOVE 5700 SPEED 210
+ TRANSITION WCKEC FIX WCKEC AT OR ABOVE 5700 SPEED 210
+APPROACH RNVE27 FIX WCKEI AT OR ABOVE 5210 FIX WCKEF 3620 FIX OVERFLY WCKEM 2290 RNW 27 FIX OVERFLY WCKEH TRK 268 UNTIL 4200 HDG 045 VECTORS
+ TRANSITION WCKEA FIX WCKEA AT OR ABOVE 5700 SPEED 210
+ TRANSITION WCKEB FIX WCKEB AT OR ABOVE 5700 SPEED 210
+ TRANSITION WCKEC FIX WCKEC AT OR ABOVE 5700 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,38 @@
+//SLHI (CHIMORE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HI873 LATLON S 16 56.666167 W 65 9.373834
+FIX HI874 LATLON S 17 0.240167 W 64 53.642167
+FIX HI875 LATLON S 16 52.484167 W 65 10.743167
+FIX HI876 LATLON S 16 47.695834 W 65 12.309667
+FIX HI877 LATLON S 16 44.6395 W 65 8.1755
+FIX HI878 LATLON S 16 42.907333 W 65 13.8755
+FIX HI879 LATLON S 16 47.650166 W 65 17.521166
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVY17 FIX HI876 AT OR ABOVE 4300 FIX HI875 2700 FIX OVERFLY HI873 1181 RNW 17 FIX OVERFLY HI874 AT OR ABOVE 4000 HOLD AT FIX HI874 RIGHT TURN INBOUNDCOURSE 293 ALT 4000 LEGTIME 1
+ TRANSITION HI877 FIX HI877 AT OR ABOVE 5000
+ TRANSITION HI878 FIX HI878 AT OR ABOVE 5000
+ TRANSITION HI879 FIX HI879 AT OR ABOVE 5000
+ENDAPPROACHES

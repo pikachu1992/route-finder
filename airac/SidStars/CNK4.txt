@@ -1,0 +1,44 @@
+//CNK4 (PARRY SOUND AREA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APLUN LATLON N 45 11.384333 W 79 47.700167
+FIX BIRPA LATLON N 45 6.682333 W 79 45.299833
+FIX DANEP LATLON N 45 4.640833 W 79 53.264167
+FIX ELSIL LATLON N 45 24.223667 W 79 54.291
+FIX GADKO LATLON N 45 19.524167 W 79 51.8725
+FIX GOSEN LATLON N 45 8.714666 W 79 37.326
+FIX IKLED LATLON N 45 19.8455 W 79 52.037666
+FIX KANIB LATLON N 45 11.062834 W 79 47.535833
+FIX MAVAK LATLON N 45 26.266333 W 79 46.2815
+FIX NAKPU LATLON N 45 17.644166 W 79 50.907
+FIX SASUD LATLON N 45 22.171667 W 80 2.290834
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ELSIL AT OR ABOVE 2300 SPEED 180 FIX GADKO 2140 FIX NAKPU AT OR ABOVE 1500 RNW 17 FIX OVERFLY KANIB 2900 HOLD AT FIX KANIB RIGHT TURN INBOUNDCOURSE 171 SPEED 250 LEGTIME 1
+ TRANSITION MAVAK FIX MAVAK SPEED 210
+ TRANSITION SASUD FIX SASUD SPEED 210
+APPROACH RNV35 FIX BIRPA AT OR ABOVE 2400 SPEED 180 FIX APLUN 2370 RNW 35 FIX OVERFLY IKLED 2900 HOLD AT FIX IKLED RIGHT TURN INBOUNDCOURSE 351 SPEED 250 LEGTIME 1
+ TRANSITION DANEP FIX DANEP SPEED 210
+ TRANSITION GOSEN FIX GOSEN SPEED 210
+ENDAPPROACHES

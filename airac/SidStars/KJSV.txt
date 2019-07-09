@@ -1,0 +1,36 @@
+//KJSV (SALLISAW MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JENKO LATLON N 35 38.617333 W 94 48.437666
+FIX MASOE LATLON N 35 14.4445 W 94 47.947834
+FIX NAKAE LATLON N 35 14.358 W 94 54.051833
+FIX ODOTE LATLON N 35 14.524 W 94 41.8435
+FIX PAGOE LATLON N 35 20.463167 W 94 48.069334
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX MASOE AT OR ABOVE 3000 FIX PAGOE 2300 RNW 35 TRK 354 UNTIL 1160 FIX OVERFLY JENKO AT OR ABOVE 3100 HOLD AT FIX JENKO RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION MASOE HOLD AT FIX MASOE RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4
+ TRANSITION NAKAE FIX NAKAE AT OR ABOVE 3000
+ TRANSITION ODOTE FIX ODOTE AT OR ABOVE 3000
+ENDAPPROACHES

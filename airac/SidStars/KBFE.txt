@@ -1,0 +1,39 @@
+//KBFE (TERRY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FATYO LATLON N 33 5.411 W 102 14.443
+FIX LEBDE LATLON N 33 20.6295 W 102 5.612333
+FIX SLOBS LATLON N 33 7.785 W 102 13.069
+FIX SWEAR LATLON N 33 13.417834 W 102 9.804334
+FIX WOGFE LATLON N 33 0.005167 W 102 17.565667
+FIX ZAGDO LATLON N 33 15.227833 W 102 8.753666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 13
+RNW 20
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX WOGFE AT OR ABOVE 5000 FIX FATYO 4900 FIX SLOBS AT OR ABOVE 4060 RNW 02 TRK 017 UNTIL 3589 FIX OVERFLY LEBDE AT OR ABOVE 5200 HOLD AT FIX LEBDE RIGHT TURN INBOUNDCOURSE 197 LEGDIST 5
+ TRANSITION WOGFE HOLD AT FIX WOGFE RIGHT TURN INBOUNDCOURSE 017 ALT 5000 LEGDIST 5
+APPROACH RNV20 FIX LEBDE AT OR ABOVE 5200 FIX ZAGDO 4900 FIX SWEAR AT OR ABOVE 4260 RNW 20 TRK 197 UNTIL 3598 FIX OVERFLY WOGFE AT OR ABOVE 5200 HOLD AT FIX WOGFE RIGHT TURN INBOUNDCOURSE 017 LEGDIST 5
+ TRANSITION LEBDE HOLD AT FIX LEBDE RIGHT TURN INBOUNDCOURSE 197 ALT 5200 LEGDIST 5
+ENDAPPROACHES

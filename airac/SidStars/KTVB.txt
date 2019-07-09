@@ -1,0 +1,38 @@
+//KTVB (CABOOL MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUNKS LATLON N 37 37.776167 W 91 6.357833
+FIX CAMEA LATLON N 37 12.7575 W 92 1.162333
+FIX CAPOM LATLON N 37 14.690167 W 91 52.146167
+FIX OSAME LATLON N 37 17.409167 W 91 57.4055
+FIX PYLER LATLON N 37 27.667333 W 92 39.5665
+FIX TEPIE LATLON N 37 20.124334 W 92 2.671333
+FIX WELKI LATLON N 36 58.891667 W 92 12.3065
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV21 FIX OSAME AT OR ABOVE 3000 FIX CAMEA 3000 RNW 21 TRK 210 UNTIL 1620 FIX OVERFLY WELKI AT OR ABOVE 3000 HOLD AT FIX WELKI RIGHT TURN INBOUNDCOURSE 030 LEGDIST 4
+ TRANSITION BUNKS FIX BUNKS FIX CAPOM AT OR ABOVE 3000
+ TRANSITION OSAME HOLD AT FIX OSAME RIGHT TURN INBOUNDCOURSE 210 ALT 3000 LEGDIST 4
+ TRANSITION PYLER FIX PYLER FIX TEPIE AT OR ABOVE 3000
+ENDAPPROACHES

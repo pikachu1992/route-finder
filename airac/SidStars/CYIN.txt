@@ -1,0 +1,34 @@
+//CYIN (BLEIBLER RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVAPA LATLON N 51 24.443333 W 121 54.054667
+FIX EBDIT LATLON N 51 19.619333 W 121 48.374833
+FIX LORVO LATLON N 51 29.404834 W 121 44.933167
+FIX PEPDA LATLON N 51 16.497667 W 121 42.1565
+FIX ROPNU LATLON N 51 12.1475 W 121 32.615
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX AVAPA AT OR ABOVE 6300 SPEED 180 FIX EBDIT 5490 FIX OVERFLY PEPDA 3896 RNW 11 FIX OVERFLY ROPNU 9000 HOLD AT FIX ROPNU LEFT TURN INBOUNDCOURSE 147 SPEED 175 LEGTIME 1
+ TRANSITION LORVO FIX LORVO SPEED 200
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//KPVJ (PAULS VALLEY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DOPME LATLON N 34 45.3755 W 97 13.422167
+FIX FILOT LATLON N 34 31.065 W 97 19.606166
+FIX HEMON LATLON N 34 30.988 W 97 7.504667
+FIX HIGIT LATLON N 34 47.450167 W 97 13.402834
+FIX MELIE LATLON N 34 53.884333 W 97 13.342834
+FIX REWUB LATLON N 34 37.358333 W 97 13.496666
+FIX TAXTU LATLON N 34 31.029 W 97 13.555333
+FIX TITKE LATLON N 34 53.843333 W 97 7.264333
+FIX ZAGOD LATLON N 34 53.920333 W 97 19.421333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX MELIE AT OR ABOVE 3000 FIX HIGIT 2500 FIX DOPME AT OR ABOVE 1820 RNW 17 FIX OVERFLY TAXTU AT OR ABOVE 3000 HOLD AT FIX TAXTU RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION MELIE HOLD AT FIX MELIE RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4
+ TRANSITION TITKE FIX TITKE AT OR ABOVE 3000
+ TRANSITION ZAGOD FIX ZAGOD AT OR ABOVE 3000
+APPROACH RNV35 FIX TAXTU AT OR ABOVE 3000 FIX REWUB 2500 RNW 35 FIX OVERFLY MELIE AT OR ABOVE 3000 HOLD AT FIX MELIE RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION FILOT FIX FILOT AT OR ABOVE 3000
+ TRANSITION HEMON FIX HEMON AT OR ABOVE 3000
+ TRANSITION TAXTU HOLD AT FIX TAXTU RIGHT TURN INBOUNDCOURSE 354 ALT 3000 LEGDIST 4
+ENDAPPROACHES

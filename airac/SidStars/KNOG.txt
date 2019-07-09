@@ -1,0 +1,37 @@
+//KNOG (ORANGE GROVE NALF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAYET LATLON N 27 46.6395 W 97 51.6125
+FIX FEEGI LATLON N 27 58.069 W 98 7.266
+FIX GRANE LATLON N 28 2.982167 W 98 12.888334
+FIX NQI LATLON N 27 29.954333 W 97 48.336
+FIX THX LATLON N 28 30.299833 W 98 9.028
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 13
+RNW 19
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH ILS13 FIX GRANE AT OR ABOVE 3000 FIX FEEGI 2000 RNW 13 TRK 130 UNTIL 660 FIX DAYET AT OR ABOVE 3000 HOLD AT FIX DAYET RIGHT TURN INBOUNDCOURSE 301 ALT 6000 SPEED 230 LEGDIST 5
+ TRANSITION NQI FIX NQI AT OR ABOVE 3000 FIX GRANE AT OR ABOVE 3000 HOLD AT FIX GRANE LEFT TURN INBOUNDCOURSE 130 ALT 3000 SPEED 230 LEGDIST 5
+ TRANSITION THX FIX THX AT OR ABOVE 3000 FIX GRANE AT OR ABOVE 3000 HOLD AT FIX GRANE LEFT TURN INBOUNDCOURSE 130 ALT 3000 SPEED 230 LEGDIST 5
+ENDAPPROACHES

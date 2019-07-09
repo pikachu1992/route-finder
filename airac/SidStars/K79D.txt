@@ -1,0 +1,35 @@
+//K79D (PHILIPPI/BARBOUR CO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CKB LATLON N 39 15.193 W 80 16.071667
+FIX JUBVI LATLON N 39 10.173667 W 80 2.843833
+FIX TUGOY LATLON N 39 12.434167 W 79 57.837667
+FIX UCOYA LATLON N 39 16.408333 W 79 53.718
+FIX UGJOB LATLON N 39 14.712667 W 79 49.521
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX UCOYA AT OR ABOVE 4500 FIX TUGOY 3500 FIX OVERFLY JUBVI 1948 RNW 26 TRK 249 UNTIL 2155 TURN RIGHT DIRECT FIX OVERFLY UCOYA AT OR ABOVE 4500 HOLD AT FIX UCOYA RIGHT TURN INBOUNDCOURSE 228 LEGDIST 5
+ TRANSITION CKB FIX CKB FIX OVERFLY UCOYA AT OR ABOVE 4500 HOLD AT FIX UCOYA RIGHT TURN INBOUNDCOURSE 228 ALT 4500 LEGDIST 5
+ TRANSITION UGJOB FIX UGJOB
+ENDAPPROACHES

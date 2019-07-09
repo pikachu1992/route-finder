@@ -1,0 +1,39 @@
+//K4N1 (GREENWOOD LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HESIN LATLON N 41 5.831333 W 74 23.522833
+FIX IMAME LATLON N 41 11.617 W 74 15.066334
+FIX VOLLU LATLON N 41 11.499 W 73 59.076667
+FIX WAMUV LATLON N 41 15.675667 W 74 9.109834
+FIX WAROG LATLON N 41 3.953333 W 74 26.258666
+FIX WEKAS LATLON N 41 0.161167 W 74 31.771
+FIX YANUD LATLON N 41 9.975833 W 74 17.469
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX WEKAS AT OR ABOVE 3000 FIX WAROG 2600 FIX HESIN AT OR ABOVE 1660 RNW 06 TRK 061 UNTIL 1190 FIX OVERFLY WAMUV AT OR ABOVE 3000 HOLD AT FIX WAMUV RIGHT TURN INBOUNDCOURSE 241 LEGDIST 4
+ TRANSITION WAMUV FIX WAMUV FIX OVERFLY WEKAS AT OR ABOVE 3000 HOLD AT FIX WEKAS RIGHT TURN INBOUNDCOURSE 061 ALT 3000 LEGDIST 4
+APPROACH RNV24 FIX WAMUV AT OR ABOVE 3000 FIX IMAME 2600 FIX YANUD AT OR ABOVE 1820 RNW 24 TRK 241 UNTIL 1160 FIX OVERFLY WEKAS AT OR ABOVE 3000 HOLD AT FIX WEKAS RIGHT TURN INBOUNDCOURSE 061 LEGDIST 4
+ TRANSITION VOLLU FIX VOLLU
+ TRANSITION WEKAS FIX WEKAS FIX OVERFLY WAMUV AT OR ABOVE 3000 HOLD AT FIX WAMUV RIGHT TURN INBOUNDCOURSE 241 ALT 3000 LEGDIST 4
+ENDAPPROACHES

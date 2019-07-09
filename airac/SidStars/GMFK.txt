@@ -1,0 +1,39 @@
+//GMFK (MOULAY ALI CHERIF INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 30VOR LATLON N 31 53.725 W 4 18.745
+FIX 50VOR LATLON N 31 52.574333 W 4 16.8215
+FIX CI31 LATLON N 31 50.709833 W 4 13.726834
+FIX D127E LATLON N 31 52.574666 W 4 16.821833
+FIX FD31 LATLON N 31 51.423334 W 4 14.899
+FIX FI31 LATLON N 31 53.015833 W 4 17.568667
+FIX MD31 LATLON N 31 54.875 W 4 20.669167
+FIX RW31 LATLON N 31 56.393833 W 4 23.208334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH VDM31 FIX FD31 6000 FIX 50VOR AT OR ABOVE 5430 FIX 30VOR AT OR ABOVE 4830 FIX MD31 4219 RNW 31 HDG 307 UNTIL 4570 HDG 127 VECTORS
+ TRANSITION D127E HOLD AT FIX D127E LEFT TURN INBOUNDCOURSE 307 ALT 6000 SPEED 220 LEGDIST 5
+APPROACH ILS31 FIX CI31 6000 FIX FI31 5465 RNW 31 TRK 307 UNTIL 3770 HDG 127 VECTORS
+ TRANSITION D127E HOLD AT FIX D127E LEFT TURN INBOUNDCOURSE 307 ALT 6000 SPEED 220 LEGDIST 5
+ENDAPPROACHES

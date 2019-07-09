@@ -1,0 +1,44 @@
+//K9G0 (BUFFALO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAVDA LATLON N 42 48.708334 W 78 59.5695
+FIX GOGSE LATLON N 42 47.9905 W 78 48.5555
+FIX JALWE LATLON N 42 53.213167 W 78 40.762
+FIX KIVRE LATLON N 42 39.8485 W 78 48.582833
+FIX PECIB LATLON N 42 55.435333 W 78 37.433833
+FIX SAGNE LATLON N 42 59.5105 W 78 31.314
+FIX TOVAE LATLON N 42 55.0595 W 78 25.833167
+FIX UPUCO LATLON N 43 3.957 W 78 36.808
+FIX YUDUD LATLON N 42 44.280667 W 78 54.069667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX YUDUD AT OR ABOVE 3900 FIX GOGSE 2400 RNW 06 TRK 059 UNTIL 1070 TURN RIGHT DIRECT FIX OVERFLY KIVRE AT OR ABOVE 3900 HOLD AT FIX KIVRE RIGHT TURN INBOUNDCOURSE 329 LEGDIST 4
+ TRANSITION CAVDA FIX CAVDA
+ TRANSITION KIVRE FIX KIVRE
+ TRANSITION YUDUD HOLD AT FIX YUDUD RIGHT TURN INBOUNDCOURSE 059 ALT 3900 LEGDIST 4
+APPROACH RNV24 FIX SAGNE AT OR ABOVE 3900 FIX PECIB 2400 FIX JALWE AT OR ABOVE 1340 RNW 24 TRK 239 UNTIL 1070 TURN LEFT DIRECT FIX OVERFLY TOVAE AT OR ABOVE 3900 HOLD AT FIX TOVAE RIGHT TURN INBOUNDCOURSE 329 LEGDIST 4
+ TRANSITION SAGNE HOLD AT FIX SAGNE RIGHT TURN INBOUNDCOURSE 239 ALT 3900 LEGDIST 4
+ TRANSITION TOVAE FIX TOVAE
+ TRANSITION UPUCO FIX UPUCO
+ENDAPPROACHES

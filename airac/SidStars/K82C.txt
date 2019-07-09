@@ -1,0 +1,40 @@
+//K82C (MAUSTON-NEW LISBON UNION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DLL LATLON N 43 33.05 W 89 45.817333
+FIX FAPKO LATLON N 43 42.5635 W 90 29.614667
+FIX HOBGO LATLON N 43 41.314834 W 89 57.508333
+FIX IGPIH LATLON N 43 45.9275 W 90 3.004667
+FIX JESTU LATLON N 43 54.699 W 90 13.511
+FIX JOTUR LATLON N 43 47.753333 W 90 5.185834
+FIX NOPGE LATLON N 43 59.304334 W 90 19.056167
+FIX ZETRO LATLON N 43 52.141834 W 90 10.4405
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX NOPGE AT OR ABOVE 3600 FIX JESTU 2700 FIX ZETRO AT OR ABOVE 1620 RNW 14 TRK 140 UNTIL 1500 TURN RIGHT DIRECT FIX OVERFLY FAPKO AT OR ABOVE 4000 HOLD AT FIX FAPKO RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4
+ TRANSITION FAPKO FIX FAPKO FIX OVERFLY NOPGE AT OR ABOVE 3600 HOLD AT FIX NOPGE RIGHT TURN INBOUNDCOURSE 140 ALT 3600 LEGDIST 4
+APPROACH RNV32 FIX HOBGO AT OR ABOVE 3600 FIX IGPIH 2700 FIX JOTUR AT OR ABOVE 1920 RNW 32 TRK 320 UNTIL 1500 FIX OVERFLY FAPKO AT OR ABOVE 4000 HOLD AT FIX FAPKO RIGHT TURN INBOUNDCOURSE 107 LEGDIST 4
+ TRANSITION DLL FIX DLL
+ TRANSITION FAPKO FIX FAPKO FIX OVERFLY HOBGO AT OR ABOVE 3600 HOLD AT FIX HOBGO RIGHT TURN INBOUNDCOURSE 320 ALT 3600 LEGDIST 4
+ENDAPPROACHES

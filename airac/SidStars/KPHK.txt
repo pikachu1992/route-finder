@@ -1,0 +1,40 @@
+//KPHK (PALM BEACH CO GLADES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HEDLY LATLON N 26 34.960166 W 80 35.820667
+FIX HOREP LATLON N 26 42.299333 W 80 41
+FIX PASAE LATLON N 26 36.278333 W 80 40.2485
+FIX PHK LATLON N 26 46.9645 W 80 41.486
+FIX SETUE LATLON N 26 51.895667 W 80 42.202333
+FIX THNDR LATLON N 26 37.639333 W 80 51.995167
+FIX WIKIN LATLON N 26 57.987167 W 80 42.966
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX WIKIN AT OR ABOVE 1500 FIX SETUE 1500 RNW 18 TRK 181 UNTIL 342 FIX OVERFLY PASAE AT OR ABOVE 2000 HOLD AT FIX PASAE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION PHK FIX PHK FIX OVERFLY WIKIN AT OR ABOVE 1500 HOLD AT FIX WIKIN LEFT TURN INBOUNDCOURSE 181 ALT 1500 LEGDIST 4
+APPROACH RNV36 FIX PASAE AT OR ABOVE 1500 FIX HOREP 1500 RNW 36 TRK 001 UNTIL 416 FIX OVERFLY WIKIN AT OR ABOVE 2000 HOLD AT FIX WIKIN LEFT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION HEDLY FIX HEDLY
+ TRANSITION PHK FIX PHK FIX OVERFLY PASAE AT OR ABOVE 1500 HOLD AT FIX PASAE RIGHT TURN INBOUNDCOURSE 001 ALT 1500 LEGDIST 4
+ TRANSITION THNDR FIX THNDR FIX OVERFLY PASAE AT OR ABOVE 1500 HOLD AT FIX PASAE RIGHT TURN INBOUNDCOURSE 001 ALT 1500 LEGDIST 4
+ENDAPPROACHES

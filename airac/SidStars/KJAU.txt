@@ -1,0 +1,39 @@
+//KJAU (STINER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIFTO LATLON N 36 19.684834 W 83 55.588
+FIX EGSOY LATLON N 36 28.423 W 83 53.134834
+FIX FEGTO LATLON N 36 26.349167 W 83 57.377
+FIX HUBJO LATLON N 36 20.621333 W 84 9.048833
+FIX JALRO LATLON N 36 24.273 W 84 1.6155
+FIX JUVKO LATLON N 36 22.026 W 84 6.192833
+FIX NOYIB LATLON N 36 26.489666 W 83 48.792167
+FIX WABUP LATLON N 36 33.180167 W 83 55.069166
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX EGSOY AT OR ABOVE 5300 FIX FEGTO AT OR ABOVE 4500 FIX JALRO 3600 FIX JUVKO AT OR ABOVE 2220 FIX OVERFLY HUBJO 1374 RNW 23 TRK 242 UNTIL 1580 TURN LEFT DIRECT FIX CIFTO FIX OVERFLY EGSOY AT OR ABOVE 5300 HOLD AT FIX EGSOY RIGHT TURN INBOUNDCOURSE 242 ALT 5300 LEGDIST 5
+ TRANSITION EGSOY HOLD AT FIX EGSOY RIGHT TURN INBOUNDCOURSE 242 ALT 5300 LEGDIST 5
+ TRANSITION NOYIB FIX NOYIB
+ TRANSITION WABUP FIX WABUP
+ENDAPPROACHES

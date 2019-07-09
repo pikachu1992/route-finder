@@ -1,0 +1,33 @@
+//K5L0 (LAKOTA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAKUD LATLON N 47 56.7485 W 98 17.565334
+FIX HIDIP LATLON N 47 59.043167 W 98 18.475166
+FIX JIDEX LATLON N 47 50.470667 W 98 15.083
+FIX NERDE LATLON N 48 4.9885 W 98 32.557834
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV33 FIX JIDEX AT OR ABOVE 3500 FIX CAKUD 3100 FIX HIDIP AT OR ABOVE 2340 RNW 33 TRK 341 UNTIL 2300 TURN LEFT DIRECT FIX OVERFLY NERDE AT OR ABOVE 3300 HOLD AT FIX NERDE RIGHT TURN INBOUNDCOURSE 270 LEGDIST 4
+ TRANSITION JIDEX HOLD AT FIX JIDEX RIGHT TURN INBOUNDCOURSE 341 ALT 3500 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//AYMH (MT HAGEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF125 LATLON S 5 45.104167 E 144 12.363667
+FIX MA125 LATLON S 5 48.334166 E 144 16.206167
+FIX MHNB LATLON S 5 50.272 E 144 18.512
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 12
+RNW 26
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDMM08 FIX FF125 8800 FIX MA125 7300 RNW 08 FIX OVERFLY MHNB HDG 035 VECTORS
+APPROACH NDMM12 FIX FF125 8800 FIX MA125 7300 RNW 12 FIX OVERFLY MHNB HDG 035 VECTORS
+APPROACH NDMM26 FIX FF125 8800 FIX MA125 7300 RNW 26 FIX OVERFLY MHNB HDG 035 VECTORS
+APPROACH NDMM30 FIX FF125 8800 FIX MA125 7300 RNW 30 FIX OVERFLY MHNB HDG 035 VECTORS
+ENDAPPROACHES

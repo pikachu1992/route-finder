@@ -1,0 +1,46 @@
+//KS25 (WATFORD CITY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOWIS LATLON N 47 44.034 W 103 9.6795
+FIX CIPGO LATLON N 47 39.794333 W 103 3.367166
+FIX FIBEN LATLON N 47 45.798167 W 103 12.314
+FIX FORBI LATLON N 48 2.443667 W 103 17.332333
+FIX GERHE LATLON N 47 55.725167 W 103 27.222
+FIX HASOS LATLON N 47 30.103 W 103 12.9815
+FIX HOOPR LATLON N 47 52.165333 W 103 32.4365
+FIX POVNY LATLON N 47 50.983667 W 102 52.845667
+FIX WILSN LATLON N 47 51.2755 W 103 20.521834
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 18
+RNW 30
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX GERHE AT OR ABOVE 4100 FIX WILSN 4100 RNW 12 TRK 126 UNTIL 2424 FIX OVERFLY CIPGO AT OR ABOVE 4200 HOLD AT FIX CIPGO RIGHT TURN INBOUNDCOURSE 306 LEGDIST 5
+ TRANSITION FORBI FIX FORBI
+ TRANSITION GERHE HOLD AT FIX GERHE RIGHT TURN INBOUNDCOURSE 126 ALT 4100 LEGDIST 5
+ TRANSITION HASOS FIX HASOS FIX HOOPR AT OR ABOVE 4100
+APPROACH RNV30 FIX CIPGO AT OR ABOVE 4200 FIX BOWIS 4100 FIX FIBEN AT OR ABOVE 3100 RNW 30 FIX OVERFLY GERHE AT OR ABOVE 4100 HOLD AT FIX GERHE RIGHT TURN INBOUNDCOURSE 126 LEGDIST 5
+ TRANSITION CIPGO HOLD AT FIX CIPGO RIGHT TURN INBOUNDCOURSE 306 ALT 4200 LEGDIST 5
+ TRANSITION HASOS FIX HASOS
+ TRANSITION POVNY FIX POVNY
+ENDAPPROACHES

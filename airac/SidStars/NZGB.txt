@@ -1,0 +1,47 @@
+//NZGB (GREAT BARRIER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GB678 LATLON S 36 14.9975 E 175 31.629167
+FIX GBNB LATLON S 36 14.647 E 175 27.686833
+FIX NILIX LATLON S 36 15.109333 E 175 43.991833
+FIX PEGNI LATLON S 36 15.056167 E 175 37.8105
+FIX UDUMA LATLON S 36 13.731167 E 175 35.119834
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 10
+RNW 24
+RNW 28
+ENDRNWS
+
+SIDS
+SID GB1A RNW 10 TRK 102 UNTIL 530 FIX OVERFLY UDUMA TURN LEFT DIRECT FIX GBNB
+SID GB2B RNW 10 TRK 102 UNTIL 530 TRK 062 UNTIL 1200 TURN LEFT DIRECT FIX GBNB AT OR ABOVE 1900
+ENDSIDS
+
+APPROACHES
+APPROACH RNVB06 FIX PEGNI 700 FIX OVERFLY GB678 640 RNW 06 TURN RIGHT DIRECT FIX NILIX 3000 SPEED 135
+ TRANSITION NILIX FIX NILIX AT OR ABOVE 3000
+APPROACH RNVB10 FIX PEGNI 700 FIX OVERFLY GB678 640 RNW 10 TURN RIGHT DIRECT FIX NILIX 3000 SPEED 135
+ TRANSITION NILIX FIX NILIX AT OR ABOVE 3000
+APPROACH RNVB24 FIX PEGNI 700 FIX OVERFLY GB678 640 RNW 24 TURN RIGHT DIRECT FIX NILIX 3000 SPEED 135
+ TRANSITION NILIX FIX NILIX AT OR ABOVE 3000
+APPROACH RNVB28 FIX PEGNI 700 FIX OVERFLY GB678 640 RNW 28 TURN RIGHT DIRECT FIX NILIX 3000 SPEED 135
+ TRANSITION NILIX FIX NILIX AT OR ABOVE 3000
+ENDAPPROACHES

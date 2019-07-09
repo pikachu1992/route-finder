@@ -1,0 +1,44 @@
+//HKLK (LOKICHOGIO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APGEM LATLON N 4 12.354667 E 34 19.410667
+FIX AXODU LATLON N 3 59.066666 E 34 12.1915
+FIX AXOPO LATLON N 4 8.882833 E 34 32.9115
+FIX EGMUX LATLON N 4 12.0575 E 34 22.365167
+FIX EGNUL LATLON N 4 15.528833 E 34 8.862167
+FIX EPSUT LATLON N 4 7.150333 E 34 38.663
+FIX ESRAD LATLON N 4 16.971 E 34 4.067
+FIX TEVEN LATLON N 4 10.614667 E 34 27.159167
+FIX TEXIN LATLON N 4 10.0415 E 34 7.225
+FIX USUKA LATLON N 4 27.961333 E 33 59.116667
+FIX XALAS LATLON N 4 13.797667 E 34 14.616167
+FIX XOVAN LATLON N 4 7.605833 E 34 35.176166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX EGNUL AT OR ABOVE 4300 FIX XALAS 4100 FIX OVERFLY APGEM 2485 RNW 09 FIX OVERFLY XOVAN AT OR ABOVE 6500 HOLD AT FIX XOVAN RIGHT TURN INBOUNDCOURSE 285 ALT 6500 SPEED 230 LEGTIME 1
+ TRANSITION AXODU FIX AXODU AT OR ABOVE 10000 FIX TEXIN AT OR ABOVE 6500
+ TRANSITION USUKA FIX USUKA AT OR ABOVE 10000 FIX ESRAD AT OR ABOVE 6500
+APPROACH RNV27 FIX AXOPO AT OR ABOVE 4100 FIX TEVEN 4100 FIX OVERFLY EGMUX 2465 RNW 27 TRK 285 UNTIL 3500 TURN LEFT DIRECT FIX OVERFLY EPSUT AT OR ABOVE 5600 HOLD AT FIX EPSUT RIGHT TURN INBOUNDCOURSE 285 ALT 5600 SPEED 230 LEGTIME 1
+ TRANSITION EPSUT FIX EPSUT AT OR ABOVE 5600
+ENDAPPROACHES

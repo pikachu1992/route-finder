@@ -1,0 +1,43 @@
+//CFT8 (PELICAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALEVU LATLON N 56 9.660833 W 113 16.468
+FIX IGTEM LATLON N 56 9.583 W 113 48.792167
+FIX IGTIK LATLON N 56 9.659833 W 113 18.979834
+FIX KAVIP LATLON N 56 15.171334 W 113 48.874834
+FIX KAVNI LATLON N 56 9.658166 W 113 8.249333
+FIX LENOV LATLON N 56 3.994333 W 113 48.71
+FIX LEPUN LATLON N 56 4.0695 W 113 8.265
+FIX MAROV LATLON N 56 9.6245 W 113 38.062333
+FIX SAXUS LATLON N 56 15.246833 W 113 8.2335
+FIX SEVTI LATLON N 56 9.616834 W 113 40.365833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX IGTEM AT OR ABOVE 3800 SPEED 180 FIX MAROV 3700 RNW 07 FIX OVERFLY ALEVU 3900 HOLD AT FIX ALEVU RIGHT TURN INBOUNDCOURSE 075 SPEED 200 LEGTIME 1
+ TRANSITION KAVIP FIX KAVIP SPEED 200
+ TRANSITION LENOV FIX LENOV SPEED 200
+APPROACH RNV25 FIX KAVNI AT OR ABOVE 3800 SPEED 180 FIX IGTIK 3700 RNW 25 FIX OVERFLY SEVTI 3900 HOLD AT FIX SEVTI RIGHT TURN INBOUNDCOURSE 255 SPEED 200 LEGTIME 1
+ TRANSITION LEPUN FIX LEPUN SPEED 200
+ TRANSITION SAXUS FIX SAXUS SPEED 200
+ENDAPPROACHES

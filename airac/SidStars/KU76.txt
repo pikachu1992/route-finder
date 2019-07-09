@@ -1,0 +1,32 @@
+//KU76 (MOUNTAIN HOME MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALKAL LATLON N 43 0.9725 W 115 19.687667
+FIX ATETY LATLON N 43 23.4925 W 115 55.785334
+FIX CAVTA LATLON N 43 3.788 W 115 32.607667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX ALKAL AT OR ABOVE 8000 FIX CAVTA 6000 RNW 28 TRK 284 UNTIL 3900 FIX OVERFLY ATETY AT OR ABOVE 8900 HOLD AT FIX ATETY RIGHT TURN INBOUNDCOURSE 297 LEGDIST 7
+ TRANSITION ALKAL HOLD AT FIX ALKAL RIGHT TURN INBOUNDCOURSE 274 ALT 8000 LEGDIST 7
+ENDAPPROACHES

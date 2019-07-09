@@ -1,0 +1,47 @@
+//KRZL (JASPER CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOSSY LATLON N 40 38.795666 W 87 21.3995
+FIX BVT LATLON N 40 33.370333 W 87 4.1625
+FIX CETEM LATLON N 40 54.845333 W 87 10.878667
+FIX CUJBA LATLON N 40 58.806 W 87 10.897667
+FIX JITVI LATLON N 41 8.931833 W 87 10.946833
+FIX LUCIT LATLON N 41 13.9405 W 87 25.423333
+FIX MAPPS LATLON N 41 10.899 W 86 56.543833
+FIX WIRAG LATLON N 41 2.426333 W 87 10.915333
+FIX WUPAL LATLON N 40 42.727834 W 87 10.820333
+FIX ZOMDO LATLON N 40 51.250166 W 87 10.861333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JITVI AT OR ABOVE 2600 FIX WIRAG 2400 FIX CUJBA AT OR ABOVE 1240 RNW 18 TRK 182 UNTIL 948 FIX OVERFLY WUPAL AT OR ABOVE 2600 HOLD AT FIX WUPAL RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION JITVI HOLD AT FIX JITVI RIGHT TURN INBOUNDCOURSE 182 ALT 2600 LEGDIST 4
+ TRANSITION LUCIT FIX LUCIT
+ TRANSITION MAPPS FIX MAPPS
+APPROACH RNV36 FIX WUPAL AT OR ABOVE 2600 FIX ZOMDO 2400 FIX CETEM AT OR ABOVE 1240 RNW 36 TRK 002 UNTIL 924 FIX OVERFLY JITVI AT OR ABOVE 2600 HOLD AT FIX JITVI RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4
+ TRANSITION BOSSY FIX BOSSY
+ TRANSITION BVT FIX BVT
+ TRANSITION WUPAL HOLD AT FIX WUPAL RIGHT TURN INBOUNDCOURSE 002 ALT 2600 LEGDIST 4
+ENDAPPROACHES

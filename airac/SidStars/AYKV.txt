@@ -1,0 +1,45 @@
+//AYKV (KAVIENG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF12 LATLON S 2 30.181166 E 150 42.539167
+FIX FF12 LATLON S 2 31.418666 E 150 44.113667
+FIX KVG LATLON S 2 35.131 E 150 48.838
+FIX MD12 LATLON S 2 33.8935 E 150 47.263166
+FIX YKVWA LATLON S 2 32.183833 E 150 38.285333
+FIX YKVWB LATLON S 2 27.572666 E 150 38.289833
+FIX YKVWC LATLON S 2 25.999834 E 150 42.5995
+FIX YKVWF LATLON S 2 32.190167 E 150 44.833166
+FIX YKVWH LATLON S 2 34.589167 E 150 56.933833
+FIX YKVWI LATLON S 2 29.8815 E 150 41.561333
+FIX YKVWM LATLON S 2 34.498667 E 150 48.105167
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH VDM12 FIX CF12 AT OR ABOVE 1660 FIX FF12 1660 FIX MD12 394 RNW 12 FIX KVG TRK 122 UNTIL 5.5 FROM FIX KVG TURN LEFT DIRECT FIX KVG AT OR ABOVE 2500
+ TRANSITION KVG1 FIX KVG AT OR ABOVE 2500 TRK 321 UNTIL 10.5 FROM FIX KVG
+ TRANSITION KVG2 FIX KVG AT OR ABOVE 2500 TRK 314 UNTIL 9.0 FROM FIX KVG
+APPROACH GPS12 FIX YKVWI AT OR ABOVE 1300 FIX YKVWF 800 FIX OVERFLY YKVWM 62 RNW 12 TRK 119 UNTIL 1500 FIX OVERFLY YKVWH AT OR ABOVE 2000
+ TRANSITION YKVWA FIX YKVWA AT OR ABOVE 2000
+ TRANSITION YKVWB FIX YKVWB AT OR ABOVE 2000
+ TRANSITION YKVWC FIX YKVWC AT OR ABOVE 2000
+ENDAPPROACHES

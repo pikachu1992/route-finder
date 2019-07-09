@@ -1,0 +1,44 @@
+//CZJG (JENPEG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADVOD LATLON N 54 35.896333 W 98 7.091666
+FIX BOPET LATLON N 54 21.095666 W 97 53.688
+FIX EBKAS LATLON N 54 41.188 W 98 11.928833
+FIX ILABO LATLON N 54 18.770333 W 98 1.245334
+FIX LEVUT LATLON N 54 43.5245 W 98 4.3125
+FIX MISOV LATLON N 54 23.413333 W 97 46.1165
+FIX NOSIX LATLON N 54 35.2755 W 98 6.525667
+FIX OBSET LATLON N 54 26.3965 W 97 58.467334
+FIX PESKA LATLON N 54 27 W 97 59.012833
+FIX SEDOP LATLON N 54 27.772834 W 97 59.712167
+FIX TEXAK LATLON N 54 38.843666 W 98 19.530667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX EBKAS AT OR ABOVE 2600 FIX ADVOD 2400 RNW 15 FIX OVERFLY PESKA 2600 SPEED 200 HOLD AT FIX PESKA RIGHT TURN INBOUNDCOURSE 149 SPEED 175 LEGTIME 1
+ TRANSITION LEVUT FIX LEVUT
+ TRANSITION TEXAK FIX TEXAK
+APPROACH RNV33 FIX BOPET AT OR ABOVE 2600 FIX OBSET 2400 FIX SEDOP AT OR ABOVE 1880 RNW 33 FIX OVERFLY NOSIX 2600 SPEED 200 HOLD AT FIX NOSIX RIGHT TURN INBOUNDCOURSE 329 SPEED 175 LEGTIME 1
+ TRANSITION ILABO FIX ILABO
+ TRANSITION MISOV FIX MISOV
+ENDAPPROACHES

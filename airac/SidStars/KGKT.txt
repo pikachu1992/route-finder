@@ -1,0 +1,42 @@
+//KGKT (GATLINBURG-PIGEON FORGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 35 54.823695 W 83 29.864021
+FIX AF002 LATLON N 35 58.166467 W 83 30.332207
+FIX BOTRE LATLON N 35 53.3565 W 83 46.868
+FIX D102S LATLON N 35 51.264667 W 83 30.201334
+FIX FATTS LATLON N 35 52.420166 W 83 39.093667
+FIX GAUNT LATLON N 35 53.5145 W 83 47.6025
+FIX HATEM LATLON N 35 50.844 W 83 26.802667
+FIX HOBID LATLON N 35 52.448666 W 83 39.562834
+FIX IDAXE LATLON N 35 58.367666 W 83 25.656833
+FIX PENCE LATLON N 36 1.163333 W 83 31.4385
+FIX VXV LATLON N 35 54.290333 W 83 53.683667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VDM10 FIX GAUNT AT OR ABOVE 3000 FIX FATTS 3000 RNW 10 FIX D102S FIX AF001 FIX AF002 FIX PENCE AT OR ABOVE 4000 HOLD AT FIX PENCE RIGHT TURN INBOUNDCOURSE 252 LEGTIME 1
+ TRANSITION VXV FIX VXV AT OR ABOVE 3000
+APPROACH RNV10 FIX BOTRE AT OR ABOVE 3000 FIX HOBID 3000 RNW 10 FIX HATEM TURN LEFT DIRECT FIX IDAXE FIX OVERFLY PENCE AT OR ABOVE 4000 HOLD AT FIX PENCE RIGHT TURN INBOUNDCOURSE 252 LEGDIST 5
+ TRANSITION VXV FIX VXV
+ENDAPPROACHES

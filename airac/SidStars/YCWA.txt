@@ -1,0 +1,47 @@
+//YCWA (COONDEWANNA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CWAED LATLON S 22 50.86 E 119 1.935
+FIX CWAEE LATLON S 22 56.006833 E 119 6.905333
+FIX CWAEF LATLON S 22 57.3135 E 118 55.071667
+FIX CWAEH LATLON S 22 58.2545 E 118 46.462834
+FIX CWAEI LATLON S 22 56.721334 E 119 0.451166
+FIX CWAEM LATLON S 22 57.9025 E 118 49.691333
+FIX CWAWA LATLON S 23 5.1115 E 118 35.7335
+FIX CWAWB LATLON S 22 59.9485 E 118 30.777167
+FIX CWAWC LATLON S 22 53.8725 E 118 34.3225
+FIX CWAWF LATLON S 22 58.672 E 118 42.618667
+FIX CWAWH LATLON S 22 57.7345 E 118 51.228334
+FIX CWAWI LATLON S 22 59.254 E 118 37.236667
+FIX CWAWM LATLON S 22 58.087 E 118 47.999833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX CWAWI AT OR ABOVE 5300 FIX CWAWF 4130 FIX OVERFLY CWAWM 2436 RNW 08 FIX CWAWH TRK 082 UNTIL 5300
+ TRANSITION CWAWA FIX CWAWA AT OR ABOVE 5300 SPEED 230
+ TRANSITION CWAWB FIX CWAWB AT OR ABOVE 5300 SPEED 230
+ TRANSITION CWAWC FIX CWAWC AT OR ABOVE 5300 SPEED 230
+APPROACH RNV26 FIX CWAEI AT OR ABOVE 5300 FIX CWAEF 4060 FIX OVERFLY CWAEM 2473 RNW 26 FIX CWAEH TRK 262 UNTIL 5300
+ TRANSITION CWAED FIX CWAED AT OR ABOVE 5300 SPEED 230
+ TRANSITION CWAEE FIX CWAEE AT OR ABOVE 5300 SPEED 230
+ENDAPPROACHES

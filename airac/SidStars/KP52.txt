@@ -1,0 +1,45 @@
+//KP52 (COTTONWOOD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COTSA LATLON N 34 31.02 W 111 53.473667
+FIX DRK LATLON N 34 42.153167 W 112 28.8205
+FIX FERER LATLON N 34 11.873833 W 111 47.635
+FIX MINGY LATLON N 34 32.9675 W 111 44.990333
+FIX NINTE LATLON N 34 36.805 W 111 58.263334
+FIX OATES LATLON N 34 52.208666 W 111 42.562667
+FIX UPEJI LATLON N 34 40.748 W 112 0.4285
+FIX WEKIG LATLON N 34 34.879834 W 111 56.667833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+SIDS
+SID MINGY1
+ RNW 14 HDG 145 UNTIL 4100 FIX OVERFLY MINGY AT OR ABOVE 10000
+ RNW 32 HDG 325 UNTIL 4100 TURN RIGHT DIRECT FIX OVERFLY MINGY AT OR ABOVE 10000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV32 FIX COTSA AT OR ABOVE 8500 FIX WEKIG AT OR ABOVE 7100 FIX NINTE 6400 FIX UPEJI AT OR ABOVE 4740 RNW 32 TRK 325 UNTIL 3960 TURN RIGHT DIRECT FIX OVERFLY MINGY AT OR ABOVE 10000 HOLD AT FIX MINGY RIGHT TURN INBOUNDCOURSE 345 LEGDIST 7
+ TRANSITION DRK FIX DRK FIX OVERFLY COTSA AT OR ABOVE 9100 HOLD AT FIX COTSA RIGHT TURN INBOUNDCOURSE 315 ALT 8500 LEGDIST 7
+ TRANSITION FERER FIX FERER
+ TRANSITION OATES FIX OATES FIX OVERFLY COTSA AT OR ABOVE 9100 HOLD AT FIX COTSA RIGHT TURN INBOUNDCOURSE 315 ALT 8500 LEGDIST 7
+ENDAPPROACHES

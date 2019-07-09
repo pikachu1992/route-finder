@@ -1,0 +1,44 @@
+//CJF3 (ILE-A-LA-CROSSE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALPEM LATLON N 55 25.792166 W 107 53.3025
+FIX IMUGI LATLON N 55 38.769833 W 108 2.5355
+FIX KETGO LATLON N 55 33.713833 W 107 58.924834
+FIX NADIP LATLON N 55 21.855833 W 107 41.085
+FIX ONDUV LATLON N 55 34.143334 W 107 59.230834
+FIX OTSIK LATLON N 55 19.9955 W 107 49.211833
+FIX OXARU LATLON N 55 30.421667 W 107 56.582833
+FIX PIBGA LATLON N 55 24.626666 W 107 52.477166
+FIX UKRUR LATLON N 55 18.126 W 107 57.326
+FIX VIXET LATLON N 55 36.9 W 108 10.713833
+FIX VODOB LATLON N 55 40.6305 W 107 54.344167
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX IMUGI AT OR ABOVE 3300 FIX ONDUV 3220 FIX OVERFLY OXARU 1739 RNW 15 FIX OVERFLY ALPEM 3000 HOLD AT FIX ALPEM RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1
+ TRANSITION VIXET FIX VIXET
+ TRANSITION VODOB FIX VODOB
+APPROACH RNV33 FIX OTSIK AT OR ABOVE 3100 FIX PIBGA 3000 RNW 33 FIX OVERFLY KETGO 3000 HOLD AT FIX KETGO RIGHT TURN INBOUNDCOURSE 325 LEGTIME 1
+ TRANSITION NADIP FIX NADIP
+ TRANSITION UKRUR FIX UKRUR
+ENDAPPROACHES

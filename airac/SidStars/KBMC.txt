@@ -1,0 +1,38 @@
+//KBMC (BRIGHAM CITY REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KONNE LATLON N 41 16.186166 W 112 13.699
+FIX MOINT LATLON N 41 15.1545 W 112 25.759667
+FIX NUBGE LATLON N 41 19.977833 W 112 25.869334
+FIX OGD LATLON N 41 13.445833 W 112 5.8945
+FIX OZFEL LATLON N 41 27.4975 W 112 4.907833
+FIX WIZSI LATLON N 41 21.5185 W 112 6.4705
+FIX XEXXA LATLON N 41 32.032333 W 112 3.720167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX WIZSI AT OR ABOVE 7100 FIX OZFEL 5900 FIX OVERFLY XEXXA 4428 RNW 35 TRK 358 UNTIL 4630 TURN LEFT DIRECT FIX OVERFLY KONNE AT OR ABOVE 7100 HOLD AT FIX KONNE RIGHT TURN INBOUNDCOURSE 011 LEGDIST 7
+ TRANSITION MOINT FIX MOINT FIX KONNE AT OR ABOVE 9100
+ TRANSITION NUBGE FIX NUBGE FIX KONNE AT OR ABOVE 9300
+ TRANSITION OGD FIX OGD
+ENDAPPROACHES

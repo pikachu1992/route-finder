@@ -1,0 +1,35 @@
+//KCRZ (CORNING MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATOPY LATLON N 41 5.086166 W 94 45.176333
+FIX BRIDJ LATLON N 41 21.889 W 94 14.336333
+FIX GUNTE LATLON N 41 11.373667 W 94 45.030833
+FIX PSFIC LATLON N 41 16.0395 W 94 59.871
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX GUNTE AT OR ABOVE 3000 FIX ATOPY 3000 RNW 18 TRK 177 UNTIL 1674 TURN LEFT DIRECT FIX OVERFLY GUNTE AT OR ABOVE 3000 HOLD AT FIX GUNTE RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4
+ TRANSITION BRIDJ FIX BRIDJ
+ TRANSITION GUNTE HOLD AT FIX GUNTE RIGHT TURN INBOUNDCOURSE 177 ALT 3000 LEGDIST 4
+ TRANSITION PSFIC FIX PSFIC
+ENDAPPROACHES

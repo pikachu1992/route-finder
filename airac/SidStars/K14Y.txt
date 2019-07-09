@@ -1,0 +1,36 @@
+//K14Y (TODD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRNRD LATLON N 46 20.896834 W 94 1.559
+FIX JEXES LATLON N 45 48.9915 W 94 50.651833
+FIX OKOMY LATLON N 45 41.858167 W 94 37.3525
+FIX SALBE LATLON N 45 42.995666 W 94 48.483
+FIX TESEE LATLON N 45 41.1045 W 94 59.108
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV34 FIX SALBE AT OR ABOVE 3000 FIX JEXES 2900 RNW 34 TRK 344 UNTIL 1732 TURN RIGHT DIRECT FIX OVERFLY SALBE AT OR ABOVE 3000 HOLD AT FIX SALBE RIGHT TURN INBOUNDCOURSE 344 LEGDIST 4
+ TRANSITION BRNRD FIX BRNRD FIX OKOMY AT OR ABOVE 3000
+ TRANSITION SALBE HOLD AT FIX SALBE RIGHT TURN INBOUNDCOURSE 344 ALT 3000 LEGDIST 4
+ TRANSITION TESEE FIX TESEE
+ENDAPPROACHES

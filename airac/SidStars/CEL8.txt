@@ -1,0 +1,44 @@
+//CEL8 (ELEONORE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUVEL LATLON N 52 44.603167 W 75 56.431166
+FIX EMLOD LATLON N 52 44.7175 W 76 25.004
+FIX EMPAR LATLON N 52 35.144666 W 76 20.330167
+FIX IKBOT LATLON N 52 46.262 W 75 46.941833
+FIX ILAKA LATLON N 52 41.4625 W 75 44.6755
+FIX ILURU LATLON N 52 41.630167 W 76 13.209334
+FIX KETMU LATLON N 52 39.9315 W 76 22.662833
+FIX MEBUG LATLON N 52 51.060667 W 75 49.216333
+FIX NOTUV LATLON N 52 41.804666 W 76 12.253166
+FIX NUBAP LATLON N 52 44.44 W 75 57.3885
+FIX ULDER LATLON N 52 43.819 W 76 0.888667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX KETMU AT OR ABOVE 2400 FIX ILURU 2400 RNW 09 FIX OVERFLY NUBAP 2500 HOLD AT FIX NUBAP RIGHT TURN INBOUNDCOURSE 090 SPEED 230 LEGTIME 1
+ TRANSITION EMLOD FIX EMLOD SPEED 210
+ TRANSITION EMPAR FIX EMPAR SPEED 210
+APPROACH RNV27 FIX IKBOT AT OR ABOVE 2500 FIX DUVEL 2400 FIX ULDER AT OR ABOVE 1500 RNW 27 FIX OVERFLY NOTUV 2500 HOLD AT FIX NOTUV RIGHT TURN INBOUNDCOURSE 270 SPEED 230 LEGTIME 1
+ TRANSITION ILAKA FIX ILAKA SPEED 210
+ TRANSITION MEBUG FIX MEBUG SPEED 210
+ENDAPPROACHES

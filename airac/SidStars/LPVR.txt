@@ -1,0 +1,36 @@
+//LPVR (VILA REAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ULVAX LATLON N 41 0.254 W 7 50.072833
+FIX VR361 LATLON N 41 5.591666 W 7 47.835334
+FIX VR362 LATLON N 41 8.417 W 7 46.6485
+FIX VR363 LATLON N 41 10.324166 W 7 45.846334
+FIX VR364 LATLON N 41 19.231834 W 7 42.088834
+FIX VR366 LATLON N 41 17.525 W 7 35.001833
+FIX VR367 LATLON N 41 4.663 W 7 41.883334
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX VR363 3800 RNW 02 FIX VR364 AT OR ABOVE 2240 FIX VR366 FIX VR367 FIX ULVAX 7000 HOLD AT FIX ULVAX LEFT TURN INBOUNDCOURSE 011 LEGDIST 5
+ TRANSITION ULVAX FIX ULVAX AT OR ABOVE 7000 FIX VR361 AT OR ABOVE 5100 FIX VR362 AT OR ABOVE 3800
+ENDAPPROACHES

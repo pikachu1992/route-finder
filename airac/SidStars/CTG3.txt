@@ -1,0 +1,45 @@
+//CTG3 (DU ROCHER-PERCE PABOK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALIPU LATLON N 48 24.961166 W 64 27.845666
+FIX APKIR LATLON N 48 23.269667 W 64 33.021667
+FIX AVRIR LATLON N 48 21.354334 W 64 38.861167
+FIX BISVI LATLON N 48 24.600833 W 64 28.9495
+FIX DUSLU LATLON N 48 20.96 W 64 17.928667
+FIX EMELU LATLON N 48 13.3185 W 64 41.269
+FIX EMODA LATLON N 48 19.1415 W 64 45.580333
+FIX MUPNI LATLON N 48 24.961667 W 64 49.908167
+FIX OBSOM LATLON N 48 26.7975 W 64 22.206334
+FIX ROPVA LATLON N 48 21.0625 W 64 39.749333
+FIX TIKOT LATLON N 48 22.759 W 64 34.580666
+FIX VIDMI LATLON N 48 32.632166 W 64 26.5005
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX EMODA AT OR ABOVE 2300 SPEED 180 FIX AVRIR 1200 FIX OVERFLY TIKOT 177 RNW 08 FIX OVERFLY ALIPU 2300 HOLD AT FIX ALIPU RIGHT TURN INBOUNDCOURSE 083 SPEED 250 LEGTIME 1
+ TRANSITION EMELU FIX EMELU SPEED 210
+ TRANSITION MUPNI FIX MUPNI SPEED 210
+APPROACH RNV26 FIX OBSOM AT OR ABOVE 2400 SPEED 180 FIX BISVI 1200 FIX OVERFLY APKIR 230 RNW 26 FIX OVERFLY ROPVA 2500 HOLD AT FIX ROPVA RIGHT TURN INBOUNDCOURSE 263 SPEED 250 LEGTIME 1
+ TRANSITION DUSLU FIX DUSLU SPEED 210
+ TRANSITION VIDMI FIX VIDMI SPEED 210
+ENDAPPROACHES

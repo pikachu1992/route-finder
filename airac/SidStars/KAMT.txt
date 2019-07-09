@@ -1,0 +1,45 @@
+//KAMT (SALAMON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BESPE LATLON N 38 55.369166 W 83 28.464833
+FIX BOSTR LATLON N 38 53.1355 W 84 4.967
+FIX CAGSU LATLON N 38 46.775666 W 83 39.512167
+FIX DETKE LATLON N 38 55.338167 W 83 19.404167
+FIX DOMBE LATLON N 38 46.781666 W 83 48.5545
+FIX EDINE LATLON N 38 43.241 W 83 44.037167
+FIX FENLA LATLON N 38 58.894 W 83 23.914667
+FIX FERAD LATLON N 38 39.697333 W 83 39.527333
+FIX GATVE LATLON N 39 2.446667 W 83 28.432667
+FIX MXQ LATLON N 39 25.781666 W 83 48.074333
+FIX YRK LATLON N 38 38.648 W 82 58.700333
+FIX ZOZBO LATLON N 38 26.351167 W 83 26.258333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX EDINE AT OR ABOVE 2800 FIX CAGSU 2800 RNW 05 TRK 049 UNTIL 1296 FIX FENLA AT OR ABOVE 2800 HOLD AT FIX FENLA RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4
+ TRANSITION BOSTR FIX BOSTR FIX DOMBE AT OR ABOVE 3000
+ TRANSITION ZOZBO FIX ZOZBO FIX FERAD AT OR ABOVE 3000
+APPROACH RNV23 FIX FENLA AT OR ABOVE 2800 FIX BESPE 2800 RNW 23 FIX OVERFLY EDINE AT OR ABOVE 2800 HOLD AT FIX EDINE RIGHT TURN INBOUNDCOURSE 049 LEGDIST 4
+ TRANSITION MXQ FIX MXQ FIX GATVE AT OR ABOVE 3000
+ TRANSITION YRK FIX YRK FIX DETKE AT OR ABOVE 3300
+ENDAPPROACHES

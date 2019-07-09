@@ -1,0 +1,44 @@
+//KX23 (UMATILLA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIVIM LATLON N 29 6.194833 W 81 45.284833
+FIX GECEN LATLON N 28 57.260833 W 81 38.9875
+FIX HUDUV LATLON N 29 0.856333 W 81 38.765167
+FIX JOKEG LATLON N 29 5.861333 W 81 38.446166
+FIX OYOLO LATLON N 29 5.521667 W 81 31.6085
+FIX POKHU LATLON N 28 50.066666 W 81 39.449666
+FIX TENUY LATLON N 28 45.061333 W 81 39.766
+FIX WOROB LATLON N 28 44.780666 W 81 34.0865
+FIX ZIKAD LATLON N 28 45.338 W 81 45.445834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX TENUY AT OR ABOVE 2000 FIX POKHU 1800 RNW 01 TRK 009 UNTIL 507 TURN LEFT DIRECT FIX OVERFLY TENUY AT OR ABOVE 2000 HOLD AT FIX TENUY RIGHT TURN INBOUNDCOURSE 009 LEGDIST 4
+ TRANSITION TENUY HOLD AT FIX TENUY RIGHT TURN INBOUNDCOURSE 009 ALT 2000 LEGDIST 4
+ TRANSITION WOROB FIX WOROB AT OR ABOVE 2000
+ TRANSITION ZIKAD FIX ZIKAD AT OR ABOVE 2000
+APPROACH RNV19 FIX JOKEG AT OR ABOVE 3000 FIX HUDUV 1800 FIX GECEN AT OR ABOVE 680 RNW 19 TRK 189 UNTIL 507 FIX OVERFLY TENUY AT OR ABOVE 3000 HOLD AT FIX TENUY RIGHT TURN INBOUNDCOURSE 009 LEGDIST 4
+ TRANSITION FIVIM FIX FIVIM
+ TRANSITION JOKEG HOLD AT FIX JOKEG RIGHT TURN INBOUNDCOURSE 189 ALT 3000 LEGDIST 4
+ TRANSITION OYOLO FIX OYOLO
+ENDAPPROACHES

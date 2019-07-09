@@ -1,0 +1,33 @@
+//K0R7 (THE RED RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIXON LATLON N 32 4.778833 W 93 18.445667
+FIX JASDI LATLON N 32 10.8915 W 93 18.433
+FIX PEGSE LATLON N 32 2.334167 W 93 18.450667
+FIX ZUKRI LATLON N 31 47.904334 W 93 18.480167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JASDI AT OR ABOVE 3000 FIX FIXON 1800 FIX PEGSE AT OR ABOVE 1020 RNW 18 TRK 179 UNTIL 478 FIX OVERFLY ZUKRI AT OR ABOVE 3000 HOLD AT FIX ZUKRI RIGHT TURN INBOUNDCOURSE 359 ALT 3000 LEGDIST 4
+ TRANSITION JASDI HOLD AT FIX JASDI RIGHT TURN INBOUNDCOURSE 179 ALT 3000 LEGDIST 4
+ENDAPPROACHES

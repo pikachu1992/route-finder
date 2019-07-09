@@ -1,0 +1,35 @@
+//KDNA (DONA ANA CO INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CRATT LATLON N 32 8.347333 W 107 2.126
+FIX MOLLY LATLON N 32 3.7985 W 106 43.454
+FIX SAZAR LATLON N 31 54.103166 W 106 45.939833
+FIX SUSIQ LATLON N 31 59.417666 W 107 1.613833
+FIX WAREG LATLON N 31 56.359667 W 106 52.579667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX SUSIQ AT OR ABOVE 9000 FIX WAREG 7000 FIX SAZAR AT OR ABOVE 5000 RNW 10 TRK 101 UNTIL 4513 TURN LEFT DIRECT FIX OVERFLY SUSIQ AT OR ABOVE 9000 HOLD AT FIX SUSIQ RIGHT TURN INBOUNDCOURSE 101 LEGDIST 5
+ TRANSITION CRATT FIX CRATT
+ TRANSITION MOLLY FIX MOLLY FIX SUSIQ AT OR ABOVE 9000 HOLD AT FIX SUSIQ RIGHT TURN INBOUNDCOURSE 101 ALT 9000 LEGDIST 5
+ENDAPPROACHES

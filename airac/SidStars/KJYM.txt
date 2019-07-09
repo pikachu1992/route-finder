@@ -1,0 +1,37 @@
+//KJYM (HILLSDALE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVIYE LATLON N 41 54.647333 W 84 21.773
+FIX EVRIW LATLON N 41 55.887334 W 84 48.730834
+FIX GUCYE LATLON N 41 55.147667 W 84 32.379
+FIX HIRED LATLON N 41 49.038 W 84 18.482833
+FIX UFPUY LATLON N 41 54.9645 W 84 28.4565
+FIX UZOHI LATLON N 41 55.589666 W 84 42.044167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX EVRIW AT OR ABOVE 3000 FIX UZOHI 2700 RNW 10 TRK 100 UNTIL 1441 FIX OVERFLY AVIYE AT OR ABOVE 3100 HOLD AT FIX AVIYE RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4
+ TRANSITION EVRIW HOLD AT FIX EVRIW RIGHT TURN INBOUNDCOURSE 100 ALT 3000 LEGDIST 4
+APPROACH RNV28 FIX AVIYE AT OR ABOVE 3100 FIX UFPUY 2700 FIX GUCYE AT OR ABOVE 1760 RNW 28 TRK 281 UNTIL 1700 TURN LEFT DIRECT FIX OVERFLY HIRED AT OR ABOVE 3100 HOLD AT FIX HIRED RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4
+ TRANSITION AVIYE HOLD AT FIX AVIYE RIGHT TURN INBOUNDCOURSE 281 ALT 3100 LEGDIST 4
+ENDAPPROACHES

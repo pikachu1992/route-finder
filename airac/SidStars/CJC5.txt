@@ -1,0 +1,47 @@
+//CJC5 (SHAUNAVON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVAXU LATLON N 49 44.3325 W 108 31.7925
+FIX DUXUK LATLON N 49 37.22 W 108 20.9795
+FIX KEPDO LATLON N 49 35.704834 W 108 18.686167
+FIX LISPI LATLON N 49 31.427167 W 108 12.230167
+FIX OBRER LATLON N 49 43.366834 W 108 30.319834
+FIX PIBTI LATLON N 49 47.6275 W 108 36.828667
+FIX SAXIX LATLON N 49 51.7035 W 108 30.462
+FIX UKIGO LATLON N 49 43.545667 W 108 43.177333
+FIX URMUR LATLON N 49 35.480833 W 108 5.864833
+FIX VEPRO LATLON N 49 34.718666 W 108 17.195167
+FIX XIDUN LATLON N 49 27.367667 W 108 18.578167
+FIX YYN LATLON N 50 17.8225 W 107 41.454167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 12
+RNW 20
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX PIBTI AT OR ABOVE 4800 SPEED 180 FIX OBRER 4700 RNW 12 FIX OVERFLY VEPRO 5200 HOLD AT FIX VEPRO RIGHT TURN INBOUNDCOURSE 124 SPEED 200 LEGTIME 1
+ TRANSITION UKIGO FIX UKIGO SPEED 200
+ TRANSITION YYN FIX YYN FIX SAXIX AT OR ABOVE 4800 SPEED 200
+APPROACH RNV30 FIX LISPI AT OR ABOVE 4700 SPEED 180 FIX KEPDO 4700 FIX DUXUK AT OR ABOVE 4020 RNW 30 FIX OVERFLY AVAXU 5200 HOLD AT FIX AVAXU RIGHT TURN INBOUNDCOURSE 304 SPEED 200 LEGTIME 1
+ TRANSITION XIDUN FIX XIDUN SPEED 200
+ TRANSITION YYN FIX YYN FIX URMUR AT OR ABOVE 4700 SPEED 200
+ENDAPPROACHES

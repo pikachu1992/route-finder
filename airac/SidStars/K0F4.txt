@@ -1,0 +1,39 @@
+//K0F4 (LOUP CITY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASIRE LATLON N 41 14.732666 W 98 58.559167
+FIX ASYLA LATLON N 41 19.9135 W 99 0.299833
+FIX JOEYS LATLON N 41 22.931833 W 99 1.316
+FIX JOLDA LATLON N 41 6.377 W 98 55.7615
+FIX MENPE LATLON N 41 11.712167 W 98 57.546334
+FIX UDEGE LATLON N 41 28.2655 W 99 3.115834
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 16
+RNW 22
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX UDEGE AT OR ABOVE 4100 FIX JOEYS 3900 FIX ASYLA AT OR ABOVE 2900 RNW 16 TRK 161 UNTIL 2371 FIX OVERFLY JOLDA AT OR ABOVE 4000 HOLD AT FIX JOLDA RIGHT TURN INBOUNDCOURSE 341 LEGDIST 4
+ TRANSITION UDEGE HOLD AT FIX UDEGE RIGHT TURN INBOUNDCOURSE 161 ALT 4100 LEGDIST 5
+APPROACH RNV34 FIX JOLDA AT OR ABOVE 4000 FIX MENPE 3800 FIX ASIRE AT OR ABOVE 2800 RNW 34 TRK 341 UNTIL 2369 FIX OVERFLY UDEGE AT OR ABOVE 4100 HOLD AT FIX UDEGE RIGHT TURN INBOUNDCOURSE 161 LEGDIST 5
+ TRANSITION JOLDA HOLD AT FIX JOLDA RIGHT TURN INBOUNDCOURSE 341 ALT 4000 LEGDIST 4
+ENDAPPROACHES

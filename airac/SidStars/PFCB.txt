@@ -1,0 +1,44 @@
+//PFCB (CHENEGA BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JODRO LATLON N 60 5.253334 W 147 45.391166
+FIX JOH LATLON N 60 28.857167 W 146 35.960167
+FIX NAKED LATLON N 60 37.574833 W 147 23.397833
+FIX PEPPI LATLON N 60 42.670667 W 147 52.062833
+FIX WICOL LATLON N 60 14.0005 W 147 24.689833
+FIX ZEPNA LATLON N 60 7.932 W 147 34.8165
+FIX ZIMUR LATLON N 60 33.774 W 147 2.472667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID CHNGA1 RNW 16 RNW 34 FIX JODRO AT OR ABOVE 1000 FIX WICOL FIX NAKED
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA16 FIX WICOL AT OR ABOVE 4000 FIX ZEPNA 2200 FIX OVERFLY JODRO 1020 RNW 16 TURN LEFT DIRECT FIX OVERFLY ZIMUR AT OR ABOVE 4400 HOLD AT FIX ZIMUR RIGHT TURN INBOUNDCOURSE 091 LEGDIST 4
+ TRANSITION JOH FIX JOH
+ TRANSITION PEPPI FIX PEPPI
+APPROACH RNVA34 FIX WICOL AT OR ABOVE 4000 FIX ZEPNA 2200 FIX OVERFLY JODRO 1020 RNW 34 TURN LEFT DIRECT FIX OVERFLY ZIMUR AT OR ABOVE 4400 HOLD AT FIX ZIMUR RIGHT TURN INBOUNDCOURSE 091 LEGDIST 4
+ TRANSITION JOH FIX JOH
+ TRANSITION PEPPI FIX PEPPI
+ENDAPPROACHES

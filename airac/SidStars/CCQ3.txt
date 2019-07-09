@@ -1,0 +1,48 @@
+//CCQ3 (DEBERT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVIXO LATLON N 45 33.447334 W 63 14.3305
+FIX DAVSO LATLON N 45 16.418333 W 63 40.967333
+FIX HETHN LATLON N 45 28.279667 W 63 12.106667
+FIX IMAXA LATLON N 45 23.344667 W 63 35.093833
+FIX IRBIK LATLON N 45 26.539 W 63 20.263834
+FIX OBVOV LATLON N 45 23.111333 W 63 9.889667
+FIX TIKIX LATLON N 45 21.576667 W 63 43.227167
+FIX ULESI LATLON N 45 23.014333 W 63 36.6175
+FIX XONGA LATLON N 45 26.734166 W 63 45.494
+FIX XUKTI LATLON N 45 25.942667 W 63 23.045666
+FIX XUMBU LATLON N 45 26.8675 W 63 18.728666
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 09
+RNW 16
+RNW 23
+RNW 27
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX TIKIX AT OR ABOVE 1900 SPEED 180 FIX IMAXA 1800 RNW 09 FIX OVERFLY XUMBU 2600 HOLD AT FIX XUMBU RIGHT TURN INBOUNDCOURSE 091 SPEED 200 LEGTIME 1
+ TRANSITION DAVSO FIX DAVSO SPEED 210
+ TRANSITION XONGA FIX XONGA SPEED 210
+APPROACH RNV27 FIX HETHN AT OR ABOVE 2600 SPEED 180 FIX IRBIK 1800 FIX XUKTI AT OR ABOVE 1130 RNW 27 FIX OVERFLY ULESI 2600 HOLD AT FIX ULESI RIGHT TURN INBOUNDCOURSE 271 SPEED 200 LEGTIME 1
+ TRANSITION AVIXO FIX AVIXO SPEED 210
+ TRANSITION OBVOV FIX OBVOV SPEED 210
+ENDAPPROACHES

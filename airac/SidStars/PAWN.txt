@@ -1,0 +1,41 @@
+//PAWN (NOATAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COTAD LATLON N 67 28.476167 W 163 4.317334
+FIX FITSU LATLON N 67 22.151333 W 163 10.946167
+FIX FIWWI LATLON N 67 10.303166 W 163 18.613333
+FIX HIBLA LATLON N 67 43.2745 W 162 28.525
+FIX JENTO LATLON N 67 38.809667 W 162 53.349334
+FIX WANLY LATLON N 67 7.651667 W 162 41.5535
+FIX WEDET LATLON N 67 45.266333 W 162 46.4075
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX FITSU AT OR ABOVE 3400 FIX COTAD 1800 RNW 01 TRK 011 UNTIL 1000 TURN RIGHT DIRECT FIX OVERFLY FITSU AT OR ABOVE 3400 HOLD AT FIX FITSU RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4
+ TRANSITION FITSU HOLD AT FIX FITSU RIGHT TURN INBOUNDCOURSE 011 ALT 3400 LEGDIST 4
+ TRANSITION FIWWI FIX FIWWI
+ TRANSITION WANLY FIX WANLY
+APPROACH RNV19 FIX WEDET AT OR ABOVE 4000 FIX JENTO 1800 RNW 19 TRK 191 UNTIL 1700 TURN LEFT DIRECT FIX OVERFLY WEDET AT OR ABOVE 4000 HOLD AT FIX WEDET RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION HIBLA FIX HIBLA
+ TRANSITION WEDET HOLD AT FIX WEDET RIGHT TURN INBOUNDCOURSE 191 ALT 4000 LEGDIST 4
+ENDAPPROACHES

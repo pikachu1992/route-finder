@@ -1,0 +1,34 @@
+//TJIG (FERNANDO LUIS RIBAS DOMINICCI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CORAF LATLON N 18 38.798333 W 66 23.399
+FIX FIRPE LATLON N 18 26.745334 W 66 11.396167
+FIX MALCU LATLON N 18 26.109833 W 66 16.645166
+FIX SJU LATLON N 18 26.776834 W 65 59.3705
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX MALCU AT OR ABOVE 2300 FIX FIRPE 1600 RNW 09 TRK 095 UNTIL 410 TURN LEFT DIRECT FIX OVERFLY CORAF AT OR ABOVE 3000 HOLD AT FIX CORAF RIGHT TURN INBOUNDCOURSE 129 LEGDIST 4
+ TRANSITION CORAF FIX CORAF
+ TRANSITION SJU FIX SJU FIX MALCU AT OR ABOVE 3000 HOLD AT FIX MALCU LEFT TURN INBOUNDCOURSE 095 ALT 2300 LEGDIST 4
+ENDAPPROACHES

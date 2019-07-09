@@ -1,0 +1,49 @@
+//K1B9 (MANSFIELD MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVONN LATLON N 41 38.155 W 71 12.435833
+FIX DUNKK LATLON N 42 4.9025 W 70 39.3805
+FIX EASTN LATLON N 41 56.830667 W 71 5.156833
+FIX FOSTY LATLON N 41 50.591 W 71 38.522333
+FIX HEFTY LATLON N 41 54.319834 W 71 33.839833
+FIX JEWIT LATLON N 41 41.765333 W 71 49.553
+FIX ORW LATLON N 41 33.384167 W 71 59.961167
+FIX RAYNM LATLON N 41 53.588167 W 70 58.396166
+FIX REPOY LATLON N 41 49.38 W 71 2.014
+FIX WHYBE LATLON N 42 15.2305 W 71 24.992167
+FIX WOONS LATLON N 41 57.0345 W 71 30.422333
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 14
+RNW 22
+RNW 32
+ENDRNWS
+
+STARS
+STAR WOONS2 FIX ORW FIX JEWIT FIX FOSTY FIX HEFTY FIX WOONS
+  RNW 04 RNW 14 RNW 22 RNW 32
+ENDSTARS
+
+APPROACHES
+APPROACH RNV32 FIX RAYNM AT OR ABOVE 3000 FIX EASTN 2000 RNW 32 TRK 319 UNTIL 522 FIX OVERFLY WHYBE AT OR ABOVE 3000 HOLD AT FIX WHYBE RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4
+ TRANSITION AVONN FIX AVONN FIX REPOY AT OR ABOVE 3000
+ TRANSITION DUNKK FIX DUNKK
+ TRANSITION WOONS FIX WOONS FIX OVERFLY RAYNM AT OR ABOVE 3000 HOLD AT FIX RAYNM RIGHT TURN INBOUNDCOURSE 319 ALT 3000 LEGDIST 4
+ENDAPPROACHES

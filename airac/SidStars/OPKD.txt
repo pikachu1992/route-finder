@@ -1,0 +1,35 @@
+//OPKD (HYDERABAD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D050H LATLON N 25 24.207667 E 68 28.067
+FIX FN02 LATLON N 25 12.6565 E 68 20.419834
+FIX FN20 LATLON N 25 25.437833 E 68 29.684167
+FIX KDNB LATLON N 25 19.374167 E 68 21.722
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH NDB02 FIX FN02 2100 RNW 02 FIX KDNB AT OR ABOVE 550 HDG 010 VECTORS
+ TRANSITION KD FIX KDNB AT OR ABOVE 3000 TRK 220 UNTIL 7.0 FROM FIX KDNB
+APPROACH NDB20 FIX FN20 3000 RNW 20 FIX KDNB AT OR ABOVE 550 TRK 230 VECTORS
+ TRANSITION KD FIX KDNB AT OR ABOVE 3000 FIX D050H AT OR ABOVE 3000 TRK 095 UNTIL 3.3 FROM FIX D050H
+ENDAPPROACHES

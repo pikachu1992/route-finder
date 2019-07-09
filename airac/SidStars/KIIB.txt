@@ -1,0 +1,37 @@
+//KIIB (INDEPENDENCE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BICAB LATLON N 42 20.737667 W 91 56.770166
+FIX CEGNU LATLON N 42 38.358334 W 91 57.007333
+FIX FARVI LATLON N 42 16.183834 W 91 56.7095
+FIX GIVEC LATLON N 42 34.114834 W 91 56.950166
+FIX NADVE LATLON N 42 29.566 W 91 56.888833
+FIX YENRU LATLON N 42 25.3595 W 91 56.832334
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX CEGNU AT OR ABOVE 4000 FIX GIVEC 3000 FIX NADVE AT OR ABOVE 1540 RNW 18 TRK 179 UNTIL 1220 FIX OVERFLY FARVI AT OR ABOVE 4000 HOLD AT FIX FARVI RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4
+ TRANSITION CEGNU HOLD AT FIX CEGNU RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4
+APPROACH RNV36 FIX FARVI AT OR ABOVE 4000 FIX BICAB 3000 FIX YENRU AT OR ABOVE 1520 RNW 36 TRK 359 UNTIL 1229 FIX OVERFLY CEGNU AT OR ABOVE 4000 HOLD AT FIX CEGNU RIGHT TURN INBOUNDCOURSE 179 ALT 4000 LEGDIST 4
+ TRANSITION FARVI HOLD AT FIX FARVI RIGHT TURN INBOUNDCOURSE 359 ALT 4000 LEGDIST 4
+ENDAPPROACHES

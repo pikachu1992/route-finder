@@ -1,0 +1,40 @@
+//CYPT (PELEE ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALUXA LATLON N 41 46.796333 W 82 46.412333
+FIX DERDU LATLON N 41 51.745667 W 82 53.302166
+FIX DUSAB LATLON N 41 46.869833 W 82 34.953833
+FIX IRKEN LATLON N 41 41.9075 W 82 26.894833
+FIX NUBET LATLON N 41 46.743667 W 82 53.2285
+FIX PIXUV LATLON N 41 46.909834 W 82 26.934167
+FIX VEPSA LATLON N 41 46.873 W 82 34.361333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX NUBET AT OR ABOVE 1900 FIX ALUXA 1900 RNW 10 FIX OVERFLY VEPSA 2100 HOLD AT FIX VEPSA RIGHT TURN INBOUNDCOURSE 097 SPEED 250 LEGTIME 1
+ TRANSITION DERDU FIX DERDU SPEED 210
+APPROACH RNV28 FIX PIXUV AT OR ABOVE 1900 FIX DUSAB 1900 RNW 28 TRK 277 UNTIL 1100 TURN LEFT DIRECT FIX OVERFLY PIXUV 2100 HOLD AT FIX PIXUV LEFT TURN INBOUNDCOURSE 277 LEGTIME 1
+ TRANSITION IRKEN FIX IRKEN SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,46 @@
+//K12D (TOWER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AZARA LATLON N 47 48.483167 W 92 34.841167
+FIX ELO LATLON N 47 49.314 W 91 49.8085
+FIX FLOGG LATLON N 47 48.798833 W 92 25.801
+FIX FLWER LATLON N 47 49.368334 W 92 8.543833
+FIX HIB LATLON N 47 18.091667 W 92 42.242666
+FIX INKER LATLON N 47 53.7085 W 93 1.733833
+FIX KUMDE LATLON N 47 39.617 W 91 53.412
+FIX MACLE LATLON N 47 43.4925 W 92 34.465166
+FIX OBREW LATLON N 47 49.6495 W 91 59.501
+FIX TOEGO LATLON N 47 41.529 W 92 55.019167
+FIX UDORY LATLON N 47 21.331166 W 91 11.028334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX AZARA AT OR ABOVE 4000 FIX FLOGG 3200 RNW 08 FIX FLWER FIX OVERFLY ELO AT OR ABOVE 4000 HOLD AT FIX ELO LEFT TURN INBOUNDCOURSE 291 LEGDIST 4
+ TRANSITION HIB FIX HIB FIX MACLE AT OR ABOVE 4000
+ TRANSITION INKER FIX INKER
+ TRANSITION UDORY FIX UDORY FIX MACLE AT OR ABOVE 4000
+APPROACH RNV26 FIX OBREW AT OR ABOVE 4000 FIX FLWER 3200 RNW 26 TRK 268 UNTIL 1770 TURN LEFT DIRECT FIX OVERFLY KUMDE AT OR ABOVE 4000 HOLD AT FIX KUMDE RIGHT TURN INBOUNDCOURSE 014 LEGDIST 4
+ TRANSITION HIB FIX HIB FIX KUMDE AT OR ABOVE 4000
+ TRANSITION TOEGO FIX TOEGO FIX KUMDE AT OR ABOVE 4000
+ TRANSITION UDORY FIX UDORY FIX KUMDE AT OR ABOVE 4000
+ENDAPPROACHES

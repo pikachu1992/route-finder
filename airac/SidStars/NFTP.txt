@@ -1,0 +1,35 @@
+//NFTP (NIUATOPUTAPU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GUVOS LATLON S 15 49.835833 W 173 53.3195
+FIX POSUS LATLON S 15 53.695166 W 173 54.4695
+FIX SUNBA LATLON S 15 55.935334 W 173 57.914666
+FIX TP689 LATLON S 15 56.061 W 173 51.115
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX POSUS AT OR ABOVE 2500 FIX TP689 1250 RNW 11 TRK 114 UNTIL 1000 TURN RIGHT DIRECT FIX POSUS AT OR ABOVE 2500
+ TRANSITION GUVOS FIX GUVOS
+ TRANSITION POSUS HOLD AT FIX POSUS RIGHT TURN INBOUNDCOURSE 114 ALT 2500 LEGTIME 1
+ TRANSITION SUNBA FIX SUNBA
+ENDAPPROACHES

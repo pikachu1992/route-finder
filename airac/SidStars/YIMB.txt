@@ -1,0 +1,49 @@
+//YIMB (KIMBA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IMBND LATLON S 32 53.264333 E 136 33.0285
+FIX IMBNE LATLON S 32 53.781 E 136 39.812833
+FIX IMBNF LATLON S 33 1.438333 E 136 32.1475
+FIX IMBNG LATLON S 32 59.335333 E 136 41.563333
+FIX IMBNH LATLON S 33 7.5585 E 136 25.999333
+FIX IMBNI LATLON S 32 57.610667 E 136 35.983
+FIX IMBSA LATLON S 33 17.912833 E 136 22.904666
+FIX IMBSB LATLON S 33 17.380834 E 136 16.091
+FIX IMBSC LATLON S 33 11.821 E 136 14.3615
+FIX IMBSF LATLON S 33 9.740333 E 136 23.802667
+FIX IMBSH LATLON S 33 3.622166 E 136 29.956
+FIX IMBSI LATLON S 33 13.5615 E 136 19.949666
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 15
+RNW 21
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ03 FIX IMBSI AT OR ABOVE 2800 FIX IMBSF 2400 RNW 03 FIX IMBSH TRK 033 UNTIL 2800
+ TRANSITION IMBSA FIX IMBSA AT OR ABOVE 2800 SPEED 210
+ TRANSITION IMBSB FIX IMBSB AT OR ABOVE 2800 SPEED 210
+ TRANSITION IMBSC FIX IMBSC AT OR ABOVE 2800 SPEED 210
+APPROACH RNVZ21 FIX IMBNI AT OR ABOVE 2800 FIX IMBNF 2380 RNW 21 FIX IMBNH TRK 213 UNTIL 2800
+ TRANSITION IMBND FIX IMBND AT OR ABOVE 2800 SPEED 210
+ TRANSITION IMBNE FIX IMBNE AT OR ABOVE 2800 SPEED 210
+ TRANSITION IMBNG FIX IMBNG AT OR ABOVE 2800 SPEED 210
+ENDAPPROACHES

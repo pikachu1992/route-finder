@@ -1,0 +1,39 @@
+//KPRZ (PORTALES MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CURIB LATLON N 33 37.871167 W 103 55.657333
+FIX DEYAC LATLON N 33 52.966667 W 103 41.418167
+FIX ECERI LATLON N 33 57.2085 W 103 30.532
+FIX FELIB LATLON N 34 2.8315 W 103 27.689833
+FIX JELAT LATLON N 33 55.263833 W 103 24.993833
+FIX KEBYO LATLON N 34 9.949834 W 103 8.928833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 08
+RNW 19
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX ECERI AT OR ABOVE 6300 FIX FELIB 6000 RNW 01 TRK 014 UNTIL 4478 TURN LEFT DIRECT FIX ECERI AT OR ABOVE 6300 HOLD AT FIX ECERI RIGHT TURN INBOUNDCOURSE 014 LEGDIST 6
+ TRANSITION CURIB FIX CURIB FIX DEYAC AT OR ABOVE 7200
+ TRANSITION ECERI HOLD AT FIX ECERI RIGHT TURN INBOUNDCOURSE 014 ALT 6300 LEGDIST 6
+ TRANSITION KEBYO FIX KEBYO FIX JELAT AT OR ABOVE 6700
+ENDAPPROACHES

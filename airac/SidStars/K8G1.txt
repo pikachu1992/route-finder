@@ -1,0 +1,37 @@
+//K8G1 (WILLARD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MAJOJ LATLON N 41 2.176333 W 82 43.355666
+FIX MFD LATLON N 40 52.116667 W 82 35.457667
+FIX PI001 LATLON N 40 49.228278 W 82 32.844711
+FIX PI002 LATLON N 40 45.001577 W 82 33.888834
+FIX PI003 LATLON N 40 43.861527 W 82 28.002128
+FIX YUMAN LATLON N 40 58.566334 W 82 40.515667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VORA10 FIX MFD AT OR ABOVE 3000 FIX YUMAN 3000 FIX MAJOJ 1880 RNW 10 TRK 332 UNTIL 3000 TURN RIGHT DIRECT FIX MFD HOLD AT FIX MFD LEFT TURN INBOUNDCOURSE 332 LEGTIME 1
+ TRANSITION MFD FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+APPROACH VORA28 FIX MFD AT OR ABOVE 3000 FIX YUMAN 3000 FIX MAJOJ 1880 RNW 28 TRK 332 UNTIL 3000 TURN RIGHT DIRECT FIX MFD HOLD AT FIX MFD LEFT TURN INBOUNDCOURSE 332 LEGTIME 1
+ TRANSITION MFD FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+ENDAPPROACHES

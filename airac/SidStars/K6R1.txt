@@ -1,0 +1,34 @@
+//K6R1 (WELSH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COFCI LATLON N 30 12.400333 W 92 55.710833
+FIX LCH LATLON N 30 8.490833 W 93 6.334166
+FIX MACGE LATLON N 30 14.349667 W 92 50.394
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 09
+RNW 25
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM07 FIX LCH AT OR ABOVE 2000 FIX COFCI 1700 FIX MACGE 136 RNW 07 TRK 060 UNTIL 800 TURN LEFT DIRECT FIX LCH AT OR ABOVE 2000
+ TRANSITION LCH HOLD AT FIX LCH RIGHT TURN INBOUNDCOURSE 069 ALT 2000 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//CJH3 (MAIDSTONE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGDUB LATLON N 53 2.062834 W 109 13.136666
+FIX AGMOM LATLON N 53 9.6395 W 109 26.269166
+FIX DASIN LATLON N 52 57.907 W 109 5.983667
+FIX EBDIG LATLON N 53 1.9285 W 108 59.544
+FIX EPVOT LATLON N 53 13.774667 W 109 33.487166
+FIX IKBED LATLON N 53 9.722833 W 109 39.903334
+FIX KASIX LATLON N 52 53.879666 W 109 12.403667
+FIX OMRET LATLON N 53 10.501 W 109 27.769834
+FIX PUROK LATLON N 53 17.820833 W 109 27.050666
+FIX VERGA LATLON N 53 7.322833 W 109 22.241
+FIX XUDMA LATLON N 53 1.238666 W 109 11.715167
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX EPVOT AT OR ABOVE 3700 SPEED 180 FIX AGMOM 3700 FIX VERGA AT OR ABOVE 2610 RNW 12 FIX OVERFLY XUDMA 3900 HOLD AT FIX XUDMA RIGHT TURN INBOUNDCOURSE 121 SPEED 200 LEGTIME 1
+ TRANSITION IKBED FIX IKBED SPEED 200
+ TRANSITION PUROK FIX PUROK SPEED 200
+APPROACH RNV30 FIX DASIN AT OR ABOVE 3700 SPEED 180 FIX AGDUB 3700 RNW 30 FIX OVERFLY OMRET 3900 HOLD AT FIX OMRET RIGHT TURN INBOUNDCOURSE 301 SPEED 200 LEGTIME 1
+ TRANSITION EBDIG FIX EBDIG SPEED 200
+ TRANSITION KASIX FIX KASIX SPEED 200
+ENDAPPROACHES

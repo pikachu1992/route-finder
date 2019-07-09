@@ -1,0 +1,47 @@
+//FNME (MENONGUE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BINDA LATLON S 14 49.088167 E 17 50.674834
+FIX CUCHI LATLON S 14 38.650667 E 17 30.801667
+FIX CUEBE LATLON S 14 29.811 E 17 35.695834
+FIX G118E LATLON S 14 42.285167 E 17 48.581
+FIX G118J LATLON S 14 44.666833 E 17 53.122333
+FIX G298E LATLON S 14 36.616667 E 17 37.787
+FIX G298J LATLON S 14 34.25 E 17 33.25
+FIX LUETA LATLON S 14 47.0495 E 17 57.6655
+FIX SANDA LATLON S 14 40.247 E 17 55.5685
+FIX TEMBO LATLON S 14 31.846667 E 17 28.712167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX G298J AT OR ABOVE 6300 FIX G298E 6300 RNW 13 TRK 125 UNTIL 5100 TURN LEFT DIRECT FIX CUEBE AT OR ABOVE 8000
+ TRANSITION CUCHI FIX CUCHI
+ TRANSITION CUEBE FIX CUEBE
+ TRANSITION G298J HOLD AT FIX G298J RIGHT TURN INBOUNDCOURSE 125 ALT 6300 LEGTIME 1
+ TRANSITION TEMBO FIX TEMBO
+APPROACH RNV31 FIX G118J AT OR ABOVE 6300 FIX G118E 6300 RNW 31 TRK 305 UNTIL 5100 TURN RIGHT DIRECT FIX SANDA AT OR ABOVE 8000
+ TRANSITION BINDA FIX BINDA
+ TRANSITION G118J HOLD AT FIX G118J RIGHT TURN INBOUNDCOURSE 305 ALT 6300 LEGTIME 1
+ TRANSITION LUETA FIX LUETA
+ TRANSITION SANDA FIX SANDA
+ENDAPPROACHES

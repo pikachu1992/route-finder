@@ -1,0 +1,37 @@
+//KPVE (BEECH RIVER REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COCTA LATLON N 35 27.724 W 88 14.716333
+FIX DEGYE LATLON N 35 45.012167 W 88 10.2695
+FIX EYODI LATLON N 35 50.891 W 88 8.75
+FIX HIKBO LATLON N 35 33.621667 W 88 13.203
+FIX XISGY LATLON N 35 42.511834 W 88 10.9145
+FIX XITVE LATLON N 35 36.4475 W 88 12.4765
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX COCTA AT OR ABOVE 3000 FIX HIKBO 2200 FIX XITVE AT OR ABOVE 1280 RNW 01 TRK 013 UNTIL 717 FIX OVERFLY EYODI AT OR ABOVE 3000 HOLD AT FIX EYODI RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4
+ TRANSITION COCTA HOLD AT FIX COCTA LEFT TURN INBOUNDCOURSE 013 ALT 3000 LEGDIST 4
+APPROACH RNV19 FIX EYODI AT OR ABOVE 3000 FIX DEGYE 2200 FIX XISGY AT OR ABOVE 1380 RNW 19 TRK 193 UNTIL 738 FIX OVERFLY COCTA AT OR ABOVE 3000 HOLD AT FIX COCTA LEFT TURN INBOUNDCOURSE 013 LEGDIST 4
+ TRANSITION EYODI HOLD AT FIX EYODI RIGHT TURN INBOUNDCOURSE 193 ALT 3000 LEGDIST 4
+ENDAPPROACHES

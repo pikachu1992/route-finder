@@ -1,0 +1,37 @@
+//VAJL (JALGAON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FS09 LATLON N 20 57.845333 E 75 30.644333
+FIX FS27 LATLON N 20 56.825 E 75 44.876167
+FIX JLG LATLON N 20 57.848333 E 75 38.016667
+FIX MS09 LATLON N 20 57.847834 E 75 36.414334
+FIX MS27 LATLON N 20 57.612334 E 75 39.600167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX FS09 2900 FIX MS09 1181 RNW 09 TRK 090 UNTIL 2900 TURN RIGHT DIRECT FIX JLG 4700 HOLD AT FIX JLG RIGHT TURN INBOUNDCOURSE 260 ALT 4700 LEGTIME 1
+ TRANSITION JLG FIX JLG AT OR ABOVE 4700 TRK 260 UNTIL 9.0 FROM FIX JLG
+APPROACH VDM27 FIX FS27 2900 FIX MS27 1305 RNW 27 TRK 279 UNTIL 2900 TURN RIGHT DIRECT FIX JLG 4700 HOLD AT FIX JLG RIGHT TURN INBOUNDCOURSE 079 ALT 4700 LEGTIME 1
+ TRANSITION JLG1 FIX JLG AT OR ABOVE 4700 TRK 079 UNTIL 9.0 FROM FIX JLG
+ TRANSITION JLG2 FIX JLG AT OR ABOVE 4700 TRK 089 UNTIL 9.0 FROM FIX JLG
+ENDAPPROACHES

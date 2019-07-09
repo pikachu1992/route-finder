@@ -1,0 +1,55 @@
+//UHTR (PREOBRAZHENIYE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LAMKA LATLON N 43 24.016667 E 133 53.066666
+FIX UH001 LATLON N 42 52.378333 E 133 51.318334
+FIX UH002 LATLON N 42 47.22 E 133 58.938334
+FIX UH003 LATLON N 43 1.535 E 134 15.57
+FIX UH004 LATLON N 43 2.913334 E 134 1.953334
+FIX UH005 LATLON N 42 51.101666 E 133 50.035
+FIX UH006 LATLON N 42 46.923334 E 133 45.843334
+FIX UH007 LATLON N 42 50.15 E 133 38.98
+FIX UH008 LATLON N 42 43.03 E 133 52.04
+FIX UH009 LATLON N 42 53.515 E 133 52.463333
+FIX UH010 LATLON N 42 56.731667 E 133 55.7
+FIX UH011 LATLON N 43 3.105 E 134 4.913333
+FIX UH012 LATLON N 42 47.3 E 133 56.99
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+SIDS
+SID LAMK1A RNW 23 FIX OVERFLY UH001 FIX UH002 TURN LEFT DIRECT FIX UH003 FIX LAMKA AT OR ABOVE 8000
+SID LAMK1B RNW 05 FIX OVERFLY UH004 FIX LAMKA AT OR ABOVE 8000
+ENDSIDS
+
+STARS
+STAR LAMK1C FIX LAMKA AT OR ABOVE 8000 FIX UH007 4930
+  RNW 05
+STAR LAMK1D FIX LAMKA AT OR ABOVE 8000 FIX UH011 AT OR ABOVE 5910 FIX UH008 4930
+  RNW 05
+ENDSTARS
+
+APPROACHES
+APPROACH RNV05 FIX UH006 2630 FIX UH005 1650 FIX OVERFLY UH009 690 RNW 05 FIX OVERFLY UH010 TURN RIGHT DIRECT FIX UH012 FIX UH008 AT OR ABOVE 3940
+ TRANSITION UH007 FIX UH007 4930
+ TRANSITION UH008 FIX UH008 4930
+ENDAPPROACHES

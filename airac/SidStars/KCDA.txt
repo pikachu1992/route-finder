@@ -1,0 +1,37 @@
+//KCDA (CALEDONIA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXTER LATLON N 44 29.033333 W 72 2.139833
+FIX AYZOO LATLON N 44 25.359667 W 71 40.719833
+FIX CEVEY LATLON N 44 22.799666 W 72 3.429334
+FIX DETFI LATLON N 44 23.528333 W 72 10.327333
+FIX ECAVO LATLON N 44 22.064 W 71 56.534167
+FIX MPV LATLON N 44 5.129 W 72 26.962667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX CEVEY AT OR ABOVE 4000 FIX AXTER 2800 RNW 02 TRK 024 UNTIL 1588 TURN LEFT DIRECT FIX OVERFLY CEVEY AT OR ABOVE 4000 HOLD AT FIX CEVEY RIGHT TURN INBOUNDCOURSE 024 LEGDIST 5
+ TRANSITION AYZOO FIX AYZOO FIX ECAVO AT OR ABOVE 4000
+ TRANSITION CEVEY HOLD AT FIX CEVEY RIGHT TURN INBOUNDCOURSE 024 ALT 4000 LEGDIST 5
+ TRANSITION MPV FIX MPV FIX DETFI AT OR ABOVE 5000
+ENDAPPROACHES

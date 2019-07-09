@@ -1,0 +1,43 @@
+//PFCL (CLARKS POINT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUNUW LATLON N 58 55.715833 W 158 28.191167
+FIX CENDU LATLON N 59 1.654333 W 158 24.443833
+FIX DUHGO LATLON N 59 3.196 W 158 33.648167
+FIX EPOMY LATLON N 59 0.101833 W 158 15.253333
+FIX GACCU LATLON N 58 44.256334 W 158 35.357833
+FIX HEGPI LATLON N 58 38.3805 W 158 38.999833
+FIX IKULE LATLON N 58 36.845333 W 158 29.9005
+FIX JEGVO LATLON N 58 39.904834 W 158 48.112333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX CENDU AT OR ABOVE 2900 FIX BUNUW 2000 RNW 18 FIX OVERFLY HEGPI AT OR ABOVE 2900 HOLD AT FIX HEGPI RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4
+ TRANSITION CENDU HOLD AT FIX CENDU RIGHT TURN INBOUNDCOURSE 183 ALT 2900 LEGDIST 4
+ TRANSITION DUHGO FIX DUHGO AT OR ABOVE 5100
+ TRANSITION EPOMY FIX EPOMY AT OR ABOVE 2900
+APPROACH RNV36 FIX HEGPI AT OR ABOVE 2900 FIX GACCU 2000 RNW 36 FIX OVERFLY CENDU AT OR ABOVE 2900 HOLD AT FIX CENDU RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION HEGPI HOLD AT FIX HEGPI RIGHT TURN INBOUNDCOURSE 003 ALT 2900 LEGDIST 4
+ TRANSITION IKULE FIX IKULE AT OR ABOVE 2900
+ TRANSITION JEGVO FIX JEGVO AT OR ABOVE 5000
+ENDAPPROACHES

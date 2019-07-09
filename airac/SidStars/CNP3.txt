@@ -1,0 +1,35 @@
+//CNP3 (ARNPRIOR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KEDSA LATLON N 45 26.048833 W 76 0.883166
+FIX KEGLI LATLON N 45 25.114333 W 76 15.019834
+FIX KOBEB LATLON N 45 24.875833 W 76 18.552667
+FIX YOW LATLON N 45 26.504666 W 75 53.811833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 16
+RNW 28
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM28 FIX KEDSA AT OR ABOVE 2300 FIX KEGLI 1910 FIX KOBEB AT OR ABOVE 1080 RNW 28 TRK 279 UNTIL 760 TURN RIGHT DIRECT FIX YOW 4000 HOLD AT FIX YOW RIGHT TURN INBOUNDCOURSE 280 LEGTIME 1
+ TRANSITION YOW FIX YOW
+ENDAPPROACHES

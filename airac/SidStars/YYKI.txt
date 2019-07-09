@@ -1,0 +1,38 @@
+//YYKI (YORKE ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YKIEA LATLON S 9 47.731667 E 143 37.325
+FIX YKIEB LATLON S 9 53.488333 E 143 37.601666
+FIX YKIEC LATLON S 9 55.711667 E 143 32.24
+FIX YKIEF LATLON S 9 48.12 E 143 29.038333
+FIX YKIEH LATLON S 9 43.821667 E 143 22.19
+FIX YKIEI LATLON S 9 50.803333 E 143 33.318334
+FIX YKIEM LATLON S 9 45.433333 E 143 24.758333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV30 FIX YKIEI AT OR ABOVE 1800 FIX YKIEF 1740 FIX OVERFLY YKIEM 149 RNW 30 FIX OVERFLY YKIEH TRK 297 UNTIL 1800
+ TRANSITION YKIEA FIX YKIEA AT OR ABOVE 1800
+ TRANSITION YKIEB FIX YKIEB AT OR ABOVE 1800
+ TRANSITION YKIEC FIX YKIEC AT OR ABOVE 1800
+ENDAPPROACHES

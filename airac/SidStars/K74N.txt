@@ -1,0 +1,32 @@
+//K74N (BENDIGO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX RAV LATLON N 40 33.2035 W 76 35.962834
+FIX SEILR LATLON N 40 42.782 W 76 22.399667
+FIX SKIIP LATLON N 40 38.296166 W 76 27.836833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA23 FIX SEILR AT OR ABOVE 3500 FIX SKIIP 3300 RNW 23 TRK 234 UNTIL 1200 TURN RIGHT DIRECT FIX OVERFLY SEILR AT OR ABOVE 3500 HOLD AT FIX SEILR RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4
+ TRANSITION RAV FIX RAV FIX OVERFLY SEILR AT OR ABOVE 3500 HOLD AT FIX SEILR RIGHT TURN INBOUNDCOURSE 234 ALT 3500 LEGDIST 4
+ENDAPPROACHES

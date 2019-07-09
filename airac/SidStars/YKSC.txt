@@ -1,0 +1,51 @@
+//YKSC (KINGSCOTE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KSCNA LATLON S 35 29.676 E 137 31.674334
+FIX KSCNC LATLON S 35 28.3095 E 137 38.496
+FIX KSCND LATLON S 35 33.082333 E 137 42.406
+FIX KSCNF LATLON S 35 37.645166 E 137 34.059167
+FIX KSCNH LATLON S 35 45.111667 E 137 30.497167
+FIX KSCNI LATLON S 35 32.977667 E 137 36.279667
+FIX KSCSE LATLON S 35 54.418333 E 137 32.627666
+FIX KSCSF LATLON S 35 47.933833 E 137 29.136334
+FIX KSCSG LATLON S 35 57.26 E 137 24.6525
+FIX KSCSH LATLON S 35 38.606666 E 137 33.609167
+FIX KSCSI LATLON S 35 52.596833 E 137 26.8955
+FIX KSCSJ LATLON S 35 50.770834 E 137 21.167666
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 06
+RNW 15
+RNW 19
+RNW 24
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ01 FIX KSCSI AT OR ABOVE 2200 FIX KSCSF 1620 RNW 01 FIX KSCSH TRK 014 UNTIL 2200
+ TRANSITION KSCSE FIX KSCSE AT OR ABOVE 2200 SPEED 210
+ TRANSITION KSCSG FIX KSCSG AT OR ABOVE 2200 SPEED 210
+ TRANSITION KSCSJ FIX KSCSJ AT OR ABOVE 2200 SPEED 210
+APPROACH RNVZ19 FIX KSCNI AT OR ABOVE 2200 FIX KSCNF 1730 RNW 19 FIX KSCNH TRK 194 UNTIL 2200
+ TRANSITION KSCNA FIX KSCNA AT OR ABOVE 2200 SPEED 230
+ TRANSITION KSCNC FIX KSCNC AT OR ABOVE 2200 SPEED 230
+ TRANSITION KSCND FIX KSCND AT OR ABOVE 2200 SPEED 230
+ENDAPPROACHES

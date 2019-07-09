@@ -1,0 +1,46 @@
+//DNEK (EKET)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EDBIK LATLON N 4 26.386333 E 7 59.866834
+FIX EK400 LATLON N 4 44.798833 E 7 58.056167
+FIX EK401 LATLON N 4 49.745 E 7 58.936333
+FIX EK600 LATLON N 4 32.2155 E 7 55.818
+FIX INELI LATLON N 4 48.862 E 8 3.867
+FIX IRSOX LATLON N 4 27.269333 E 7 54.938666
+FIX IVGOL LATLON N 4 28.151833 E 7 50.010334
+FIX ODNIL LATLON N 4 54.691 E 7 59.816666
+FIX POVES LATLON N 4 22.323 E 7 54.059333
+FIX VOXEN LATLON N 4 50.6275 E 7 54.0055
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX IRSOX AT OR ABOVE 2500 SPEED 200 FIX EK600 2000 RNW 01 TRK 012 UNTIL 450 TURN LEFT DIRECT FIX IVGOL AT OR BELOW 2000 TURN LEFT DIRECT FIX IRSOX AT OR ABOVE 2500 HOLD AT FIX IRSOX RIGHT TURN INBOUNDCOURSE 012 ALT 2500 SPEED 230 LEGTIME 1
+ TRANSITION EDBIK FIX EDBIK
+ TRANSITION IRSOX HOLD AT FIX IRSOX RIGHT TURN INBOUNDCOURSE 012 ALT 2500 SPEED 230 LEGTIME 1
+ TRANSITION IVGOL FIX IVGOL
+ TRANSITION POVES FIX POVES
+APPROACH RNV19 FIX EK401 AT OR ABOVE 3000 SPEED 200 FIX EK400 2000 RNW 19 TRK 192 UNTIL 450 TURN RIGHT DIRECT FIX VOXEN AT OR ABOVE 3000 HOLD AT FIX VOXEN LEFT TURN INBOUNDCOURSE 102 ALT 3000 SPEED 230 LEGTIME 1
+ TRANSITION INELI FIX INELI
+ TRANSITION ODNIL FIX ODNIL
+ TRANSITION VOXEN FIX VOXEN
+ENDAPPROACHES

@@ -1,0 +1,47 @@
+//CNV8 (EDENVALE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BITPO LATLON N 44 36.887666 W 80 8.269
+FIX DAROD LATLON N 44 23.495 W 79 50.495333
+FIX EBMUD LATLON N 44 28.798 W 80 4.688666
+FIX ITMIP LATLON N 44 26.299166 W 79 39.9345
+FIX KAVNA LATLON N 44 29.363 W 80 6.208
+FIX LOKDA LATLON N 44 20.988 W 79 43.8275
+FIX MEGEK LATLON N 44 15.6745 W 79 47.708833
+FIX SIGLI LATLON N 44 31.560667 W 80 12.130834
+FIX UKNUN LATLON N 44 26.231333 W 80 15.981
+FIX XOVIM LATLON N 44 23.19 W 79 49.683
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 13
+RNW 17
+RNW 26
+RNW 31
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX SIGLI AT OR ABOVE 3000 SPEED 180 FIX EBMUD 2400 RNW 13 FIX OVERFLY XOVIM 3300 HOLD AT FIX XOVIM LEFT TURN INBOUNDCOURSE 128 SPEED 175 LEGTIME 1
+ TRANSITION BITPO FIX BITPO SPEED 210
+ TRANSITION UKNUN FIX UKNUN SPEED 210
+APPROACH RNV31 FIX LOKDA AT OR ABOVE 3200 SPEED 180 FIX DAROD 2600 RNW 31 FIX OVERFLY KAVNA 3300 HOLD AT FIX KAVNA RIGHT TURN INBOUNDCOURSE 308 SPEED 175 LEGTIME 1
+ TRANSITION ITMIP FIX ITMIP SPEED 210
+ TRANSITION MEGEK FIX MEGEK SPEED 210
+ENDAPPROACHES

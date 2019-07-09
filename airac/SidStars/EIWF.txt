@@ -1,0 +1,38 @@
+//EIWF (WATERFORD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D053J LATLON N 52 18.018167 W 6 52.448167
+FIX GAMDO LATLON N 52 23.636666 W 6 57.433333
+FIX INPAT LATLON N 52 19.443334 W 7 0.073333
+FIX TOGBO LATLON N 52 16.648333 W 7 1.828333
+FIX WF005 LATLON N 52 20.841667 W 6 59.193334
+FIX WF007 LATLON N 52 8.723333 W 7 6.783334
+FIX WTDNB LATLON N 52 11.34 W 7 5
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH ILS21 FIX INPAT 2500 FIX TOGBO 2000 RNW 21 FIX OVERFLY WF007 TURN RIGHT DIRECT FIX WTDNB 3000 SPEED 240 HOLD AT FIX WTDNB RIGHT TURN INBOUNDCOURSE 025 SPEED 190 LEGTIME 1
+ TRANSITION GAMDO FIX GAMDO AT OR ABOVE 3000 FIX WF005 AT OR ABOVE 3000
+ TRANSITION WF005 FIX WF005 AT OR ABOVE 3000
+ TRANSITION WTD1 FIX WTDNB AT OR ABOVE 3000 SPEED 190 FIX OVERFLY D053J AT OR ABOVE 3000 TURN LEFT DIRECT FIX WF005 AT OR ABOVE 3000
+ENDAPPROACHES

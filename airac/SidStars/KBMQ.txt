@@ -1,0 +1,44 @@
+//KBMQ (BURNET MUN-CRADDOCK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGJ LATLON N 31 11.130334 W 98 8.5115
+FIX AMUSE LATLON N 30 27.386833 W 98 17.651333
+FIX BEPKY LATLON N 30 42.976667 W 98 14.771833
+FIX DLORA LATLON N 30 54.330167 W 98 10.962334
+FIX FINTI LATLON N 30 40.065 W 98 15.746333
+FIX HONES LATLON N 30 48.5325 W 98 12.9095
+FIX HUKUD LATLON N 30 42.013834 W 98 15.094166
+FIX IXANY LATLON N 30 56.002 W 98 17.6625
+FIX JIBAJ LATLON N 30 59.143166 W 98 9.342667
+FIX LEYIG LATLON N 30 46.946167 W 98 13.441667
+FIX LLO LATLON N 30 47.7805 W 98 47.243333
+FIX SUBIE LATLON N 30 34.281833 W 98 17.679
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX SUBIE AT OR ABOVE 3100 FIX FINTI 2600 FIX HUKUD AT OR ABOVE 1940 FIX OVERFLY BEPKY 1627 RNW 01 FIX OVERFLY DLORA AT OR ABOVE 3500 HOLD AT FIX DLORA RIGHT TURN INBOUNDCOURSE 189 LEGDIST 4
+ TRANSITION AMUSE FIX AMUSE
+APPROACH RNV19 FIX DLORA AT OR ABOVE 3500 FIX HONES 2600 FIX LEYIG AT OR ABOVE 2060 RNW 19 FIX FINTI AT OR ABOVE 3100 FIX AMUSE AT OR ABOVE 3100
+ TRANSITION AGJ FIX AGJ FIX JIBAJ AT OR ABOVE 3500
+ TRANSITION LLO FIX LLO FIX IXANY AT OR ABOVE 3500
+ENDAPPROACHES

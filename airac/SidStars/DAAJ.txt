@@ -1,0 +1,44 @@
+//DAAJ (TISKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D208J LATLON N 24 8.847 E 9 22.324166
+FIX D208K LATLON N 24 7.964 E 9 21.811
+FIX D308I LATLON N 24 22.819166 E 9 19.432333
+FIX D308J LATLON N 24 23.436 E 9 18.5685
+FIX DJA LATLON N 24 17.263667 E 9 27.2005
+FIX FD02 LATLON N 24 11.951167 E 9 24.119
+FIX FD13 LATLON N 24 21.893666 E 9 20.727833
+FIX MD02 LATLON N 24 14.609 E 9 25.658833
+FIX MD13 LATLON N 24 18.498667 E 9 25.475167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 13
+RNW 20
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX FD02 4930 FIX MD02 3895 RNW 02 FIX DJA TRK 028 UNTIL 2.0 FROM FIX DJA TURN LEFT DIRECT FIX DJA 7880
+ TRANSITION DJA1 FIX DJA AT OR ABOVE 7880 TRK 186 UNTIL 10.5 FROM FIX DJA TURN RIGHT DIRECT FIX D208K AT OR ABOVE 4930
+ TRANSITION DJA2 FIX DJA AT OR ABOVE 7880 TRK 193 UNTIL 9.5 FROM FIX DJA TURN RIGHT DIRECT FIX D208J AT OR ABOVE 4930
+APPROACH VDM13 FIX FD13 5550 FIX MD13 3795 RNW 13 FIX DJA TRK 128 VECTORS
+ TRANSITION DJA1 FIX DJA AT OR ABOVE 7880 TRK 283 UNTIL 10.0 FROM FIX DJA TURN RIGHT DIRECT FIX D308J AT OR ABOVE 5550
+ TRANSITION DJA2 FIX DJA AT OR ABOVE 7880 TRK 292 UNTIL 9.0 FROM FIX DJA TURN RIGHT DIRECT FIX D308I AT OR ABOVE 5550
+ENDAPPROACHES

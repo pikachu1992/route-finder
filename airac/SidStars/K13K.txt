@@ -1,0 +1,46 @@
+//K13K (LT MILLIKEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGEXY LATLON N 38 11.462167 W 96 24.506333
+FIX CNU LATLON N 37 37.5695 W 95 35.608166
+FIX DELYE LATLON N 38 5.890667 W 96 12.345833
+FIX EMP LATLON N 38 17.4685 W 96 8.287
+FIX ERURE LATLON N 37 56.962834 W 96 16.092833
+FIX EUREK LATLON N 37 56.241334 W 96 15.711667
+FIX FOWNE LATLON N 38 1.528166 W 95 55.143334
+FIX KANEY LATLON N 37 40.458334 W 96 19.965
+FIX REKSE LATLON N 38 2.868 W 96 14.700334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM18 FIX EUREK 3000 RNW 18 TRK 187 UNTIL 1606 TURN LEFT DIRECT FIX EUREK AT OR ABOVE 3000 HOLD AT FIX EUREK RIGHT TURN INBOUNDCOURSE 187 LEGTIME 1
+ TRANSITION CNU FIX CNU FIX EUREK AT OR ABOVE 3000 HOLD AT FIX EUREK RIGHT TURN INBOUNDCOURSE 187 ALT 3000 LEGTIME 1
+ TRANSITION EMP FIX EMP FIX DELYE AT OR ABOVE 3000
+APPROACH RNV18 FIX REKSE AT OR ABOVE 3200 FIX ERURE 3100 RNW 18 TRK 185 UNTIL 1606 FIX KANEY AT OR ABOVE 3200 HOLD AT FIX KANEY RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4
+ TRANSITION AGEXY FIX AGEXY
+ TRANSITION EMP FIX EMP
+ TRANSITION FOWNE FIX FOWNE
+ TRANSITION REKSE HOLD AT FIX REKSE RIGHT TURN INBOUNDCOURSE 185 ALT 3200 LEGDIST 4
+ENDAPPROACHES

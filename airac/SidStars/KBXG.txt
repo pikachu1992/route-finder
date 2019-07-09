@@ -1,0 +1,38 @@
+//KBXG (BURKE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALD LATLON N 33 0.749666 W 81 17.534
+FIX BEANS LATLON N 33 11.094 W 81 48.165167
+FIX CEVGU LATLON N 33 4.242833 W 81 54.029167
+FIX EGECE LATLON N 33 0.691667 W 82 6.340333
+FIX HEDIL LATLON N 33 6.771167 W 81 45.210167
+FIX NEDPE LATLON N 32 58.735166 W 82 13.085833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX NEDPE AT OR ABOVE 2000 FIX EGECE 2000 RNW 08 TRK 075 UNTIL 800 FIX HEDIL AT OR ABOVE 2000 HOLD AT FIX HEDIL LEFT TURN INBOUNDCOURSE 255 LEGDIST 4
+ TRANSITION ALD FIX ALD FIX NEDPE AT OR ABOVE 3000 HOLD AT FIX NEDPE LEFT TURN INBOUNDCOURSE 075 ALT 2000 LEGDIST 4
+ TRANSITION BEANS FIX BEANS FIX NEDPE AT OR ABOVE 3000 HOLD AT FIX NEDPE LEFT TURN INBOUNDCOURSE 075 ALT 2000 LEGDIST 4
+APPROACH RNV26 FIX HEDIL AT OR ABOVE 2000 FIX CEVGU 2000 RNW 26 TRK 255 UNTIL 702 FIX OVERFLY NEDPE AT OR ABOVE 2000 HOLD AT FIX NEDPE LEFT TURN INBOUNDCOURSE 075 LEGDIST 4
+ TRANSITION HEDIL HOLD AT FIX HEDIL LEFT TURN INBOUNDCOURSE 255 ALT 2000 LEGDIST 4
+ENDAPPROACHES

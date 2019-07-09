@@ -1,0 +1,49 @@
+//YCNY (CENTURY MINE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CNYNA LATLON S 18 38.765 E 138 30.565
+FIX CNYNC LATLON S 18 33.245 E 138 32.276666
+FIX CNYND LATLON S 18 32.888333 E 138 38.3
+FIX CNYNF LATLON S 18 41.093333 E 138 38.836667
+FIX CNYNH LATLON S 18 48.936667 E 138 45.408334
+FIX CNYNI LATLON S 18 37.17 E 138 35.555
+FIX CNYNM LATLON S 18 45.015 E 138 42.121667
+FIX CNYSE LATLON S 18 52.275 E 138 54.548333
+FIX CNYSF LATLON S 18 49.955 E 138 46.263334
+FIX CNYSG LATLON S 18 57.798334 E 138 52.845
+FIX CNYSH LATLON S 18 42.113333 E 138 39.691667
+FIX CNYSI LATLON S 18 53.878333 E 138 49.553333
+FIX CNYSJ LATLON S 18 58.161667 E 138 46.806667
+FIX CNYSM LATLON S 18 46.036667 E 138 42.976667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ14 FIX CNYNI AT OR ABOVE 3500 FIX CNYNF 2140 FIX OVERFLY CNYNM 548 RNW 14 FIX CNYNH TRK 136 UNTIL 2400
+ TRANSITION CNYNA FIX CNYNA AT OR ABOVE 3500
+ TRANSITION CNYNC FIX CNYNC AT OR ABOVE 3500
+ TRANSITION CNYND FIX CNYND AT OR ABOVE 3500
+APPROACH RNVZ32 FIX CNYSI AT OR ABOVE 3500 FIX CNYSF 2140 FIX OVERFLY CNYSM 552 RNW 32 FIX CNYSH TRK 316 UNTIL 2400
+ TRANSITION CNYSE FIX CNYSE AT OR ABOVE 3500
+ TRANSITION CNYSG FIX CNYSG AT OR ABOVE 3500
+ TRANSITION CNYSJ FIX CNYSJ AT OR ABOVE 3500
+ENDAPPROACHES

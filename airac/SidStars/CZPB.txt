@@ -1,0 +1,43 @@
+//CZPB (SACHIGO LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIVGO LATLON N 53 49.019833 W 92 27.9965
+FIX DUXON LATLON N 53 53.1975 W 92 4.514833
+FIX EBLEN LATLON N 53 58.987333 W 92 27.040834
+FIX EBMUM LATLON N 53 57.865 W 91 55.5415
+FIX GADVU LATLON N 53 47.901667 W 91 56.621167
+FIX GONIT LATLON N 53 53.172334 W 92 3.828667
+FIX IKNEX LATLON N 53 54.003667 W 92 27.519667
+FIX KETRI LATLON N 53 52.883333 W 91 56.082334
+FIX LEPAT LATLON N 53 53.738833 W 92 19.725667
+FIX ULDUV LATLON N 53 53.7165 W 92 19.081667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX IKNEX AT OR ABOVE 2200 FIX ULDUV 2200 RNW 10 FIX OVERFLY GONIT 2300 HOLD AT FIX GONIT LEFT TURN INBOUNDCOURSE 096 LEGTIME 1
+ TRANSITION BIVGO FIX BIVGO SPEED 210
+ TRANSITION EBLEN FIX EBLEN SPEED 210
+APPROACH RNV28 FIX KETRI AT OR ABOVE 2200 FIX DUXON 2200 RNW 28 FIX OVERFLY LEPAT 2300 HOLD AT FIX LEPAT RIGHT TURN INBOUNDCOURSE 275 LEGTIME 1
+ TRANSITION EBMUM FIX EBMUM SPEED 210
+ TRANSITION GADVU FIX GADVU SPEED 210
+ENDAPPROACHES

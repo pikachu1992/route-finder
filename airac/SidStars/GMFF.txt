@@ -1,0 +1,47 @@
+//GMFF (SAISS INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF27 LATLON N 33 55.572167 W 4 47.2525
+FIX FD09 LATLON N 33 55.669 W 5 8.865833
+FIX FD27 LATLON N 33 55.5935 W 4 49.63
+FIX FES LATLON N 33 55.645 W 5 0.815
+FIX FF27 LATLON N 33 55.587167 W 4 49.6575
+FIX MD27 LATLON N 33 55.6265 W 4 56.368834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX FD09 4320 FIX FES 2199 RNW 09 TRK 092 UNTIL 4320 TURN LEFT DIRECT FIX FES
+ TRANSITION FES FIX FES AT OR ABOVE 6300 TRK 298 UNTIL 8.0 FROM FIX FES SPEED 210
+APPROACH VDM27 FIX FD27 4100 FIX MD27 2314 RNW 27 TRK 272 UNTIL 2550 HDG 092 VECTORS
+ TRANSITION FES FIX FES AT OR ABOVE 6300 TRK 072 UNTIL 10.0 FROM FIX FES SPEED 210
+APPROACH ILS27 FIX CF27 AT OR ABOVE 4100 FIX FF27 4100 RNW 27 TRK 272 UNTIL 2550 HDG 092 VECTORS
+ TRANSITION FES FIX FES AT OR ABOVE 6300 TRK 074 UNTIL 12.0 FROM FIX FES SPEED 210
+ENDAPPROACHES
+
+GATES
+GATE 1 N 33 55.769333 W 4 58.754167
+GATE 2 N 33 55.769333 W 4 58.798
+GATE 3 N 33 55.7695 W 4 58.843333
+GATE 4 N 33 55.769666 W 4 58.8835
+GATE 5 N 33 55.765 W 4 58.932833
+ENDGATES

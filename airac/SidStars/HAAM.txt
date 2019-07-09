@@ -1,0 +1,36 @@
+//HAAM (ARBA MINCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AM211 LATLON N 5 47.481667 E 37 35.28
+FIX AM212 LATLON N 5 44.758333 E 37 24.286667
+FIX AM213 LATLON N 5 50.526667 E 37 27.943333
+FIX AM214 LATLON N 5 54.09 E 37 30.2
+FIX AM215 LATLON N 5 55.786667 E 37 31.276667
+FIX AM216 LATLON N 5 57.483334 E 37 32.351666
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX AM214 AT OR ABOVE 6000 SPEED 185 FIX AM215 AT OR ABOVE 5530 FIX AM216 5530 RNW 03 TRK 046 UNTIL 7100 TURN RIGHT DIRECT FIX AM211 AT OR ABOVE 9000
+ TRANSITION AM211 FIX AM211 AT OR ABOVE 9000
+ TRANSITION AM212 FIX AM212 AT OR ABOVE 11000 FIX AM213 AT OR ABOVE 7700
+ENDAPPROACHES

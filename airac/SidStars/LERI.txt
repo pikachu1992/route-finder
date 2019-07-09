@@ -1,0 +1,33 @@
+//LERI (ALCANTARILLA AB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D251H LATLON N 37 54.4445 W 1 22.7085
+FIX TRL LATLON N 37 57.018334 W 1 13.803334
+FIX VAB LATLON N 38 56.826667 W 1 51.558334
+FIX YES LATLON N 38 21.646667 W 2 21.166667
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+SIDS
+SID VAB1A RNW 25 TRK 246 UNTIL 650 FIX OVERFLY D251H 2160 TRK 066 INTERCEPT RADIAL 320 FROM FIX TRL HDG 014 INTERCEPT RADIAL 329 TO FIX VAB FIX VAB 4800
+SID YES1B RNW 25 TRK 246 UNTIL 650 FIX OVERFLY D251H 2160 TRK 359 INTERCEPT RADIAL 289 FROM FIX TRL FIX YES AT OR ABOVE 10000
+ENDSIDS

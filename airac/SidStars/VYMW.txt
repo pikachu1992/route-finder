@@ -1,0 +1,38 @@
+//VYMW (MAGWAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EP01 LATLON N 20 8.481334 E 94 58.169833
+FIX EP19 LATLON N 20 9.9305 E 94 58.455
+FIX FF01 LATLON N 20 4.509 E 94 57.121834
+FIX FF19 LATLON N 20 14.961667 E 94 57.894667
+FIX MWNB LATLON N 20 9.671 E 94 58.484
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH NDB01 FIX FF01 1920 FIX OVERFLY EP01 327 FIX OVERFLY MWNB AT OR ABOVE 800 RNW 01 HDG 015 UNTIL 2000 TURN RIGHT DIRECT FIX MWNB 3000 HOLD AT FIX MWNB RIGHT TURN INBOUNDCOURSE 225 LEGTIME 1
+ TRANSITION MW1 FIX MWNB AT OR ABOVE 3000 TRK 225 UNTIL 5.3 FROM FIX MWNB
+ TRANSITION MW2 FIX MWNB AT OR ABOVE 3000 TRK 210 UNTIL 7.5 FROM FIX MWNB
+APPROACH NDB19 FIX FF19 1940 FIX OVERFLY EP19 348 FIX OVERFLY MWNB AT OR ABOVE 800 RNW 19 HDG 175 UNTIL 2000 TURN LEFT DIRECT FIX MWNB 3000 HOLD AT FIX MWNB LEFT TURN INBOUNDCOURSE 325 LEGTIME 1
+ TRANSITION MW1 FIX MWNB AT OR ABOVE 3000 TRK 325 UNTIL 5.3 FROM FIX MWNB
+ TRANSITION MW2 FIX MWNB AT OR ABOVE 3000 TRK 340 UNTIL 7.5 FROM FIX MWNB
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//0XA5 (74 RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HUTAV LATLON N 28 36.820333 W 98 19.503
+FIX JIMUX LATLON N 28 42.770666 W 98 24.322667
+FIX LEMIG LATLON N 28 58.631833 W 98 30.058667
+FIX MILET LATLON N 28 43.828 W 98 47.8755
+FIX ODEDY LATLON N 28 39.312167 W 98 21.52
+FIX OZKUJ LATLON N 28 51.005833 W 98 31.011167
+FIX THX LATLON N 28 30.299833 W 98 9.028
+FIX WAVRI LATLON N 28 45.336833 W 98 26.4045
+FIX YEVUK LATLON N 28 47.965834 W 98 38.194166
+FIX ZIVAL LATLON N 28 31.518334 W 98 15.218
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX OZKUJ AT OR ABOVE 3000 FIX WAVRI 1900 FIX JIMUX AT OR ABOVE 880 RNW 14 TRK 139 UNTIL 600 FIX OVERFLY ZIVAL AT OR ABOVE 3000 HOLD AT FIX ZIVAL RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4
+ TRANSITION LEMIG FIX LEMIG
+ TRANSITION MILET FIX MILET FIX YEVUK AT OR ABOVE 4000
+ TRANSITION OZKUJ HOLD AT FIX OZKUJ RIGHT TURN INBOUNDCOURSE 139 ALT 3000 LEGDIST 4
+APPROACH RNV32 FIX ZIVAL AT OR ABOVE 3000 FIX HUTAV 1900 FIX ODEDY AT OR ABOVE 920 RNW 32 TRK 319 UNTIL 620 FIX OVERFLY OZKUJ AT OR ABOVE 3000 HOLD AT FIX OZKUJ RIGHT TURN INBOUNDCOURSE 139 LEGDIST 4
+ TRANSITION THX FIX THX
+ TRANSITION ZIVAL HOLD AT FIX ZIVAL RIGHT TURN INBOUNDCOURSE 320 ALT 3000 LEGDIST 4
+ENDAPPROACHES

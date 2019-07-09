@@ -1,0 +1,41 @@
+//K1A3 (CAMPBELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOVDO LATLON N 35 13.970833 W 84 16.855166
+FIX OLBUE LATLON N 35 19.618333 W 84 6.701333
+FIX OSLAE LATLON N 34 47.868 W 84 24.760667
+FIX USIZI LATLON N 34 42.204833 W 84 30.291667
+FIX WIPVI LATLON N 34 55.517 W 84 22.453166
+FIX YUGUC LATLON N 35 17.7565 W 84 21.5505
+FIX ZEGUX LATLON N 35 6.939334 W 84 18.993667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX OSLAE AT OR ABOVE 6000 FIX WIPVI 3500 RNW 02 TRK 019 UNTIL 2189 FIX OVERFLY HOVDO AT OR ABOVE 6000 HOLD AT FIX HOVDO RIGHT TURN INBOUNDCOURSE 199 LEGDIST 6
+ TRANSITION OSLAE HOLD AT FIX OSLAE RIGHT TURN INBOUNDCOURSE 019 ALT 6000 LEGDIST 6
+ TRANSITION USIZI FIX USIZI
+APPROACH RNV20 FIX HOVDO AT OR ABOVE 6000 FIX ZEGUX 3700 RNW 20 TRK 199 UNTIL 2189 FIX OVERFLY OSLAE AT OR ABOVE 6000 HOLD AT FIX OSLAE RIGHT TURN INBOUNDCOURSE 019 LEGDIST 6
+ TRANSITION HOVDO HOLD AT FIX HOVDO RIGHT TURN INBOUNDCOURSE 199 ALT 6000 LEGDIST 6
+ TRANSITION OLBUE FIX OLBUE
+ TRANSITION YUGUC FIX YUGUC
+ENDAPPROACHES

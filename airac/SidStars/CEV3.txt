@@ -1,0 +1,43 @@
+//CEV3 (VEGREVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALNUV LATLON N 53 27.172 W 111 57.8815
+FIX ALPOL LATLON N 53 25.1565 W 111 55.817
+FIX DEMVI LATLON N 53 22.053667 W 111 52.646333
+FIX IGVOM LATLON N 53 24.91 W 111 44.8005
+FIX ILUTU LATLON N 53 42.486334 W 112 2.8285
+FIX KAXAD LATLON N 53 34.501834 W 112 5.422166
+FIX KEBUP LATLON N 53 19.188667 W 112 0.474667
+FIX VESTU LATLON N 53 36.512 W 112 7.499167
+FIX VETRA LATLON N 53 39.610333 W 112 10.708333
+FIX XOMVU LATLON N 53 36.725666 W 112 18.570334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX VETRA AT OR ABOVE 3400 SPEED 180 FIX KAXAD 3400 RNW 13 FIX OVERFLY ALPOL 4000 HOLD AT FIX ALPOL RIGHT TURN INBOUNDCOURSE 134 SPEED 250 LEGTIME 1
+ TRANSITION ILUTU FIX ILUTU SPEED 210
+ TRANSITION XOMVU FIX XOMVU SPEED 210
+APPROACH RNV31 FIX DEMVI AT OR ABOVE 3700 SPEED 180 FIX ALNUV 3400 RNW 31 FIX OVERFLY VESTU 4000 HOLD AT FIX VESTU RIGHT TURN INBOUNDCOURSE 314 SPEED 250 LEGTIME 1
+ TRANSITION IGVOM FIX IGVOM SPEED 210
+ TRANSITION KEBUP FIX KEBUP SPEED 210
+ENDAPPROACHES

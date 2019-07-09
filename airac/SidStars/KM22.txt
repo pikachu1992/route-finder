@@ -1,0 +1,39 @@
+//KM22 (PUGH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYOTE LATLON N 34 42.7095 W 87 37.059
+FIX BACAL LATLON N 34 21.3275 W 87 43.130666
+FIX DALEC LATLON N 34 15.1985 W 87 43.2865
+FIX DONSE LATLON N 34 31.950667 W 87 40.8535
+FIX FOGUM LATLON N 34 6.422 W 87 49.402667
+FIX KENCE LATLON N 34 25.798 W 87 43.0155
+FIX LANER LATLON N 34 29.044 W 87 21.778
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX DALEC AT OR ABOVE 2700 FIX BACAL 2300 FIX OVERFLY KENCE 879 RNW 02 TRK 003 UNTIL 1118 TURN LEFT DIRECT FIX OVERFLY DALEC AT OR ABOVE 2700 HOLD AT FIX DALEC RIGHT TURN INBOUNDCOURSE 003 LEGDIST 5
+ TRANSITION FOGUM FIX FOGUM
+ TRANSITION LANER FIX LANER FIX OVERFLY DALEC AT OR ABOVE 2700 HOLD AT FIX DALEC RIGHT TURN INBOUNDCOURSE 003 ALT 2700 LEGDIST 5
+APPROACH RNV20 FIX AYOTE AT OR ABOVE 3000 FIX DONSE 2400 RNW 20 TRK 198 UNTIL 1123 TURN RIGHT DIRECT FIX OVERFLY AYOTE AT OR ABOVE 3000 HOLD AT FIX AYOTE RIGHT TURN INBOUNDCOURSE 198 LEGDIST 5
+ TRANSITION AYOTE HOLD AT FIX AYOTE RIGHT TURN INBOUNDCOURSE 198 ALT 3000 LEGDIST 5
+ENDAPPROACHES

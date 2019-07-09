@@ -1,0 +1,36 @@
+//KX50 (MASSEY RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMIDS LATLON N 28 56.117833 W 80 55.157
+FIX APEAK LATLON N 28 53.903666 W 80 54.8785
+FIX GIESR LATLON N 29 3.5455 W 80 56.095667
+FIX MCGYR LATLON N 29 11.542333 W 80 57.108167
+FIX PEKIY LATLON N 28 44.903833 W 80 53.748167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA18 FIX MCGYR AT OR ABOVE 2000 FIX GIESR 1500 RNW 18 TRK 181 UNTIL 411 FIX OVERFLY PEKIY AT OR ABOVE 2000 HOLD AT FIX PEKIY RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION MCGYR HOLD AT FIX MCGYR LEFT TURN INBOUNDCOURSE 181 ALT 2000 LEGDIST 4
+APPROACH RNVB36 FIX PEKIY AT OR ABOVE 2000 FIX APEAK 1500 FIX AMIDS AT OR ABOVE 780 RNW 36 TRK 001 UNTIL 411 FIX OVERFLY MCGYR AT OR ABOVE 2000 HOLD AT FIX MCGYR LEFT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION PEKIY HOLD AT FIX PEKIY RIGHT TURN INBOUNDCOURSE 001 ALT 2000 LEGDIST 4
+ENDAPPROACHES

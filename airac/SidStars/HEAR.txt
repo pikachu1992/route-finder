@@ -1,0 +1,34 @@
+//HEAR (EL ARISH INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARH LATLON N 31 4.38 E 33 49.911667
+FIX CD34 LATLON N 30 55.7865 E 33 55.899833
+FIX FD34 LATLON N 30 57.5055 E 33 54.7035
+FIX MD34 LATLON N 31 2.661667 E 33 51.110666
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM34 FIX CD34 AT OR ABOVE 2000 FIX FD34 2000 FIX MD34 455 RNW 34 FIX ARH TRK 325 UNTIL 2000 TURN LEFT DIRECT FIX ARH 3000 HOLD AT FIX ARH RIGHT TURN INBOUNDCOURSE 168 LEGTIME 1
+ TRANSITION ARH1 FIX ARH AT OR ABOVE 4000 TRK 168 UNTIL 10.0 FROM FIX ARH
+ TRANSITION ARH2 FIX ARH AT OR ABOVE 4000 TRK 155 UNTIL 10.0 FROM FIX ARH
+ENDAPPROACHES

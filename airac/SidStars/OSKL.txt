@@ -1,0 +1,32 @@
+//OSKL (KAMISHLY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD03 LATLON N 36 56.598167 E 41 6.778667
+FIX KML LATLON N 37 1 E 41 11.108333
+FIX MD03 LATLON N 36 59.821166 E 41 9.947666
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH VDM03 FIX FD03 3000 FIX MD03 1713 RNW 03 FIX KML AT OR ABOVE 1830 HOLD AT FIX KML RIGHT TURN INBOUNDCOURSE 034 ALT 3000 SPEED 200 LEGDIST 7
+ TRANSITION KML HOLD AT FIX KML RIGHT TURN INBOUNDCOURSE 034 ALT 3000 LEGDIST 7
+ENDAPPROACHES

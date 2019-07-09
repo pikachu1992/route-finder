@@ -1,0 +1,31 @@
+//WADY (BANYUWANGI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BSNB LATLON S 8 18.811667 E 114 20.108333
+FIX FF26 LATLON S 8 17.784167 E 114 24.961166
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH NDB26 FIX FF26 1300 RNW 26 FIX OVERFLY BSNB TRK 257 UNTIL 2500 HDG 023 INTERCEPT RADIAL 053 TO FIX BSNB FIX BSNB HOLD AT FIX BSNB RIGHT TURN INBOUNDCOURSE 053 ALT 2500 LEGTIME 1
+ TRANSITION BS FIX BSNB AT OR ABOVE 2500 TRK 053 UNTIL 4.3 FROM FIX BSNB
+ENDAPPROACHES

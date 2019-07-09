@@ -1,0 +1,43 @@
+//PAWI (WAINWRIGHT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUTGU LATLON N 70 40.4415 W 160 46.041667
+FIX HOPUM LATLON N 70 50.7095 W 159 31.492834
+FIX MEXIW LATLON N 70 43.322666 W 159 22.4265
+FIX NEMCU LATLON N 70 35.928334 W 159 13.470833
+FIX OZYIB LATLON N 70 33.116833 W 160 36.601166
+FIX RIROQ LATLON N 70 25.784 W 160 27.273833
+FIX TECWA LATLON N 70 36.1955 W 160 14.734333
+FIX TOPQI LATLON N 70 40.346167 W 159 44.569
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX OZYIB AT OR ABOVE 2000 FIX TECWA 1700 RNW 06 TRK 055 UNTIL 295 FIX OVERFLY MEXIW AT OR ABOVE 2000 HOLD AT FIX MEXIW RIGHT TURN INBOUNDCOURSE 236 LEGDIST 4
+ TRANSITION CUTGU FIX CUTGU
+ TRANSITION OZYIB HOLD AT FIX OZYIB RIGHT TURN INBOUNDCOURSE 055 ALT 2000 LEGDIST 4
+ TRANSITION RIROQ FIX RIROQ
+APPROACH RNV24 FIX MEXIW AT OR ABOVE 2000 FIX TOPQI 1700 RNW 24 TRK 236 UNTIL 295 FIX OVERFLY OZYIB AT OR ABOVE 2000 HOLD AT FIX OZYIB RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4
+ TRANSITION HOPUM FIX HOPUM
+ TRANSITION MEXIW HOLD AT FIX MEXIW RIGHT TURN INBOUNDCOURSE 236 ALT 2000 LEGDIST 4
+ TRANSITION NEMCU FIX NEMCU
+ENDAPPROACHES

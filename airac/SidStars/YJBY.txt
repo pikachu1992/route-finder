@@ -1,0 +1,37 @@
+//YJBY (JERVIS BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JBYND LATLON S 34 55.429834 E 150 35.529334
+FIX JBYNE LATLON S 34 56.793667 E 150 42.306334
+FIX JBYNF LATLON S 35 4.766666 E 150 39.936
+FIX JBYNI LATLON S 35 0.097667 E 150 37.733833
+FIX JBYNM LATLON S 35 8.502667 E 150 41.696833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 15
+RNW 26
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX JBYNI AT OR ABOVE 3100 FIX JBYNF 1510 FIX OVERFLY JBYNM 233 RNW 15 TRK 146 UNTIL 1000 HDG 240 VECTORS
+ TRANSITION JBYND FIX JBYND AT OR ABOVE 4200 SPEED 210
+ TRANSITION JBYNE FIX JBYNE AT OR ABOVE 4200 SPEED 210
+ENDAPPROACHES

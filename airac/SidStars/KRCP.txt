@@ -1,0 +1,37 @@
+//KRCP (ROOKS CO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GUCVE LATLON N 39 22.708166 W 99 18.227833
+FIX OYOGO LATLON N 39 26.112167 W 99 18.136667
+FIX UTUVE LATLON N 39 10.1565 W 99 18.563
+FIX WAJHU LATLON N 39 18.2825 W 99 18.346166
+FIX ZAVOV LATLON N 39 31.434167 W 99 17.993666
+FIX ZOMOR LATLON N 39 15.478667 W 99 18.421
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX ZAVOV AT OR ABOVE 4000 FIX OYOGO 3600 FIX GUCVE AT OR ABOVE 2500 RNW 18 TRK 176 UNTIL 2290 FIX OVERFLY UTUVE AT OR ABOVE 6000 HOLD AT FIX UTUVE RIGHT TURN INBOUNDCOURSE 356 LEGDIST 5
+ TRANSITION ZAVOV HOLD AT FIX ZAVOV RIGHT TURN INBOUNDCOURSE 176 ALT 4000 LEGDIST 5
+APPROACH RNV36 FIX UTUVE AT OR ABOVE 4000 FIX ZOMOR 3600 FIX WAJHU AT OR ABOVE 2680 RNW 36 TRK 356 UNTIL 2290 FIX OVERFLY ZAVOV AT OR ABOVE 6000 HOLD AT FIX ZAVOV RIGHT TURN INBOUNDCOURSE 176 LEGDIST 5
+ TRANSITION UTUVE HOLD AT FIX UTUVE RIGHT TURN INBOUNDCOURSE 356 ALT 4000 LEGDIST 5
+ENDAPPROACHES

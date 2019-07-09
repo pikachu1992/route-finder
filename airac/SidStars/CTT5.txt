@@ -1,0 +1,44 @@
+//CTT5 (LA ROMAINE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ABCOT LATLON N 50 15.696 W 60 43.8945
+FIX DUMDI LATLON N 50 9.995 W 60 24.417
+FIX KEMBU LATLON N 50 19.967833 W 60 23.512333
+FIX KISAP LATLON N 50 16.131833 W 60 56.909833
+FIX ODGOB LATLON N 50 11.143333 W 60 57.304333
+FIX ONBOT LATLON N 50 15.323333 W 60 33.298667
+FIX SEMRA LATLON N 50 21.120167 W 60 56.514
+FIX SUSOL LATLON N 50 14.9815 W 60 23.9655
+FIX VIPLO LATLON N 50 16.0855 W 60 55.493333
+FIX VOBEV LATLON N 50 15.034166 W 60 25.381
+FIX XOPVI LATLON N 50 15.821666 W 60 47.571334
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX KISAP AT OR ABOVE 1600 FIX XOPVI 1500 FIX ABCOT AT OR ABOVE 750 RNW 11 FIX OVERFLY VOBEV 2200 HOLD AT FIX VOBEV RIGHT TURN INBOUNDCOURSE 113 LEGTIME 1
+ TRANSITION ODGOB FIX ODGOB SPEED 210
+ TRANSITION SEMRA FIX SEMRA SPEED 210
+APPROACH RNV29 FIX SUSOL AT OR ABOVE 1600 FIX ONBOT 1500 RNW 29 FIX OVERFLY VIPLO 2200 HOLD AT FIX VIPLO LEFT TURN INBOUNDCOURSE 293 LEGTIME 1
+ TRANSITION DUMDI FIX DUMDI SPEED 210
+ TRANSITION KEMBU FIX KEMBU SPEED 210
+ENDAPPROACHES

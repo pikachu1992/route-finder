@@ -1,0 +1,43 @@
+//CSH2 (ISLE-AUX-GRUES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMEDI LATLON N 47 1.592 W 70 36.524
+FIX AMOGU LATLON N 47 7.140833 W 70 27.363
+FIX DUXAX LATLON N 46 57.606 W 70 43.072834
+FIX EPNAN LATLON N 47 7.556666 W 70 26.671
+FIX ITPON LATLON N 46 53.872333 W 70 38.223
+FIX KEGVO LATLON N 47 14.857333 W 70 25.630667
+FIX KESRO LATLON N 47 1.336 W 70 47.934
+FIX ONDIL LATLON N 47 11.111666 W 70 20.775
+FIX SASEP LATLON N 47 7.3625 W 70 15.930833
+FIX URTAB LATLON N 47 1.1075 W 70 37.321333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX DUXAX AT OR ABOVE 2900 FIX AMEDI 1500 RNW 07 FIX OVERFLY EPNAN 2300 HOLD AT FIX EPNAN RIGHT TURN INBOUNDCOURSE 065 SPEED 250 LEGTIME 1
+ TRANSITION ITPON FIX ITPON SPEED 210
+ TRANSITION KESRO FIX KESRO SPEED 210
+APPROACH RNV25 FIX ONDIL AT OR ABOVE 2800 FIX AMOGU 1400 RNW 25 FIX OVERFLY URTAB 2400 HOLD AT FIX URTAB RIGHT TURN INBOUNDCOURSE 245 SPEED 200 LEGTIME 1
+ TRANSITION KEGVO FIX KEGVO SPEED 210
+ TRANSITION SASEP FIX SASEP SPEED 210
+ENDAPPROACHES

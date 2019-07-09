@@ -1,0 +1,49 @@
+//NTMN (ATUONA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IBULO LATLON S 9 56.391667 W 139 12.325
+FIX IDADI LATLON S 10 1.32 W 139 3.493333
+FIX IGIGO LATLON S 9 37.848334 W 138 50.175
+FIX IKAMI LATLON S 9 32.92 W 138 58.996667
+FIX INTOD LATLON S 9 31.006667 W 138 52.105
+FIX ISBON LATLON S 10 3.233333 W 139 10.398334
+FIX MN707 LATLON S 9 35.385 W 138 54.586667
+FIX MN709 LATLON S 9 40.578334 W 138 57.531667
+FIX MN713 LATLON S 9 50.751667 W 138 58.155
+FIX MN715 LATLON S 9 49.578334 W 138 55.356667
+FIX MN808 LATLON S 9 58.856666 W 139 7.91
+FIX MN810 LATLON S 9 54.48 W 139 5.423333
+FIX MN812 LATLON S 9 48.087167 W 139 1.7925
+FIX MN814 LATLON S 9 51.615 W 138 57.985
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX MN808 AT OR ABOVE 4500 FIX MN810 4500 FIX OVERFLY MN812 2175 RNW 02 TURN RIGHT DIRECT FIX MN814 SPEED 130 FIX IDADI AT OR ABOVE 4500
+ TRANSITION IBULO FIX IBULO AT OR ABOVE 5800
+ TRANSITION IDADI FIX IDADI AT OR ABOVE 4500
+ TRANSITION ISBON FIX ISBON AT OR ABOVE 4500
+APPROACH RNV20 FIX MN707 AT OR ABOVE 4000 FIX MN709 4000 RNW 20 FIX MN713 FIX MN715 FIX IGIGO AT OR ABOVE 4000
+ TRANSITION IGIGO FIX IGIGO AT OR ABOVE 4000
+ TRANSITION IKAMI FIX IKAMI AT OR ABOVE 5800
+ TRANSITION INTOD FIX INTOD AT OR ABOVE 4000
+ENDAPPROACHES

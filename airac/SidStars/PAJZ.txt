@@ -1,0 +1,43 @@
+//PAJZ (KOLIGANEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGGOV LATLON N 59 45.037333 W 157 25.638334
+FIX AVILN LATLON N 59 42.160333 W 157 5.607667
+FIX BIJGO LATLON N 59 46.3845 W 157 35.156833
+FIX EBGUY LATLON N 59 36.776 W 157 40.4515
+FIX FEXIG LATLON N 59 55.989 W 157 29.811334
+FIX IHNIT LATLON N 59 40.779167 W 156 56.128333
+FIX NIYYI LATLON N 59 31.196167 W 157 1.586666
+FIX OCEKI LATLON N 59 50.358167 W 156 50.617834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX BIJGO AT OR ABOVE 2900 FIX AGGOV 1900 RNW 09 TRK 093 UNTIL 674 FIX OVERFLY IHNIT AT OR ABOVE 3400 HOLD AT FIX IHNIT RIGHT TURN INBOUNDCOURSE 273 LEGDIST 4
+ TRANSITION BIJGO HOLD AT FIX BIJGO LEFT TURN INBOUNDCOURSE 093 ALT 2900 LEGDIST 4
+ TRANSITION EBGUY FIX EBGUY
+ TRANSITION FEXIG FIX FEXIG
+APPROACH RNV27 FIX IHNIT AT OR ABOVE 3400 FIX AVILN 1900 RNW 27 TRK 273 UNTIL 674 FIX OVERFLY BIJGO AT OR ABOVE 2900 HOLD AT FIX BIJGO LEFT TURN INBOUNDCOURSE 093 LEGDIST 4
+ TRANSITION IHNIT HOLD AT FIX IHNIT RIGHT TURN INBOUNDCOURSE 273 ALT 3400 LEGDIST 4
+ TRANSITION NIYYI FIX NIYYI
+ TRANSITION OCEKI FIX OCEKI
+ENDAPPROACHES

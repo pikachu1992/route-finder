@@ -1,0 +1,47 @@
+//YTRA (TROPICANA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX TRAEF LATLON S 29 11.0605 E 124 39.337667
+FIX TRAEG LATLON S 29 6.205667 E 124 48.368333
+FIX TRAEH LATLON S 29 10.8555 E 124 52.222
+FIX TRAEI LATLON S 29 10.946666 E 124 46.511333
+FIX TRAEJ LATLON S 29 15.625 E 124 48.560167
+FIX TRAEM LATLON S 29 11.15 E 124 33.67
+FIX TRAWB LATLON S 29 16.1005 E 124 17.799167
+FIX TRAWC LATLON S 29 11.447 E 124 13.947833
+FIX TRAWD LATLON S 29 6.681167 E 124 17.613167
+FIX TRAWF LATLON S 29 11.2535 E 124 26.834167
+FIX TRAWI LATLON S 29 11.360833 E 124 19.6595
+FIX TRAWM LATLON S 29 11.17 E 124 32.38
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX TRAWI AT OR ABOVE 4700 FIX TRAWF 2700 FIX OVERFLY TRAWM 1154 RNW 09 TURN LEFT DIRECT FIX TRAWD AT OR ABOVE 4700 SPEED 195
+ TRANSITION TRAWB FIX TRAWB AT OR ABOVE 4700 SPEED 210
+ TRANSITION TRAWC FIX TRAWC AT OR ABOVE 4700 SPEED 210
+ TRANSITION TRAWD FIX TRAWD AT OR ABOVE 4700 SPEED 210
+APPROACH RNV27 FIX TRAEI AT OR ABOVE 4700 FIX TRAEF 2700 FIX OVERFLY TRAEM 1120 RNW 27 TURN RIGHT DIRECT FIX TRAEG AT OR ABOVE 4700 SPEED 195
+ TRANSITION TRAEG FIX TRAEG AT OR ABOVE 4700 SPEED 210
+ TRANSITION TRAEH FIX TRAEH AT OR ABOVE 4700 SPEED 210
+ TRANSITION TRAEJ FIX TRAEJ AT OR ABOVE 4700 SPEED 210
+ENDAPPROACHES

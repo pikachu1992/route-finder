@@ -1,0 +1,37 @@
+//KHLC (HILL CITY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIMEV LATLON N 39 11.042833 W 99 50.199
+FIX GECEV LATLON N 39 34.421167 W 99 49.578667
+FIX HAKIP LATLON N 39 28.319833 W 99 49.741166
+FIX HAVRI LATLON N 39 17.146166 W 99 50.037667
+FIX IGEFO LATLON N 39 19.498667 W 99 49.9755
+FIX WITUB LATLON N 39 25.5255 W 99 49.8155
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX GECEV AT OR ABOVE 4200 FIX HAKIP 3900 FIX WITUB AT OR ABOVE 3000 RNW 18 TRK 176 UNTIL 2488 FIX OVERFLY FIMEV AT OR ABOVE 4200 HOLD AT FIX FIMEV RIGHT TURN INBOUNDCOURSE 356 LEGDIST 5
+ TRANSITION GECEV HOLD AT FIX GECEV RIGHT TURN INBOUNDCOURSE 176 ALT 4200 LEGDIST 5
+APPROACH RNV36 FIX FIMEV AT OR ABOVE 4200 FIX HAVRI 3900 FIX IGEFO AT OR ABOVE 3140 RNW 36 TRK 356 UNTIL 2600 FIX OVERFLY GECEV AT OR ABOVE 4200 HOLD AT FIX GECEV RIGHT TURN INBOUNDCOURSE 176 LEGDIST 5
+ TRANSITION FIMEV HOLD AT FIX FIMEV RIGHT TURN INBOUNDCOURSE 356 ALT 4200 LEGDIST 5
+ENDAPPROACHES

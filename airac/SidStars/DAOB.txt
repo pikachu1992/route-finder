@@ -1,0 +1,37 @@
+//DAOB (ABDELHAFID BOUSSOUF BOU CHEKIF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D082G LATLON N 35 21.957 E 1 39.348667
+FIX D082H LATLON N 35 22.112333 E 1 40.556666
+FIX FF26 LATLON N 35 21.490333 E 1 35.725166
+FIX TRB LATLON N 35 20.865334 E 1 30.895
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VDM26 FIX FF26 5090 FIX TRB 3819 RNW 26 TRK 262 UNTIL 4270 TURN LEFT DIRECT FIX TRB 6210
+ TRANSITION TRB1 FIX TRB AT OR ABOVE 6210 TRK 055 UNTIL 8.0 FROM FIX TRB TURN RIGHT DIRECT FIX D082H AT OR ABOVE 5090
+ TRANSITION TRB2 FIX TRB AT OR ABOVE 6210 TRK 068 UNTIL 7.0 FROM FIX TRB TURN RIGHT DIRECT FIX D082G AT OR ABOVE 5090
+APPROACH VOR26 FIX FF26 5090 FIX TRB 3819 RNW 26 TRK 262 UNTIL 4270 TURN LEFT DIRECT FIX TRB 6210
+ TRANSITION TRB1 FIX TRB AT OR ABOVE 6210 TRK 055 UNTIL 7.0 FROM FIX TRB
+ TRANSITION TRB2 FIX TRB AT OR ABOVE 6210 TRK 068 UNTIL 6.0 FROM FIX TRB
+ENDAPPROACHES

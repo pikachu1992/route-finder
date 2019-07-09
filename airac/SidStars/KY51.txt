@@ -1,0 +1,40 @@
+//KY51 (VIROQUA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOOTY LATLON N 43 48.324 W 90 56.924833
+FIX JALTA LATLON N 43 32.554834 W 90 47.219
+FIX QUEST LATLON N 43 17.272 W 90 58.492667
+FIX TACON LATLON N 43 30.061 W 90 39.7185
+FIX TEBBO LATLON N 43 39.551666 W 91 8.452667
+FIX WAROS LATLON N 43 34.607167 W 90 36.855167
+FIX WITOL LATLON N 43 24.924 W 90 42.944333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 11
+RNW 20
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV29 FIX TACON AT OR ABOVE 3000 FIX JALTA 3000 RNW 29 TRK 295 UNTIL 1692 FIX TEBBO AT OR ABOVE 3000 HOLD AT FIX TEBBO RIGHT TURN INBOUNDCOURSE 114 LEGDIST 4
+ TRANSITION BOOTY FIX BOOTY FIX WAROS AT OR ABOVE 3000
+ TRANSITION QUEST FIX QUEST FIX WITOL AT OR ABOVE 3000
+ TRANSITION TACON HOLD AT FIX TACON RIGHT TURN INBOUNDCOURSE 295 ALT 3000 LEGDIST 4
+ENDAPPROACHES

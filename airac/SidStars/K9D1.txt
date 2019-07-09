@@ -1,0 +1,44 @@
+//K9D1 (GREGORY MUNI-FLYNN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HAIRY LATLON N 43 21.5455 W 99 35.7175
+FIX ISD LATLON N 43 29.274833 W 99 45.683333
+FIX KIDKE LATLON N 43 9.5325 W 99 18.9845
+FIX LKOTA LATLON N 43 15.466667 W 100 3.233333
+FIX NUKIY LATLON N 42 56.252 W 99 17.267833
+FIX SOLOY LATLON N 43 11.514833 W 99 21.734
+FIX VECLU LATLON N 43 16.996834 W 99 29.361833
+FIX WAPKU LATLON N 43 8.437 W 99 0.8265
+FIX ZAMSU LATLON N 43 4.5435 W 99 12.085667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX HAIRY AT OR ABOVE 4100 FIX VECLU 3800 RNW 13 TRK 127 UNTIL 2575 FIX OVERFLY ZAMSU AT OR ABOVE 4000 HOLD AT FIX ZAMSU RIGHT TURN INBOUNDCOURSE 308 LEGDIST 4
+ TRANSITION HAIRY HOLD AT FIX HAIRY RIGHT TURN INBOUNDCOURSE 127 ALT 4100 LEGDIST 5
+ TRANSITION ISD FIX ISD
+ TRANSITION LKOTA FIX LKOTA
+APPROACH RNV31 FIX ZAMSU AT OR ABOVE 4000 FIX KIDKE 3800 FIX SOLOY AT OR ABOVE 2900 RNW 31 TRK 308 UNTIL 2480 FIX HAIRY AT OR ABOVE 4100 HOLD AT FIX HAIRY RIGHT TURN INBOUNDCOURSE 127 LEGDIST 5
+ TRANSITION NUKIY FIX NUKIY AT OR ABOVE 4000
+ TRANSITION WAPKU FIX WAPKU AT OR ABOVE 4000
+ TRANSITION ZAMSU HOLD AT FIX ZAMSU RIGHT TURN INBOUNDCOURSE 308 ALT 4000 LEGDIST 4
+ENDAPPROACHES

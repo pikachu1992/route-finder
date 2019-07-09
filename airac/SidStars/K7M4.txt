@@ -1,0 +1,36 @@
+//K7M4 (OSCEOLA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX NOBDY LATLON N 35 33.862333 W 90 2.063333
+FIX UKUCI LATLON N 35 52.800334 W 89 58.429333
+FIX WORUP LATLON N 35 46.761334 W 89 59.591333
+FIX YALUL LATLON N 35 52.022167 W 89 52.351834
+FIX ZARAM LATLON N 35 53.573333 W 90 4.508833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV19 FIX UKUCI AT OR ABOVE 3000 FIX WORUP 1900 RNW 19 FIX OVERFLY NOBDY AT OR ABOVE 3500 HOLD AT FIX NOBDY RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4
+ TRANSITION UKUCI HOLD AT FIX UKUCI RIGHT TURN INBOUNDCOURSE 187 ALT 3000 LEGDIST 4
+ TRANSITION YALUL FIX YALUL AT OR ABOVE 3000
+ TRANSITION ZARAM FIX ZARAM AT OR ABOVE 3000
+ENDAPPROACHES

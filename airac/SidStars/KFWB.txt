@@ -1,0 +1,41 @@
+//KFWB (BRANSON WEST MUNI-EMERSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRNTT LATLON N 36 46.329667 W 93 20.109334
+FIX CONIE LATLON N 36 37.342333 W 93 28.284833
+FIX EDJON LATLON N 36 32.4915 W 93 32.680333
+FIX ENDRS LATLON N 36 50.3795 W 93 16.412666
+FIX HARKS LATLON N 36 31.358 W 93 41.061667
+FIX HIVGA LATLON N 36 44.019167 W 93 22.215
+FIX PPAMM LATLON N 36 25.268167 W 93 26.970667
+FIX WOREP LATLON N 36 40.284833 W 93 25.612667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX EDJON AT OR ABOVE 3400 FIX CONIE 3000 FIX WOREP AT OR ABOVE 1840 RNW 03 TRK 034 UNTIL 1491 FIX OVERFLY ENDRS AT OR ABOVE 3000 HOLD AT FIX ENDRS RIGHT TURN INBOUNDCOURSE 214 LEGDIST 4
+ TRANSITION EDJON HOLD AT FIX EDJON RIGHT TURN INBOUNDCOURSE 034 ALT 3400 LEGDIST 4
+ TRANSITION HARKS FIX HARKS
+ TRANSITION PPAMM FIX PPAMM
+APPROACH RNV21 FIX ENDRS AT OR ABOVE 3000 FIX BRNTT 3000 FIX HIVGA AT OR ABOVE 2080 RNW 21 TRK 214 UNTIL 1598 FIX OVERFLY EDJON AT OR ABOVE 3400 HOLD AT FIX EDJON RIGHT TURN INBOUNDCOURSE 034 LEGDIST 4
+ TRANSITION ENDRS HOLD AT FIX ENDRS RIGHT TURN INBOUNDCOURSE 214 ALT 3000 LEGDIST 4
+ENDAPPROACHES

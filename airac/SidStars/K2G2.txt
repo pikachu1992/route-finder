@@ -1,0 +1,43 @@
+//K2G2 (JEFFERSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUTTA LATLON N 40 52.575167 W 80 38.594167
+FIX EDETY LATLON N 40 25.562833 W 80 47.387666
+FIX HEFJA LATLON N 40 15.9215 W 80 25.315834
+FIX IGEKE LATLON N 40 29.741833 W 80 53.032
+FIX KEDSE LATLON N 40 18.512666 W 80 37.9055
+FIX OKWIV LATLON N 40 23.986667 W 81 0.316166
+FIX ULIZE LATLON N 40 14.367334 W 80 32.354167
+FIX UTTEW LATLON N 40 35.489167 W 80 45.727166
+FIX WISKE LATLON N 40 7.748167 W 80 40.565666
+FIX WOMGU LATLON N 40 23.877 W 80 45.115667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX IGEKE AT OR ABOVE 3000 FIX EDETY 2900 FIX WOMGU AT OR ABOVE 2120 RNW 14 TRK 142 UNTIL 2000 TURN RIGHT DIRECT FIX OVERFLY WISKE AT OR ABOVE 3100 HOLD AT FIX WISKE LEFT TURN INBOUNDCOURSE 051 LEGDIST 4
+ TRANSITION CUTTA FIX CUTTA FIX UTTEW AT OR ABOVE 3000
+ TRANSITION WISKE FIX WISKE FIX OKWIV AT OR ABOVE 3000
+APPROACH RNV32 FIX ULIZE AT OR ABOVE 3000 FIX KEDSE 2800 RNW 32 TRK 322 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY WISKE AT OR ABOVE 3100 HOLD AT FIX WISKE LEFT TURN INBOUNDCOURSE 051 LEGDIST 4
+ TRANSITION HEFJA FIX HEFJA
+ TRANSITION WISKE FIX WISKE
+ENDAPPROACHES

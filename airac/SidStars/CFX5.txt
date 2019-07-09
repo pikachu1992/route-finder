@@ -1,0 +1,44 @@
+//CFX5 (RENARD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGLES LATLON N 52 40.394666 W 72 17.8405
+FIX BOVUD LATLON N 52 47.403833 W 72 8.494834
+FIX DUSID LATLON N 52 54.9145 W 72 11.177333
+FIX IKBOL LATLON N 52 36.5085 W 72 22.9935
+FIX KINIT LATLON N 52 47.263333 W 72 8.682833
+FIX LEXEP LATLON N 52 40.268167 W 72 18.0085
+FIX NUGAK LATLON N 52 40.263167 W 72 30.6685
+FIX ODKEN LATLON N 52 51.138833 W 72 3.487333
+FIX PUVAD LATLON N 52 45.625 W 72 10.872833
+FIX SESLO LATLON N 52 32.7455 W 72 15.340333
+FIX TILUT LATLON N 52 47.355 W 71 55.819667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX IKBOL AT OR ABOVE 3000 SPEED 180 FIX AGLES 2900 RNW 06 FIX OVERFLY BOVUD 3400 HOLD AT FIX BOVUD RIGHT TURN INBOUNDCOURSE 058 SPEED 250 LEGTIME 1
+ TRANSITION NUGAK FIX NUGAK SPEED 210
+ TRANSITION SESLO FIX SESLO SPEED 210
+APPROACH RNV24 FIX ODKEN AT OR ABOVE 4000 SPEED 180 FIX KINIT 2900 FIX PUVAD AT OR ABOVE 2210 RNW 24 FIX OVERFLY LEXEP 3400 HOLD AT FIX LEXEP RIGHT TURN INBOUNDCOURSE 238 SPEED 250 LEGTIME 1
+ TRANSITION DUSID FIX DUSID SPEED 210
+ TRANSITION TILUT FIX TILUT SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,49 @@
+//OPDB (DALBANDIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DB361 LATLON N 28 49.096667 E 64 29.411666
+FIX DB362 LATLON N 28 47.666666 E 64 33.416666
+FIX DB363 LATLON N 28 44.15 E 64 31.8
+FIX DB364 LATLON N 28 57.483334 E 64 42.816667
+FIX DB371 LATLON N 28 55.723333 E 64 19.4
+FIX DB372 LATLON N 28 58.016666 E 64 15.933334
+FIX DB373 LATLON N 28 54.966667 E 64 13.333333
+FIX DB374 LATLON N 29 1.05 E 64 18.55
+FIX DUBEX LATLON N 28 45.083333 E 64 23.033333
+FIX DULIX LATLON N 29 1.216667 E 64 56.75
+FIX EPGIT LATLON N 28 59.733334 E 64 27.55
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX DB372 5000 FIX DB371 4400 RNW 13 FIX OVERFLY DB361 TURN LEFT DIRECT FIX EPGIT 7000
+ TRANSITION DUBEX FIX DUBEX 8000 FIX DB373 AT OR ABOVE 5500
+ TRANSITION DULIX FIX DULIX 13000 FIX DB364 11000 FIX EPGIT 8000 FIX DB374 AT OR ABOVE 5500
+APPROACH RNV31 FIX DB362 5000 FIX DB361 4400 RNW 31 FIX OVERFLY DB371 TURN LEFT DIRECT FIX DUBEX 8000
+ TRANSITION DUBEX FIX DUBEX 8000 FIX DB363 6000
+ TRANSITION DULIX FIX DULIX 13000 FIX DB364 9000
+ENDAPPROACHES
+
+GATES
+GATE 1 N 28 52.468166 E 64 24.184
+GATE 2 N 28 52.49 E 64 24.156833
+ENDGATES

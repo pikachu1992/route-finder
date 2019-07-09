@@ -1,0 +1,37 @@
+//FQQL (QUELIMANE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GEVAD LATLON S 17 40.362334 E 36 56.220167
+FIX IBKOX LATLON S 17 45.865834 E 36 51.540667
+FIX NEVOR LATLON S 17 41.378666 E 36 45.800333
+FIX QL600 LATLON S 17 55.854 E 36 52.601833
+FIX QL601 LATLON S 17 55.344667 E 36 57.818833
+FIX TEXAX LATLON S 17 40.871666 E 36 51.0105
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX IBKOX 1600 RNW 18 FIX QL600 AT OR ABOVE 440 FIX QL601 FIX GEVAD 2600 HOLD AT FIX GEVAD RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1
+ TRANSITION GEVAD FIX GEVAD AT OR ABOVE 2600 SPEED 200 FIX TEXAX AT OR ABOVE 2600
+ TRANSITION NEVOR FIX NEVOR AT OR ABOVE 2600 SPEED 200 FIX TEXAX AT OR ABOVE 2600
+ TRANSITION TEXAX FIX TEXAX AT OR ABOVE 2600
+ENDAPPROACHES

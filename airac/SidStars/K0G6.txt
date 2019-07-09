@@ -1,0 +1,37 @@
+//K0G6 (WILLIAMS CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LARCH LATLON N 41 25.999834 W 84 37.1735
+FIX POKLY LATLON N 41 23.4535 W 84 45.589
+FIX ROYYS LATLON N 41 32.565334 W 84 15.255334
+FIX TUPOZ LATLON N 41 30.047 W 84 23.700334
+FIX UGEYE LATLON N 41 27.1665 W 84 33.303
+FIX YOLUN LATLON N 41 28.738333 W 84 28.070833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX POKLY AT OR ABOVE 3000 FIX LARCH 2400 FIX UGEYE AT OR ABOVE 1400 RNW 07 TRK 073 UNTIL 1003 FIX OVERFLY ROYYS AT OR ABOVE 3000 HOLD AT FIX ROYYS RIGHT TURN INBOUNDCOURSE 253 LEGDIST 4
+ TRANSITION POKLY HOLD AT FIX POKLY RIGHT TURN INBOUNDCOURSE 073 ALT 3000 LEGDIST 4
+APPROACH RNV25 FIX ROYYS AT OR ABOVE 3000 FIX TUPOZ 2400 FIX YOLUN AT OR ABOVE 1260 RNW 25 TRK 253 UNTIL 1120 FIX OVERFLY POKLY AT OR ABOVE 3000 HOLD AT FIX POKLY RIGHT TURN INBOUNDCOURSE 073 LEGDIST 4
+ TRANSITION ROYYS HOLD AT FIX ROYYS RIGHT TURN INBOUNDCOURSE 253 ALT 3000 LEGDIST 4
+ENDAPPROACHES

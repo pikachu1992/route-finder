@@ -1,0 +1,41 @@
+//KM77 (HOWARD CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUNIV LATLON N 33 57.569167 W 93 50.8635
+FIX JURAV LATLON N 33 54.513167 W 93 51.644333
+FIX KAPGE LATLON N 34 5.725333 W 93 48.775333
+FIX NEPRE LATLON N 34 16.027 W 93 38.277167
+FIX OVOKY LATLON N 34 12.619333 W 93 47.004833
+FIX SAGJU LATLON N 34 2.409 W 93 49.625167
+FIX TOYOY LATLON N 33 41.5355 W 93 54.740833
+FIX ULEHI LATLON N 33 47.654 W 93 53.3935
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX ULEHI AT OR ABOVE 2500 FIX JURAV 2200 FIX CUNIV AT OR ABOVE 1200 RNW 01 TRK 010 UNTIL 940 FIX OVERFLY OVOKY AT OR ABOVE 4000 HOLD AT FIX OVOKY RIGHT TURN INBOUNDCOURSE 190 LEGDIST 4
+ TRANSITION TOYOY FIX TOYOY
+ TRANSITION ULEHI HOLD AT FIX ULEHI LEFT TURN INBOUNDCOURSE 010 ALT 2500 LEGDIST 4
+APPROACH RNV19 FIX OVOKY AT OR ABOVE 3300 FIX KAPGE 2400 FIX SAGJU AT OR ABOVE 1320 RNW 19 TRK 190 UNTIL 953 FIX OVERFLY ULEHI AT OR ABOVE 3500 HOLD AT FIX ULEHI LEFT TURN INBOUNDCOURSE 010 LEGDIST 4
+ TRANSITION NEPRE FIX NEPRE
+ TRANSITION OVOKY HOLD AT FIX OVOKY RIGHT TURN INBOUNDCOURSE 190 ALT 3300 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KF88 (JONESBORO MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIGED LATLON N 32 10.353 W 92 43.946333
+FIX EYLEJ LATLON N 32 14.388167 W 92 44.0135
+FIX FIMUG LATLON N 32 22.744333 W 92 44.152834
+FIX PUYOC LATLON N 32 6.526 W 92 43.882834
+FIX UPSUW LATLON N 32 17.736 W 92 44.069333
+FIX ZOBTA LATLON N 32 1.5155 W 92 43.799666
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX FIMUG AT OR ABOVE 2400 FIX UPSUW 2000 FIX EYLEJ AT OR ABOVE 920 RNW 18 TRK 178 UNTIL 620 FIX OVERFLY ZOBTA AT OR ABOVE 2000 HOLD AT FIX ZOBTA RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION FIMUG HOLD AT FIX FIMUG RIGHT TURN INBOUNDCOURSE 178 ALT 2400 LEGDIST 4
+APPROACH RNV36 FIX ZOBTA AT OR ABOVE 2000 FIX PUYOC 2000 FIX CIGED AT OR ABOVE 760 RNW 36 TRK 358 UNTIL 620 FIX OVERFLY FIMUG AT OR ABOVE 2400 HOLD AT FIX FIMUG RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4
+ TRANSITION ZOBTA HOLD AT FIX ZOBTA RIGHT TURN INBOUNDCOURSE 358 ALT 2000 LEGDIST 4
+ENDAPPROACHES

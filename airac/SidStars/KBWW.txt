@@ -1,0 +1,38 @@
+//KBWW (BOWMAN REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRANK LATLON N 46 5.736167 W 103 12.986333
+FIX CODAP LATLON N 46 8.116667 W 103 15.8545
+FIX FOBRA LATLON N 46 14.169 W 103 23.172167
+FIX HAGDA LATLON N 46 20.285333 W 103 30.604166
+FIX HAYNI LATLON N 46 8.576167 W 102 50.109833
+FIX SEWAN LATLON N 46 12.051167 W 103 20.607334
+FIX TROAK LATLON N 45 59.600666 W 103 5.619167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX HAGDA AT OR ABOVE 5800 FIX FOBRA 4600 FIX SEWAN AT OR ABOVE 3700 RNW 13 TRK 133 UNTIL 3400 TURN LEFT DIRECT FIX OVERFLY HAYNI AT OR ABOVE 6000 HOLD AT FIX HAYNI LEFT TURN INBOUNDCOURSE 175 LEGDIST 6
+ TRANSITION HAGDA HOLD AT FIX HAGDA RIGHT TURN INBOUNDCOURSE 133 ALT 5800 LEGDIST 5
+APPROACH RNV31 FIX TROAK AT OR ABOVE 5800 FIX BRANK 4600 FIX CODAP AT OR ABOVE 3600 RNW 31 TRK 313 UNTIL 3500 TURN RIGHT DIRECT FIX OVERFLY HAYNI AT OR ABOVE 6000 HOLD AT FIX HAYNI LEFT TURN INBOUNDCOURSE 175 LEGDIST 6
+ TRANSITION TROAK HOLD AT FIX TROAK RIGHT TURN INBOUNDCOURSE 313 ALT 5800 LEGDIST 5
+ENDAPPROACHES

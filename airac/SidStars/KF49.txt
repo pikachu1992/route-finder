@@ -1,0 +1,46 @@
+//KF49 (SLATON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAGOX LATLON N 33 23.891167 W 101 40.5505
+FIX CAPDU LATLON N 33 34.1865 W 101 38.771167
+FIX HAXEB LATLON N 33 17.889334 W 101 41.5845
+FIX JONON LATLON N 33 40.2345 W 101 37.722833
+FIX LBB LATLON N 33 42.297 W 101 54.840667
+FIX RALLS LATLON N 33 44.044667 W 101 20.356834
+FIX TAGAE LATLON N 33 14.888333 W 101 46.359667
+FIX WAGEG LATLON N 33 31.582333 W 101 39.222
+FIX WATUS LATLON N 33 13.876166 W 101 38.0155
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JONON AT OR ABOVE 5300 FIX CAPDU 4700 FIX WAGEG AT OR ABOVE 3860 RNW 18 TRK 182 UNTIL 3427 FIX OVERFLY HAXEB AT OR ABOVE 5000 HOLD AT FIX HAXEB RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION JONON HOLD AT FIX JONON RIGHT TURN INBOUNDCOURSE 182 ALT 5300 LEGDIST 4
+ TRANSITION LBB FIX LBB
+ TRANSITION RALLS FIX RALLS
+APPROACH RNV36 FIX HAXEB AT OR ABOVE 5000 FIX CAGOX 4700 RNW 36 TRK 002 UNTIL 3524 FIX OVERFLY JONON AT OR ABOVE 5300 HOLD AT FIX JONON RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4
+ TRANSITION LBB FIX LBB FIX OVERFLY HAXEB AT OR ABOVE 5100 HOLD AT FIX HAXEB RIGHT TURN INBOUNDCOURSE 002 ALT 5000 LEGDIST 4
+ TRANSITION TAGAE FIX TAGAE
+ TRANSITION WATUS FIX WATUS
+ENDAPPROACHES

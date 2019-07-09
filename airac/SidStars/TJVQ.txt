@@ -1,0 +1,44 @@
+//TJVQ (ANTONIO RIVERA RODRIGUEZ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAVTU LATLON N 18 7.325167 W 65 32.995667
+FIX HAKVO LATLON N 17 51.056 W 65 15.385333
+FIX HOMAG LATLON N 18 6.852 W 65 35.087666
+FIX MIXEE LATLON N 18 5.489833 W 65 41.097
+FIX MUNGE LATLON N 18 7.925666 W 65 30.339
+FIX PEVOE LATLON N 18 6.647666 W 65 35.989333
+FIX TUUNA LATLON N 17 58.852667 W 65 53.167834
+FIX VEDAS LATLON N 17 55.160666 W 65 35.194834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID VEDAS4
+ RNW 09 HDG 090 UNTIL 2200 FIX HAKVO TURN RIGHT DIRECT FIX VEDAS
+ RNW 27 HDG 270 UNTIL 549 FIX HOMAG FIX VEDAS
+ENDSIDS
+
+APPROACHES
+APPROACH RNV09 FIX MIXEE AT OR ABOVE 3000 FIX PEVOE 2000 FIX CAVTU AT OR ABOVE 1140 FIX MUNGE 251 RNW 09 TRK 090 UNTIL 449 TURN LEFT DIRECT FIX MIXEE AT OR ABOVE 3000 HOLD AT FIX MIXEE RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION TUUNA FIX TUUNA
+ TRANSITION VEDAS FIX VEDAS FIX MIXEE AT OR ABOVE 3000 HOLD AT FIX MIXEE RIGHT TURN INBOUNDCOURSE 090 ALT 3000 LEGDIST 4
+ENDAPPROACHES

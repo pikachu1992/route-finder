@@ -1,0 +1,44 @@
+//KO47 (PRAGUE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GECGE LATLON N 35 40.597333 W 96 37.290833
+FIX IVBAF LATLON N 35 40.641667 W 96 48.824
+FIX OYEHE LATLON N 35 33.902167 W 96 43.096333
+FIX REXEC LATLON N 35 38.909333 W 96 43.067333
+FIX UFNAP LATLON N 35 31.528166 W 96 43.11
+FIX VIRUJ LATLON N 35 18.664166 W 96 43.186166
+FIX WATOM LATLON N 35 16.971 W 96 48.939
+FIX XETJO LATLON N 35 16.925 W 96 37.453834
+FIX YADUG LATLON N 35 23.675167 W 96 43.156333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX REXEC AT OR ABOVE 3000 FIX OYEHE 2600 FIX UFNAP AT OR ABOVE 1840 RNW 17 TRK 177 UNTIL 1400 FIX OVERFLY VIRUJ AT OR ABOVE 3000 HOLD AT FIX VIRUJ RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4
+ TRANSITION GECGE FIX GECGE
+ TRANSITION IVBAF FIX IVBAF
+ TRANSITION REXEC HOLD AT FIX REXEC RIGHT TURN INBOUNDCOURSE 177 ALT 3000 LEGDIST 4
+APPROACH RNVA35 FIX VIRUJ AT OR ABOVE 3000 FIX YADUG 2600 RNW 35 TRK 357 UNTIL 1441 FIX OVERFLY REXEC AT OR ABOVE 3000 HOLD AT FIX REXEC RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4
+ TRANSITION VIRUJ HOLD AT FIX VIRUJ RIGHT TURN INBOUNDCOURSE 357 ALT 3000 LEGDIST 4
+ TRANSITION WATOM FIX WATOM
+ TRANSITION XETJO FIX XETJO
+ENDAPPROACHES

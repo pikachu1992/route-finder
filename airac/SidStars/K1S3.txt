@@ -1,0 +1,34 @@
+//K1S3 (TILLITT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALOSY LATLON N 46 15.8255 W 106 31.8265
+FIX ASHLI LATLON N 46 19.004 W 106 16.609834
+FIX ATIZO LATLON N 46 15.081334 W 106 22.5505
+FIX CONUK LATLON N 46 9.223667 W 107 3.5585
+FIX FREYA LATLON N 46 17.337667 W 106 51.196667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX ATIZO AT OR ABOVE 4900 FIX ALOSY 3900 RNW 27 TRK 268 UNTIL 2978 FIX FREYA FIX OVERFLY CONUK AT OR ABOVE 6000 HOLD AT FIX CONUK RIGHT TURN INBOUNDCOURSE 245 LEGDIST 5
+ TRANSITION ASHLI FIX ASHLI
+ENDAPPROACHES

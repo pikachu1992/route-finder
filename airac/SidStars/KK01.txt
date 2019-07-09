@@ -1,0 +1,45 @@
+//KK01 (FARINGTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FEPOP LATLON N 40 19.833167 W 95 45.688834
+FIX OBAKE LATLON N 40 37.786834 W 95 45.021
+FIX OLMEE LATLON N 40 35.600167 W 95 53.059
+FIX ORAKE LATLON N 40 9.253333 W 95 40.7775
+FIX PRAAM LATLON N 40 11.426 W 95 32.785
+FIX STOTS LATLON N 40 25.6285 W 95 48.390667
+FIX SWART LATLON N 40 33.404167 W 96 1.088333
+FIX WIGIT LATLON N 40 7.071334 W 95 48.7615
+FIX ZUPIT LATLON N 40 16.7965 W 95 44.276333
+FIX ZUSUP LATLON N 40 29.475334 W 95 50.188834
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX OLMEE AT OR ABOVE 3600 FIX ZUSUP 3000 FIX STOTS AT OR ABOVE 1720 RNW 16 TRK 158 UNTIL 1180 FIX OVERFLY ORAKE AT OR ABOVE 3600 HOLD AT FIX ORAKE RIGHT TURN INBOUNDCOURSE 338 ALT 3600 LEGDIST 4
+ TRANSITION OBAKE FIX OBAKE
+ TRANSITION OLMEE HOLD AT FIX OLMEE RIGHT TURN INBOUNDCOURSE 158 ALT 3600 LEGDIST 4
+ TRANSITION SWART FIX SWART
+APPROACH RNV34 FIX ORAKE AT OR ABOVE 3600 FIX ZUPIT 3000 FIX FEPOP AT OR ABOVE 1960 RNW 34 TRK 338 UNTIL 1175 FIX OVERFLY OLMEE AT OR ABOVE 3600 HOLD AT FIX OLMEE RIGHT TURN INBOUNDCOURSE 158 LEGDIST 4
+ TRANSITION ORAKE HOLD AT FIX ORAKE RIGHT TURN INBOUNDCOURSE 338 ALT 3600 LEGDIST 4
+ TRANSITION PRAAM FIX PRAAM
+ TRANSITION WIGIT FIX WIGIT
+ENDAPPROACHES

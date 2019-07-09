@@ -1,0 +1,44 @@
+//K0A8 (BIBB CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASESE LATLON N 33 2.247667 W 87 19.226167
+FIX BEKDE LATLON N 32 57.256 W 87 19.73
+FIX BOVRE LATLON N 32 55.695667 W 86 58.402333
+FIX BUSAY LATLON N 32 52.264166 W 87 20.233
+FIX CAMUV LATLON N 32 55.154666 W 86 51.1885
+FIX EBEYA LATLON N 32 55.9765 W 87 2.1825
+FIX FAMAM LATLON N 33 0.1445 W 86 50.659
+FIX KORNR LATLON N 32 48.697667 W 86 50.791166
+FIX OKW LATLON N 33 14.273167 W 87 14.992
+FIX TASYU LATLON N 33 6.683833 W 86 51.9
+FIX YOYNU LATLON N 32 56.734333 W 87 12.509333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX BEKDE AT OR ABOVE 3000 FIX YOYNU 2100 RNW 10 TRK 097 UNTIL 651 FIX OVERFLY CAMUV AT OR ABOVE 3000 HOLD AT FIX CAMUV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4
+ TRANSITION KORNR FIX KORNR FIX BUSAY AT OR ABOVE 3000
+ TRANSITION OKW FIX OKW FIX ASESE AT OR ABOVE 3000
+APPROACH RNV28 FIX CAMUV AT OR ABOVE 3000 FIX BOVRE 2100 FIX EBEYA AT OR ABOVE 1060 RNW 28 TRK 277 UNTIL 651 TURN RIGHT DIRECT FIX OVERFLY CAMUV AT OR ABOVE 3000 HOLD AT FIX CAMUV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 4
+ TRANSITION KORNR FIX KORNR
+ TRANSITION TASYU FIX TASYU FIX FAMAM AT OR ABOVE 3000
+ENDAPPROACHES

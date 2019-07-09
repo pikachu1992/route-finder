@@ -1,0 +1,49 @@
+//YGGE (GOLDEN GROVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GGEEA LATLON S 28 46.9955 E 117 12.984
+FIX GGEEB LATLON S 28 52.678834 E 117 13.9805
+FIX GGEEC LATLON S 28 55.4455 E 117 8.251667
+FIX GGEEF LATLON S 28 48.243167 E 117 3.769
+FIX GGEEH LATLON S 28 44.685334 E 116 55.61
+FIX GGEEI LATLON S 28 50.4625 E 117 8.873
+FIX GGEEM LATLON S 28 46.0205 E 116 58.6685
+FIX GGEWD LATLON S 28 44.6805 E 116 43.5905
+FIX GGEWE LATLON S 28 38.993333 E 116 42.623833
+FIX GGEWF LATLON S 28 43.457666 E 116 52.8045
+FIX GGEWG LATLON S 28 36.2455 E 116 48.3495
+FIX GGEWH LATLON S 28 47.02 E 117 0.959333
+FIX GGEWI LATLON S 28 41.227 E 116 47.712334
+FIX GGEWM LATLON S 28 45.685 E 116 57.900167
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX GGEWI AT OR ABOVE 3000 FIX GGEWF 2830 FIX OVERFLY GGEWM 1233 RNW 11 FIX GGEWH TRK 116 UNTIL 3000
+ TRANSITION GGEWD FIX GGEWD AT OR ABOVE 3000 SPEED 230
+ TRANSITION GGEWE FIX GGEWE AT OR ABOVE 3000 SPEED 230
+ TRANSITION GGEWG FIX GGEWG AT OR ABOVE 3000 SPEED 230
+APPROACH RNV29 FIX GGEEI AT OR ABOVE 3000 FIX GGEEF 2800 FIX OVERFLY GGEEM 1209 RNW 29 FIX GGEEH TRK 296 UNTIL 3000
+ TRANSITION GGEEA FIX GGEEA AT OR ABOVE 3000 SPEED 230
+ TRANSITION GGEEB FIX GGEEB AT OR ABOVE 3000 SPEED 230
+ TRANSITION GGEEC FIX GGEEC AT OR ABOVE 3000 SPEED 230
+ENDAPPROACHES

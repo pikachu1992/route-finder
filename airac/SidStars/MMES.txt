@@ -1,0 +1,38 @@
+//MMES (GEN DIV P A A L SALINAS CARRAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ENSNB LATLON N 31 47.754667 W 116 36.4165
+FIX FN11 LATLON N 31 52.349666 W 116 42.620666
+FIX PI001 LATLON N 31 50.050244 W 116 39.52567
+FIX PI002 LATLON N 31 49.74863 W 116 44.574401
+FIX PI003 LATLON N 31 54.31011 W 116 45.306688
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID ENS3 RNW 29 TRK 290 UNTIL 466 FIX ENSNB TRK 298 UNTIL 7.0 FROM FIX ENSNB TURN LEFT DIRECT FIX ENSNB
+ENDSIDS
+
+APPROACHES
+APPROACH NDB11 FIX FN11 2400 RNW 11 FIX ENSNB AT OR ABOVE 466 HDG 343 INTERCEPT RADIAL 298 TO FIX FN11 FIX FN11 TRK 253 UNTIL 3.5 FROM FIX FN11 TURN RIGHT DIRECT FIX ENSNB AT OR ABOVE 5000
+ TRANSITION ENS FIX ENSNB AT OR ABOVE 5000 FIX PI001 AT OR ABOVE 2400 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2400 SPEED 210 FIX PI003 AT OR ABOVE 2400 SPEED 210
+ENDAPPROACHES

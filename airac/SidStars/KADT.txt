@@ -1,0 +1,40 @@
+//KADT (ATWOOD-RAWLINS CO CITY-CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ELYIJ LATLON N 39 49.802167 W 101 19.478833
+FIX HOMIM LATLON N 40 2.300167 W 101 4.454833
+FIX HORUK LATLON N 39 53.179834 W 101 3.018167
+FIX IHUKY LATLON N 39 56.330666 W 101 3.513833
+FIX JITAM LATLON N 40 2.9 W 100 57.991333
+FIX JUNGU LATLON N 39 43.940167 W 101 1.5665
+FIX WIXAR LATLON N 40 1.694333 W 101 10.916333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 16
+RNW 21
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX HOMIM AT OR ABOVE 5000 FIX IHUKY 4800 FIX HORUK AT OR ABOVE 3760 RNW 16 FIX JUNGU TURN RIGHT DIRECT FIX ELYIJ FIX OVERFLY HOMIM AT OR ABOVE 5000 HOLD AT FIX HOMIM RIGHT TURN INBOUNDCOURSE 164 LEGDIST 5
+ TRANSITION HOMIM HOLD AT FIX HOMIM RIGHT TURN INBOUNDCOURSE 164 ALT 5000 LEGDIST 5
+ TRANSITION JITAM FIX JITAM AT OR ABOVE 5000
+ TRANSITION WIXAR FIX WIXAR AT OR ABOVE 5000
+ENDAPPROACHES

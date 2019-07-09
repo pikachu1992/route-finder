@@ -1,0 +1,42 @@
+//SBMD (MONTE DOURADO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APURU LATLON S 1 5.55 W 50 52.26
+FIX JARI LATLON S 0 38.92 W 52 13.15
+FIX MDDNB LATLON S 0 53 W 52 36.18
+FIX MICAL LATLON S 0 15.13 W 51 34.24
+FIX MULUK LATLON S 1 14.07 W 53 6.37
+FIX NAMA LATLON S 0 56.27 W 52 9.43
+FIX RARU LATLON S 1 8.46 W 52 58.34
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID JARI
+ RNW 08 TRK 080 UNTIL 1200 FIX MDDNB FIX JARI
+ RNW 26 TRK 260 UNTIL 1200 HDG 106 INTERCEPT RADIAL 078 TO FIX JARI FIX JARI
+  TRANSITION MICAL FIX MICAL
+SID NAMA FIX APURU
+ RNW 08 TRK 080 UNTIL 1200 FIX MDDNB FIX NAMA
+ RNW 26 TRK 260 UNTIL 1200 HDG 084 INTERCEPT RADIAL 116 TO FIX NAMA FIX NAMA
+SID RARU RNW 26 TRK 260 UNTIL 1200 FIX MDDNB FIX RARU FIX MULUK
+ENDSIDS

@@ -1,0 +1,40 @@
+//KMEJ (MEADE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DIZTY LATLON N 37 22.187833 W 100 21.7875
+FIX FLACK LATLON N 37 14.686667 W 100 21.520166
+FIX INDOW LATLON N 37 27.054167 W 100 22.176167
+FIX KASBE LATLON N 37 27.612 W 100 28.494833
+FIX LATOC LATLON N 37 4.5615 W 100 20.386166
+FIX MOCSY LATLON N 37 11.356 W 100 20.925167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 17
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX INDOW AT OR ABOVE 4300 FIX DIZTY 4200 RNW 17 TRK 168 UNTIL 2927 FIX OVERFLY LATOC AT OR ABOVE 4300 HOLD AT FIX LATOC RIGHT TURN INBOUNDCOURSE 348 LEGDIST 5
+ TRANSITION FLACK FIX FLACK FIX OVERFLY INDOW AT OR ABOVE 4300 HOLD AT FIX INDOW RIGHT TURN INBOUNDCOURSE 168 ALT 4300 LEGDIST 5
+ TRANSITION KASBE FIX KASBE
+APPROACH RNV35 FIX LATOC AT OR ABOVE 4300 FIX MOCSY 4100 RNW 35 TRK 348 UNTIL 2927 FIX OVERFLY INDOW AT OR ABOVE 4300 HOLD AT FIX INDOW RIGHT TURN INBOUNDCOURSE 168 LEGDIST 5
+ TRANSITION FLACK FIX FLACK FIX OVERFLY LATOC AT OR ABOVE 4300 HOLD AT FIX LATOC RIGHT TURN INBOUNDCOURSE 348 ALT 4300 LEGDIST 5
+ENDAPPROACHES

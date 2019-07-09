@@ -1,0 +1,36 @@
+//SUTB (TACUAREMBO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF10 LATLON S 31 44.373167 W 56 1.430167
+FIX FF28 LATLON S 31 44.746166 W 55 50.469167
+FIX TBONB LATLON S 31 45.061667 W 55 55.716667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB10 FIX FF10 2000 RNW 10 TRK 106 UNTIL 840 HDG 106 VECTORS
+ TRANSITION TBO1 FIX TBONB AT OR ABOVE 2000 TRK 316 UNTIL 8.8 FROM FIX TBONB
+ TRANSITION TBO2 FIX TBONB AT OR ABOVE 2000 TRK 306 UNTIL 7.5 FROM FIX TBONB
+APPROACH NDB28 FIX FF28 1760 RNW 28 TRK 274 UNTIL 840 HDG 274 VECTORS
+ TRANSITION TBO1 FIX TBONB AT OR ABOVE 2000 TRK 064 UNTIL 8.8 FROM FIX TBONB
+ TRANSITION TBO2 FIX TBONB AT OR ABOVE 2000 TRK 074 UNTIL 7.5 FROM FIX TBONB
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//ZMCD (CHOIBALSAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN12 LATLON N 48 10.864834 E 114 28.7165
+FIX FN30 LATLON N 48 5.362 E 114 48.998666
+FIX HNNB LATLON N 48 7.643333 E 114 40.59
+FIX ON LATLON N 48 8.62 E 114 37.043333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB12 FIX FN12 4600 FIX ON 2686 RNW 12 HDG 120 VECTORS
+APPROACH NDB30 FIX FN30 4600 FIX HNNB 2663 RNW 30 HDG 300 VECTORS
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//SBTS (TIRIOS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOMAK LATLON S 1 46.53 W 54 58.51
+FIX BONA LATLON N 1 54.75 W 55 36.69
+FIX GLIB LATLON N 2 2.19 W 55 31.84
+FIX MCP LATLON N 0 3.135833 W 51 4.3835
+FIX MDDNB LATLON S 0 53 W 52 36.18
+FIX SURI LATLON N 1 24.62 W 55 44.02
+FIX TIRNB LATLON N 2 13.14 W 55 56.51
+FIX UDAK LATLON N 1 49.72 W 55 42.9
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+SIDS
+SID BONA FIX MDDNB
+ RNW 12 HDG 099 UNTIL 2400 HDG 179 INTERCEPT RADIAL 150 TO FIX BONA FIX BONA
+ RNW 30 HDG 279 UNTIL 1527 HDG 119 INTERCEPT RADIAL 150 TO FIX BONA FIX BONA
+SID GLIB FIX MCP
+ RNW 12 HDG 099 UNTIL 2400 HDG 160 INTERCEPT RADIAL 131 TO FIX GLIB FIX GLIB
+ RNW 30 HDG 279 UNTIL 1527 HDG 100 INTERCEPT RADIAL 131 TO FIX GLIB FIX GLIB
+SID UDAK FIX SURI FIX BOMAK
+ RNW 12 HDG 099 UNTIL 2400 HDG 196 INTERCEPT RADIAL 167 TO FIX UDAK FIX UDAK
+ RNW 30 HDG 279 UNTIL 1527 HDG 136 INTERCEPT RADIAL 167 TO FIX UDAK FIX UDAK
+ENDSIDS

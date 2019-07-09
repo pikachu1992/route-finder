@@ -1,0 +1,40 @@
+//LGSO (DIMITRIOS VIKELAS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF101 LATLON N 37 29.281834 E 24 38.647333
+FIX FF101 LATLON N 37 27.061333 E 24 49.604167
+FIX KEA LATLON N 37 33.429833 E 24 17.922
+FIX SYR LATLON N 37 25.412167 E 24 56.890333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID KEA1A RNW 36 TRK 358 UNTIL 640 TRK 012 UNTIL 2000 TURN LEFT DIRECT FIX KEA SPEED 165
+SID KEA1B RNW 18 TRK 178 UNTIL 640 TRK 178 UNTIL 2000 TURN RIGHT DIRECT FIX KEA SPEED 165
+ENDSIDS
+
+APPROACHES
+APPROACH NDMM18 FIX CF101 AT OR ABOVE 3000 FIX FF101 2000 FIX SYR 1840 RNW 18 TRK 326 INTERCEPT RADIAL 281 TO FIX CF101 FIX CF101 AT OR ABOVE 3000 SPEED 150 HOLD AT FIX CF101 RIGHT TURN INBOUNDCOURSE 101 ALT 3000 SPEED 170 LEGDIST 4
+ TRANSITION KEA FIX KEA AT OR ABOVE 3000
+APPROACH NDMM36 FIX CF101 AT OR ABOVE 3000 FIX FF101 2000 FIX SYR 1840 RNW 36 TRK 326 INTERCEPT RADIAL 281 TO FIX CF101 FIX CF101 AT OR ABOVE 3000 SPEED 150 HOLD AT FIX CF101 RIGHT TURN INBOUNDCOURSE 101 ALT 3000 SPEED 170 LEGDIST 4
+ TRANSITION KEA FIX KEA AT OR ABOVE 3000
+ENDAPPROACHES

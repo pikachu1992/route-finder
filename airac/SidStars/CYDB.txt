@@ -1,0 +1,33 @@
+//CYDB (BURWASH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DBNB LATLON N 61 20.416667 W 138 59
+FIX PI001 LATLON N 61 19.332161 W 138 52.063526
+FIX PI002 LATLON N 61 21.280412 W 138 44.071369
+FIX PI003 LATLON N 61 17.61605 W 138 41.179565
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA29 FIX DBNB 6500 RNW 29 TRK 297 UNTIL 8600 TURN RIGHT DIRECT FIX DBNB 8600 HOLD AT FIX DBNB RIGHT TURN INBOUNDCOURSE 267 SPEED 200 LEGTIME 1
+ TRANSITION DB FIX DBNB AT OR ABOVE 8500 FIX PI001 AT OR ABOVE 8300 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 8300 SPEED 210 FIX PI003 AT OR ABOVE 8300 SPEED 210
+ENDAPPROACHES

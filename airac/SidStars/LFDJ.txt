@@ -1,0 +1,36 @@
+//LFDJ (LES PUJOLS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CN09 LATLON N 43 5.812667 E 1 26.221333
+FIX MN09Z LATLON N 43 5.475 E 1 39.629833
+FIX PMRNB LATLON N 43 5.575 E 1 35.77
+FIX PPG LATLON N 42 45.028333 E 2 52.028333
+FIX RW09 LATLON N 43 5.450666 E 1 41.398
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDBY09 FIX CN09 AT OR ABOVE 3400 FIX PMRNB 2700 RNW 09 TRK 092 UNTIL 2100 TURN LEFT DIRECT FIX PMRNB 3600 SPEED 170
+ TRANSITION PPG FIX PPG FIX PMRNB AT OR ABOVE 5600 TRK 252 UNTIL 7.0 FROM FIX PMRNB
+APPROACH NDBZ09 FIX CN09 AT OR ABOVE 3400 FIX PMRNB 2700 FIX MN09Z 1646 RNW 09 TRK 092 UNTIL 1646 TRK 116 UNTIL 3200 TURN LEFT DIRECT FIX PMRNB 4400 SPEED 160
+ TRANSITION PPG FIX PPG FIX PMRNB AT OR ABOVE 5600 TRK 252 UNTIL 7.0 FROM FIX PMRNB
+ENDAPPROACHES

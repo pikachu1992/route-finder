@@ -1,0 +1,45 @@
+//FTTA (SARH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BINET LATLON N 9 20.175334 E 18 24.565667
+FIX DEDOT LATLON N 9 3.057 E 18 12.196166
+FIX GAGES LATLON N 8 57.199 E 18 20.406334
+FIX PIPLA LATLON N 9 17.2435 E 18 28.673
+FIX RAMET LATLON N 9 0.128333 E 18 16.301666
+FIX TA501 LATLON N 9 4.046 E 18 19.1305
+FIX TA502 LATLON N 9 12.369 E 18 25.1465
+FIX TA503 LATLON N 9 13.572667 E 18 26.016667
+FIX TA504 LATLON N 9 5.005834 E 18 19.822
+FIX TAPUT LATLON N 9 14.311834 E 18 32.779
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX TA501 2900 RNW 04 FIX OVERFLY TA502 AT OR ABOVE 1600 TURN RIGHT DIRECT FIX GAGES 2900
+ TRANSITION DEDOT FIX DEDOT AT OR ABOVE 2900 FIX RAMET AT OR ABOVE 2900
+ TRANSITION GAGES FIX GAGES AT OR ABOVE 2900 FIX RAMET AT OR ABOVE 2900
+ TRANSITION RAMET FIX RAMET AT OR ABOVE 2900
+APPROACH RNV22 FIX TA503 3000 RNW 22 FIX OVERFLY TA504 AT OR ABOVE 1600 TURN LEFT DIRECT FIX TAPUT 3000
+ TRANSITION BINET FIX BINET AT OR ABOVE 3000 FIX PIPLA AT OR ABOVE 3000
+ TRANSITION PIPLA FIX PIPLA AT OR ABOVE 3000
+ TRANSITION TAPUT FIX TAPUT AT OR ABOVE 3000 FIX PIPLA AT OR ABOVE 3000
+ENDAPPROACHES

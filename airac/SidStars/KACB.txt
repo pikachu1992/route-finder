@@ -1,0 +1,39 @@
+//KACB (ANTRIM CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FOVUP LATLON N 44 52.186166 W 85 15.048667
+FIX GLR LATLON N 45 0.749167 W 84 42.256667
+FIX HATTR LATLON N 44 54.094333 W 85 14.2075
+FIX IROTO LATLON N 45 11.339333 W 85 4.506667
+FIX KEENO LATLON N 44 48.273667 W 85 16.770167
+FIX POXOE LATLON N 45 1.307167 W 85 11.020333
+FIX SKIPR LATLON N 44 49.902833 W 85 24.106333
+FIX TUGGS LATLON N 44 46.777834 W 85 10.0705
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX FOVUP AT OR ABOVE 2600 FIX HATTR 2300 RNW 02 TRK 022 UNTIL 908 FIX POXOE FIX OVERFLY IROTO AT OR ABOVE 3000 HOLD AT FIX IROTO RIGHT TURN INBOUNDCOURSE 218 LEGDIST 5
+ TRANSITION GLR FIX GLR FIX TUGGS AT OR ABOVE 3500 FIX KEENO AT OR ABOVE 2600
+ TRANSITION KEENO HOLD AT FIX KEENO RIGHT TURN INBOUNDCOURSE 022 ALT 2600 LEGDIST 5
+ TRANSITION SKIPR FIX SKIPR FIX KEENO AT OR ABOVE 2600
+ENDAPPROACHES

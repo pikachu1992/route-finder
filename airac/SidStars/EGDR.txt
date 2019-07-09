@@ -1,0 +1,38 @@
+//EGDR (CULDROSE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI29 LATLON N 50 1.940833 W 5 3.541667
+FIX CULNB LATLON N 50 4.949167 W 5 14.917333
+FIX D081H LATLON N 50 6.449666 W 5 2.8305
+FIX D295H LATLON N 50 8.224834 W 5 26.645333
+FIX FI29 LATLON N 50 3.1095 W 5 7.827
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 11
+RNW 18
+RNW 25
+RNW 29
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH ILS29 FIX CI29 AT OR ABOVE 1770 FIX FI29 1770 RNW 29 TRK 295 UNTIL 670 FIX OVERFLY D295H AT OR ABOVE 2770 TURN LEFT DIRECT FIX CULNB 3770 HOLD AT FIX CULNB LEFT TURN INBOUNDCOURSE 078 ALT 3770 LEGTIME 1
+ TRANSITION CUL FIX CULNB AT OR ABOVE 3770 FIX OVERFLY D081H AT OR ABOVE 1770
+ENDAPPROACHES

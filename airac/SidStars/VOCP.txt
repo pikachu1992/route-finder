@@ -1,0 +1,31 @@
+//VOCP (KADAPA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CPNB LATLON N 14 30.938333 E 78 46.281667
+FIX FN11 LATLON N 14 31.929167 E 78 41.043
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB11 FIX FN11 2000 RNW 11 FIX OVERFLY CPNB TRK 102 UNTIL 2000 TURN LEFT DIRECT FIX CPNB 2900 HOLD AT FIX CPNB RIGHT TURN INBOUNDCOURSE 268 ALT 2900 LEGTIME 1
+ TRANSITION CP FIX CPNB AT OR ABOVE 2900 TRK 268 UNTIL 7.5 FROM FIX CPNB
+ENDAPPROACHES

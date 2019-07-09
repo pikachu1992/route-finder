@@ -1,0 +1,45 @@
+//CEG8 (NORTH SEAL RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUVAM LATLON N 58 51.373667 W 100 17.687333
+FIX EBMAV LATLON N 59 4.907833 W 99 39.196834
+FIX IKNIG LATLON N 58 56.58 W 100 0.481333
+FIX ILIVI LATLON N 58 54.482666 W 100 3.091
+FIX IMIMI LATLON N 59 1.844 W 99 53.902333
+FIX KEMPU LATLON N 59 10.0095 W 99 54.493166
+FIX MISOS LATLON N 58 50.285666 W 100 8.294833
+FIX NADVI LATLON N 59 2.0285 W 99 53.671
+FIX OTMIB LATLON N 58 54.297334 W 100 3.319166
+FIX TETOL LATLON N 58 46.3175 W 100 2.471
+FIX UKUTI LATLON N 59 6.031166 W 99 48.640166
+FIX VIMLO LATLON N 58 58.910833 W 99 57.573167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX MISOS AT OR ABOVE 2500 SPEED 180 FIX ILIVI 2450 FIX IKNIG AT OR ABOVE 1540 RNW 03 FIX OVERFLY NADVI 2400 HOLD AT FIX NADVI RIGHT TURN INBOUNDCOURSE 028 SPEED 250 LEGTIME 1
+ TRANSITION DUVAM FIX DUVAM SPEED 200
+ TRANSITION TETOL FIX TETOL SPEED 200
+APPROACH RNV21 FIX UKUTI AT OR ABOVE 2300 SPEED 180 FIX IMIMI 2270 FIX OVERFLY VIMLO 1157 RNW 21 FIX OVERFLY OTMIB 2500 HOLD AT FIX OTMIB RIGHT TURN INBOUNDCOURSE 208 SPEED 250 LEGTIME 1
+ TRANSITION EBMAV FIX EBMAV SPEED 200
+ TRANSITION KEMPU FIX KEMPU SPEED 200
+ENDAPPROACHES

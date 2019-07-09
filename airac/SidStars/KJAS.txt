@@ -1,0 +1,46 @@
+//KJAS (JASPER CO-BELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRIRR LATLON N 30 40.558 W 94 2.335333
+FIX EFRUJ LATLON N 30 40.638 W 94 8.132666
+FIX HARBA LATLON N 31 4.819834 W 94 1.8735
+FIX HONEE LATLON N 30 24.366 W 94 24.999833
+FIX HUSPO LATLON N 30 47.473 W 94 2.204
+FIX LFK LATLON N 31 9.7465 W 94 43.01
+FIX MOWHI LATLON N 30 58.705 W 94 1.990166
+FIX RAFTO LATLON N 31 11.744833 W 94 1.718167
+FIX ROMER LATLON N 30 44.788834 W 94 23.550167
+FIX SALUQ LATLON N 30 55.901 W 94 2.043667
+FIX TAZHA LATLON N 30 50.484167 W 94 2.146834
+FIX UJNOD LATLON N 31 4.899833 W 94 7.695167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX HARBA AT OR ABOVE 2000 FIX MOWHI 1900 FIX SALUQ AT OR ABOVE 980 RNW 18 FIX OVERFLY BRIRR AT OR ABOVE 3000 HOLD AT FIX BRIRR RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4
+ TRANSITION LFK FIX LFK FIX UJNOD AT OR ABOVE 2000
+ TRANSITION RAFTO FIX RAFTO
+ TRANSITION ROMER FIX ROMER FIX UJNOD AT OR ABOVE 2000
+APPROACH RNV36 FIX BRIRR AT OR ABOVE 3000 FIX HUSPO 1900 FIX TAZHA AT OR ABOVE 900 RNW 36 FIX MOWHI FIX OVERFLY RAFTO AT OR ABOVE 4000 HOLD AT FIX RAFTO RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4
+ TRANSITION HONEE FIX HONEE
+ TRANSITION ROMER FIX ROMER FIX EFRUJ AT OR ABOVE 3000
+ENDAPPROACHES

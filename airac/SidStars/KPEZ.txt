@@ -1,0 +1,37 @@
+//KPEZ (PLEASANTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUKDA LATLON N 28 46.133167 W 98 27.365333
+FIX LECIR LATLON N 28 44.6765 W 98 32.808667
+FIX MUXUE LATLON N 28 59.8135 W 98 32.0845
+FIX RAREE LATLON N 28 47.586167 W 98 21.9195
+FIX SOHJU LATLON N 28 51.407 W 98 29.182
+FIX SOMER LATLON N 29 9.745834 W 98 38.3745
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV34 FIX CUKDA AT OR ABOVE 3100 FIX SOHJU 2300 RNW 34 FIX MUXUE FIX OVERFLY SOMER AT OR ABOVE 3000 HOLD AT FIX SOMER RIGHT TURN INBOUNDCOURSE 141 LEGDIST 4
+ TRANSITION CUKDA HOLD AT FIX CUKDA RIGHT TURN INBOUNDCOURSE 337 ALT 3100 LEGDIST 4
+ TRANSITION LECIR FIX LECIR AT OR ABOVE 3100
+ TRANSITION RAREE FIX RAREE AT OR ABOVE 3100
+ENDAPPROACHES

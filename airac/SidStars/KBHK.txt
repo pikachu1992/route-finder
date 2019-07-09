@@ -1,0 +1,39 @@
+//KBHK (BAKER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AIMED LATLON N 46 18.366167 W 104 12.2975
+FIX BAIKE LATLON N 46 16.508333 W 104 9.864833
+FIX DIXLE LATLON N 45 27.737333 W 102 53.535334
+FIX EQUIN LATLON N 46 12.804833 W 104 5.0265
+FIX KIXCO LATLON N 46 35.9285 W 104 35.445334
+FIX MAGYE LATLON N 46 3.839333 W 103 50.463
+FIX OVSEE LATLON N 46 23.0045 W 104 18.388
+FIX ZUXIB LATLON N 46 25.010833 W 104 21.030167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX KIXCO AT OR ABOVE 6000 FIX ZUXIB 4800 FIX OVSEE AT OR ABOVE 3860 RNW 13 TRK 129 UNTIL 3500 TURN RIGHT DIRECT FIX OVERFLY KIXCO AT OR ABOVE 6000 HOLD AT FIX KIXCO RIGHT TURN INBOUNDCOURSE 129 LEGDIST 5
+ TRANSITION KIXCO HOLD AT FIX KIXCO RIGHT TURN INBOUNDCOURSE 129 ALT 6000 LEGDIST 5
+APPROACH RNV31 FIX EQUIN AT OR ABOVE 5400 FIX BAIKE 4700 FIX AIMED AT OR ABOVE 3900 RNW 31 TRK 309 UNTIL 3500 FIX KIXCO AT OR ABOVE 6000 HOLD AT FIX KIXCO RIGHT TURN INBOUNDCOURSE 062 LEGDIST 5
+ TRANSITION DIXLE FIX DIXLE FIX MAGYE AT OR ABOVE 8000
+ENDAPPROACHES

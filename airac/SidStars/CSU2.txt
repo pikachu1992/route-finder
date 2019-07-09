@@ -1,0 +1,43 @@
+//CSU2 (CHISASIBI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPLUV LATLON N 53 42.285667 W 78 42.294
+FIX EPRAB LATLON N 53 45.024 W 78 48.034
+FIX IMENI LATLON N 53 54.764167 W 79 8.630833
+FIX ITKUL LATLON N 53 54.376166 W 79 7.805
+FIX LIRDA LATLON N 53 36.435833 W 78 48.822
+FIX SESLA LATLON N 53 49.304666 W 79 16.012333
+FIX SETPU LATLON N 53 41.894666 W 78 41.476166
+FIX TABGA LATLON N 54 0.216 W 79 1.217333
+FIX VEPMO LATLON N 53 47.345833 W 78 34.098667
+FIX VIKLI LATLON N 53 51.653666 W 79 2.022167
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX IMENI AT OR ABOVE 1700 FIX VIKLI 1700 RNW 14 FIX OVERFLY EPLUV 1700 HOLD AT FIX EPLUV RIGHT TURN INBOUNDCOURSE 144 LEGTIME 1
+ TRANSITION SESLA FIX SESLA
+ TRANSITION TABGA FIX TABGA
+APPROACH RNV32 FIX SETPU AT OR ABOVE 1700 FIX EPRAB 1700 RNW 32 FIX OVERFLY ITKUL 1700 HOLD AT FIX ITKUL RIGHT TURN INBOUNDCOURSE 324 LEGTIME 1
+ TRANSITION LIRDA FIX LIRDA
+ TRANSITION VEPMO FIX VEPMO
+ENDAPPROACHES

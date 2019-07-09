@@ -1,0 +1,41 @@
+//KINF (INVERNESS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOWSK LATLON N 28 42.831334 W 82 19.7155
+FIX DADES LATLON N 28 21.760333 W 82 15.13
+FIX FRINC LATLON N 28 58.671167 W 82 17.887166
+FIX GIOVA LATLON N 28 53.680834 W 82 18.464167
+FIX OCF LATLON N 29 10.648667 W 82 13.58
+FIX REBEC LATLON N 28 33.269 W 82 17.961833
+FIX TOCOP LATLON N 28 45.213334 W 82 19.441166
+FIX VANNI LATLON N 29 3.231 W 82 7.729667
+FIX WESAS LATLON N 28 37.841833 W 82 20.289334
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX WESAS AT OR ABOVE 2000 FIX BOWSK 1700 FIX TOCOP AT OR ABOVE 940 RNW 01 TRK 011 UNTIL 465 FIX GIOVA FIX OVERFLY VANNI AT OR ABOVE 2000 HOLD AT FIX VANNI RIGHT TURN INBOUNDCOURSE 248 LEGDIST 4
+ TRANSITION DADES FIX DADES FIX REBEC AT OR ABOVE 2000
+APPROACH RNV19 FIX FRINC AT OR ABOVE 2000 FIX GIOVA 1700 RNW 19 TRK 191 UNTIL 465 FIX BOWSK FIX OVERFLY REBEC AT OR ABOVE 2000 HOLD AT FIX REBEC RIGHT TURN INBOUNDCOURSE 341 LEGDIST 4
+ TRANSITION OCF FIX OCF
+ TRANSITION VANNI FIX VANNI
+ENDAPPROACHES

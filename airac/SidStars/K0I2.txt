@@ -1,0 +1,42 @@
+//K0I2 (BRAZIL CLAY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CESAP LATLON N 39 28.500334 W 86 59.308333
+FIX CLOTT LATLON N 39 33.730333 W 86 45.326666
+FIX HADNO LATLON N 39 28.3715 W 86 51.5615
+FIX KELLY LATLON N 39 24.820667 W 86 40.282333
+FIX MATAN LATLON N 39 35.958167 W 86 57.1985
+FIX PI001 LATLON N 39 29.347249 W 87 19.475981
+FIX PI002 LATLON N 39 32.397302 W 87 23.404925
+FIX PI003 LATLON N 39 29.350957 W 87 21.419622
+FIX TTH LATLON N 39 29.3365 W 87 14.940833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX HADNO AT OR ABOVE 3200 FIX CESAP 2300 RNW 27 TRK 272 UNTIL 2300 TURN RIGHT DIRECT FIX HADNO AT OR ABOVE 3200 HOLD AT FIX HADNO RIGHT TURN INBOUNDCOURSE 272 LEGDIST 4
+ TRANSITION CLOTT FIX CLOTT
+ TRANSITION KELLY FIX KELLY
+ TRANSITION TTH FIX TTH FIX HADNO AT OR ABOVE 3200 HOLD AT FIX HADNO RIGHT TURN INBOUNDCOURSE 272 ALT 3200 LEGDIST 4
+APPROACH VOR09 FIX TTH 2700 RNW 09 TRK 094 UNTIL 2000 HDG 020 INTERCEPT RADIAL 062 TO FIX MATAN FIX MATAN AT OR ABOVE 2700 HOLD AT FIX MATAN RIGHT TURN INBOUNDCOURSE 242 LEGTIME 1
+ TRANSITION TTH FIX PI001 AT OR ABOVE 2700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2700 SPEED 210 FIX PI003 AT OR ABOVE 2700 SPEED 210
+ENDAPPROACHES

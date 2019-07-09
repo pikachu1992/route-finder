@@ -1,0 +1,45 @@
+//KEST (ESTHERVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ETGIQ LATLON N 43 14.006333 W 94 35.208833
+FIX IGPUQ LATLON N 43 19.113334 W 94 43.442833
+FIX OHYEQ LATLON N 43 13.1085 W 94 41.936666
+FIX OXESY LATLON N 43 34.705667 W 94 54.3725
+FIX QUKJI LATLON N 43 36.518 W 94 40.8395
+FIX UBMUW LATLON N 43 12.204167 W 94 48.661166
+FIX UYJOR LATLON N 43 35.615167 W 94 47.607667
+FIX XUMYI LATLON N 43 29.6165 W 94 46.089334
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 16
+RNW 24
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX UYJOR AT OR ABOVE 3400 FIX XUMYI 2900 RNW 16 TRK 169 UNTIL 1569 FIX OVERFLY OHYEQ AT OR ABOVE 3400 HOLD AT FIX OHYEQ RIGHT TURN INBOUNDCOURSE 349 LEGDIST 5
+ TRANSITION OXESY FIX OXESY
+ TRANSITION QUKJI FIX QUKJI
+ TRANSITION UYJOR HOLD AT FIX UYJOR RIGHT TURN INBOUNDCOURSE 169 ALT 3400 LEGDIST 5
+APPROACH RNV34 FIX OHYEQ AT OR ABOVE 3400 FIX IGPUQ 3000 RNW 34 TRK 349 UNTIL 1569 FIX OVERFLY UYJOR AT OR ABOVE 3400 HOLD AT FIX UYJOR RIGHT TURN INBOUNDCOURSE 169 LEGDIST 5
+ TRANSITION ETGIQ FIX ETGIQ
+ TRANSITION OHYEQ HOLD AT FIX OHYEQ RIGHT TURN INBOUNDCOURSE 349 ALT 3400 LEGDIST 5
+ TRANSITION UBMUW FIX UBMUW
+ENDAPPROACHES

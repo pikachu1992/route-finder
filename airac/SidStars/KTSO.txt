@@ -1,0 +1,38 @@
+//KTSO (CARROLL CO-TOLSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BSV LATLON N 40 44.442334 W 81 25.927
+FIX DONUT LATLON N 40 28.7305 W 81 27.296167
+FIX KOFFE LATLON N 40 29.224166 W 81 16.8865
+FIX LLONG LATLON N 40 36.7135 W 81 10.579667
+FIX MAPSV LATLON N 40 33.834167 W 81 4.894333
+FIX MINER LATLON N 40 41.704333 W 81 12.577
+FIX TAHTU LATLON N 40 31.245667 W 81 11.386667
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX KOFFE AT OR ABOVE 3000 FIX TAHTU 2900 RNW 07 TRK 071 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY MINER AT OR ABOVE 3000 HOLD AT FIX MINER RIGHT TURN INBOUNDCOURSE 292 LEGDIST 4
+ TRANSITION DONUT FIX DONUT
+APPROACH VORA07 FIX BSV AT OR ABOVE 3000 FIX LLONG 3000 FIX MAPSV 1940 RNW 07 TURN LEFT DIRECT FIX LLONG AT OR ABOVE 3000 HOLD AT FIX LLONG RIGHT TURN INBOUNDCOURSE 127 LEGTIME 1
+APPROACH VORA25 FIX BSV AT OR ABOVE 3000 FIX LLONG 3000 FIX MAPSV 1940 RNW 25 TURN LEFT DIRECT FIX LLONG AT OR ABOVE 3000 HOLD AT FIX LLONG RIGHT TURN INBOUNDCOURSE 127 LEGTIME 1
+ENDAPPROACHES

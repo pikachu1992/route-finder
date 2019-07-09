@@ -1,0 +1,40 @@
+//LFRT (ARMOR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARLOR LATLON N 48 37.64 W 2 37.901666
+FIX CN24 LATLON N 48 36.108334 W 2 41.780666
+FIX EKPAT LATLON N 48 33.356666 W 2 34.026667
+FIX MN24 LATLON N 48 32.929 W 2 49.759
+FIX ODIMI LATLON N 48 41.921666 W 2 41.788333
+FIX RT408 LATLON N 48 35.066666 W 2 44.358334
+FIX RT410 LATLON N 48 31.26 W 2 53.858333
+FIX SBNB LATLON N 48 34.051667 W 2 46.946666
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH NDB24 FIX CN24 AT OR ABOVE 2000 FIX SBNB 1360 FIX MN24 671 RNW 24 TRK 240 UNTIL 1000 TURN RIGHT DIRECT FIX SBNB 2000
+ TRANSITION SB HOLD AT FIX SBNB RIGHT TURN INBOUNDCOURSE 240 ALT 2000 LEGTIME 1
+APPROACH RNV24 FIX ARLOR AT OR ABOVE 2000 SPEED 220 FIX RT408 2000 RNW 24 FIX OVERFLY RT410 AT OR BELOW 2000 TURN RIGHT DIRECT FIX ODIMI SPEED 220 HOLD AT FIX ODIMI LEFT TURN INBOUNDCOURSE 150 ALT 6000 LEGTIME 1
+ TRANSITION EKPAT FIX EKPAT SPEED 220
+ TRANSITION ODIMI FIX ODIMI SPEED 220
+ENDAPPROACHES

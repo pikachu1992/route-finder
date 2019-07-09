@@ -1,0 +1,44 @@
+//K0M5 (HUMPHREYS CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DECAV LATLON N 36 17.966 W 87 36.349
+FIX HANOV LATLON N 36 2.110667 W 87 47.812166
+FIX NUCIT LATLON N 36 16.381 W 87 25.7675
+FIX PIVGE LATLON N 35 57.607333 W 88 2.709334
+FIX UXOPY LATLON N 36 11.920667 W 87 40.729834
+FIX UYUGO LATLON N 36 24.6785 W 87 43.215
+FIX WUKAR LATLON N 35 49.352833 W 87 45.33
+FIX YILUL LATLON N 35 56.058667 W 87 52.165
+FIX ZIPAP LATLON N 36 9.0085 W 87 42.835834
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX YILUL AT OR ABOVE 2500 FIX HANOV 2500 RNW 03 TRK 032 UNTIL 1100 FIX OVERFLY DECAV AT OR ABOVE 2700 HOLD AT FIX DECAV RIGHT TURN INBOUNDCOURSE 212 LEGDIST 4
+ TRANSITION PIVGE FIX PIVGE AT OR ABOVE 2500
+ TRANSITION WUKAR FIX WUKAR AT OR ABOVE 2600
+ TRANSITION YILUL HOLD AT FIX YILUL RIGHT TURN INBOUNDCOURSE 032 ALT 2500 LEGDIST 4
+APPROACH RNV21 FIX DECAV AT OR ABOVE 2700 FIX UXOPY 2500 FIX ZIPAP AT OR ABOVE 1420 RNW 21 TRK 212 UNTIL 1120 FIX OVERFLY YILUL AT OR ABOVE 2500 HOLD AT FIX YILUL RIGHT TURN INBOUNDCOURSE 032 LEGDIST 4
+ TRANSITION DECAV HOLD AT FIX DECAV RIGHT TURN INBOUNDCOURSE 212 ALT 2700 LEGDIST 4
+ TRANSITION NUCIT FIX NUCIT AT OR ABOVE 3100
+ TRANSITION UYUGO FIX UYUGO AT OR ABOVE 2700
+ENDAPPROACHES

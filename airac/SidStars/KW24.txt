@@ -1,0 +1,34 @@
+//KW24 (FALWELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CALVN LATLON N 37 21.862834 W 78 52.181333
+FIX LARNC LATLON N 37 22.2815 W 78 59.814667
+FIX SWARM LATLON N 37 28.580666 W 78 55.420667
+FIX VOUCH LATLON N 37 20.808667 W 78 46.390667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX CALVN AT OR ABOVE 3000 FIX LARNC 2700 RNW 28 TRK 283 UNTIL 1339 TURN RIGHT DIRECT FIX OVERFLY SWARM AT OR ABOVE 3500 HOLD AT FIX SWARM LEFT TURN INBOUNDCOURSE 237 LEGDIST 5
+ TRANSITION SWARM FIX SWARM FIX OVERFLY CALVN AT OR ABOVE 3000 HOLD AT FIX CALVN RIGHT TURN INBOUNDCOURSE 283 ALT 3000 LEGDIST 5
+ TRANSITION VOUCH FIX VOUCH
+ENDAPPROACHES

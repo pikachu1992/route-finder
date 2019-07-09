@@ -1,0 +1,50 @@
+//SBIC (ITACOATIARA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 39MAN LATLON S 2 46.484666 W 57 49.164667
+FIX ADIX LATLON S 3 2.24 W 58 1.94
+FIX BITU LATLON S 3 13.91 W 58 9.45
+FIX FF14 LATLON S 3 5.795666 W 58 33.028667
+FIX FF32 LATLON S 3 10.7335 W 58 25.652167
+FIX REKER LATLON S 2 49.685 W 56 55.93
+FIX TEPIM LATLON S 2 41.071166 W 57 2.049833
+FIX YTCNB LATLON S 3 7.18 W 58 28.89
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+SIDS
+SID ADIX
+ RNW 14 HDG 140 UNTIL 542 HDG 070 INTERCEPT RADIAL 097 TO FIX ADIX FIX ADIX
+ RNW 32 HDG 320 UNTIL 542 HDG 130 INTERCEPT RADIAL 097 TO FIX ADIX FIX ADIX
+  TRANSITION REKER FIX REKER
+  TRANSITION TEPIM FIX 39MAN FIX TEPIM
+SID BITU RNW 14 HDG 140 UNTIL 542 HDG 090 INTERCEPT RADIAL 126 TO FIX BITU FIX BITU FIX ADIX
+  TRANSITION REKER FIX REKER
+  TRANSITION TEPIM FIX 39MAN FIX TEPIM
+ENDSIDS
+
+APPROACHES
+APPROACH NDB14 FIX FF14 1500 FIX YTCNB 720 RNW 14 TRK 123 UNTIL 2000
+ TRANSITION YTC FIX YTCNB AT OR ABOVE 2000 TRK 326 UNTIL 7.0 FROM FIX YTCNB
+APPROACH NDB32 FIX FF32 1500 FIX YTCNB 720 RNW 32 TRK 333 UNTIL 2000
+ TRANSITION YTC FIX YTCNB AT OR ABOVE 2000 TRK 173 UNTIL 8.2 FROM FIX YTCNB
+ENDAPPROACHES

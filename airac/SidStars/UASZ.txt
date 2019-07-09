@@ -1,0 +1,44 @@
+//UASZ (ZAISAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF09 LATLON N 47 29.677834 E 84 40.702834
+FIX GOPSO LATLON N 48 5.933333 E 84 20.133334
+FIX ZNB LATLON N 47 29.1 E 84 53.133334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID GOPS1A RNW 09 TRK 085 UNTIL 2550 TRK 279 INTERCEPT RADIAL 324 TO FIX GOPSO FIX GOPSO
+SID GOPS1B RNW 27 TRK 265 UNTIL 2510 TRK 004 INTERCEPT RADIAL 324 TO FIX GOPSO FIX GOPSO
+ENDSIDS
+
+STARS
+STAR GOPS1C FIX GOPSO FIX ZNB 6000
+  RNW 09
+STAR GOPS1D FIX GOPSO FIX ZNB 6000
+  RNW 27
+ENDSTARS
+
+APPROACHES
+APPROACH NDB09 FIX FF09 4520 RNW 09 FIX OVERFLY ZNB TRK 089 UNTIL 4.3 FROM FIX ZNB TURN LEFT DIRECT FIX ZNB 6000 HOLD AT FIX ZNB RIGHT TURN INBOUNDCOURSE 265 LEGTIME 1
+ TRANSITION Z FIX ZNB AT OR ABOVE 6000 TRK 279 UNTIL 8.6 FROM FIX ZNB
+ENDAPPROACHES

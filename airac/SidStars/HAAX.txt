@@ -1,0 +1,63 @@
+//HAAX (AXUM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APKAM LATLON N 13 41.583334 E 39 16.8
+FIX AX001 LATLON N 13 48.536333 E 38 53.472
+FIX AX002 LATLON N 13 55.942 E 38 59.057
+FIX AX003 LATLON N 13 49.814167 E 38 42.814333
+FIX AX004 LATLON N 13 56.109 E 38 50.817
+FIX AX005 LATLON N 14 0.908333 E 38 49.156166
+FIX AX006 LATLON N 14 5.574 E 38 47.494166
+FIX AX007 LATLON N 14 11.251667 E 38 45.498334
+FIX AX008 LATLON N 13 58.951 E 38 42.353333
+FIX AXENA LATLON N 13 28.983334 E 38 48.316667
+FIX EKBAK LATLON N 13 34 E 38 26.233333
+FIX GETUL LATLON N 13 37.833334 E 38 20.483333
+FIX TIDEG LATLON N 14 2.75 E 39 27.316667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+STARS
+STAR APKA2A FIX APKAM FIX AX001
+  RNW 34
+STAR APKA2B FIX APKAM FIX AX002
+  RNW 34
+STAR AXENA2 FIX AXENA FIX AX001
+  RNW 34
+STAR EKBA2A FIX EKBAK FIX AX003
+  RNW 34
+STAR EKBA2B FIX EKBAK FIX AX001
+  RNW 34
+STAR GETU2A FIX GETUL FIX AX003
+  RNW 34
+STAR GETU2B FIX GETUL FIX AX001
+  RNW 34
+STAR TIDEG2 FIX TIDEG FIX AX002
+  RNW 34
+ENDSTARS
+
+APPROACHES
+APPROACH RNV34 FIX AX004 AT OR ABOVE 11000 FIX AX005 9580 FIX AX006 7940 RNW 34 TRK 339 UNTIL 8000 FIX OVERFLY AX007 TRK 177 INTERCEPT RADIAL 132 TO FIX AX008 FIX AX008 FIX AX001 14000 HOLD AT FIX AX001 RIGHT TURN INBOUNDCOURSE 339 LEGTIME 1
+ TRANSITION AX001 FIX AX001
+ TRANSITION AX002 FIX AX002
+ TRANSITION AX003 FIX AX003
+ENDAPPROACHES

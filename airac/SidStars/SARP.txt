@@ -1,0 +1,45 @@
+//SARP (LIBERADOR GRAL D JOSE DE SAN M)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 50VO2 LATLON S 27 28.142 W 55 58.4375
+FIX 50VOR LATLON S 27 18.148333 W 55 58.73
+FIX CF19 LATLON S 27 13.180166 W 55 58.386
+FIX D025G LATLON S 27 16.294834 W 55 56.376
+FIX D025J LATLON S 27 13.363333 W 55 55.619833
+FIX D209G LATLON S 27 29.8475 W 56 0.444667
+FIX FD19 LATLON S 27 16.153667 W 55 58.964333
+FIX FF01 LATLON S 27 30.144833 W 55 58.555166
+FIX FF19 LATLON S 27 15.687167 W 55 58.347
+FIX P LATLON S 27 24.375 W 55 58.211666
+FIX POS LATLON S 27 23.135 W 55 58.143334
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VDM01 FIX FF01 2600 FIX 50VO2 AT OR ABOVE 2000 FIX P 694 RNW 01 TRK 015 VECTORS
+ TRANSITION POS FIX POS FIX OVERFLY D209G AT OR ABOVE 2600
+APPROACH VDM19 FIX FD19 2600 FIX 50VOR AT OR ABOVE 2000 RNW 19 FIX POS AT OR ABOVE 830 TRK 192 VECTORS
+ TRANSITION POS FIX POS FIX OVERFLY D025G AT OR ABOVE 2600
+APPROACH ILS19 FIX CF19 AT OR ABOVE 2600 FIX FF19 2600 RNW 19 HDG 192 VECTORS
+ TRANSITION P FIX P FIX FF19 AT OR ABOVE 2600 TRK 057 UNTIL 3.5 FROM FIX FF19
+ TRANSITION POS FIX POS FIX OVERFLY D025J AT OR ABOVE 2600
+ENDAPPROACHES

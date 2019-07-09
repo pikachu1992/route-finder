@@ -1,0 +1,35 @@
+//K1J0 (TRI CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BJLEW LATLON N 30 47.748833 W 85 26.379667
+FIX CWATR LATLON N 31 1.911167 W 85 33.875833
+FIX HOUND LATLON N 31 5.079 W 85 43.671
+FIX JKOUN LATLON N 30 53.147333 W 85 35.608834
+FIX RREHM LATLON N 30 55.9835 W 85 35.0485
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV19 FIX CWATR AT OR ABOVE 2000 FIX RREHM 1700 FIX JKOUN AT OR ABOVE 780 RNW 19 TRK 193 UNTIL 485 TURN LEFT DIRECT FIX OVERFLY BJLEW AT OR ABOVE 2000 HOLD AT FIX BJLEW LEFT TURN INBOUNDCOURSE 092 LEGDIST 4
+ TRANSITION CWATR HOLD AT FIX CWATR RIGHT TURN INBOUNDCOURSE 193 ALT 2000 LEGDIST 4
+ TRANSITION HOUND FIX HOUND
+ENDAPPROACHES

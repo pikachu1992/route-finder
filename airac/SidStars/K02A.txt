@@ -1,0 +1,37 @@
+//K02A (CHILTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BWANA LATLON N 32 51.5805 W 86 33.512
+FIX CABKI LATLON N 32 48.417667 W 86 51.6035
+FIX HONIS LATLON N 32 52.009166 W 86 31.0385
+FIX IVIJI LATLON N 32 50.103167 W 86 41.996167
+FIX RIRIE LATLON N 32 53.614 W 86 21.731333
+FIX WECIJ LATLON N 32 50.537167 W 86 39.5105
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX CABKI AT OR ABOVE 3000 FIX IVIJI 2200 FIX WECIJ AT OR ABOVE 1400 RNW 08 TRK 082 UNTIL 1220 FIX OVERFLY RIRIE AT OR ABOVE 3300 HOLD AT FIX RIRIE RIGHT TURN INBOUNDCOURSE 262 LEGDIST 4
+ TRANSITION CABKI HOLD AT FIX CABKI RIGHT TURN INBOUNDCOURSE 082 ALT 3000 LEGDIST 4
+APPROACH RNV26 FIX RIRIE AT OR ABOVE 3300 FIX HONIS 2300 FIX BWANA AT OR ABOVE 1500 RNW 26 TRK 262 UNTIL 1120 FIX OVERFLY CABKI AT OR ABOVE 3000 HOLD AT FIX CABKI RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4
+ TRANSITION RIRIE HOLD AT FIX RIRIE RIGHT TURN INBOUNDCOURSE 262 ALT 3300 LEGDIST 4
+ENDAPPROACHES

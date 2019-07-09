@@ -1,0 +1,47 @@
+//GAGO (KOROGOUSSOU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKLIX LATLON N 16 19.995 E 0 9.803666
+FIX AREMA LATLON N 16 5.504167 W 0 7.759166
+FIX BONBA LATLON N 16 24.449833 E 0 7.405333
+FIX DILBA LATLON N 16 9.956 W 0 10.160666
+FIX GATAP LATLON N 16 15.5395 E 0 12.2
+FIX GO501 LATLON N 16 12.276833 W 0 5.553334
+FIX GO502 LATLON N 16 16.9135 E 0 3.666667
+FIX GO503 LATLON N 16 17.679334 E 0 5.190667
+FIX GO504 LATLON N 16 12.903667 W 0 4.3065
+FIX TUTOL LATLON N 16 14.4075 W 0 12.563833
+ENDFIXES
+
+RNWS
+RNW 07L
+RNW 07R
+RNW 25L
+RNW 25R
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07L FIX DILBA AT OR ABOVE 2500 SPEED 230 FIX GO501 2500 RNW 07L FIX OVERFLY GO502 TURN RIGHT DIRECT FIX AREMA AT OR ABOVE 2500 SPEED 230
+ TRANSITION AREMA FIX AREMA AT OR ABOVE 2500 SPEED 230
+ TRANSITION DILBA HOLD AT FIX DILBA RIGHT TURN INBOUNDCOURSE 065 ALT 2500 SPEED 230 LEGTIME 1
+ TRANSITION TUTOL FIX TUTOL AT OR ABOVE 2500 SPEED 230
+APPROACH RNV25R FIX AKLIX AT OR ABOVE 2600 SPEED 230 FIX GO503 2600 RNW 25R FIX OVERFLY GO504 TURN LEFT DIRECT FIX GATAP AT OR ABOVE 2600 SPEED 230
+ TRANSITION AKLIX HOLD AT FIX AKLIX LEFT TURN INBOUNDCOURSE 245 ALT 2600 SPEED 230 LEGTIME 1
+ TRANSITION BONBA FIX BONBA AT OR ABOVE 2600 SPEED 230
+ TRANSITION GATAP FIX GATAP AT OR ABOVE 2600 SPEED 230
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//CYXQ (BEAVER CREEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF214 LATLON N 62 29.2555 W 140 38.073334
+FIX PI001 LATLON N 62 26.630509 W 140 45.628975
+FIX PI002 LATLON N 62 30.888561 W 140 44.332292
+FIX PI003 LATLON N 62 30.526667 W 140 34.370132
+FIX YXQNB LATLON N 62 24.526333 W 140 51.671167
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH NDBA14 FIX FF214 4700 FIX YXQNB 3340 RNW 14 TRK 214 UNTIL 3340 HDG 034 UNTIL 5200 TURN RIGHT DIRECT FIX YXQNB 5200 HOLD AT FIX YXQNB RIGHT TURN INBOUNDCOURSE 214 SPEED 200 LEGTIME 1
+ TRANSITION YXQ FIX YXQNB AT OR ABOVE 4700 FIX PI001 AT OR ABOVE 4700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4700 SPEED 210 FIX PI003 AT OR ABOVE 4700 SPEED 210
+APPROACH NDBA32 FIX FF214 4700 FIX YXQNB 3340 RNW 32 TRK 214 UNTIL 3340 HDG 034 UNTIL 5200 TURN RIGHT DIRECT FIX YXQNB 5200 HOLD AT FIX YXQNB RIGHT TURN INBOUNDCOURSE 214 SPEED 200 LEGTIME 1
+ TRANSITION YXQ FIX YXQNB AT OR ABOVE 4700 FIX PI001 AT OR ABOVE 4700 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4700 SPEED 210 FIX PI003 AT OR ABOVE 4700 SPEED 210
+ENDAPPROACHES

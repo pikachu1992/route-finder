@@ -1,0 +1,42 @@
+//NTGA (ANAA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AANB LATLON S 17 21.383333 W 145 30.546667
+FIX FF140 LATLON S 17 17.843333 W 145 32.424
+FIX FF312 LATLON S 17 24.672833 W 145 28.147166
+FIX FN14 LATLON S 17 17.242333 W 145 32.742667
+FIX FN32 LATLON S 17 24.809666 W 145 28.047334
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH NDB14 FIX FN14 1200 RNW 14 FIX AANB TRK 140 UNTIL 530 TRK 099 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+APPROACH NDBA14 FIX FF140 1200 FIX AANB 620 RNW 14 TRK 099 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+ TRANSITION AA FIX AANB AT OR ABOVE 1500 TRK 338 UNTIL 6.0 FROM FIX AANB
+APPROACH NDBB14 FIX FF312 1200 FIX AANB 620 RNW 14 TRK 359 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+ TRANSITION AA FIX AANB AT OR ABOVE 1500 TRK 150 UNTIL 6.0 FROM FIX AANB
+APPROACH NDB32 FIX FN32 1200 RNW 32 FIX AANB TRK 312 UNTIL 530 TRK 359 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+APPROACH NDBA32 FIX FF140 1200 FIX AANB 620 RNW 32 TRK 099 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+ TRANSITION AA FIX AANB AT OR ABOVE 1500 TRK 338 UNTIL 6.0 FROM FIX AANB
+APPROACH NDBB32 FIX FF312 1200 FIX AANB 620 RNW 32 TRK 359 UNTIL 1500 TURN RIGHT DIRECT FIX AANB
+ TRANSITION AA FIX AANB AT OR ABOVE 1500 TRK 150 UNTIL 6.0 FROM FIX AANB
+ENDAPPROACHES

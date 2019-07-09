@@ -1,0 +1,43 @@
+//CYBF (BONNYVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUNUX LATLON N 54 18.277333 W 110 53.668834
+FIX IKNEB LATLON N 54 18.285334 W 110 36.561667
+FIX KEGDO LATLON N 54 18.253166 W 111 3.910667
+FIX KELPO LATLON N 54 18.285 W 110 35.424334
+FIX SUVDO LATLON N 54 18.278666 W 110 52.530334
+FIX SUXOS LATLON N 54 24.242666 W 111 3.964667
+FIX TADUM LATLON N 54 12.279833 W 110 25.221167
+FIX UKSUB LATLON N 54 12.2635 W 111 3.857167
+FIX UMAKI LATLON N 54 18.2695 W 110 25.182167
+FIX VILTU LATLON N 54 24.259166 W 110 25.143167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX KEGDO AT OR ABOVE 3500 FIX DUNUX 3470 RNW 08 FIX OVERFLY IKNEB 3400 HOLD AT FIX IKNEB RIGHT TURN INBOUNDCOURSE 077 SPEED 175 LEGTIME 1
+ TRANSITION SUXOS FIX SUXOS
+ TRANSITION UKSUB FIX UKSUB
+APPROACH RNV26 FIX UMAKI AT OR ABOVE 3600 FIX KELPO 3490 RNW 26 FIX OVERFLY SUVDO 3400 HOLD AT FIX SUVDO RIGHT TURN INBOUNDCOURSE 257 SPEED 175 LEGTIME 1
+ TRANSITION TADUM FIX TADUM
+ TRANSITION VILTU FIX VILTU
+ENDAPPROACHES

@@ -1,0 +1,31 @@
+//MUMO (ORESTES ACOSTA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF25 LATLON N 20 43.173 W 74 47.684333
+FIX UMONB LATLON N 20 38.9285 W 74 55.8295
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH NDB25 FIX FF25 2500 RNW 25 FIX OVERFLY UMONB HDG 069 UNTIL 3000 TURN RIGHT DIRECT FIX UMONB AT OR ABOVE 6000 SPEED 170 HOLD AT FIX UMONB RIGHT TURN INBOUNDCOURSE 249 ALT 6000 SPEED 170 LEGTIME 1
+ TRANSITION UMO HOLD AT FIX UMONB RIGHT TURN INBOUNDCOURSE 249 ALT 2500 LEGTIME 3
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//VEDG (DURGAPUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI16 LATLON N 23 45.489167 E 87 11.052334
+FIX D339D LATLON N 23 42.04 E 87 12.561
+FIX DGP LATLON N 23 38.293333 E 87 14.123333
+FIX EGIPA LATLON N 23 42.019667 E 87 12.5045
+FIX FD16 LATLON N 23 43.8195 E 87 11.818667
+FIX FD34 LATLON N 23 31.829833 E 87 16.813667
+FIX FI16 LATLON N 23 43.625666 E 87 11.8605
+FIX MD16 LATLON N 23 39.230167 E 87 13.732667
+FIX MD34 LATLON N 23 35.483333 E 87 15.293333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM16 FIX FD16 2300 FIX MD16 800 RNW 16 TRK 174 UNTIL 2300 TURN RIGHT DIRECT FIX D339D 3200 HOLD AT FIX D339D RIGHT TURN INBOUNDCOURSE 159 ALT 3200 LEGTIME 1
+APPROACH VDM34 FIX FD34 2000 FIX MD34 721 RNW 34 TRK 339 UNTIL 2300 TURN LEFT DIRECT FIX DGP 3200 SPEED 185 HOLD AT FIX DGP RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1
+ TRANSITION DGP1 FIX DGP AT OR ABOVE 3200 SPEED 185 TRK 181 UNTIL 8.0 FROM FIX DGP
+ TRANSITION DGP2 FIX DGP AT OR ABOVE 3200 SPEED 185 TRK 171 UNTIL 8.0 FROM FIX DGP
+APPROACH ILS16 FIX CI16 AT OR ABOVE 2300 FIX FI16 2300 RNW 16 TRK 159 UNTIL 1500 TURN RIGHT DIRECT FIX DGP FIX EGIPA 3200 HOLD AT FIX EGIPA RIGHT TURN INBOUNDCOURSE 159 ALT 3200 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KRRQ (ROCK RAPIDS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AJBOY LATLON N 43 32.9635 W 96 11.962166
+FIX BRAIN LATLON N 43 39.004 W 96 26.209667
+FIX CODDE LATLON N 43 40.381333 W 96 13.465834
+FIX COPYE LATLON N 42 58.9605 W 95 57.87
+FIX ESXAZ LATLON N 43 41.1075 W 96 6.648833
+FIX GISHE LATLON N 43 21.606667 W 96 9.676667
+FIX IGTIW LATLON N 43 17.033333 W 96 8.760334
+FIX IKAKE LATLON N 43 16.306333 W 96 15.532333
+FIX KEMIK LATLON N 43 17.753666 W 96 1.985666
+FIX OTG LATLON N 43 38.815 W 95 34.9175
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX CODDE AT OR ABOVE 3700 FIX AJBOY 3200 RNW 16 TRK 167 UNTIL 2200 TURN RIGHT DIRECT FIX OVERFLY BRAIN AT OR ABOVE 3700 HOLD AT FIX BRAIN RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4
+ TRANSITION BRAIN FIX BRAIN
+ TRANSITION OTG FIX OTG FIX ESXAZ AT OR ABOVE 4000
+APPROACH RNV34 FIX IGTIW AT OR ABOVE 3700 FIX GISHE 3100 RNW 34 TRK 347 UNTIL 2200 FIX OVERFLY BRAIN AT OR ABOVE 3700 HOLD AT FIX BRAIN RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4
+ TRANSITION BRAIN FIX BRAIN FIX IKAKE AT OR ABOVE 3700
+ TRANSITION COPYE FIX COPYE FIX KEMIK AT OR ABOVE 3700
+ENDAPPROACHES

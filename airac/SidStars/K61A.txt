@@ -1,0 +1,37 @@
+//K61A (CAMDEN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIPDE LATLON N 32 1.644667 W 87 20.393333
+FIX CAKLI LATLON N 31 53.34 W 87 20.259
+FIX JOLUM LATLON N 31 45.265166 W 87 20.128834
+FIX TUGIE LATLON N 32 4.2285 W 87 20.435167
+FIX WRATH LATLON N 32 13.2965 W 87 20.582333
+FIX ZIVKI LATLON N 31 55.824833 W 87 20.299166
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX WRATH AT OR ABOVE 3000 FIX TUGIE 1800 FIX BIPDE AT OR ABOVE 980 RNW 18 TRK 182 UNTIL 543 FIX OVERFLY JOLUM AT OR ABOVE 3500 HOLD AT FIX JOLUM RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION WRATH HOLD AT FIX WRATH RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 4
+APPROACH RNV36 FIX JOLUM AT OR ABOVE 3000 FIX CAKLI 1800 FIX ZIVKI AT OR ABOVE 1000 RNW 36 TRK 002 UNTIL 900 TURN RIGHT DIRECT FIX OVERFLY JOLUM AT OR ABOVE 3500 HOLD AT FIX JOLUM RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION JOLUM HOLD AT FIX JOLUM RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4
+ENDAPPROACHES

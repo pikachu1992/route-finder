@@ -1,0 +1,48 @@
+//SPDR (TROMPETEROS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DALDO LATLON S 3 50.916667 W 74 52.2
+FIX GELVO LATLON S 3 48.066667 W 74 43.05
+FIX PAMEK LATLON S 3 49.683334 W 74 57.05
+FIX TRO LATLON S 3 48.166667 W 75 3.05
+FIX URIMU LATLON S 3 36.583333 W 75 19.4
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID GELVO1 RNW 11 HDG 109 UNTIL 3000 HDG 065 INTERCEPT RADIAL 095 TO FIX GELVO FIX GELVO AT OR ABOVE 8000
+SID URIMU1 RNW 11 HDG 109 UNTIL 3000 HDG 280 INTERCEPT RADIAL 310 TO FIX URIMU FIX URIMU AT OR ABOVE 8000
+ENDSIDS
+
+STARS
+STAR GELVO1 FIX GELVO AT OR ABOVE 8000 FIX TRO
+  RNW 29
+STAR URIMU1 FIX URIMU AT OR ABOVE 8000 FIX TRO
+  RNW 29
+ENDSTARS
+
+APPROACHES
+APPROACH VDMY29 FIX PAMEK 2070 RNW 29 FIX TRO TRK 288 VECTORS
+ TRANSITION TRO FIX TRO AT OR ABOVE 4000 TRK 126 UNTIL 7.0 FROM FIX TRO
+APPROACH VDMZ29 FIX DALDO AT OR ABOVE 3300 FIX PAMEK 2070 RNW 29 FIX TRO TRK 288 VECTORS
+ TRANSITION GELVO FIX GELVO
+ENDAPPROACHES

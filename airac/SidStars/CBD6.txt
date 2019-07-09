@@ -1,0 +1,35 @@
+//CBD6 (NAHANNI BUTTE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APRAT LATLON N 60 51.981 W 123 5.933833
+FIX DESBA LATLON N 60 43.637 W 123 21.4785
+FIX IKDOK LATLON N 60 51.6055 W 123 22.274833
+FIX OVEMU LATLON N 60 56.585666 W 123 22.776
+FIX URPOL LATLON N 61 0.271 W 123 23.1485
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV34 FIX IKDOK AT OR ABOVE 2900 FIX OVEMU 2600 FIX OVERFLY URPOL 1156 RNW 34 TURN RIGHT DIRECT FIX OVERFLY APRAT 5600 HOLD AT FIX APRAT RIGHT TURN INBOUNDCOURSE 127 LEGTIME 1
+ TRANSITION APRAT FIX APRAT
+ TRANSITION DESBA FIX DESBA
+ENDAPPROACHES

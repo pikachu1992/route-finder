@@ -1,0 +1,43 @@
+//K23R (DEVINE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADLIW LATLON N 28 57.179 W 99 0.785333
+FIX CIKEB LATLON N 28 57.757166 W 98 55.123667
+FIX FF35 LATLON N 29 2.8425 W 98 56.681
+FIX FISAS LATLON N 28 58.331333 W 98 49.461
+FIX HHHNB LATLON N 29 8.2995 W 98 56.355667
+FIX JIVEP LATLON N 29 3.828833 W 98 55.923167
+FIX PI001 LATLON N 29 4.804294 W 98 56.565264
+FIX PI002 LATLON N 29 1.608103 W 98 53.274682
+FIX PI003 LATLON N 28 58.313183 W 98 56.953888
+FIX SOMER LATLON N 29 9.745834 W 98 38.3745
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH NDB35 FIX FF35 2400 RNW 35 FIX HHHNB HOLD AT FIX HHHNB LEFT TURN INBOUNDCOURSE 356 ALT 2400 LEGTIME 1
+ TRANSITION SOMER FIX SOMER FIX HHHNB AT OR ABOVE 2400 FIX PI001 AT OR ABOVE 2400 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2400 SPEED 210 FIX PI003 AT OR ABOVE 2400 SPEED 210
+APPROACH RNV35 FIX CIKEB AT OR ABOVE 2600 FIX JIVEP 2100 RNW 35 TRK 346 UNTIL 1110 TURN RIGHT DIRECT FIX OVERFLY CIKEB AT OR ABOVE 2600 HOLD AT FIX CIKEB RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4
+ TRANSITION ADLIW FIX ADLIW AT OR ABOVE 2600
+ TRANSITION CIKEB HOLD AT FIX CIKEB RIGHT TURN INBOUNDCOURSE 346 ALT 2600 LEGDIST 4
+ TRANSITION FISAS FIX FISAS AT OR ABOVE 2700
+ENDAPPROACHES

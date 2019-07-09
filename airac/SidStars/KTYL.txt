@@ -1,0 +1,45 @@
+//KTYL (TAYLOR MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVANS LATLON N 34 56.061167 W 110 27.516167
+FIX BANZO LATLON N 34 38.459666 W 110 3.0195
+FIX BOLYN LATLON N 34 31.3925 W 110 2.441167
+FIX CAMBA LATLON N 34 35.164 W 109 58.458
+FIX DPAUL LATLON N 34 31.865666 W 109 53.902333
+FIX HOZER LATLON N 34 9.041666 W 109 56.922667
+FIX SJN LATLON N 34 25.4425 W 109 8.611834
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID CAMBA3 RNW 03 HDG 030 UNTIL 6400 FIX CAMBA AT OR ABOVE 8900
+  TRANSITION AVANS FIX AVANS
+  TRANSITION SJN FIX SJN 12000
+ENDSIDS
+
+APPROACHES
+APPROACH GPS21 FIX CAMBA AT OR ABOVE 7700 FIX BOLYN 7300 RNW 21 TRK 209 UNTIL 6220 TURN RIGHT DIRECT FIX CAMBA AT OR ABOVE 7700 HOLD AT FIX CAMBA RIGHT TURN INBOUNDCOURSE 209 LEGTIME 1
+ TRANSITION AVANS FIX AVANS FIX BANZO AT OR ABOVE 8900
+ TRANSITION CAMBA HOLD AT FIX CAMBA RIGHT TURN INBOUNDCOURSE 209 ALT 7700 LEGTIME 1
+ TRANSITION HOZER FIX HOZER FIX DPAUL AT OR ABOVE 9800
+ TRANSITION SJN FIX SJN FIX DPAUL AT OR ABOVE 9200
+ENDAPPROACHES

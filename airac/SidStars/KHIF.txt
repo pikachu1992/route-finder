@@ -1,0 +1,40 @@
+//KHIF (HILL AFB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CADGO LATLON N 41 15.107167 W 112 3.5975
+FIX GRITS LATLON N 41 5.254667 W 112 16.150166
+FIX HOPPI LATLON N 41 12.705 W 112 1.940833
+FIX JESGO LATLON N 41 8.951167 W 111 59.415334
+FIX KOVAL LATLON N 41 25.241167 W 112 14.592334
+FIX MUGLE LATLON N 41 22.226167 W 112 8.456666
+FIX ROUTS LATLON N 41 12.965333 W 112 3.139333
+FIX WILID LATLON N 41 27.503666 W 112 12.257167
+FIX WUPAS LATLON N 41 10.508 W 112 0.859
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH ILS14 FIX CADGO AT OR ABOVE 7000 FIX HOPPI 6289 RNW 14 TRK 139 UNTIL 5500 HDG 278 INTERCEPT RADIAL 248 TO FIX GRITS FIX GRITS AT OR ABOVE 7900 HOLD AT FIX GRITS RIGHT TURN INBOUNDCOURSE 068 SPEED 265 LEGDIST 6
+ TRANSITION WILID FIX WILID AT OR ABOVE 8600 FIX MUGLE
+APPROACH TAC14 FIX KOVAL AT OR ABOVE 8400 FIX ROUTS 6300 FIX WUPAS AT OR ABOVE 5700 FIX JESGO 5045 RNW 14 TRK 131 UNTIL 5500 HDG 278 INTERCEPT RADIAL 248 TO FIX GRITS FIX GRITS AT OR ABOVE 7900 HOLD AT FIX GRITS RIGHT TURN INBOUNDCOURSE 068 SPEED 265 LEGDIST 5
+ TRANSITION KOVAL HOLD AT FIX KOVAL RIGHT TURN INBOUNDCOURSE 131 ALT 8400 LEGDIST 5
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KJES (JESUP-WAYNE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COMTA LATLON N 31 30.078667 W 82 6.468667
+FIX EGOXY LATLON N 31 32.237 W 81 45.971333
+FIX FEJYY LATLON N 31 22.201166 W 81 53.7015
+FIX HABLE LATLON N 31 21.161333 W 82 6.166
+FIX HESUB LATLON N 31 31.347 W 81 39.804334
+FIX JATAS LATLON N 31 34.0245 W 81 58.470167
+FIX JEMUX LATLON N 31 32.350333 W 81 46.759834
+FIX KOGSE LATLON N 31 35.022833 W 82 5.5175
+FIX OCADA LATLON N 31 26.406 W 81 40.778
+FIX WABIT LATLON N 31 40.2975 W 82 0.427
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX KOGSE AT OR ABOVE 2700 FIX JATAS 1700 RNW 11 FIX EGOXY TURN RIGHT DIRECT FIX FEJYY FIX OVERFLY KOGSE AT OR ABOVE 2700 HOLD AT FIX KOGSE RIGHT TURN INBOUNDCOURSE 103 LEGDIST 4
+ TRANSITION HABLE FIX HABLE FIX COMTA AT OR ABOVE 2700
+ TRANSITION WABIT FIX WABIT FIX KOGSE AT OR ABOVE 2700 HOLD AT FIX KOGSE RIGHT TURN INBOUNDCOURSE 103 ALT 2700 LEGDIST 4
+APPROACH RNV29 FIX HESUB AT OR ABOVE 2700 FIX JEMUX 1700 RNW 29 TRK 284 UNTIL 364 FIX OVERFLY KOGSE AT OR ABOVE 2700 HOLD AT FIX KOGSE RIGHT TURN INBOUNDCOURSE 103 LEGDIST 4
+ TRANSITION HABLE FIX HABLE FIX OCADA AT OR ABOVE 2700
+ TRANSITION HESUB HOLD AT FIX HESUB RIGHT TURN INBOUNDCOURSE 284 ALT 2700 LEGDIST 4
+ENDAPPROACHES

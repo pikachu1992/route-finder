@@ -1,0 +1,44 @@
+//KLLN (LEVELLAND MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADORY LATLON N 33 27.291167 W 102 22.549166
+FIX FEVOL LATLON N 33 30.081667 W 102 22.4585
+FIX HEGTA LATLON N 33 20.593667 W 102 22.766333
+FIX JATMI LATLON N 33 48.186167 W 102 29.977
+FIX LBB LATLON N 33 42.297 W 101 54.840667
+FIX RAWNI LATLON N 33 38.674834 W 102 22.178833
+FIX SOMKE LATLON N 33 45.5095 W 102 21.955834
+FIX VITVY LATLON N 33 47.606333 W 102 14.578667
+FIX WINNS LATLON N 33 35.415334 W 102 48.562834
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 17
+RNW 26
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX SOMKE AT OR ABOVE 5500 FIX RAWNI 5200 RNW 17 TRK 173 UNTIL 3856 FIX OVERFLY HEGTA AT OR ABOVE 5500 HOLD AT FIX HEGTA RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5
+ TRANSITION LBB FIX LBB FIX VITVY AT OR ABOVE 5500
+ TRANSITION SOMKE HOLD AT FIX SOMKE RIGHT TURN INBOUNDCOURSE 173 ALT 5500 LEGDIST 5
+ TRANSITION WINNS FIX WINNS FIX JATMI AT OR ABOVE 5500
+APPROACH RNV35 FIX HEGTA AT OR ABOVE 5500 FIX ADORY 5200 FIX FEVOL AT OR ABOVE 4300 RNW 35 TRK 353 UNTIL 3862 FIX OVERFLY SOMKE AT OR ABOVE 5500 HOLD AT FIX SOMKE RIGHT TURN INBOUNDCOURSE 173 LEGDIST 5
+ TRANSITION HEGTA HOLD AT FIX HEGTA RIGHT TURN INBOUNDCOURSE 353 ALT 5500 LEGDIST 5
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KTNT (DADE-COLLIER TRNG  TRANSITION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRBRA LATLON N 25 58.037167 W 80 27.181166
+FIX ICUCI LATLON N 25 43.682167 W 81 5.995
+FIX IRIDE LATLON N 25 51.709166 W 80 58.103167
+FIX JAXEK LATLON N 25 51.706333 W 81 6.003
+FIX LOYIS LATLON N 25 59.730334 W 81 6.011
+FIX OYAYA LATLON N 25 51.709 W 81 0.460166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX JAXEK AT OR ABOVE 2000 FIX OYAYA 1700 FIX IRIDE AT OR ABOVE 1020 RNW 09 TRK 095 UNTIL 1000 FIX OVERFLY BRBRA AT OR ABOVE 2000 HOLD AT FIX BRBRA RIGHT TURN INBOUNDCOURSE 154 LEGDIST 4
+ TRANSITION ICUCI FIX ICUCI
+ TRANSITION JAXEK HOLD AT FIX JAXEK RIGHT TURN INBOUNDCOURSE 095 ALT 2000 LEGDIST 4
+ TRANSITION LOYIS FIX LOYIS
+ENDAPPROACHES

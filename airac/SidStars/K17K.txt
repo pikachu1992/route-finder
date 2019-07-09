@@ -1,0 +1,36 @@
+//K17K (BOISE CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GIKDY LATLON N 36 42.825667 W 102 35.902667
+FIX VUSQU LATLON N 36 52.732667 W 102 21.479666
+FIX XASWO LATLON N 36 39.068833 W 102 41.3455
+FIX YAXDE LATLON N 36 42.868 W 102 45.394166
+FIX ZUZXE LATLON N 36 35.267333 W 102 37.3035
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX XASWO AT OR ABOVE 6500 FIX GIKDY 5900 RNW 04 TRK 040 UNTIL 4574 FIX OVERFLY VUSQU AT OR ABOVE 6000 HOLD AT FIX VUSQU RIGHT TURN INBOUNDCOURSE 221 LEGDIST 4
+ TRANSITION XASWO HOLD AT FIX XASWO RIGHT TURN INBOUNDCOURSE 040 ALT 6500 LEGDIST 6
+ TRANSITION YAXDE FIX YAXDE
+ TRANSITION ZUZXE FIX ZUZXE
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//KMPJ (PETIT JEAN PARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FAPEN LATLON N 34 55.910833 W 92 55.972667
+FIX IDIVE LATLON N 35 0.765167 W 93 6.6165
+FIX JETSI LATLON N 34 58.34 W 93 1.292
+FIX TOTCE LATLON N 35 3.3945 W 92 57.885833
+FIX UPAKE LATLON N 35 17.568 W 92 48.291167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX JETSI AT OR ABOVE 3500 FIX TOTCE 2600 RNW 03 TRK 026 UNTIL 1323 FIX UPAKE AT OR ABOVE 3500 HOLD AT FIX UPAKE RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4
+ TRANSITION FAPEN FIX FAPEN AT OR ABOVE 3500
+ TRANSITION IDIVE FIX IDIVE AT OR ABOVE 3500
+ TRANSITION JETSI HOLD AT FIX JETSI RIGHT TURN INBOUNDCOURSE 026 ALT 3500 LEGDIST 4
+ENDAPPROACHES

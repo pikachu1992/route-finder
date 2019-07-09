@@ -1,0 +1,42 @@
+//KJAQ (WESTOVER-AMADOR CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF01 LATLON N 38 11.495 W 120 55.350334
+FIX FF01 LATLON N 38 17.634334 W 120 51.0665
+FIX HNW LATLON N 38 43.4835 W 120 44.955833
+FIX HOYCO LATLON N 38 14.942833 W 120 58.413334
+FIX LIN LATLON N 38 4.474834 W 121 0.2315
+FIX LINWO LATLON N 38 4.475333 W 121 0.2315
+FIX MOKPY LATLON N 38 17.707834 W 120 50.151667
+FIX SUZSU LATLON N 38 22.347667 W 120 47.768333
+FIX VASPE LATLON N 38 13.067 W 120 52.53
+FIX VOHBO LATLON N 38 27.506333 W 120 45.1125
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VDM01 FIX CF01 AT OR ABOVE 3000 FIX FF01 3000 RNW 01 TRK 012 UNTIL 2100 TURN LEFT DIRECT FIX LIN AT OR ABOVE 3000
+ TRANSITION LIN FIX LIN AT OR ABOVE 3000
+APPROACH GPS01 FIX VASPE AT OR ABOVE 4000 FIX MOKPY 3000 FIX OVERFLY SUZSU 1738 RNW 01 FIX OVERFLY VOHBO AT OR ABOVE 4500 HOLD AT FIX VOHBO RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1
+ TRANSITION HNW FIX HNW FIX HOYCO AT OR ABOVE 5100
+ TRANSITION LINWO FIX LINWO
+ENDAPPROACHES

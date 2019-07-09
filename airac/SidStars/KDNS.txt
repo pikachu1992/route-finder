@@ -1,0 +1,46 @@
+//KDNS (DENISON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GECNU LATLON N 42 5.564167 W 95 35.435167
+FIX IHKAW LATLON N 42 1.423667 W 95 39.201
+FIX LALJE LATLON N 41 55.941833 W 95 16.484666
+FIX NEVPE LATLON N 42 9.703166 W 95 31.662
+FIX NIMFI LATLON N 41 56.6555 W 95 6.0305
+FIX OTKAH LATLON N 42 2.143333 W 95 28.675333
+FIX OTLAZ LATLON N 41 52.532833 W 95 9.818167
+FIX UKUPY LATLON N 41 48.404666 W 95 13.600834
+FIX WERAV LATLON N 41 57.390667 W 95 19.3255
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 18
+RNW 30
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX GECNU AT OR ABOVE 3300 FIX OTKAH 2900 RNW 12 FIX OVERFLY OTLAZ AT OR ABOVE 3900 HOLD AT FIX OTLAZ RIGHT TURN INBOUNDCOURSE 300 LEGDIST 4
+ TRANSITION GECNU HOLD AT FIX GECNU RIGHT TURN INBOUNDCOURSE 120 ALT 3300 LEGDIST 4
+ TRANSITION IHKAW FIX IHKAW AT OR ABOVE 3300
+ TRANSITION NEVPE FIX NEVPE AT OR ABOVE 3300
+APPROACH RNV30 FIX OTLAZ AT OR ABOVE 3900 FIX LALJE 3000 FIX WERAV AT OR ABOVE 2140 RNW 30 FIX OVERFLY GECNU AT OR ABOVE 3300 HOLD AT FIX GECNU RIGHT TURN INBOUNDCOURSE 120 LEGDIST 4
+ TRANSITION NIMFI FIX NIMFI AT OR ABOVE 3900
+ TRANSITION OTLAZ HOLD AT FIX OTLAZ RIGHT TURN INBOUNDCOURSE 300 ALT 3900 LEGDIST 4
+ TRANSITION UKUPY FIX UKUPY AT OR ABOVE 3900
+ENDAPPROACHES

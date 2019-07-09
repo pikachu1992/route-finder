@@ -1,0 +1,41 @@
+//LFCY (MEDIS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CN28 LATLON N 45 36.571166 W 0 49.209833
+FIX CY281 LATLON N 45 39.866666 W 0 43.771667
+FIX CY282 LATLON N 45 32.028334 W 0 46.031666
+FIX CY284 LATLON N 45 32.35 W 0 50.858333
+FIX FCY28 LATLON N 45 36.64 W 0 49.79
+FIX ICY28 LATLON N 45 35.948333 W 0 44.903333
+FIX MN28 LATLON N 45 37.657166 W 0 57.182167
+FIX RYNB LATLON N 45 36.953333 W 0 52.006667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB28 FIX CN28 AT OR ABOVE 2000 FIX RYNB 1480 FIX MN28 316 RNW 28 TRK 282 UNTIL 600 TURN RIGHT DIRECT FIX RYNB 2000
+ TRANSITION RY HOLD AT FIX RYNB LEFT TURN INBOUNDCOURSE 282 ALT 2000 SPEED 170 LEGTIME 1
+APPROACH RNV28 FIX ICY28 2000 FIX FCY28 2000 RNW 28 TRK 282 UNTIL 480 TURN RIGHT DIRECT FIX OVERFLY RYNB 2000 HOLD AT FIX RYNB LEFT TURN INBOUNDCOURSE 282 SPEED 170 LEGTIME 1
+ TRANSITION CY281 FIX CY281 AT OR BELOW 2500
+ TRANSITION CY282 FIX CY282 AT OR BELOW 2500
+ TRANSITION RY FIX RYNB TURN LEFT DIRECT FIX CY284 FIX CY282 AT OR BELOW 2500
+ENDAPPROACHES

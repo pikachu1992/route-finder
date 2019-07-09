@@ -1,0 +1,39 @@
+//KHBZ (HEBER SPRINGS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COGIK LATLON N 35 32.389834 W 91 57.263
+FIX ECIGE LATLON N 35 33.886667 W 91 54.139
+FIX HEXIP LATLON N 35 32.598 W 91 44.6975
+FIX JEKMU LATLON N 35 27.4875 W 92 7.46
+FIX POYOG LATLON N 35 36.921833 W 91 47.789666
+FIX RILVE LATLON N 35 24.434833 W 92 13.784333
+FIX UKORE LATLON N 35 21.7555 W 91 36.038
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX RILVE AT OR ABOVE 4000 FIX JEKMU 2600 RNW 05 TRK 057 UNTIL 1032 FIX OVERFLY POYOG AT OR ABOVE 4000 HOLD AT FIX POYOG RIGHT TURN INBOUNDCOURSE 237 LEGDIST 4
+ TRANSITION UKORE FIX UKORE FIX RILVE AT OR ABOVE 4000 HOLD AT FIX RILVE LEFT TURN INBOUNDCOURSE 056 ALT 4000 LEGDIST 4
+APPROACH RNV23 FIX POYOG AT OR ABOVE 4000 FIX ECIGE 2600 FIX COGIK AT OR ABOVE 1460 RNW 23 TRK 237 UNTIL 1032 TURN RIGHT DIRECT FIX OVERFLY POYOG AT OR ABOVE 4000 HOLD AT FIX POYOG RIGHT TURN INBOUNDCOURSE 237 LEGDIST 4
+ TRANSITION POYOG HOLD AT FIX POYOG RIGHT TURN INBOUNDCOURSE 237 ALT 4000 LEGDIST 4
+ TRANSITION UKORE FIX UKORE FIX HEXIP AT OR ABOVE 4000
+ENDAPPROACHES

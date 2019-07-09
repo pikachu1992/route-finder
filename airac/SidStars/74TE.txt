@@ -1,0 +1,39 @@
+//74TE (FLAT TOP RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BECHL LATLON N 32 9.307667 W 97 47.138
+FIX CELTC LATLON N 32 10.152334 W 97 24.395333
+FIX CWEED LATLON N 32 15.917 W 97 52.405333
+FIX CYNTB LATLON N 32 15.082 W 97 40.6535
+FIX FTRAP LATLON N 32 6.5245 W 97 47.411
+FIX QIBEK LATLON N 32 1.032167 W 97 47.949334
+FIX SICUM LATLON N 32 10.225166 W 98 6.777
+FIX WALST LATLON N 31 52.5975 W 98 0.557333
+FIX WSKEY LATLON N 32 15.501833 W 97 46.529
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX WSKEY AT OR ABOVE 3000 FIX BECHL 2700 FIX FTRAP AT OR ABOVE 1780 RNW 18 TRK 180 UNTIL 1233 FIX QIBEK FIX OVERFLY WALST AT OR ABOVE 3000 HOLD AT FIX WALST RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION CELTC FIX CELTC FIX CYNTB AT OR ABOVE 3000
+ TRANSITION SICUM FIX SICUM FIX CWEED AT OR ABOVE 3600
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//HUSO (SOROTI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D224E LATLON N 1 39.943333 E 33 33.6425
+FIX D244G LATLON N 1 40.260667 E 33 31.0975
+FIX EN05 LATLON N 1 43.187333 E 33 37.06
+FIX FD05A LATLON N 1 37.774667 E 33 31.5615
+FIX FD05B LATLON N 1 39.2205 E 33 32.948833
+FIX FD23 LATLON N 1 48.172834 E 33 42.387167
+FIX FN05 LATLON N 1 41.425 E 33 33.4695
+FIX SONB LATLON N 1 43.344667 E 33 37.3805
+FIX SV LATLON N 1 43.558 E 33 37.111166
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 09
+RNW 23
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA05 FIX FD05A 6000 RNW 05 FIX OVERFLY SV TRK 044 UNTIL 5100 TURN LEFT DIRECT FIX SV 6000
+APPROACH VDMB05 FIX FD05B 5500 RNW 05 FIX OVERFLY SV TRK 044 UNTIL 5100 TURN RIGHT DIRECT FIX SV 6000
+ TRANSITION SV FIX SV AT OR ABOVE 7000 FIX D224E AT OR ABOVE 5500 TRK 269 UNTIL 4.3 FROM FIX D224E
+APPROACH VDM23 FIX FD23 5500 RNW 23 FIX OVERFLY SV TRK 229 UNTIL 5500 TURN RIGHT DIRECT FIX SV 6000
+ TRANSITION SV FIX SV AT OR ABOVE 7000 FIX FD23 AT OR ABOVE 5500 TRK 094 UNTIL 4.3 FROM FIX FD23
+APPROACH NDBA05 FIX FN05 5000 FIX OVERFLY EN05 3729 FIX OVERFLY SONB AT OR ABOVE 4100 RNW 05 TRK 064 UNTIL 5100 TURN RIGHT DIRECT FIX SONB 6000
+ TRANSITION SO FIX SONB AT OR ABOVE 7000 FIX D244G AT OR ABOVE 5000 TRK 289 UNTIL 4.4 FROM FIX D244G
+ENDAPPROACHES

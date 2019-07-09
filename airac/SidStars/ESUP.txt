@@ -1,0 +1,41 @@
+//ESUP (PAJALA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI11 LATLON N 67 18.642167 E 22 45.2255
+FIX CQ11 LATLON N 67 18.0025 E 22 44.691833
+FIX D116L LATLON N 67 9.433333 E 23 21.731666
+FIX D126L LATLON N 67 7.975667 E 23 18.029333
+FIX FI11 LATLON N 67 16.7745 E 22 54.337667
+FIX FQ29 LATLON N 67 11.663333 E 23 19.6675
+FIX PAJ LATLON N 67 16.063333 E 22 56.565
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH ILS11 FIX CI11 2500 FIX FI11 1820 RNW 11 TRK 110 UNTIL 2000 TURN RIGHT DIRECT FIX PAJ 2500
+ TRANSITION PAJ HOLD AT FIX PAJ RIGHT TURN INBOUNDCOURSE 110 ALT 2500 LEGDIST 5
+APPROACH NDM11 FIX CQ11 AT OR ABOVE 2500 FIX PAJ 1470 RNW 11 TRK 105 UNTIL 2000 TURN RIGHT DIRECT FIX PAJ 2500
+ TRANSITION PAJ HOLD AT FIX PAJ RIGHT TURN INBOUNDCOURSE 105 ALT 2500 SPEED 240 LEGDIST 5
+APPROACH NDM29 FIX FQ29 2500 RNW 29 FIX PAJ AT OR ABOVE 950 TRK 288 UNTIL 2500 TURN RIGHT DIRECT FIX PAJ 2500
+ TRANSITION PAJ1 FIX PAJ SPEED 220 FIX OVERFLY D126L AT OR ABOVE 2500
+ TRANSITION PAJ2 FIX PAJ SPEED 220 FIX OVERFLY D116L AT OR ABOVE 2500
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//ORBR (BASHUR AB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KEBIL LATLON N 36 36.242666 E 44 16.225667
+FIX LOPUP LATLON N 36 40.583333 E 44 8.673833
+FIX LOXEL LATLON N 36 40.018333 E 44 7.070167
+FIX MEMGU LATLON N 36 31.864834 E 44 4.553167
+FIX MURSI LATLON N 36 47 E 44 2
+FIX NOPRI LATLON N 36 39.246167 E 44 10.524334
+FIX PURON LATLON N 36 33.892667 E 44 17.916
+FIX RETUG LATLON N 36 33.092333 E 44 19.2925
+FIX TANLO LATLON N 36 45.844834 E 43 46.642166
+FIX TARDU LATLON N 36 37.2395 E 44 13.298167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+SIDS
+SID MURSI1 RNW 31 HDG 313 UNTIL 2500 FIX MURSI AT OR ABOVE 10000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV13 FIX LOXEL AT OR ABOVE 6400 FIX KEBIL 3800 FIX OVERFLY RETUG 2374 RNW 13 TRK 137 UNTIL 2500 TURN RIGHT DIRECT FIX OVERFLY TANLO AT OR ABOVE 9000 HOLD AT FIX TANLO LEFT TURN INBOUNDCOURSE 291 ALT 14000 LEGDIST 4
+ TRANSITION TANLO FIX TANLO AT OR ABOVE 9000
+APPROACH TAC13 FIX LOPUP AT OR ABOVE 6800 FIX NOPRI AT OR ABOVE 6000 FIX TARDU 5500 FIX PURON 3118 RNW 13 HDG 152 UNTIL 4500 HDG 315 INTERCEPT RADIAL 270 TO FIX MEMGU FIX MEMGU AT OR ABOVE 6800
+ TRANSITION MEMGU FIX MEMGU AT OR ABOVE 6800
+ENDAPPROACHES

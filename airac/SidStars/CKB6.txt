@@ -1,0 +1,43 @@
+//CKB6 (WAPEKEKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXALA LATLON N 53 59.42 W 89 45.844333
+FIX EPVAV LATLON N 53 49.087166 W 89 27.929666
+FIX IGTUV LATLON N 53 48.983833 W 89 27.55
+FIX IMOKI LATLON N 53 46.995667 W 89 20.273
+FIX LOPGA LATLON N 53 54.882833 W 89 49.373167
+FIX NAKAK LATLON N 53 52.814333 W 89 41.681167
+FIX OTREN LATLON N 53 42.457166 W 89 23.779667
+FIX SEBAX LATLON N 53 52.896667 W 89 41.986667
+FIX TIDIK LATLON N 53 50.344 W 89 52.889333
+FIX XERUD LATLON N 53 51.5325 W 89 16.7535
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX LOPGA AT OR ABOVE 2200 FIX NAKAK 2100 RNW 12 FIX OVERFLY IGTUV 2100 HOLD AT FIX IGTUV RIGHT TURN INBOUNDCOURSE 120 LEGTIME 1
+ TRANSITION AXALA FIX AXALA
+ TRANSITION TIDIK FIX TIDIK
+APPROACH RNV30 FIX IMOKI AT OR ABOVE 2200 FIX EPVAV 2100 RNW 30 FIX OVERFLY SEBAX 2100 HOLD AT FIX SEBAX RIGHT TURN INBOUNDCOURSE 300 LEGTIME 1
+ TRANSITION OTREN FIX OTREN
+ TRANSITION XERUD FIX XERUD
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//K3D2 (EPHRAIM-GIBRALTAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AQECY LATLON N 44 56.773166 W 87 5.602
+FIX IDYID LATLON N 45 0.224666 W 87 0.506333
+FIX JULRI LATLON N 45 11.633333 W 87 15.91
+FIX LOGIF LATLON N 45 20.547 W 87 28.907
+FIX MNM LATLON N 45 10.809667 W 87 38.8305
+FIX OPHUN LATLON N 45 15.964667 W 87 21.798167
+FIX UYOXE LATLON N 45 4.5785 W 87 6.366833
+FIX WARWF LATLON N 44 55.8175 W 87 52.067
+FIX ZUXIN LATLON N 44 36.3685 W 87 10.185667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 14
+RNW 19
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX OPHUN AT OR ABOVE 2300 FIX JULRI 2300 RNW 14 TRK 140 UNTIL 1173 TURN RIGHT DIRECT FIX OVERFLY MNM AT OR ABOVE 3000 HOLD AT FIX MNM RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION LOGIF FIX LOGIF
+ TRANSITION MNM FIX MNM
+APPROACH RNV32 FIX IDYID AT OR ABOVE 2300 FIX UYOXE 2300 RNW 32 TRK 320 UNTIL 1173 FIX JULRI FIX OVERFLY MNM AT OR ABOVE 3000 HOLD AT FIX MNM RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION MNM FIX MNM FIX AQECY AT OR ABOVE 3000
+ TRANSITION WARWF FIX WARWF FIX AQECY AT OR ABOVE 3000
+ TRANSITION ZUXIN FIX ZUXIN FIX AQECY AT OR ABOVE 3000
+ENDAPPROACHES

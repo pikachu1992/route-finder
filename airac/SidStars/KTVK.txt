@@ -1,0 +1,40 @@
+//KTVK (CENTERVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYDOV LATLON N 40 46.177667 W 92 56.6865
+FIX AYFAH LATLON N 40 36.017666 W 92 51.4735
+FIX EJKAX LATLON N 40 51.798167 W 92 59.583167
+FIX JODIV LATLON N 40 30.328166 W 92 48.567167
+FIX NEMLE LATLON N 40 32.1405 W 92 42.456
+FIX UVODE LATLON N 40 28.5105 W 92 54.672833
+FIX ZUVKO LATLON N 40 43.150834 W 92 55.130333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX EJKAX AT OR ABOVE 3000 FIX AYDOV 2700 FIX ZUVKO AT OR ABOVE 1660 RNW 16 TRK 158 UNTIL 1273 FIX OVERFLY JODIV AT OR ABOVE 3000 HOLD AT FIX JODIV RIGHT TURN INBOUNDCOURSE 338 LEGDIST 4
+ TRANSITION EJKAX HOLD AT FIX EJKAX RIGHT TURN INBOUNDCOURSE 158 ALT 3000 LEGDIST 4
+APPROACH RNV34 FIX JODIV AT OR ABOVE 3000 FIX AYFAH 2700 RNW 34 TRK 338 UNTIL 1273 FIX OVERFLY EJKAX AT OR ABOVE 3000 HOLD AT FIX EJKAX RIGHT TURN INBOUNDCOURSE 158 LEGDIST 4
+ TRANSITION JODIV HOLD AT FIX JODIV RIGHT TURN INBOUNDCOURSE 338 ALT 3000 LEGDIST 4
+ TRANSITION NEMLE FIX NEMLE
+ TRANSITION UVODE FIX UVODE
+ENDAPPROACHES

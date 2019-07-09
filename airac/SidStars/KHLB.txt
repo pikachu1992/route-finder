@@ -1,0 +1,43 @@
+//KHLB (BATESVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUNGA LATLON N 39 22.822333 W 85 15.5115
+FIX DETBE LATLON N 39 31.350667 W 85 21.996
+FIX DIKLE LATLON N 39 6.372 W 85 10.925333
+FIX EPIJO LATLON N 39 18.396167 W 85 15.4995
+FIX FOMAN LATLON N 39 31.371667 W 85 9.073
+FIX HIDIV LATLON N 39 18.976 W 85 15.501167
+FIX HIVOX LATLON N 39 31.364167 W 85 15.5345
+FIX HOBSA LATLON N 39 9.1465 W 85 15.474667
+FIX JOXAK LATLON N 39 25.359 W 85 15.518333
+FIX JUBMI LATLON N 39 15.152 W 85 15.490834
+FIX ZEKAB LATLON N 39 11.413333 W 85 12.157667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX HIVOX AT OR ABOVE 2600 FIX JOXAK 2400 FIX CUNGA AT OR ABOVE 1580 RNW 18 TRK 185 UNTIL 1340 FIX HIDIV FIX OVERFLY ZEKAB AT OR ABOVE 2600 HOLD AT FIX ZEKAB RIGHT TURN INBOUNDCOURSE 166 LEGDIST 4
+ TRANSITION DETBE FIX DETBE
+ TRANSITION FOMAN FIX FOMAN
+APPROACH RNV36 FIX HOBSA AT OR ABOVE 2600 FIX JUBMI 2600 FIX EPIJO AT OR ABOVE 1540 RNW 36 TRK 005 UNTIL 1340 FIX OVERFLY HIVOX AT OR ABOVE 2600 HOLD AT FIX HIVOX RIGHT TURN INBOUNDCOURSE 005 LEGDIST 4
+ TRANSITION DIKLE FIX DIKLE
+ENDAPPROACHES

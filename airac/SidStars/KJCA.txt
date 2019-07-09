@@ -1,0 +1,39 @@
+//KJCA (JACKSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AHN LATLON N 33 56.855666 W 83 19.4855
+FIX CERTA LATLON N 34 21.403834 W 83 37.599
+FIX DUCUT LATLON N 34 6.636667 W 83 29.812834
+FIX JIRWI LATLON N 34 5.664833 W 83 31.9435
+FIX KAWAS LATLON N 34 13.747166 W 83 34.843333
+FIX KEKTE LATLON N 33 59.867833 W 83 29.869333
+FIX KUKRE LATLON N 34 15.635333 W 83 35.522167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VDM35 FIX AHN AT OR ABOVE 2500 FIX DUCUT 2500 RNW 35 TRK 319 UNTIL 1360 HDG 210 INTERCEPT RADIAL 139 TO FIX DUCUT FIX DUCUT AT OR ABOVE 2500 HOLD AT FIX DUCUT RIGHT TURN INBOUNDCOURSE 319 LEGTIME 1
+APPROACH RNV17 FIX CERTA AT OR ABOVE 3800 FIX KUKRE 2800 FIX KAWAS AT OR ABOVE 2060 RNW 17 TRK 168 UNTIL 1279 FIX OVERFLY KEKTE AT OR ABOVE 3800 HOLD AT FIX KEKTE RIGHT TURN INBOUNDCOURSE 348 LEGDIST 4
+ TRANSITION CERTA HOLD AT FIX CERTA RIGHT TURN INBOUNDCOURSE 168 ALT 3800 LEGDIST 4
+APPROACH RNV35 FIX KEKTE AT OR ABOVE 2500 FIX JIRWI 2500 RNW 35 TRK 348 UNTIL 1201 FIX OVERFLY CERTA AT OR ABOVE 3700 HOLD AT FIX CERTA RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4
+ TRANSITION KEKTE HOLD AT FIX KEKTE RIGHT TURN INBOUNDCOURSE 348 ALT 2500 LEGDIST 4
+ENDAPPROACHES

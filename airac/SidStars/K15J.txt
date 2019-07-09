@@ -1,0 +1,43 @@
+//K15J (COOK CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARGYL LATLON N 31 0.061166 W 83 37.448333
+FIX IBEBE LATLON N 31 26.915167 W 83 18.775166
+FIX JUXEL LATLON N 31 10.438834 W 83 24.375
+FIX TIGEE LATLON N 31 5.821166 W 83 30.202166
+FIX UBEDY LATLON N 31 4.169333 W 83 32.2825
+FIX WUBSU LATLON N 31 4.948166 W 83 46.328833
+FIX WUMOM LATLON N 31 16.163167 W 83 17.130334
+FIX ZASIT LATLON N 31 12.080333 W 83 22.3
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 15
+RNW 23
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ARGYL AT OR ABOVE 2000 FIX UBEDY 2000 RNW 05 TRK 051 UNTIL 534 FIX ZASIT FIX OVERFLY IBEBE AT OR ABOVE 3000 HOLD AT FIX IBEBE RIGHT TURN INBOUNDCOURSE 196 LEGDIST 4
+ TRANSITION ARGYL HOLD AT FIX ARGYL RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGDIST 4
+ TRANSITION WUBSU FIX WUBSU
+APPROACH RNV23 FIX WUMOM AT OR ABOVE 3000 FIX ZASIT 2000 FIX JUXEL AT OR ABOVE 1220 RNW 23 TRK 231 UNTIL 536 FIX TIGEE FIX OVERFLY WUBSU AT OR ABOVE 3000 HOLD AT FIX WUBSU RIGHT TURN INBOUNDCOURSE 070 LEGDIST 4
+ TRANSITION IBEBE FIX IBEBE
+ TRANSITION WUBSU FIX WUBSU FIX OVERFLY WUMOM AT OR ABOVE 3000 HOLD AT FIX WUMOM RIGHT TURN INBOUNDCOURSE 231 ALT 3000 LEGDIST 4
+ENDAPPROACHES

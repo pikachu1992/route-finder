@@ -1,0 +1,36 @@
+//K0G3 (TECUMSEH MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GUYTE LATLON N 40 13.815667 W 96 5.065333
+FIX HEHFY LATLON N 40 34.281334 W 96 15.408334
+FIX JAPID LATLON N 40 28.589 W 96 12.520166
+FIX WUGBI LATLON N 40 21.827333 W 96 9.100667
+FIX ZOXUS LATLON N 40 19.511333 W 96 7.9325
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX HEHFY AT OR ABOVE 4000 FIX JAPID 2800 RNW 15 TRK 156 UNTIL 1618 FIX OVERFLY GUYTE AT OR ABOVE 4000 HOLD AT FIX GUYTE RIGHT TURN INBOUNDCOURSE 336 LEGDIST 4
+ TRANSITION HEHFY HOLD AT FIX HEHFY RIGHT TURN INBOUNDCOURSE 156 ALT 4000 LEGDIST 4
+APPROACH RNV33 FIX GUYTE AT OR ABOVE 4000 FIX ZOXUS 2800 FIX WUGBI AT OR ABOVE 2000 RNW 33 TRK 336 UNTIL 1564 FIX OVERFLY HEHFY AT OR ABOVE 4000 HOLD AT FIX HEHFY RIGHT TURN INBOUNDCOURSE 156 LEGDIST 4
+ TRANSITION GUYTE HOLD AT FIX GUYTE RIGHT TURN INBOUNDCOURSE 336 ALT 4000 LEGDIST 4
+ENDAPPROACHES

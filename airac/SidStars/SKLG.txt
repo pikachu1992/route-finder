@@ -1,0 +1,45 @@
+//SKLG (CAUCAYA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUVMU LATLON S 0 15.7105 W 74 37.0955
+FIX ITAMU LATLON S 0 11.249333 W 74 34.799
+FIX LG901 LATLON S 0 9.861833 W 74 48.305833
+FIX MOXUB LATLON S 0 13.3985 W 74 41.526833
+FIX UTMER LATLON S 0 18.0225 W 74 32.664167
+FIX VAKIM LATLON N 0 16.866667 W 74 52.583333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+SIDS
+SID VAKI1A RNW 30 FIX OVERFLY LG901 AT OR ABOVE 1200 FIX VAKIM AT OR ABOVE 10000
+ENDSIDS
+
+STARS
+STAR VAKI1B FIX VAKIM AT OR ABOVE 10000 FIX ITAMU AT OR ABOVE 6000 FIX BUVMU AT OR ABOVE 4000
+  RNW 30
+ENDSTARS
+
+APPROACHES
+APPROACH RNV30 FIX BUVMU AT OR ABOVE 4000 FIX MOXUB 2250 RNW 30 TURN RIGHT DIRECT FIX ITAMU AT OR ABOVE 6000 SPEED 160 HOLD AT FIX ITAMU LEFT TURN INBOUNDCOURSE 213 ALT 6000 SPEED 230 LEGTIME 1
+ TRANSITION ITAMU FIX ITAMU AT OR ABOVE 6000
+ TRANSITION UTMER FIX UTMER AT OR ABOVE 6000
+ENDAPPROACHES

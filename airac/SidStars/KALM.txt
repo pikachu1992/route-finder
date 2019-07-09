@@ -1,0 +1,41 @@
+//KALM (ALAMOGORDO-WHITE SANDS REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BWS LATLON N 32 49.275667 W 106 0.789167
+FIX CNX LATLON N 34 22.021 W 105 40.680334
+FIX CORAS LATLON N 33 40.341 W 105 58.6565
+FIX HONER LATLON N 32 41.958334 W 106 9.6055
+FIX PAYNE LATLON N 32 46.172167 W 106 4.5325
+FIX TORRI LATLON N 32 59.075833 W 106 3.260833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 17
+RNW 22
+RNW 35
+ENDRNWS
+
+SIDS
+SID CRONA2 RNW 04 HDG 038 UNTIL 4600 HDG 310 INTERCEPT RADIAL 354 TO FIX CORAS FIX CORAS 14000 FIX CNX
+ENDSIDS
+
+APPROACHES
+APPROACH RNV04 FIX HONER AT OR ABOVE 6000 FIX PAYNE 5800 RNW 04 TRK 038 UNTIL 4600 TURN LEFT DIRECT FIX OVERFLY TORRI AT OR ABOVE 6000 HOLD AT FIX TORRI RIGHT TURN INBOUNDCOURSE 160 LEGDIST 6
+APPROACH VOR04 FIX HONER AT OR ABOVE 6000 FIX PAYNE 5800 FIX BWS 4392 RNW 04 TRK 038 UNTIL 4600 FIX TORRI AT OR ABOVE 6000 HOLD AT FIX TORRI RIGHT TURN INBOUNDCOURSE 160 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//PHSF (BRADSHAW AAF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FLITT LATLON N 20 2.5885 W 155 56.5005
+FIX HINUN LATLON N 19 51.209666 W 155 44.765333
+FIX JASON LATLON N 19 54.5125 W 155 52.216667
+FIX JUDUG LATLON N 19 45.818333 W 155 34.428167
+FIX YIPUP LATLON N 19 48.295 W 155 39.147667
+FIX ZIDNO LATLON N 19 45.555667 W 155 45.830333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX HINUN AT OR ABOVE 8000 FIX YIPUP 8000 FIX OVERFLY JUDUG 6383 RNW 09 TRK 109 UNTIL 6590 TURN RIGHT DIRECT FIX ZIDNO SPEED 210 FIX OVERFLY JASON AT OR ABOVE 8700 HOLD AT FIX JASON LEFT TURN INBOUNDCOURSE 054 ALT 14000 LEGDIST 5
+ TRANSITION FLITT FIX FLITT
+ TRANSITION JASON FIX JASON
+ENDAPPROACHES

@@ -1,0 +1,38 @@
+//K2K7 (NEODESHA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CNU LATLON N 37 37.5695 W 95 35.608166
+FIX FELID LATLON N 37 20.469334 W 95 40.535167
+FIX OSW LATLON N 37 9.450667 W 95 12.218
+FIX PI001 LATLON N 37 17.104814 W 95 41.747701
+FIX PI002 LATLON N 37 13.343469 W 95 39.129721
+FIX PI003 LATLON N 37 10.855876 W 95 43.994765
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 15
+RNW 20
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH VOR02 FIX FELID 2500 RNW 02 FIX CNU AT OR ABOVE 2600 HOLD AT FIX CNU RIGHT TURN INBOUNDCOURSE 188 LEGTIME 1
+ TRANSITION CNU FIX CNU FIX FELID AT OR ABOVE 2500 FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ TRANSITION OSW FIX OSW FIX FELID AT OR ABOVE 2500 FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

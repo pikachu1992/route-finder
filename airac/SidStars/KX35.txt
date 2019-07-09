@@ -1,0 +1,35 @@
+//KX35 (MARION CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALADN LATLON N 29 4.091 W 82 4.2915
+FIX ALICS LATLON N 28 59.187 W 82 27.9235
+FIX OCF LATLON N 29 10.648667 W 82 13.58
+FIX WEGSO LATLON N 29 6.779 W 82 19.214333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 10
+RNW 23
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX OCF AT OR ABOVE 2000 FIX WEGSO 1300 RNW 23 TRK 230 UNTIL 465 FIX OVERFLY ALICS AT OR ABOVE 3000 HOLD AT FIX ALICS RIGHT TURN INBOUNDCOURSE 230 ALT 3000 LEGDIST 4
+ TRANSITION ALADN FIX ALADN
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//RJTC (TACHIKAWA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EDARR LATLON N 35 33.429 E 139 32.493833
+FIX FN265 LATLON N 35 44.552666 E 139 32.3945
+FIX OMIYA LATLON N 35 55.099333 E 139 35.809
+FIX TNNB LATLON N 35 43.1 E 139 23.983333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+SIDS
+SID EDA4
+ RNW 01 TRK 007 UNTIL 800 HDG 196 INTERCEPT RADIAL 151 TO FIX EDARR FIX EDARR
+ RNW 19 TRK 187 UNTIL 900 HDG 121 INTERCEPT RADIAL 151 TO FIX EDARR FIX EDARR
+SID TNTNE4
+ RNW 01 TRK 007 UNTIL 800 HDG 075 INTERCEPT RADIAL 045 TO FIX OMIYA FIX OMIYA
+ RNW 19 TRK 187 UNTIL 900 HDG 000 INTERCEPT RADIAL 045 TO FIX OMIYA FIX OMIYA
+ENDSIDS
+
+APPROACHES
+APPROACH NDBA01 FIX FN265 2000 FIX TNNB 1160 RNW 01 TRK 151 UNTIL 4500 TRK 151 VECTORS
+ TRANSITION TN FIX TNNB AT OR ABOVE 3600 TRK 065 UNTIL 7.0 FROM FIX TNNB
+APPROACH NDBA19 FIX FN265 2000 FIX TNNB 1160 RNW 19 TRK 151 UNTIL 4500 TRK 151 VECTORS
+ TRANSITION TN FIX TNNB AT OR ABOVE 3600 TRK 065 UNTIL 7.0 FROM FIX TNNB
+ENDAPPROACHES

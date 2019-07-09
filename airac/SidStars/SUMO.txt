@@ -1,0 +1,31 @@
+//SUMO (CERRO LARGO INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF25 LATLON S 32 17.755166 W 54 8.73
+FIX MLO LATLON S 32 20.546666 W 54 13.318333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH VOR25 FIX FF25 1600 RNW 25 FIX OVERFLY MLO TRK 245 VECTORS
+ TRANSITION MLO FIX MLO AT OR ABOVE 3000 TRK 080 UNTIL 8.8 FROM FIX MLO
+ENDAPPROACHES

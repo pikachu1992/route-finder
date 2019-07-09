@@ -1,0 +1,38 @@
+//WASK (UTAROM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD01 LATLON S 3 48.144 E 133 40.316
+FIX FD01 LATLON S 3 44.163667 E 133 40.873
+FIX MD01 LATLON S 3 40.286666 E 133 41.4155
+FIX SK401 LATLON S 3 51.125 E 133 39.868333
+FIX SK402 LATLON S 3 48.091667 E 133 39.97
+FIX SK403 LATLON S 3 44.14 E 133 40.7
+FIX SK404 LATLON S 3 39.558334 E 133 32.67
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VDM01 FIX CD01 AT OR ABOVE 2400 FIX FD01 1600 FIX OVERFLY MD01 399 RNW 01 TRK 156 INTERCEPT RADIAL 186 TO FIX SK401 FIX SK401 3000 HOLD AT FIX SK401 RIGHT TURN INBOUNDCOURSE 006 ALT 3000 LEGTIME 1
+ TRANSITION SK401 FIX SK401 AT OR ABOVE 3000
+APPROACH RNV01 FIX SK402 AT OR ABOVE 2400 FIX SK403 1600 RNW 01 TURN LEFT DIRECT FIX SK404 FIX SK401 3000 HOLD AT FIX SK401 RIGHT TURN INBOUNDCOURSE 006 ALT 3000 LEGTIME 1
+ TRANSITION SK401 FIX SK401 AT OR ABOVE 3000
+ENDAPPROACHES

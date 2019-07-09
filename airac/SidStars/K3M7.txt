@@ -1,0 +1,39 @@
+//K3M7 (LAFAYETTE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUMDI LATLON N 36 25.917167 W 86 4.207333
+FIX FLIPU LATLON N 36 48.944 W 86 1.039166
+FIX HETAP LATLON N 36 18.9835 W 86 5.1525
+FIX KUTKE LATLON N 36 28.718 W 86 3.823667
+FIX OLLOW LATLON N 36 33.419 W 86 3.1785
+FIX OZESI LATLON N 36 42.356333 W 86 1.948667
+FIX QALAY LATLON N 36 36.284833 W 86 2.784667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX HETAP AT OR ABOVE 3000 FIX CUMDI 2600 FIX KUTKE AT OR ABOVE 1680 RNW 01 FIX OVERFLY OZESI AT OR ABOVE 3000 HOLD AT FIX OZESI RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4
+ TRANSITION OZESI FIX OZESI FIX OVERFLY HETAP AT OR ABOVE 3000 HOLD AT FIX HETAP RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4
+APPROACH RNV19 FIX OZESI AT OR ABOVE 2900 FIX QALAY 2500 FIX OLLOW AT OR ABOVE 1560 RNW 19 FIX OVERFLY HETAP AT OR ABOVE 3000 HOLD AT FIX HETAP RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4
+ TRANSITION FLIPU FIX FLIPU
+ TRANSITION HETAP FIX HETAP FIX OVERFLY OZESI AT OR ABOVE 2900 HOLD AT FIX OZESI RIGHT TURN INBOUNDCOURSE 188 ALT 2900 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CZMD (MUSKRAT DAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MIDPI LATLON N 53 36.6295 W 91 38.902667
+FIX MURPO LATLON N 53 29.5655 W 91 39.810833
+FIX PEPVA LATLON N 53 23.404667 W 91 51.719167
+FIX ROSDU LATLON N 53 29.597666 W 91 39.7485
+FIX SEVPU LATLON N 53 23.835334 W 92 3.605167
+FIX SIKRI LATLON N 53 32.858666 W 91 33.406
+FIX TAMSI LATLON N 53 20.064833 W 91 58.135
+FIX VILPI LATLON N 53 16.29 W 91 52.680833
+FIX VIMVA LATLON N 53 29.0835 W 91 27.925667
+FIX XIKEL LATLON N 53 23.342167 W 91 51.839666
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX TAMSI AT OR ABOVE 2400 FIX XIKEL 2400 RNW 05 FIX OVERFLY MURPO 2400 HOLD AT FIX MURPO RIGHT TURN INBOUNDCOURSE 052 LEGTIME 1
+ TRANSITION SEVPU FIX SEVPU
+ TRANSITION VILPI FIX VILPI
+APPROACH RNV23 FIX SIKRI AT OR ABOVE 2500 FIX ROSDU 2400 RNW 23 FIX OVERFLY PEPVA 2400 HOLD AT FIX PEPVA RIGHT TURN INBOUNDCOURSE 232 LEGTIME 1
+ TRANSITION MIDPI FIX MIDPI
+ TRANSITION VIMVA FIX VIMVA
+ENDAPPROACHES

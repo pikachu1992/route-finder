@@ -1,0 +1,52 @@
+//UUMB (KUBINKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARSEP LATLON N 55 42.3 E 36 57.883333
+FIX ATRUN LATLON N 55 40.6 E 35 45.683333
+FIX D220D LATLON N 55 34.833334 E 36 35.016667
+FIX KULEG LATLON N 55 19.8 E 36 5.583334
+FIX N LATLON N 55 37.5 E 36 40.6
+FIX N27 LATLON N 55 40.183333 E 35 53.1
+FIX ND LATLON N 55 38.6 E 36 42.9
+FIX UKNB LATLON N 54 44.25 E 35 13.266667
+FIX UMBEG LATLON N 55 39 E 36 56.383333
+FIX UMNB LATLON N 55 51.716666 E 36 54.666667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+SIDS
+SID ATRUN1 RNW 22 FIX OVERFLY D220D AT OR ABOVE 1260 TRK 309 INTERCEPT RADIAL 264 TO FIX ATRUN FIX ATRUN AT OR ABOVE 6000
+SID UK1 RNW 22 FIX D220D AT OR ABOVE 1260 FIX UKNB AT OR ABOVE 6000
+SID UM1 RNW 22 FIX OVERFLY D220D AT OR ABOVE 1260 TURN RIGHT DIRECT FIX UMNB AT OR ABOVE 6000
+SID UMBEG1 RNW 22 FIX OVERFLY D220D AT OR ABOVE 1260 TURN RIGHT DIRECT FIX ND FIX UMBEG AT OR ABOVE 6000
+ENDSIDS
+
+STARS
+STAR ARSEP2 FIX ARSEP 6000 FIX N 4000
+  RNW 22
+STAR ATRUN2 FIX ATRUN 6000 FIX N27 FIX N 4000
+  RNW 22
+STAR KULEG2 FIX KULEG 6000 FIX N 4000
+  RNW 22
+STAR UM2 FIX UMNB 6000 FIX N 4000
+  RNW 22
+ENDSTARS

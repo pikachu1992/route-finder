@@ -1,0 +1,45 @@
+//KIDI (INDIANA CO/STEWART)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEBOX LATLON N 40 45.307 W 78 42.4915
+FIX EYERS LATLON N 40 38.490833 W 79 13.6145
+FIX HARBI LATLON N 40 37.247833 W 78 58.7975
+FIX JAGET LATLON N 40 49.0605 W 79 27.2305
+FIX JEVRT LATLON N 40 26.622667 W 78 45.296666
+FIX OMISE LATLON N 40 39.348167 W 79 24.064333
+FIX PATME LATLON N 40 30.358834 W 79 29.829833
+FIX TABBU LATLON N 40 38.251333 W 79 10.73
+FIX UHGUS LATLON N 40 36.352834 W 78 48.358667
+FIX WATAR LATLON N 40 37.495 W 79 1.715
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX OMISE AT OR ABOVE 3600 FIX EYERS 3100 FIX TABBU AT OR ABOVE 2380 RNW 11 TRK 106 UNTIL 1819 FIX OVERFLY UHGUS AT OR ABOVE 4800 HOLD AT FIX UHGUS RIGHT TURN INBOUNDCOURSE 286 LEGDIST 5
+ TRANSITION JAGET FIX JAGET
+ TRANSITION OMISE HOLD AT FIX OMISE RIGHT TURN INBOUNDCOURSE 106 ALT 3600 LEGDIST 4
+ TRANSITION PATME FIX PATME
+APPROACH RNV29 FIX UHGUS AT OR ABOVE 4800 FIX HARBI 3100 FIX WATAR AT OR ABOVE 2380 RNW 29 TRK 286 UNTIL 1669 FIX OVERFLY OMISE AT OR ABOVE 3600 HOLD AT FIX OMISE RIGHT TURN INBOUNDCOURSE 106 LEGDIST 4
+ TRANSITION CEBOX FIX CEBOX
+ TRANSITION JEVRT FIX JEVRT
+ TRANSITION UHGUS HOLD AT FIX UHGUS RIGHT TURN INBOUNDCOURSE 286 ALT 4800 LEGDIST 5
+ENDAPPROACHES

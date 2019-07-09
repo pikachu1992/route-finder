@@ -1,0 +1,39 @@
+//KCKZ (PENNRIDGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AZICE LATLON N 40 26.394167 W 75 6.634166
+FIX BIGGY LATLON N 40 25.177 W 74 58.362167
+FIX CEXIR LATLON N 40 19.925666 W 75 29.500834
+FIX EKSIC LATLON N 40 22.030667 W 75 22.093333
+FIX EWOKO LATLON N 40 22.586333 W 75 20.132
+FIX EYMON LATLON N 40 20.270333 W 75 28.2785
+FIX PTW LATLON N 40 13.333834 W 75 33.615
+FIX ZALGA LATLON N 40 24.664834 W 75 12.777667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX CEXIR AT OR ABOVE 2700 FIX EKSIC 1800 FIX EWOKO AT OR ABOVE 1220 RNW 08 TRK 082 UNTIL 968 TURN RIGHT DIRECT FIX OVERFLY CEXIR AT OR ABOVE 2700 HOLD AT FIX CEXIR RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4
+ TRANSITION PTW FIX PTW
+APPROACH RNV26 FIX AZICE AT OR ABOVE 2700 FIX ZALGA 1700 RNW 26 TRK 262 UNTIL 968 FIX OVERFLY EYMON AT OR ABOVE 2700 HOLD AT FIX EYMON RIGHT TURN INBOUNDCOURSE 082 LEGDIST 4
+ TRANSITION BIGGY FIX BIGGY
+ENDAPPROACHES

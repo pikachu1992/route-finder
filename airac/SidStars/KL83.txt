@@ -1,0 +1,36 @@
+//KL83 (THIBODAUX MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MAKBR LATLON N 29 44.8685 W 90 49.946
+FIX PI001 LATLON N 29 36.361464 W 90 49.886156
+FIX PI002 LATLON N 29 33.215933 W 90 46.514952
+FIX PI003 LATLON N 29 29.865415 W 90 50.146637
+FIX TBD LATLON N 29 39.859333 W 90 49.745666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VORA08 FIX TBD 1500 FIX MAKBR 620 RNW 08 TRK 356 UNTIL 1800 TURN LEFT DIRECT FIX TBD
+ TRANSITION TBD FIX PI001 AT OR ABOVE 1800 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 1800 SPEED 210 FIX PI003 AT OR ABOVE 1800 SPEED 210
+APPROACH VORA26 FIX TBD 1500 FIX MAKBR 620 RNW 26 TRK 356 UNTIL 1800 TURN LEFT DIRECT FIX TBD
+ TRANSITION TBD FIX PI001 AT OR ABOVE 1800 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 1800 SPEED 210 FIX PI003 AT OR ABOVE 1800 SPEED 210
+ENDAPPROACHES

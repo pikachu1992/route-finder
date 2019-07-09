@@ -1,0 +1,37 @@
+//K18I (MC CREARY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGIGY LATLON N 36 33.035833 W 84 31.071334
+FIX BEZIL LATLON N 36 39.883333 W 84 25.0985
+FIX CRORE LATLON N 36 50.991 W 84 15.363833
+FIX DELSY LATLON N 36 37.948333 W 84 26.788667
+FIX OARED LATLON N 36 46.082833 W 84 19.6725
+FIX ZUVOL LATLON N 36 43.151833 W 84 22.237834
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX AGIGY AT OR ABOVE 4700 FIX DELSY 2800 FIX BEZIL AT OR ABOVE 2040 RNW 04 TRK 040 UNTIL 1780 FIX OVERFLY CRORE AT OR ABOVE 4000 HOLD AT FIX CRORE RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4
+ TRANSITION AGIGY HOLD AT FIX AGIGY RIGHT TURN INBOUNDCOURSE 040 ALT 4700 LEGDIST 5
+APPROACH RNV22 FIX CRORE AT OR ABOVE 4000 FIX OARED 3000 FIX ZUVOL AT OR ABOVE 1860 RNW 22 TRK 220 UNTIL 1780 FIX OVERFLY AGIGY AT OR ABOVE 4700 HOLD AT FIX AGIGY RIGHT TURN INBOUNDCOURSE 040 LEGDIST 5
+ TRANSITION CRORE HOLD AT FIX CRORE RIGHT TURN INBOUNDCOURSE 220 ALT 4000 LEGDIST 4
+ENDAPPROACHES

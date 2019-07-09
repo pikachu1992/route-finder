@@ -1,0 +1,42 @@
+//MMIT (MIL AIR BASE NO 2 - GEN ANTONI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 35VOR LATLON N 16 31.338 W 95 5.4525
+FIX CF18 LATLON N 16 36.847166 W 95 5.052833
+FIX CF36 LATLON N 16 19.803833 W 95 5.416333
+FIX FF18 LATLON N 16 33.842167 W 95 5.271
+FIX FF36 LATLON N 16 22.8145 W 95 5.525167
+FIX IZT LATLON N 16 27.832166 W 95 5.706833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID IZT1A RNW 18 TRK 174 UNTIL 510 TRK 174 UNTIL 7.0 FROM FIX IZT TURN LEFT DIRECT FIX IZT
+SID IZT1B RNW 36 TRK 000 UNTIL 510 TRK 000 UNTIL 7.0 FROM FIX IZT TURN RIGHT DIRECT FIX IZT
+ENDSIDS
+
+APPROACHES
+APPROACH VDM18 FIX CF18 AT OR ABOVE 3000 FIX FF18 2100 FIX 35VOR AT OR ABOVE 1300 FIX IZT 229 RNW 18 TRK 174 UNTIL 7.0 FROM FIX IZT TURN LEFT DIRECT FIX IZT AT OR ABOVE 5000
+ TRANSITION IZT FIX IZT AT OR ABOVE 5000 TRK 019 UNTIL 9.0 FROM FIX IZT
+APPROACH VDM36 FIX CF36 AT OR ABOVE 2200 FIX FF36 1300 RNW 36 FIX IZT TRK 000 UNTIL 7.0 FROM FIX IZT TURN RIGHT DIRECT FIX IZT AT OR ABOVE 5000
+ TRANSITION IZT FIX IZT AT OR ABOVE 5000 TRK 153 UNTIL 8.0 FROM FIX IZT
+ENDAPPROACHES

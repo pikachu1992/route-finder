@@ -1,0 +1,46 @@
+//KAVK (ALVA REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANEME LATLON N 36 35.364167 W 98 48.138167
+FIX AURAL LATLON N 36 44.1915 W 98 40.230334
+FIX CADAP LATLON N 36 40.362 W 98 40.240166
+FIX FASPA LATLON N 36 35.337667 W 98 32.368333
+FIX HINEN LATLON N 36 35.355334 W 98 40.253167
+FIX SPIRY LATLON N 36 57.391333 W 98 32.273
+FIX WADAT LATLON N 36 57.418 W 98 48.1185
+FIX ZIXIN LATLON N 36 52.402667 W 98 40.208833
+FIX ZOKOF LATLON N 36 57.409166 W 98 40.195667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX ZOKOF AT OR ABOVE 3300 FIX ZIXIN 3300 RNW 18 TRK 176 UNTIL 1738 FIX OVERFLY HINEN AT OR ABOVE 3300 HOLD AT FIX HINEN RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4
+ TRANSITION SPIRY FIX SPIRY
+ TRANSITION WADAT FIX WADAT
+ TRANSITION ZOKOF HOLD AT FIX ZOKOF LEFT TURN INBOUNDCOURSE 176 ALT 3300 LEGDIST 4
+APPROACH RNV36 FIX HINEN AT OR ABOVE 3300 FIX CADAP 3300 FIX AURAL AT OR ABOVE 2080 RNW 36 TRK 356 UNTIL 1721 FIX ZOKOF AT OR ABOVE 3300 HOLD AT FIX ZOKOF LEFT TURN INBOUNDCOURSE 176 LEGDIST 4
+ TRANSITION ANEME FIX ANEME
+ TRANSITION FASPA FIX FASPA
+ TRANSITION HINEN HOLD AT FIX HINEN RIGHT TURN INBOUNDCOURSE 356 ALT 3300 LEGDIST 4
+ENDAPPROACHES

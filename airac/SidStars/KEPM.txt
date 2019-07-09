@@ -1,0 +1,41 @@
+//KEPM (EASTPORT MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BARHA LATLON N 44 29.298 W 68 19.652666
+FIX CAXIX LATLON N 44 56.170667 W 67 3.736333
+FIX FEGUD LATLON N 44 51.7015 W 66 55.245833
+FIX JEXAT LATLON N 44 53.280667 W 66 58.241
+FIX KEAND LATLON N 44 57.534667 W 67 6.336334
+FIX LUBCI LATLON N 44 48.275333 W 66 48.7595
+FIX MOWND LATLON N 45 22.6 W 66 39.433333
+FIX OCESA LATLON N 44 40.246667 W 66 57.122333
+FIX PIERR LATLON N 45 0.7415 W 67 12.465334
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX PIERR AT OR ABOVE 3000 FIX KEAND 1600 FIX CAXIX AT OR ABOVE 840 RNW 15 TRK 145 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY PIERR AT OR ABOVE 4000 HOLD AT FIX PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4
+ TRANSITION BARHA FIX BARHA
+ TRANSITION MOWND FIX MOWND FIX PIERR AT OR ABOVE 3000 HOLD AT FIX PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 3000 LEGDIST 4
+APPROACH RNV33 FIX LUBCI AT OR ABOVE 3000 FIX FEGUD 1600 FIX JEXAT AT OR ABOVE 720 RNW 33 TRK 326 UNTIL 378 FIX OVERFLY PIERR AT OR ABOVE 4000 HOLD AT FIX PIERR RIGHT TURN INBOUNDCOURSE 145 ALT 4000 LEGDIST 4
+ TRANSITION BARHA FIX BARHA FIX OCESA AT OR ABOVE 3000
+ENDAPPROACHES

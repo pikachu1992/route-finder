@@ -1,0 +1,37 @@
+//FASS (SISHEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GADPA LATLON S 27 26.515834 E 22 58.977167
+FIX SS1F1 LATLON S 27 33.737833 E 22 57.0875
+FIX SS1MP LATLON S 27 38.214334 E 22 59.571
+FIX SS1T1 LATLON S 27 30.141667 E 22 55.0945
+FIX TEVUD LATLON S 27 25.646333 E 22 52.604666
+FIX UVMAP LATLON S 27 30.69 E 22 49.505
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX SS1T1 AT OR ABOVE 5500 SPEED 210 FIX SS1F1 5500 FIX OVERFLY SS1MP 3875 RNW 17 TRK 173 UNTIL 4160 TURN LEFT DIRECT FIX GADPA AT OR ABOVE 6700 HOLD AT FIX GADPA RIGHT TURN INBOUNDCOURSE 243 ALT 6700 SPEED 230 LEGTIME 1
+ TRANSITION GADPA FIX GADPA AT OR ABOVE 6700 SPEED 210
+ TRANSITION TEVUD FIX TEVUD AT OR ABOVE 6700 SPEED 210
+ TRANSITION UVMAP FIX UVMAP AT OR ABOVE 6700 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//K1C1 (PAXTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COOKS LATLON N 40 32.713834 W 88 45.9095
+FIX FODBU LATLON N 40 38.375333 W 88 14.282333
+FIX JUSAS LATLON N 40 32.292 W 88 7.687834
+FIX NEWTT LATLON N 41 3.544333 W 88 4.5985
+FIX ODOWY LATLON N 40 38.4085 W 88 1.146334
+FIX PI001 LATLON N 40 38.249103 W 88 11.204497
+FIX PI002 LATLON N 40 40.26603 W 88 16.210244
+FIX PI003 LATLON N 40 44.464146 W 88 13.714839
+FIX RBS LATLON N 40 34.902167 W 88 9.856
+FIX VEVKY LATLON N 40 38.395 W 88 7.714333
+FIX WEARS LATLON N 40 34.2205 W 87 37.364833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX VEVKY AT OR ABOVE 2500 FIX JUSAS 2500 RNW 18 TRK 183 UNTIL 1180 TURN RIGHT DIRECT FIX OVERFLY VEVKY AT OR ABOVE 2500 HOLD AT FIX VEVKY RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION COOKS FIX COOKS FIX FODBU AT OR ABOVE 2500
+ TRANSITION NEWTT FIX NEWTT
+ TRANSITION WEARS FIX WEARS FIX ODOWY AT OR ABOVE 2500
+APPROACH VOR18 FIX RBS 2500 RNW 18 TRK 166 UNTIL 1180 TURN RIGHT DIRECT FIX RBS AT OR ABOVE 2500 HOLD AT FIX RBS RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1
+ TRANSITION RBS FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

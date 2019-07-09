@@ -1,0 +1,40 @@
+//KD09 (BOTTINEAU MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BALTA LATLON N 48 11.444833 W 100 2.853334
+FIX CUSKI LATLON N 48 53.112 W 100 29.9955
+FIX HIPOV LATLON N 48 48.228334 W 100 22.621834
+FIX JOPWO LATLON N 48 46.065833 W 100 19.368167
+FIX SINMU LATLON N 48 32.770333 W 100 10.455833
+FIX VATYY LATLON N 48 42.471 W 100 13.975
+FIX WUTUT LATLON N 48 45.727834 W 100 41.170834
+FIX ZONWY LATLON N 48 32.346334 W 100 20.970667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX VATYY AT OR ABOVE 3500 FIX JOPWO 3300 FIX HIPOV AT OR ABOVE 2300 RNW 31 FIX CUSKI TURN LEFT DIRECT FIX WUTUT FIX OVERFLY ZONWY AT OR ABOVE 3900 HOLD AT FIX ZONWY RIGHT TURN INBOUNDCOURSE 078 LEGDIST 4
+ TRANSITION BALTA FIX BALTA FIX SINMU AT OR ABOVE 3500
+ TRANSITION ZONWY FIX ZONWY FIX SINMU AT OR ABOVE 3500
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//K2J5 (MILLEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JETOP LATLON N 32 58.941667 W 81 59.315333
+FIX JEXEX LATLON N 32 44.091334 W 81 46.093166
+FIX KEPIA LATLON N 32 50.666833 W 81 57.152
+FIX MOHON LATLON N 32 42.439166 W 81 55.008334
+FIX OKJEJ LATLON N 32 48.147167 W 81 56.4945
+FIX REPKE LATLON N 32 56.422333 W 81 58.656
+FIX TORRO LATLON N 33 4.719833 W 82 0.829
+FIX WUNAL LATLON N 33 3.050833 W 82 9.774334
+FIX YOSVU LATLON N 33 6.378167 W 81 51.878
+FIX ZOGIV LATLON N 32 40.7765 W 82 3.918334
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX TORRO AT OR ABOVE 3000 FIX JETOP 1900 FIX REPKE AT OR ABOVE 1080 RNW 17 TRK 173 UNTIL 640 FIX OVERFLY MOHON AT OR ABOVE 3000 HOLD AT FIX MOHON RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4
+ TRANSITION TORRO HOLD AT FIX TORRO RIGHT TURN INBOUNDCOURSE 173 ALT 3000 LEGDIST 4
+ TRANSITION WUNAL FIX WUNAL
+ TRANSITION YOSVU FIX YOSVU
+APPROACH RNV35 FIX MOHON AT OR ABOVE 3000 FIX OKJEJ 1900 FIX KEPIA AT OR ABOVE 1080 RNW 35 TRK 353 UNTIL 476 FIX OVERFLY TORRO AT OR ABOVE 3000 HOLD AT FIX TORRO RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4
+ TRANSITION JEXEX FIX JEXEX
+ TRANSITION MOHON HOLD AT FIX MOHON RIGHT TURN INBOUNDCOURSE 353 ALT 3000 LEGDIST 4
+ TRANSITION ZOGIV FIX ZOGIV
+ENDAPPROACHES

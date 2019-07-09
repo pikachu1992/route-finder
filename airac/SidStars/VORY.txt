@@ -1,0 +1,39 @@
+//VORY (RAJAHMUNDRY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40VOR LATLON N 17 8.776834 E 81 52.415
+FIX FD05 LATLON N 17 1.683334 E 81 42.835333
+FIX FD23 LATLON N 17 10.361666 E 81 54.955834
+FIX MD05 LATLON N 17 5.299 E 81 47.312
+FIX MD23 LATLON N 17 7.136666 E 81 49.787333
+FIX RJM LATLON N 17 6.591 E 81 48.912334
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH VDM05 FIX FD05 2200 FIX MD05 425 RNW 05 TRK 051 UNTIL 2200 TURN RIGHT DIRECT FIX RJM 3500 HOLD AT FIX RJM RIGHT TURN INBOUNDCOURSE 254 ALT 3500 LEGTIME 1
+ TRANSITION RJM1 FIX RJM AT OR ABOVE 3500 TRK 254 UNTIL 9.0 FROM FIX RJM
+ TRANSITION RJM2 FIX RJM AT OR ABOVE 3500 TRK 243 UNTIL 9.0 FROM FIX RJM
+APPROACH VDM23 FIX FD23 2200 FIX 40VOR AT OR ABOVE 1280 FIX MD23 325 RNW 23 TRK 238 UNTIL 2200 TURN RIGHT DIRECT FIX RJM 3500 HOLD AT FIX RJM LEFT TURN INBOUNDCOURSE 081 ALT 3500 LEGTIME 1
+ TRANSITION RJM1 FIX RJM AT OR ABOVE 3500 TRK 081 UNTIL 9.0 FROM FIX RJM
+ TRANSITION RJM2 FIX RJM AT OR ABOVE 3500 TRK 070 UNTIL 9.0 FROM FIX RJM
+ENDAPPROACHES

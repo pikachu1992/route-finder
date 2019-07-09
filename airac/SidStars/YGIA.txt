@@ -1,0 +1,47 @@
+//YGIA (GINBATA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GIAEF LATLON S 22 34.896167 E 120 8.45
+FIX GIAEG LATLON S 22 30.18 E 120 16.744834
+FIX GIAEH LATLON S 22 34.897166 E 120 20.300167
+FIX GIAEI LATLON S 22 34.894667 E 120 14.897333
+FIX GIAEJ LATLON S 22 39.609334 E 120 16.745666
+FIX GIAEM LATLON S 22 34.897166 E 120 2.868
+FIX GIAWB LATLON S 22 39.608333 E 119 47.545
+FIX GIAWC LATLON S 22 34.8925 E 119 43.991
+FIX GIAWD LATLON S 22 30.179 E 119 47.546666
+FIX GIAWF LATLON S 22 34.895666 E 119 55.841
+FIX GIAWI LATLON S 22 34.893833 E 119 49.393667
+FIX GIAWM LATLON S 22 34.897166 E 120 1.4095
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX GIAWI AT OR ABOVE 5000 FIX GIAWF 3100 FIX OVERFLY GIAWM 1459 RNW 09 TURN RIGHT DIRECT FIX GIAWB AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAWB FIX GIAWB AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAWC FIX GIAWC AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAWD FIX GIAWD AT OR ABOVE 5000 SPEED 210
+APPROACH RNV27 FIX GIAEI AT OR ABOVE 5000 FIX GIAEF 3100 FIX OVERFLY GIAEM 1455 RNW 27 TURN LEFT DIRECT FIX GIAEJ AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAEG FIX GIAEG AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAEH FIX GIAEH AT OR ABOVE 5000 SPEED 210
+ TRANSITION GIAEJ FIX GIAEJ AT OR ABOVE 5000 SPEED 210
+ENDAPPROACHES

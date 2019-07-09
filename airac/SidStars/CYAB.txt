@@ -1,0 +1,45 @@
+//CYAB (ARCTIC BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADSIG LATLON N 72 45.554833 W 84 47.815333
+FIX BEMEP LATLON N 72 54.994166 W 84 13.070666
+FIX DAMUD LATLON N 72 50.286833 W 84 30.520166
+FIX EBDAB LATLON N 72 54.8945 W 84 44.970167
+FIX GABAG LATLON N 72 56.936666 W 84 51.432833
+FIX GABIV LATLON N 73 14.315167 W 85 10.007167
+FIX IGROK LATLON N 72 59.775667 W 85 0.476167
+FIX IGSEN LATLON N 73 4.468667 W 85 14.375833
+FIX OLANA LATLON N 73 0.900833 W 85 5.086333
+FIX RABUR LATLON N 73 5.8225 W 85 48.160667
+FIX SEKAS LATLON N 73 10.0835 W 85 29.161834
+FIX SUTKA LATLON N 73 5.2605 W 85 16.448666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX SEKAS AT OR ABOVE 2200 FIX SUTKA 2030 FIX IGSEN AT OR ABOVE 1710 FIX OVERFLY OLANA 282 RNW 13 TRK 018 UNTIL 1400 TURN RIGHT DIRECT FIX OVERFLY RABUR 2700 HOLD AT FIX RABUR RIGHT TURN INBOUNDCOURSE 008 LEGTIME 1
+ TRANSITION GABIV FIX GABIV
+ TRANSITION RABUR FIX RABUR
+APPROACH RNV31 FIX DAMUD AT OR ABOVE 3300 FIX EBDAB 3000 FIX GABAG AT OR ABOVE 1900 FIX OVERFLY IGROK 356 RNW 31 TURN LEFT DIRECT FIX OVERFLY ADSIG 3800 HOLD AT FIX ADSIG LEFT TURN INBOUNDCOURSE 008 LEGTIME 1
+ TRANSITION ADSIG FIX ADSIG
+ TRANSITION BEMEP FIX BEMEP
+ENDAPPROACHES

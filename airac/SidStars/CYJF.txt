@@ -1,0 +1,43 @@
+//CYJF (FT LIARD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVSEG LATLON N 60 26.041333 W 123 19.217
+FIX BOMDO LATLON N 60 7.667 W 123 42.8105
+FIX DURMI LATLON N 60 21.563167 W 123 11.1955
+FIX EMKOT LATLON N 60 17.612333 W 123 20.258833
+FIX FF21 LATLON N 60 17.914667 W 123 12.942
+FIX GONUL LATLON N 60 17.077 W 123 3.2105
+FIX IMOMO LATLON N 60 16.269833 W 123 23.324666
+FIX PI001 LATLON N 60 15.831779 W 123 21.591116
+FIX PI002 LATLON N 60 14.427631 W 123 13.400037
+FIX PI003 LATLON N 60 18.663113 W 123 9.786491
+FIX YJFNB LATLON N 60 14.3 W 123 27.933334
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH NDB21 FIX FF21 3400 FIX YJFNB 745 RNW 21 TRK 223 UNTIL 1110 HDG 043 UNTIL 4500 TURN LEFT DIRECT FIX YJFNB 4500 HOLD AT FIX YJFNB LEFT TURN INBOUNDCOURSE 223 LEGTIME 1
+ TRANSITION YJF FIX YJFNB AT OR ABOVE 4000 FIX PI001 AT OR ABOVE 3400 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3400 SPEED 210 FIX PI003 AT OR ABOVE 3400 SPEED 210
+APPROACH RNV21 FIX DURMI AT OR ABOVE 3400 FIX EMKOT 2400 FIX IMOMO AT OR ABOVE 1740 RNW 21 FIX OVERFLY BOMDO 6400 HOLD AT FIX BOMDO LEFT TURN INBOUNDCOURSE 208 LEGTIME 1
+ TRANSITION AVSEG FIX AVSEG
+ TRANSITION GONUL FIX GONUL
+ENDAPPROACHES

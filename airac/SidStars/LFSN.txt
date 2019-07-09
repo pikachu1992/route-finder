@@ -1,0 +1,35 @@
+//LFSN (ESSEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPL LATLON N 48 19.07 E 6 3.565
+FIX FSN03 LATLON N 48 34.13 E 6 7.885
+FIX ISN03 LATLON N 48 30.818333 E 6 5.211667
+FIX SN404 LATLON N 48 29.39 E 6 9.348334
+FIX SN410 LATLON N 48 42.87 E 6 14.973334
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX ISN03 AT OR ABOVE 3300 SPEED 170 FIX FSN03 3300 RNW 03 FIX OVERFLY SN410 SPEED 170 TURN RIGHT DIRECT FIX SN404 AT OR ABOVE 3300 SPEED 170
+ TRANSITION EPL FIX EPL AT OR ABOVE 4000
+ TRANSITION SN404 FIX SN404 AT OR ABOVE 3300 SPEED 170
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//SKQU (JOSE CELESTINO MUTIS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF335 LATLON N 5 4.721833 W 74 50.7375
+FIX MQU LATLON N 5 12.433333 W 74 55.45
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VORA01 FIX FF335 4600 FIX OVERFLY MQU 3610 RNW 01 TURN RIGHT DIRECT FIX MQU 7000 HOLD AT FIX MQU LEFT TURN INBOUNDCOURSE 170 LEGTIME 1
+ TRANSITION MQU FIX MQU AT OR ABOVE 4600 TRK 170 UNTIL 9.0 FROM FIX MQU
+APPROACH VORA19 FIX FF335 4600 FIX OVERFLY MQU 3610 RNW 19 TURN RIGHT DIRECT FIX MQU 7000 HOLD AT FIX MQU LEFT TURN INBOUNDCOURSE 170 LEGTIME 1
+ TRANSITION MQU FIX MQU AT OR ABOVE 4600 TRK 170 UNTIL 9.0 FROM FIX MQU
+ENDAPPROACHES

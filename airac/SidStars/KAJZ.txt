@@ -1,0 +1,38 @@
+//KAJZ (BLAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGIME LATLON N 38 29.6905 W 108 25.219834
+FIX AIRNS LATLON N 38 42.259667 W 108 9.413833
+FIX BUVME LATLON N 38 40.6735 W 108 11.212667
+FIX CAKBI LATLON N 38 37.765834 W 108 14.5045
+FIX DEWAX LATLON N 38 35.793 W 108 15.2755
+FIX EDEVE LATLON N 38 33.82 W 108 16.045667
+FIX NADIN LATLON N 38 29.873333 W 108 17.5835
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 14
+RNW 21
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX CAKBI AT OR ABOVE 8900 FIX BUVME AT OR ABOVE 7700 FIX AIRNS 7100 RNW 03 TRK 032 UNTIL 7000 TURN RIGHT DIRECT FIX CAKBI SPEED 165 FIX OVERFLY NADIN AT OR ABOVE 11600 HOLD AT FIX NADIN LEFT TURN INBOUNDCOURSE 220 LEGDIST 7
+ TRANSITION AGIME FIX AGIME FIX NADIN AT OR ABOVE 10400 FIX EDEVE AT OR ABOVE 10000 SPEED 210 FIX DEWAX AT OR ABOVE 9000
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//KP08 (COOLIDGE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20THR LATLON N 32 57.470666 W 111 23.13
+FIX AZEKE LATLON N 32 55.421833 W 111 32.116333
+FIX CF05 LATLON N 32 54.831 W 111 38.0145
+FIX ROCQO LATLON N 32 59.468666 W 111 19.008334
+FIX SUTBY LATLON N 32 56.470834 W 111 25.189834
+FIX TFD LATLON N 32 53.151334 W 111 54.524
+FIX TFD09 LATLON N 32 54.235333 W 111 43.911667
+FIX TOTEC LATLON N 32 49.597 W 111 38.532
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 17
+RNW 23
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VDM05 FIX CF05 AT OR ABOVE 3800 FIX AZEKE 3200 RNW 05 TRK 071 UNTIL 2300 TURN LEFT DIRECT FIX AZEKE AT OR ABOVE 3500 HOLD AT FIX AZEKE RIGHT TURN INBOUNDCOURSE 071 LEGTIME 1
+ TRANSITION TFD FIX TFD FIX TFD09 AT OR ABOVE 3800
+APPROACH GPS23 FIX ROCQO 3900 FIX 20THR AT OR ABOVE 2340 FIX OVERFLY SUTBY 1613 RNW 23 TRK 228 UNTIL 1980 FIX OVERFLY TOTEC AT OR ABOVE 3900 HOLD AT FIX TOTEC RIGHT TURN INBOUNDCOURSE 227 LEGTIME 1
+ TRANSITION TOTEC FIX TOTEC FIX ROCQO AT OR ABOVE 4500 HOLD AT FIX ROCQO LEFT TURN INBOUNDCOURSE 238 ALT 3900 LEGTIME 1
+ENDAPPROACHES

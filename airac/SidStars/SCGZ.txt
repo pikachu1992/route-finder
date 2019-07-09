@@ -1,0 +1,38 @@
+//SCGZ (GUARDIAMARINA ZANARTU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF250 LATLON S 54 54.794167 W 67 25.259167
+FIX PWL LATLON S 54 55.776667 W 67 37.27
+FIX SUNLI LATLON S 54 57.783334 W 68 44.2
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID DUMAS2 RNW 26 TRK 258 UNTIL 490 TRK 270 UNTIL 4000 HDG 222 INTERCEPT RADIAL 252 TO FIX SUNLI FIX SUNLI
+ENDSIDS
+
+APPROACHES
+APPROACH VORA08 FIX FF250 3200 FIX PWL 1140 RNW 08 TRK 270 UNTIL 6000 TURN LEFT DIRECT FIX PWL HOLD AT FIX PWL LEFT TURN INBOUNDCOURSE 052 LEGTIME 1
+ TRANSITION PWL FIX PWL AT OR ABOVE 6000 TRK 052 UNTIL 7.0 FROM FIX PWL
+APPROACH VORA26 FIX FF250 3200 FIX PWL 1140 RNW 26 TRK 270 UNTIL 6000 TURN LEFT DIRECT FIX PWL HOLD AT FIX PWL LEFT TURN INBOUNDCOURSE 052 LEGTIME 1
+ TRANSITION PWL FIX PWL AT OR ABOVE 6000 TRK 052 UNTIL 7.0 FROM FIX PWL
+ENDAPPROACHES

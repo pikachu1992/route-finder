@@ -1,0 +1,44 @@
+//CHB3 (HOPE BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOSUG LATLON N 68 23.498833 W 106 42.587666
+FIX DUVOP LATLON N 68 4.106333 W 106 39.8215
+FIX ELETU LATLON N 68 5.1835 W 106 39.264334
+FIX IMEPO LATLON N 68 12.225334 W 106 35.599333
+FIX KINOR LATLON N 67 57.4395 W 106 55.936
+FIX OMVIB LATLON N 68 15.068 W 106 34.109
+FIX PIGTO LATLON N 68 14.1585 W 106 34.5865
+FIX SATET LATLON N 67 55.672667 W 106 31.4775
+FIX SUVIR LATLON N 68 20.9345 W 106 31.013167
+FIX TAKSA LATLON N 67 58.236833 W 106 42.842666
+FIX ULBIP LATLON N 68 21.6985 W 106 17.680667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX TAKSA AT OR ABOVE 2500 SPEED 200 FIX DUVOP 1880 RNW 01 FIX OVERFLY PIGTO 2500 HOLD AT FIX PIGTO RIGHT TURN INBOUNDCOURSE 000 SPEED 175 LEGTIME 1
+ TRANSITION KINOR FIX KINOR SPEED 200
+ TRANSITION SATET FIX SATET SPEED 200
+APPROACH RNV19 FIX SUVIR AT OR ABOVE 2500 SPEED 200 FIX OMVIB 1780 FIX IMEPO AT OR ABOVE 850 RNW 19 FIX OVERFLY ELETU 2500 HOLD AT FIX ELETU RIGHT TURN INBOUNDCOURSE 018 SPEED 175 LEGTIME 1
+ TRANSITION BOSUG FIX BOSUG SPEED 200
+ TRANSITION ULBIP FIX ULBIP SPEED 200
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//NZGT (GLENTANNER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATMAS LATLON S 44 8.811833 E 170 10.801667
+FIX GT403 LATLON S 43 57.460667 E 170 9.100667
+FIX IDPAX LATLON S 44 4.440167 E 170 9.820333
+FIX MAMUS LATLON S 44 8.106167 E 170 16.833167
+FIX OMUBU LATLON S 43 56.7435 E 170 8.9495
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+SIDS
+SID MAMUS2 RNW 15 TRK 147 UNTIL 2280 FIX OMUBU AT OR ABOVE 2500 FIX MAMUS
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA15 FIX ATMAS AT OR ABOVE 5400 FIX IDPAX 5300 FIX OVERFLY GT403 3240 RNW 15 TURN RIGHT DIRECT FIX MAMUS AT OR ABOVE 5900 SPEED 130
+ TRANSITION MAMUS FIX MAMUS
+APPROACH RNVA33 FIX ATMAS AT OR ABOVE 5400 FIX IDPAX 5300 FIX OVERFLY GT403 3240 RNW 33 TURN RIGHT DIRECT FIX MAMUS AT OR ABOVE 5900 SPEED 130
+ TRANSITION MAMUS FIX MAMUS
+ENDAPPROACHES

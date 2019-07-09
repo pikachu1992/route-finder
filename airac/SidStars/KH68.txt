@@ -1,0 +1,40 @@
+//KH68 (HEFNER- EASLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEMUL LATLON N 35 46.432834 W 95 14.272
+FIX COGES LATLON N 35 46.403167 W 95 20.4165
+FIX DIYES LATLON N 35 46.368167 W 95 26.561
+FIX FEBSI LATLON N 35 52.512 W 95 20.464834
+FIX OKM LATLON N 35 41.5845 W 95 51.957334
+FIX TUSOC LATLON N 36 12.715 W 95 20.625667
+FIX VIANE LATLON N 35 31.672667 W 94 59.181667
+FIX WAGUR LATLON N 36 4.034 W 95 20.556334
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX TUSOC AT OR ABOVE 2500 FIX WAGUR 2500 RNW 18 TRK 176 UNTIL 998 TURN RIGHT DIRECT FIX OVERFLY TUSOC AT OR ABOVE 2500 HOLD AT FIX TUSOC RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4
+ TRANSITION TUSOC HOLD AT FIX TUSOC RIGHT TURN INBOUNDCOURSE 176 ALT 2500 LEGDIST 4
+APPROACH RNV36 FIX COGES AT OR ABOVE 2300 FIX FEBSI 2300 RNW 36 TRK 356 UNTIL 1100 FIX OVERFLY TUSOC AT OR ABOVE 2500 HOLD AT FIX TUSOC RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4
+ TRANSITION OKM FIX OKM FIX DIYES AT OR ABOVE 3000
+ TRANSITION VIANE FIX VIANE FIX CEMUL AT OR ABOVE 3000
+ENDAPPROACHES

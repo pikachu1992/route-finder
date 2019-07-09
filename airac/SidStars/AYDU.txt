@@ -1,0 +1,38 @@
+//AYDU (DARU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YDUWA LATLON S 8 57.37 E 143 3.6085
+FIX YDUWB LATLON S 8 53.7085 E 143 5.310833
+FIX YDUWC LATLON S 8 54.0465 E 143 9.353
+FIX YDUWF LATLON S 8 59.874167 E 143 8.918833
+FIX YDUWH LATLON S 9 11.325 E 143 13.405333
+FIX YDUWI LATLON S 8 56.748 E 143 7.089167
+FIX YDUWM LATLON S 9 4.215667 E 143 11.460833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH GPS14 FIX YDUWI AT OR ABOVE 1500 FIX YDUWF 1300 FIX OVERFLY YDUWM 390 RNW 14 FIX YDUWH AT OR ABOVE 1500 SPEED 185
+ TRANSITION YDUWA FIX YDUWA AT OR ABOVE 1500 SPEED 185
+ TRANSITION YDUWB FIX YDUWB AT OR ABOVE 1500 SPEED 185
+ TRANSITION YDUWC FIX YDUWC AT OR ABOVE 1500 SPEED 185
+ENDAPPROACHES

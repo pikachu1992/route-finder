@@ -1,0 +1,39 @@
+//KOZA (OZONA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUBAY LATLON N 30 54.778 W 101 20.774167
+FIX DOYAN LATLON N 30 56.913167 W 101 9.414334
+FIX FODUT LATLON N 30 55.847666 W 101 15.095333
+FIX IXALE LATLON N 30 32.315833 W 101 9.1655
+FIX KEMPL LATLON N 30 43.220666 W 100 49.908
+FIX NOPNE LATLON N 30 49.962334 W 101 13.607833
+FIX OZMOS LATLON N 30 47.671834 W 101 28.971334
+FIX SJT LATLON N 31 22.497167 W 100 27.2925
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX FODUT AT OR ABOVE 4300 FIX NOPNE 4200 RNW 16 TRK 160 UNTIL 2940 FIX IXALE AT OR ABOVE 5000 HOLD AT FIX IXALE RIGHT TURN INBOUNDCOURSE 340 LEGDIST 4
+ TRANSITION KEMPL FIX KEMPL FIX DOYAN AT OR ABOVE 5500
+ TRANSITION OZMOS FIX OZMOS FIX BUBAY AT OR ABOVE 5500
+ TRANSITION SJT FIX SJT FIX DOYAN AT OR ABOVE 5500
+ENDAPPROACHES

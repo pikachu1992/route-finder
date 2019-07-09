@@ -1,0 +1,34 @@
+//CYXN (WHALE COVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF15 LATLON N 62 18.221333 W 92 39.059333
+FIX PI001 LATLON N 62 15.419669 W 92 29.041359
+FIX PI002 LATLON N 62 19.340924 W 92 25.246565
+FIX PI003 LATLON N 62 17.727881 W 92 15.979787
+FIX YXNNB LATLON N 62 14.168333 W 92 36.060667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH NDB15 FIX FF15 1300 RNW 15 FIX OVERFLY YXNNB TRK 017 UNTIL 1400 TURN LEFT DIRECT FIX YXNNB 1400 HOLD AT FIX YXNNB RIGHT TURN INBOUNDCOURSE 017 LEGTIME 1
+ TRANSITION YXN FIX PI001 AT OR ABOVE 1300 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 1300 SPEED 210 FIX PI003 AT OR ABOVE 1300 SPEED 210
+ENDAPPROACHES

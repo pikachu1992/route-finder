@@ -1,0 +1,42 @@
+//XS67 (SAN JOSE I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AUSTS LATLON N 28 13.681667 W 97 8.890166
+FIX CRP LATLON N 27 54.226 W 97 26.692834
+FIX EKIFO LATLON N 27 42.700166 W 97 0.4265
+FIX EVUZI LATLON N 28 1.254 W 97 2.0945
+FIX ISEDY LATLON N 28 6.611333 W 97 5.597666
+FIX OGUHO LATLON N 27 46.7185 W 96 52.622666
+FIX RSDMG LATLON N 27 54.148166 W 96 57.458
+FIX WHADE LATLON N 27 52.09 W 96 56.117167
+FIX WORRY LATLON N 28 6.686167 W 97 15.306
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ISEDY AT OR ABOVE 1800 FIX EVUZI 1600 RNW 14 TRK 144 UNTIL 800 TURN LEFT DIRECT FIX OVERFLY ISEDY AT OR ABOVE 1800 HOLD AT FIX ISEDY RIGHT TURN INBOUNDCOURSE 144 LEGDIST 4
+ TRANSITION AUSTS FIX AUSTS
+ TRANSITION ISEDY HOLD AT FIX ISEDY RIGHT TURN INBOUNDCOURSE 144 ALT 1800 LEGDIST 4
+ TRANSITION WORRY FIX WORRY
+APPROACH RNV32 FIX OGUHO AT OR ABOVE 1800 FIX WHADE 1600 FIX RSDMG AT OR ABOVE 840 RNW 32 TRK 324 UNTIL 360 FIX OVERFLY ISEDY AT OR ABOVE 1800 HOLD AT FIX ISEDY RIGHT TURN INBOUNDCOURSE 144 LEGDIST 4
+ TRANSITION CRP FIX CRP FIX EKIFO AT OR ABOVE 3000
+ENDAPPROACHES

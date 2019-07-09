@@ -1,0 +1,43 @@
+//GATB (TOMBOUCTOU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIROV LATLON N 16 47.8055 W 2 50.242333
+FIX DIPTO LATLON N 16 35.185333 W 3 8.702333
+FIX KIRSO LATLON N 16 52.460333 W 2 52.1955
+FIX POMBI LATLON N 16 43.1505 W 2 48.290833
+FIX RIVED LATLON N 16 44.488834 W 3 12.620833
+FIX TANAX LATLON N 16 39.837334 W 3 10.660834
+FIX TB501 LATLON N 16 41.7325 W 3 5.814833
+FIX TB502 LATLON N 16 45.4945 W 2 56.176166
+FIX TB503 LATLON N 16 45.924 W 2 55.074167
+FIX TB504 LATLON N 16 42.155333 W 3 4.732834
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX TANAX AT OR ABOVE 2500 SPEED 230 FIX TB501 2500 RNW 07 FIX OVERFLY TB502 TURN RIGHT DIRECT FIX DIPTO AT OR ABOVE 2500 SPEED 230
+ TRANSITION DIPTO FIX DIPTO AT OR ABOVE 2500 SPEED 230
+ TRANSITION RIVED FIX RIVED AT OR ABOVE 2500 SPEED 230
+APPROACH RNV25 FIX BIROV AT OR ABOVE 2500 SPEED 230 FIX TB503 2500 RNW 25 FIX OVERFLY TB504 TURN LEFT DIRECT FIX POMBI AT OR ABOVE 2500 SPEED 230
+ TRANSITION KIRSO FIX KIRSO AT OR ABOVE 2500 SPEED 230
+ TRANSITION POMBI FIX POMBI AT OR ABOVE 2500 SPEED 230
+ENDAPPROACHES

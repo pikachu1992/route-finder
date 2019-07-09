@@ -1,0 +1,34 @@
+//FMNA (ARRACHART)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D286G LATLON S 12 19.9215 E 49 10.2685
+FIX D296F LATLON S 12 19.0755 E 49 11.700334
+FIX DONB LATLON S 12 20.78 E 49 17.366666
+FIX FN13 LATLON S 12 17.691833 E 49 12.342167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDB13 FIX FN13 2300 RNW 13 FIX OVERFLY DONB TRK 131 UNTIL 780 TURN LEFT DIRECT FIX DONB 3000
+ TRANSITION DO1 FIX DONB AT OR ABOVE 3000 FIX OVERFLY D286G AT OR ABOVE 2300
+ TRANSITION DO2 FIX DONB AT OR ABOVE 3000 FIX OVERFLY D296F AT OR ABOVE 2300
+ENDAPPROACHES

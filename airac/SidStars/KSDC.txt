@@ -1,0 +1,43 @@
+//KSDC (WILLIAMSON-SODUS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOYER LATLON N 43 13.742167 W 77 22.780166
+FIX JAKRR LATLON N 43 14.205167 W 77 0.62
+FIX JORAX LATLON N 43 9.36 W 76 52.183834
+FIX LIVLE LATLON N 43 13.923167 W 77 14.521834
+FIX SOBOC LATLON N 43 18.740833 W 77 22.9905
+FIX WALCO LATLON N 43 14.3595 W 76 52.353167
+FIX ZIKED LATLON N 43 8.7435 W 77 22.570333
+FIX ZIKEM LATLON N 43 19.359 W 76 52.522834
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX GOYER AT OR ABOVE 3000 FIX LIVLE 2100 RNW 10 FIX OVERFLY WALCO AT OR ABOVE 3100 HOLD AT FIX WALCO RIGHT TURN INBOUNDCOURSE 281 LEGDIST 4
+ TRANSITION GOYER HOLD AT FIX GOYER RIGHT TURN INBOUNDCOURSE 100 ALT 3000 LEGDIST 4
+ TRANSITION SOBOC FIX SOBOC AT OR ABOVE 3000
+ TRANSITION ZIKED FIX ZIKED AT OR ABOVE 3000
+APPROACH RNV28 FIX WALCO AT OR ABOVE 3100 FIX JAKRR 2000 RNW 28 FIX OVERFLY GOYER AT OR ABOVE 3000 HOLD AT FIX GOYER RIGHT TURN INBOUNDCOURSE 100 LEGDIST 4
+ TRANSITION JORAX FIX JORAX AT OR ABOVE 3100
+ TRANSITION WALCO HOLD AT FIX WALCO RIGHT TURN INBOUNDCOURSE 281 ALT 3100 LEGDIST 4
+ TRANSITION ZIKEM FIX ZIKEM AT OR ABOVE 3100
+ENDAPPROACHES

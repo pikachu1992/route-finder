@@ -1,0 +1,36 @@
+//KSPH (SPRINGHILL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HARAT LATLON N 32 46.845334 W 93 24.525334
+FIX HUVIL LATLON N 32 53.552666 W 93 24.539
+FIX WEVKI LATLON N 33 4.547333 W 93 24.561833
+FIX YOTCI LATLON N 32 56.673167 W 93 24.5455
+FIX ZESTU LATLON N 33 11.403334 W 93 24.575
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX ZESTU AT OR ABOVE 3000 FIX WEVKI 1900 RNW 18 TRK 178 UNTIL 496 FIX OVERFLY HARAT AT OR ABOVE 3000 HOLD AT FIX HARAT LEFT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION ZESTU HOLD AT FIX ZESTU RIGHT TURN INBOUNDCOURSE 178 ALT 3000 LEGDIST 4
+APPROACH RNV36 FIX HARAT AT OR ABOVE 3000 FIX HUVIL 1900 FIX YOTCI AT OR ABOVE 900 RNW 36 TRK 358 UNTIL 545 FIX OVERFLY ZESTU AT OR ABOVE 3000 HOLD AT FIX ZESTU RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4
+ TRANSITION HARAT HOLD AT FIX HARAT LEFT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4
+ENDAPPROACHES

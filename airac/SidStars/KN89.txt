@@ -1,0 +1,44 @@
+//KN89 (RESNICK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BURLL LATLON N 41 35.969833 W 74 33.582
+FIX CRANK LATLON N 41 24.9965 W 74 23.332166
+FIX ECZID LATLON N 41 59.769 W 74 8.835167
+FIX FEBRA LATLON N 41 42.828667 W 74 23.397334
+FIX IGN LATLON N 41 39.927 W 73 49.3335
+FIX LOBOS LATLON N 41 39.378167 W 74 28.701667
+FIX MAILS LATLON N 41 48.1445 W 74 18.761167
+FIX RAGER LATLON N 41 34.098667 W 74 54.769333
+FIX STELR LATLON N 41 52.447166 W 74 13.164
+FIX TALCO LATLON N 42 3.766166 W 74 6.464167
+FIX YARNN LATLON N 41 44.37 W 74 22.0545
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX BURLL AT OR ABOVE 3500 FIX LOBOS 2600 FIX OVERFLY FEBRA 611 RNW 04 TRK 063 UNTIL 692 FIX OVERFLY MAILS AT OR ABOVE 6000 HOLD AT FIX MAILS RIGHT TURN INBOUNDCOURSE 047 ALT 6000 LEGDIST 5
+ TRANSITION CRANK FIX CRANK
+ TRANSITION RAGER FIX RAGER
+APPROACH RNV22 FIX STELR AT OR ABOVE 3300 FIX MAILS 2200 FIX OVERFLY YARNN 508 RNW 22 TRK 227 UNTIL 692 FIX OVERFLY LOBOS AT OR ABOVE 4000 HOLD AT FIX LOBOS RIGHT TURN INBOUNDCOURSE 059 ALT 4000 LEGDIST 4
+ TRANSITION IGN FIX IGN
+ TRANSITION TALCO FIX TALCO FIX ECZID AT OR ABOVE 4300
+ENDAPPROACHES

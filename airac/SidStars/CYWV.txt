@@ -1,0 +1,35 @@
+//CYWV (WAINWRIGHT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUDNU LATLON N 52 46.553833 W 110 34.090834
+FIX OBREP LATLON N 52 45.517667 W 110 43.819667
+FIX OMLOG LATLON N 52 52.455833 W 110 35.7925
+FIX SEPMU LATLON N 52 47.576833 W 110 24.354334
+FIX UKTIL LATLON N 52 46.441333 W 110 48.016166
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX DUDNU AT OR ABOVE 3800 FIX OBREP 3300 FIX OVERFLY UKTIL 2997 RNW 31 TURN RIGHT DIRECT FIX OMLOG 4000 SPEED 130 HOLD AT FIX OMLOG LEFT TURN INBOUNDCOURSE 157 SPEED 200 LEGTIME 1
+ TRANSITION OMLOG FIX OMLOG
+ TRANSITION SEPMU FIX SEPMU
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//VOTK (TUTICORIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D123I LATLON N 8 38.943833 E 78 9.378334
+FIX EN28 LATLON N 8 43.448666 E 78 2.0385
+FIX FN28 LATLON N 8 41.414833 E 78 7.971667
+FIX TUNB LATLON N 8 43.6025 E 78 1.590167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB28 FIX FN28 2100 FIX OVERFLY EN28 121 FIX OVERFLY TUNB AT OR ABOVE 490 RNW 28 TRK 291 UNTIL 1600 TURN RIGHT DIRECT FIX TUNB 3300 HOLD AT FIX TUNB RIGHT TURN INBOUNDCOURSE 123 LEGTIME 1
+ TRANSITION TU FIX TUNB AT OR ABOVE 3300 FIX OVERFLY D123I AT OR ABOVE 2100
+ENDAPPROACHES

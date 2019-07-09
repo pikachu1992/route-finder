@@ -1,0 +1,41 @@
+//AYMN (MENDI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YMNSA LATLON S 6 19.136333 E 143 52.889167
+FIX YMNSB LATLON S 6 24.623666 E 143 51.127667
+FIX YMNSC LATLON S 6 24.843833 E 143 45.370667
+FIX YMNSF LATLON S 6 16.619 E 143 45.057167
+FIX YMNSI LATLON S 6 20.6215 E 143 48.092
+FIX YMNSM LATLON S 6 12.616166 E 143 42.023
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH GPSC17 FIX YMNSI AT OR ABOVE 10000 FIX OVERFLY YMNSF 10000 FIX OVERFLY YMNSM 8400 RNW 17 TURN LEFT DIRECT FIX YMNSB 10000 SPEED 160
+ TRANSITION YMNSA FIX YMNSA AT OR ABOVE 10000 SPEED 180
+ TRANSITION YMNSB FIX YMNSB AT OR ABOVE 10000 SPEED 180
+ TRANSITION YMNSC FIX YMNSC AT OR ABOVE 10000 SPEED 180
+APPROACH GPSC35 FIX YMNSI AT OR ABOVE 10000 FIX OVERFLY YMNSF 10000 FIX OVERFLY YMNSM 8400 RNW 35 TURN LEFT DIRECT FIX YMNSB 10000 SPEED 160
+ TRANSITION YMNSA FIX YMNSA AT OR ABOVE 10000 SPEED 180
+ TRANSITION YMNSB FIX YMNSB AT OR ABOVE 10000 SPEED 180
+ TRANSITION YMNSC FIX YMNSC AT OR ABOVE 10000 SPEED 180
+ENDAPPROACHES

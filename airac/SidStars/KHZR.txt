@@ -1,0 +1,41 @@
+//KHZR (FALSE RIVER REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEBGA LATLON N 30 36.3565 W 91 29.306833
+FIX CIDLA LATLON N 30 48.565834 W 91 28.242667
+FIX FENPU LATLON N 30 54.762334 W 91 27.700667
+FIX HAZER LATLON N 30 37.925666 W 91 29.1695
+FIX LSU LATLON N 30 29.108 W 91 17.644
+FIX OVBAE LATLON N 30 30.4735 W 91 29.818166
+FIX RONDA LATLON N 30 31.824833 W 91 29.699
+FIX ZOLOD LATLON N 30 46.368833 W 91 28.4345
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH LOC36 FIX RONDA AT OR ABOVE 2000 FIX HAZER 1600 RNW 36 TRK 004 UNTIL 700 TURN RIGHT DIRECT FIX LSU AT OR ABOVE 2000 HOLD AT FIX LSU RIGHT TURN INBOUNDCOURSE 065 LEGTIME 1
+ TRANSITION LSU FIX LSU
+APPROACH RNV18 FIX FENPU AT OR ABOVE 2300 FIX CIDLA 1700 FIX ZOLOD AT OR ABOVE 1000 RNW 18 TRK 184 UNTIL 439 FIX OVERFLY OVBAE AT OR ABOVE 2100 HOLD AT FIX OVBAE LEFT TURN INBOUNDCOURSE 004 LEGDIST 4
+ TRANSITION FENPU HOLD AT FIX FENPU RIGHT TURN INBOUNDCOURSE 184 ALT 2300 LEGDIST 4
+APPROACH RNV36 FIX OVBAE AT OR ABOVE 2100 FIX CEBGA 2100 RNW 36 TRK 004 UNTIL 286 FIX OVERFLY FENPU AT OR ABOVE 2300 HOLD AT FIX FENPU RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4
+ TRANSITION OVBAE HOLD AT FIX OVBAE LEFT TURN INBOUNDCOURSE 004 ALT 2100 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//KGOO (NEVADA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BINNT LATLON N 39 9.514834 W 121 18.328166
+FIX KEEFE LATLON N 39 11.8875 W 121 7.630166
+FIX MAPVR LATLON N 39 13.425667 W 121 0.6485
+FIX MRGGO LATLON N 39 13.3375 W 121 16.719667
+FIX MYV LATLON N 39 5.918666 W 121 34.3835
+FIX ULAHY LATLON N 39 13.248 W 121 5.445
+FIX YUBBA LATLON N 39 7.429667 W 121 46.162834
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX MRGGO AT OR ABOVE 5000 FIX ULAHY 4300 RNW 07 TRK 071 UNTIL 3900 TURN RIGHT DIRECT FIX OVERFLY MRGGO AT OR ABOVE 6000 SPEED 250 HOLD AT FIX MRGGO RIGHT TURN INBOUNDCOURSE 304 LEGDIST 5
+APPROACH VORA07 FIX BINNT AT OR ABOVE 5000 FIX KEEFE 4300 FIX MAPVR 4280 RNW 07 TRK 058 UNTIL 4280 TURN RIGHT DIRECT FIX BINNT AT OR ABOVE 5100 HOLD AT FIX BINNT RIGHT TURN INBOUNDCOURSE 058 LEGTIME 1
+ TRANSITION YUBBA FIX YUBBA FIX MYV AT OR ABOVE 5000
+APPROACH VORA25 FIX BINNT AT OR ABOVE 5000 FIX KEEFE 4300 FIX MAPVR 4280 RNW 25 TRK 058 UNTIL 4280 TURN RIGHT DIRECT FIX BINNT AT OR ABOVE 5100 HOLD AT FIX BINNT RIGHT TURN INBOUNDCOURSE 058 LEGTIME 1
+ TRANSITION YUBBA FIX YUBBA FIX MYV AT OR ABOVE 5000
+ENDAPPROACHES

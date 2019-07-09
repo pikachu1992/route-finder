@@ -1,0 +1,37 @@
+//KCXW (CANTRELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOBUV LATLON N 35 9.314666 W 92 23.496334
+FIX OGAME LATLON N 35 3.221666 W 92 30.860333
+FIX UYASI LATLON N 35 0.403333 W 92 34.257167
+FIX VAKUY LATLON N 34 53.020166 W 92 44.106833
+FIX YUDUT LATLON N 34 57.0675 W 92 38.713333
+FIX ZISOL LATLON N 35 5.051666 W 92 28.6515
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX VAKUY AT OR ABOVE 3000 FIX YUDUT 2100 FIX OVERFLY UYASI 526 RNW 04 TRK 047 UNTIL 583 FIX OVERFLY HOBUV AT OR ABOVE 2600 HOLD AT FIX HOBUV RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4
+ TRANSITION VAKUY HOLD AT FIX VAKUY RIGHT TURN INBOUNDCOURSE 047 ALT 3000 LEGDIST 4
+APPROACH RNV22 FIX HOBUV AT OR ABOVE 2600 FIX ZISOL 1900 FIX OGAME AT OR ABOVE 1080 RNW 22 TRK 224 UNTIL 533 FIX OVERFLY VAKUY AT OR ABOVE 3000 HOLD AT FIX VAKUY RIGHT TURN INBOUNDCOURSE 047 LEGDIST 4
+ TRANSITION HOBUV HOLD AT FIX HOBUV RIGHT TURN INBOUNDCOURSE 224 ALT 2600 LEGDIST 4
+ENDAPPROACHES

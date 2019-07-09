@@ -1,0 +1,43 @@
+//KM72 (NEW ALBANY-UNION CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAMIK LATLON N 34 27.804667 W 89 1.085833
+FIX CEMTO LATLON N 34 38.6775 W 89 1.892
+FIX DUPLE LATLON N 34 21.701333 W 89 0.634834
+FIX LARPE LATLON N 34 45.084334 W 88 56.289334
+FIX LUVIC LATLON N 34 21.393167 W 89 6.662833
+FIX SIMPE LATLON N 34 22.004666 W 88 54.606
+FIX WULKI LATLON N 34 44.779333 W 89 2.345833
+FIX ZUPIS LATLON N 34 44.469334 W 89 8.4015
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX WULKI AT OR ABOVE 2500 FIX CEMTO 2200 RNW 18 TRK 177 UNTIL 813 FIX OVERFLY DUPLE AT OR ABOVE 2500 HOLD AT FIX DUPLE RIGHT TURN INBOUNDCOURSE 358 LEGDIST 5
+ TRANSITION LARPE FIX LARPE AT OR ABOVE 2500
+ TRANSITION WULKI HOLD AT FIX WULKI RIGHT TURN INBOUNDCOURSE 177 ALT 2500 LEGDIST 5
+ TRANSITION ZUPIS FIX ZUPIS AT OR ABOVE 2500
+APPROACH RNV36 FIX DUPLE AT OR ABOVE 2500 FIX CAMIK 2000 RNW 36 TRK 357 UNTIL 813 FIX OVERFLY WULKI AT OR ABOVE 2500 HOLD AT FIX WULKI RIGHT TURN INBOUNDCOURSE 177 LEGDIST 5
+ TRANSITION DUPLE HOLD AT FIX DUPLE RIGHT TURN INBOUNDCOURSE 358 ALT 2500 LEGDIST 5
+ TRANSITION LUVIC FIX LUVIC AT OR ABOVE 2500
+ TRANSITION SIMPE FIX SIMPE AT OR ABOVE 2500
+ENDAPPROACHES

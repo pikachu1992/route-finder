@@ -1,0 +1,44 @@
+//K16D (PERHAM MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ETAHE LATLON N 46 38.493167 W 95 39.507
+FIX GEZTO LATLON N 46 40.2835 W 95 42.578666
+FIX HIBIR LATLON N 46 44.4875 W 95 49.814333
+FIX ILUZY LATLON N 46 28.998833 W 95 23.313667
+FIX INXAL LATLON N 46 33.941 W 95 17.199167
+FIX JORVO LATLON N 46 24.051167 W 95 29.409833
+FIX KITPE LATLON N 46 49.4535 W 95 43.71
+FIX LAYEB LATLON N 46 39.516 W 95 55.9
+FIX UJOTO LATLON N 46 33.222833 W 95 30.498334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX HIBIR AT OR ABOVE 3200 FIX GEZTO 3100 FIX ETAHE AT OR ABOVE 2200 RNW 13 TRK 128 UNTIL 1671 FIX OVERFLY ILUZY AT OR ABOVE 3000 HOLD AT FIX ILUZY RIGHT TURN INBOUNDCOURSE 308 LEGDIST 4
+ TRANSITION HIBIR HOLD AT FIX HIBIR RIGHT TURN INBOUNDCOURSE 128 ALT 3200 LEGDIST 4
+ TRANSITION KITPE FIX KITPE AT OR ABOVE 3400
+ TRANSITION LAYEB FIX LAYEB AT OR ABOVE 3200
+APPROACH RNV31 FIX ILUZY AT OR ABOVE 3000 FIX UJOTO 3000 RNW 31 TRK 308 UNTIL 1666 FIX OVERFLY HIBIR AT OR ABOVE 3200 HOLD AT FIX HIBIR RIGHT TURN INBOUNDCOURSE 128 LEGDIST 4
+ TRANSITION ILUZY HOLD AT FIX ILUZY RIGHT TURN INBOUNDCOURSE 308 ALT 3000 LEGDIST 4
+ TRANSITION INXAL FIX INXAL AT OR ABOVE 3400
+ TRANSITION JORVO FIX JORVO AT OR ABOVE 3100
+ENDAPPROACHES

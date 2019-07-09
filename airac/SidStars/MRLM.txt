@@ -1,0 +1,33 @@
+//MRLM (LIMON INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAIRO LATLON N 9 52.656 W 82 56.763167
+FIX LIO LATLON N 9 57.7885 W 83 1.630166
+FIX MA32 LATLON N 9 56.330333 W 83 0.217667
+FIX UVITA LATLON N 9 54.3895 W 82 55.396667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH VDM32 FIX CAIRO 1500 FIX MA32 395 RNW 32 FIX LIO TRK 317 UNTIL 5.0 FROM FIX LIO TURN RIGHT DIRECT FIX LIO AT OR ABOVE 3000 HOLD AT FIX LIO LEFT TURN INBOUNDCOURSE 119 LEGTIME 1
+ TRANSITION LIO FIX LIO AT OR ABOVE 3000 FIX OVERFLY UVITA
+ENDAPPROACHES

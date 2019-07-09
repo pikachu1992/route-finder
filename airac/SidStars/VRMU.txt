@@ -1,0 +1,41 @@
+//VRMU (DHAALU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEKIM LATLON N 2 45.758333 E 72 44.756666
+FIX IGREB LATLON N 2 44.188333 E 73 2.446667
+FIX LASOG LATLON N 2 34.178333 E 73 1.568333
+FIX MU421 LATLON N 2 40.445 E 72 47.801666
+FIX MU422 LATLON N 2 40.753333 E 72 44.316667
+FIX MU423 LATLON N 2 39.493333 E 72 58.523333
+FIX MU424 LATLON N 2 39.183334 E 73 2.006666
+FIX TOMEM LATLON N 2 35.748334 E 72 43.878334
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX MU422 AT OR ABOVE 1600 FIX MU421 1600 RNW 10 TRK 098 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY TOMEM HOLD AT FIX TOMEM RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGTIME 1
+ TRANSITION BEKIM FIX BEKIM SPEED 180
+ TRANSITION TOMEM FIX TOMEM SPEED 180
+APPROACH RNV28 FIX MU424 AT OR ABOVE 1600 FIX MU423 1600 RNW 28 TRK 278 UNTIL 500 TURN LEFT DIRECT FIX OVERFLY LASOG HOLD AT FIX LASOG RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGTIME 1
+ TRANSITION IGREB FIX IGREB SPEED 180
+ TRANSITION LASOG FIX LASOG SPEED 180
+ENDAPPROACHES

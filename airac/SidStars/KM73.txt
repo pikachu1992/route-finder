@@ -1,0 +1,41 @@
+//KM73 (ALMYRA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BILLI LATLON N 34 38.2485 W 91 33.380666
+FIX FEMAZ LATLON N 34 30.043667 W 91 27.992333
+FIX HULUK LATLON N 34 13.209667 W 91 28.165834
+FIX PBF LATLON N 34 14.8055 W 91 55.5705
+FIX SIWIN LATLON N 34 19.2455 W 91 28.103833
+FIX UJM LATLON N 34 34.502833 W 90 40.464167
+FIX WINUM LATLON N 34 13.164334 W 91 22.1365
+FIX YUHHO LATLON N 34 13.25 W 91 34.195166
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 18
+RNW 28
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX HULUK AT OR ABOVE 2000 FIX SIWIN 1900 RNW 36 TRK 358 UNTIL 611 FIX FEMAZ AT OR ABOVE 2000 FIX BILLI HOLD AT FIX BILLI RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4
+ TRANSITION BILLI FIX BILLI FIX HULUK AT OR ABOVE 2000 HOLD AT FIX HULUK RIGHT TURN INBOUNDCOURSE 358 ALT 2000 LEGDIST 4
+ TRANSITION PBF FIX PBF FIX YUHHO AT OR ABOVE 2000
+ TRANSITION UJM FIX UJM FIX WINUM AT OR ABOVE 2000
+ENDAPPROACHES

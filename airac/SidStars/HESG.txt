@@ -1,0 +1,46 @@
+//HESG (SUHAG INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD15 LATLON N 26 30.28 E 31 38.077
+FIX CD33 LATLON N 26 11.259167 E 31 50.488333
+FIX FD15 LATLON N 26 25.639166 E 31 41.179
+FIX FD33 LATLON N 26 15.256333 E 31 47.933833
+FIX RW33 LATLON N 26 19.866667 E 31 45.033334
+FIX SHG LATLON N 26 21.685 E 31 43.818334
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH VDM15 FIX CD15 2500 FIX FD15 2000 FIX SHG 505 RNW 15 TRK 145 UNTIL 1800 TURN LEFT DIRECT FIX SHG 3000 HOLD AT FIX SHG LEFT TURN INBOUNDCOURSE 325 LEGTIME 1
+ TRANSITION SHG1 FIX SHG AT OR ABOVE 4000 TRK 347 UNTIL 10.0 FROM FIX SHG
+ TRANSITION SHG2 FIX SHG AT OR ABOVE 4000 TRK 337 UNTIL 10.0 FROM FIX SHG
+APPROACH VDM33 FIX CD33 2500 FIX FD33 2000 RNW 33 TRK 326 UNTIL 1800 TURN RIGHT DIRECT FIX SHG 3000 HOLD AT FIX SHG RIGHT TURN INBOUNDCOURSE 146 LEGTIME 1
+ TRANSITION SHG1 FIX SHG AT OR ABOVE 4000 TRK 123 UNTIL 12.0 FROM FIX SHG
+ TRANSITION SHG2 FIX SHG AT OR ABOVE 4000 TRK 133 UNTIL 12.0 FROM FIX SHG
+ENDAPPROACHES
+
+GATES
+GATE 1 N 26 20.423167 E 31 44.336833
+GATE 2 N 26 20.404333 E 31 44.349334
+GATE 3 N 26 20.3855 E 31 44.361833
+GATE 4 N 26 20.366666 E 31 44.374333
+ENDGATES

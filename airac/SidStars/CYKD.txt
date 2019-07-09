@@ -1,0 +1,40 @@
+//CYKD (FREDDIE CARMICHAEL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ETNEB LATLON N 68 7.963667 W 134 30.5005
+FIX LOLGA LATLON N 68 4.762834 W 134 50.0565
+FIX MIBKO LATLON N 68 26.4695 W 134 43.554334
+FIX OBROP LATLON N 68 10.2285 W 134 56.545333
+FIX OBVOB LATLON N 68 22.022666 W 135 10.741834
+FIX ROSTU LATLON N 68 16.566334 W 135 4.140667
+FIX SEBOL LATLON N 68 17.722834 W 135 5.535
+FIX UDNUD LATLON N 68 9.070667 W 134 55.166
+FIX YEV LATLON N 68 18.484166 W 133 32.895667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX OBVOB AT OR ABOVE 2000 FIX ROSTU 1100 RNW 13 FIX OVERFLY UDNUD 1200 HOLD AT FIX UDNUD LEFT TURN INBOUNDCOURSE 134 LEGTIME 1
+ TRANSITION YEV FIX YEV FIX MIBKO AT OR ABOVE 3000
+APPROACH RNV31 FIX LOLGA AT OR ABOVE 2200 FIX OBROP 1100 RNW 31 FIX OVERFLY SEBOL 1300 HOLD AT FIX SEBOL RIGHT TURN INBOUNDCOURSE 314 LEGTIME 1
+ TRANSITION YEV FIX YEV FIX ETNEB AT OR ABOVE 3000
+ENDAPPROACHES

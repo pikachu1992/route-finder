@@ -1,0 +1,41 @@
+//EISG (SLIGO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D102H LATLON N 54 15.9805 W 8 21.784333
+FIX D102K LATLON N 54 15.707666 W 8 16.6895
+FIX D102P LATLON N 54 15.245 W 8 8.200667
+FIX DUB LATLON N 53 29.963333 W 6 18.426667
+FIX FQ11 LATLON N 54 18.383333 W 8 46.483333
+FIX FQ29 LATLON N 54 16.1 W 8 25.2
+FIX MQ11 LATLON N 54 17.361167 W 8 39.813167
+FIX MQ29 LATLON N 54 16.427333 W 8 30.278
+FIX SLGNB LATLON N 54 16.723333 W 8 36.005
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDM11 FIX FQ11 1500 SPEED 130 FIX MQ11 554 RNW 11 TRK 340 UNTIL 2500 TURN LEFT DIRECT FIX SLGNB 3500
+ TRANSITION SLG FIX SLGNB AT OR ABOVE 3500 TRK 309 UNTIL 7.3 FROM FIX SLGNB
+APPROACH NDM29 FIX FQ29 1900 FIX MQ29 988 RNW 29 TRK 282 UNTIL 990 TRK 330 UNTIL 2500 TURN LEFT DIRECT FIX SLGNB 3500
+ TRANSITION DUB FIX DUB FIX D102P AT OR ABOVE 3500 FIX D102K AT OR ABOVE 2800 FIX D102H AT OR ABOVE 2500
+ TRANSITION SLG FIX SLGNB AT OR ABOVE 3500 TRK 115 UNTIL 8.5 FROM FIX SLGNB TURN LEFT DIRECT FIX D102H AT OR ABOVE 2500
+ENDAPPROACHES

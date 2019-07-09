@@ -1,0 +1,51 @@
+//SCTO (VICTORIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARMUL LATLON S 38 2.6725 W 72 17.502
+FIX ENSER LATLON S 37 38.75 W 72 17.366666
+FIX ETEMA LATLON S 38 26.661334 W 72 24.3045
+FIX MAD LATLON S 37 24.4 W 72 25.483333
+FIX NIA LATLON S 38 54.373667 W 72 38.6285
+FIX RAFAS LATLON S 38 18.946166 W 72 22.109333
+FIX SAGAZ LATLON S 38 10.389 W 72 19.682666
+FIX TO079 LATLON S 38 22.755 W 72 23.192
+FIX TO080 LATLON S 38 6.579667 W 72 18.605167
+FIX TO220 LATLON S 38 35.937167 W 72 29.081333
+FIX TO318 LATLON S 37 43.168166 W 72 21.588667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+STARS
+STAR ARMU1A FIX MAD AT OR ABOVE 6000 FIX TO318 AT OR ABOVE 5000 FIX ARMUL AT OR ABOVE 3500
+  RNW 19
+STAR ARMU1B FIX ENSER AT OR ABOVE 6000 FIX ARMUL AT OR ABOVE 3500
+  RNW 19
+STAR ETEM1A FIX NIA AT OR ABOVE 6000 FIX TO220 AT OR ABOVE 5000 FIX ETEMA AT OR ABOVE 3500
+  RNW 01
+ENDSTARS
+
+APPROACHES
+APPROACH RNV01 FIX TO079 AT OR ABOVE 3000 FIX RAFAS 2500 RNW 01 FIX OVERFLY ARMUL AT OR ABOVE 3500 HOLD AT FIX ARMUL LEFT TURN INBOUNDCOURSE 187 ALT 3500 LEGDIST 4
+ TRANSITION ETEMA FIX ETEMA AT OR ABOVE 3500
+APPROACH RNV19 FIX TO080 AT OR ABOVE 3000 FIX SAGAZ 2500 RNW 19 FIX OVERFLY ETEMA AT OR ABOVE 3500 HOLD AT FIX ETEMA RIGHT TURN INBOUNDCOURSE 007 ALT 3500 LEGDIST 4
+ TRANSITION ARMUL FIX ARMUL AT OR ABOVE 3500
+ENDAPPROACHES

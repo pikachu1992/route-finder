@@ -1,0 +1,43 @@
+//CEM3 (WHA TI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEPUN LATLON N 63 5.713834 W 117 5.4235
+FIX DENBI LATLON N 63 5.725 W 117 5.476
+FIX EPLOT LATLON N 63 10.1 W 117 24.151834
+FIX GOVEB LATLON N 62 58.979 W 117 0.712834
+FIX GOXAM LATLON N 63 16.8005 W 117 28.880833
+FIX IMIVO LATLON N 63 7.8335 W 116 50.617166
+FIX KEPDU LATLON N 63 12.3755 W 117 33.97
+FIX LOKVA LATLON N 63 7.947334 W 117 39.0335
+FIX MUVNA LATLON N 63 10.081166 W 117 24.076834
+FIX OVDOM LATLON N 63 3.407833 W 116 55.677667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX KEPDU AT OR ABOVE 2500 FIX EPLOT 2400 RNW 10 FIX OVERFLY DENBI 2400 HOLD AT FIX DENBI RIGHT TURN INBOUNDCOURSE 098 LEGTIME 1
+ TRANSITION GOXAM FIX GOXAM
+ TRANSITION LOKVA FIX LOKVA
+APPROACH RNV28 FIX OVDOM AT OR ABOVE 2500 FIX BEPUN 2400 RNW 28 FIX OVERFLY MUVNA 2400 HOLD AT FIX MUVNA RIGHT TURN INBOUNDCOURSE 278 LEGTIME 1
+ TRANSITION GOVEB FIX GOVEB
+ TRANSITION IMIVO FIX IMIVO
+ENDAPPROACHES

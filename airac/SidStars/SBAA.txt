@@ -1,0 +1,52 @@
+//SBAA (CONCEICAO DO ARAGUAIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARGNB LATLON S 8 21.22 W 49 17.95
+FIX CATI LATLON S 8 46.61 W 49 8.38
+FIX CJS LATLON S 6 7.178666 W 50 0.119666
+FIX DENOB LATLON S 9 50.16 W 48 34.77
+FIX EP08 LATLON S 8 21.376834 W 49 18.4215
+FIX EP26 LATLON S 8 20.771 W 49 17.536333
+FIX FANO LATLON S 7 55.34 W 49 26.14
+FIX FF08 LATLON S 8 22.811333 W 49 22.6065
+FIX FF26 LATLON S 8 17.722333 W 49 14.6825
+FIX GUDE LATLON S 7 54.13 W 49 16.46
+FIX MRB LATLON S 5 22.0895 W 49 8.113834
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID CATI FIX DENOB
+ RNW 08 HDG 078 UNTIL 1200 HDG 208 INTERCEPT RADIAL 179 TO FIX CATI FIX CATI
+ RNW 26 HDG 258 UNTIL 1200 HDG 148 INTERCEPT RADIAL 179 TO FIX CATI FIX CATI
+SID FANO FIX CJS
+ RNW 08 HDG 078 UNTIL 1060 HDG 332 INTERCEPT RADIAL 002 TO FIX FANO FIX FANO
+ RNW 26 HDG 258 UNTIL 1060 HDG 032 INTERCEPT RADIAL 002 TO FIX FANO FIX FANO
+SID GUDE FIX MRB
+ RNW 08 HDG 078 UNTIL 1060 HDG 352 INTERCEPT RADIAL 022 TO FIX GUDE FIX GUDE
+ RNW 26 HDG 258 UNTIL 1060 HDG 052 INTERCEPT RADIAL 022 TO FIX GUDE FIX GUDE
+ENDSIDS
+
+APPROACHES
+APPROACH NDB08 FIX FF08 2100 FIX OVERFLY EP08 703 FIX ARGNB AT OR ABOVE 1053 RNW 08 TRK 090 UNTIL 3000
+APPROACH NDB26 FIX FF26 2000 FIX OVERFLY EP26 679 FIX ARGNB AT OR ABOVE 1053 RNW 26 TRK 242 UNTIL 3000
+ENDAPPROACHES

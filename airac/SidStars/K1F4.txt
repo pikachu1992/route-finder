@@ -1,0 +1,40 @@
+//K1F4 (MADILL MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADM LATLON N 34 12.695167 W 97 10.093667
+FIX CAGAD LATLON N 34 18.624833 W 96 47.3415
+FIX FIBDI LATLON N 34 18.062333 W 96 41.343833
+FIX HAVEB LATLON N 34 19.1825 W 96 53.3405
+FIX MA097 LATLON N 34 8.434834 W 96 48.769667
+FIX TAFTS LATLON N 34 9.188167 W 96 52.5175
+FIX VASCE LATLON N 34 13.6475 W 96 48.016
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA18 FIX ADM AT OR ABOVE 3000 FIX TAFTS 2500 FIX MA097 1420 RNW 18 TRK 097 UNTIL 2500 TURN LEFT DIRECT FIX TAFTS HOLD AT FIX TAFTS RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1
+APPROACH VDMA36 FIX ADM AT OR ABOVE 3000 FIX TAFTS 2500 FIX MA097 1420 RNW 36 TRK 097 UNTIL 2500 TURN LEFT DIRECT FIX TAFTS HOLD AT FIX TAFTS RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1
+APPROACH RNV18 FIX CAGAD AT OR ABOVE 3300 FIX VASCE 2500 RNW 18 TRK 180 UNTIL 1290 TURN RIGHT DIRECT FIX ADM AT OR ABOVE 2600 HOLD AT FIX ADM RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4
+ TRANSITION CAGAD HOLD AT FIX CAGAD RIGHT TURN INBOUNDCOURSE 180 ALT 3300 LEGDIST 4
+ TRANSITION FIBDI FIX FIBDI AT OR ABOVE 3300
+ TRANSITION HAVEB FIX HAVEB AT OR ABOVE 3300
+ENDAPPROACHES

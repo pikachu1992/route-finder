@@ -1,0 +1,31 @@
+//SPYL (CAPITAN MONTES INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FV17 LATLON S 4 29.975333 W 81 15.997166
+FIX TAL LATLON S 4 34.815667 W 81 15.146833
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VOR17 FIX FV17 1600 SPEED 185 RNW 17 FIX OVERFLY TAL TRK 190 UNTIL 2000 TURN RIGHT DIRECT FIX TAL AT OR ABOVE 3000 HOLD AT FIX TAL LEFT TURN INBOUNDCOURSE 341 ALT 3000 SPEED 230 LEGTIME 1
+ TRANSITION TAL FIX TAL AT OR ABOVE 3000 TRK 315 UNTIL 5.3 FROM FIX TAL
+ENDAPPROACHES

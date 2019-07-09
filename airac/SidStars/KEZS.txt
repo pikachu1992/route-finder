@@ -1,0 +1,38 @@
+//KEZS (SHAWANO MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BASBY LATLON N 44 45.497833 W 88 27.698833
+FIX GUHMU LATLON N 44 48.0895 W 88 36.470167
+FIX HISAV LATLON N 44 42.842666 W 88 18.764333
+FIX WIRIX LATLON N 44 48.976667 W 88 39.484166
+FIX ZASRU LATLON N 44 51.604333 W 88 48.4475
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 17
+RNW 30
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX ZASRU AT OR ABOVE 2700 FIX WIRIX 2200 FIX GUHMU AT OR ABOVE 1460 RNW 12 TRK 114 UNTIL 1082 FIX OVERFLY HISAV AT OR ABOVE 2500 HOLD AT FIX HISAV RIGHT TURN INBOUNDCOURSE 295 LEGDIST 4
+ TRANSITION ZASRU HOLD AT FIX ZASRU RIGHT TURN INBOUNDCOURSE 114 ALT 2700 LEGDIST 4
+APPROACH RNV30 FIX HISAV AT OR ABOVE 2500 FIX BASBY 2200 RNW 30 TRK 295 UNTIL 1097 FIX OVERFLY ZASRU AT OR ABOVE 2700 HOLD AT FIX ZASRU RIGHT TURN INBOUNDCOURSE 114 LEGDIST 4
+ TRANSITION HISAV HOLD AT FIX HISAV RIGHT TURN INBOUNDCOURSE 295 ALT 2500 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,46 @@
+//YIVL (INVERELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EP16 LATLON S 29 52.717333 E 151 8.3985
+FIX FN16 LATLON S 29 48.7075 E 151 8.398667
+FIX IVLNB LATLON S 29 53.081 E 151 8.398667
+FIX IVLSA LATLON S 30 5.164834 E 151 16.945
+FIX IVLSB LATLON S 30 9.331166 E 151 12.3895
+FIX IVLSC LATLON S 30 7.0295 E 151 6.326167
+FIX IVLSF LATLON S 29 59.506 E 151 10.105
+FIX IVLSH LATLON S 29 51.645334 E 151 8.282666
+FIX IVLSI LATLON S 30 4.418666 E 151 11.246333
+FIX IVLSM LATLON S 29 54.593167 E 151 8.9655
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 16
+RNW 22
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB16 FIX FN16 3900 FIX OVERFLY EP16 2644 FIX OVERFLY IVLNB AT OR ABOVE 3170 RNW 16 TRK 169 UNTIL 4000 TURN RIGHT DIRECT FIX IVLNB AT OR ABOVE 5100
+ TRANSITION IVL1 FIX IVLNB AT OR ABOVE 5100 SPEED 210 TRK 014 UNTIL 7.0 FROM FIX IVLNB
+ TRANSITION IVL2 FIX IVLNB AT OR ABOVE 5100 SPEED 210 TRK 003 UNTIL 7.5 FROM FIX IVLNB
+APPROACH RNV34 FIX IVLSI AT OR ABOVE 6140 FIX IVLSF 4550 FIX OVERFLY IVLSM 2960 RNW 34 FIX OVERFLY IVLSH HDG 173 VECTORS
+ TRANSITION IVLSA FIX IVLSA AT OR ABOVE 6300 SPEED 210
+ TRANSITION IVLSB FIX IVLSB AT OR ABOVE 6300 SPEED 210
+ TRANSITION IVLSC FIX IVLSC AT OR ABOVE 6300 SPEED 210
+ENDAPPROACHES

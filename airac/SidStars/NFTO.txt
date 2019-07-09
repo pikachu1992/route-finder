@@ -1,0 +1,41 @@
+//NFTO (NIUAFOOU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARIES LATLON S 15 42.7245 W 175 32.756833
+FIX FF303 LATLON S 15 36.405 W 175 33.48
+FIX MA303 LATLON S 15 34.237834 W 175 35.639167
+FIX ORION LATLON S 15 39.294 W 175 30.599833
+FIX VENUS LATLON S 15 29.179834 W 175 40.674334
+FIX VIRGO LATLON S 15 37.185334 W 175 27.071666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA08 FIX ORION AT OR ABOVE 2000 FIX FF303 640 FIX MA303 640 RNW 08 TRK 303 UNTIL 640 FIX VENUS HOLD AT FIX VENUS RIGHT TURN INBOUNDCOURSE 123 ALT 2000 LEGDIST 4
+ TRANSITION ARIES FIX ARIES
+ TRANSITION ORION HOLD AT FIX ORION RIGHT TURN INBOUNDCOURSE 303 ALT 2000 LEGDIST 4
+ TRANSITION VIRGO FIX VIRGO
+APPROACH RNVA26 FIX ORION AT OR ABOVE 2000 FIX FF303 640 FIX MA303 640 RNW 26 TRK 303 UNTIL 640 FIX VENUS HOLD AT FIX VENUS RIGHT TURN INBOUNDCOURSE 123 ALT 2000 LEGDIST 4
+ TRANSITION ARIES FIX ARIES
+ TRANSITION ORION HOLD AT FIX ORION RIGHT TURN INBOUNDCOURSE 303 ALT 2000 LEGDIST 4
+ TRANSITION VIRGO FIX VIRGO
+ENDAPPROACHES

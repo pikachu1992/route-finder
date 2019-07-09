@@ -1,0 +1,40 @@
+//CYRO (ROCKCLIFFE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANAGA LATLON N 45 28.795834 W 75 30.217667
+FIX EBNAB LATLON N 45 26.939833 W 75 43.670333
+FIX IKUTA LATLON N 45 25.917 W 75 51.056
+FIX ITBOV LATLON N 45 29.412334 W 75 25.711166
+FIX KAXIB LATLON N 45 22.796833 W 75 55.601
+FIX KEKLA LATLON N 45 32.5955 W 75 18.478667
+FIX NUDOP LATLON N 45 26.53 W 75 46.6275
+FIX OMROS LATLON N 45 27.21 W 75 41.719
+FIX URLAB LATLON N 45 28.454167 W 75 32.685833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX IKUTA AT OR ABOVE 2700 FIX EBNAB 1300 FIX OMROS AT OR ABOVE 1000 RNW 09 FIX OVERFLY ANAGA 3000 HOLD AT FIX ANAGA LEFT TURN INBOUNDCOURSE 092 SPEED 175 LEGTIME 1
+ TRANSITION KAXIB FIX KAXIB
+APPROACH RNVA27 FIX ITBOV AT OR ABOVE 3000 FIX URLAB 1500 RNW 27 FIX OVERFLY NUDOP 3000 HOLD AT FIX NUDOP RIGHT TURN INBOUNDCOURSE 272 SPEED 175 LEGTIME 1
+ TRANSITION KEKLA FIX KEKLA
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//OITM (SAHAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D252H LATLON N 37 22.556666 E 46 18.3445
+FIX D252J LATLON N 37 23.003333 E 46 20.7905
+FIX D252M LATLON N 37 23.671834 E 46 24.4605
+FIX FN08 LATLON N 37 20.993 E 46 0.0795
+FIX FQ26 LATLON N 37 21.885167 E 46 14.676167
+FIX GETOB LATLON N 37 12.45 E 46 51.483334
+FIX MQ26 LATLON N 37 21.211667 E 46 11.009
+FIX SHDNB LATLON N 37 20.76 E 46 8.565
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+STARS
+STAR GETO1D FIX GETOB FIX SHDNB
+  RNW 08 RNW 26
+ENDSTARS
+
+APPROACHES
+APPROACH NDB08 FIX FN08 6100 RNW 08 FIX OVERFLY SHDNB AT OR ABOVE 4800 TRK 170 UNTIL 7000 TURN RIGHT DIRECT FIX SHDNB 9000 HOLD AT FIX SHDNB LEFT TURN INBOUNDCOURSE 285 ALT 9000 LEGTIME 1
+ TRANSITION SHD FIX SHDNB AT OR ABOVE 9000 TRK 285 UNTIL 10.5 FROM FIX SHDNB
+APPROACH NDM26 FIX FQ26 6200 FIX MQ26 5167 RNW 26 FIX SHDNB TRK 252 UNTIL 6000 TURN RIGHT DIRECT FIX D252M 9000 HOLD AT FIX D252M LEFT TURN INBOUNDCOURSE 252 ALT 9000 LEGTIME 1
+ TRANSITION D252M FIX D252M AT OR ABOVE 9000 FIX D252J AT OR ABOVE 7600 FIX D252H AT OR ABOVE 7100
+ENDAPPROACHES

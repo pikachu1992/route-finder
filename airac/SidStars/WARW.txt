@@ -1,0 +1,37 @@
+//WARW (BAWEAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BW401 LATLON S 5 43.328333 E 112 33.07
+FIX BW402 LATLON S 5 43.365 E 112 36.28
+FIX BW403 LATLON S 5 43.5 E 112 48.23
+FIX BW404 LATLON S 5 43.46 E 112 45.02
+FIX MENTI LATLON S 5 43.53 E 112 51.24
+FIX TAMBA LATLON S 5 43.2935 E 112 30.060667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX BW401 AT OR ABOVE 2200 FIX BW402 1500 RNW 09 TURN LEFT DIRECT FIX TAMBA 3200
+ TRANSITION TAMBA FIX TAMBA AT OR ABOVE 3200
+APPROACH RNV27 FIX BW403 AT OR ABOVE 2200 FIX BW404 1500 RNW 27 TURN RIGHT DIRECT FIX MENTI 3200
+ TRANSITION MENTI FIX MENTI AT OR ABOVE 3200
+ENDAPPROACHES

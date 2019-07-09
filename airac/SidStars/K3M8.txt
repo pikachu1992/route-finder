@@ -1,0 +1,36 @@
+//K3M8 (NORTH PICKENS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLANG LATLON N 33 11.115334 W 88 2.042833
+FIX DINNI LATLON N 33 29.325 W 87 59.5575
+FIX JUMKU LATLON N 33 35.3045 W 87 58.737
+FIX ZIRBO LATLON N 33 17.087833 W 88 1.229833
+FIX ZOKSI LATLON N 33 26.015333 W 88 0.0105
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX BLANG AT OR ABOVE 3000 FIX ZIRBO 2100 RNW 01 TRK 008 UNTIL 637 FIX OVERFLY JUMKU AT OR ABOVE 3000 HOLD AT FIX JUMKU RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4
+ TRANSITION BLANG HOLD AT FIX BLANG RIGHT TURN INBOUNDCOURSE 008 ALT 3000 LEGDIST 4
+APPROACH RNV19 FIX JUMKU AT OR ABOVE 3000 FIX DINNI 2100 FIX ZOKSI AT OR ABOVE 1040 RNW 19 TRK 188 UNTIL 640 FIX OVERFLY BLANG AT OR ABOVE 3000 HOLD AT FIX BLANG RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4
+ TRANSITION JUMKU HOLD AT FIX JUMKU RIGHT TURN INBOUNDCOURSE 188 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KLHB (HEARNE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAPEG LATLON N 30 40.5015 W 96 49.321
+FIX CORAB LATLON N 31 4.685 W 96 48.5715
+FIX DOBEY LATLON N 30 47.3385 W 96 37.4955
+FIX HISEM LATLON N 30 40.225 W 96 37.729667
+FIX JUPAX LATLON N 31 4.408667 W 96 36.931667
+FIX NOTOE LATLON N 30 50.291167 W 96 37.398167
+FIX RUPOC LATLON N 31 4.114834 W 96 25.293
+FIX TERHI LATLON N 30 39.931333 W 96 26.1395
+FIX WIGVU LATLON N 30 54.657833 W 96 37.254
+FIX YORDU LATLON N 30 57.2955 W 96 37.166833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JUPAX AT OR ABOVE 2600 FIX YORDU 1800 FIX WIGVU AT OR ABOVE 960 RNW 18 TRK 178 UNTIL 485 FIX OVERFLY HISEM AT OR ABOVE 2100 HOLD AT FIX HISEM RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION CORAB FIX CORAB
+ TRANSITION RUPOC FIX RUPOC
+APPROACH RNV36 FIX HISEM AT OR ABOVE 2100 FIX DOBEY 1800 FIX NOTOE AT OR ABOVE 860 RNW 36 TRK 358 UNTIL 480 FIX OVERFLY JUPAX AT OR ABOVE 2600 HOLD AT FIX JUPAX RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4
+ TRANSITION CAPEG FIX CAPEG
+ TRANSITION TERHI FIX TERHI
+ENDAPPROACHES

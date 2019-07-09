@@ -1,0 +1,43 @@
+//CYBE (URANIUM CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVTES LATLON N 59 32.290834 W 108 39.197
+FIX DUDSU LATLON N 59 36.034166 W 108 53.395834
+FIX EBKAN LATLON N 59 25.441834 W 108 47.7665
+FIX ILEVO LATLON N 59 30.7385 W 108 50.573833
+FIX KEPRO LATLON N 59 35.373833 W 108 16.179334
+FIX LITNI LATLON N 59 31.971 W 108 41.5515
+FIX MUTRO LATLON N 59 35.048833 W 108 18.633
+FIX OTMIX LATLON N 59 36.554666 W 108 7.207834
+FIX PIKTU LATLON N 59 31.242833 W 108 4.506
+FIX SEGAV LATLON N 59 41.8655 W 108 9.923833
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX ILEVO AT OR ABOVE 2700 SPEED 180 FIX AVTES 2700 RNW 06 FIX OVERFLY KEPRO 3100 HOLD AT FIX KEPRO RIGHT TURN INBOUNDCOURSE 062 SPEED 200 LEGTIME 1
+ TRANSITION DUDSU FIX DUDSU SPEED 200
+ TRANSITION EBKAN FIX EBKAN SPEED 200
+APPROACH RNV24 FIX OTMIX AT OR ABOVE 3100 SPEED 180 FIX MUTRO 2900 RNW 24 FIX OVERFLY LITNI 3100 HOLD AT FIX LITNI RIGHT TURN INBOUNDCOURSE 242 SPEED 200 LEGTIME 1
+ TRANSITION PIKTU FIX PIKTU SPEED 200
+ TRANSITION SEGAV FIX SEGAV SPEED 200
+ENDAPPROACHES

@@ -1,0 +1,32 @@
+//LPEV (EVORA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EVRNB LATLON N 38 31.776667 W 7 53.51
+FIX FN19 LATLON N 38 36.8685 W 7 52.605667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 08
+RNW 19
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH NDB19 FIX FN19 2300 FIX EVRNB 1600 RNW 19 TRK 221 UNTIL 2000 TURN LEFT DIRECT FIX EVRNB 2600
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CYHB (HUDSON BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALKOD LATLON N 52 47.508 W 101 59.046167
+FIX ANIBO LATLON N 52 58.596 W 102 6.5555
+FIX DERBA LATLON N 52 39.571667 W 102 30.701167
+FIX IKMEV LATLON N 52 51.156167 W 102 10.424833
+FIX KERLU LATLON N 52 47.338166 W 102 25.655333
+FIX MUTEL LATLON N 52 50.843333 W 102 11.68
+FIX TEXEM LATLON N 52 50.626166 W 102 38.321833
+FIX UBVAM LATLON N 52 53.053 W 102 2.792833
+FIX ULBOG LATLON N 52 47.0225 W 102 26.906833
+FIX VILKU LATLON N 52 45.1 W 102 34.5035
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX VILKU AT OR ABOVE 2900 SPEED 180 FIX ULBOG 2820 RNW 06 FIX OVERFLY MUTEL 3800 HOLD AT FIX MUTEL RIGHT TURN INBOUNDCOURSE 060 SPEED 200 LEGTIME 1
+ TRANSITION DERBA FIX DERBA SPEED 210
+ TRANSITION TEXEM FIX TEXEM SPEED 210
+APPROACH RNV24 FIX UBVAM AT OR ABOVE 2900 SPEED 180 FIX IKMEV 2810 RNW 24 FIX OVERFLY KERLU 3800 HOLD AT FIX KERLU RIGHT TURN INBOUNDCOURSE 240 SPEED 200 LEGTIME 1
+ TRANSITION ALKOD FIX ALKOD SPEED 210
+ TRANSITION ANIBO FIX ANIBO SPEED 210
+ENDAPPROACHES

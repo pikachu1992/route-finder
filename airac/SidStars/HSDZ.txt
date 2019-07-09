@@ -1,0 +1,47 @@
+//HSDZ (DAMAZIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALREN LATLON N 12 0.66 E 34 17.88
+FIX BORIR LATLON N 11 52.74 E 34 19.24
+FIX BOSUS LATLON N 12 5.61 E 34 17.03
+FIX DARAV LATLON N 12 1.5 E 34 22.91
+FIX GESOP LATLON N 11 59.82 E 34 12.85
+FIX GIRBI LATLON N 11 54.97 E 34 18.86
+FIX IMKOK LATLON N 11 42.1 E 34 21.07
+FIX ITKOR LATLON N 11 39.86 E 34 21.45
+FIX MESLU LATLON N 11 29.22 E 34 23.27
+FIX PUROM LATLON N 11 33.34 E 34 17.4
+FIX RADKO LATLON N 11 35.01 E 34 27.45
+FIX RIKIM LATLON N 11 34.17 E 34 22.42
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ALREN AT OR ABOVE 5800 FIX BORIR 3300 RNW 17 TRK 168 UNTIL 1990 FIX OVERFLY ITKOR 4900
+ TRANSITION BOSUS FIX BOSUS AT OR ABOVE 7400
+ TRANSITION DARAV FIX DARAV AT OR ABOVE 7400
+ TRANSITION GESOP FIX GESOP AT OR ABOVE 7400
+APPROACH RNV35 FIX RIKIM AT OR ABOVE 5800 FIX IMKOK 3230 RNW 35 TRK 348 UNTIL 1990 FIX OVERFLY GIRBI 5100
+ TRANSITION MESLU FIX MESLU AT OR ABOVE 7400
+ TRANSITION PUROM FIX PUROM AT OR ABOVE 7400
+ TRANSITION RADKO FIX RADKO AT OR ABOVE 7400
+ENDAPPROACHES

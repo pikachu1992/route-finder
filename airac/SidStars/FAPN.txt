@@ -1,0 +1,36 @@
+//FAPN (PILANESBERG INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20VOR LATLON S 25 25.3525 E 27 6.032833
+FIX 40VOR LATLON S 25 26.9545 E 27 4.702667
+FIX FD05 LATLON S 25 29.356834 E 27 2.7065
+FIX PI001 LATLON S 25 26.545418 E 27 5.029763
+FIX PI002 LATLON S 25 30.803546 E 27 5.69287
+FIX PI003 LATLON S 25 30.936189 E 27 1.360645
+FIX PNV LATLON S 25 23.7505 E 27 7.362334
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH VDM05 FIX FD05 6100 FIX 40VOR AT OR ABOVE 5250 FIX 20VOR AT OR ABOVE 4680 FIX PNV 4570 RNW 05 TRK 080 UNTIL 5800 TURN RIGHT DIRECT FIX PNV 7400 HOLD AT FIX PNV RIGHT TURN INBOUNDCOURSE 053 LEGTIME 1
+ TRANSITION PNV FIX PNV AT OR ABOVE 7400 FIX PI001 AT OR ABOVE 6100 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 6100 SPEED 210 FIX PI003 AT OR ABOVE 6100 SPEED 210
+ENDAPPROACHES

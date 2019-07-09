@@ -1,0 +1,43 @@
+//CDU6 (DOAKTOWN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LOLKU LATLON N 46 38.9365 W 66 19.9995
+FIX LORLU LATLON N 46 37.288333 W 65 50.164834
+FIX MEVBA LATLON N 46 32.769167 W 65 58.889833
+FIX MIDVO LATLON N 46 32.3075 W 65 50.7665
+FIX PIDMO LATLON N 46 33.953167 W 66 20.556
+FIX RORVA LATLON N 46 27.3265 W 65 51.3665
+FIX SIGLA LATLON N 46 32.718334 W 65 57.9855
+FIX TALGU LATLON N 46 33.566 W 66 13.3315
+FIX VETNI LATLON N 46 33.514667 W 66 12.383
+FIX VIMRI LATLON N 46 28.969667 W 66 21.110833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX PIDMO AT OR ABOVE 2000 FIX TALGU 1960 RNW 11 FIX OVERFLY MEVBA 3300 HOLD AT FIX MEVBA RIGHT TURN INBOUNDCOURSE 112 SPEED 175 LEGTIME 1
+ TRANSITION LOLKU FIX LOLKU
+ TRANSITION VIMRI FIX VIMRI
+APPROACH RNV29 FIX MIDVO AT OR ABOVE 2000 FIX SIGLA 1970 RNW 29 FIX OVERFLY VETNI 3300 HOLD AT FIX VETNI RIGHT TURN INBOUNDCOURSE 292 SPEED 175 LEGTIME 1
+ TRANSITION LORLU FIX LORLU
+ TRANSITION RORVA FIX RORVA
+ENDAPPROACHES

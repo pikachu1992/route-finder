@@ -1,0 +1,45 @@
+//KRCV (ROMINGER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FLUBS LATLON N 38 0.9175 W 106 8.065667
+FIX HOMME LATLON N 37 31.2285 W 105 53.888
+FIX ICORY LATLON N 37 48.510167 W 106 2.272333
+FIX LUISS LATLON N 38 13.1745 W 106 14.3645
+FIX SHERN LATLON N 37 43.3775 W 105 59.7605
+FIX ZINGS LATLON N 37 44.772167 W 106 14.887166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 06
+RNW 21
+RNW 24
+ENDRNWS
+
+SIDS
+SID HOMME1
+ RNW 06 HDG 059 UNTIL 8500 FIX SHERN 10000 SPEED 150 FIX HOMME
+ RNW 24 HDG 239 UNTIL 8500 TURN LEFT DIRECT FIX SHERN 10000 SPEED 150 FIX HOMME
+ENDSIDS
+
+APPROACHES
+APPROACH RNV24 FIX ICORY AT OR ABOVE 11100 FIX ZINGS 9500 RNW 24 TRK 240 UNTIL 8600 TURN LEFT DIRECT FIX SHERN FIX OVERFLY HOMME AT OR ABOVE 11100 HOLD AT FIX HOMME RIGHT TURN INBOUNDCOURSE 151 LEGDIST 7
+ TRANSITION HOMME FIX HOMME
+ TRANSITION ICORY HOLD AT FIX ICORY RIGHT TURN INBOUNDCOURSE 242 ALT 11100 LEGDIST 7
+ TRANSITION LUISS FIX LUISS FIX FLUBS AT OR ABOVE 13400
+ENDAPPROACHES

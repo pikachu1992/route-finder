@@ -1,0 +1,37 @@
+//PACZ (CAPE ROMANZOF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGMIV LATLON N 61 45.367834 W 166 5.4365
+FIX HPB LATLON N 61 30.860833 W 166 8.068834
+FIX MOTRS LATLON N 61 40.0945 W 166 23.825333
+FIX TAJAN LATLON N 61 43.195834 W 166 13.040666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID CZF4 RNW 20 HDG 198 UNTIL 2000 FIX HPB
+ENDSIDS
+
+APPROACHES
+APPROACH NDM02 FIX MOTRS AT OR ABOVE 3600 FIX TAJAN 2300 FIX AGMIV 974 RNW 02 TURN LEFT DIRECT FIX MOTRS 3600 HOLD AT FIX MOTRS RIGHT TURN INBOUNDCOURSE 048 SPEED 310 LEGDIST 8
+ TRANSITION MOTRS HOLD AT FIX MOTRS RIGHT TURN INBOUNDCOURSE 048 ALT 3600 SPEED 310 LEGDIST 8
+ENDAPPROACHES
