@@ -22,7 +22,7 @@ class TestFsNavigatorMap(TestCase):
 
     def test_neighbour_nodes(self):
         node_lines = self.neighbours_test.find_node_lines("LIS")
-        print(self.neighbours_test.get_neighbours_nodes(node_lines))
+        self.neighbours_test.get_neighbours_nodes(node_lines)
         
 
 
