@@ -20,6 +20,11 @@ class TestFsNavigatorMap(TestCase):
     def test_find_node(self, node_name = "LIS"):
         self.assertTrue(len(self.neighbours_test.find_node_lines(node_name)) != 0)
 
+    def test_neighbour_nodes(self):
+        node_lines = self.neighbours_test.find_node_lines("LIS")
+        self.neighbours_test.get_neighbours_nodes(node_lines)
+        
+
 
 
 
