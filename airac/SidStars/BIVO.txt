@@ -1,0 +1,42 @@
+//BIVO (VOPNAFJORDUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HANB LATLON N 65 37.766666 W 15 2.483333
+FIX RATBO LATLON N 65 35.236 W 15 19.143833
+FIX SD05 LATLON N 65 39.521 W 14 57.289333
+FIX SOVUM LATLON N 65 28.986334 W 14 57.421333
+FIX TOPVA LATLON N 65 28.308667 W 15 16.095334
+FIX VOF05 LATLON N 65 37.7925 W 15 0.189833
+FIX VOI05 LATLON N 65 32.401667 W 15 9.2485
+FIX VOM05 LATLON N 65 41.978167 W 14 53.152667
+FIX VP LATLON N 65 42.983333 W 14 51.233333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB05 FIX HANB 2700 FIX VP 63 RNW 05 TRK 055 UNTIL 3500 TURN LEFT DIRECT FIX HANB 4400
+ TRANSITION HA HOLD AT FIX HANB LEFT TURN INBOUNDCOURSE 055 ALT 3900 LEGTIME 2
+APPROACH RNV05 FIX VOI05 AT OR ABOVE 3800 FIX VOF05 2100 FIX SD05 AT OR ABOVE 1420 FIX OVERFLY VOM05 473 RNW 05 TRK 047 UNTIL 2300 TURN LEFT DIRECT FIX RATBO 4200 HOLD AT FIX RATBO LEFT TURN INBOUNDCOURSE 137 LEGTIME 1
+ TRANSITION RATBO FIX RATBO AT OR ABOVE 5100
+ TRANSITION SOVUM FIX SOVUM AT OR ABOVE 5700
+ TRANSITION TOPVA FIX TOPVA AT OR ABOVE 5100
+ENDAPPROACHES

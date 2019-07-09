@@ -1,0 +1,46 @@
+//CYVB (BONAVENTURE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMBOM LATLON N 48 1.893 W 65 19.994833
+FIX AVEGU LATLON N 48 11.186666 W 65 50.065834
+FIX BUBAX LATLON N 48 4.8985 W 65 29.653333
+FIX ENAGO LATLON N 48 4.57 W 65 46.409833
+FIX IGSEP LATLON N 47 59.358167 W 65 11.896667
+FIX IKLIS LATLON N 48 6.597 W 65 35.1395
+FIX LONTU LATLON N 47 54.824 W 65 15.022834
+FIX MASAP LATLON N 48 10.333333 W 65 47.278834
+FIX MUROK LATLON N 48 1.525166 W 65 18.817333
+FIX RAGEB LATLON N 48 3.890666 W 65 8.761333
+FIX SASIB LATLON N 48 3.217166 W 65 24.2425
+FIX SUSOG LATLON N 48 3.6315 W 65 25.574333
+FIX UDLOD LATLON N 48 9.1045 W 65 43.275667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX UDLOD AT OR ABOVE 2700 FIX IKLIS 1800 RNW 13 FIX SUSOG FIX OVERFLY MUROK 3500 HOLD AT FIX MUROK RIGHT TURN INBOUNDCOURSE 134 LEGTIME 1
+ TRANSITION AVEGU FIX AVEGU
+ TRANSITION ENAGO FIX ENAGO
+APPROACH RNV31 FIX IGSEP AT OR ABOVE 1800 FIX AMBOM 1800 FIX SASIB AT OR ABOVE 820 RNW 31 FIX BUBAX FIX OVERFLY MASAP 3500 HOLD AT FIX MASAP RIGHT TURN INBOUNDCOURSE 314 LEGTIME 1
+ TRANSITION LONTU FIX LONTU
+ TRANSITION RAGEB FIX RAGEB
+ENDAPPROACHES

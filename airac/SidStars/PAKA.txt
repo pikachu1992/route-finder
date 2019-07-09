@@ -1,0 +1,35 @@
+//PAKA (TATITLEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLIGH LATLON N 60 50.833834 W 146 59.948833
+FIX CURUV LATLON N 60 51.6475 W 146 40.6745
+FIX JOH LATLON N 60 28.857167 W 146 35.960167
+FIX NECYI LATLON N 60 46.584 W 146 31.406666
+FIX VALUC LATLON N 60 54.231 W 146 53.079833
+FIX ZUDBO LATLON N 60 42.733834 W 146 29.680667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX ZUDBO AT OR ABOVE 3600 FIX NECYI 3000 FIX OVERFLY CURUV 273 RNW 31 TRK 298 UNTIL 462 FIX VALUC FIX BLIGH FIX OVERFLY JOH AT OR ABOVE 4400 HOLD AT FIX JOH RIGHT TURN INBOUNDCOURSE 312 LEGDIST 5
+ TRANSITION JOH FIX JOH
+ENDAPPROACHES

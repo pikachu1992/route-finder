@@ -1,0 +1,40 @@
+//AK53 (STONY MOUNTAIN LODGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COBON LATLON N 61 0.976333 W 154 5.851333
+FIX FAMEK LATLON N 61 7.895333 W 154 29.828333
+FIX HOTIM LATLON N 61 4.729 W 153 57.9435
+FIX JUDBU LATLON N 61 0.216 W 154 29.071333
+FIX WOGAP LATLON N 60 56.858833 W 154 14.473166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID FAMEK1 RNW 03 RNW 21 FIX HOTIM AT OR ABOVE 2500 FIX WOGAP FIX JUDBU FIX FAMEK AT OR ABOVE 7000
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA03 FIX WOGAP AT OR ABOVE 4800 FIX COBON 3200 FIX OVERFLY HOTIM 2500 RNW 03 TRK 032 UNTIL 2500 TURN RIGHT DIRECT FIX WOGAP FIX OVERFLY JUDBU AT OR ABOVE 6000 HOLD AT FIX JUDBU RIGHT TURN INBOUNDCOURSE 101 SPEED 175 LEGDIST 5
+ TRANSITION FAMEK FIX FAMEK FIX JUDBU AT OR ABOVE 6000
+APPROACH RNVA21 FIX WOGAP AT OR ABOVE 4800 FIX COBON 3200 FIX OVERFLY HOTIM 2500 RNW 21 TRK 032 UNTIL 2500 TURN RIGHT DIRECT FIX WOGAP FIX OVERFLY JUDBU AT OR ABOVE 6000 HOLD AT FIX JUDBU RIGHT TURN INBOUNDCOURSE 101 SPEED 175 LEGDIST 5
+ TRANSITION FAMEK FIX FAMEK FIX JUDBU AT OR ABOVE 6000
+ENDAPPROACHES

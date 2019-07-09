@@ -1,0 +1,44 @@
+//KFBR (FT BRIDGER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EXILE LATLON N 41 17.878166 W 110 40.03
+FIX FBR LATLON N 41 22.706333 W 110 25.443667
+FIX FF22 LATLON N 41 26.775334 W 110 19.218167
+FIX GRODI LATLON N 41 12.404666 W 110 39.915
+FIX LESRE LATLON N 41 26.839 W 110 18.227
+FIX PI001 LATLON N 41 25.136825 W 110 22.086266
+FIX PI002 LATLON N 41 25.059408 W 110 16.353095
+FIX PI003 LATLON N 41 29.64627 W 110 15.839971
+FIX SINGE LATLON N 41 30.265 W 110 11.831167
+FIX WEGEM LATLON N 41 26.739 W 109 59.408167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 07
+RNW 22
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV22 FIX SINGE AT OR ABOVE 10000 FIX LESRE 8700 RNW 22 TRK 224 UNTIL 7500 FIX OVERFLY EXILE AT OR ABOVE 12000 HOLD AT FIX EXILE RIGHT TURN INBOUNDCOURSE 223 LEGDIST 7
+ TRANSITION FBR FIX FBR FIX OVERFLY SINGE AT OR ABOVE 12000 HOLD AT FIX SINGE RIGHT TURN INBOUNDCOURSE 224 ALT 10000 LEGDIST 7
+ TRANSITION WEGEM FIX WEGEM
+APPROACH VOR22 FIX FF22 8500 RNW 22 FIX FBR AT OR ABOVE 7434 HOLD AT FIX FBR RIGHT TURN INBOUNDCOURSE 215 LEGTIME 1
+ TRANSITION GRODI FIX GRODI FIX FBR AT OR ABOVE 11000 FIX PI001 AT OR ABOVE 8500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 8500 SPEED 210 FIX PI003 AT OR ABOVE 8500 SPEED 210
+ENDAPPROACHES

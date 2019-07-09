@@ -1,0 +1,47 @@
+//KX26 (SEBASTIAN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BAIRN LATLON N 27 56.872834 W 81 6.905833
+FIX CUKPO LATLON N 27 36.468 W 80 15.278666
+FIX CUSMO LATLON N 27 27.836333 W 80 43.141667
+FIX FATKU LATLON N 28 2.1095 W 80 24.376166
+FIX HASUP LATLON N 27 53.398667 W 80 14.740166
+FIX HODSO LATLON N 27 43.958167 W 80 44.9015
+FIX JEKOL LATLON N 27 41.197 W 80 38.267666
+FIX MARKG LATLON N 27 56.155834 W 80 21.3885
+FIX MLB LATLON N 28 6.317 W 80 38.120333
+FIX NAMHO LATLON N 27 45.092833 W 80 33.8835
+FIX POKME LATLON N 27 52.409333 W 80 25.627333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 10
+RNW 23
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA05 FIX JEKOL AT OR ABOVE 2000 FIX NAMHO 1600 RNW 05 TRK 051 UNTIL 422 FIX POKME FIX OVERFLY HASUP AT OR ABOVE 2000 HOLD AT FIX HASUP RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4
+ TRANSITION BAIRN FIX BAIRN FIX HODSO AT OR ABOVE 2000
+ TRANSITION CUSMO FIX CUSMO
+ TRANSITION JEKOL HOLD AT FIX JEKOL RIGHT TURN INBOUNDCOURSE 051 ALT 2000 LEGDIST 4
+APPROACH RNVB23 FIX MARKG AT OR ABOVE 2000 FIX POKME 1600 RNW 23 TRK 231 UNTIL 422 FIX OVERFLY JEKOL AT OR ABOVE 2000 HOLD AT FIX JEKOL RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4
+ TRANSITION CUKPO FIX CUKPO FIX HASUP AT OR ABOVE 2000
+ TRANSITION MLB FIX MLB FIX FATKU AT OR ABOVE 2000
+ENDAPPROACHES

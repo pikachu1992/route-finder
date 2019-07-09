@@ -1,0 +1,39 @@
+//K0W3 (HARFORD CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CURVY LATLON N 39 37.520167 W 76 0.966833
+FIX ILINE LATLON N 39 33.801167 W 76 8.416834
+FIX KITHE LATLON N 39 48.592166 W 76 17.802
+FIX MARRY LATLON N 39 34.279166 W 76 18.742834
+FIX SNAZI LATLON N 39 34.564333 W 76 25.198667
+FIX TAFFI LATLON N 39 32.610667 W 76 37.6565
+FIX TAYLO LATLON N 39 39.799667 W 76 27.7195
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB10 FIX SNAZI AT OR ABOVE 2900 FIX MARRY 2000 RNW 10 FIX ILINE FIX OVERFLY CURVY AT OR ABOVE 3000 HOLD AT FIX CURVY RIGHT TURN INBOUNDCOURSE 271 LEGDIST 4
+ TRANSITION KITHE FIX KITHE FIX TAYLO AT OR ABOVE 3000
+ TRANSITION TAFFI FIX TAFFI
+ENDAPPROACHES

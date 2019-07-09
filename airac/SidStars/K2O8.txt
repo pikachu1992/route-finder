@@ -1,0 +1,43 @@
+//K2O8 (HINTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASIME LATLON N 35 40.064333 W 98 20.656667
+FIX CANAD LATLON N 35 35.057 W 98 20.603167
+FIX COGNO LATLON N 35 24.617167 W 98 20.491834
+FIX EKOKE LATLON N 35 19.559 W 98 26.548834
+FIX FATAM LATLON N 35 40.018 W 98 26.792833
+FIX HADMA LATLON N 35 19.605334 W 98 20.4385
+FIX JABVA LATLON N 35 40.1055 W 98 14.520334
+FIX OMASE LATLON N 35 19.6465 W 98 14.328
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ASIME AT OR ABOVE 3500 FIX CANAD 3000 RNW 17 FIX OVERFLY HADMA AT OR ABOVE 3600 HOLD AT FIX HADMA RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4
+ TRANSITION ASIME HOLD AT FIX ASIME RIGHT TURN INBOUNDCOURSE 173 ALT 3500 LEGDIST 4
+ TRANSITION FATAM FIX FATAM AT OR ABOVE 3500
+ TRANSITION JABVA FIX JABVA AT OR ABOVE 3500
+APPROACH RNV35 FIX HADMA AT OR ABOVE 3600 FIX COGNO 3400 RNW 35 FIX OVERFLY ASIME AT OR ABOVE 3500 HOLD AT FIX ASIME RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4
+ TRANSITION EKOKE FIX EKOKE AT OR ABOVE 3600
+ TRANSITION HADMA HOLD AT FIX HADMA RIGHT TURN INBOUNDCOURSE 353 ALT 3600 LEGDIST 4
+ TRANSITION OMASE FIX OMASE AT OR ABOVE 3600
+ENDAPPROACHES

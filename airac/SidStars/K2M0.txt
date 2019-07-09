@@ -1,0 +1,36 @@
+//K2M0 (PRINCETON-CALDWELL CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IXBER LATLON N 37 0.607166 W 87 59.885833
+FIX JOROV LATLON N 37 8.703833 W 87 49.007167
+FIX NONRE LATLON N 37 13.337 W 87 42.755333
+FIX WOBGU LATLON N 37 3.334667 W 87 56.227834
+FIX ZITKU LATLON N 37 10.616167 W 87 46.429166
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX IXBER AT OR ABOVE 2700 FIX WOBGU 2200 RNW 05 TRK 050 UNTIL 909 FIX OVERFLY NONRE AT OR ABOVE 2700 HOLD AT FIX NONRE RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4
+ TRANSITION IXBER HOLD AT FIX IXBER RIGHT TURN INBOUNDCOURSE 050 ALT 2700 LEGDIST 4
+APPROACH RNV23 FIX NONRE AT OR ABOVE 2700 FIX ZITKU 2200 FIX JOROV AT OR ABOVE 1300 RNW 23 TRK 230 UNTIL 866 FIX OVERFLY IXBER AT OR ABOVE 2700 HOLD AT FIX IXBER RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4
+ TRANSITION NONRE HOLD AT FIX NONRE RIGHT TURN INBOUNDCOURSE 230 ALT 2700 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//KSYM (MOREHEAD-ROWAN CO THOMAS REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIPUL LATLON N 38 2.331 W 83 40.0125
+FIX IDABE LATLON N 38 23.518 W 83 30.455167
+FIX NIYIK LATLON N 38 7.047833 W 83 37.892833
+FIX SOVSE LATLON N 38 18.8035 W 83 32.590166
+FIX UNICI LATLON N 38 16.155667 W 83 33.787166
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX CIPUL AT OR ABOVE 3600 FIX NIYIK 2900 RNW 02 TRK 026 UNTIL 1228 FIX OVERFLY IDABE AT OR ABOVE 3600 HOLD AT FIX IDABE RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4
+ TRANSITION CIPUL HOLD AT FIX CIPUL RIGHT TURN INBOUNDCOURSE 026 ALT 3600 LEGDIST 4
+APPROACH RNV20 FIX IDABE AT OR ABOVE 3600 FIX SOVSE 2900 FIX UNICI AT OR ABOVE 2000 RNW 20 TRK 206 UNTIL 1270 FIX OVERFLY CIPUL AT OR ABOVE 3600 HOLD AT FIX CIPUL RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4
+ TRANSITION IDABE HOLD AT FIX IDABE RIGHT TURN INBOUNDCOURSE 206 ALT 3600 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CYLK (LUTSELKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVREB LATLON N 62 26.587166 W 110 25.2305
+FIX IKPAG LATLON N 62 16.2705 W 111 0.314333
+FIX KETPO LATLON N 62 32.029166 W 110 21.442834
+FIX MIRAP LATLON N 62 22.255834 W 110 17.1855
+FIX PETKI LATLON N 62 24.122666 W 110 50.9355
+FIX TANVA LATLON N 62 29.530834 W 111 6.4155
+FIX UDBOB LATLON N 62 25.950167 W 110 31.960834
+FIX VISOG LATLON N 62 24.161833 W 110 50.533333
+FIX XOROS LATLON N 62 27.142834 W 110 19.308334
+FIX XUBES LATLON N 62 22.901333 W 111 3.353666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX XUBES AT OR ABOVE 2500 FIX VISOG 2000 RNW 08 FIX OVERFLY AVREB 2600 HOLD AT FIX AVREB RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1
+ TRANSITION IKPAG FIX IKPAG
+ TRANSITION TANVA FIX TANVA
+APPROACH RNV26 FIX XOROS AT OR ABOVE 2500 FIX UDBOB 1900 RNW 26 FIX OVERFLY PETKI 2500 HOLD AT FIX PETKI RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1
+ TRANSITION KETPO FIX KETPO SPEED 210
+ TRANSITION MIRAP FIX MIRAP SPEED 210
+ENDAPPROACHES

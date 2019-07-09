@@ -1,0 +1,55 @@
+//SBDB (BONITO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DB001 LATLON S 21 1.21 W 56 24.51
+FIX DB002 LATLON S 20 58.72 W 56 31.36
+FIX DB003 LATLON S 21 3.91 W 56 36.21
+FIX DB004 LATLON S 21 4.56 W 56 29.83
+FIX DB006 LATLON S 21 9.44 W 56 28.56
+FIX DB007 LATLON S 21 30.96 W 56 22.91
+FIX DB013 LATLON S 21 20.24 W 56 25.73
+FIX DOKMA LATLON S 21 12.93 W 55 58.22
+FIX DOLVA LATLON S 21 17.51 W 56 15.41
+FIX ISOKO LATLON S 21 10.66 W 56 17.93
+FIX ISONI LATLON S 21 39.11 W 56 14.57
+FIX KODRI LATLON S 20 48.44 W 56 34.35
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID DOKMA1
+ RNW 18 FIX OVERFLY DB013 TURN LEFT DIRECT FIX DOLVA FIX DOKMA
+ RNW 36 FIX DB006 TURN RIGHT DIRECT FIX ISOKO FIX DOKMA
+SID ISONI1
+ RNW 18 FIX OVERFLY DB013 FIX ISONI
+ RNW 36 FIX DB006 TURN RIGHT DIRECT FIX ISOKO FIX ISONI
+SID KODRI1
+ RNW 18 FIX OVERFLY DB013 TURN LEFT DIRECT FIX DOLVA FIX KODRI
+ RNW 36 FIX DB006 FIX KODRI
+ENDSIDS
+
+APPROACHES
+APPROACH RNV18 FIX DB004 AT OR ABOVE 3300 FIX DB006 2740 RNW 18 FIX OVERFLY DB007 AT OR ABOVE 5000 HOLD AT FIX DB007 RIGHT TURN INBOUNDCOURSE 001 LEGTIME 1
+ TRANSITION DB001 FIX DB001 AT OR ABOVE 4000
+ TRANSITION DB002 FIX DB002 AT OR ABOVE 4000
+ TRANSITION DB003 FIX DB003 AT OR ABOVE 4000
+ENDAPPROACHES

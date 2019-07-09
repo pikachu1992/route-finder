@@ -1,0 +1,43 @@
+//CJV8 (GRAND RAPIDS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LISNU LATLON N 53 6.641833 W 99 13.209833
+FIX MEPSI LATLON N 53 3.105167 W 99 7.358
+FIX MEVPU LATLON N 53 7.004666 W 99 13.8115
+FIX PEMPU LATLON N 52 58.584833 W 99 10.872667
+FIX ROMKU LATLON N 53 22.1145 W 99 27.964
+FIX SENDI LATLON N 53 14.062667 W 99 25.5665
+FIX SIDVI LATLON N 53 5.1995 W 98 59.833834
+FIX TAKVU LATLON N 53 17.584333 W 99 31.468166
+FIX VERKU LATLON N 53 13.700833 W 99 24.9615
+FIX VIPMO LATLON N 53 15.456667 W 99 39.002666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX TAKVU AT OR ABOVE 2600 SPEED 180 FIX SENDI 2500 RNW 13 FIX OVERFLY MEVPU 2300 HOLD AT FIX MEVPU RIGHT TURN INBOUNDCOURSE 130 SPEED 230 LEGTIME 1
+ TRANSITION ROMKU FIX ROMKU SPEED 210
+ TRANSITION VIPMO FIX VIPMO SPEED 210
+APPROACH RNV31 FIX MEPSI AT OR ABOVE 2500 SPEED 180 FIX LISNU 2500 RNW 31 FIX OVERFLY VERKU 2300 HOLD AT FIX VERKU RIGHT TURN INBOUNDCOURSE 310 SPEED 230 LEGTIME 1
+ TRANSITION PEMPU FIX PEMPU SPEED 210
+ TRANSITION SIDVI FIX SIDVI SPEED 210
+ENDAPPROACHES

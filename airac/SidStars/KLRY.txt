@@ -1,0 +1,44 @@
+//KLRY (SMITH MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALFUN LATLON N 38 31.3765 W 94 20.279833
+FIX COGNA LATLON N 38 34.383334 W 94 20.470333
+FIX FEMIL LATLON N 38 48.138167 W 94 21.3475
+FIX HOWIF LATLON N 38 25.085167 W 94 19.882333
+FIX JAXER LATLON N 38 24.834334 W 94 26.236166
+FIX JUGAT LATLON N 38 47.884667 W 94 27.735167
+FIX KOHHO LATLON N 38 25.330333 W 94 13.527833
+FIX LEBSE LATLON N 38 42.028834 W 94 20.957
+FIX NUCBI LATLON N 38 48.385834 W 94 14.959166
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX FEMIL AT OR ABOVE 2900 FIX LEBSE 2600 RNW 17 TRK 173 UNTIL 1315 FIX OVERFLY HOWIF AT OR ABOVE 2600 HOLD AT FIX HOWIF RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4
+ TRANSITION FEMIL HOLD AT FIX FEMIL RIGHT TURN INBOUNDCOURSE 173 ALT 2900 LEGDIST 4
+ TRANSITION JUGAT FIX JUGAT AT OR ABOVE 2900
+ TRANSITION NUCBI FIX NUCBI AT OR ABOVE 2900
+APPROACH RNV35 FIX HOWIF AT OR ABOVE 2600 FIX ALFUN 2500 FIX COGNA AT OR ABOVE 1500 RNW 35 FIX OVERFLY FEMIL AT OR ABOVE 3000 HOLD AT FIX FEMIL RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4
+ TRANSITION HOWIF HOLD AT FIX HOWIF RIGHT TURN INBOUNDCOURSE 353 ALT 2600 LEGDIST 4
+ TRANSITION JAXER FIX JAXER AT OR ABOVE 2900
+ TRANSITION KOHHO FIX KOHHO AT OR ABOVE 2900
+ENDAPPROACHES

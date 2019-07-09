@@ -1,0 +1,40 @@
+//WATK (WAIKABUBAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF10 LATLON S 9 22.779667 E 119 3.903667
+FIX FF10 LATLON S 9 23.5675 E 119 8.8995
+FIX FN10 LATLON S 9 23.188834 E 119 8.383
+FIX KELLO LATLON S 9 21.991667 E 118 58.908334
+FIX MA10 LATLON S 9 24.197 E 119 12.896333
+FIX TBK LATLON S 9 24.51 E 119 14.896667
+FIX WKNB LATLON S 9 24.818333 E 119 14.96
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VDM10 FIX CF10 AT OR ABOVE 2900 FIX FF10 1800 FIX MA10 531 RNW 10 FIX TBK TRK 098 UNTIL 1.0 FROM FIX TBK HDG 248 INTERCEPT RADIAL 278 TO FIX KELLO FIX KELLO 4500 HOLD AT FIX KELLO LEFT TURN INBOUNDCOURSE 098 ALT 4500 LEGTIME 1
+ TRANSITION KELLO FIX KELLO AT OR ABOVE 4500
+APPROACH NDBY10 FIX FN10 2000 RNW 10 FIX OVERFLY WKNB TRK 015 INTERCEPT RADIAL 045 TO FIX WKNB TRK 045 UNTIL 2000 TURN LEFT DIRECT FIX WKNB AT OR ABOVE 4000
+ TRANSITION WK FIX WKNB AT OR ABOVE 4000 SPEED 200 TRK 305 UNTIL 6.7 FROM FIX WKNB
+APPROACH NDBZ10 FIX FN10 2000 RNW 10 FIX OVERFLY WKNB TRK 015 INTERCEPT RADIAL 045 TO FIX WKNB TRK 045 UNTIL 2000 TURN LEFT DIRECT FIX WKNB AT OR ABOVE 4000
+ TRANSITION WK FIX WKNB AT OR ABOVE 4000 TRK 295 UNTIL 7.0 FROM FIX WKNB
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CZNG (POPLAR RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALVAL LATLON N 53 1.333834 W 97 33.398
+FIX AMOVO LATLON N 53 3.1135 W 96 58.167667
+FIX BOXIR LATLON N 52 53.250667 W 97 0.748166
+FIX DERPO LATLON N 53 0.439 W 97 23.575333
+FIX IMOBI LATLON N 52 59.0455 W 97 8.577667
+FIX ONBIV LATLON N 53 6.271166 W 97 32.168333
+FIX ONDOK LATLON N 52 58.182167 W 96 59.460334
+FIX SUVNI LATLON N 52 59.110166 W 97 9.266167
+FIX URNEM LATLON N 53 0.502 W 97 24.261833
+FIX VIXAX LATLON N 52 56.396333 W 97 34.623
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX ALVAL AT OR ABOVE 2100 FIX DERPO 2100 RNW 10 FIX OVERFLY IMOBI 2000 HOLD AT FIX IMOBI RIGHT TURN INBOUNDCOURSE 096 LEGTIME 1
+ TRANSITION ONBIV FIX ONBIV SPEED 210
+ TRANSITION VIXAX FIX VIXAX SPEED 210
+APPROACH RNV28 FIX ONDOK AT OR ABOVE 2100 FIX SUVNI 2100 RNW 28 FIX OVERFLY URNEM 2000 HOLD AT FIX URNEM RIGHT TURN INBOUNDCOURSE 276 LEGTIME 1
+ TRANSITION AMOVO FIX AMOVO SPEED 210
+ TRANSITION BOXIR FIX BOXIR SPEED 210
+ENDAPPROACHES

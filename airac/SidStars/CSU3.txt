@@ -1,0 +1,35 @@
+//CSU3 (ST-HYACINTHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXARI LATLON N 45 40.703833 W 73 0.404666
+FIX DUSOD LATLON N 45 43.693166 W 73 0.055667
+FIX KAVOL LATLON N 45 45.828 W 72 53.599667
+FIX OVILI LATLON N 45 46.534834 W 73 5.930167
+FIX ULDAD LATLON N 45 38.212667 W 73 0.695167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV20 FIX DUSOD AT OR ABOVE 1500 SPEED 140 FIX AXARI 1440 FIX OVERFLY ULDAD 634 RNW 20 TURN RIGHT DIRECT FIX OVERFLY OVILI 1500 HOLD AT FIX OVILI LEFT TURN INBOUNDCOURSE 141 SPEED 175 LEGTIME 1
+ TRANSITION KAVOL FIX KAVOL SPEED 140
+ TRANSITION OVILI FIX OVILI SPEED 140
+ENDAPPROACHES

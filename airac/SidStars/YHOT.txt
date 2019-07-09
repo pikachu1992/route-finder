@@ -1,0 +1,38 @@
+//YHOT (MT HOTHAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOZEA LATLON S 37 6.5335 E 147 37.650334
+FIX HOZEB LATLON S 37 12.266666 E 147 37.8515
+FIX HOZEC LATLON S 37 14.381167 E 147 31.1645
+FIX HOZEF LATLON S 37 6.756167 E 147 27.406667
+FIX HOZEH LATLON S 37 12.729 E 147 21.5085
+FIX HOZEI LATLON S 37 9.513334 E 147 32.625833
+FIX HOZEM LATLON S 37 3.7785 E 147 21.785
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ29 FIX HOZEI AT OR ABOVE 7700 FIX HOZEF 6390 FIX OVERFLY HOZEM 4671 RNW 29 TRK 291 UNTIL 5500 TURN LEFT DIRECT FIX HOZEH SPEED 210 HDG 114 VECTORS
+ TRANSITION HOZEA FIX HOZEA AT OR ABOVE 7700 SPEED 210
+ TRANSITION HOZEB FIX HOZEB AT OR ABOVE 7700 SPEED 210
+ TRANSITION HOZEC FIX HOZEC AT OR ABOVE 7700 SPEED 210
+ENDAPPROACHES

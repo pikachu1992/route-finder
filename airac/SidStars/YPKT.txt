@@ -1,0 +1,49 @@
+//YPKT (PORT KEATS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PKTND LATLON S 14 5.042666 E 129 23.140333
+FIX PKTNE LATLON S 14 0.381334 E 129 26.6075
+FIX PKTNF LATLON S 14 9.876 E 129 29.961667
+FIX PKTNG LATLON S 14 1.966 E 129 32.28
+FIX PKTNH LATLON S 14 17.471666 E 129 32.646833
+FIX PKTNI LATLON S 14 5.128667 E 129 28.284167
+FIX PKTNM LATLON S 14 14.6235 E 129 31.6395
+FIX PKTSA LATLON S 14 24.924667 E 129 40.405667
+FIX PKTSB LATLON S 14 29.5875 E 129 36.934667
+FIX PKTSC LATLON S 14 28.002 E 129 31.250833
+FIX PKTSF LATLON S 14 20.093333 E 129 33.577667
+FIX PKTSH LATLON S 14 12.498 E 129 30.888167
+FIX PKTSI LATLON S 14 24.8405 E 129 35.254166
+FIX PKTSM LATLON S 14 15.346333 E 129 31.895167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ16 FIX PKTNI AT OR ABOVE 1800 FIX PKTNF 1720 FIX OVERFLY PKTNM 132 RNW 16 FIX OVERFLY PKTNH HDG 330 VECTORS
+ TRANSITION PKTND FIX PKTND AT OR ABOVE 1800
+ TRANSITION PKTNE FIX PKTNE AT OR ABOVE 1800
+ TRANSITION PKTNG FIX PKTNG AT OR ABOVE 1800
+APPROACH RNVZ34 FIX PKTSI AT OR ABOVE 1800 FIX PKTSF 1750 FIX OVERFLY PKTSM 162 RNW 34 FIX OVERFLY PKTSH HDG 180 VECTORS
+ TRANSITION PKTSA FIX PKTSA AT OR ABOVE 1800
+ TRANSITION PKTSB FIX PKTSB AT OR ABOVE 1800
+ TRANSITION PKTSC FIX PKTSC AT OR ABOVE 1800
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//LL22 (BROOKERIDGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DPA LATLON N 41 53.421833 W 88 21.010333
+FIX KLUBS LATLON N 41 46.707 W 88 6.116167
+FIX MA119 LATLON N 41 44.012 W 88 0.174167
+FIX ROKEE LATLON N 41 49.810166 W 88 12.983833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA09 FIX ROKEE AT OR ABOVE 3000 FIX KLUBS 2300 FIX MA119 1360 RNW 09 TRK 119 UNTIL 1500 TURN RIGHT DIRECT FIX ROKEE AT OR ABOVE 3000 HOLD AT FIX ROKEE RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION DPA FIX DPA
+APPROACH VDMA18 FIX ROKEE AT OR ABOVE 3000 FIX KLUBS 2300 FIX MA119 1360 RNW 18 TRK 119 UNTIL 1500 TURN RIGHT DIRECT FIX ROKEE AT OR ABOVE 3000 HOLD AT FIX ROKEE RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION DPA FIX DPA
+APPROACH VDMA27 FIX ROKEE AT OR ABOVE 3000 FIX KLUBS 2300 FIX MA119 1360 RNW 27 TRK 119 UNTIL 1500 TURN RIGHT DIRECT FIX ROKEE AT OR ABOVE 3000 HOLD AT FIX ROKEE RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION DPA FIX DPA
+APPROACH VDMA36 FIX ROKEE AT OR ABOVE 3000 FIX KLUBS 2300 FIX MA119 1360 RNW 36 TRK 119 UNTIL 1500 TURN RIGHT DIRECT FIX ROKEE AT OR ABOVE 3000 HOLD AT FIX ROKEE RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION DPA FIX DPA
+ENDAPPROACHES

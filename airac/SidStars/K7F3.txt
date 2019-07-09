@@ -1,0 +1,38 @@
+//K7F3 (CADDO MILLS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BYP LATLON N 33 32.249167 W 96 14.045666
+FIX CQY LATLON N 32 11.143333 W 96 13.086167
+FIX IGATE LATLON N 33 7.811833 W 96 14.586
+FIX IMOPY LATLON N 32 46.808 W 96 13.5075
+FIX KOGLY LATLON N 32 56.7645 W 96 14.837833
+FIX MUMGE LATLON N 32 59.918 W 96 14.766
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 18
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX IMOPY AT OR ABOVE 2500 FIX KOGLY 2200 FIX MUMGE AT OR ABOVE 1180 RNW 36 TRK 355 UNTIL 942 FIX OVERFLY IGATE AT OR ABOVE 2500 HOLD AT FIX IGATE LEFT TURN INBOUNDCOURSE 175 LEGDIST 4
+ TRANSITION BYP FIX BYP FIX IMOPY AT OR ABOVE 2500 HOLD AT FIX IMOPY RIGHT TURN INBOUNDCOURSE 348 ALT 2500 LEGDIST 4
+ TRANSITION CQY FIX CQY
+ENDAPPROACHES

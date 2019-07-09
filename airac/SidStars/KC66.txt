@@ -1,0 +1,37 @@
+//KC66 (MONMOUTH MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALEXI LATLON N 40 55.975667 W 90 32.655833
+FIX GBG LATLON N 40 56.240666 W 90 26.067833
+FIX MAHPA LATLON N 40 55.767334 W 90 37.728
+FIX VICKS LATLON N 40 58.277333 W 90 10.427333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH VORA03 FIX GBG AT OR ABOVE 2400 FIX ALEXI 2000 FIX MAHPA 1360 RNW 03 TRK 264 UNTIL 2400 TURN RIGHT DIRECT FIX GBG HOLD AT FIX GBG RIGHT TURN INBOUNDCOURSE 264 LEGTIME 1
+ TRANSITION GBG HOLD AT FIX GBG RIGHT TURN INBOUNDCOURSE 264 ALT 2400 LEGTIME 1
+ TRANSITION VICKS FIX VICKS
+APPROACH VORA21 FIX GBG AT OR ABOVE 2400 FIX ALEXI 2000 FIX MAHPA 1360 RNW 21 TRK 264 UNTIL 2400 TURN RIGHT DIRECT FIX GBG HOLD AT FIX GBG RIGHT TURN INBOUNDCOURSE 264 LEGTIME 1
+ TRANSITION GBG HOLD AT FIX GBG RIGHT TURN INBOUNDCOURSE 264 ALT 2400 LEGTIME 1
+ TRANSITION VICKS FIX VICKS
+ENDAPPROACHES

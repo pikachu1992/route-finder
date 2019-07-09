@@ -1,0 +1,43 @@
+//K3I2 (MASON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CULAG LATLON N 38 45.309 W 82 16.8895
+FIX EYMED LATLON N 38 54.360167 W 82 22.354333
+FIX FOGLU LATLON N 39 4.310833 W 81 55.215833
+FIX HAYVU LATLON N 38 59.775167 W 81 52.5035
+FIX IMOPE LATLON N 38 52.470667 W 82 12.470333
+FIX JEDKI LATLON N 38 55.2385 W 81 49.797
+FIX RAKNE LATLON N 38 57.149167 W 81 59.707834
+FIX WAMAX LATLON N 38 49.835167 W 82 19.619
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX WAMAX AT OR ABOVE 3200 FIX IMOPE 2400 RNW 07 FIX OVERFLY HAYVU AT OR ABOVE 2700 HOLD AT FIX HAYVU RIGHT TURN INBOUNDCOURSE 252 LEGDIST 4
+ TRANSITION CULAG FIX CULAG AT OR ABOVE 3200
+ TRANSITION EYMED FIX EYMED AT OR ABOVE 3200
+ TRANSITION WAMAX HOLD AT FIX WAMAX RIGHT TURN INBOUNDCOURSE 072 ALT 3200 LEGDIST 4
+APPROACH RNV25 FIX HAYVU AT OR ABOVE 2700 FIX RAKNE 2300 RNW 25 FIX OVERFLY WAMAX AT OR ABOVE 3200 HOLD AT FIX WAMAX RIGHT TURN INBOUNDCOURSE 072 LEGDIST 4
+ TRANSITION FOGLU FIX FOGLU AT OR ABOVE 2700
+ TRANSITION HAYVU HOLD AT FIX HAYVU RIGHT TURN INBOUNDCOURSE 252 ALT 2700 LEGDIST 4
+ TRANSITION JEDKI FIX JEDKI AT OR ABOVE 2700
+ENDAPPROACHES

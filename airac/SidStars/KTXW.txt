@@ -1,0 +1,41 @@
+//KTXW (MID VALLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ECETE LATLON N 26 14.269667 W 98 1.5615
+FIX FATOR LATLON N 26 19.607333 W 98 22.611833
+FIX HARGI LATLON N 26 27.7605 W 97 59.451
+FIX MFE LATLON N 26 10.432667 W 98 14.447167
+FIX WODEE LATLON N 26 18.980333 W 98 5.712667
+FIX WULBU LATLON N 26 10.665334 W 97 58.753166
+FIX ZADUV LATLON N 26 12.446167 W 97 59.9565
+FIX ZOXAT LATLON N 26 10.6005 W 98 3.333167
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WODEE AT OR ABOVE 2100 FIX ECETE 1400 FIX ZADUV AT OR ABOVE 660 RNW 14 TRK 138 UNTIL 900 TURN RIGHT DIRECT FIX OVERFLY WODEE AT OR ABOVE 2100 HOLD AT FIX WODEE RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4
+ TRANSITION FATOR FIX FATOR
+ TRANSITION HARGI FIX HARGI
+ TRANSITION WODEE HOLD AT FIX WODEE RIGHT TURN INBOUNDCOURSE 138 ALT 2100 LEGDIST 4
+APPROACH VORA14 FIX MFE AT OR ABOVE 1600 FIX ZOXAT 1500 FIX WULBU 700 RNW 14 TRK 080 UNTIL 1000 TURN LEFT DIRECT FIX MFE AT OR ABOVE 2000
+APPROACH VORA32 FIX MFE AT OR ABOVE 1600 FIX ZOXAT 1500 FIX WULBU 700 RNW 32 TRK 080 UNTIL 1000 TURN LEFT DIRECT FIX MFE AT OR ABOVE 2000
+ENDAPPROACHES

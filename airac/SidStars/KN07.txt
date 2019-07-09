@@ -1,0 +1,41 @@
+//KN07 (LINCOLN PARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEDDA LATLON N 40 55.753667 W 74 18.753667
+FIX HALUP LATLON N 41 2.612666 W 74 19.481333
+FIX JAFFE LATLON N 41 2.732167 W 74 17.516333
+FIX KIYEG LATLON N 40 52.083167 W 74 18.364834
+FIX NIYIS LATLON N 40 47.096167 W 74 17.8375
+FIX PIYIN LATLON N 40 46.595833 W 74 29.939
+FIX SAX LATLON N 41 4.052666 W 74 32.298833
+FIX WANVA LATLON N 41 7.655 W 74 16.320833
+FIX ZASEB LATLON N 41 8.556833 W 74 22.829666
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX NIYIS AT OR ABOVE 2300 FIX KIYEG 1700 FIX OVERFLY CEDDA 529 RNW 01 TRK 008 UNTIL 582 FIX HALUP FIX OVERFLY SAX AT OR ABOVE 3000 HOLD AT FIX SAX LEFT TURN INBOUNDCOURSE 079 LEGDIST 4
+ TRANSITION PIYIN FIX PIYIN
+APPROACH RNV19 FIX WANVA AT OR ABOVE 2700 FIX JAFFE 2200 RNW 19 TRK 203 UNTIL 582 TURN LEFT DIRECT FIX OVERFLY WANVA AT OR ABOVE 2700 HOLD AT FIX WANVA LEFT TURN INBOUNDCOURSE 203 LEGDIST 5
+ TRANSITION SAX FIX SAX FIX ZASEB AT OR ABOVE 2700
+ TRANSITION WANVA HOLD AT FIX WANVA LEFT TURN INBOUNDCOURSE 203 ALT 2700 LEGDIST 5
+ENDAPPROACHES

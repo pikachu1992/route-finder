@@ -1,0 +1,42 @@
+//KJKL (CARROLL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AZQ LATLON N 37 23.475334 W 83 15.7805
+FIX BEDTA LATLON N 37 30.047 W 83 20.0085
+FIX CANLA LATLON N 37 23.868 W 83 21.083167
+FIX DACEL LATLON N 37 23.178 W 83 14.868833
+FIX ERIKK LATLON N 37 30.316166 W 83 17.702
+FIX ESODE LATLON N 37 24.5525 W 83 27.2995
+FIX PI001 LATLON N 37 20.079219 W 83 14.715578
+FIX PI002 LATLON N 37 17.863049 W 83 10.082228
+FIX PI003 LATLON N 37 13.771728 W 83 12.742117
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VDM01 FIX AZQ AT OR ABOVE 4500 FIX ERIKK 3100 RNW 01 TRK 351 UNTIL 1781 TURN RIGHT DIRECT FIX AZQ AT OR ABOVE 4500 HOLD AT FIX AZQ RIGHT TURN INBOUNDCOURSE 351 LEGTIME 1
+ TRANSITION AZQ FIX PI001 AT OR ABOVE 4500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4500 SPEED 210 FIX PI003 AT OR ABOVE 4500 SPEED 210
+APPROACH RNV01 FIX CANLA AT OR ABOVE 3500 FIX BEDTA 3100 RNW 01 TRK 012 UNTIL 1781 TURN RIGHT DIRECT FIX CANLA AT OR ABOVE 4500 HOLD AT FIX CANLA RIGHT TURN INBOUNDCOURSE 012 LEGDIST 4
+ TRANSITION CANLA HOLD AT FIX CANLA RIGHT TURN INBOUNDCOURSE 012 ALT 3500 LEGDIST 4
+ TRANSITION DACEL FIX DACEL AT OR ABOVE 4500
+ TRANSITION ESODE FIX ESODE AT OR ABOVE 4500
+ENDAPPROACHES

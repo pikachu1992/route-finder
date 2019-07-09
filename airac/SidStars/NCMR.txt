@@ -1,0 +1,35 @@
+//NCMR (MITIARO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKENI LATLON S 19 51.431167 W 157 55.8715
+FIX LEKOM LATLON S 19 42.432667 W 157 52.876
+FIX MR934 LATLON S 19 48.954667 W 157 47.583667
+FIX TANOU LATLON S 19 47.447833 W 157 52.643
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX TANOU AT OR ABOVE 2500 FIX MR934 1600 RNW 09 TRK 094 UNTIL 1000 TURN LEFT DIRECT FIX TANOU 2500
+ TRANSITION AKENI FIX AKENI
+ TRANSITION LEKOM FIX LEKOM
+ TRANSITION TANOU HOLD AT FIX TANOU RIGHT TURN INBOUNDCOURSE 094 ALT 2500 LEGTIME 1
+ENDAPPROACHES

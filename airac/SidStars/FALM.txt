@@ -1,0 +1,33 @@
+//FALM (MAKHADO AB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI10 LATLON S 23 9.634333 E 29 32.3125
+FIX D280F LATLON S 23 9.926833 E 29 34.691
+FIX FI10 LATLON S 23 9.624334 E 29 35.133833
+FIX LTV LATLON S 23 9.511834 E 29 41.186333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH ILS10 FIX CI10 AT OR ABOVE 4700 FIX FI10 4700 RNW 10 FIX LTV TRK 100 UNTIL 5000 TURN RIGHT DIRECT FIX LTV 5800
+ TRANSITION LTV1 FIX LTV AT OR ABOVE 5800 SPEED 250 FIX D280F TRK 235 UNTIL 4.3 FROM FIX D280F
+ENDAPPROACHES

@@ -1,0 +1,46 @@
+//SARC (CORRIENTES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX C LATLON S 27 25.693333 W 58 45.531667
+FIX CD20 LATLON S 27 16.4305 W 58 43.373167
+FIX CF20 LATLON S 27 16.315166 W 58 44.097667
+FIX CRS LATLON S 27 26.24 W 58 45.706667
+FIX FD02 LATLON S 27 35.2155 W 58 46.765333
+FIX FD20 LATLON S 27 19.3735 W 58 44.0725
+FIX FF20 LATLON S 27 19.792166 W 58 44.635166
+FIX FN20 LATLON S 27 18.718333 W 58 44.710834
+FIX FS20 LATLON S 27 18.3925 W 58 43.839334
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX FD02 2300 RNW 02 FIX CRS AT OR ABOVE 610 TRK 120 VECTORS
+ TRANSITION CRS FIX CRS TRK 180 UNTIL 9.0 FROM FIX CRS
+APPROACH VDM20 FIX CD20 AT OR ABOVE 2300 FIX FD20 2300 FIX CRS 228 RNW 20 TRK 202 UNTIL 602 HDG 190 UNTIL 3000
+ TRANSITION CRS FIX CRS TRK 036 UNTIL 10.0 FROM FIX CRS
+APPROACH ILS20 FIX CF20 AT OR ABOVE 2300 FIX FF20 2300 RNW 20 TRK 198 UNTIL 610 HDG 190 UNTIL 3000
+ TRANSITION CRS FIX CRS TRK 032 UNTIL 10.0 FROM FIX CRS
+APPROACH NDB20 FIX FN20 2300 FIX C 384 RNW 20 TRK 190 UNTIL 3000
+ TRANSITION C FIX C TRK 035 UNTIL 7.0 FROM FIX C
+APPROACH VOR20 FIX FS20 2300 FIX CRS 233 RNW 20 TRK 202 UNTIL 602 HDG 190 UNTIL 3000
+ TRANSITION CRS FIX CRS TRK 036 UNTIL 8.0 FROM FIX CRS
+ENDAPPROACHES

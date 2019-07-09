@@ -1,0 +1,42 @@
+//KLXV (LAKE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAVVY LATLON N 39 32.3495 W 106 21.635666
+FIX INGRR LATLON N 39 21.300833 W 106 20.764667
+FIX LOZUL LATLON N 38 48.325333 W 106 6.249667
+FIX MORYU LATLON N 39 2.832334 W 106 16.7345
+FIX OLOWI LATLON N 39 16.154167 W 106 19.637833
+FIX SKKID LATLON N 39 22.903333 W 106 21.116
+FIX TALUE LATLON N 39 18.203833 W 106 20.086333
+FIX VUNOW LATLON N 39 10.082833 W 106 18.312167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID DAVVY2 RNW 34 FIX OLOWI FIX DAVVY 16000
+SID LOZUL4 RNW 16 FIX OVERFLY VUNOW FIX LOZUL 16000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV16 FIX DAVVY AT OR ABOVE 16000 FIX SKKID 13000 FIX INGRR AT OR ABOVE 12460 FIX TALUE AT OR ABOVE 11440 RNW 16 TRK 161 UNTIL 10184 FIX MORYU FIX OVERFLY LOZUL AT OR ABOVE 16000 HOLD AT FIX LOZUL LEFT TURN INBOUNDCOURSE 142 ALT 16000 LEGDIST 10
+ TRANSITION DAVVY HOLD AT FIX DAVVY RIGHT TURN INBOUNDCOURSE 169 ALT 16000 LEGDIST 10
+ENDAPPROACHES

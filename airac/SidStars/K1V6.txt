@@ -1,0 +1,35 @@
+//K1V6 (FREMONT CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACZES LATLON N 38 19.581334 W 104 53.362667
+FIX CASAN LATLON N 38 22.710334 W 104 59.984333
+FIX FSHER LATLON N 38 18.581333 W 104 38.852333
+FIX PAKMN LATLON N 38 20.064167 W 105 0.573667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 17
+RNW 29
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV29 FIX ACZES AT OR ABOVE 8000 FIX CASAN 7200 RNW 29 TRK 293 UNTIL 5900 TURN LEFT DIRECT FIX PAKMN SPEED 210 FIX OVERFLY FSHER AT OR ABOVE 8000 HOLD AT FIX FSHER LEFT TURN INBOUNDCOURSE 295 LEGDIST 7
+ TRANSITION FSHER FIX FSHER
+ENDAPPROACHES

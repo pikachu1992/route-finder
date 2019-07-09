@@ -1,0 +1,42 @@
+//KO22 (COLUMBIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FICHU LATLON N 37 57.616166 W 120 25.735
+FIX GONAQ LATLON N 37 52.6825 W 120 26.8495
+FIX HABXU LATLON N 37 52.076666 W 120 37.1135
+FIX HOFED LATLON N 37 46.534667 W 120 26.868334
+FIX KEKDE LATLON N 37 57.6105 W 120 25.737334
+FIX RIDOH LATLON N 37 51.6015 W 120 27.095833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 17
+RNW 29
+RNW 35
+ENDRNWS
+
+SIDS
+SID FICHU2 RNW 17 HDG 174 UNTIL 2621 FIX FICHU FIX GONAQ FIX OVERFLY HABXU HOLD AT FIX HABXU RIGHT TURN INBOUNDCOURSE 070 ALT 7000 LEGDIST 7
+ENDSIDS
+
+APPROACHES
+APPROACH RNV35 FIX RIDOH AT OR ABOVE 4500 FIX KEKDE 3400 RNW 35 TRK 354 UNTIL 2521 TURN LEFT DIRECT FIX OVERFLY HABXU AT OR ABOVE 7000 HOLD AT FIX HABXU RIGHT TURN INBOUNDCOURSE 070 LEGDIST 7
+ TRANSITION HABXU FIX HABXU
+ TRANSITION HOFED FIX HOFED
+ENDAPPROACHES

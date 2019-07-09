@@ -1,0 +1,37 @@
+//PAFM (AMBLER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FELOS LATLON N 66 59.435666 W 158 26.122667
+FIX JAKOW LATLON N 67 1.339834 W 157 56.594
+FIX LOUPS LATLON N 66 51.841834 W 157 39.157333
+FIX RONYE LATLON N 66 55.667666 W 158 2.579167
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX RONYE AT OR ABOVE 3600 FIX JAKOW 1900 RNW 01 TRK 009 UNTIL 1000 TURN RIGHT DIRECT FIX OVERFLY RONYE AT OR ABOVE 3600 HOLD AT FIX RONYE RIGHT TURN INBOUNDCOURSE 009 ALT 3600 LEGDIST 4
+ TRANSITION FELOS FIX FELOS
+ TRANSITION LOUPS FIX LOUPS
+ TRANSITION RONYE HOLD AT FIX RONYE RIGHT TURN INBOUNDCOURSE 009 ALT 3600 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//YCOE (COEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COENB LATLON S 13 45.963 E 143 7.035667
+FIX COEWA LATLON S 13 44.811667 E 142 52.431
+FIX COEWB LATLON S 13 39.174 E 142 51.218666
+FIX COEWC LATLON S 13 36.131333 E 142 56.2205
+FIX COEWF LATLON S 13 43.116334 E 143 0.666334
+FIX COEWH LATLON S 13 40.066166 E 143 5.2195
+FIX COEWI LATLON S 13 41.145833 E 142 55.941833
+FIX COEWM LATLON S 13 45.085166 E 143 5.392166
+FIX FF11 LATLON S 13 43.1785 E 143 2.104166
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB11 FIX FF11 2200 RNW 11 FIX OVERFLY COENB HDG 309 VECTORS
+ TRANSITION COE1 FIX COENB AT OR ABOVE 3900 SPEED 210 TRK 318 UNTIL 7.0 FROM FIX COENB
+ TRANSITION COE2 FIX COENB AT OR ABOVE 3900 SPEED 210 TRK 308 UNTIL 7.5 FROM FIX COENB
+APPROACH RNVZ11 FIX COEWI AT OR ABOVE 3300 FIX COEWF 2610 FIX OVERFLY COEWM 1017 RNW 11 TURN LEFT DIRECT FIX COEWH SPEED 180 HDG 305 VECTORS
+ TRANSITION COEWA FIX COEWA AT OR ABOVE 3300 SPEED 210
+ TRANSITION COEWB FIX COEWB AT OR ABOVE 3300 SPEED 210
+ TRANSITION COEWC FIX COEWC AT OR ABOVE 3300 SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//K5M0 (HARTSELLE-MORGAN CO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JUPES LATLON N 34 36.8095 W 86 55.797167
+FIX KIYET LATLON N 34 30.236 W 86 55.893167
+FIX QECKE LATLON N 34 18.007667 W 86 56.070833
+FIX TERYO LATLON N 34 21.191666 W 86 56.024666
+FIX ZIVEP LATLON N 34 27.093833 W 86 55.938833
+FIX ZOVOR LATLON N 34 11.675833 W 86 56.1625
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JUPES AT OR ABOVE 3000 FIX KIYET 2400 FIX ZIVEP AT OR ABOVE 1400 RNW 18 TRK 184 UNTIL 1028 FIX OVERFLY ZOVOR AT OR ABOVE 3100 HOLD AT FIX ZOVOR RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4
+ TRANSITION JUPES HOLD AT FIX JUPES RIGHT TURN INBOUNDCOURSE 184 ALT 3000 LEGDIST 4
+APPROACH RNV36 FIX ZOVOR AT OR ABOVE 3100 FIX QECKE 2600 FIX TERYO AT OR ABOVE 1580 RNW 36 TRK 004 UNTIL 1020 FIX OVERFLY JUPES AT OR ABOVE 3000 HOLD AT FIX JUPES RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4
+ TRANSITION ZOVOR HOLD AT FIX ZOVOR RIGHT TURN INBOUNDCOURSE 004 ALT 3100 LEGDIST 4
+ENDAPPROACHES

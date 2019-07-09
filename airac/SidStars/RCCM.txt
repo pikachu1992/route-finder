@@ -1,0 +1,37 @@
+//RCCM (QIMEI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JULLY LATLON N 23 19.346 E 119 34.971667
+FIX MALAY LATLON N 23 10.7285 E 119 42.119666
+FIX MALIC LATLON N 23 11.9075 E 119 28.067666
+FIX MKG LATLON N 23 35.726666 E 119 38.236667
+FIX OTTER LATLON N 23 11.4565 E 119 33.472834
+FIX TNN LATLON N 23 8.118334 E 120 12.371666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+STARS
+STAR MA1R FIX MKG FIX JULLY AT OR ABOVE 4000 FIX OTTER AT OR ABOVE 1500 FIX MALIC AT OR ABOVE 1500
+  RNW 02 RNW 20
+STAR SA1R FIX TNN FIX MALAY AT OR ABOVE 4000 FIX OTTER AT OR ABOVE 1500 FIX MALIC AT OR ABOVE 1500
+  RNW 02 RNW 20
+ENDSTARS

@@ -1,0 +1,43 @@
+//AGGN (GIZO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAKSI LATLON S 7 57.1745 E 156 46.399166
+FIX ELMOR LATLON S 7 53.221 E 156 49.508
+FIX GN556 LATLON S 8 1.439833 E 156 49.062167
+FIX GN813 LATLON S 8 10.3785 E 156 54.634333
+FIX GUSAK LATLON S 7 58.21 E 156 41.468167
+FIX REPOK LATLON S 8 13.607 E 157 2.233166
+FIX RIGMA LATLON S 8 14.6435 E 156 57.298834
+FIX SASEK LATLON S 8 18.5965 E 156 54.186833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX DAKSI AT OR ABOVE 3100 FIX GN556 1600 RNW 14 TRK 140 UNTIL 1000 TURN LEFT DIRECT FIX DAKSI AT OR ABOVE 3100
+ TRANSITION DAKSI HOLD AT FIX DAKSI RIGHT TURN INBOUNDCOURSE 140 ALT 3100 LEGTIME 1
+ TRANSITION ELMOR FIX ELMOR
+ TRANSITION GUSAK FIX GUSAK
+APPROACH RNV32 FIX RIGMA AT OR ABOVE 2500 FIX GN813 1600 RNW 32 TRK 320 UNTIL 1000 TURN RIGHT DIRECT FIX RIGMA AT OR ABOVE 2500
+ TRANSITION REPOK FIX REPOK
+ TRANSITION RIGMA HOLD AT FIX RIGMA RIGHT TURN INBOUNDCOURSE 320 ALT 2500 LEGTIME 1
+ TRANSITION SASEK FIX SASEK
+ENDAPPROACHES

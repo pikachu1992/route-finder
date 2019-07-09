@@ -1,0 +1,43 @@
+//BGNO (STATION NORD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FQ21 LATLON N 81 43.461833 W 16 57
+FIX MQ21 LATLON N 81 37.37 W 16 41.404
+FIX NOFAP LATLON N 81 42.47 W 16 39.345
+FIX NOIAE LATLON N 81 50.42 W 15 31.538
+FIX NOIAW LATLON N 81 49.277 W 17 10.666
+FIX NOIWP LATLON N 81 47.435 W 16 38.213
+FIX NOMPT LATLON N 81 37.039834 W 16 40.574167
+FIX NONB LATLON N 81 36.166 W 16 38.558167
+FIX PI001 LATLON N 81 46.769842 W 17 4.969399
+FIX PI002 LATLON N 81 48.639742 W 17 32.101699
+FIX PI003 LATLON N 81 52.906214 W 17 20.054727
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH NDM21 FIX FQ21 2000 FIX MQ21 373 RNW 21 TRK 178 UNTIL 480 TURN RIGHT DIRECT FIX FQ21 2000
+ TRANSITION NO FIX NONB AT OR ABOVE 2000 FIX FQ21 AT OR ABOVE 2000 FIX PI001 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2000 SPEED 210 FIX PI003 AT OR ABOVE 2000 SPEED 210
+APPROACH RNV21 FIX NOIWP AT OR ABOVE 3000 FIX NOFAP 1800 FIX OVERFLY NOMPT 255 RNW 21 TRK 198 UNTIL 800 TURN RIGHT DIRECT FIX NOIAW AT OR ABOVE 4000 HOLD AT FIX NOIAW RIGHT TURN INBOUNDCOURSE 129 ALT 4000 LEGTIME 1
+ TRANSITION NOIAE FIX NOIAE AT OR ABOVE 6000
+ TRANSITION NOIAW FIX NOIAW AT OR ABOVE 4000
+ENDAPPROACHES

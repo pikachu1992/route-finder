@@ -1,0 +1,35 @@
+//NCMK (MAUKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASAMO LATLON S 20 7.757333 W 157 34.521167
+FIX ENDAK LATLON S 19 59.079167 W 157 30.6075
+FIX MEKUX LATLON S 20 4.091333 W 157 30.892
+FIX MK934 LATLON S 20 6.057 W 157 26.003833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX MEKUX AT OR ABOVE 2500 FIX MK934 1600 RNW 10 TRK 099 UNTIL 1000 TURN LEFT DIRECT FIX MEKUX 2500
+ TRANSITION ASAMO FIX ASAMO
+ TRANSITION ENDAK FIX ENDAK
+ TRANSITION MEKUX HOLD AT FIX MEKUX RIGHT TURN INBOUNDCOURSE 099 ALT 2500 LEGTIME 1
+ENDAPPROACHES

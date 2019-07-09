@@ -1,0 +1,38 @@
+//KO53 (MEDFORD MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIRET LATLON N 36 47.376167 W 97 27.999
+FIX INACE LATLON N 36 58.617 W 97 44.901334
+FIX INERE LATLON N 36 36.232834 W 97 44.979
+FIX LIBEY LATLON N 36 58.600333 W 97 38.661334
+FIX PAKIY LATLON N 36 52.609333 W 97 44.922167
+FIX PALOC LATLON N 36 42.240833 W 97 44.958167
+FIX RANYO LATLON N 36 36.216167 W 97 38.769167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX INACE AT OR ABOVE 2800 FIX PAKIY 2700 RNW 17 TRK 175 UNTIL 1492 TURN LEFT DIRECT FIX OVERFLY FIRET AT OR ABOVE 5000 HOLD AT FIX FIRET RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION FIRET FIX FIRET FIX LIBEY AT OR ABOVE 2800
+APPROACH RNV35 FIX INERE AT OR ABOVE 2700 FIX PALOC 2700 RNW 35 TRK 355 UNTIL 1492 TURN RIGHT DIRECT FIX OVERFLY FIRET AT OR ABOVE 5000 HOLD AT FIX FIRET RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION FIRET FIX FIRET FIX RANYO AT OR ABOVE 3200
+ENDAPPROACHES

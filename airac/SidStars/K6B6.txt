@@ -1,0 +1,44 @@
+//K6B6 (MINUTE MAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXITE LATLON N 42 38.9505 W 71 33.865166
+FIX EGORE LATLON N 42 32.784167 W 71 29.174833
+FIX ERIGY LATLON N 42 37.599334 W 71 27.343
+FIX GDM LATLON N 42 32.755333 W 72 3.491333
+FIX GDM13 LATLON N 42 32.792333 W 71 45.904333
+FIX MHT LATLON N 42 52.111834 W 71 22.172
+FIX WANTS LATLON N 42 42.448834 W 71 25.683833
+FIX ZUPRO LATLON N 42 36.242 W 71 20.8255
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 12
+RNW 21
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH VDM21 FIX WANTS AT OR ABOVE 2000 FIX EGORE 2000 RNW 21 TRK 210 UNTIL 668 TURN LEFT DIRECT FIX EGORE AT OR ABOVE 2000 HOLD AT FIX EGORE RIGHT TURN INBOUNDCOURSE 210 LEGTIME 1
+ TRANSITION GDM FIX GDM FIX GDM13 AT OR ABOVE 3100 FIX EGORE AT OR ABOVE 2000 HOLD AT FIX EGORE RIGHT TURN INBOUNDCOURSE 210 ALT 2000 LEGTIME 1
+ TRANSITION MHT FIX MHT
+APPROACH RNV21 FIX ERIGY AT OR ABOVE 2000 FIX EGORE 2000 RNW 21 TRK 211 UNTIL 670 TURN RIGHT DIRECT FIX OVERFLY ERIGY AT OR ABOVE 2000 HOLD AT FIX ERIGY RIGHT TURN INBOUNDCOURSE 211 LEGDIST 4
+ TRANSITION GDM FIX GDM FIX AXITE AT OR ABOVE 2700
+ TRANSITION MHT FIX MHT FIX OVERFLY ERIGY AT OR ABOVE 2000 HOLD AT FIX ERIGY RIGHT TURN INBOUNDCOURSE 211 ALT 2000 LEGDIST 4
+ TRANSITION ZUPRO FIX ZUPRO
+ENDAPPROACHES

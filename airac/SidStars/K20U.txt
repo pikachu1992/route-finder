@@ -1,0 +1,37 @@
+//K20U (BEACH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CADOM LATLON N 46 59.206 W 104 4.632334
+FIX CAXET LATLON N 46 51.792167 W 103 53.202833
+FIX DEKRE LATLON N 46 53.759833 W 103 56.228167
+FIX DEVGE LATLON N 46 57.0525 W 104 1.303834
+FIX EKENE LATLON N 47 1.607167 W 104 8.351833
+FIX EKOYU LATLON N 46 49.382666 W 103 49.506
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX EKENE AT OR ABOVE 4700 FIX CADOM 4400 FIX DEVGE AT OR ABOVE 3400 RNW 12 TRK 125 UNTIL 3006 FIX OVERFLY EKOYU AT OR ABOVE 5000 HOLD AT FIX EKOYU RIGHT TURN INBOUNDCOURSE 306 LEGDIST 5
+ TRANSITION EKENE HOLD AT FIX EKENE RIGHT TURN INBOUNDCOURSE 125 ALT 4700 LEGDIST 5
+APPROACH RNV30 FIX EKOYU AT OR ABOVE 5000 FIX CAXET 4400 FIX DEKRE AT OR ABOVE 3480 RNW 30 TRK 306 UNTIL 3004 FIX OVERFLY EKENE AT OR ABOVE 4700 HOLD AT FIX EKENE RIGHT TURN INBOUNDCOURSE 125 LEGDIST 5
+ TRANSITION EKOYU HOLD AT FIX EKOYU RIGHT TURN INBOUNDCOURSE 306 ALT 5000 LEGDIST 5
+ENDAPPROACHES

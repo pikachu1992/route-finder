@@ -1,0 +1,40 @@
+//KOLE (CATTARAUGUS CO-OLEAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EANEY LATLON N 42 18.714334 W 78 18.649333
+FIX UGASE LATLON N 42 24.271 W 78 13.918166
+FIX UHZOS LATLON N 42 17.503667 W 78 19.677167
+FIX VAKTY LATLON N 42 4.32 W 78 30.8255
+FIX WOCDO LATLON N 42 11.096833 W 78 25.1065
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 16
+RNW 22
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH LOC22 FIX UGASE AT OR ABOVE 4500 FIX EANEY 3700 RNW 22 FIX VAKTY AT OR ABOVE 4900 HOLD AT FIX VAKTY RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4
+ TRANSITION UGASE HOLD AT FIX UGASE RIGHT TURN INBOUNDCOURSE 223 ALT 4500 LEGDIST 4
+APPROACH RNV04 FIX VAKTY AT OR ABOVE 4900 FIX WOCDO 3300 RNW 04 TRK 043 UNTIL 2382 FIX OVERFLY UGASE AT OR ABOVE 4500 HOLD AT FIX UGASE RIGHT TURN INBOUNDCOURSE 223 LEGDIST 4
+ TRANSITION VAKTY HOLD AT FIX VAKTY RIGHT TURN INBOUNDCOURSE 043 ALT 4900 LEGDIST 4
+APPROACH RNV22 FIX UGASE AT OR ABOVE 4500 FIX UHZOS 3200 RNW 22 TRK 223 UNTIL 2382 FIX OVERFLY VAKTY AT OR ABOVE 4900 HOLD AT FIX VAKTY RIGHT TURN INBOUNDCOURSE 043 LEGDIST 4
+ TRANSITION UGASE HOLD AT FIX UGASE RIGHT TURN INBOUNDCOURSE 223 ALT 4500 LEGDIST 4
+ENDAPPROACHES

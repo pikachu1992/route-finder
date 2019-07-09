@@ -1,0 +1,32 @@
+//K9V6 (MARTIN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JESIP LATLON N 43 7.611167 W 101 40.624834
+FIX USETY LATLON N 43 0.235333 W 101 33.875167
+FIX VUGGI LATLON N 43 5.300666 W 101 38.506834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX USETY AT OR ABOVE 6000 FIX VUGGI 5000 FIX JESIP AT OR ABOVE 4100 RNW 32 TRK 320 UNTIL 3800 TURN RIGHT DIRECT FIX OVERFLY USETY AT OR ABOVE 6000 HOLD AT FIX USETY RIGHT TURN INBOUNDCOURSE 320 LEGDIST 5
+ TRANSITION USETY HOLD AT FIX USETY RIGHT TURN INBOUNDCOURSE 320 ALT 6000 LEGDIST 5
+ENDAPPROACHES

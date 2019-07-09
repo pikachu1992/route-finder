@@ -1,0 +1,40 @@
+//K2S8 (WILBUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OWOSE LATLON N 47 26.221166 W 118 53.161166
+FIX UXICY LATLON N 47 35.319833 W 118 55.374667
+FIX WIPES LATLON N 47 24.775834 W 119 6.490333
+FIX YOLDU LATLON N 47 40.157333 W 118 50.128667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID WIPES1
+ RNW 02 HDG 021 UNTIL 2700 TURN RIGHT DIRECT FIX WIPES
+ RNW 20 HDG 201 UNTIL 2700 FIX WIPES
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA02 FIX UXICY AT OR ABOVE 5000 FIX YOLDU 4100 RNW 02 TRK 021 UNTIL 2583 TURN RIGHT DIRECT FIX OVERFLY WIPES AT OR ABOVE 5000 HOLD AT FIX WIPES RIGHT TURN INBOUNDCOURSE 015 LEGDIST 4
+ TRANSITION OWOSE FIX OWOSE
+ TRANSITION WIPES FIX WIPES
+ENDAPPROACHES

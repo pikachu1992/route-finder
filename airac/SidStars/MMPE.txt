@@ -1,0 +1,43 @@
+//MMPE (DEL MAR DE CORTES INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 30VOR LATLON N 31 24.962666 W 113 17.295
+FIX CD18 LATLON N 31 29.845 W 113 15.978667
+FIX CD36 LATLON N 31 14.2205 W 113 20.182667
+FIX FD18 LATLON N 31 26.9155 W 113 16.768667
+FIX FD36 LATLON N 31 17.150333 W 113 19.396166
+FIX MD36 LATLON N 31 19.1035 W 113 18.8715
+FIX PPE LATLON N 31 22.036333 W 113 18.082667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID PPE1A RNW 18 TRK 181 UNTIL 490 TRK 181 UNTIL 7.0 FROM FIX PPE TURN LEFT DIRECT FIX PPE
+SID PPE1B RNW 36 TRK 001 UNTIL 490 TRK 001 UNTIL 7.0 FROM FIX PPE TURN LEFT DIRECT FIX PPE
+ENDSIDS
+
+APPROACHES
+APPROACH VDM18 FIX CD18 AT OR ABOVE 2700 FIX FD18 1800 FIX 30VOR AT OR ABOVE 1100 FIX PPE 218 RNW 18 TRK 181 UNTIL 7.0 FROM FIX PPE TURN LEFT DIRECT FIX PPE AT OR ABOVE 3000
+ TRANSITION PPE FIX PPE AT OR ABOVE 3000 TRK 343 UNTIL 8.0 FROM FIX PPE
+APPROACH VDM36 FIX CD36 AT OR ABOVE 2000 FIX FD36 1200 FIX MD36 581 RNW 36 FIX PPE TRK 001 UNTIL 7.0 FROM FIX PPE TURN LEFT DIRECT FIX PPE AT OR ABOVE 3000
+ TRANSITION PPE FIX PPE AT OR ABOVE 3000 TRK 163 UNTIL 8.0 FROM FIX PPE
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//CJV7 (SUMMER BEAVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EMGID LATLON N 52 38.540833 W 88 30.247
+FIX ESKIV LATLON N 52 33.049834 W 88 29.2005
+FIX IKMIG LATLON N 52 34.089334 W 88 21.187667
+FIX IRLUK LATLON N 52 53.310833 W 88 29.5195
+FIX KIVEV LATLON N 52 43.287833 W 88 32.793334
+FIX NUGOS LATLON N 52 50.213 W 88 45.204334
+FIX OMTUP LATLON N 52 32.001334 W 88 37.207166
+FIX OTSIM LATLON N 52 51.766166 W 88 37.3665
+FIX PUTOK LATLON N 52 47.021167 W 88 34.803167
+FIX UDNIL LATLON N 52 37.932833 W 88 30.9105
+FIX XIBAX LATLON N 52 47.123833 W 88 34.146833
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX OTSIM AT OR ABOVE 2400 FIX PUTOK 2300 FIX OVERFLY KIVEV 1037 RNW 17 FIX OVERFLY EMGID 2300 HOLD AT FIX EMGID RIGHT TURN INBOUNDCOURSE 168 LEGTIME 1
+ TRANSITION IRLUK FIX IRLUK
+ TRANSITION NUGOS FIX NUGOS
+APPROACH RNV35 FIX ESKIV AT OR ABOVE 2400 FIX UDNIL 2300 RNW 35 FIX OVERFLY XIBAX 2300 HOLD AT FIX XIBAX RIGHT TURN INBOUNDCOURSE 354 LEGTIME 1
+ TRANSITION IKMIG FIX IKMIG
+ TRANSITION OMTUP FIX OMTUP
+ENDAPPROACHES

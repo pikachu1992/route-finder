@@ -1,0 +1,35 @@
+//LPCR (CORVO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CR474 LATLON N 39 38.914834 W 30 51.269666
+FIX CR475 LATLON N 39 39.593 W 30 58.984834
+FIX CR476 LATLON N 39 39.943834 W 31 3.016667
+FIX CR477 LATLON N 39 34.910666 W 31 6.824333
+FIX CR478 LATLON N 39 32.628833 W 30 55.624
+FIX XORVU LATLON N 39 37.8295 W 30 39.125
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV29 FIX CR474 AT OR ABOVE 1950 FIX CR475 1950 FIX OVERFLY CR476 1024 RNW 29 FIX CR477 AT OR ABOVE 1024 SPEED 130 FIX CR478 FIX XORVU 4300 HOLD AT FIX XORVU RIGHT TURN INBOUNDCOURSE 261 LEGDIST 5
+ TRANSITION XORVU FIX XORVU AT OR ABOVE 4300
+ENDAPPROACHES

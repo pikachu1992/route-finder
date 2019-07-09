@@ -1,0 +1,36 @@
+//K8A0 (ALBERTVILLE RGNL - THOMAS J BR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEZLY LATLON N 34 21.434167 W 86 4.922167
+FIX FOYGU LATLON N 34 10.157167 W 86 20.194166
+FIX MITNE LATLON N 34 17.48 W 86 10.289833
+FIX OCOQY LATLON N 34 6.744167 W 86 24.793834
+FIX YAKUB LATLON N 34 15.306334 W 86 13.234667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX OCOQY AT OR ABOVE 3200 FIX FOYGU 2600 RNW 05 TRK 050 UNTIL 1265 FIX OVERFLY DEZLY AT OR ABOVE 3300 HOLD AT FIX DEZLY RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4
+ TRANSITION OCOQY HOLD AT FIX OCOQY LEFT TURN INBOUNDCOURSE 050 ALT 3200 LEGDIST 4
+APPROACH RNV23 FIX DEZLY AT OR ABOVE 3300 FIX MITNE 2700 FIX YAKUB AT OR ABOVE 1660 RNW 23 TRK 230 UNTIL 1282 FIX OVERFLY OCOQY AT OR ABOVE 3200 HOLD AT FIX OCOQY LEFT TURN INBOUNDCOURSE 050 LEGDIST 4
+ TRANSITION DEZLY HOLD AT FIX DEZLY RIGHT TURN INBOUNDCOURSE 230 ALT 3300 LEGDIST 4
+ENDAPPROACHES

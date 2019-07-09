@@ -1,0 +1,36 @@
+//DAOI (CHLEF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF26 LATLON N 36 15.270667 E 1 32.583667
+FIX CLF LATLON N 36 12.805 E 1 19.331666
+FIX D100F LATLON N 36 11.861167 E 1 26.6535
+FIX FD26 LATLON N 36 14.935834 E 1 30.775667
+FIX MD26 LATLON N 36 13.479833 E 1 22.944334
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 08
+RNW 25
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH VDM26 FIX CF26 AT OR ABOVE 3120 FIX FD26 3120 FIX MD26 997 RNW 26 FIX CLF AT OR ABOVE 997 TRK 258 UNTIL 2470 TURN RIGHT DIRECT FIX CLF 4430
+ TRANSITION CLF FIX CLF AT OR ABOVE 4430 SPEED 230 FIX D100F TRK 100 UNTIL 11.0 FROM FIX CLF
+ENDAPPROACHES

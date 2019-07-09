@@ -1,0 +1,39 @@
+//KY55 (CRANDON/CONWAY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HUKAS LATLON N 45 32.459333 W 88 59.400833
+FIX WITKI LATLON N 45 30.209833 W 88 51.667667
+FIX WOKOG LATLON N 45 35.990333 W 89 11.623
+FIX YITUB LATLON N 45 26.808667 W 88 40.050833
+FIX ZIRVU LATLON N 45 29.115667 W 88 47.9205
+FIX ZOBEB LATLON N 45 33.710833 W 89 3.721166
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 12
+RNW 19
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX WOKOG AT OR ABOVE 4400 FIX ZOBEB 3500 FIX HUKAS AT OR ABOVE 2440 RNW 12 TRK 115 UNTIL 2050 FIX OVERFLY YITUB AT OR ABOVE 4400 HOLD AT FIX YITUB RIGHT TURN INBOUNDCOURSE 296 LEGDIST 5
+ TRANSITION WOKOG HOLD AT FIX WOKOG RIGHT TURN INBOUNDCOURSE 115 ALT 4400 LEGDIST 5
+APPROACH RNV30 FIX YITUB AT OR ABOVE 4400 FIX ZIRVU 3500 FIX WITKI AT OR ABOVE 2580 RNW 30 TRK 296 UNTIL 1936 FIX OVERFLY WOKOG AT OR ABOVE 4400 HOLD AT FIX WOKOG RIGHT TURN INBOUNDCOURSE 115 LEGDIST 5
+ TRANSITION YITUB HOLD AT FIX YITUB RIGHT TURN INBOUNDCOURSE 296 ALT 4400 LEGDIST 5
+ENDAPPROACHES

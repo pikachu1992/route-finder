@@ -1,0 +1,47 @@
+//FNGI (11TH OF NOVEMBER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GI101 LATLON S 16 55.901333 E 15 26.009167
+FIX GI102 LATLON S 17 2.570833 E 15 28.5475
+FIX GI103 LATLON S 16 53.4595 E 15 32.9315
+FIX GI104 LATLON S 16 58.0155 E 15 30.740333
+FIX GI105 LATLON S 17 0.127667 E 15 35.473333
+FIX GI106 LATLON S 17 2.238 E 15 40.208
+FIX GI107 LATLON S 17 9.295333 E 15 56.0735
+FIX GI108 LATLON S 17 2.634334 E 15 53.527
+FIX GI109 LATLON S 17 11.745 E 15 49.138166
+FIX GI110 LATLON S 17 7.189834 E 15 51.3335
+FIX GI111 LATLON S 17 5.0325 E 15 46.595167
+FIX GI112 LATLON S 17 2.973334 E 15 41.858833
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX GI104 AT OR ABOVE 6000 FIX GI105 5230 FIX OVERFLY GI106 3695 RNW 13 FIX OVERFLY GI107 6000
+ TRANSITION GI101 FIX GI101 AT OR ABOVE 6000
+ TRANSITION GI102 FIX GI102 AT OR ABOVE 6000
+ TRANSITION GI103 FIX GI103 AT OR ABOVE 6000
+APPROACH RNV31 FIX GI110 AT OR ABOVE 6000 FIX GI111 5230 FIX OVERFLY GI112 3701 RNW 31 FIX OVERFLY GI101 6000
+ TRANSITION GI107 FIX GI107 AT OR ABOVE 6000
+ TRANSITION GI108 FIX GI108 AT OR ABOVE 6000
+ TRANSITION GI109 FIX GI109 AT OR ABOVE 6000
+ENDAPPROACHES

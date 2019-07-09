@@ -1,0 +1,31 @@
+//SEII (ISLA ISABELA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EP35 LATLON S 0 56.995333 W 90 57.284
+FIX FF35 LATLON S 1 3.627667 W 90 56.119667
+FIX IBLNB LATLON S 0 56.6935 W 90 57.337
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH NDB35 FIX FF35 2000 FIX OVERFLY EP35 80 FIX IBLNB AT OR ABOVE 440 RNW 35 HDG 000 UNTIL 1530 TURN RIGHT DIRECT FIX IBLNB AT OR ABOVE 4000 SPEED 140 HOLD AT FIX IBLNB LEFT TURN INBOUNDCOURSE 345 LEGTIME 1
+ENDAPPROACHES

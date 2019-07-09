@@ -1,0 +1,37 @@
+//3LA4 (LITTLE PECAN ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUBED LATLON N 29 53.466667 W 92 58.142167
+FIX FUSED LATLON N 29 49.016666 W 92 50.083834
+FIX HEATS LATLON N 29 42.4915 W 92 38.316334
+FIX RAYED LATLON N 29 45.182 W 92 43.161667
+FIX SHAWL LATLON N 29 50.785333 W 92 53.2835
+FIX TENTH LATLON N 29 46.944334 W 92 46.340333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX CUBED AT OR ABOVE 1700 FIX SHAWL 1600 FIX FUSED AT OR ABOVE 540 RNW 12 TRK 121 UNTIL 254 FIX OVERFLY HEATS AT OR ABOVE 1700 HOLD AT FIX HEATS RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4
+ TRANSITION CUBED HOLD AT FIX CUBED RIGHT TURN INBOUNDCOURSE 121 ALT 1700 LEGDIST 4
+APPROACH RNV30 FIX HEATS AT OR ABOVE 1700 FIX RAYED 1600 FIX TENTH AT OR ABOVE 540 RNW 30 TRK 301 UNTIL 320 FIX OVERFLY CUBED AT OR ABOVE 1700 HOLD AT FIX CUBED RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4
+ TRANSITION HEATS HOLD AT FIX HEATS RIGHT TURN INBOUNDCOURSE 301 ALT 1700 LEGDIST 4
+ENDAPPROACHES

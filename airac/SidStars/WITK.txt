@@ -1,0 +1,50 @@
+//WITK (TAKENGON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JILAT LATLON N 4 24.527833 E 97 11.377
+FIX MDN LATLON N 3 30.273 E 98 36.465
+FIX REMBE LATLON N 4 43.301666 E 97 5.519333
+FIX SLG LATLON N 2 15.71 E 98 59.126666
+FIX TK501 LATLON N 4 43.302 E 97 0.511333
+FIX TK502 LATLON N 4 43.285166 E 96 56.503333
+FIX TK505 LATLON N 4 52.767167 E 96 39.361333
+FIX TK506 LATLON N 5 0.221167 E 96 49.626167
+FIX TK507 LATLON N 4 52.320667 E 96 58.706666
+FIX TK508 LATLON N 4 43.216834 E 96 44.743166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID REMB1C RNW 09 FIX REMBE 7500 FIX JILAT FIX MDN
+ENDSIDS
+
+STARS
+STAR REMB1A FIX MDN FIX JILAT FIX REMBE 8500
+  RNW 27
+STAR REMB1B FIX SLG FIX JILAT FIX REMBE 8500
+  RNW 27
+ENDSTARS
+
+APPROACHES
+APPROACH RNV27 FIX TK501 AT OR ABOVE 7100 FIX TK502 6250 RNW 27 FIX TK508 FIX TK505 FIX TK506 FIX TK507 FIX REMBE AT OR ABOVE 8500
+ TRANSITION REMBE FIX REMBE AT OR ABOVE 8500
+ENDAPPROACHES

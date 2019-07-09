@@ -1,0 +1,40 @@
+//LHPP (POGANY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20DME LATLON N 46 0.980167 E 18 13.601
+FIX CI34 LATLON N 45 51.458666 E 18 19.189166
+FIX D155G LATLON N 45 54.027167 E 18 17.624833
+FIX D220D LATLON N 45 57.424166 E 18 10.056334
+FIX D335C LATLON N 46 2.362834 E 18 12.737666
+FIX FI34 LATLON N 45 54.601667 E 18 17.336
+FIX FQ16 LATLON N 46 4.502167 E 18 11.555833
+FIX PCS LATLON N 45 59.106667 E 18 14.581667
+FIX PPNB LATLON N 46 0.35 E 18 13.966667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH ILS34 FIX CI34 AT OR ABOVE 2500 FIX FI34 2200 RNW 34 FIX OVERFLY D335C TURN LEFT DIRECT FIX OVERFLY D220D SPEED 185 TURN LEFT DIRECT FIX PPNB 4000 SPEED 185 HOLD AT FIX PPNB LEFT TURN INBOUNDCOURSE 335 ALT 4000 LEGTIME 1
+ TRANSITION PP1 FIX PPNB AT OR ABOVE 4000 SPEED 185 TRK 169 UNTIL 8.3 FROM FIX PCS
+APPROACH NDB16 FIX FQ16 2700 FIX 20DME AT OR ABOVE 1220 FIX PPNB 965 RNW 16 TURN RIGHT DIRECT FIX PPNB 4000 SPEED 185 HOLD AT FIX PPNB LEFT TURN INBOUNDCOURSE 335 LEGTIME 1
+ TRANSITION PP FIX PPNB AT OR ABOVE 4000 SPEED 185 TRK 315 UNTIL 8.4 FROM FIX PCS
+ENDAPPROACHES

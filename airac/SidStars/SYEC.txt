@@ -1,0 +1,47 @@
+//SYEC (EUGENE F. CORREIA INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EC100 LATLON N 6 45.382 W 58 10.373666
+FIX EC110 LATLON N 6 42.343667 W 58 14.376
+FIX EC120 LATLON N 6 46.344667 W 58 17.415334
+FIX EC130 LATLON N 6 38.342333 W 58 11.3375
+FIX EC200 LATLON N 6 49.779667 W 58 4.578
+FIX EC210 LATLON N 6 55.074 W 58 7.075166
+FIX EC220 LATLON N 6 54.9765 W 58 12.983167
+FIX EC300 LATLON N 6 51.326833 W 58 2.538167
+FIX EC310 LATLON N 6 54.3635 W 57 58.533334
+FIX EC320 LATLON N 6 58.366166 W 58 1.571833
+FIX EC330 LATLON N 6 50.3605 W 57 55.495667
+FIX EC400 LATLON N 6 44.210333 W 58 11.915833
+FIX EC410 LATLON N 6 50.962667 W 58 17.0415
+FIX EC420 LATLON N 6 54.493166 W 58 12.3905
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX EC110 2000 FIX EC100 1500 RNW 07 FIX OVERFLY EC200 FIX EC210 FIX EC220 FIX EC120 2000
+ TRANSITION EC120 FIX EC120 AT OR ABOVE 2000
+ TRANSITION EC130 FIX EC130 AT OR ABOVE 2000
+APPROACH RNV25 FIX EC310 2000 FIX EC300 1500 RNW 25 FIX EC400 FIX EC410 FIX EC420 FIX EC320 2000
+ TRANSITION EC320 FIX EC320 AT OR ABOVE 2000
+ TRANSITION EC330 FIX EC330 AT OR ABOVE 2000
+ENDAPPROACHES

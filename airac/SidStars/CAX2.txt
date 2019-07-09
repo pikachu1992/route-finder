@@ -1,0 +1,45 @@
+//CAX2 (AXE LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXUBU LATLON N 57 15.069667 W 109 41.195167
+FIX DUXOM LATLON N 57 13.852834 W 109 30.383333
+FIX IGTEV LATLON N 57 7.992167 W 109 32.635667
+FIX IKBIL LATLON N 57 18.393833 W 110 11.526167
+FIX IKNUS LATLON N 57 19.712666 W 109 28.119334
+FIX KETBA LATLON N 57 17.154167 W 110 0.073166
+FIX OBMUD LATLON N 57 17.2205 W 110 0.681667
+FIX ODBEL LATLON N 57 24.265667 W 110 9.366833
+FIX URPUV LATLON N 57 12.521333 W 110 13.674167
+FIX VIXOG LATLON N 57 15.821167 W 109 47.948167
+FIX XOSOX LATLON N 57 15.2195 W 109 42.537
+FIX XUDUL LATLON N 57 16.462 W 109 53.753
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX IKBIL AT OR ABOVE 3600 FIX OBMUD 3390 RNW 09 FIX VIXOG FIX OVERFLY XOSOX 3600 HOLD AT FIX XOSOX RIGHT TURN INBOUNDCOURSE 088 SPEED 175 LEGTIME 1
+ TRANSITION ODBEL FIX ODBEL
+ TRANSITION URPUV FIX URPUV
+APPROACH RNV27 FIX DUXOM AT OR ABOVE 3600 FIX AXUBU 3390 RNW 27 FIX XUDUL FIX OVERFLY KETBA 3600 HOLD AT FIX KETBA RIGHT TURN INBOUNDCOURSE 268 SPEED 175 LEGTIME 1
+ TRANSITION IGTEV FIX IGTEV
+ TRANSITION IKNUS FIX IKNUS
+ENDAPPROACHES

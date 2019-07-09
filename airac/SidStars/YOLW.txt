@@ -1,0 +1,45 @@
+//YOLW (ONSLOW)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OLWND LATLON S 21 27.435667 E 115 8.815
+FIX OLWNF LATLON S 21 35.6175 E 115 9.665167
+FIX OLWNG LATLON S 21 32.068166 E 115 17.592334
+FIX OLWNH LATLON S 21 43.327166 E 115 5.007
+FIX OLWNI LATLON S 21 31.247666 E 115 12.301667
+FIX OLWNM LATLON S 21 39.832 E 115 7.1195
+FIX OLZSA LATLON S 21 53.124667 E 115 4.875833
+FIX OLZSC LATLON S 21 48.480167 E 114 56.084833
+FIX OLZSF LATLON S 21 44.942167 E 115 4.029167
+FIX OLZSH LATLON S 21 37.605334 E 114 57.444334
+FIX OLZSI LATLON S 21 49.309667 E 115 1.384333
+FIX OLZSM LATLON S 21 40.7285 E 115 6.577834
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX OLZSI AT OR ABOVE 1600 SPEED 210 FIX OLZSF 1600 FIX OVERFLY OLZSM 64 RNW 03 TURN LEFT DIRECT FIX OVERFLY OLZSH TRK 196 UNTIL 1600
+ TRANSITION OLZSA FIX OLZSA AT OR ABOVE 1600 SPEED 210
+ TRANSITION OLZSC FIX OLZSC AT OR ABOVE 1600 SPEED 210
+APPROACH RNV21 FIX OLWNI AT OR ABOVE 1600 SPEED 210 FIX OLWNF 1600 FIX OVERFLY OLWNM 64 RNW 21 FIX OLWNH TRK 209 UNTIL 1600
+ TRANSITION OLWND FIX OLWND AT OR ABOVE 1600 SPEED 210
+ TRANSITION OLWNG FIX OLWNG AT OR ABOVE 1600 SPEED 210
+ENDAPPROACHES

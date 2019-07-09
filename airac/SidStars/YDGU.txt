@@ -1,0 +1,48 @@
+//YDGU (DEGRUSSA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DGUEC LATLON S 25 28.5655 E 119 31.7755
+FIX DGUED LATLON S 25 37.989833 E 119 31.9555
+FIX DGUEF LATLON S 25 33.404167 E 119 23.478667
+FIX DGUEI LATLON S 25 33.307166 E 119 29.974667
+FIX DGUEM LATLON S 25 33.4945 E 119 17.824
+FIX DGUWA LATLON S 25 38.447666 E 119 2.713
+FIX DGUWB LATLON S 25 29.023834 E 119 2.5355
+FIX DGUWF LATLON S 25 33.599333 E 119 10.981166
+FIX DGUWI LATLON S 25 33.6935 E 119 4.5155
+FIX DGUWM LATLON S 25 33.5125 E 119 16.677833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID DEP09 RNW 09 TRK 088 UNTIL 2330 FIX OVERFLY DGUEI AT OR ABOVE 3400
+SID DEP27 RNW 27 TRK 268 UNTIL 2330 FIX OVERFLY DGUWI AT OR ABOVE 3400
+ENDSIDS
+
+APPROACHES
+APPROACH RNV09 FIX DGUWI AT OR ABOVE 3700 FIX DGUWF 3500 FIX OVERFLY DGUWM 1859 RNW 09 TURN RIGHT DIRECT FIX DGUWA AT OR ABOVE 3700 SPEED 210
+ TRANSITION DGUWA FIX DGUWA AT OR ABOVE 3700 SPEED 210
+ TRANSITION DGUWB FIX DGUWB AT OR ABOVE 3700 SPEED 210
+APPROACH RNV27 FIX DGUEI AT OR ABOVE 3700 FIX DGUEF 3500 FIX OVERFLY DGUEM 1873 RNW 27 TURN LEFT DIRECT FIX DGUED AT OR ABOVE 3700 SPEED 210
+ TRANSITION DGUEC FIX DGUEC AT OR ABOVE 3700 SPEED 210
+ TRANSITION DGUED FIX DGUED AT OR ABOVE 3700 SPEED 210
+ENDAPPROACHES

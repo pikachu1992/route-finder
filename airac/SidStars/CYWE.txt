@@ -1,0 +1,43 @@
+//CYWE (WEKWEETI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPTEX LATLON N 64 21.049667 W 114 14.9825
+FIX ILAVA LATLON N 64 8.5955 W 113 55.933
+FIX IRBUS LATLON N 64 9.744167 W 113 40.502666
+FIX OVBUD LATLON N 64 14.087167 W 114 12.700667
+FIX PUXEV LATLON N 64 17.067167 W 114 21.887333
+FIX ROSDI LATLON N 64 5.762167 W 113 47.362834
+FIX SEKIG LATLON N 64 14.2865 W 114 13.313167
+FIX TIBIL LATLON N 64 1.774834 W 113 54.1905
+FIX UKSUR LATLON N 64 13.079167 W 114 28.759166
+FIX ULEMO LATLON N 64 8.768666 W 113 56.458333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX PUXEV AT OR ABOVE 2700 FIX OVBUD 2600 RNW 13 FIX OVERFLY ILAVA 2800 HOLD AT FIX ILAVA RIGHT TURN INBOUNDCOURSE 011 LEGTIME 1
+ TRANSITION EPTEX FIX EPTEX
+ TRANSITION UKSUR FIX UKSUR
+APPROACH RNV31 FIX ROSDI AT OR ABOVE 2700 FIX ULEMO 2600 RNW 31 FIX OVERFLY SEKIG 2800 HOLD AT FIX SEKIG RIGHT TURN INBOUNDCOURSE 029 LEGTIME 1
+ TRANSITION IRBUS FIX IRBUS
+ TRANSITION TIBIL FIX TIBIL
+ENDAPPROACHES

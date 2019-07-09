@@ -1,0 +1,42 @@
+//LPFL (FLORES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D182M LATLON N 39 14.2535 W 31 4.066
+FIX FQ002 LATLON N 39 19.149167 W 31 5.401333
+FIX MQ002 LATLON N 39 24.0445 W 31 6.739834
+FIX OBUDA LATLON N 39 6.816667 W 31 1.966667
+FIX SCNB LATLON N 39 27.451667 W 31 7.673333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH NDMA18 FIX FQ002 2700 FIX MQ002 1126 RNW 18 TRK 141 UNTIL 4500 TURN RIGHT DIRECT FIX OBUDA 4500 HOLD AT FIX OBUDA RIGHT TURN INBOUNDCOURSE 351 LEGDIST 4
+ TRANSITION OBUDA FIX OBUDA AT OR ABOVE 4500 FIX D182M AT OR ABOVE 2700
+ TRANSITION SC FIX SCNB AT OR ABOVE 5000 TRK 170 UNTIL 10.0 FROM FIX SCNB
+APPROACH NDMA36 FIX FQ002 2700 FIX MQ002 1126 RNW 36 TRK 141 UNTIL 4500 TURN RIGHT DIRECT FIX OBUDA 4500 HOLD AT FIX OBUDA RIGHT TURN INBOUNDCOURSE 351 LEGDIST 4
+ TRANSITION OBUDA FIX OBUDA AT OR ABOVE 4500 FIX D182M AT OR ABOVE 2700
+ TRANSITION SC FIX SCNB AT OR ABOVE 5000 TRK 170 UNTIL 10.0 FROM FIX SCNB
+ENDAPPROACHES
+
+GATES
+GATE 1 N 39 27.5065 W 31 7.8585
+ENDGATES

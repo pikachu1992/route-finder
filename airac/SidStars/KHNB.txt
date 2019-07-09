@@ -1,0 +1,44 @@
+//KHNB (HUNTINGBURG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGKIP LATLON N 38 10.039834 W 87 12.027
+FIX ANDUQ LATLON N 38 19.813 W 86 42.484
+FIX APKEW LATLON N 38 15.055 W 87 11.973833
+FIX CILMA LATLON N 38 14.912833 W 86 54.033667
+FIX EFWAV LATLON N 38 20.070167 W 87 11.9205
+FIX EGWAB LATLON N 38 9.783167 W 86 42.6595
+FIX IDGOW LATLON N 38 14.798167 W 86 42.571834
+FIX NECWI LATLON N 38 14.877667 W 86 50.314166
+FIX OGEDY LATLON N 38 14.999167 W 87 4.2175
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX APKEW AT OR ABOVE 2500 FIX OGEDY 2200 RNW 09 FIX OVERFLY IDGOW AT OR ABOVE 2500 HOLD AT FIX IDGOW RIGHT TURN INBOUNDCOURSE 271 LEGDIST 4
+ TRANSITION AGKIP FIX AGKIP AT OR ABOVE 2500
+ TRANSITION APKEW HOLD AT FIX APKEW RIGHT TURN INBOUNDCOURSE 090 ALT 2500 LEGDIST 4
+ TRANSITION EFWAV FIX EFWAV AT OR ABOVE 2500
+APPROACH RNV27 FIX IDGOW AT OR ABOVE 2500 FIX NECWI 2200 FIX CILMA AT OR ABOVE 1240 RNW 27 FIX OVERFLY APKEW AT OR ABOVE 2500 HOLD AT FIX APKEW RIGHT TURN INBOUNDCOURSE 090 LEGDIST 4
+ TRANSITION ANDUQ FIX ANDUQ AT OR ABOVE 2500
+ TRANSITION EGWAB FIX EGWAB AT OR ABOVE 2500
+ TRANSITION IDGOW HOLD AT FIX IDGOW RIGHT TURN INBOUNDCOURSE 271 ALT 2500 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//LTAW (TOKAT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D184J LATLON N 40 9.053167 E 36 20.348833
+FIX D184O LATLON N 40 4.127833 E 36 19.199833
+FIX ENFOR LATLON N 39 52.433333 E 36 16.483333
+FIX TKT LATLON N 40 18.903334 E 36 22.655
+FIX TKTNB LATLON N 40 18.903334 E 36 22.655
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+SIDS
+SID ENFO1C RNW 04 TRK 045 UNTIL 6.0 FROM FIX TKT SPEED 210 TURN LEFT DIRECT FIX TKT SPEED 210 FIX ENFOR SPEED 210
+ENDSIDS
+
+STARS
+STAR ENFO1A FIX ENFOR FIX TKTNB
+  RNW 04 RNW 22
+STAR ENFO1B FIX ENFOR FIX D184O FIX D184J FIX TKT
+  RNW 04 RNW 22
+ENDSTARS

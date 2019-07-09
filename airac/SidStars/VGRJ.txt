@@ -1,0 +1,43 @@
+//VGRJ (SHAH MOKHDUM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN17 LATLON N 24 30.719 E 88 36.4235
+FIX FN35 LATLON N 24 21.798167 E 88 37.830167
+FIX FS17 LATLON N 24 30.696167 E 88 36.2345
+FIX FS35 LATLON N 24 21.778333 E 88 37.6925
+FIX RAJ LATLON N 24 26.353 E 88 36.901667
+FIX RJNB LATLON N 24 26.547833 E 88 36.8225
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH NDB17 FIX FN17 1200 RNW 17 FIX OVERFLY RJNB TRK 176 UNTIL 2000 HDG 356 VECTORS
+ TRANSITION RJ FIX RJNB AT OR ABOVE 2000 SPEED 150 TRK 338 UNTIL 5.0 FROM FIX RJNB
+APPROACH NDB35 FIX FN35 1200 RNW 35 FIX OVERFLY RJNB TRK 350 UNTIL 2000 HDG 350 VECTORS
+ TRANSITION RJ1 FIX RJNB AT OR ABOVE 2000 TRK 194 UNTIL 4.5 FROM FIX RJNB
+ TRANSITION RJ2 FIX RJNB AT OR ABOVE 2000 TRK 188 UNTIL 4.5 FROM FIX RJNB
+APPROACH VOR17 FIX FS17 1200 RNW 17 FIX OVERFLY RAJ TRK 173 UNTIL 2000 HDG 353 VECTORS
+ TRANSITION RAJ FIX RAJ AT OR ABOVE 2000 SPEED 150 TRK 335 UNTIL 5.0 FROM FIX RAJ
+APPROACH VOR35 FIX FS35 1200 RNW 35 FIX OVERFLY RAJ TRK 352 UNTIL 2000 HDG 352 VECTORS
+ TRANSITION RAJ1 FIX RAJ AT OR ABOVE 2000 SPEED 150 TRK 196 UNTIL 3.8 FROM FIX RAJ
+ TRANSITION RAJ2 FIX RAJ AT OR ABOVE 2000 SPEED 150 TRK 190 UNTIL 3.8 FROM FIX RAJ
+ENDAPPROACHES

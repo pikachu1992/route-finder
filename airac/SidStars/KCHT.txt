@@ -1,0 +1,45 @@
+//KCHT (CHILLICOTHE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARKSS LATLON N 39 59.243 W 93 33.559667
+FIX BEVHI LATLON N 39 51.342334 W 93 34.009834
+FIX FIGUN LATLON N 39 53.2495 W 93 43.971167
+FIX NOLIE LATLON N 39 56.248166 W 93 38.769167
+FIX POSNE LATLON N 39 42.467666 W 93 25.436333
+FIX REDSE LATLON N 39 40.500667 W 93 15.476666
+FIX TUDEE LATLON N 39 37.518334 W 93 20.674834
+FIX WERLI LATLON N 39 34.532 W 93 25.8655
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 14
+RNW 20
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX NOLIE AT OR ABOVE 2900 FIX BEVHI 2500 RNW 14 TRK 140 UNTIL 1183 FIX OVERFLY TUDEE AT OR ABOVE 2900 HOLD AT FIX TUDEE RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4
+ TRANSITION ARKSS FIX ARKSS
+ TRANSITION FIGUN FIX FIGUN
+ TRANSITION NOLIE HOLD AT FIX NOLIE RIGHT TURN INBOUNDCOURSE 140 ALT 2900 LEGDIST 4
+APPROACH RNV32 FIX TUDEE AT OR ABOVE 2900 FIX POSNE 2500 RNW 32 TRK 320 UNTIL 1148 FIX OVERFLY NOLIE AT OR ABOVE 2900 HOLD AT FIX NOLIE RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4
+ TRANSITION REDSE FIX REDSE
+ TRANSITION TUDEE HOLD AT FIX TUDEE RIGHT TURN INBOUNDCOURSE 320 ALT 2900 LEGDIST 4
+ TRANSITION WERLI FIX WERLI
+ENDAPPROACHES

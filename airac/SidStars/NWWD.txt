@@ -1,0 +1,42 @@
+//NWWD (KONE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF335 LATLON S 21 13.853666 E 164 54.197
+FIX KQNB LATLON S 21 6.291667 E 164 52.335
+FIX WD354 LATLON S 21 5.73 E 165 11.125
+FIX WD356 LATLON S 21 21.82 E 165 1.495
+FIX WD358 LATLON S 21 8.371667 E 165 3.241667
+FIX WD360 LATLON S 21 4.883333 E 165 3.693334
+FIX WD362 LATLON S 21 4.313333 E 164 58.703333
+FIX WD364 LATLON S 21 3.673667 E 164 53.143166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDBB09 FIX FF335 3600 FIX KQNB 1920 RNW 09 TRK 193 UNTIL 3400 TURN LEFT DIRECT FIX KQNB AT OR ABOVE 4800
+ TRANSITION KQ FIX KQNB AT OR ABOVE 4800 TRK 169 UNTIL 9.0 FROM FIX KQNB
+APPROACH NDBB27 FIX FF335 3600 FIX KQNB 1920 RNW 27 TRK 193 UNTIL 3400 TURN LEFT DIRECT FIX KQNB AT OR ABOVE 4800
+ TRANSITION KQ FIX KQNB AT OR ABOVE 4800 TRK 169 UNTIL 9.0 FROM FIX KQNB
+APPROACH RNV27 FIX WD360 3400 FIX WD362 2900 FIX OVERFLY WD364 968 RNW 27 TRK 186 UNTIL 4500 FIX WD356 SPEED 170
+ TRANSITION WD354 FIX WD354 AT OR ABOVE 5000 SPEED 170
+ TRANSITION WD356 FIX WD356 AT OR ABOVE 4500 SPEED 170 FIX WD358 AT OR ABOVE 4500
+ENDAPPROACHES

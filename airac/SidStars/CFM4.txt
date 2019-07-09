@@ -1,0 +1,43 @@
+//CFM4 (DONNELLY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVREM LATLON N 55 42.54 W 117 25.592666
+FIX KASIB LATLON N 55 42.557666 W 117 14.986333
+FIX KETRA LATLON N 55 37.0435 W 116 45.825833
+FIX LIBOV LATLON N 55 48.022 W 116 45.730834
+FIX MEPKO LATLON N 55 37.050667 W 117 25.5515
+FIX ONKAD LATLON N 55 42.552 W 117 17.604334
+FIX TOTUV LATLON N 55 48.029167 W 117 25.634
+FIX UDBEK LATLON N 55 42.5545 W 116 56.384666
+FIX VIGNI LATLON N 55 42.547333 W 116 53.723167
+FIX VOKIK LATLON N 55 42.532834 W 116 45.7785
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX AVREM AT OR ABOVE 3600 SPEED 180 FIX KASIB 3600 RNW 07 FIX OVERFLY VIGNI 4000 HOLD AT FIX VIGNI RIGHT TURN INBOUNDCOURSE 073 SPEED 200 LEGTIME 1
+ TRANSITION MEPKO FIX MEPKO SPEED 200
+ TRANSITION TOTUV FIX TOTUV SPEED 200
+APPROACH RNV25 FIX VOKIK AT OR ABOVE 3600 SPEED 180 FIX UDBEK 3600 RNW 25 FIX OVERFLY ONKAD 4000 HOLD AT FIX ONKAD RIGHT TURN INBOUNDCOURSE 253 SPEED 200 LEGTIME 1
+ TRANSITION KETRA FIX KETRA SPEED 200
+ TRANSITION LIBOV FIX LIBOV SPEED 200
+ENDAPPROACHES

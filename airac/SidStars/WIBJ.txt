@@ -1,0 +1,36 @@
+//WIBJ (JAPURA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADNB LATLON S 0 20.95 E 102 20.128333
+FIX EP10 LATLON S 0 20.942666 E 102 19.74
+FIX EP28 LATLON S 0 21.062833 E 102 20.478833
+FIX FF10 LATLON S 0 20.865667 E 102 15.355
+FIX FF28 LATLON S 0 22.427167 E 102 24.649667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB10 FIX FF10 1500 FIX OVERFLY EP10 111 FIX OVERFLY ADNB AT OR ABOVE 570 RNW 10 TRK 091 UNTIL 2500 TURN LEFT DIRECT FIX ADNB
+ TRANSITION AD FIX ADNB AT OR ABOVE 2500 TRK 289 UNTIL 6.0 FROM FIX ADNB
+APPROACH NDB28 FIX FF28 1500 FIX OVERFLY EP28 111 FIX OVERFLY ADNB AT OR ABOVE 570 RNW 28 TRK 288 UNTIL 2500 TURN RIGHT DIRECT FIX ADNB
+ TRANSITION AD FIX ADNB AT OR ABOVE 2500 TRK 090 UNTIL 6.0 FROM FIX ADNB
+ENDAPPROACHES

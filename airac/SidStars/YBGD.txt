@@ -1,0 +1,45 @@
+//YBGD (BOOLGEEDA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BGDEC LATLON S 22 26.485667 E 117 29.926
+FIX BGDED LATLON S 22 35.871833 E 117 30.881833
+FIX BGDEF LATLON S 22 31.786166 E 117 23.449834
+FIX BGDEI LATLON S 22 31.340333 E 117 28.562833
+FIX BGDEM LATLON S 22 32.3635 E 117 16.807834
+FIX BGDET LATLON S 22 32.624167 E 117 13.804166
+FIX BGDWA LATLON S 22 38.356834 E 117 2.237333
+FIX BGDWB LATLON S 22 28.97 E 117 1.302
+FIX BGDWF LATLON S 22 32.950166 E 117 10.0305
+FIX BGDWI LATLON S 22 33.504833 E 117 3.6125
+FIX BGDWM LATLON S 22 32.4745 E 117 15.529667
+FIX BGDWT LATLON S 22 31.932667 E 117 21.76
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX BGDWI AT OR ABOVE 5400 FIX BGDWF 3500 FIX OVERFLY BGDWM 1872 RNW 08 FIX OVERFLY BGDWT TURN RIGHT DIRECT FIX BGDWA AT OR ABOVE 5400 SPEED 210
+ TRANSITION BGDWA FIX BGDWA AT OR ABOVE 5400 SPEED 210
+ TRANSITION BGDWB FIX BGDWB AT OR ABOVE 5400 SPEED 210
+APPROACH RNV26 FIX BGDEI AT OR ABOVE 5400 FIX BGDEF 3890 FIX OVERFLY BGDEM 1920 RNW 26 FIX OVERFLY BGDET SPEED 210 TURN LEFT DIRECT FIX BGDED AT OR ABOVE 5400
+ TRANSITION BGDEC FIX BGDEC AT OR ABOVE 5400 SPEED 210
+ TRANSITION BGDED FIX BGDED AT OR ABOVE 5400 SPEED 210
+ENDAPPROACHES

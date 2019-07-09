@@ -1,0 +1,37 @@
+//KSIK (SIKESTON MEMORIAL MUNI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUXID LATLON N 36 42.582167 W 89 39.972
+FIX ECANU LATLON N 36 59.0595 W 89 30.863666
+FIX GAYEV LATLON N 36 48.8015 W 89 36.542333
+FIX IBEFY LATLON N 37 5.277833 W 89 27.408
+FIX YEKUD LATLON N 36 52.0545 W 89 34.744333
+FIX ZEVPO LATLON N 36 55.810834 W 89 32.665
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX CUXID AT OR ABOVE 2000 FIX GAYEV 2000 FIX YEKUD AT OR ABOVE 860 RNW 03 TRK 026 UNTIL 629 FIX OVERFLY IBEFY AT OR ABOVE 2200 HOLD AT FIX IBEFY RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4
+ TRANSITION CUXID HOLD AT FIX CUXID RIGHT TURN INBOUNDCOURSE 026 ALT 2000 LEGDIST 4
+APPROACH RNV21 FIX IBEFY AT OR ABOVE 2200 FIX ECANU 2000 FIX ZEVPO AT OR ABOVE 860 RNW 21 TRK 206 UNTIL 565 FIX OVERFLY CUXID AT OR ABOVE 2000 HOLD AT FIX CUXID RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4
+ TRANSITION IBEFY HOLD AT FIX IBEFY RIGHT TURN INBOUNDCOURSE 206 ALT 2200 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,42 @@
+//KCCB (CABLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADAMM LATLON N 34 1.022833 W 117 49.009
+FIX ELMOO LATLON N 34 5.91 W 118 4.8755
+FIX HOPUN LATLON N 34 4.5895 W 117 54.741833
+FIX MA053 LATLON N 34 6.5955 W 117 41.585167
+FIX PDZ LATLON N 33 55.100167 W 117 31.799833
+FIX POM LATLON N 34 4.703333 W 117 47.2245
+FIX TOVQU LATLON N 34 6.4395 W 117 42.028
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX HOPUN AT OR ABOVE 4500 FIX POM 3100 FIX OVERFLY TOVQU 1566 RNW 06 TRK 054 UNTIL 1900 TURN RIGHT DIRECT FIX OVERFLY ADAMM AT OR ABOVE 5500 HOLD AT FIX ADAMM LEFT TURN INBOUNDCOURSE 276 LEGDIST 5
+ TRANSITION ELMOO FIX ELMOO
+APPROACH VORA06 FIX POM 3700 FIX OVERFLY MA053 1433 RNW 06 HDG 105 INTERCEPT RADIAL 135 TO FIX PDZ FIX PDZ AT OR ABOVE 4000 HOLD AT FIX PDZ RIGHT TURN INBOUNDCOURSE 258 LEGTIME 1
+ TRANSITION HOPUN FIX HOPUN
+ TRANSITION POM HOLD AT FIX POM RIGHT TURN INBOUNDCOURSE 053 ALT 3700 LEGTIME 1
+APPROACH VORA24 FIX POM 3700 FIX OVERFLY MA053 1433 RNW 24 HDG 105 INTERCEPT RADIAL 135 TO FIX PDZ FIX PDZ AT OR ABOVE 4000 HOLD AT FIX PDZ RIGHT TURN INBOUNDCOURSE 258 LEGTIME 1
+ TRANSITION HOPUN FIX HOPUN
+ TRANSITION POM HOLD AT FIX POM RIGHT TURN INBOUNDCOURSE 053 ALT 3700 LEGTIME 1
+ENDAPPROACHES

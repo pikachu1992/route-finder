@@ -1,0 +1,37 @@
+//KRHP (WESTERN CAROLINA REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HISEN LATLON N 35 3.473833 W 84 7.7095
+FIX HRS LATLON N 34 56.580334 W 83 54.940834
+FIX MARBL LATLON N 35 9.089167 W 84 10.615333
+FIX MELLS LATLON N 34 56.952334 W 84 15.109834
+FIX MIRNE LATLON N 35 11.421167 W 83 52.835333
+FIX RUGIE LATLON N 35 8.267 W 83 58.738667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX HISEN AT OR ABOVE 6200 FIX RUGIE 4200 FIX OVERFLY MIRNE 1913 RNW 08 TRK 061 UNTIL 2099 TURN LEFT DIRECT FIX OVERFLY HISEN AT OR ABOVE 6200 HOLD AT FIX HISEN RIGHT TURN INBOUNDCOURSE 061 LEGDIST 7
+ TRANSITION HRS FIX HRS FIX OVERFLY HISEN AT OR ABOVE 6200 HOLD AT FIX HISEN RIGHT TURN INBOUNDCOURSE 061 ALT 6200 LEGDIST 7
+ TRANSITION MARBL FIX MARBL FIX OVERFLY HISEN AT OR ABOVE 6200 HOLD AT FIX HISEN RIGHT TURN INBOUNDCOURSE 061 ALT 6200 LEGDIST 7
+ TRANSITION MELLS FIX MELLS
+ENDAPPROACHES

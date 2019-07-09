@@ -1,0 +1,35 @@
+//K3H4 (HILLSBORO MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEETZ LATLON N 47 26.941333 W 97 4.920167
+FIX BYSON LATLON N 47 16.187833 W 97 2.334334
+FIX GEMIH LATLON N 47 34.043167 W 97 6.637667
+FIX IKLAJ LATLON N 47 9.163 W 97 0.654334
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX GEMIH AT OR ABOVE 4000 FIX BEETZ 2600 RNW 16 TRK 166 UNTIL 1222 FIX OVERFLY IKLAJ AT OR ABOVE 4000 HOLD AT FIX IKLAJ RIGHT TURN INBOUNDCOURSE 346 LEGDIST 4
+ TRANSITION GEMIH HOLD AT FIX GEMIH RIGHT TURN INBOUNDCOURSE 166 ALT 4000 LEGDIST 4
+APPROACH RNV34 FIX IKLAJ AT OR ABOVE 4000 FIX BYSON 2600 RNW 34 TRK 346 UNTIL 1222 FIX OVERFLY GEMIH AT OR ABOVE 4000 HOLD AT FIX GEMIH RIGHT TURN INBOUNDCOURSE 166 LEGDIST 4
+ TRANSITION IKLAJ HOLD AT FIX IKLAJ RIGHT TURN INBOUNDCOURSE 346 ALT 4000 LEGDIST 4
+ENDAPPROACHES

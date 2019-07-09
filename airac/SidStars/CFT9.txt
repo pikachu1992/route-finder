@@ -1,0 +1,44 @@
+//CFT9 (ZAMA LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ITPIT LATLON N 59 8.676833 W 118 59.014834
+FIX KEVDU LATLON N 59 13.806 W 119 5.025167
+FIX LOLDO LATLON N 59 10.866667 W 119 14.515166
+FIX NOXOD LATLON N 58 50.8955 W 118 51.220834
+FIX OMTUD LATLON N 59 9.558667 W 119 0.045167
+FIX OVBUG LATLON N 59 16.733833 W 118 55.508167
+FIX PIKTI LATLON N 59 6.680167 W 118 56.684833
+FIX ROSVO LATLON N 58 58.118167 W 118 46.753166
+FIX TUKUL LATLON N 58 56.705833 W 118 32.331334
+FIX VIRGU LATLON N 58 53.806333 W 118 41.789333
+FIX XUKBO LATLON N 58 58.949167 W 118 47.713333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX KEVDU AT OR ABOVE 3400 SPEED 180 FIX ITPIT 3000 FIX PIKTI AT OR ABOVE 2250 RNW 13 FIX OVERFLY ROSVO 3900 HOLD AT FIX ROSVO RIGHT TURN INBOUNDCOURSE 130 SPEED 200 LEGTIME 1
+ TRANSITION LOLDO FIX LOLDO SPEED 210
+ TRANSITION OVBUG FIX OVBUG SPEED 210
+APPROACH RNV31 FIX VIRGU AT OR ABOVE 3100 SPEED 180 FIX XUKBO 3000 RNW 31 FIX OVERFLY OMTUD 3700 HOLD AT FIX OMTUD RIGHT TURN INBOUNDCOURSE 310 SPEED 200 LEGTIME 1
+ TRANSITION NOXOD FIX NOXOD SPEED 210
+ TRANSITION TUKUL FIX TUKUL SPEED 210
+ENDAPPROACHES

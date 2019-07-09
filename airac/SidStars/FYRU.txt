@@ -1,0 +1,43 @@
+//FYRU (RUNDU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIDLA LATLON S 18 2.372666 E 19 27.310834
+FIX PABLO LATLON S 17 58.738667 E 19 55.662667
+FIX RU08F LATLON S 17 59.239 E 19 37.279834
+FIX RU08I LATLON S 18 0.805834 E 19 32.295833
+FIX RU26F LATLON S 17 55.539 E 19 49.043333
+FIX RU26I LATLON S 17 53.97 E 19 54.024334
+FIX RUM01 LATLON S 17 57.007834 E 19 44.374333
+FIX RUM02 LATLON S 17 57.950333 E 19 41.3815
+FIX TUPPY LATLON S 18 5.5745 E 19 33.935167
+FIX WILLI LATLON S 17 56.037 E 19 30.657833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX RU08I AT OR ABOVE 5500 FIX RU08F 5270 RNW 08 FIX OVERFLY RUM01 TURN RIGHT DIRECT FIX TUPPY 5500 HOLD AT FIX TUPPY LEFT TURN INBOUNDCOURSE 349 LEGTIME 1
+ TRANSITION FIDLA FIX FIDLA AT OR ABOVE 5500
+ TRANSITION TUPPY FIX TUPPY AT OR ABOVE 5500
+ TRANSITION WILLI FIX WILLI AT OR ABOVE 5500
+APPROACH RNV26 FIX RU26I AT OR ABOVE 5500 FIX RU26F 5280 RNW 26 FIX OVERFLY RUM02 TURN LEFT DIRECT FIX PABLO 5500 HOLD AT FIX PABLO RIGHT TURN INBOUNDCOURSE 349 LEGTIME 1
+ TRANSITION PABLO FIX PABLO AT OR ABOVE 5500
+ENDAPPROACHES

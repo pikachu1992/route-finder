@@ -1,0 +1,41 @@
+//KLSV (NELLIS AFB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BALBE LATLON N 36 24.251833 W 114 50.955833
+FIX CFKPW LATLON N 36 27.555167 W 114 47.335
+FIX ENIYO LATLON N 36 15.054667 W 115 0.961834
+FIX FESDI LATLON N 36 18.223333 W 114 57.520667
+FIX IREEN LATLON N 36 13.4295 W 115 2.6545
+FIX JEGET LATLON N 36 19.355333 W 114 56.289833
+FIX LAS LATLON N 36 4.782167 W 115 9.587833
+FIX LATPE LATLON N 36 16.712333 W 114 59.162333
+FIX WOXEK LATLON N 36 20.486333 W 114 55.059
+FIX ZAPVO LATLON N 36 33.670333 W 114 47.7915
+ENDFIXES
+
+RNWS
+RNW 03L
+RNW 03R
+RNW 21L
+RNW 21R
+ENDRNWS
+
+APPROACHES
+APPROACH LOC21LY FIX JEGET AT OR ABOVE 3900 FIX FESDI 3600 FIX LATPE AT OR ABOVE 2760 FIX ENIYO 2071 RNW 21L TRK 209 UNTIL 2270 FIX IREEN FIX LAS 8000 HOLD AT FIX LAS RIGHT TURN INBOUNDCOURSE 198 SPEED 310 LEGTIME 1
+ TRANSITION ZAPVO FIX ZAPVO AT OR ABOVE 7000 FIX CFKPW FIX BALBE AT OR ABOVE 5600 FIX WOXEK AT OR ABOVE 4100
+ENDAPPROACHES

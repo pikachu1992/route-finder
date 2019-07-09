@@ -1,0 +1,39 @@
+//RJOZ (OZUKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DGC LATLON N 33 40.5725 E 130 23.377667
+FIX DGC38 LATLON N 33 52.158667 E 131 6.589333
+FIX IWT LATLON N 34 4.794 E 132 8.8385
+FIX IWT53 LATLON N 33 54.315833 E 131 5.849167
+FIX OCT LATLON N 34 2.65 E 131 2.983333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 17
+RNW 30
+RNW 35
+ENDRNWS
+
+SIDS
+SID OCT2R TRK 330 UNTIL 2.0 FROM FIX OCT TURN RIGHT DIRECT FIX OCT
+ RNW 17 TRK 166 UNTIL 520 TRK 170 UNTIL 7.0 FROM FIX OCT TURN LEFT DIRECT FIX OCT AT OR ABOVE 4000
+ RNW 35 TRK 346 UNTIL 520 HDG 125 INTERCEPT RADIAL 170 FROM FIX OCT TRK 170 UNTIL 7.0 FROM FIX OCT TURN LEFT DIRECT FIX OCT AT OR ABOVE 4000
+  TRANSITION DGC FIX DGC38 FIX DGC
+  TRANSITION IWT FIX IWT53 FIX IWT
+ENDSIDS

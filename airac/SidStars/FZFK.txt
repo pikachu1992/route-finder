@@ -1,0 +1,31 @@
+//FZFK (GEMENA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN28 LATLON N 3 12.889166 E 19 50.643833
+FIX GEMNB LATLON N 3 14.285 E 19 46.1515
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH NDB28 FIX FN28 2500 RNW 28 FIX OVERFLY GEMNB AT OR ABOVE 1780 TRK 286 UNTIL 3000 TURN LEFT DIRECT FIX GEMNB 3300
+ TRANSITION GEM FIX GEMNB AT OR ABOVE 3300 TRK 124 UNTIL 6.0 FROM FIX GEMNB
+ENDAPPROACHES

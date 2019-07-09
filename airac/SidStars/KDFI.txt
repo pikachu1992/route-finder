@@ -1,0 +1,39 @@
+//KDFI (DEFIANCE MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAFKE LATLON N 41 22.574 W 84 32.402167
+FIX GASXI LATLON N 41 25.503167 W 84 40.851167
+FIX HUMOP LATLON N 41 21.528833 W 84 29.398333
+FIX ILTON LATLON N 41 29.952 W 84 59.211334
+FIX JOLRI LATLON N 41 31.155 W 84 38.161166
+FIX JUTLI LATLON N 41 18.842666 W 84 21.6995
+FIX KLOEE LATLON N 41 15.814 W 84 11.637833
+FIX PIONS LATLON N 41 39.233 W 84 28.915333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX GASXI AT OR ABOVE 3000 FIX DAFKE 2400 FIX HUMOP AT OR ABOVE 1600 RNW 12 TRK 120 UNTIL 1100 FIX JUTLI FIX OVERFLY KLOEE AT OR ABOVE 3000 HOLD AT FIX KLOEE RIGHT TURN INBOUNDCOURSE 299 LEGDIST 4
+ TRANSITION ILTON FIX ILTON
+ TRANSITION KLOEE FIX KLOEE FIX OVERFLY GASXI AT OR ABOVE 3000 HOLD AT FIX GASXI RIGHT TURN INBOUNDCOURSE 120 ALT 3000 LEGDIST 4
+ TRANSITION PIONS FIX PIONS FIX JOLRI AT OR ABOVE 3000
+ENDAPPROACHES

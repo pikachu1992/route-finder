@@ -1,0 +1,44 @@
+//CJZ3 (MELFORT MILLER FIELD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGMAD LATLON N 52 51.867667 W 104 50.987
+FIX DANLO LATLON N 52 51.829333 W 104 23.2015
+FIX GONUN LATLON N 52 51.855 W 105 0.886667
+FIX IGSEG LATLON N 52 51.8575 W 104 34.218
+FIX KANAX LATLON N 52 56.821834 W 104 23.156
+FIX LENEN LATLON N 52 51.864334 W 104 54.845167
+FIX MAPAM LATLON N 52 46.862333 W 105 0.86
+FIX NABTA LATLON N 52 51.855334 W 104 33.101
+FIX OBMOV LATLON N 52 46.836833 W 104 23.246666
+FIX RABEG LATLON N 52 56.847667 W 105 0.9135
+FIX SASOL LATLON N 52 51.862834 W 104 37.6855
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX GONUN AT OR ABOVE 3200 FIX AGMAD 3200 RNW 08 FIX OVERFLY IGSEG 3200 SPEED 230 HOLD AT FIX IGSEG RIGHT TURN INBOUNDCOURSE 081 SPEED 200 LEGTIME 1
+ TRANSITION MAPAM FIX MAPAM
+ TRANSITION RABEG FIX RABEG
+APPROACH RNV26 FIX DANLO AT OR ABOVE 3200 FIX NABTA 3200 FIX SASOL AT OR ABOVE 2290 RNW 26 FIX OVERFLY LENEN 3200 SPEED 230 HOLD AT FIX LENEN RIGHT TURN INBOUNDCOURSE 261 SPEED 230 LEGTIME 1
+ TRANSITION KANAX FIX KANAX
+ TRANSITION OBMOV FIX OBMOV
+ENDAPPROACHES

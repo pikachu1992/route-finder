@@ -1,0 +1,41 @@
+//RJTF (CHOFU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARENA LATLON N 35 30.427333 E 139 36.978833
+FIX DROMP LATLON N 35 36.267 E 139 35.139833
+FIX KOSKA LATLON N 35 15.3495 E 139 35.251333
+FIX TF510 LATLON N 35 39.505 E 139 36.068333
+FIX TF511 LATLON N 35 30.438334 E 139 36.218333
+FIX TF550 LATLON N 35 39.360667 E 139 32.020667
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+SIDS
+SID KOSKA1
+ RNW 17 HDG 171 UNTIL 700 FIX TF511 FIX KOSKA
+ RNW 35 HDG 351 UNTIL 900 TURN RIGHT DIRECT FIX TF510 FIX TF511 FIX KOSKA
+ENDSIDS
+
+APPROACHES
+APPROACH RNV35 FIX ARENA AT OR ABOVE 2000 FIX DROMP 1701 FIX OVERFLY TF550 417 RNW 35 TURN RIGHT DIRECT FIX ARENA FIX KOSKA 3000 HOLD AT FIX KOSKA LEFT TURN INBOUNDCOURSE 032 ALT 3000 SPEED 170 LEGDIST 3
+ TRANSITION KOSKA FIX KOSKA AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KCRT (STELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVONS LATLON N 33 16.100333 W 91 15.1835
+FIX HAMPT LATLON N 33 33.056833 W 92 30.181
+FIX LOCIK LATLON N 33 14.359667 W 91 47.2845
+FIX MON LATLON N 33 33.718834 W 91 42.926333
+FIX MUPGE LATLON N 33 11.055 W 91 52.751333
+FIX PEVOY LATLON N 33 18.081 W 91 41.6505
+FIX TIDES LATLON N 33 14.8905 W 91 51.097834
+FIX TUPOY LATLON N 33 22.0195 W 91 45.338333
+FIX ZIGAS LATLON N 33 14.140667 W 91 37.968167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX PEVOY AT OR ABOVE 2000 FIX LOCIK 2000 RNW 23 TRK 230 UNTIL 584 TURN LEFT DIRECT FIX OVERFLY PEVOY AT OR ABOVE 2000 HOLD AT FIX PEVOY RIGHT TURN INBOUNDCOURSE 230 LEGDIST 4
+ TRANSITION AVONS FIX AVONS FIX ZIGAS AT OR ABOVE 2000
+ TRANSITION HAMPT FIX HAMPT FIX TUPOY AT OR ABOVE 2000
+ TRANSITION MON FIX MON
+ TRANSITION PEVOY HOLD AT FIX PEVOY RIGHT TURN INBOUNDCOURSE 230 ALT 2000 LEGDIST 4
+APPROACH VORA05 FIX MON AT OR ABOVE 2000 FIX TIDES 2000 FIX MUPGE 1020 RNW 05 TRK 196 UNTIL 1020 TURN LEFT DIRECT FIX MON AT OR ABOVE 2000
+APPROACH VORA23 FIX MON AT OR ABOVE 2000 FIX TIDES 2000 FIX MUPGE 1020 RNW 23 TRK 196 UNTIL 1020 TURN LEFT DIRECT FIX MON AT OR ABOVE 2000
+ENDAPPROACHES

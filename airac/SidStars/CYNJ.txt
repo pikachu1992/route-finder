@@ -1,0 +1,41 @@
+//CYNJ (LANGLEY REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BANQS LATLON N 48 56.992834 W 122 46.1555
+FIX CHAIT LATLON N 48 53.7665 W 123 8.364833
+FIX HOLES LATLON N 48 53.021833 W 122 49.8435
+FIX HUH LATLON N 48 56.717167 W 122 34.755334
+FIX KLUCK LATLON N 49 1.249834 W 122 42.182167
+FIX LEVIR LATLON N 49 4.4635 W 122 39.1735
+FIX MIXAX LATLON N 48 55.111667 W 122 41.5255
+FIX YPK LATLON N 49 12.956 W 122 42.892834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 07
+RNW 19
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX BANQS AT OR ABOVE 2000 FIX KLUCK 2000 FIX LEVIR AT OR ABOVE 720 RNW 01 FIX YPK 2000 HOLD AT FIX YPK RIGHT TURN INBOUNDCOURSE 072 SPEED 175 LEGTIME 1
+ TRANSITION CHAIT FIX CHAIT
+ TRANSITION HOLES FIX HOLES
+ TRANSITION HUH FIX HUH FIX MIXAX AT OR ABOVE 2000
+ENDAPPROACHES

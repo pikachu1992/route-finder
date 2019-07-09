@@ -1,0 +1,37 @@
+//KBDQ (MORRILTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FEDBA LATLON N 35 8.124167 W 92 36.197167
+FIX GOPRE LATLON N 35 3.052 W 92 28.711333
+FIX HAAWK LATLON N 35 16.042667 W 93 7.45
+FIX SAGSE LATLON N 35 8.059667 W 92 28.644334
+FIX WUDSU LATLON N 35 8.217833 W 92 49.407167
+FIX ZUVMA LATLON N 35 13.067333 W 92 28.577167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX SAGSE AT OR ABOVE 3300 FIX FEDBA 2000 RNW 27 TRK 267 UNTIL 721 FIX WUDSU FIX OVERFLY HAAWK AT OR ABOVE 4500 HOLD AT FIX HAAWK RIGHT TURN INBOUNDCOURSE 114 LEGDIST 5
+ TRANSITION GOPRE FIX GOPRE AT OR ABOVE 3300
+ TRANSITION SAGSE HOLD AT FIX SAGSE RIGHT TURN INBOUNDCOURSE 267 ALT 3300 LEGDIST 4
+ TRANSITION ZUVMA FIX ZUVMA AT OR ABOVE 3500
+ENDAPPROACHES

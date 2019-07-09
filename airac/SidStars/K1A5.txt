@@ -1,0 +1,35 @@
+//K1A5 (MACON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAYEL LATLON N 34 58.540834 W 83 16.634
+FIX ECEBE LATLON N 35 3.1915 W 83 19.298666
+FIX JASVU LATLON N 35 8.624833 W 83 22.420333
+FIX KUYES LATLON N 35 13.333667 W 83 25.131167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA07 FIX ECEBE AT OR ABOVE 6300 FIX JASVU 5700 FIX OVERFLY KUYES 3760 RNW 07 TURN RIGHT DIRECT FIX OVERFLY DAYEL AT OR ABOVE 7000 HOLD AT FIX DAYEL RIGHT TURN INBOUNDCOURSE 340 LEGDIST 7
+ TRANSITION DAYEL HOLD AT FIX DAYEL RIGHT TURN INBOUNDCOURSE 340 ALT 7000 LEGDIST 7
+APPROACH RNVA25 FIX ECEBE AT OR ABOVE 6300 FIX JASVU 5700 FIX OVERFLY KUYES 3760 RNW 25 TURN RIGHT DIRECT FIX OVERFLY DAYEL AT OR ABOVE 7000 HOLD AT FIX DAYEL RIGHT TURN INBOUNDCOURSE 340 LEGDIST 7
+ TRANSITION DAYEL HOLD AT FIX DAYEL RIGHT TURN INBOUNDCOURSE 340 ALT 7000 LEGDIST 7
+ENDAPPROACHES

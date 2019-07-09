@@ -1,0 +1,37 @@
+//14TS (WYATT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JIKEG LATLON N 27 27.587167 W 98 37.395833
+FIX LOGBE LATLON N 27 23.561666 W 98 35.401166
+FIX OREYI LATLON N 27 36.225167 W 98 41.684333
+FIX WEROV LATLON N 27 14.3515 W 98 30.8475
+FIX ZIXAD LATLON N 27 19.8815 W 98 33.58
+FIX ZOXEK LATLON N 27 30.716167 W 98 38.947834
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX OREYI AT OR ABOVE 3000 FIX ZOXEK 2300 FIX JIKEG AT OR ABOVE 1200 RNW 16 TRK 151 UNTIL 860 FIX OVERFLY WEROV AT OR ABOVE 3000 HOLD AT FIX WEROV RIGHT TURN INBOUNDCOURSE 331 LEGDIST 4
+ TRANSITION OREYI HOLD AT FIX OREYI RIGHT TURN INBOUNDCOURSE 151 ALT 3000 LEGDIST 4
+APPROACH RNV34 FIX WEROV AT OR ABOVE 3000 FIX ZIXAD 2300 FIX LOGBE AT OR ABOVE 1020 RNW 34 TRK 331 UNTIL 820 FIX OVERFLY OREYI AT OR ABOVE 3000 HOLD AT FIX OREYI RIGHT TURN INBOUNDCOURSE 151 LEGDIST 4
+ TRANSITION WEROV HOLD AT FIX WEROV RIGHT TURN INBOUNDCOURSE 331 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//EGUW (WATTISHAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI23 LATLON N 52 12.854167 E 1 8.100334
+FIX CLN LATLON N 51 50.908333 E 1 8.855333
+FIX D004X LATLON N 52 14.9 E 1 11.22
+FIX FI23 LATLON N 52 12.241166 E 1 6.817
+FIX FT05 LATLON N 52 3.326333 E 0 51.553667
+FIX FT23 LATLON N 52 12.116333 E 1 6.812666
+FIX MT05 LATLON N 52 6.518333 E 0 55.452167
+FIX MT23 LATLON N 52 8.5175 E 0 59.020834
+FIX WTZ LATLON N 52 7.316 E 0 56.428333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH ILS23 FIX CI23 AT OR ABOVE 2490 FIX FI23 2490 RNW 23 TRK 232 UNTIL 690 HDG 228 VECTORS
+ TRANSITION CLN FIX CLN FIX D004X AT OR ABOVE 2490 TRK 004 UNTIL 26.0 FROM FIX CLN
+ TRANSITION FI23 HOLD AT FIX FI23 LEFT TURN INBOUNDCOURSE 233 ALT 2490 LEGDIST 7
+ TRANSITION WTZ1 TRK 081 UNTIL 9.0 FROM FIX WTZ
+ TRANSITION WTZ2 FIX WTZ AT OR ABOVE 2490 TRK 062 UNTIL 9.0 FROM FIX WTZ
+APPROACH TAC05 FIX FT05 1890 FIX MT05 654 RNW 05 TRK 037 UNTIL 690 HDG 048 VECTORS
+ TRANSITION FT05 HOLD AT FIX FT05 LEFT TURN INBOUNDCOURSE 037 ALT 1890 LEGDIST 5
+APPROACH TAC23 FIX FT23 2490 FIX MT23 564 RNW 23 TRK 233 UNTIL 690 HDG 228 VECTORS
+ TRANSITION FT23 HOLD AT FIX FT23 LEFT TURN INBOUNDCOURSE 233 ALT 2490 LEGDIST 7
+ENDAPPROACHES

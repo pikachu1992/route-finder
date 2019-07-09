@@ -1,0 +1,41 @@
+//KN81 (HAMMONTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEREW LATLON N 39 48.524167 W 74 32.410166
+FIX CIKSO LATLON N 39 35.304667 W 74 47.238167
+FIX CYN LATLON N 39 49.040333 W 74 25.8975
+FIX DORTH LATLON N 39 43.578833 W 74 40.237
+FIX MA240 LATLON N 39 40.334167 W 74 45.3545
+FIX MASEE LATLON N 39 29.331334 W 74 49.466333
+FIX VCN LATLON N 39 32.260333 W 74 58.028666
+FIX WOKES LATLON N 39 37.840667 W 74 46.290167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX MASEE AT OR ABOVE 1900 FIX CIKSO 1600 FIX WOKES AT OR ABOVE 740 RNW 03 TRK 029 UNTIL 465 TURN LEFT DIRECT FIX OVERFLY MASEE AT OR ABOVE 1900 HOLD AT FIX MASEE RIGHT TURN INBOUNDCOURSE 029 LEGDIST 4
+ TRANSITION VCN FIX VCN FIX OVERFLY MASEE AT OR ABOVE 1900 HOLD AT FIX MASEE RIGHT TURN INBOUNDCOURSE 029 ALT 1900 LEGDIST 4
+APPROACH VORB03 FIX BEREW AT OR ABOVE 2000 FIX DORTH 1700 FIX OVERFLY MA240 560 RNW 03 FIX VCN AT OR ABOVE 2000 HOLD AT FIX VCN RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1
+ TRANSITION CYN FIX CYN
+APPROACH VORB21 FIX BEREW AT OR ABOVE 2000 FIX DORTH 1700 FIX OVERFLY MA240 560 RNW 21 FIX VCN AT OR ABOVE 2000 HOLD AT FIX VCN RIGHT TURN INBOUNDCOURSE 061 LEGTIME 1
+ TRANSITION CYN FIX CYN
+ENDAPPROACHES

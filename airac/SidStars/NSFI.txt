@@ -1,0 +1,38 @@
+//NSFI (FAGALI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BODOX LATLON S 13 39.1875 W 171 46.6165
+FIX FI601 LATLON S 13 47.213833 W 171 49.0395
+FIX FI617 LATLON S 13 50.626 W 171 45.269167
+FIX GURON LATLON S 13 44.688 W 171 51.828334
+FIX MEPEN LATLON S 13 58.3255 W 172 4.774667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVY10 FIX GURON AT OR ABOVE 2000 SPEED 150 FIX FI601 1900 FIX OVERFLY FI617 363 RNW 10 TURN LEFT DIRECT FIX BODOX AT OR ABOVE 2000 SPEED 100
+ TRANSITION BODOX FIX BODOX
+ TRANSITION MEPEN FIX MEPEN
+APPROACH RNVZ10 FIX GURON AT OR ABOVE 2000 SPEED 150 FIX FI601 1900 FIX OVERFLY FI617 363 RNW 10 TURN LEFT DIRECT FIX BODOX AT OR ABOVE 2000 SPEED 130
+ TRANSITION BODOX FIX BODOX
+ TRANSITION MEPEN FIX MEPEN
+ENDAPPROACHES

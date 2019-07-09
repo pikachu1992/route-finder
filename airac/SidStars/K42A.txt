@@ -1,0 +1,37 @@
+//K42A (MELBOURNE MUN - MILLER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HEVUX LATLON N 36 13.961666 W 91 42.392
+FIX JELER LATLON N 35 59.364334 W 91 53.534833
+FIX JUSIM LATLON N 36 6.329 W 91 48.229
+FIX WABRA LATLON N 36 8.953166 W 91 46.224833
+FIX ZEDOG LATLON N 35 54.311 W 91 57.377666
+FIX ZIPVA LATLON N 36 2.274334 W 91 51.320333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX ZEDOG AT OR ABOVE 3100 FIX JELER 2500 FIX ZIPVA AT OR ABOVE 1400 RNW 03 TRK 031 UNTIL 1135 FIX OVERFLY HEVUX AT OR ABOVE 3000 HOLD AT FIX HEVUX RIGHT TURN INBOUNDCOURSE 211 LEGDIST 4
+ TRANSITION ZEDOG HOLD AT FIX ZEDOG RIGHT TURN INBOUNDCOURSE 031 ALT 3100 LEGDIST 4
+APPROACH RNV21 FIX HEVUX AT OR ABOVE 3000 FIX WABRA 2400 FIX JUSIM AT OR ABOVE 1400 RNW 21 TRK 211 UNTIL 1135 FIX OVERFLY ZEDOG AT OR ABOVE 3100 HOLD AT FIX ZEDOG RIGHT TURN INBOUNDCOURSE 031 LEGDIST 4
+ TRANSITION HEVUX HOLD AT FIX HEVUX RIGHT TURN INBOUNDCOURSE 211 ALT 3000 LEGDIST 4
+ENDAPPROACHES

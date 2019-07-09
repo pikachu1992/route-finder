@@ -1,0 +1,35 @@
+//OPPI (PASNI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EN24 LATLON N 25 17.676833 E 63 21.466166
+FIX FN06 LATLON N 25 15.019834 E 63 13.725667
+FIX FN24 LATLON N 25 21.472166 E 63 26.627167
+FIX PINB LATLON N 25 17.276167 E 63 20.921833
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH NDB06 FIX FN06 2000 RNW 06 FIX OVERFLY PINB TRK 070 UNTIL 2000 TURN LEFT DIRECT FIX PINB 2500
+ TRANSITION PI FIX PINB 2500 TRK 280 UNTIL 6.0 FROM FIX PINB
+APPROACH NDB24 FIX FN24 2000 FIX OVERFLY EN24 83 FIX OVERFLY PINB AT OR ABOVE 440 RNW 24 TRK 230 UNTIL 2000 TURN LEFT DIRECT FIX PINB 2500
+ TRANSITION PI FIX PINB 2500 TRK 080 UNTIL 6.0 FROM FIX PINB
+ENDAPPROACHES

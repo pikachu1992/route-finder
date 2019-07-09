@@ -1,0 +1,36 @@
+//KLMS (LOUISVILLE-WINSTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGUBY LATLON N 33 2.833667 W 89 2.504666
+FIX AKRMN LATLON N 33 21.660667 W 89 6.460333
+FIX GUMMM LATLON N 33 14.734667 W 89 5.002
+FIX WUBGA LATLON N 33 10.9145 W 89 4.199167
+FIX ZIRIB LATLON N 32 55.9165 W 89 1.0585
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX AKRMN AT OR ABOVE 2800 FIX GUMMM 2400 FIX WUBGA AT OR ABOVE 1160 RNW 17 TRK 170 UNTIL 891 FIX OVERFLY ZIRIB AT OR ABOVE 2800 HOLD AT FIX ZIRIB RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4
+ TRANSITION AKRMN HOLD AT FIX AKRMN RIGHT TURN INBOUNDCOURSE 170 ALT 2800 LEGDIST 4
+APPROACH RNV35 FIX ZIRIB AT OR ABOVE 2800 FIX AGUBY 2400 RNW 35 TRK 350 UNTIL 889 FIX OVERFLY AKRMN AT OR ABOVE 2800 HOLD AT FIX AKRMN RIGHT TURN INBOUNDCOURSE 170 LEGDIST 4
+ TRANSITION ZIRIB HOLD AT FIX ZIRIB RIGHT TURN INBOUNDCOURSE 350 ALT 2800 LEGDIST 4
+ENDAPPROACHES

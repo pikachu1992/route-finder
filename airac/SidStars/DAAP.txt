@@ -1,0 +1,41 @@
+//DAAP (TAKHAMALT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 30VOR LATLON N 26 43.412167 E 8 41.488667
+FIX 50VOR LATLON N 26 43.550833 E 8 43.717
+FIX D086H LATLON N 26 43.758 E 8 47.059667
+FIX D086I LATLON N 26 43.792333 E 8 47.616833
+FIX FD27 LATLON N 26 43.6545 E 8 45.388333
+FIX FS27 LATLON N 26 43.564667 E 8 43.939834
+FIX ILZ LATLON N 26 43.203 E 8 38.146333
+FIX MD27 LATLON N 26 43.307666 E 8 39.817333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM27 FIX FD27 3940 FIX 50VOR AT OR ABOVE 3420 FIX 30VOR AT OR ABOVE 2790 FIX MD27 2295 RNW 27 FIX ILZ AT OR ABOVE 2295 TRK 270 UNTIL 2770 TURN RIGHT DIRECT FIX ILZ 4270
+ TRANSITION ILZ1 FIX ILZ AT OR ABOVE 4270 TRK 059 UNTIL 8.5 FROM FIX ILZ TURN RIGHT DIRECT FIX D086I AT OR ABOVE 3940
+ TRANSITION ILZ2 FIX ILZ AT OR ABOVE 4270 TRK 070 UNTIL 8.0 FROM FIX ILZ TURN RIGHT DIRECT FIX D086H AT OR ABOVE 3940
+APPROACH VOR27 FIX FS27 3450 RNW 27 TRK 266 UNTIL 2180 TRK 270 UNTIL 2770 TURN RIGHT DIRECT FIX ILZ 4270
+ TRANSITION ILZ1 FIX ILZ AT OR ABOVE 4270 TRK 059 UNTIL 7.0 FROM FIX ILZ
+ TRANSITION ILZ2 FIX ILZ AT OR ABOVE 4270 TRK 070 UNTIL 7.5 FROM FIX ILZ
+ENDAPPROACHES

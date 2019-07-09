@@ -1,0 +1,53 @@
+//NZMO (TE ANAU/MANAPOURI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AFTON LATLON S 45 7.411333 E 168 29.395333
+FIX ALDEV LATLON S 45 25.662 E 168 6.052166
+FIX ANOPA LATLON S 46 5.2435 E 168 25.54
+FIX ENKUV LATLON S 45 2.816666 E 168 40.333333
+FIX ENSOV LATLON S 45 38.554667 E 168 7.496
+FIX FF26 LATLON S 45 33.407333 E 167 48.830167
+FIX GULAN LATLON S 45 32.317333 E 168 2.974667
+FIX MA26 LATLON S 45 32.377333 E 167 41.868167
+FIX MO552 LATLON S 45 31.886666 E 167 38.544
+FIX MO633 LATLON S 45 24.806833 E 167 45.537
+FIX MO714 LATLON S 45 23.9015 E 167 57.533
+FIX SUNGU LATLON S 45 27.502834 E 168 38.312333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 14
+RNW 26
+RNW 32
+ENDRNWS
+
+SIDS
+SID GULAN1 RNW 26 FIX MO552 AT OR ABOVE 1600 FIX GULAN
+  TRANSITION AFTON FIX AFTON
+  TRANSITION ANOPA FIX ANOPA
+  TRANSITION ENKUV FIX ENKUV
+  TRANSITION SUNGU FIX SUNGU
+ENDSIDS
+
+APPROACHES
+APPROACH RNV26 FIX GULAN AT OR ABOVE 4400 SPEED 210 FIX FF26 2810 FIX OVERFLY MA26 1211 RNW 26 FIX MO714 TRK 059 UNTIL 5000 TURN RIGHT DIRECT FIX GULAN AT OR ABOVE 7000 SPEED 160 HOLD AT FIX GULAN LEFT TURN INBOUNDCOURSE 259 ALT 7000 SPEED 210 LEGDIST 7
+ TRANSITION ALDEV FIX ALDEV
+ TRANSITION ENSOV FIX ENSOV
+ TRANSITION GULAN HOLD AT FIX GULAN LEFT TURN INBOUNDCOURSE 259 ALT 7000 SPEED 210 LEGDIST 7
+ENDAPPROACHES

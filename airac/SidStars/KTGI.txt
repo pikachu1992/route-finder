@@ -1,0 +1,32 @@
+//KTGI (TANGIER I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CCV LATLON N 37 20.852333 W 75 59.859167
+FIX CRADD LATLON N 37 35.870333 W 75 59.8855
+FIX KINSE LATLON N 37 44.7805 W 75 59.899834
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB02 FIX CRADD AT OR ABOVE 2000 FIX KINSE 1500 RNW 02 TRK 011 UNTIL 405 TURN RIGHT DIRECT FIX OVERFLY CRADD AT OR ABOVE 2000 HOLD AT FIX CRADD LEFT TURN INBOUNDCOURSE 011 LEGDIST 4
+ TRANSITION CCV FIX CCV
+ENDAPPROACHES

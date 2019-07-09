@@ -1,0 +1,43 @@
+//CEZ4 (FT VERMILION WOP MAY MEMORIAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APDUK LATLON N 58 23.637167 W 115 48.0865
+FIX DELTU LATLON N 58 24.839167 W 116 5.693167
+FIX LIDIV LATLON N 58 23.681833 W 115 48.730333
+FIX NAPCO LATLON N 58 23.022667 W 115 39.3145
+FIX NOVIB LATLON N 58 26.969333 W 115 33.500833
+FIX OTVEP LATLON N 58 18.408 W 115 35.712334
+FIX PEVMO LATLON N 58 24.796 W 116 5.048833
+FIX PUPOX LATLON N 58 21.446167 W 116 20.213
+FIX RADOL LATLON N 58 30.019667 W 116 18.178834
+FIX ROPMA LATLON N 58 25.4235 W 116 14.480167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX ROPMA AT OR ABOVE 2200 SPEED 180 FIX PEVMO 2160 RNW 08 FIX OVERFLY APDUK 2300 HOLD AT FIX APDUK RIGHT TURN INBOUNDCOURSE 081 SPEED 200 LEGTIME 1
+ TRANSITION PUPOX FIX PUPOX SPEED 210
+ TRANSITION RADOL FIX RADOL SPEED 210
+APPROACH RNV26 FIX NAPCO AT OR ABOVE 2200 SPEED 180 FIX LIDIV 2170 RNW 26 FIX OVERFLY DELTU 2300 HOLD AT FIX DELTU RIGHT TURN INBOUNDCOURSE 261 SPEED 200 LEGTIME 1
+ TRANSITION NOVIB FIX NOVIB SPEED 210
+ TRANSITION OTVEP FIX OTVEP SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//YKNG (KATANNING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KNGEA LATLON S 33 32.553334 E 117 50.546
+FIX KNGEB LATLON S 33 35.462666 E 117 56.465666
+FIX KNGEC LATLON S 33 41.114833 E 117 55.226167
+FIX KNGEF LATLON S 33 39.627 E 117 45.573334
+FIX KNGEH LATLON S 33 42.946834 E 117 36.846833
+FIX KNGEI LATLON S 33 37.546834 E 117 51.021667
+FIX KNGEM LATLON S 33 41.703167 E 117 40.120667
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 13
+RNW 25
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV25 FIX KNGEI AT OR ABOVE 2900 FIX KNGEF 2650 FIX OVERFLY KNGEM 1062 RNW 25 FIX OVERFLY KNGEH HDG 085 VECTORS
+ TRANSITION KNGEA FIX KNGEA AT OR ABOVE 2900 SPEED 210
+ TRANSITION KNGEB FIX KNGEB AT OR ABOVE 2900 SPEED 210
+ TRANSITION KNGEC FIX KNGEC AT OR ABOVE 2900 SPEED 210
+ENDAPPROACHES

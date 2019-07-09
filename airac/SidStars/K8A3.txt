@@ -1,0 +1,40 @@
+//K8A3 (LIVINGSTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASAYO LATLON N 36 29.336833 W 85 14.9305
+FIX CENPI LATLON N 36 20.290166 W 85 22.310833
+FIX INDEP LATLON N 36 28.446833 W 85 15.579833
+FIX KAGGO LATLON N 36 35.135 W 85 10.183166
+FIX LAZMU LATLON N 36 14.4345 W 85 27.0705
+FIX LVT LATLON N 36 35.0705 W 85 9.997333
+FIX MAGOW LATLON N 36 25.961666 W 85 17.669167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH VDM21 FIX LVT AT OR ABOVE 3300 FIX INDEP 2700 FIX OVERFLY MAGOW 1723 RNW 21 TURN RIGHT DIRECT FIX LVT AT OR ABOVE 4000 HOLD AT FIX LVT RIGHT TURN INBOUNDCOURSE 145 LEGTIME 1
+ TRANSITION LVT HOLD AT FIX LVT RIGHT TURN INBOUNDCOURSE 145 ALT 3300 LEGTIME 1
+APPROACH RNV03 FIX LAZMU AT OR ABOVE 4100 FIX CENPI 3000 RNW 03 TRK 037 UNTIL 1700 FIX OVERFLY KAGGO AT OR ABOVE 4000 HOLD AT FIX KAGGO RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4
+ TRANSITION LAZMU HOLD AT FIX LAZMU RIGHT TURN INBOUNDCOURSE 037 ALT 4100 LEGDIST 5
+APPROACH RNV21 FIX KAGGO AT OR ABOVE 4000 FIX ASAYO 3000 RNW 21 TRK 217 UNTIL 1680 FIX OVERFLY LAZMU AT OR ABOVE 4100 HOLD AT FIX LAZMU RIGHT TURN INBOUNDCOURSE 037 LEGDIST 5
+ TRANSITION KAGGO HOLD AT FIX KAGGO RIGHT TURN INBOUNDCOURSE 217 ALT 4000 LEGDIST 4
+ENDAPPROACHES

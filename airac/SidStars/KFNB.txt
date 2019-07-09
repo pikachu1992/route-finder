@@ -1,0 +1,37 @@
+//KFNB (BRENNER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COVUT LATLON N 40 17.056166 W 95 45.2505
+FIX KOSHO LATLON N 40 9.516 W 95 39.2925
+FIX ODIVE LATLON N 40 7.2355 W 95 37.494334
+FIX TAYUG LATLON N 39 59.925 W 95 31.746
+FIX USACE LATLON N 39 54.182666 W 95 27.247667
+FIX ZIGNI LATLON N 40 3.074666 W 95 34.219834
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX COVUT AT OR ABOVE 3000 FIX KOSHO 2700 FIX ODIVE AT OR ABOVE 1840 RNW 15 TRK 146 UNTIL 1234 FIX OVERFLY USACE AT OR ABOVE 3000 HOLD AT FIX USACE RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION COVUT HOLD AT FIX COVUT RIGHT TURN INBOUNDCOURSE 146 ALT 3000 LEGDIST 4
+APPROACH RNV33 FIX USACE AT OR ABOVE 3000 FIX TAYUG 2700 FIX ZIGNI AT OR ABOVE 1520 RNW 33 TRK 326 UNTIL 1234 FIX OVERFLY COVUT AT OR ABOVE 3000 HOLD AT FIX COVUT RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4
+ TRANSITION USACE HOLD AT FIX USACE RIGHT TURN INBOUNDCOURSE 326 ALT 3000 LEGDIST 4
+ENDAPPROACHES

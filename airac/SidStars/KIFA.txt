@@ -1,0 +1,39 @@
+//KIFA (IOWA FALLS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARTYS LATLON N 42 34.7755 W 93 4.577333
+FIX HENSO LATLON N 42 29.756833 W 93 18.222833
+FIX SHODR LATLON N 42 15.656167 W 93 29.545166
+FIX VEYUD LATLON N 42 19.628666 W 93 4.6775
+FIX WISBU LATLON N 42 26.5925 W 93 13.979666
+FIX YITUG LATLON N 42 32.184334 W 93 21.4855
+FIX ZIROL LATLON N 42 24.392167 W 93 11.035333
+FIX ZIVNI LATLON N 42 36.931834 W 93 27.886166
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX ZIVNI AT OR ABOVE 4000 FIX YITUG 2800 FIX HENSO AT OR ABOVE 1700 RNW 13 TRK 134 UNTIL 1600 TURN RIGHT DIRECT FIX OVERFLY SHODR AT OR ABOVE 4000 HOLD AT FIX SHODR RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION ZIVNI HOLD AT FIX ZIVNI RIGHT TURN INBOUNDCOURSE 134 ALT 4000 LEGDIST 4
+APPROACH RNV31 FIX VEYUD AT OR ABOVE 4000 FIX ZIROL 2800 FIX WISBU AT OR ABOVE 1800 RNW 31 TRK 314 UNTIL 1600 TURN RIGHT DIRECT FIX OVERFLY ARTYS AT OR ABOVE 4000 HOLD AT FIX ARTYS RIGHT TURN INBOUNDCOURSE 272 LEGDIST 4
+ TRANSITION VEYUD HOLD AT FIX VEYUD RIGHT TURN INBOUNDCOURSE 314 ALT 4000 LEGDIST 4
+ENDAPPROACHES

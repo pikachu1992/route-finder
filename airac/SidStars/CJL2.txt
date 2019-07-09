@@ -1,0 +1,35 @@
+//CJL2 (HATCHET LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX URPAX LATLON N 58 32.271167 W 103 51.371333
+FIX URPUL LATLON N 58 40.885 W 103 20.003
+FIX VESVA LATLON N 58 43.259666 W 103 55.2485
+FIX XOLMI LATLON N 58 37.765834 W 103 53.304833
+FIX XOPUV LATLON N 58 38.840666 W 103 42.0115
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX XOLMI AT OR ABOVE 3000 SPEED 180 FIX XOPUV 2900 RNW 07 FIX OVERFLY URPUL 2900 HOLD AT FIX URPUL RIGHT TURN INBOUNDCOURSE 071 SPEED 250 LEGTIME 1
+ TRANSITION URPAX FIX URPAX SPEED 210
+ TRANSITION VESVA FIX VESVA SPEED 210
+ENDAPPROACHES

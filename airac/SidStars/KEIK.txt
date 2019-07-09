@@ -1,0 +1,36 @@
+//KEIK (ERIE MUNICIPAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 95VOR LATLON N 40 2.661 W 105 1.422
+FIX BJC LATLON N 39 54.782333 W 105 8.339167
+FIX CFFQB LATLON N 40 9.290167 W 104 55.576333
+FIX MAGIH LATLON N 40 1.003 W 105 2.8805
+FIX SHATZ LATLON N 40 5.976167 W 104 58.501667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA15 FIX CFFQB AT OR ABOVE 7200 FIX SHATZ 7200 FIX 95VOR AT OR ABOVE 6560 FIX MAGIH 5880 RNW 15 TRK 203 UNTIL 5880 TURN RIGHT DIRECT FIX SHATZ AT OR ABOVE 7200 HOLD AT FIX SHATZ RIGHT TURN INBOUNDCOURSE 203 LEGTIME 1
+ TRANSITION BJC FIX BJC FIX SHATZ AT OR ABOVE 8200 HOLD AT FIX SHATZ RIGHT TURN INBOUNDCOURSE 203 ALT 7200 LEGTIME 1
+APPROACH VDMA33 FIX CFFQB AT OR ABOVE 7200 FIX SHATZ 7200 FIX 95VOR AT OR ABOVE 6560 FIX MAGIH 5880 RNW 33 TRK 203 UNTIL 5880 TURN RIGHT DIRECT FIX SHATZ AT OR ABOVE 7200 HOLD AT FIX SHATZ RIGHT TURN INBOUNDCOURSE 203 LEGTIME 1
+ TRANSITION BJC FIX BJC FIX SHATZ AT OR ABOVE 8200 HOLD AT FIX SHATZ RIGHT TURN INBOUNDCOURSE 203 ALT 7200 LEGTIME 1
+ENDAPPROACHES

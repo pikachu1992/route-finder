@@ -1,0 +1,41 @@
+//VRMR (FUVAHMULAH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASPEE LATLON S 0 11.119166 E 73 18.908333
+FIX BILIF LATLON S 0 15.9195 E 73 17.4335
+FIX DODEY LATLON S 0 16.435667 E 73 35.992667
+FIX GEMIS LATLON S 0 26.036333 E 73 33.043
+FIX MALEG LATLON S 0 21.236 E 73 34.517833
+FIX MF110 LATLON S 0 16.958833 E 73 20.771333
+FIX MF290 LATLON S 0 20.196667 E 73 31.180166
+FIX TOODU LATLON S 0 20.719834 E 73 15.958667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX BILIF AT OR ABOVE 1700 FIX MF110 1700 RNW 11 TRK 111 UNTIL 3000 TURN LEFT DIRECT FIX OVERFLY ASPEE 3000 HOLD AT FIX ASPEE RIGHT TURN INBOUNDCOURSE 201 LEGTIME 1
+ TRANSITION ASPEE FIX ASPEE
+ TRANSITION TOODU FIX TOODU
+APPROACH RNV29 FIX MALEG AT OR ABOVE 1700 FIX MF290 1700 RNW 29 TRK 291 UNTIL 3000 TURN RIGHT DIRECT FIX OVERFLY DODEY 3000 HOLD AT FIX DODEY RIGHT TURN INBOUNDCOURSE 201 LEGTIME 1
+ TRANSITION DODEY FIX DODEY
+ TRANSITION GEMIS FIX GEMIS
+ENDAPPROACHES

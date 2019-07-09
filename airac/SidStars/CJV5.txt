@@ -1,0 +1,45 @@
+//CJV5 (NEEPAWA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADROP LATLON N 50 16.941833 W 99 24.9315
+FIX DEGBA LATLON N 50 11.2805 W 99 35.665834
+FIX KAPEK LATLON N 50 14.455 W 99 29.656
+FIX MATUN LATLON N 50 10.613666 W 99 36.925166
+FIX ODBEX LATLON N 50 17.295334 W 99 24.258833
+FIX PEKNU LATLON N 50 12.565333 W 99 33.236167
+FIX PIBVI LATLON N 50 7.415167 W 99 42.952667
+FIX RODBA LATLON N 50 20.472 W 99 18.2005
+FIX SAVOD LATLON N 50 2.930333 W 99 37.1955
+FIX TAKNA LATLON N 50 16.603667 W 99 13.2665
+FIX UDKAP LATLON N 50 11.2625 W 99 47.910833
+FIX VIBLU LATLON N 50 24.336833 W 99 23.147833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX PIBVI AT OR ABOVE 3100 SPEED 200 FIX MATUN 3100 FIX PEKNU AT OR ABOVE 2000 RNW 04 FIX OVERFLY ADROP 3800 HOLD AT FIX ADROP RIGHT TURN INBOUNDCOURSE 045 SPEED 200 LEGTIME 1
+ TRANSITION SAVOD FIX SAVOD
+ TRANSITION UDKAP FIX UDKAP SPEED 210
+APPROACH RNV22 FIX RODBA AT OR ABOVE 3100 SPEED 200 FIX ODBEX 2600 FIX OVERFLY KAPEK 1484 RNW 22 FIX OVERFLY DEGBA 4300 HOLD AT FIX DEGBA RIGHT TURN INBOUNDCOURSE 225 SPEED 200 LEGTIME 1
+ TRANSITION TAKNA FIX TAKNA SPEED 210
+ TRANSITION VIBLU FIX VIBLU SPEED 210
+ENDAPPROACHES

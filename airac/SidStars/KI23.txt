@@ -1,0 +1,40 @@
+//KI23 (FAYETTE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMNIO LATLON N 39 43.770833 W 83 16.869334
+FIX BIMGY LATLON N 39 38.696167 W 83 21.32
+FIX CSSNB LATLON N 39 36.051667 W 83 23.496833
+FIX JOGER LATLON N 39 43.246667 W 83 24.409
+FIX LIMPS LATLON N 39 49.803667 W 83 12.05
+FIX PI001 LATLON N 39 38.846356 W 83 20.761258
+FIX PI002 LATLON N 39 39.442615 W 83 15.230288
+FIX PI003 LATLON N 39 44.033651 W 83 15.671114
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB23 FIX CSSNB 1700 RNW 23 TRK 223 UNTIL 2000 TURN LEFT DIRECT FIX CSSNB AT OR ABOVE 2600 HOLD AT FIX CSSNB LEFT TURN INBOUNDCOURSE 223 LEGTIME 1
+ TRANSITION JOGER FIX JOGER FIX CSSNB AT OR ABOVE 3000 FIX PI001 AT OR ABOVE 2600 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2600 SPEED 210 FIX PI003 AT OR ABOVE 2600 SPEED 210
+APPROACH RNV23 FIX AMNIO AT OR ABOVE 3000 FIX BIMGY 2600 RNW 23 TRK 220 UNTIL 1700 TURN LEFT DIRECT FIX OVERFLY AMNIO AT OR ABOVE 3000 HOLD AT FIX AMNIO RIGHT TURN INBOUNDCOURSE 220 LEGDIST 4
+ TRANSITION JOGER FIX JOGER FIX OVERFLY AMNIO AT OR ABOVE 3000 HOLD AT FIX AMNIO RIGHT TURN INBOUNDCOURSE 220 ALT 3000 LEGDIST 4
+ TRANSITION LIMPS FIX LIMPS
+ENDAPPROACHES

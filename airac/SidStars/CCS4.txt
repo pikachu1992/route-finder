@@ -1,0 +1,36 @@
+//CCS4 (CHIPMAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MUTSA LATLON N 46 6.859166 W 66 3.372667
+FIX PILGI LATLON N 46 10.626167 W 65 46.611334
+FIX SILMO LATLON N 46 17.408 W 65 40.6685
+FIX TARSU LATLON N 46 12.456667 W 65 38.3865
+FIX VESPO LATLON N 46 7.5045 W 65 36.111167
+FIX VIPTU LATLON N 46 9.569833 W 65 51.333667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV27 FIX TARSU AT OR ABOVE 1900 SPEED 180 FIX PILGI 1800 FIX VIPTU AT OR ABOVE 690 RNW 27 FIX OVERFLY MUTSA 2100 HOLD AT FIX MUTSA RIGHT TURN INBOUNDCOURSE 270 SPEED 175 LEGTIME 1
+ TRANSITION SILMO FIX SILMO SPEED 200
+ TRANSITION VESPO FIX VESPO SPEED 200
+ENDAPPROACHES

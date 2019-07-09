@@ -1,0 +1,43 @@
+//CSH4 (LEBEL-SUR-QUEVILLON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EBKIK LATLON N 49 5.154167 W 77 5.8555
+FIX ONDUG LATLON N 49 4.967 W 77 5.584667
+FIX OTMOB LATLON N 49 5.8595 W 77 17.388833
+FIX OVBER LATLON N 48 57.627334 W 76 44.565167
+FIX PUXET LATLON N 49 9.309 W 77 11.882333
+FIX SUXIV LATLON N 48 54.1995 W 76 50.0815
+FIX TUGEP LATLON N 48 58.555667 W 76 56.334167
+FIX URLAT LATLON N 49 12.754 W 77 6.363
+FIX URNEX LATLON N 48 50.767166 W 76 55.5855
+FIX VITIK LATLON N 48 58.408166 W 76 56.122
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX PUXET AT OR ABOVE 2500 FIX ONDUG 2300 RNW 15 FIX OVERFLY VITIK 2700 HOLD AT FIX VITIK RIGHT TURN INBOUNDCOURSE 151 LEGTIME 1
+ TRANSITION OTMOB FIX OTMOB SPEED 210
+ TRANSITION URLAT FIX URLAT SPEED 210
+APPROACH RNV33 FIX SUXIV AT OR ABOVE 2700 FIX TUGEP 2300 RNW 33 FIX OVERFLY EBKIK 2700 HOLD AT FIX EBKIK RIGHT TURN INBOUNDCOURSE 331 LEGTIME 1
+ TRANSITION OVBER FIX OVBER SPEED 210
+ TRANSITION URNEX FIX URNEX SPEED 210
+ENDAPPROACHES

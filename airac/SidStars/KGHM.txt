@@ -1,0 +1,35 @@
+//KGHM (CENTERVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WOGUT LATLON N 35 38.5115 W 87 31.440167
+FIX WOXUS LATLON N 35 55.5875 W 87 24.564334
+FIX ZAVOS LATLON N 36 1.934666 W 87 21.9935
+FIX ZIDKI LATLON N 35 44.863834 W 87 28.889167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX WOGUT AT OR ABOVE 3000 FIX ZIDKI 2500 RNW 02 TRK 021 UNTIL 1140 FIX OVERFLY ZAVOS AT OR ABOVE 3000 HOLD AT FIX ZAVOS RIGHT TURN INBOUNDCOURSE 201 LEGDIST 4
+ TRANSITION WOGUT HOLD AT FIX WOGUT RIGHT TURN INBOUNDCOURSE 021 ALT 3000 LEGDIST 4
+APPROACH RNV20 FIX ZAVOS AT OR ABOVE 3000 FIX WOXUS 2500 RNW 20 TRK 201 UNTIL 1160 FIX OVERFLY WOGUT AT OR ABOVE 3000 HOLD AT FIX WOGUT RIGHT TURN INBOUNDCOURSE 021 LEGDIST 4
+ TRANSITION ZAVOS HOLD AT FIX ZAVOS RIGHT TURN INBOUNDCOURSE 201 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,49 @@
+//FYWE (EROS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUMSO LATLON S 22 23.504 E 17 8.0665
+FIX ISAAC LATLON S 22 52.201333 E 17 7.3925
+FIX KAPPI LATLON S 22 19.314667 E 17 1.9095
+FIX RW01M LATLON S 22 36.833333 E 17 4.833334
+FIX TEXET LATLON S 22 25.039166 E 16 57.401666
+FIX TILLY LATLON S 22 48.009334 E 17 1.216667
+FIX WE01F LATLON S 22 41.783333 E 17 5.65
+FIX WE01I LATLON S 22 47.25 E 17 6.566666
+FIX WE19F LATLON S 22 29.733334 E 17 3.65
+FIX WE19I LATLON S 22 24.266666 E 17 2.733334
+FIX WE19M LATLON S 22 34.683334 E 17 4.466666
+FIX WEM01 LATLON S 22 31.866667 E 17 4
+FIX WEM02 LATLON S 22 43.316666 E 17 5.9
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 09
+RNW 19
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX WE01I AT OR ABOVE 9000 FIX WE01F 7910 FIX OVERFLY RW01M 5625 RNW 01 FIX OVERFLY WEM01 TURN LEFT DIRECT FIX TILLY AT OR ABOVE 10000 HOLD AT FIX TILLY RIGHT TURN INBOUNDCOURSE 093 ALT 10000 LEGTIME 1
+ TRANSITION ISAAC FIX ISAAC
+ TRANSITION TILLY FIX TILLY
+APPROACH RNV19 FIX WE19I AT OR ABOVE 8500 FIX WE19F 7500 FIX OVERFLY WE19M 5911 RNW 19 FIX OVERFLY WEM02 TURN RIGHT DIRECT FIX TEXET AT OR ABOVE 10000 HOLD AT FIX TEXET LEFT TURN INBOUNDCOURSE 093 ALT 10000 LEGTIME 1
+ TRANSITION DUMSO FIX DUMSO
+ TRANSITION KAPPI FIX KAPPI
+ TRANSITION TEXET FIX TEXET
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//XA66 (EL JARDIN RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COT LATLON N 28 27.721 W 99 7.112666
+FIX UVNEZ LATLON N 28 8.322833 W 99 22.822667
+FIX WOBAP LATLON N 28 6.088333 W 99 19.523333
+FIX ZALOX LATLON N 28 11.9755 W 99 28.229833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX ZALOX AT OR ABOVE 3000 FIX UVNEZ 2400 FIX WOBAP AT OR ABOVE 1220 RNW 12 TRK 122 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY COT
+ TRANSITION ZALOX HOLD AT FIX ZALOX RIGHT TURN INBOUNDCOURSE 122 ALT 3000 LEGDIST 4
+ENDAPPROACHES

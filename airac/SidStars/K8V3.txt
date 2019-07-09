@@ -1,0 +1,37 @@
+//K8V3 (PARKSTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FEPAP LATLON N 43 18.041333 W 97 56.255333
+FIX FIROX LATLON N 43 27.248666 W 98 2.52
+FIX ICABI LATLON N 43 15.209833 W 97 54.336167
+FIX IVULE LATLON N 43 30.075167 W 98 4.4505
+FIX SOVHE LATLON N 43 20.766334 W 97 58.1055
+FIX SUSOJ LATLON N 43 24.5225 W 98 0.661166
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX IVULE AT OR ABOVE 3300 FIX FIROX 3000 FIX SUSOJ AT OR ABOVE 2020 RNW 15 TRK 150 UNTIL 1818 FIX OVERFLY ICABI AT OR ABOVE 3300 HOLD AT FIX ICABI RIGHT TURN INBOUNDCOURSE 330 LEGDIST 4
+ TRANSITION IVULE HOLD AT FIX IVULE RIGHT TURN INBOUNDCOURSE 150 ALT 3300 LEGDIST 4
+APPROACH RNV33 FIX ICABI AT OR ABOVE 3300 FIX FEPAP 3000 FIX SOVHE AT OR ABOVE 2020 RNW 33 TRK 330 UNTIL 1740 FIX OVERFLY IVULE AT OR ABOVE 3300 HOLD AT FIX IVULE RIGHT TURN INBOUNDCOURSE 150 LEGDIST 4
+ TRANSITION ICABI HOLD AT FIX ICABI RIGHT TURN INBOUNDCOURSE 330 ALT 3300 LEGDIST 4
+ENDAPPROACHES

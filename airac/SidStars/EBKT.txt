@@ -1,0 +1,41 @@
+//EBKT (KORTRIJK-WEVELGEM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALFAS LATLON N 50 52.108333 E 3 21.38
+FIX KT401 LATLON N 50 47.423333 E 3 7.498333
+FIX KT402 LATLON N 50 50.428333 E 3 2.221667
+FIX KT403 LATLON N 50 54.651667 E 3 4.653334
+FIX KT404 LATLON N 50 59.591666 E 3 25.871666
+FIX MAKNB LATLON N 50 57.866666 E 3 29.783333
+FIX MIRZO LATLON N 50 54.458333 E 3 28.348333
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+SIDS
+SID MAK1A RNW 24 TRK 241 UNTIL 500 FIX KT401 SPEED 160 FIX KT402 SPEED 185 FIX KT403 SPEED 200 FIX MAKNB 3000
+SID MAK1B RNW 24 TRK 241 UNTIL 500 FIX KT401 SPEED 185 FIX KT402 SPEED 200 FIX KT403 FIX MAKNB 3000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV24 FIX MIRZO AT OR ABOVE 2000 FIX ALFAS 2000 RNW 24 FIX KT401 SPEED 160 FIX KT402 FIX KT403 FIX KT404 FIX MAKNB 3000 SPEED 185 HOLD AT FIX MAKNB RIGHT TURN INBOUNDCOURSE 194 ALT 3000 SPEED 185 LEGTIME 1
+ TRANSITION MAK FIX MAKNB AT OR ABOVE 3000 SPEED 185
+ENDAPPROACHES

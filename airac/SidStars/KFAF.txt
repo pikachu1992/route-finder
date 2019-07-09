@@ -1,0 +1,50 @@
+//KFAF (FELKER AAF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BROZE LATLON N 35 55.411667 W 77 10.919167
+FIX CATAS LATLON N 37 11.0975 W 76 41.491834
+FIX CVI LATLON N 36 22.374833 W 76 52.292666
+FIX DEENE LATLON N 36 4.547666 W 77 29.857
+FIX DRONE LATLON N 36 31.753834 W 76 40.250833
+FIX HCM LATLON N 37 26.919667 W 76 42.681167
+FIX HPW LATLON N 37 19.732166 W 77 6.956666
+FIX HUMAL LATLON N 37 10.920334 W 76 51.3065
+FIX ISO LATLON N 35 22.2565 W 77 33.499834
+FIX PAKSE LATLON N 37 14.850667 W 76 47.4295
+FIX RDU LATLON N 35 52.351333 W 78 47.0005
+FIX TYI LATLON N 35 58.603333 W 77 42.223834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+STARS
+STAR DRONE2 FIX DRONE
+ TRANSITION ISO FIX ISO FIX BROZE FIX CVI
+ TRANSITION RDU FIX RDU FIX TYI FIX DEENE FIX CVI
+  RNW 14 RNW 32
+ENDSTARS
+
+APPROACHES
+APPROACH RNV14 FIX PAKSE AT OR ABOVE 2000 FIX CATAS 1600 RNW 14 TRK 139 UNTIL 420 TURN LEFT DIRECT FIX OVERFLY HUMAL AT OR ABOVE 2000 HOLD AT FIX HUMAL LEFT TURN INBOUNDCOURSE 049 ALT 6000 LEGDIST 4
+ TRANSITION HCM FIX HCM
+ TRANSITION HPW FIX HPW
+ TRANSITION HUMAL FIX HUMAL AT OR ABOVE 2000
+ENDAPPROACHES

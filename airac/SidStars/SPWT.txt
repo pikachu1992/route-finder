@@ -1,0 +1,48 @@
+//SPWT (LAS MALVINAS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKVIR LATLON S 12 1.7 W 72 54.916667
+FIX ASEMO LATLON S 11 41.333333 W 73 25.05
+FIX BODET LATLON S 12 14.116667 W 73 54.05
+FIX DEXAM LATLON S 12 2.833333 W 73 0.933334
+FIX EGELI LATLON S 12 6.9 W 73 22.566667
+FIX EKESI LATLON S 11 56.716667 W 72 55.616666
+FIX MLV LATLON S 11 51.501667 W 72 56.26
+FIX OGNUM LATLON S 11 40.416667 W 73 57.366667
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+SIDS
+SID OGNUM1 RNW 17 HDG 176 UNTIL 3500 TURN LEFT DIRECT FIX MLV AT OR ABOVE 6000 FIX ASEMO AT OR ABOVE 13000 FIX OGNUM AT OR ABOVE 17000
+ENDSIDS
+
+STARS
+STAR BODET2 FIX BODET AT OR ABOVE 17000 FIX EGELI AT OR ABOVE 12000 FIX DEXAM AT OR ABOVE 5500
+  RNW 35
+ENDSTARS
+
+APPROACHES
+APPROACH VDM35 FIX AKVIR AT OR ABOVE 4100 FIX EKESI 2900 RNW 35 FIX MLV HDG 356 UNTIL 3000 TURN LEFT DIRECT FIX AKVIR
+ TRANSITION DEXAM FIX DEXAM AT OR ABOVE 5500
+APPROACH ILS35 FIX AKVIR AT OR ABOVE 4100 FIX EKESI 2900 RNW 35 HDG 357 UNTIL 3000 TURN LEFT DIRECT FIX AKVIR AT OR ABOVE 5400
+ TRANSITION DEXAM FIX DEXAM AT OR ABOVE 5500
+ENDAPPROACHES

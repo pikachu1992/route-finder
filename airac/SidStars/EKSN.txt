@@ -1,0 +1,39 @@
+//EKSN (SINDAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D072J LATLON N 57 32.807833 E 10 27.095167
+FIX D289E LATLON N 57 31.651166 E 10 1.249834
+FIX D310D LATLON N 57 32.381333 E 10 4.216166
+FIX FI26 LATLON N 57 30.560333 E 10 23.887
+FIX FN08 LATLON N 57 29.923166 E 10 4.729667
+FIX SDNB LATLON N 57 30.046166 E 10 9.042167
+FIX VESIL LATLON N 57 30.966667 E 10 32.65
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH ILS26 FIX VESIL AT OR ABOVE 1800 FIX FI26 1800 RNW 26 TRK 265 UNTIL 500 FIX SDNB 1800 HOLD AT FIX SDNB LEFT TURN INBOUNDCOURSE 085 SPEED 180 LEGTIME 1
+ TRANSITION SD FIX SDNB AT OR ABOVE 1800 SPEED 180 FIX OVERFLY D072J AT OR ABOVE 1800
+APPROACH NDB08 FIX FN08 1650 FIX SDNB AT OR ABOVE 880 RNW 08 TRK 070 UNTIL 1800 TURN LEFT DIRECT FIX SDNB 1800 HOLD AT FIX SDNB RIGHT TURN INBOUNDCOURSE 289 SPEED 230 LEGTIME 1
+ TRANSITION SD1 FIX SDNB AT OR ABOVE 1800 FIX OVERFLY D310D 1650
+ TRANSITION SD2 FIX SDNB AT OR ABOVE 1800 FIX OVERFLY D289E 1650
+ENDAPPROACHES

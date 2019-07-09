@@ -1,0 +1,36 @@
+//KCHQ (MISSISSIPPI CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEDKA LATLON N 36 40.096166 W 89 21.615167
+FIX JELVA LATLON N 37 0.9615 W 89 21.5425
+FIX POQXE LATLON N 36 52.594667 W 89 21.571667
+FIX SOVKE LATLON N 36 55.955167 W 89 21.56
+FIX ZEROV LATLON N 36 45.102833 W 89 21.597833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JELVA AT OR ABOVE 3000 FIX SOVKE 2000 FIX POQXE AT OR ABOVE 920 RNW 18 TRK 182 UNTIL 713 FIX OVERFLY CEDKA AT OR ABOVE 3000 HOLD AT FIX CEDKA RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION JELVA HOLD AT FIX JELVA RIGHT TURN INBOUNDCOURSE 182 ALT 3000 LEGDIST 4
+APPROACH RNV36 FIX CEDKA AT OR ABOVE 3000 FIX ZEROV 2000 RNW 36 TRK 002 UNTIL 713 FIX OVERFLY JELVA AT OR ABOVE 3000 HOLD AT FIX JELVA RIGHT TURN INBOUNDCOURSE 182 LEGDIST 4
+ TRANSITION CEDKA HOLD AT FIX CEDKA RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4
+ENDAPPROACHES

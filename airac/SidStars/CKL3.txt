@@ -1,0 +1,43 @@
+//CKL3 (WUNNUMIN LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEBSA LATLON N 53 2.3765 W 89 23.229833
+FIX DEKDU LATLON N 52 46.777333 W 89 3.8795
+FIX EPVUR LATLON N 52 49.275334 W 89 14.425333
+FIX ETGAN LATLON N 52 57.752 W 89 20.111
+FIX ETMAX LATLON N 52 43.024 W 89 19.1285
+FIX IRDAR LATLON N 52 57.9935 W 89 20.2735
+FIX ITLIS LATLON N 52 49.533 W 89 14.597666
+FIX PEVTA LATLON N 52 44.904667 W 89 11.5095
+FIX TIDIR LATLON N 53 4.249333 W 89 15.548666
+FIX VIXUT LATLON N 53 0.495334 W 89 30.899666
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX DEBSA AT OR ABOVE 2300 FIX ETGAN 2200 RNW 16 FIX OVERFLY EPVUR 2500 HOLD AT FIX EPVUR RIGHT TURN INBOUNDCOURSE 163 LEGTIME 1
+ TRANSITION TIDIR FIX TIDIR
+ TRANSITION VIXUT FIX VIXUT
+APPROACH RNV34 FIX PEVTA AT OR ABOVE 2300 FIX ITLIS 2200 RNW 34 FIX OVERFLY IRDAR 2500 HOLD AT FIX IRDAR RIGHT TURN INBOUNDCOURSE 343 LEGTIME 1
+ TRANSITION DEKDU FIX DEKDU
+ TRANSITION ETMAX FIX ETMAX
+ENDAPPROACHES

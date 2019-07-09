@@ -1,0 +1,44 @@
+//CKM8 (OPAPIMISKAN LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGPIG LATLON N 52 38.62 W 90 29.4495
+FIX ALTAL LATLON N 52 47.108833 W 90 31.613
+FIX APKAV LATLON N 52 35.483833 W 90 19.258166
+FIX AVEMO LATLON N 52 38.096 W 90 2.385833
+FIX BOGNU LATLON N 52 25.644167 W 90 12.8085
+FIX DUPOR LATLON N 52 39.042167 W 90 30.826834
+FIX DUXAV LATLON N 52 33.991667 W 90 14.434166
+FIX GUBOT LATLON N 52 31.872 W 90 7.609333
+FIX IKDUG LATLON N 52 40.863833 W 90 36.785333
+FIX LIVBO LATLON N 52 34.614833 W 90 41.933
+FIX VODOM LATLON N 52 34.138333 W 90 14.907667
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX IKDUG AT OR ABOVE 2500 FIX AGPIG 2410 RNW 12 FIX OVERFLY DUXAV 2600 HOLD AT FIX DUXAV RIGHT TURN INBOUNDCOURSE 121 SPEED 250 LEGTIME 1
+ TRANSITION ALTAL FIX ALTAL SPEED 200
+ TRANSITION LIVBO FIX LIVBO SPEED 200
+APPROACH RNV30 FIX GUBOT AT OR ABOVE 2700 FIX VODOM 2610 FIX APKAV AT OR ABOVE 1660 RNW 30 FIX OVERFLY DUPOR 2600 HOLD AT FIX DUPOR RIGHT TURN INBOUNDCOURSE 301 SPEED 250 LEGTIME 1
+ TRANSITION AVEMO FIX AVEMO SPEED 200
+ TRANSITION BOGNU FIX BOGNU SPEED 200
+ENDAPPROACHES

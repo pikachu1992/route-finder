@@ -1,0 +1,53 @@
+//CPZ3 (MOUNTAIN VIEW)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADVEK LATLON N 44 0.51 W 77 25.82
+FIX ALIRA LATLON N 44 19.52 W 77 11.1
+FIX BEPED LATLON N 44 14.75 W 77 13.18
+FIX DUPAR LATLON N 44 6.23 W 77 14.58
+FIX GADEN LATLON N 44 13.25 W 77 6.55
+FIX GOPIT LATLON N 43 56.43 W 77 31.92
+FIX KATNI LATLON N 44 4.8 W 77 19.38
+FIX LEPAP LATLON N 43 52.77 W 77 27.22
+FIX ODBAK LATLON N 44 16.24 W 77 19.82
+FIX PEMKI LATLON N 44 9.02 W 77 15.67
+FIX PERNO LATLON N 43 51.24 W 77 15.42
+FIX SEGEP LATLON N 44 0.1 W 77 36.63
+FIX VIMGO LATLON N 43 52.95 W 77 29.73
+FIX ZASER LATLON N 43 53.03 W 77 36.99
+ENDFIXES
+
+RNWS
+RNW 06L
+RNW 06R
+RNW 16
+RNW 24L
+RNW 24R
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06R FIX GOPIT AT OR ABOVE 2000 FIX ADVEK 2000 RNW 06R FIX OVERFLY DUPAR 1800 FIX OVERFLY PERNO 3500 HOLD AT FIX PERNO RIGHT TURN INBOUNDCOURSE 194 LEGTIME 1
+ TRANSITION LEPAP FIX LEPAP
+ TRANSITION SEGEP FIX SEGEP
+ TRANSITION ZASER FIX ZASER
+APPROACH RNV24L FIX BEPED AT OR ABOVE 3400 FIX PEMKI 2160 FIX OVERFLY KATNI 570 RNW 24L FIX OVERFLY VIMGO 3500 HOLD AT FIX VIMGO RIGHT TURN INBOUNDCOURSE 224 LEGTIME 1
+ TRANSITION ALIRA FIX ALIRA
+ TRANSITION GADEN FIX GADEN
+ TRANSITION ODBAK FIX ODBAK
+ENDAPPROACHES

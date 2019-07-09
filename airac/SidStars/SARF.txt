@@ -1,0 +1,43 @@
+//SARF (FORMOSA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 30VOR LATLON S 26 15.248167 W 58 15.099334
+FIX 50VOR LATLON S 26 17.002333 W 58 16.1785
+FIX CD04 LATLON S 26 20.948666 W 58 18.608666
+FIX CF22 LATLON S 26 3.9355 W 58 9.129833
+FIX D221O LATLON S 26 25.771 W 58 21.582667
+FIX FD04 LATLON S 26 19.194833 W 58 17.528167
+FIX FF22 LATLON S 26 5.673167 W 58 10.025833
+FIX FS04 LATLON S 26 19.194833 W 58 17.528333
+FIX FSA LATLON S 26 12.616667 W 58 13.481666
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH VDM04 FIX CD04 AT OR ABOVE 2500 FIX FD04 2500 FIX 50VOR AT OR ABOVE 1700 FIX 30VOR AT OR ABOVE 1050 RNW 04 FIX FSA TRK 041 UNTIL 3000
+ TRANSITION D221O FIX D221O
+ TRANSITION FSA FIX FSA TRK 238 UNTIL 9.5 FROM FIX FSA
+APPROACH ILS22 FIX CF22 AT OR ABOVE 2500 FIX FF22 2500 RNW 22 TRK 217 UNTIL 3000
+ TRANSITION FSA FIX FSA TRK 053 UNTIL 9.5 FROM FIX FSA
+APPROACH VOR04 FIX FS04 2500 RNW 04 FIX FSA TRK 041 UNTIL 3000
+ TRANSITION FSA FIX FSA TRK 238 UNTIL 7.5 FROM FIX FSA
+ENDAPPROACHES

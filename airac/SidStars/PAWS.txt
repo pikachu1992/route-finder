@@ -1,0 +1,42 @@
+//PAWS (WASILLA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVERR LATLON N 61 28.696667 W 149 49.879667
+FIX BGQ LATLON N 61 34.167334 W 149 58.028666
+FIX FRIZL LATLON N 61 31.482334 W 149 41.226
+FIX HEVEB LATLON N 61 32.903833 W 150 20.119667
+FIX JODBI LATLON N 61 40.2655 W 149 10.082333
+FIX ODUWU LATLON N 61 35.5205 W 149 28.583
+FIX WOKNA LATLON N 61 37.783166 W 149 21.447334
+FIX ZALEG LATLON N 61 41.964833 W 149 0.2155
+FIX ZEXTU LATLON N 61 45.629833 W 148 37.659167
+FIX ZINEV LATLON N 61 33.121166 W 149 36.109166
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX AVERR AT OR ABOVE 2500 FIX FRIZL 1900 FIX ZINEV AT OR ABOVE 960 RNW 04 TRK 038 UNTIL 1000 TURN LEFT DIRECT FIX OVERFLY BGQ AT OR ABOVE 3000 HOLD AT FIX BGQ RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4
+ TRANSITION AVERR HOLD AT FIX AVERR RIGHT TURN INBOUNDCOURSE 038 ALT 2500 LEGDIST 4
+ TRANSITION HEVEB FIX HEVEB
+APPROACH RNV22 FIX JODBI AT OR ABOVE 4400 FIX WOKNA 2500 FIX ODUWU AT OR ABOVE 1060 RNW 22 TRK 218 UNTIL 1000 FIX OVERFLY BGQ AT OR ABOVE 3000 HOLD AT FIX BGQ RIGHT TURN INBOUNDCOURSE 168 LEGDIST 4
+ TRANSITION ZEXTU FIX ZEXTU FIX ZALEG AT OR ABOVE 6200
+ENDAPPROACHES

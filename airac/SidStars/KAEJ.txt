@@ -1,0 +1,43 @@
+//KAEJ (CENTRAL COLORADO REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKNAC LATLON N 38 42.107333 W 106 4.244833
+FIX BUBYO LATLON N 38 34.536667 W 106 2.446
+FIX CEMIP LATLON N 38 43.433666 W 106 5.0165
+FIX COLLM LATLON N 38 23.261167 W 105 44.472334
+FIX FETUB LATLON N 38 36.283166 W 106 1.179
+FIX FIKEX LATLON N 38 29.145667 W 106 0.975833
+FIX HIDMA LATLON N 38 28.748833 W 105 54.0015
+FIX KANON LATLON N 38 23.754167 W 105 59.509333
+FIX PUB LATLON N 38 17.655334 W 104 25.766833
+FIX ROBVY LATLON N 38 46.976833 W 106 6.404333
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+SIDS
+SID PUBLO1 RNW 15 TRK 149 UNTIL 8350 FIX CEMIP FIX FETUB FIX HIDMA AT OR ABOVE 15500 FIX COLLM FIX OVERFLY PUB
+ENDSIDS
+
+APPROACHES
+APPROACH RNV33 FIX BUBYO AT OR ABOVE 12600 FIX AKNAC 10300 FIX OVERFLY ROBVY 8420 RNW 33 TURN RIGHT DIRECT FIX OVERFLY KANON AT OR ABOVE 16000 HOLD AT FIX KANON RIGHT TURN INBOUNDCOURSE 337 LEGDIST 10
+ TRANSITION KANON FIX KANON FIX FIKEX AT OR ABOVE 14300
+ENDAPPROACHES

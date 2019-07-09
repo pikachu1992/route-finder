@@ -1,0 +1,44 @@
+//CZPO (PINEHOUSE LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGDEN LATLON N 55 27.001166 W 106 33.638333
+FIX BEVIG LATLON N 55 41.789333 W 106 37.757167
+FIX DUVIR LATLON N 55 42.641333 W 106 28.154
+FIX GAGRI LATLON N 55 36.373834 W 106 36.242833
+FIX IMILU LATLON N 55 40.924834 W 106 47.3535
+FIX LEXEM LATLON N 55 21.584666 W 106 32.142833
+FIX METGO LATLON N 55 20.727334 W 106 41.6595
+FIX MIPEM LATLON N 55 36.860333 W 106 36.3785
+FIX PUSUT LATLON N 55 26.514667 W 106 33.503833
+FIX USBID LATLON N 55 22.4295 W 106 22.619333
+FIX XUBAS LATLON N 55 34.395667 W 106 35.691334
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX BEVIG AT OR ABOVE 3000 SPEED 180 FIX MIPEM 2910 FIX XUBAS AT OR ABOVE 2120 RNW 16 FIX OVERFLY AGDEN 2700 HOLD AT FIX AGDEN RIGHT TURN INBOUNDCOURSE 160 ALT 2700 SPEED 200 LEGTIME 1
+ TRANSITION DUVIR FIX DUVIR SPEED 210
+ TRANSITION IMILU FIX IMILU SPEED 210
+APPROACH RNV34 FIX LEXEM AT OR ABOVE 3000 SPEED 180 FIX PUSUT 2920 RNW 34 FIX OVERFLY GAGRI 2800 HOLD AT FIX GAGRI RIGHT TURN INBOUNDCOURSE 340 ALT 2800 SPEED 200 LEGTIME 1
+ TRANSITION METGO FIX METGO SPEED 210
+ TRANSITION USBID FIX USBID SPEED 210
+ENDAPPROACHES

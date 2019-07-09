@@ -1,0 +1,41 @@
+//KCLS (CHEHALIS-CENTRALIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CETUV LATLON N 46 35.9985 W 123 21.345833
+FIX DOCRA LATLON N 46 58.026833 W 123 11.627833
+FIX DUMBS LATLON N 46 55.89 W 123 5.661833
+FIX MCKEN LATLON N 46 52.061666 W 122 33.757
+FIX NOYID LATLON N 46 46.659334 W 122 59.303833
+FIX OLM LATLON N 46 58.298333 W 122 54.11
+FIX OPICO LATLON N 46 44.229 W 122 59.167166
+FIX RELTE LATLON N 46 53.747833 W 122 59.703667
+FIX ZUMET LATLON N 46 54.893 W 122 48.243334
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX RELTE 4000 FIX NOYID 2000 FIX OPICO AT OR ABOVE 1220 RNW 16 TRK 162 UNTIL 900 TURN RIGHT DIRECT FIX OVERFLY CETUV AT OR ABOVE 5000 HOLD AT FIX CETUV RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4
+ TRANSITION DOCRA FIX DOCRA FIX DUMBS AT OR ABOVE 4300
+ TRANSITION MCKEN FIX MCKEN FIX ZUMET AT OR ABOVE 4200
+ TRANSITION OLM FIX OLM
+ TRANSITION RELTE HOLD AT FIX RELTE RIGHT TURN INBOUNDCOURSE 162 ALT 4000 LEGDIST 4
+ENDAPPROACHES

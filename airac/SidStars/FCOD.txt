@@ -1,0 +1,35 @@
+//FCOD (SASSOU NGUESSO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI04Z LATLON S 1 19.618166 E 15 50.352
+FIX FI04Z LATLON S 1 18.798667 E 15 50.929834
+FIX FN04 LATLON S 1 18.751667 E 15 51.020167
+FIX FN22 LATLON S 1 8.535833 E 15 58.127167
+FIX OTKNB LATLON S 1 12.601834 E 15 55.298833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH ILSZ04 FIX CI04Z AT OR ABOVE 2800 FIX FI04Z 2800 RNW 04 FIX OTKNB AT OR ABOVE 1480 TRK 036 UNTIL 2300 TURN LEFT DIRECT FIX OTKNB 3000 SPEED 200
+APPROACH NDB04 FIX FN04 2800 RNW 04 FIX OTKNB AT OR ABOVE 1480 TRK 036 UNTIL 2300 TURN LEFT DIRECT FIX OTKNB 3000 SPEED 200
+APPROACH NDB22 FIX FN22 2800 FIX OTKNB 1205 RNW 22 TRK 216 UNTIL 2300 TURN RIGHT DIRECT FIX OTKNB 3000 SPEED 200
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//WATR (DAVID CONSTANTIJN SAUDALE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAKON LATLON S 10 50.611667 E 122 53.803333
+FIX KONSA LATLON S 10 35.546666 E 123 13.6
+FIX TR411 LATLON S 10 53.888333 E 122 57.655
+FIX TR412 LATLON S 10 50.081666 E 123 0.968333
+FIX TR601 LATLON S 10 38.595 E 123 10.953334
+FIX TR602 LATLON S 10 41.643334 E 123 8.305
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX TR411 AT OR ABOVE 3000 FIX TR412 2100 RNW 04 TRK 039 UNTIL 1000 TURN LEFT DIRECT FIX DAKON 4000 HOLD AT FIX DAKON RIGHT TURN INBOUNDCOURSE 129 ALT 4000 LEGTIME 1
+ TRANSITION DAKON FIX DAKON AT OR ABOVE 4000
+APPROACH RNV22 FIX TR601 AT OR ABOVE 2800 FIX TR602 2100 RNW 22 TRK 219 UNTIL 1000 TURN RIGHT DIRECT FIX KONSA 4000 HOLD AT FIX KONSA RIGHT TURN INBOUNDCOURSE 219 ALT 4000 LEGTIME 1
+ TRANSITION KONSA FIX KONSA AT OR ABOVE 4000
+ENDAPPROACHES

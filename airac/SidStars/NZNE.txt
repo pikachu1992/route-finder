@@ -1,0 +1,55 @@
+//NZNE (NORTH SHORE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOLOR LATLON S 36 28.7445 E 174 44.363333
+FIX FF21 LATLON S 36 35.821166 E 174 44.0635
+FIX GBNB LATLON S 36 14.647 E 175 27.686833
+FIX LIBKO LATLON S 36 41.615333 E 174 29.964
+FIX MA03 LATLON S 36 40.0455 E 174 38.445334
+FIX MA21 LATLON S 36 39.236833 E 174 39.522
+FIX PANGO LATLON S 36 36.734833 E 174 28.5775
+FIX RIKDI LATLON S 36 40.976666 E 174 34.880167
+FIX SFNB LATLON S 35 53.1285 E 174 21.440167
+FIX SUNEL LATLON S 36 27.518167 E 174 59.426333
+FIX UPLIN LATLON S 36 32.4025 E 174 48.598333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 09
+RNW 21
+RNW 27
+ENDRNWS
+
+STARS
+STAR GB1A FIX GBNB FIX SUNEL FIX UPLIN
+  RNW 21
+STAR SF1A FIX SFNB FIX BOLOR
+  RNW 21
+STAR SF1B FIX SFNB FIX PANGO
+  RNW 03
+ENDSTARS
+
+APPROACHES
+APPROACH RNV03 FIX LIBKO AT OR ABOVE 2000 FIX RIKDI 1400 FIX OVERFLY MA03 495 RNW 03 FIX UPLIN 2100
+ TRANSITION LIBKO HOLD AT FIX LIBKO LEFT TURN INBOUNDCOURSE 061 ALT 2000 LEGTIME 1
+ TRANSITION PANGO FIX PANGO
+APPROACH RNV21 FIX UPLIN AT OR ABOVE 2100 FIX FF21 2080 FIX OVERFLY MA21 273 RNW 21 FIX LIBKO 2000
+ TRANSITION BOLOR FIX BOLOR
+ TRANSITION UPLIN HOLD AT FIX UPLIN RIGHT TURN INBOUNDCOURSE 207 ALT 2100 LEGTIME 1
+ENDAPPROACHES

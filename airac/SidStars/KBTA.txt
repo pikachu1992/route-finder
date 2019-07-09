@@ -1,0 +1,41 @@
+//KBTA (BLAIR MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AFUGU LATLON N 41 28.696333 W 96 11.227834
+FIX BIKPE LATLON N 41 33.095333 W 96 16.6625
+FIX EKABE LATLON N 41 20.571667 W 96 1.237
+FIX FALUK LATLON N 41 16.036166 W 95 55.685833
+FIX FELDA LATLON N 41 22.811333 W 95 45.919333
+FIX IFODO LATLON N 41 26.683667 W 96 8.747167
+FIX JALKU LATLON N 41 22.945834 W 96 4.150166
+FIX WUNLI LATLON N 41 9.247166 W 96 5.418667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX BIKPE AT OR ABOVE 3100 FIX AFUGU 2900 FIX IFODO AT OR ABOVE 2020 RNW 13 TRK 134 UNTIL 1568 FIX OVERFLY FALUK AT OR ABOVE 4000 HOLD AT FIX FALUK RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4
+ TRANSITION BIKPE HOLD AT FIX BIKPE RIGHT TURN INBOUNDCOURSE 134 ALT 3100 LEGDIST 4
+APPROACH RNV31 FIX FALUK AT OR ABOVE 4000 FIX EKABE 3100 FIX JALKU AT OR ABOVE 2060 RNW 31 TRK 314 UNTIL 1564 FIX OVERFLY BIKPE AT OR ABOVE 3100 HOLD AT FIX BIKPE RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4
+ TRANSITION FALUK HOLD AT FIX FALUK RIGHT TURN INBOUNDCOURSE 314 ALT 4000 LEGDIST 4
+ TRANSITION FELDA FIX FELDA
+ TRANSITION WUNLI FIX WUNLI
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//K12V (ONA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOMEZ LATLON N 38 25.358167 W 82 6.904166
+FIX HAITI LATLON N 38 16.169 W 82 15.398666
+FIX HVQ LATLON N 38 20.9805 W 81 46.194833
+FIX KUDZU LATLON N 38 21.362 W 82 22.906166
+FIX MA288 LATLON N 38 26.387666 W 82 11.823334
+FIX MILLK LATLON N 38 27.074167 W 82 28.7165
+FIX OCHER LATLON N 38 23.925833 W 82 17.445167
+FIX RODIC LATLON N 38 15.174 W 82 21.352834
+FIX RULEY LATLON N 38 26.080333 W 82 6.7485
+FIX SPEDI LATLON N 38 22.561 W 81 53.633
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA07 FIX KUDZU AT OR ABOVE 2700 FIX OCHER 2200 RNW 07 TRK 065 UNTIL 972 FIX OVERFLY RULEY AT OR ABOVE 3200 HOLD AT FIX RULEY LEFT TURN INBOUNDCOURSE 114 ALT 3200 LEGDIST 4
+ TRANSITION MILLK FIX MILLK
+ TRANSITION RODIC FIX RODIC
+APPROACH VORA07 FIX SPEDI AT OR ABOVE 3100 FIX GOMEZ 3100 FIX MA288 1500 RNW 07 TRK 288 UNTIL 1500 FIX HAITI AT OR ABOVE 3100 HOLD AT FIX HAITI LEFT TURN INBOUNDCOURSE 204 LEGTIME 1
+ TRANSITION HVQ FIX HVQ
+APPROACH VORA25 FIX SPEDI AT OR ABOVE 3100 FIX GOMEZ 3100 FIX MA288 1500 RNW 25 TRK 288 UNTIL 1500 FIX HAITI AT OR ABOVE 3100 HOLD AT FIX HAITI LEFT TURN INBOUNDCOURSE 204 LEGTIME 1
+ TRANSITION HVQ FIX HVQ
+ENDAPPROACHES

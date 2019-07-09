@@ -1,0 +1,49 @@
+//DNMA (MAIDUGURI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUBRU LATLON N 11 39.644167 E 12 59.745
+FIX GAKMU LATLON N 11 55.695 E 13 17.035667
+FIX GUPEX LATLON N 11 43.2995 E 12 56.25
+FIX LUDSA LATLON N 12 2.793 E 13 17.251667
+FIX MA460 LATLON N 11 55.906166 E 13 9.824
+FIX MA500 LATLON N 11 46.745833 E 12 59.957833
+FIX NEBNO LATLON N 11 59.35 E 13 13.537
+FIX UDSUS LATLON N 12 3.004166 E 13 10.036834
+FIX XIXAG LATLON N 11 46.954 E 12 52.7535
+FIX XUNUX LATLON N 11 39.852334 E 12 52.543667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX GUPEX AT OR ABOVE 3000 SPEED 200 FIX MA500 3000 RNW 05 TURN LEFT DIRECT FIX XIXAG TURN LEFT DIRECT FIX GUPEX SPEED 200 HOLD AT FIX GUPEX LEFT TURN INBOUNDCOURSE 047 ALT 3000 SPEED 230 LEGTIME 1
+ TRANSITION BUBRU FIX BUBRU
+ TRANSITION XIXAG FIX XIXAG
+ TRANSITION XUNUX FIX XUNUX
+APPROACH RNV23 FIX NEBNO AT OR ABOVE 3000 SPEED 200 FIX MA460 3000 RNW 23 TURN RIGHT DIRECT FIX UDSUS TURN RIGHT DIRECT FIX NEBNO SPEED 200 HOLD AT FIX NEBNO RIGHT TURN INBOUNDCOURSE 227 ALT 3000 SPEED 230 LEGTIME 1
+ TRANSITION GAKMU FIX GAKMU
+ TRANSITION LUDSA FIX LUDSA
+ TRANSITION UDSUS FIX UDSUS
+ENDAPPROACHES
+
+GATES
+GATE MIU N 11 51.316667 E 13 3
+ENDGATES

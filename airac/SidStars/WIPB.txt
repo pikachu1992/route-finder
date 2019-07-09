@@ -1,0 +1,33 @@
+//WIPB (SILAMPARI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF20 LATLON S 3 9.034333 E 102 57.328333
+FIX FF20 LATLON S 3 11.932166 E 102 56.501666
+FIX MA20 LATLON S 3 15.409834 E 102 55.509667
+FIX SLP LATLON S 3 17.148334 E 102 55.013333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH VDM20 FIX CF20 AT OR ABOVE 2500 FIX FF20 1900 FIX MA20 795 RNW 20 TRK 197 UNTIL 4.0 FROM FIX SLP TURN LEFT DIRECT FIX SLP 5500 HOLD AT FIX SLP RIGHT TURN INBOUNDCOURSE 046 ALT 5500 SPEED 185 LEGTIME 1
+ TRANSITION SLP FIX SLP AT OR ABOVE 5500 TRK 046 UNTIL 8.4 FROM FIX SLP
+ENDAPPROACHES

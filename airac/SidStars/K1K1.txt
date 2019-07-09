@@ -1,0 +1,36 @@
+//K1K1 (LLOYD STEARMAN FIELD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ELFIN LATLON N 37 51.795334 W 97 7.267667
+FIX GAMWY LATLON N 37 58.405834 W 96 59.274
+FIX ICT LATLON N 37 44.7155 W 97 35.029834
+FIX MATOW LATLON N 37 57.930833 W 97 7.817
+FIX WURAM LATLON N 37 57.573667 W 97 14.123333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX MATOW AT OR ABOVE 3100 FIX ELFIN 3000 RNW 17 TURN LEFT DIRECT FIX OVERFLY MATOW AT OR ABOVE 3100 HOLD AT FIX MATOW LEFT TURN INBOUNDCOURSE 172 LEGDIST 4
+ TRANSITION GAMWY FIX GAMWY
+ TRANSITION ICT FIX ICT FIX WURAM AT OR ABOVE 3600
+ TRANSITION MATOW HOLD AT FIX MATOW LEFT TURN INBOUNDCOURSE 172 ALT 3100 LEGDIST 4
+ENDAPPROACHES

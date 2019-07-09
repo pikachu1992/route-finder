@@ -1,0 +1,35 @@
+//KDVO (GNOSS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EYEJI LATLON N 38 13.641167 W 122 35.419166
+FIX GOVLE LATLON N 38 9.898667 W 122 34.01
+FIX ORIBY LATLON N 38 17.905333 W 122 38.7435
+FIX RACFE LATLON N 38 26.420167 W 122 45.429667
+FIX SGD LATLON N 38 10.761667 W 122 22.389167
+FIX STS LATLON N 38 30.491167 W 122 48.637
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH GPS13 FIX ORIBY AT OR ABOVE 3000 FIX EYEJI 2000 FIX OVERFLY GOVLE 482 RNW 13 TURN LEFT DIRECT FIX OVERFLY SGD AT OR ABOVE 3000 HOLD AT FIX SGD RIGHT TURN INBOUNDCOURSE 180 LEGTIME 1
+ TRANSITION STS FIX STS FIX RACFE AT OR ABOVE 5000
+ENDAPPROACHES

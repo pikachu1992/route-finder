@@ -1,0 +1,37 @@
+//KMMS (SELFS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GUVRE LATLON N 34 11.227667 W 90 18.348
+FIX IVZOB LATLON N 34 4.317 W 90 20.8745
+FIX UFAYY LATLON N 34 16.834333 W 90 16.293167
+FIX UTFIR LATLON N 34 23.455667 W 90 13.8605
+FIX WUGEK LATLON N 34 18.6635 W 90 15.621833
+FIX XIKRY LATLON N 34 9.111667 W 90 19.122334
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX IVZOB AT OR ABOVE 3000 FIX XIKRY 1700 FIX GUVRE AT OR ABOVE 980 RNW 02 TRK 016 UNTIL 440 FIX OVERFLY UTFIR AT OR ABOVE 3000 HOLD AT FIX UTFIR RIGHT TURN INBOUNDCOURSE 016 LEGDIST 4
+ TRANSITION IVZOB HOLD AT FIX IVZOB RIGHT TURN INBOUNDCOURSE 016 ALT 3000 LEGDIST 4
+APPROACH RNV20 FIX UTFIR AT OR ABOVE 3000 FIX WUGEK 1700 FIX UFAYY AT OR ABOVE 1080 RNW 20 TRK 196 UNTIL 562 FIX OVERFLY IVZOB AT OR ABOVE 3000 HOLD AT FIX IVZOB RIGHT TURN INBOUNDCOURSE 196 LEGDIST 4
+ TRANSITION UTFIR HOLD AT FIX UTFIR RIGHT TURN INBOUNDCOURSE 196 ALT 3000 LEGDIST 4
+ENDAPPROACHES

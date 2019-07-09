@@ -1,0 +1,46 @@
+//CZFN (TULITA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ELTUM LATLON N 65 0.497333 W 125 11.1525
+FIX ETGEM LATLON N 64 44.944 W 125 48.586
+FIX IKNAK LATLON N 64 50.5765 W 125 8.904
+FIX OMPUB LATLON N 64 54.426667 W 125 34.739
+FIX OMRAS LATLON N 64 53.440667 W 126 0.8165
+FIX OVOLU LATLON N 64 51.816167 W 125 44.728166
+FIX OXAKO LATLON N 64 55.082833 W 125 21.718834
+FIX UDPIP LATLON N 64 49.194334 W 125 54.685166
+FIX UKVAR LATLON N 64 57.026 W 125 24.7175
+FIX VOKIS LATLON N 64 55.537 W 125 10.024667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA06 FIX UDPIP AT OR ABOVE 2400 FIX OVOLU 1970 FIX OVERFLY OMPUB 370 RNW 06 FIX OVERFLY UKVAR 3700 HOLD AT FIX UKVAR RIGHT TURN INBOUNDCOURSE 036 LEGTIME 1
+ TRANSITION ETGEM FIX ETGEM
+ TRANSITION OMRAS FIX OMRAS
+APPROACH RNV24 FIX VOKIS AT OR ABOVE 2100 FIX OXAKO 1970 RNW 24 TRK 242 UNTIL 730 TURN LEFT DIRECT FIX IKNAK 2800 HOLD AT FIX IKNAK RIGHT TURN INBOUNDCOURSE 332 SPEED 265 LEGTIME 1
+ TRANSITION ELTUM FIX ELTUM
+ TRANSITION IKNAK FIX IKNAK
+APPROACH RNVA24 FIX UDPIP AT OR ABOVE 2400 FIX OVOLU 1970 FIX OVERFLY OMPUB 370 RNW 24 FIX OVERFLY UKVAR 3700 HOLD AT FIX UKVAR RIGHT TURN INBOUNDCOURSE 036 LEGTIME 1
+ TRANSITION ETGEM FIX ETGEM
+ TRANSITION OMRAS FIX OMRAS
+ENDAPPROACHES

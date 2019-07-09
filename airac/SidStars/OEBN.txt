@@ -1,0 +1,41 @@
+//OEBN (THABLOTIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FS17 LATLON N 19 55.327166 E 54 1.088833
+FIX MD17 LATLON N 19 50.871 E 54 1.171
+FIX PI001 LATLON N 19 58.384467 E 54 1.026674
+FIX PI002 LATLON N 20 1.370992 E 53 57.734522
+FIX PI003 LATLON N 20 4.883476 E 54 0.905846
+FIX PI004 LATLON N 19 53.3678 E 54 1.125041
+FIX PI005 LATLON N 19 56.354327 E 53 57.834637
+FIX PI006 LATLON N 19 59.866809 E 54 1.004278
+FIX RADVI LATLON N 19 54.885 E 54 1.091666
+FIX THA LATLON N 19 49.868333 E 54 1.19
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VDM17 FIX RADVI 1900 FIX MD17 591 RNW 17 TRK 178 UNTIL 1500 TURN LEFT DIRECT FIX THA 2500 FIX RADVI HOLD AT FIX RADVI RIGHT TURN INBOUNDCOURSE 178 LEGTIME 1
+ TRANSITION THA FIX THA FIX RADVI AT OR ABOVE 2500 FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+APPROACH VOR17 FIX FS17 2000 RNW 17 FIX THA AT OR ABOVE 810 TRK 178 UNTIL 2000 TURN LEFT DIRECT FIX THA 2500 HOLD AT FIX THA RIGHT TURN INBOUNDCOURSE 178 LEGTIME 1
+ TRANSITION THA FIX THA FIX PI004 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI005 AT OR ABOVE 2000 SPEED 210 FIX PI006 AT OR ABOVE 2000 SPEED 210
+ENDAPPROACHES

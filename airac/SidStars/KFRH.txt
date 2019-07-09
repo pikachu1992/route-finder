@@ -1,0 +1,45 @@
+//KFRH (FRENCH LICK MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVBAY LATLON N 38 33.3845 W 86 22.869833
+FIX CLOWN LATLON N 38 31.357 W 87 19.931833
+FIX FORBS LATLON N 38 29.055167 W 86 44.879833
+FIX JIKPI LATLON N 38 25.590167 W 87 2.226
+FIX LYREE LATLON N 38 31.688666 W 86 31.5315
+FIX MAIZE LATLON N 38 28.471667 W 86 0.9565
+FIX PXV LATLON N 37 55.699166 W 87 45.742834
+FIX STREP LATLON N 38 46.38 W 86 0.821833
+FIX WITAM LATLON N 38 35.081333 W 86 14.135833
+FIX ZEGOR LATLON N 38 30.994834 W 86 35.062333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX JIKPI AT OR ABOVE 4000 FIX FORBS 2400 RNW 08 TRK 080 UNTIL 1057 FIX OVERFLY WITAM AT OR ABOVE 4000 HOLD AT FIX WITAM RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4
+ TRANSITION CLOWN FIX CLOWN
+ TRANSITION JIKPI HOLD AT FIX JIKPI RIGHT TURN INBOUNDCOURSE 080 ALT 4000 LEGDIST 4
+ TRANSITION PXV FIX PXV
+APPROACH RNV26 FIX WITAM AT OR ABOVE 4000 FIX AVBAY AT OR ABOVE 2500 FIX LYREE 2400 FIX ZEGOR AT OR ABOVE 1480 RNW 26 TRK 260 UNTIL 1042 FIX OVERFLY JIKPI AT OR ABOVE 4000 HOLD AT FIX JIKPI RIGHT TURN INBOUNDCOURSE 080 LEGDIST 4
+ TRANSITION MAIZE FIX MAIZE
+ TRANSITION STREP FIX STREP
+ TRANSITION WITAM HOLD AT FIX WITAM RIGHT TURN INBOUNDCOURSE 260 ALT 4000 LEGDIST 4
+ENDAPPROACHES

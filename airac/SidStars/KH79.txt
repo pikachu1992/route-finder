@@ -1,0 +1,43 @@
+//KH79 (ELDON MODEL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FOVMU LATLON N 38 16.161 W 92 34.534
+FIX HUPUD LATLON N 38 18.264667 W 92 34.437167
+FIX JICDA LATLON N 38 31.046333 W 92 32.6805
+FIX LOJOV LATLON N 38 5.367 W 92 50.3325
+FIX LUYIR LATLON N 38 11.0805 W 92 17.818166
+FIX MIVPE LATLON N 38 11.161667 W 92 34.763666
+FIX SECOC LATLON N 38 9.031333 W 92 40.501
+FIX WABNI LATLON N 38 8.652334 W 92 29.278
+FIX ZARUB LATLON N 38 25.0255 W 92 34.125334
+FIX ZUMIL LATLON N 38 27.1855 W 92 34.0255
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JICDA AT OR ABOVE 3100 FIX ZUMIL 2600 FIX ZARUB AT OR ABOVE 1900 RNW 18 TRK 178 UNTIL 1317 FIX OVERFLY MIVPE AT OR ABOVE 3000 HOLD AT FIX MIVPE RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION JICDA HOLD AT FIX JICDA LEFT TURN INBOUNDCOURSE 191 ALT 3100 LEGDIST 4
+APPROACH RNV36 FIX MIVPE AT OR ABOVE 3000 FIX FOVMU 2600 FIX HUPUD AT OR ABOVE 1920 RNW 36 TRK 358 UNTIL 1317 FIX ZARUB FIX OVERFLY JICDA AT OR ABOVE 3100 HOLD AT FIX JICDA LEFT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION LOJOV FIX LOJOV FIX SECOC AT OR ABOVE 3000
+ TRANSITION LUYIR FIX LUYIR FIX WABNI AT OR ABOVE 3000
+ TRANSITION MIVPE HOLD AT FIX MIVPE RIGHT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4
+ENDAPPROACHES

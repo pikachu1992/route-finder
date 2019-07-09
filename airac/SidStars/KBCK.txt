@@ -1,0 +1,38 @@
+//KBCK (BLACK RIVER FALLS AREA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAVKA LATLON N 44 12.8925 W 91 8.907334
+FIX CUGUG LATLON N 44 15.4715 W 90 47.779
+FIX DIVEN LATLON N 44 14.071667 W 90 59.316667
+FIX HURST LATLON N 43 56.161333 W 90 12.2095
+FIX TUVUY LATLON N 44 15.996 W 90 43.412167
+FIX ZELED LATLON N 44 17.140166 W 90 33.802166
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX CAVKA AT OR ABOVE 3500 FIX DIVEN 2600 RNW 08 TRK 080 UNTIL 1073 FIX OVERFLY ZELED AT OR ABOVE 3500 HOLD AT FIX ZELED RIGHT TURN INBOUNDCOURSE 261 LEGDIST 4
+ TRANSITION CAVKA HOLD AT FIX CAVKA LEFT TURN INBOUNDCOURSE 080 ALT 3500 LEGDIST 4
+APPROACH RNV26 FIX ZELED AT OR ABOVE 3500 FIX TUVUY 2600 FIX CUGUG AT OR ABOVE 1580 RNW 26 TRK 261 UNTIL 1087 FIX OVERFLY CAVKA AT OR ABOVE 3500 HOLD AT FIX CAVKA LEFT TURN INBOUNDCOURSE 080 LEGDIST 4
+ TRANSITION HURST FIX HURST
+ TRANSITION ZELED HOLD AT FIX ZELED RIGHT TURN INBOUNDCOURSE 261 ALT 3500 LEGDIST 4
+ENDAPPROACHES

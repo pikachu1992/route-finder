@@ -1,0 +1,44 @@
+//PACE (CENTRAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BACMY LATLON N 65 32.425834 W 146 8.006167
+FIX FAPEP LATLON N 65 35.9455 W 145 2.236166
+FIX FINOD LATLON N 65 32.512166 W 144 27.641
+FIX INDEY LATLON N 65 40.949 W 145 21.429
+FIX IPELE LATLON N 65 31.080167 W 144 13.635334
+FIX NATSE LATLON N 65 41.422333 W 145 35.8895
+FIX ZIDAB LATLON N 65 35.624833 W 144 58.941334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID BACMY2
+ RNW 08 HDG 083 UNTIL 3500 TURN RIGHT DIRECT FIX BACMY 8000
+ RNW 26 HDG 263 UNTIL 5900 FIX BACMY 8000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV08 FIX INDEY AT OR ABOVE 5900 FIX FAPEP 3000 FIX ZIDAB AT OR ABOVE 2540 RNW 08 TRK 083 UNTIL 3700 TURN RIGHT DIRECT FIX OVERFLY BACMY AT OR ABOVE 8000 HOLD AT FIX BACMY RIGHT TURN INBOUNDCOURSE 036 LEGDIST 7
+ TRANSITION BACMY FIX BACMY FIX NATSE AT OR ABOVE 8000
+APPROACH RNV26 FIX IPELE AT OR ABOVE 5400 FIX FINOD 3500 RNW 26 TRK 264 UNTIL 1337 TURN LEFT DIRECT FIX OVERFLY BACMY AT OR ABOVE 8000 HOLD AT FIX BACMY RIGHT TURN INBOUNDCOURSE 036 LEGDIST 7
+ TRANSITION BACMY FIX BACMY FIX OVERFLY IPELE AT OR ABOVE 7500 HOLD AT FIX IPELE RIGHT TURN INBOUNDCOURSE 264 ALT 5400 LEGDIST 5
+ENDAPPROACHES

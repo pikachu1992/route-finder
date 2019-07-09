@@ -1,0 +1,40 @@
+//SFAL (STANLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 35DME LATLON S 51 41.3045 W 57 52.637666
+FIX CF09 LATLON S 51 41.781667 W 58 4.669667
+FIX D083F LATLON S 51 40.638334 W 57 36.646667
+FIX D270G LATLON S 51 40.684 W 57 57.8815
+FIX FF09 LATLON S 51 41.497834 W 57 57.450334
+FIX FF27 LATLON S 51 41.376 W 57 37.442666
+FIX MA09 LATLON S 51 41.107834 W 57 47.826334
+FIX MA27 LATLON S 51 41.1005 W 57 45.4645
+FIX MTP LATLON S 51 49.584 W 58 25.438834
+FIX SANB LATLON S 51 41.059166 W 57 46.646
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDM09 FIX FF09 2194 FIX 35DME AT OR ABOVE 1238 FIX MA09 285 RNW 09 FIX OVERFLY D083F TURN RIGHT DIRECT FIX SANB AT OR ABOVE 3000 HOLD AT FIX SANB LEFT TURN INBOUNDCOURSE 276 SPEED 210 LEGTIME 1
+ TRANSITION MTP FIX MTP FIX CF09 AT OR ABOVE 2600
+APPROACH NDM27 FIX FF27 1876 FIX MA27 286 RNW 27 FIX OVERFLY D270G TURN RIGHT DIRECT FIX SANB AT OR ABOVE 3000 HOLD AT FIX SANB RIGHT TURN INBOUNDCOURSE 076 SPEED 210 LEGTIME 1
+ENDAPPROACHES

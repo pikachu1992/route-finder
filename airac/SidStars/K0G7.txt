@@ -1,0 +1,46 @@
+//K0G7 (FINGER LAKES REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEBUV LATLON N 42 47.451833 W 76 46.3235
+FIX CEPEB LATLON N 42 58.6195 W 76 47.546833
+FIX EBIHY LATLON N 42 39.1955 W 76 53.580667
+FIX FEHLO LATLON N 42 40.156 W 76 37.368833
+FIX HADCI LATLON N 42 39.6805 W 76 45.475834
+FIX HUDEN LATLON N 43 7.042333 W 76 40.254833
+FIX JLIET LATLON N 43 6.564167 W 76 48.4205
+FIX ZETEM LATLON N 42 50.781334 W 76 46.687834
+FIX ZORAB LATLON N 43 6.076333 W 76 56.583833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 11
+RNW 19
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX HADCI AT OR ABOVE 3900 FIX CEBUV 2200 FIX ZETEM AT OR ABOVE 1120 RNW 01 TRK 007 UNTIL 1000 TURN LEFT DIRECT FIX OVERFLY HADCI AT OR ABOVE 3900 HOLD AT FIX HADCI RIGHT TURN INBOUNDCOURSE 007 LEGDIST 4
+ TRANSITION EBIHY FIX EBIHY
+ TRANSITION FEHLO FIX FEHLO
+ TRANSITION HADCI HOLD AT FIX HADCI RIGHT TURN INBOUNDCOURSE 007 ALT 3900 LEGDIST 4
+APPROACH RNV19 FIX JLIET AT OR ABOVE 2400 FIX CEPEB 2200 RNW 19 TRK 187 UNTIL 1200 TURN LEFT DIRECT FIX OVERFLY JLIET AT OR ABOVE 2400 HOLD AT FIX JLIET RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4
+ TRANSITION HUDEN FIX HUDEN
+ TRANSITION JLIET HOLD AT FIX JLIET RIGHT TURN INBOUNDCOURSE 187 ALT 2400 LEGDIST 4
+ TRANSITION ZORAB FIX ZORAB
+ENDAPPROACHES

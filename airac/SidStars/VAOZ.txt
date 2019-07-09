@@ -1,0 +1,31 @@
+//VAOZ (OZAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN27 LATLON N 20 7.741166 E 74 2.351666
+FIX OZRNB LATLON N 20 6.451667 E 73 54.593333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH NDB27 FIX FN27 4000 FIX OZRNB 2600 RNW 27 TRK 260 UNTIL 4000 TURN LEFT DIRECT FIX OZRNB 6000 HOLD AT FIX OZRNB RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1
+ TRANSITION OZR FIX OZRNB AT OR ABOVE 6000 TRK 095 UNTIL 10.5 FROM FIX OZRNB
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//HKNL (NANYUKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APGIG LATLON S 0 14.261167 E 36 57.7015
+FIX ATD2 LATLON S 0 1.1605 E 37 4.570834
+FIX EGNIT LATLON S 0 19.749667 E 36 55.2255
+FIX IBSAB LATLON N 0 6.7905 E 37 12.196667
+FIX NIKEP LATLON S 0 26.457667 E 36 58.0955
+FIX UDPAM LATLON S 0 4.929833 E 37 1.910333
+FIX USUSA LATLON S 0 8.772167 E 37 0.177334
+FIX UTOSA LATLON N 0 1.0075 E 37 6.6505
+FIX UTVER LATLON S 0 2.606333 E 37 3.184166
+FIX XADOS LATLON N 0 9.805667 E 37 17.382833
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX APGIG AT OR ABOVE 9000 FIX USUSA 8000 FIX OVERFLY UDPAM 6610 RNW 03 TURN LEFT DIRECT FIX OVERFLY NIKEP AT OR ABOVE 11000 SPEED 185 HOLD AT FIX NIKEP RIGHT TURN INBOUNDCOURSE 204 ALT 11000 SPEED 230 LEGTIME 1
+ TRANSITION EGNIT FIX EGNIT AT OR ABOVE 11000
+APPROACH RNV21 FIX IBSAB AT OR ABOVE 9700 FIX UTOSA 8200 FIX ATD2 AT OR ABOVE 7250 FIX OVERFLY UTVER 6616 RNW 21 TURN LEFT DIRECT FIX OVERFLY NIKEP AT OR ABOVE 11000 HOLD AT FIX NIKEP RIGHT TURN INBOUNDCOURSE 204 ALT 11000 SPEED 230 LEGTIME 1
+ TRANSITION XADOS FIX XADOS AT OR ABOVE 12400
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//K14G (FREMONT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FALWA LATLON N 41 20.074834 W 83 17.029333
+FIX HALOK LATLON N 41 26.928833 W 83 26.732833
+FIX KADBY LATLON N 41 20.092667 W 83 26.747167
+FIX TUMAY LATLON N 41 13.051166 W 83 26.761834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX KADBY AT OR ABOVE 2600 FIX FALWA 2400 RNW 09 TRK 095 UNTIL 1063 TURN RIGHT DIRECT FIX OVERFLY KADBY AT OR ABOVE 2600 HOLD AT FIX KADBY RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION HALOK FIX HALOK
+ TRANSITION KADBY HOLD AT FIX KADBY RIGHT TURN INBOUNDCOURSE 095 ALT 2600 LEGDIST 4
+ TRANSITION TUMAY FIX TUMAY
+ENDAPPROACHES

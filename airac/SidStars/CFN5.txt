@@ -1,0 +1,44 @@
+//CFN5 (LA CRETE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGDIK LATLON N 58 10.364666 W 116 30.1805
+FIX DUMRI LATLON N 58 10.337833 W 116 39.621667
+FIX EBGOK LATLON N 58 14.639833 W 116 44.405167
+FIX GUDEL LATLON N 58 6.000167 W 116 44.279167
+FIX KASUV LATLON N 58 10.3835 W 116 13.7525
+FIX LIRTO LATLON N 58 10.382833 W 116 9.929666
+FIX MEDUK LATLON N 58 10.373 W 116 0.488333
+FIX OMPIT LATLON N 58 14.683667 W 115 55.7325
+FIX PESVU LATLON N 58 6.043667 W 115 55.802833
+FIX PUVON LATLON N 58 10.377 W 116 23.194
+FIX VIKLU LATLON N 58 10.3675 W 116 28.812334
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX DUMRI AT OR ABOVE 2700 SPEED 180 FIX AGDIK 2700 FIX OVERFLY PUVON 1512 RNW 07 FIX OVERFLY KASUV 2800 HOLD AT FIX KASUV RIGHT TURN INBOUNDCOURSE 073 SPEED 200 LEGTIME 1
+ TRANSITION EBGOK FIX EBGOK SPEED 210
+ TRANSITION GUDEL FIX GUDEL SPEED 210
+APPROACH RNV25 FIX MEDUK AT OR ABOVE 2700 SPEED 180 FIX LIRTO 2680 RNW 25 FIX OVERFLY VIKLU 2600 HOLD AT FIX VIKLU RIGHT TURN INBOUNDCOURSE 253 SPEED 200 LEGTIME 1
+ TRANSITION OMPIT FIX OMPIT SPEED 210
+ TRANSITION PESVU FIX PESVU SPEED 210
+ENDAPPROACHES

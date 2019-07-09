@@ -1,0 +1,49 @@
+//13ME (SOCATEAN BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAMPO LATLON N 45 26.8325 W 70 20.912167
+FIX EHWOG LATLON N 45 48.850166 W 69 35.121334
+FIX HINUD LATLON N 45 39.253166 W 69 55.3485
+FIX JAVUN LATLON N 45 45.121 W 69 57.127
+FIX KEVLE LATLON N 45 46.9295 W 69 46.515334
+FIX LOBOW LATLON N 45 49.548167 W 69 30.9495
+FIX PATTA LATLON N 45 58.934 W 69 35.771833
+FIX ROCOW LATLON N 45 41.592334 W 69 12.704833
+FIX WRAPT LATLON N 45 31.615834 W 69 21.0015
+FIX ZUNAN LATLON N 45 48.149666 W 69 39.291334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID JAVUN2
+ RNW 09 HDG 094 UNTIL 1680 TURN LEFT DIRECT FIX OVERFLY JAVUN AT OR ABOVE 4000 SPEED 200
+ RNW 27 HDG 274 UNTIL 1680 FIX OVERFLY JAVUN AT OR ABOVE 4000
+  TRANSITION CAMPO FIX CAMPO
+  TRANSITION WRAPT FIX HINUD FIX WRAPT
+ENDSIDS
+
+APPROACHES
+APPROACH RNV27 FIX LOBOW AT OR ABOVE 5000 FIX EHWOG AT OR ABOVE 4100 FIX ZUNAN 3800 FIX KEVLE AT OR ABOVE 1720 RNW 27 TRK 275 UNTIL 1579 TURN LEFT DIRECT FIX OVERFLY WRAPT AT OR ABOVE 6000 HOLD AT FIX WRAPT RIGHT TURN INBOUNDCOURSE 104 ALT 6000 LEGDIST 5
+ TRANSITION PATTA FIX PATTA FIX OVERFLY LOBOW AT OR ABOVE 5000 HOLD AT FIX LOBOW RIGHT TURN INBOUNDCOURSE 275 ALT 5000 LEGDIST 5
+ TRANSITION ROCOW FIX ROCOW
+ TRANSITION WRAPT FIX WRAPT
+ENDAPPROACHES

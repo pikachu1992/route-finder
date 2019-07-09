@@ -1,0 +1,48 @@
+//OIZS (SARAVAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CQ31 LATLON N 27 16.386167 E 62 27.377333
+FIX D139P LATLON N 27 12.513 E 62 30.94
+FIX FQ31 LATLON N 27 20.257667 E 62 23.8105
+FIX LOXOL LATLON N 27 45.933334 E 60 45.633334
+FIX MQ31 LATLON N 27 24.127834 E 62 20.239667
+FIX SRN35 LATLON N 27 33.586834 E 61 41.3935
+FIX SRNNB LATLON N 27 24.901667 E 62 19.525
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+SIDS
+SID LOXO1E RNW 31 TRK 311 UNTIL 4330 TRK 300 UNTIL 7000 HDG 253 INTERCEPT RADIAL 283 TO FIX LOXOL FIX LOXOL
+SID LOXO1F RNW 13 TRK 131 UNTIL 4330 TRK 135 UNTIL 7000 TURN LEFT DIRECT FIX SRNNB AT OR ABOVE 8000 FIX LOXOL
+ENDSIDS
+
+STARS
+STAR LOXO1E FIX LOXOL FIX SRN35 FIX SRNNB
+  RNW 13 RNW 31
+STAR LOXO1F FIX LOXOL FIX SRN35 FIX SRNNB FIX D139P
+  RNW 31
+ENDSTARS
+
+APPROACHES
+APPROACH NDM31 FIX CQ31 AT OR ABOVE 6500 FIX FQ31 5600 FIX MQ31 4286 RNW 31 TRK 300 UNTIL 5200 TRK 094 INTERCEPT RADIAL 139 TO FIX D139P FIX D139P 7500 HOLD AT FIX D139P LEFT TURN INBOUNDCOURSE 319 SPEED 230 LEGTIME 1
+ TRANSITION D139P FIX D139P AT OR ABOVE 7500
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//K5A6 (WINONA-MONTGOMERY CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FEDIX LATLON N 33 32.896667 W 89 40.546667
+FIX GUCEY LATLON N 33 17.855167 W 89 50.3545
+FIX GUNKE LATLON N 33 38.1675 W 89 37.093667
+FIX RASME LATLON N 33 23.131166 W 89 46.922
+FIX YANUV LATLON N 33 30.122 W 89 42.361166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX GUCEY AT OR ABOVE 2500 FIX RASME 2000 RNW 03 TRK 030 UNTIL 764 FIX OVERFLY GUNKE AT OR ABOVE 2400 HOLD AT FIX GUNKE RIGHT TURN INBOUNDCOURSE 210 LEGDIST 4
+ TRANSITION GUCEY HOLD AT FIX GUCEY RIGHT TURN INBOUNDCOURSE 030 ALT 2500 LEGDIST 4
+APPROACH RNV21 FIX GUNKE AT OR ABOVE 2400 FIX FEDIX 2100 FIX YANUV AT OR ABOVE 1080 RNW 21 TRK 210 UNTIL 764 FIX OVERFLY GUCEY AT OR ABOVE 2500 HOLD AT FIX GUCEY RIGHT TURN INBOUNDCOURSE 030 LEGDIST 4
+ TRANSITION GUNKE HOLD AT FIX GUNKE RIGHT TURN INBOUNDCOURSE 210 ALT 2400 LEGDIST 4
+ENDAPPROACHES

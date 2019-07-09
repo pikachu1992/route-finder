@@ -1,0 +1,43 @@
+//PAWB (BEAVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEKNA LATLON N 66 23.295167 W 147 11.864666
+FIX DUTKE LATLON N 66 25.049333 W 146 57.601667
+FIX HEDOX LATLON N 66 23.0845 W 147 54.860833
+FIX KULBE LATLON N 66 29.8145 W 147 1.24
+FIX RUPTE LATLON N 66 20.154 W 147 36.898667
+FIX WADUB LATLON N 66 20.282666 W 146 53.986333
+FIX WUPET LATLON N 66 13.595 W 147 47.301
+FIX ZUSPA LATLON N 66 18.3405 W 147 51.069
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ZUSPA AT OR ABOVE 3000 FIX RUPTE 2000 RNW 05 TRK 048 UNTIL 759 FIX OVERFLY DUTKE AT OR ABOVE 3000 HOLD AT FIX DUTKE RIGHT TURN INBOUNDCOURSE 229 LEGDIST 4
+ TRANSITION HEDOX FIX HEDOX AT OR ABOVE 3000
+ TRANSITION WUPET FIX WUPET AT OR ABOVE 3000
+ TRANSITION ZUSPA HOLD AT FIX ZUSPA RIGHT TURN INBOUNDCOURSE 048 ALT 3000 LEGDIST 4
+APPROACH RNV23 FIX DUTKE AT OR ABOVE 3000 FIX CEKNA 2000 RNW 23 TRK 229 UNTIL 759 FIX OVERFLY ZUSPA AT OR ABOVE 3000 HOLD AT FIX ZUSPA RIGHT TURN INBOUNDCOURSE 048 LEGDIST 4
+ TRANSITION DUTKE HOLD AT FIX DUTKE RIGHT TURN INBOUNDCOURSE 229 ALT 3000 LEGDIST 4
+ TRANSITION KULBE FIX KULBE AT OR ABOVE 3000
+ TRANSITION WADUB FIX WADUB AT OR ABOVE 3000
+ENDAPPROACHES

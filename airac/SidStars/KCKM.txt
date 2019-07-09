@@ -1,0 +1,36 @@
+//KCKM (FLETCHER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BANAY LATLON N 34 30.225334 W 90 30.062333
+FIX FEBOP LATLON N 34 12.564667 W 90 31.037333
+FIX HULON LATLON N 34 5.849333 W 90 31.4065
+FIX LARYE LATLON N 34 23.419 W 90 30.439
+FIX YEMJU LATLON N 34 15.836333 W 90 30.857333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX BANAY AT OR ABOVE 2000 FIX LARYE 1800 RNW 18 TRK 183 UNTIL 423 FIX OVERFLY HULON AT OR ABOVE 2000 HOLD AT FIX HULON RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4
+ TRANSITION BANAY HOLD AT FIX BANAY RIGHT TURN INBOUNDCOURSE 183 ALT 2000 LEGDIST 4
+APPROACH RNV36 FIX HULON AT OR ABOVE 2000 FIX FEBOP 1800 FIX YEMJU AT OR ABOVE 740 RNW 36 TRK 003 UNTIL 448 FIX OVERFLY BANAY AT OR ABOVE 2000 HOLD AT FIX BANAY RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION HULON HOLD AT FIX HULON RIGHT TURN INBOUNDCOURSE 003 ALT 2000 LEGDIST 4
+ENDAPPROACHES

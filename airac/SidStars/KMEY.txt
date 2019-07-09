@@ -1,0 +1,44 @@
+//KMEY (WHITING MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BECOM LATLON N 41 57.811667 W 96 7.868833
+FIX CIVTU LATLON N 41 59.061 W 95 47.261
+FIX CUSHO LATLON N 42 25.2565 W 95 46.257
+FIX LUWJE LATLON N 42 16.1125 W 95 44.354333
+FIX NEUSE LATLON N 42 21.6795 W 95 40.987333
+FIX TEGTY LATLON N 42 6.678334 W 95 50.035667
+FIX UPYAN LATLON N 42 1.107833 W 95 53.38
+FIX VUXFO LATLON N 42 19.6295 W 95 34.837166
+FIX YETJA LATLON N 42 7.382167 W 95 38.753666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX UPYAN AT OR ABOVE 3100 FIX TEGTY 2500 RNW 02 FIX OVERFLY NEUSE AT OR ABOVE 3200 HOLD AT FIX NEUSE RIGHT TURN INBOUNDCOURSE 199 LEGDIST 4
+ TRANSITION BECOM FIX BECOM
+ TRANSITION UPYAN HOLD AT FIX UPYAN RIGHT TURN INBOUNDCOURSE 019 ALT 3100 LEGDIST 4
+ TRANSITION YETJA FIX YETJA FIX CIVTU AT OR ABOVE 3500
+APPROACH RNV20 FIX NEUSE AT OR ABOVE 3200 FIX LUWJE 3000 RNW 20 FIX OVERFLY UPYAN AT OR ABOVE 3100 HOLD AT FIX UPYAN RIGHT TURN INBOUNDCOURSE 019 LEGDIST 4
+ TRANSITION CUSHO FIX CUSHO
+ TRANSITION NEUSE HOLD AT FIX NEUSE RIGHT TURN INBOUNDCOURSE 199 ALT 3200 LEGDIST 4
+ TRANSITION YETJA FIX YETJA FIX VUXFO AT OR ABOVE 3500
+ENDAPPROACHES

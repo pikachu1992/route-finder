@@ -1,0 +1,37 @@
+//KM11 (COPIAH CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIOGS LATLON N 31 59.449667 W 90 22.515334
+FIX CALAL LATLON N 31 51.119 W 90 21.713833
+FIX KOULA LATLON N 31 55.885 W 90 22.172
+FIX MALMY LATLON N 31 48.61 W 90 21.473
+FIX PANTX LATLON N 32 6.563333 W 90 23.2015
+FIX SALOE LATLON N 31 41.618333 W 90 20.803
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX PANTX AT OR ABOVE 3500 FIX BIOGS 2600 FIX KOULA AT OR ABOVE 1080 RNW 18 TRK 176 UNTIL 835 TURN LEFT DIRECT FIX OVERFLY PANTX AT OR ABOVE 3500 HOLD AT FIX PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4
+ TRANSITION PANTX HOLD AT FIX PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4
+APPROACH RNV36 FIX SALOE AT OR ABOVE 3000 FIX MALMY 2100 FIX CALAL AT OR ABOVE 1300 RNW 36 TRK 356 UNTIL 730 FIX OVERFLY PANTX AT OR ABOVE 3500 HOLD AT FIX PANTX RIGHT TURN INBOUNDCOURSE 176 ALT 3500 LEGDIST 4
+ TRANSITION SALOE HOLD AT FIX SALOE RIGHT TURN INBOUNDCOURSE 356 ALT 3000 LEGDIST 4
+ENDAPPROACHES

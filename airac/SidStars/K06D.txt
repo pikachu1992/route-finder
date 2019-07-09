@@ -1,0 +1,37 @@
+//K06D (ROLLA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BALTA LATLON N 48 11.444833 W 100 2.853334
+FIX DVL LATLON N 48 6.913 W 98 54.7505
+FIX SEMGE LATLON N 48 48.585167 W 99 33.347
+FIX UTACI LATLON N 48 43.257167 W 99 28.704167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 14
+RNW 25
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX UTACI AT OR ABOVE 3400 FIX SEMGE 3400 RNW 32 TRK 325 UNTIL 2067 TURN LEFT DIRECT FIX OVERFLY BALTA AT OR ABOVE 3800 HOLD AT FIX BALTA RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION BALTA FIX BALTA
+ TRANSITION DVL FIX DVL
+ TRANSITION UTACI HOLD AT FIX UTACI RIGHT TURN INBOUNDCOURSE 325 ALT 3400 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//KL35 (BIG BEAR CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BNNJA LATLON N 34 15.865 W 116 39.524833
+FIX BRGET LATLON N 34 23.031 W 116 37.872667
+FIX HALVI LATLON N 34 15.852 W 116 44.351
+FIX OKACO LATLON N 34 15.874166 W 116 35.053333
+FIX XEZUC LATLON N 34 15.833 W 116 49.907666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID OKACO1 RNW 08 HDG 076 UNTIL 7152 FIX OKACO
+ENDSIDS
+
+APPROACHES
+APPROACH RNV26 FIX BNNJA AT OR ABOVE 9400 FIX HALVI 8700 FIX OVERFLY XEZUC 7086 RNW 26 TRK 256 UNTIL 8800 TURN RIGHT DIRECT FIX OVERFLY BRGET AT OR ABOVE 11000 HOLD AT FIX BRGET RIGHT TURN INBOUNDCOURSE 162 LEGDIST 7
+ TRANSITION BRGET FIX BRGET
+ TRANSITION OKACO FIX OKACO
+ENDAPPROACHES

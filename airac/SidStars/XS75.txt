@@ -1,0 +1,37 @@
+//XS75 (WEST RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JOLOP LATLON N 30 19.3665 W 98 17.4785
+FIX STV LATLON N 30 12.4055 W 98 42.345334
+FIX WITEB LATLON N 30 30.840833 W 98 34.538333
+FIX WUDUT LATLON N 30 25.627333 W 98 26.7715
+FIX YEYAW LATLON N 30 35.135 W 98 40.954834
+FIX ZUBUG LATLON N 30 23.6735 W 98 23.8675
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX YEYAW AT OR ABOVE 4100 FIX WITEB 3100 RNW 12 TRK 124 UNTIL 2100 TURN RIGHT DIRECT FIX OVERFLY STV AT OR ABOVE 4100 HOLD AT FIX STV RIGHT TURN INBOUNDCOURSE 165 LEGDIST 5
+ TRANSITION YEYAW HOLD AT FIX YEYAW RIGHT TURN INBOUNDCOURSE 124 ALT 4100 LEGDIST 5
+APPROACH RNV30 FIX JOLOP AT OR ABOVE 4100 FIX ZUBUG 3300 FIX WUDUT AT OR ABOVE 2240 RNW 30 TRK 304 UNTIL 2200 TURN LEFT DIRECT FIX OVERFLY STV AT OR ABOVE 4100 HOLD AT FIX STV RIGHT TURN INBOUNDCOURSE 165 LEGDIST 5
+ TRANSITION JOLOP HOLD AT FIX JOLOP RIGHT TURN INBOUNDCOURSE 304 ALT 4100 LEGDIST 5
+ENDAPPROACHES

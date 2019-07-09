@@ -1,0 +1,41 @@
+//KT15 (MARLIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACT LATLON N 31 39.733834 W 97 16.140833
+FIX JIJHO LATLON N 31 24.323333 W 96 56.135167
+FIX MA123 LATLON N 31 20.548 W 96 51.263
+FIX MITRA LATLON N 31 30.362167 W 97 3.950666
+FIX UHMOT LATLON N 31 46.860334 W 97 1.998667
+FIX VURQI LATLON N 31 25.921834 W 97 18.980333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA17 FIX MITRA AT OR ABOVE 2800 FIX JIJHO 1500 FIX MA123 1280 RNW 17 TRK 123 UNTIL 1280 HDG 270 INTERCEPT RADIAL 303 TO FIX MITRA FIX MITRA AT OR ABOVE 2800 HOLD AT FIX MITRA RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1
+ TRANSITION ACT FIX ACT AT OR ABOVE 2800
+ TRANSITION UHMOT FIX UHMOT
+ TRANSITION VURQI FIX VURQI
+APPROACH VDMA35 FIX MITRA AT OR ABOVE 2800 FIX JIJHO 1500 FIX MA123 1280 RNW 35 TRK 123 UNTIL 1280 HDG 270 INTERCEPT RADIAL 303 TO FIX MITRA FIX MITRA AT OR ABOVE 2800 HOLD AT FIX MITRA RIGHT TURN INBOUNDCOURSE 303 LEGTIME 1
+ TRANSITION ACT FIX ACT AT OR ABOVE 2800
+ TRANSITION UHMOT FIX UHMOT
+ TRANSITION VURQI FIX VURQI
+ENDAPPROACHES

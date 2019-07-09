@@ -1,0 +1,44 @@
+//KO69 (PETALUMA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AFTIN LATLON N 38 13.487167 W 122 30.569833
+FIX CROIT LATLON N 38 3.373333 W 122 11.6625
+FIX HABAP LATLON N 38 17.684333 W 122 31.557
+FIX HIRUV LATLON N 38 11.224667 W 122 53.2555
+FIX JIVLI LATLON N 38 8.953 W 122 24.760667
+FIX PYE LATLON N 38 4.785334 W 122 52.069667
+FIX REBAS LATLON N 37 56.441 W 122 23.02
+FIX SGD LATLON N 38 10.761667 W 122 22.389167
+FIX WUDKO LATLON N 38 13.609667 W 122 33.016166
+FIX XIKIY LATLON N 38 18.433 W 122 41.5975
+FIX ZESEP LATLON N 38 11.884 W 122 29.952833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH VDM29 FIX SGD AT OR ABOVE 3000 FIX AFTIN 1900 RNW 29 TRK 276 UNTIL 2000 FIX PYE AT OR ABOVE 3500
+ TRANSITION SGD HOLD AT FIX SGD LEFT TURN INBOUNDCOURSE 276 ALT 3000 LEGTIME 1
+APPROACH RNV29 FIX JIVLI AT OR ABOVE 2500 FIX ZESEP 2000 FIX WUDKO AT OR ABOVE 1040 RNW 29 TRK 290 UNTIL 347 FIX XIKIY FIX OVERFLY HIRUV AT OR ABOVE 3500
+ TRANSITION CROIT FIX CROIT
+ TRANSITION HABAP FIX HABAP FIX OVERFLY JIVLI AT OR ABOVE 4000 HOLD AT FIX JIVLI RIGHT TURN INBOUNDCOURSE 290 ALT 2500 LEGDIST 4
+ TRANSITION REBAS FIX REBAS
+ENDAPPROACHES

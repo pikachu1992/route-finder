@@ -1,0 +1,33 @@
+//VYLK (LOIKAW)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF19 LATLON N 19 46.965167 E 97 13.723
+FIX LKNB LATLON N 19 41.427334 E 97 12.7965
+FIX MA19 LATLON N 19 43.0425 E 97 13.0665
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH NDB19 FIX FF19 4800 FIX MA19 3380 RNW 19 HDG 180 UNTIL 4500 TURN LEFT DIRECT FIX LKNB 6000 HOLD AT FIX LKNB RIGHT TURN INBOUNDCOURSE 030 LEGTIME 1
+ TRANSITION LK1 FIX LKNB AT OR ABOVE 6000 TRK 030 UNTIL 5.3 FROM FIX LKNB
+ TRANSITION LK2 FIX LKNB AT OR ABOVE 6000 TRK 030 UNTIL 6.0 FROM FIX LKNB
+ENDAPPROACHES

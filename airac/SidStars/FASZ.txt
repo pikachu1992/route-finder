@@ -1,0 +1,40 @@
+//FASZ (SKUKUZA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GETIM LATLON S 25 5.579333 E 31 33.3555
+FIX RW17 LATLON S 24 57.318167 E 31 35.149667
+FIX SZ1F1 LATLON S 24 54.623167 E 31 33.807833
+FIX SZ1M1 LATLON S 25 0.924 E 31 25.675667
+FIX SZ1N1 LATLON S 24 53.509834 E 31 28.023833
+FIX SZ1T1 LATLON S 24 51.836666 E 31 32.4215
+FIX SZ2F1 LATLON S 25 0.735167 E 31 36.8525
+FIX SZ2T1 LATLON S 25 3.521 E 31 38.242
+FIX UTREX LATLON S 24 58.333333 E 31 15.301667
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX SZ1T1 AT OR ABOVE 3320 SPEED 160 FIX SZ1F1 2250 SPEED 140 RNW 17 TRK 176 UNTIL 1820 TURN RIGHT DIRECT FIX SZ1M1 SPEED 180 TRK 304 UNTIL 4800 HDG 304 VECTORS
+ TRANSITION UTREX FIX UTREX AT OR ABOVE 10500 SPEED 180 FIX SZ1N1 AT OR ABOVE 4900 SPEED 180
+APPROACH RNV35 FIX SZ2T1 AT OR ABOVE 3290 SPEED 160 FIX SZ2F1 2210 SPEED 140 RNW 35 FIX SZ1T1 SPEED 180 FIX SZ1N1 SPEED 180 TRK 267 UNTIL 4800 HDG 267 VECTORS
+ TRANSITION UTREX FIX UTREX AT OR ABOVE 10500 SPEED 180 FIX GETIM AT OR ABOVE 4800 SPEED 180
+ENDAPPROACHES

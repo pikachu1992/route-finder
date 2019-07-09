@@ -1,0 +1,35 @@
+//K03D (MEMPHIS MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IDIXE LATLON N 40 33.151 W 92 26.908166
+FIX JOKAS LATLON N 40 23.936 W 92 7.548167
+FIX MEPME LATLON N 40 29.882833 W 92 20.018666
+FIX OPATE LATLON N 40 20.587667 W 92 0.564
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX IDIXE AT OR ABOVE 4500 FIX MEPME 2600 RNW 12 TRK 119 UNTIL 1144 FIX OVERFLY OPATE AT OR ABOVE 4500 HOLD AT FIX OPATE RIGHT TURN INBOUNDCOURSE 299 LEGDIST 4
+ TRANSITION IDIXE HOLD AT FIX IDIXE RIGHT TURN INBOUNDCOURSE 119 ALT 4500 LEGDIST 4
+APPROACH RNV30 FIX OPATE AT OR ABOVE 4500 FIX JOKAS 2500 RNW 30 TRK 299 UNTIL 1144 FIX OVERFLY IDIXE AT OR ABOVE 4500 HOLD AT FIX IDIXE RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION OPATE HOLD AT FIX OPATE RIGHT TURN INBOUNDCOURSE 299 ALT 4500 LEGDIST 4
+ENDAPPROACHES

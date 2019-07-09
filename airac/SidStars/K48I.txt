@@ -1,0 +1,31 @@
+//K48I (BRAXTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DOYEV LATLON N 38 52.711166 W 80 37.138667
+FIX FORIV LATLON N 38 46.7985 W 80 38.1625
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV20 FIX DOYEV AT OR ABOVE 4000 FIX FORIV 3000 RNW 20 TRK 196 UNTIL 1676 TURN LEFT DIRECT FIX OVERFLY DOYEV AT OR ABOVE 4000 HOLD AT FIX DOYEV RIGHT TURN INBOUNDCOURSE 196 LEGDIST 4
+ TRANSITION DOYEV HOLD AT FIX DOYEV RIGHT TURN INBOUNDCOURSE 196 ALT 4000 LEGDIST 4
+ENDAPPROACHES

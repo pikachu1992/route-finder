@@ -1,0 +1,40 @@
+//CAD5 (MERRITT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGNIV LATLON N 50 9.099167 W 120 37.833334
+FIX DUXOK LATLON N 50 16.1725 W 120 27.147667
+FIX ERBAG LATLON N 50 9.7645 W 120 34.084834
+FIX KANEB LATLON N 50 6.5385 W 120 23.031833
+FIX KOBEG LATLON N 50 8.241667 W 120 42.625667
+FIX MEBEV LATLON N 50 6.49 W 120 52.351166
+FIX VEVDA LATLON N 50 11.355833 W 120 25.086334
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA03 FIX VEVDA AT OR ABOVE 6200 SPEED 140 FIX ERBAG 5800 FIX AGNIV AT OR ABOVE 5220 FIX OVERFLY KOBEG 5080 RNW 03 FIX OVERFLY MEBEV 7000 SPEED 130 HOLD AT FIX MEBEV RIGHT TURN INBOUNDCOURSE 238 SPEED 175 LEGTIME 1
+ TRANSITION DUXOK FIX DUXOK SPEED 140
+ TRANSITION KANEB FIX KANEB SPEED 140
+APPROACH RNVA21 FIX VEVDA AT OR ABOVE 6200 SPEED 140 FIX ERBAG 5800 FIX AGNIV AT OR ABOVE 5220 FIX OVERFLY KOBEG 5080 RNW 21 FIX OVERFLY MEBEV 7000 SPEED 130 HOLD AT FIX MEBEV RIGHT TURN INBOUNDCOURSE 238 SPEED 175 LEGTIME 1
+ TRANSITION DUXOK FIX DUXOK SPEED 140
+ TRANSITION KANEB FIX KANEB SPEED 140
+ENDAPPROACHES

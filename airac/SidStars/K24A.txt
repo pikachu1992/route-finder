@@ -1,0 +1,39 @@
+//K24A (JACKSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOGTA LATLON N 35 5.307 W 83 4.157666
+FIX HRS LATLON N 34 56.580334 W 83 54.940834
+FIX KAKEC LATLON N 35 18.449833 W 83 12.024833
+FIX ODF LATLON N 34 41.752333 W 83 17.859667
+FIX OWEMU LATLON N 35 14.552 W 83 5.411167
+FIX SOT LATLON N 35 47.406 W 83 3.142166
+FIX UYOSE LATLON N 35 11.625 W 83 0.457333
+FIX YALUK LATLON N 35 15.410833 W 83 6.866666
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV33 FIX UYOSE AT OR ABOVE 6700 FIX OWEMU 5700 FIX YALUK AT OR ABOVE 5100 FIX OVERFLY KAKEC 4460 RNW 33 TRK 311 UNTIL 4900 TURN LEFT DIRECT FIX OVERFLY HOGTA AT OR ABOVE 8000 HOLD AT FIX HOGTA LEFT TURN INBOUNDCOURSE 031 LEGDIST 7
+ TRANSITION HRS FIX HRS FIX OVERFLY UYOSE AT OR ABOVE 7700 HOLD AT FIX UYOSE LEFT TURN INBOUNDCOURSE 311 ALT 6700 LEGDIST 7
+ TRANSITION ODF FIX ODF FIX HOGTA AT OR ABOVE 6900
+ TRANSITION SOT FIX SOT FIX OVERFLY UYOSE AT OR ABOVE 8700 HOLD AT FIX UYOSE LEFT TURN INBOUNDCOURSE 311 ALT 6700 LEGDIST 7
+ENDAPPROACHES

@@ -1,0 +1,35 @@
+//K31E (EAGLES NEST)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BESTE LATLON N 39 46.715333 W 74 27.609667
+FIX BIERS LATLON N 39 44.286833 W 74 24.339
+FIX REACT LATLON N 39 33.798334 W 74 10.283
+FIX VENTS LATLON N 39 36.233833 W 74 13.536833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA14 FIX BESTE AT OR ABOVE 2000 FIX BIERS 2000 RNW 14 TRK 146 UNTIL 440 TURN LEFT DIRECT FIX OVERFLY BESTE AT OR ABOVE 2000 HOLD AT FIX BESTE RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4
+ TRANSITION BESTE HOLD AT FIX BESTE RIGHT TURN INBOUNDCOURSE 146 ALT 2000 LEGDIST 4
+APPROACH RNVB32 FIX REACT AT OR ABOVE 2300 FIX VENTS 1700 RNW 32 TRK 326 UNTIL 440 TURN RIGHT DIRECT FIX OVERFLY REACT AT OR ABOVE 2300 HOLD AT FIX REACT RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION REACT HOLD AT FIX REACT RIGHT TURN INBOUNDCOURSE 326 ALT 2300 LEGDIST 4
+ENDAPPROACHES

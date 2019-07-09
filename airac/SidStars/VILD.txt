@@ -1,0 +1,37 @@
+//VILD (LUDHIANA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40VOR LATLON N 30 52.910333 E 75 53.757334
+FIX FD12 LATLON N 30 54.559834 E 75 50.2995
+FIX FD30 LATLON N 30 48.001166 E 76 4.017667
+FIX LNA LATLON N 30 50.967833 E 75 57.823
+FIX MD30 LATLON N 30 50.724833 E 75 58.331
+FIX RW12 LATLON N 30 51.429 E 75 56.819333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH VDM12 FIX FD12 2900 FIX 40VOR AT OR ABOVE 1840 RNW 12 TRK 118 UNTIL 2000 TURN RIGHT DIRECT FIX LNA 3000 HOLD AT FIX LNA LEFT TURN INBOUNDCOURSE 287 ALT 3000 LEGTIME 1
+ TRANSITION LNA FIX LNA AT OR ABOVE 3000 TRK 287 UNTIL 9.0 FROM FIX LNA
+APPROACH VDM30 FIX FD30 2900 FIX MD30 1132 RNW 30 TRK 298 UNTIL 2000 TURN RIGHT DIRECT FIX LNA 3000 HOLD AT FIX LNA RIGHT TURN INBOUNDCOURSE 130 ALT 3000 LEGTIME 1
+ TRANSITION LNA FIX LNA AT OR ABOVE 3000 TRK 130 UNTIL 8.0 FROM FIX LNA
+ENDAPPROACHES

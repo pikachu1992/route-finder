@@ -1,0 +1,37 @@
+//KANP (LEE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMRTN LATLON N 38 53.071166 W 76 19.959167
+FIX DENII LATLON N 38 55.018166 W 76 27.8075
+FIX GRACO LATLON N 38 56.496833 W 76 11.987
+FIX STRGL LATLON N 38 56.378 W 76 33.3135
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA12 FIX AMRTN AT OR ABOVE 2000 FIX DENII 1700 FIX OVERFLY STRGL 231 RNW 12 TRK 298 UNTIL 440 TURN LEFT DIRECT FIX OVERFLY AMRTN AT OR ABOVE 2000 HOLD AT FIX AMRTN LEFT TURN INBOUNDCOURSE 298 LEGDIST 4
+ TRANSITION AMRTN HOLD AT FIX AMRTN LEFT TURN INBOUNDCOURSE 298 ALT 2000 LEGDIST 4
+ TRANSITION GRACO FIX GRACO
+APPROACH RNVA30 FIX AMRTN AT OR ABOVE 2000 FIX DENII 1700 FIX OVERFLY STRGL 231 RNW 30 TRK 298 UNTIL 440 TURN LEFT DIRECT FIX OVERFLY AMRTN AT OR ABOVE 2000 HOLD AT FIX AMRTN LEFT TURN INBOUNDCOURSE 298 LEGDIST 4
+ TRANSITION AMRTN HOLD AT FIX AMRTN LEFT TURN INBOUNDCOURSE 298 ALT 2000 LEGDIST 4
+ TRANSITION GRACO FIX GRACO
+ENDAPPROACHES

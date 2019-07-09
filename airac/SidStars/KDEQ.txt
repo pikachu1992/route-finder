@@ -1,0 +1,37 @@
+//KDEQ (HELMS SEVIER CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EZRAV LATLON N 34 2.166833 W 94 30.765833
+FIX HEBAB LATLON N 33 56.495333 W 94 37.2495
+FIX PGO LATLON N 34 40.827334 W 94 36.540167
+FIX RAROY LATLON N 34 6.445166 W 94 38.649167
+FIX TXK LATLON N 33 30.832834 W 94 4.3945
+FIX ZEBOB LATLON N 34 1.470334 W 94 37.948667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX ZEBOB AT OR ABOVE 2500 FIX EZRAV 2100 RNW 08 TRK 079 UNTIL 755 TURN RIGHT DIRECT FIX OVERFLY ZEBOB AT OR ABOVE 2500 HOLD AT FIX ZEBOB RIGHT TURN INBOUNDCOURSE 079 LEGDIST 4
+ TRANSITION PGO FIX PGO FIX RAROY AT OR ABOVE 4200
+ TRANSITION TXK FIX TXK FIX HEBAB AT OR ABOVE 3000
+ TRANSITION ZEBOB HOLD AT FIX ZEBOB RIGHT TURN INBOUNDCOURSE 079 ALT 2500 LEGDIST 4
+ENDAPPROACHES

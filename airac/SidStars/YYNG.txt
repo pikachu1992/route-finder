@@ -1,0 +1,47 @@
+//YYNG (YOUNG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YNGND LATLON S 34 1.538333 E 148 13.82
+FIX YNGNE LATLON S 34 0.225 E 148 19.623334
+FIX YNGNF LATLON S 34 9.911666 E 148 16.55
+FIX YNGNG LATLON S 34 4.611667 E 148 24.083333
+FIX YNGNH LATLON S 34 17.66 E 148 14.086667
+FIX YNGNI LATLON S 34 5.068333 E 148 18.088333
+FIX YNGNM LATLON S 34 14.753333 E 148 15.011666
+FIX YNGSB LATLON S 34 30.443333 E 148 10.011667
+FIX YNGSC LATLON S 34 28.456667 E 148 16.523333
+FIX YNGSF LATLON S 34 20.758333 E 148 13.1
+FIX YNGSH LATLON S 34 13.01 E 148 15.566666
+FIX YNGSI LATLON S 34 25.6 E 148 11.556667
+FIX YNGSM LATLON S 34 15.915 E 148 14.641667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ01 FIX YNGSI AT OR ABOVE 3700 FIX YNGSF 3000 FIX OVERFLY YNGSM 1406 RNW 01 FIX YNGSH TRK 003 UNTIL 3700
+ TRANSITION YNGSB FIX YNGSB AT OR ABOVE 3700
+ TRANSITION YNGSC FIX YNGSC AT OR ABOVE 3700
+APPROACH RNVZ19 FIX YNGNI AT OR ABOVE 3700 FIX YNGNF 2980 FIX OVERFLY YNGNM 1390 RNW 19 FIX YNGNH TRK 183 UNTIL 3700
+ TRANSITION YNGND FIX YNGND AT OR ABOVE 3700
+ TRANSITION YNGNE FIX YNGNE AT OR ABOVE 3700
+ TRANSITION YNGNG FIX YNGNG AT OR ABOVE 3700
+ENDAPPROACHES

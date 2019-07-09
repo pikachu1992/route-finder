@@ -1,0 +1,41 @@
+//KTFP (MCCAMPBELL-PORTER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COPAN LATLON N 28 3.642667 W 97 12.061
+FIX HOBIR LATLON N 27 49.6025 W 97 0.3735
+FIX HUDIX LATLON N 28 7.128 W 97 17.072333
+FIX ISICE LATLON N 27 46.3675 W 97 4.681
+FIX NEGIC LATLON N 27 51.035 W 97 9.119833
+FIX OLIRE LATLON N 28 3.8845 W 97 21.383167
+FIX PUCIL LATLON N 27 56.627 W 97 14.448833
+FIX ROYOT LATLON N 27 59.223833 W 97 16.927667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX OLIRE AT OR ABOVE 2100 FIX ROYOT 1800 FIX PUCIL AT OR ABOVE 680 RNW 13 FIX OVERFLY ISICE AT OR ABOVE 2000 HOLD AT FIX ISICE RIGHT TURN INBOUNDCOURSE 313 LEGDIST 4
+ TRANSITION COPAN FIX COPAN FIX HUDIX AT OR ABOVE 2100
+ TRANSITION OLIRE HOLD AT FIX OLIRE RIGHT TURN INBOUNDCOURSE 133 ALT 2100 LEGDIST 4
+APPROACH RNV31 FIX ISICE AT OR ABOVE 2000 FIX NEGIC 1500 RNW 31 FIX OVERFLY OLIRE AT OR ABOVE 2100 HOLD AT FIX OLIRE RIGHT TURN INBOUNDCOURSE 133 LEGDIST 4
+ TRANSITION COPAN FIX COPAN FIX HOBIR AT OR ABOVE 2000
+ TRANSITION ISICE HOLD AT FIX ISICE RIGHT TURN INBOUNDCOURSE 313 ALT 2000 LEGDIST 4
+ENDAPPROACHES

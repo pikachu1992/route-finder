@@ -1,0 +1,45 @@
+//LFOQ (LE BREUIL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BABOG LATLON N 47 30.85 E 1 22.165
+FIX BALIV LATLON N 47 40.208333 E 1 30.695
+FIX BARAX LATLON N 47 32.48 E 1 32.318333
+FIX BLBNB LATLON N 47 40.436666 E 1 12.148333
+FIX FN30 LATLON N 47 39.1275 E 1 18.471167
+FIX FOQ30 LATLON N 47 37.806667 E 1 19.546667
+FIX IOQ30 LATLON N 47 35.081666 E 1 26.091667
+FIX OQ403 LATLON N 47 37.475 E 1 28.238333
+FIX OQ420 LATLON N 47 41.553334 E 1 10.498333
+FIX OQ421 LATLON N 47 33.803333 E 1 12.8
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 12
+RNW 20
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB30 FIX FN30 1700 FIX BLBNB 920 RNW 30 TRK 287 UNTIL 1300 TURN RIGHT DIRECT FIX BLBNB 2200
+ TRANSITION BLB FIX BLBNB AT OR ABOVE 2200 TRK 122 UNTIL 7.5 FROM FIX BLBNB
+APPROACH RNV30 FIX IOQ30 AT OR ABOVE 2100 FIX FOQ30 2100 RNW 30 FIX OVERFLY OQ420 TURN LEFT DIRECT FIX OQ421 SPEED 190 FIX BABOG AT OR ABOVE 2500 SPEED 210
+ TRANSITION BABOG FIX BABOG AT OR BELOW 4000 AT OR ABOVE 2500 SPEED 210
+ TRANSITION BALIV FIX BALIV AT OR BELOW 5000 AT OR ABOVE 3800 SPEED 220 FIX OQ403 AT OR BELOW 4500 AT OR ABOVE 3100 SPEED 210
+ TRANSITION BARAX FIX BARAX AT OR ABOVE 2500
+ENDAPPROACHES

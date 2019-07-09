@@ -1,0 +1,43 @@
+//CKD9 (SLATE FALLS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXOVU LATLON N 51 4.442666 W 91 55.8715
+FIX EMIMU LATLON N 51 14.287166 W 91 53.1865
+FIX ENATU LATLON N 51 7.062167 W 91 33.0895
+FIX IGVUG LATLON N 51 8.532334 W 91 46.702166
+FIX IMUDI LATLON N 51 1.283167 W 91 26.613667
+FIX OKOXU LATLON N 51 11.1275 W 91 23.9285
+FIX OMTEG LATLON N 51 6.2055 W 91 25.2735
+FIX TIBIV LATLON N 51 9.365167 W 91 54.531334
+FIX UKTUB LATLON N 51 7.004333 W 91 32.559
+FIX VIMVI LATLON N 51 8.596333 W 91 47.301
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX TIBIV AT OR ABOVE 2800 FIX IGVUG 2700 RNW 10 FIX OVERFLY UKTUB 2800 HOLD AT FIX UKTUB RIGHT TURN INBOUNDCOURSE 102 LEGTIME 1
+ TRANSITION AXOVU FIX AXOVU
+ TRANSITION EMIMU FIX EMIMU
+APPROACH RNV28 FIX OMTEG AT OR ABOVE 2800 FIX ENATU 2700 RNW 28 FIX OVERFLY VIMVI 2800 HOLD AT FIX VIMVI RIGHT TURN INBOUNDCOURSE 282 LEGTIME 1
+ TRANSITION IMUDI FIX IMUDI
+ TRANSITION OKOXU FIX OKOXU
+ENDAPPROACHES

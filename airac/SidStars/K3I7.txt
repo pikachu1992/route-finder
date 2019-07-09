@@ -1,0 +1,33 @@
+//K3I7 (DAYTON-PHILLIPSBURG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DQN LATLON N 40 0.986666 W 84 23.813833
+FIX PI001 LATLON N 40 4.484533 W 84 23.973461
+FIX PI002 LATLON N 40 7.415914 W 84 28.086187
+FIX PI003 LATLON N 40 10.98056 W 84 24.27064
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH VOR21 FIX DQN 2800 RNW 21 TRK 182 UNTIL 2800 TURN LEFT DIRECT FIX DQN HOLD AT FIX DQN RIGHT TURN INBOUNDCOURSE 182 LEGTIME 1
+ TRANSITION DQN FIX PI001 AT OR ABOVE 2800 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2800 SPEED 210 FIX PI003 AT OR ABOVE 2800 SPEED 210
+ENDAPPROACHES

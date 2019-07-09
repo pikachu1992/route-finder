@@ -1,0 +1,34 @@
+//K14A (LAKE NORMAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HUBUP LATLON N 35 34.451 W 80 51.2105
+FIX ITOYE LATLON N 35 38.453666 W 80 55.8445
+FIX LEEMO LATLON N 35 34.7225 W 80 39.959333
+FIX OKECU LATLON N 35 40.774333 W 80 58.536167
+FIX ZITUV LATLON N 35 45.135 W 81 3.6045
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ZITUV AT OR ABOVE 3000 FIX OKECU 2500 FIX ITOYE AT OR ABOVE 1480 RNW 14 FIX HUBUP FIX OVERFLY LEEMO AT OR ABOVE 4000 HOLD AT FIX LEEMO RIGHT TURN INBOUNDCOURSE 218 LEGDIST 4
+ TRANSITION ZITUV HOLD AT FIX ZITUV LEFT TURN INBOUNDCOURSE 144 ALT 3000 LEGDIST 4
+ENDAPPROACHES

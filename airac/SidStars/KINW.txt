@@ -1,0 +1,43 @@
+//KINW (WINSLOW-LINDBERGH REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 34 57.228827 W 110 57.013259
+FIX AF002 LATLON N 35 0.348872 W 110 59.209517
+FIX AF003 LATLON N 35 3.903946 W 110 59.915736
+FIX DMJCH LATLON N 35 7.439167 W 110 59.005166
+FIX FRISY LATLON N 35 15.658166 W 111 24.073
+FIX INW LATLON N 35 3.696 W 110 47.701166
+FIX IZSAH LATLON N 34 54.932833 W 110 53.5965
+FIX PI001 LATLON N 35 5.006048 W 110 51.666803
+FIX PI002 LATLON N 35 8.96393 W 110 53.721638
+FIX PI003 LATLON N 35 7.433279 W 110 59.037185
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 11
+RNW 22
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH VOR11 FIX INW 6200 RNW 11 TRK 106 UNTIL 6000 TURN RIGHT DIRECT FIX INW AT OR ABOVE 7000 HOLD AT FIX INW LEFT TURN INBOUNDCOURSE 098 LEGTIME 1
+ TRANSITION FRISY FIX FRISY FIX DMJCH AT OR ABOVE 9000
+ TRANSITION INW FIX PI001 AT OR ABOVE 7000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 7000 SPEED 210 FIX PI003 AT OR ABOVE 7000 SPEED 210
+ TRANSITION IZSAH FIX IZSAH FIX AF001 FIX AF002 FIX AF003 FIX DMJCH AT OR ABOVE 8100
+ENDAPPROACHES

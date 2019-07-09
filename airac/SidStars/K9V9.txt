@@ -1,0 +1,38 @@
+//K9V9 (CHAMBERLAIN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COCOA LATLON N 43 36.8975 W 99 9.1885
+FIX DAWSN LATLON N 43 55.395167 W 99 29.887333
+FIX FAINS LATLON N 43 41.563834 W 99 14.384833
+FIX FIDVI LATLON N 43 50.273 W 99 24.131833
+FIX JURSU LATLON N 43 48.314333 W 99 21.932666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 18
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX DAWSN AT OR ABOVE 4400 FIX FIDVI 3400 FIX JURSU AT OR ABOVE 2600 RNW 13 TRK 136 UNTIL 2080 FIX OVERFLY COCOA AT OR ABOVE 3600 HOLD AT FIX COCOA RIGHT TURN INBOUNDCOURSE 316 LEGDIST 4
+ TRANSITION DAWSN HOLD AT FIX DAWSN RIGHT TURN INBOUNDCOURSE 136 ALT 4400 LEGDIST 5
+APPROACH RNV31 FIX COCOA AT OR ABOVE 3600 FIX FAINS 3400 RNW 31 TRK 316 UNTIL 2040 FIX OVERFLY DAWSN AT OR ABOVE 4400 HOLD AT FIX DAWSN RIGHT TURN INBOUNDCOURSE 136 LEGDIST 5
+ TRANSITION COCOA HOLD AT FIX COCOA RIGHT TURN INBOUNDCOURSE 316 ALT 3600 LEGDIST 4
+ENDAPPROACHES

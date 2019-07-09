@@ -1,0 +1,40 @@
+//KHAF (HALF MOON BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FUJCE LATLON N 37 39.1285 W 122 39.861667
+FIX GOBBS LATLON N 37 46.279 W 122 39.487166
+FIX JEVXY LATLON N 37 34.574 W 122 34.496333
+FIX JUMDA LATLON N 37 19.9075 W 122 17.323166
+FIX LAYKI LATLON N 37 34.762333 W 122 34.718666
+FIX MAVKC LATLON N 37 26.769 W 122 25.338334
+FIX SAPID LATLON N 37 11.478833 W 122 10.783333
+FIX SEEMS LATLON N 37 35.562833 W 122 39.429
+FIX WOHLI LATLON N 37 24.247667 W 122 22.3895
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX FUJCE AT OR ABOVE 3000 FIX JEVXY 1700 RNW 12 TRK 122 UNTIL 700 TURN RIGHT DIRECT FIX OVERFLY SEEMS AT OR ABOVE 4000 HOLD AT FIX SEEMS RIGHT TURN INBOUNDCOURSE 144 ALT 4000 LEGDIST 5
+ TRANSITION GOBBS FIX GOBBS
+APPROACH RNV30 FIX JUMDA AT OR ABOVE 3800 FIX WOHLI 3300 FIX MAVKC AT OR ABOVE 2020 RNW 30 TRK 302 UNTIL 381 FIX LAYKI FIX OVERFLY SEEMS AT OR ABOVE 4000 HOLD AT FIX SEEMS RIGHT TURN INBOUNDCOURSE 144 ALT 4000 LEGDIST 5
+ TRANSITION SAPID FIX SAPID
+ENDAPPROACHES

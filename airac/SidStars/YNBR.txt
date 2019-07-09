@@ -1,0 +1,43 @@
+//YNBR (NARRABRI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EP36 LATLON S 30 19.842 E 149 49.590167
+FIX FF36 LATLON S 30 26.0665 E 149 46.687333
+FIX NBRNB LATLON S 30 19.244666 E 149 49.8685
+FIX NBRSA LATLON S 30 32.4135 E 149 51.591833
+FIX NBRSB LATLON S 30 34.5565 E 149 45.425333
+FIX NBRSC LATLON S 30 30.274166 E 149 40.996667
+FIX NBRSF LATLON S 30 24.795833 E 149 48.058
+FIX NBRSH LATLON S 30 16.986667 E 149 50.157833
+FIX NBRSI LATLON S 30 29.676334 E 149 46.742833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH NDB36 FIX FF36 2900 FIX OVERFLY EP36 767 FIX OVERFLY NBRNB AT OR ABOVE 1290 RNW 36 TRK 011 UNTIL 3300 TURN LEFT DIRECT FIX NBRNB AT OR ABOVE 5500
+ TRANSITION NBR1 FIX NBRNB AT OR ABOVE 5500 SPEED 210 TRK 211 UNTIL 8.8 FROM FIX NBRNB
+ TRANSITION NBR2 FIX NBRNB AT OR ABOVE 5500 TRK 201 UNTIL 10.5 FROM FIX NBRNB
+APPROACH RNVZ36 FIX NBRSI AT OR ABOVE 4000 FIX NBRSF 2400 RNW 36 FIX OVERFLY NBRSH HDG 197 VECTORS
+ TRANSITION NBRSA FIX NBRSA AT OR ABOVE 5500 SPEED 210
+ TRANSITION NBRSB FIX NBRSB AT OR ABOVE 5500 SPEED 210
+ TRANSITION NBRSC FIX NBRSC AT OR ABOVE 5500 SPEED 210
+ENDAPPROACHES

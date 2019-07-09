@@ -1,0 +1,43 @@
+//ETND (DIEPHOLZ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BMN LATLON N 53 2.775167 E 8 45.626833
+FIX DER08 LATLON N 52 35.160167 E 8 21.0095
+FIX DER26 LATLON N 52 35.0995 E 8 19.878
+FIX DPNB LATLON N 52 35.499667 E 8 27.205166
+FIX NIE LATLON N 52 37.5535 E 9 22.3195
+FIX OSN LATLON N 52 12.008167 E 8 17.131166
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID ND108 RNW 08 FIX DER08 TRK 083 UNTIL 2500 HDG 083 VECTORS
+SID ND126 RNW 26 FIX DER26 TRK 263 UNTIL 2500 HDG 263 VECTORS
+ENDSIDS
+
+APPROACHES
+APPROACH NDB26 FIX DPNB 1550 RNW 26 TRK 262 UNTIL 800 TURN LEFT DIRECT FIX DPNB 2500 SPEED 160
+ TRANSITION BMN FIX BMN FIX DPNB AT OR ABOVE 2500 HOLD AT FIX DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1
+ TRANSITION DP HOLD AT FIX DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 LEGTIME 1
+ TRANSITION NIE FIX NIE FIX DPNB AT OR ABOVE 2500 HOLD AT FIX DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1
+ TRANSITION OSN FIX OSN FIX DPNB AT OR ABOVE 2500 HOLD AT FIX DPNB LEFT TURN INBOUNDCOURSE 262 ALT 1800 SPEED 175 LEGTIME 1
+ENDAPPROACHES

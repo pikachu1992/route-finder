@@ -1,0 +1,44 @@
+//CZTM (SHAMATTAWA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPLUB LATLON N 55 41.503667 W 92 6.767333
+FIX GABMA LATLON N 55 42.010166 W 92 15.557333
+FIX IGTUS LATLON N 55 40.986833 W 91 57.981167
+FIX IKLUP LATLON N 55 56.418 W 92 4.028167
+FIX ITNEK LATLON N 55 47.460334 W 92 5.6775
+FIX KAVKO LATLON N 56 2.486333 W 92 11.865
+FIX KEMBA LATLON N 55 56.0195 W 92 4.101833
+FIX LEVEK LATLON N 56 1.454 W 91 54.135667
+FIX LOMLU LATLON N 55 47.145334 W 92 5.735333
+FIX METBU LATLON N 56 1.9755 W 92 2.998333
+FIX ONDIK LATLON N 55 53.895833 W 92 4.493833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX EPLUB AT OR ABOVE 1600 FIX ITNEK 1600 RNW 01 FIX OVERFLY IKLUP 1800 HOLD AT FIX IKLUP RIGHT TURN INBOUNDCOURSE 009 LEGTIME 1
+ TRANSITION GABMA FIX GABMA SPEED 210
+ TRANSITION IGTUS FIX IGTUS SPEED 210
+APPROACH RNV19 FIX METBU AT OR ABOVE 1700 FIX KEMBA 1600 FIX ONDIK AT OR ABOVE 900 RNW 19 FIX OVERFLY LOMLU 1800 HOLD AT FIX LOMLU RIGHT TURN INBOUNDCOURSE 189 LEGTIME 1
+ TRANSITION KAVKO FIX KAVKO SPEED 210
+ TRANSITION LEVEK FIX LEVEK SPEED 210
+ENDAPPROACHES

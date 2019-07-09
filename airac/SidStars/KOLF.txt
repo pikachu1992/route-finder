@@ -1,0 +1,42 @@
+//KOLF (CLAYTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CARAV LATLON N 47 59.503 W 105 18.631667
+FIX DORIA LATLON N 48 5.164333 W 105 34.363166
+FIX FAXIS LATLON N 48 2.515667 W 105 26.365166
+FIX GETKE LATLON N 48 4.011167 W 105 30.2175
+FIX GGW LATLON N 48 12.918334 W 106 37.525166
+FIX RILMY LATLON N 48 9.2575 W 104 52.119833
+FIX RULIE LATLON N 48 11.328167 W 105 49.206667
+FIX WOLIV LATLON N 48 8.3435 W 105 41.432833
+FIX ZIGAB LATLON N 48 7.326833 W 105 38.793833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX RULIE AT OR ABOVE 4500 FIX WOLIV 3600 FIX ZIGAB AT OR ABOVE 2940 RNW 11 TRK 111 UNTIL 2187 FIX OVERFLY CARAV AT OR ABOVE 4800 HOLD AT FIX CARAV RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4
+ TRANSITION DORIA FIX DORIA FIX OVERFLY RULIE AT OR ABOVE 4500 HOLD AT FIX RULIE RIGHT TURN INBOUNDCOURSE 111 ALT 4500 LEGDIST 4
+ TRANSITION GGW FIX GGW
+APPROACH RNV29 FIX CARAV AT OR ABOVE 4800 FIX FAXIS 3900 FIX GETKE AT OR ABOVE 2940 RNW 29 TRK 291 UNTIL 2185 FIX OVERFLY RULIE AT OR ABOVE 4500 HOLD AT FIX RULIE RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4
+ TRANSITION DORIA FIX DORIA FIX OVERFLY CARAV AT OR ABOVE 4800 HOLD AT FIX CARAV RIGHT TURN INBOUNDCOURSE 291 ALT 4800 LEGDIST 4
+ TRANSITION RILMY FIX RILMY
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//CYZY (MACKENZIE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BISLI LATLON N 55 17.067 W 123 8.169
+FIX DAVII LATLON N 54 38.583334 W 122 28.65
+FIX DUNIL LATLON N 55 12.1025 W 123 7.276834
+FIX FREND LATLON N 55 17.616667 W 122 29.9
+FIX GOTAX LATLON N 55 7.137667 W 123 6.388333
+FIX IPSAN LATLON N 55 5.7475 W 122 58.027667
+FIX KEGPO LATLON N 55 9.314 W 122 49.631833
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV35 FIX GOTAX AT OR ABOVE 5400 FIX DUNIL 4100 FIX OVERFLY BISLI 2471 RNW 35 TURN LEFT DIRECT FIX OVERFLY IPSAN 7900 HOLD AT FIX IPSAN LEFT TURN INBOUNDCOURSE 309 LEGTIME 1
+ TRANSITION DAVII FIX DAVII FIX IPSAN AT OR ABOVE 6400
+ TRANSITION FREND FIX FREND FIX KEGPO AT OR ABOVE 7800 FIX IPSAN AT OR ABOVE 6200
+ENDAPPROACHES

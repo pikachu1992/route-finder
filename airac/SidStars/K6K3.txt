@@ -1,0 +1,47 @@
+//K6K3 (CREIGHTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKUBE LATLON N 42 31.787 W 97 58.6485
+FIX DIGCE LATLON N 42 21.593666 W 97 42.445166
+FIX FIRAG LATLON N 42 24.820333 W 97 47.557834
+FIX HISUV LATLON N 42 30.486833 W 97 56.573333
+FIX JIPEV LATLON N 42 35.003167 W 98 3.792334
+FIX JONEV LATLON N 42 26.682334 W 97 50.515166
+FIX KUCKE LATLON N 42 18.347666 W 97 37.316333
+FIX ONL LATLON N 42 28.23 W 98 41.215667
+FIX PENDE LATLON N 42 10.8435 W 96 50.379334
+FIX SAHIW LATLON N 41 50.075 W 97 38.794834
+FIX TYNDA LATLON N 43 0.719833 W 97 49.627333
+FIX WABEX LATLON N 42 38.229 W 98 8.966833
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 18
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX JIPEV AT OR ABOVE 4000 FIX AKUBE 3300 FIX HISUV AT OR ABOVE 2640 RNW 13 TRK 125 UNTIL 1976 FIX OVERFLY KUCKE AT OR ABOVE 4000 HOLD AT FIX KUCKE RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4
+ TRANSITION ONL FIX ONL FIX WABEX AT OR ABOVE 4000
+ TRANSITION TYNDA FIX TYNDA FIX WABEX AT OR ABOVE 4000
+APPROACH RNV31 FIX DIGCE AT OR ABOVE 4000 FIX FIRAG 3300 FIX JONEV AT OR ABOVE 2380 RNW 31 TRK 305 UNTIL 2026 FIX OVERFLY WABEX AT OR ABOVE 4000 HOLD AT FIX WABEX RIGHT TURN INBOUNDCOURSE 125 LEGDIST 4
+ TRANSITION PENDE FIX PENDE FIX KUCKE AT OR ABOVE 4000
+ TRANSITION SAHIW FIX SAHIW FIX KUCKE AT OR ABOVE 4000
+ENDAPPROACHES

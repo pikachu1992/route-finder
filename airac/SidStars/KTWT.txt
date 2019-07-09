@@ -1,0 +1,44 @@
+//KTWT (STURGIS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIVOM LATLON N 37 19.7545 W 88 3.579667
+FIX COVOS LATLON N 37 36.415166 W 87 56.989667
+FIX FITIP LATLON N 37 22.017667 W 87 57.9865
+FIX HETEP LATLON N 37 45.281666 W 87 50.904167
+FIX IKELE LATLON N 37 45.761333 W 88 1.808
+FIX LOXFY LATLON N 37 28.070833 W 87 57.568166
+FIX OLGEW LATLON N 37 43.0245 W 87 56.530166
+FIX WAKAK LATLON N 37 29.995166 W 87 57.435
+FIX ZABUX LATLON N 37 19.278167 W 87 52.738333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX FITIP AT OR ABOVE 2500 FIX LOXFY 1700 FIX WAKAK AT OR ABOVE 1080 RNW 01 TRK 003 UNTIL 658 FIX OVERFLY OLGEW AT OR ABOVE 2500 HOLD AT FIX OLGEW RIGHT TURN INBOUNDCOURSE 183 LEGDIST 4
+ TRANSITION CIVOM FIX CIVOM
+ TRANSITION FITIP HOLD AT FIX FITIP RIGHT TURN INBOUNDCOURSE 003 ALT 2500 LEGDIST 4
+ TRANSITION ZABUX FIX ZABUX
+APPROACH RNV19 FIX OLGEW AT OR ABOVE 2500 FIX COVOS 1700 RNW 19 TRK 183 UNTIL 772 FIX OVERFLY FITIP AT OR ABOVE 2500 HOLD AT FIX FITIP RIGHT TURN INBOUNDCOURSE 003 LEGDIST 4
+ TRANSITION HETEP FIX HETEP AT OR ABOVE 2500
+ TRANSITION IKELE FIX IKELE AT OR ABOVE 2500
+ TRANSITION OLGEW HOLD AT FIX OLGEW RIGHT TURN INBOUNDCOURSE 183 ALT 2500 LEGDIST 4
+ENDAPPROACHES

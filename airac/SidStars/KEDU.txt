@@ -1,0 +1,36 @@
+//KEDU (UNIVERSITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CODRU LATLON N 38 41.357666 W 121 47.0305
+FIX HAPAX LATLON N 38 36.185833 W 121 47.117
+FIX ILA LATLON N 39 4.2705 W 122 1.636166
+FIX OAKEY LATLON N 38 3.397166 W 121 40.309834
+FIX SAC LATLON N 38 26.624333 W 121 33.099167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX CODRU AT OR ABOVE 2000 FIX HAPAX 1400 RNW 17 TRK 167 UNTIL 469 TURN RIGHT DIRECT FIX OVERFLY CODRU AT OR ABOVE 2000 HOLD AT FIX CODRU RIGHT TURN INBOUNDCOURSE 167 LEGDIST 4
+ TRANSITION ILA FIX ILA
+ TRANSITION OAKEY FIX OAKEY FIX OVERFLY CODRU AT OR ABOVE 2000 HOLD AT FIX CODRU RIGHT TURN INBOUNDCOURSE 167 ALT 2000 LEGDIST 4
+ TRANSITION SAC FIX SAC FIX OVERFLY CODRU AT OR ABOVE 2000 HOLD AT FIX CODRU RIGHT TURN INBOUNDCOURSE 167 ALT 2000 LEGDIST 4
+ENDAPPROACHES

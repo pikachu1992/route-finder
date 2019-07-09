@@ -1,0 +1,41 @@
+//WAOC (BERSUJUD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KUSAN LATLON S 3 24.3915 E 115 46.238333
+FIX OC401 LATLON S 3 24.4705 E 115 49.237166
+FIX OC402 LATLON S 3 24.606167 E 115 54.235166
+FIX OC403 LATLON S 3 24.700667 E 115 57.733333
+FIX OC404 LATLON S 3 24.854833 E 116 3.435
+FIX OC501 LATLON S 3 26.288833 E 116 9.929167
+FIX OC502 LATLON S 3 24.899167 E 116 5.122834
+FIX OC503 LATLON S 3 24.805834 E 116 1.6245
+FIX OC504 LATLON S 3 24.646667 E 115 55.723166
+FIX SUJUD LATLON S 3 27.1225 E 116 12.813
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX OC401 AT OR ABOVE 2700 FIX OC402 1600 FIX OVERFLY OC403 544 RNW 09 FIX OVERFLY OC404 TURN RIGHT DIRECT FIX KUSAN 3500
+ TRANSITION KUSAN FIX KUSAN AT OR ABOVE 3500
+APPROACH RNV27 FIX OC501 AT OR ABOVE 2700 FIX OC502 1600 FIX OVERFLY OC503 548 RNW 27 FIX OVERFLY OC504 TURN LEFT DIRECT FIX SUJUD 3500
+ TRANSITION SUJUD FIX SUJUD AT OR ABOVE 3500
+ENDAPPROACHES

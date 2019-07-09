@@ -1,0 +1,43 @@
+//CMB2 (MEADOWBANK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALKAM LATLON N 64 49.477667 W 95 53.751334
+FIX ANVIP LATLON N 65 4.079333 W 96 14.404166
+FIX DASRU LATLON N 65 6.637834 W 96 24.544166
+FIX IKBAR LATLON N 65 13.48 W 96 14.808833
+FIX IKLOV LATLON N 65 3.1055 W 95 34.2265
+FIX MEDUP LATLON N 64 58.111667 W 95 51.051167
+FIX NADMI LATLON N 64 58.900166 W 95 54.1135
+FIX PELBO LATLON N 64 56.307334 W 95 44.071166
+FIX TADUD LATLON N 65 4.869167 W 96 17.526667
+FIX VOBIG LATLON N 64 59.806166 W 96 34.278833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX DASRU AT OR ABOVE 2000 FIX ANVIP 2000 RNW 12 FIX OVERFLY MEDUP 2000 HOLD AT FIX MEDUP RIGHT TURN INBOUNDCOURSE 013 SPEED 230 LEGTIME 1
+ TRANSITION IKBAR FIX IKBAR
+ TRANSITION VOBIG FIX VOBIG
+APPROACH RNV30 FIX PELBO AT OR ABOVE 2000 FIX NADMI 2000 RNW 30 FIX OVERFLY TADUD 2000 HOLD AT FIX TADUD RIGHT TURN INBOUNDCOURSE 031 SPEED 230 LEGTIME 1
+ TRANSITION ALKAM FIX ALKAM
+ TRANSITION IKLOV FIX IKLOV
+ENDAPPROACHES

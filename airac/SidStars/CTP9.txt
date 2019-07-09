@@ -1,0 +1,43 @@
+//CTP9 (DONALDSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGDUV LATLON N 61 39.1095 W 73 29.192167
+FIX BUBID LATLON N 61 38.4415 W 73 39.579833
+FIX EMLUS LATLON N 61 45.939667 W 72 59.986667
+FIX LEVUN LATLON N 61 43.381166 W 73 41.001334
+FIX MELPI LATLON N 61 40.993333 W 72 58.672333
+FIX NUBOS LATLON N 61 38.884166 W 73 32.7195
+FIX ODKEM LATLON N 61 33.5015 W 73 38.165666
+FIX PEMTA LATLON N 61 40.364 W 73 9.081334
+FIX URTOL LATLON N 61 36.0465 W 72 57.365
+FIX VERPO LATLON N 61 40.562 W 73 5.829334
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX BUBID AT OR ABOVE 3400 FIX AGDUV 3300 RNW 11 FIX OVERFLY VERPO 3900 HOLD AT FIX VERPO RIGHT TURN INBOUNDCOURSE 108 LEGTIME 1
+ TRANSITION LEVUN FIX LEVUN SPEED 210
+ TRANSITION ODKEM FIX ODKEM SPEED 210
+APPROACH RNV29 FIX MELPI AT OR ABOVE 3300 FIX PEMTA 3300 RNW 29 FIX OVERFLY NUBOS 3900 HOLD AT FIX NUBOS RIGHT TURN INBOUNDCOURSE 288 LEGTIME 1
+ TRANSITION EMLUS FIX EMLUS SPEED 210
+ TRANSITION URTOL FIX URTOL SPEED 210
+ENDAPPROACHES

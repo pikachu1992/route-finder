@@ -1,0 +1,43 @@
+//VELR (LILABARI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40VOR LATLON N 27 14.879833 E 94 2.593
+FIX CD04 LATLON N 27 9.403166 E 93 56.036333
+FIX CD22 LATLON N 27 26.6935 E 94 14.7245
+FIX D077N LATLON N 27 20.8835 E 94 21.1625
+FIX D175N LATLON N 27 3.652834 E 94 7.511
+FIX DRG LATLON N 27 29.301667 E 95 1.238333
+FIX FD04 LATLON N 27 12.963667 E 94 0.297
+FIX FD22 LATLON N 27 22.9125 E 94 11.0345
+FIX JJT LATLON N 26 43.413334 E 94 9.869833
+FIX LBR LATLON N 27 17.616167 E 94 5.8755
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH VDM04 FIX CD04 AT OR ABOVE 3400 FIX FD04 2400 FIX 40VOR AT OR ABOVE 1500 RNW 04 FIX OVERFLY LBR HDG 205 INTERCEPT RADIAL 175 TO FIX D175N FIX D175N 3400 HOLD AT FIX D175N RIGHT TURN INBOUNDCOURSE 355 ALT 3400 LEGTIME 1
+ TRANSITION DRG FIX DRG FIX D077N
+ TRANSITION JJT FIX JJT FIX D175N
+APPROACH VDM22 FIX CD22 AT OR ABOVE 3400 FIX FD22 2400 RNW 22 FIX OVERFLY LBR FIX D175N 3400 HOLD AT FIX D175N RIGHT TURN INBOUNDCOURSE 355 ALT 3400 LEGTIME 1
+ TRANSITION DRG FIX DRG FIX D077N
+ TRANSITION JJT FIX JJT FIX D175N
+ENDAPPROACHES

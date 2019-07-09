@@ -1,0 +1,43 @@
+//ENAS (HAMNERABBEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AS401 LATLON N 78 58.327333 E 11 43.467833
+FIX AS402 LATLON N 79 0.881833 E 11 35.374667
+FIX AS403 LATLON N 79 4.282333 E 11 24.487166
+FIX AS404 LATLON N 79 7.589 E 11 53.880667
+FIX AS405 LATLON N 79 2.2245 E 11 6.544834
+FIX AS601 LATLON N 78 55.225 E 12 7.872334
+FIX AS602 LATLON N 78 55.2865 E 12 49.293667
+FIX AS603 LATLON N 78 55.282 E 13 10.005833
+FIX AS604 LATLON N 78 50.603666 E 13 18.8005
+FIX AS605 LATLON N 78 55.206833 E 13 35.922833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX AS403 AT OR ABOVE 3000 FIX AS402 1720 FIX OVERFLY AS401 750 RNW 12 TURN LEFT DIRECT FIX AS405 3000 SPEED 130 HOLD AT FIX AS405 LEFT TURN INBOUNDCOURSE 054 ALT 3000 LEGTIME 1
+ TRANSITION AS404 FIX AS404 AT OR ABOVE 5800
+ TRANSITION AS405 FIX AS405 AT OR ABOVE 3600
+APPROACH RNV30 FIX AS603 AT OR ABOVE 5200 FIX AS602 3650 FIX OVERFLY AS601 520 RNW 30 FIX AS402 3000 SPEED 130 FIX AS405 3000 HOLD AT FIX AS405 LEFT TURN INBOUNDCOURSE 054 ALT 3000 LEGTIME 1
+ TRANSITION AS604 FIX AS604 AT OR ABOVE 5200
+ TRANSITION AS605 FIX AS605 AT OR ABOVE 5800
+ENDAPPROACHES

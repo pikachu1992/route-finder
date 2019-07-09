@@ -1,0 +1,43 @@
+//KP13 (SAN CARLOS APACHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOBFO LATLON N 33 20.973 W 110 38.7205
+FIX GRINE LATLON N 33 36.472166 W 111 29.355334
+FIX HAWRA LATLON N 33 26.040833 W 110 50.439833
+FIX HURFY LATLON N 33 20.807167 W 110 32.755
+FIX IFURI LATLON N 33 20.6365 W 110 26.789833
+FIX IZTIR LATLON N 33 44.252666 W 111 7.677
+FIX RIPUW LATLON N 33 35.438 W 111 3.076166
+FIX SD27 LATLON N 33 20.874 W 110 35.141
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID IZTIR2
+ RNW 09 HDG 090 UNTIL 3600 TURN LEFT DIRECT FIX HAWRA SPEED 200 FIX RIPUW 7000 SPEED 200 FIX IZTIR SPEED 250
+ RNW 27 HDG 270 UNTIL 3900 FIX HAWRA SPEED 200 FIX RIPUW 7000 SPEED 200 FIX IZTIR SPEED 250
+ENDSIDS
+
+APPROACHES
+APPROACH GPS27 FIX IFURI AT OR ABOVE 6500 FIX HURFY 5000 FIX SD27 AT OR ABOVE 4340 FIX OVERFLY GOBFO 3419 RNW 27 TRK 260 UNTIL 4200 TURN RIGHT DIRECT FIX OVERFLY IFURI AT OR ABOVE 6500 HOLD AT FIX IFURI LEFT TURN INBOUNDCOURSE 275 LEGTIME 1
+ TRANSITION GRINE FIX GRINE FIX IFURI AT OR ABOVE 8500 HOLD AT FIX IFURI LEFT TURN INBOUNDCOURSE 275 ALT 6500 LEGTIME 1
+ENDAPPROACHES

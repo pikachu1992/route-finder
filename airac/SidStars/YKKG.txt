@@ -1,0 +1,49 @@
+//YKKG (KALKGURUNG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KKGND LATLON S 17 13.007167 E 130 51.454166
+FIX KKGNE LATLON S 17 12.858334 E 130 57.4445
+FIX KKGNF LATLON S 17 21.229166 E 130 51.673333
+FIX KKGNG LATLON S 17 18.216667 E 130 59.641333
+FIX KKGNH LATLON S 17 27.923666 E 130 47.050166
+FIX KKGNI LATLON S 17 17.044166 E 130 54.56
+FIX KKGSA LATLON S 17 38.383667 E 130 45.718
+FIX KKGSB LATLON S 17 38.526667 E 130 39.713666
+FIX KKGSC LATLON S 17 33.165 E 130 37.522667
+FIX KKGSF LATLON S 17 30.161833 E 130 45.503
+FIX KKGSH LATLON S 17 23.467834 E 130 50.128
+FIX KKGSI LATLON S 17 34.344667 E 130 42.6095
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX KKGSI AT OR ABOVE 2500 FIX KKGSF 2290 RNW 03 FIX KKGSH TRK 030 UNTIL 2500
+ TRANSITION KKGSA FIX KKGSA AT OR ABOVE 2500 SPEED 210
+ TRANSITION KKGSB FIX KKGSB AT OR ABOVE 2500 SPEED 210
+ TRANSITION KKGSC FIX KKGSC AT OR ABOVE 2500 SPEED 210
+APPROACH RNVN21 FIX KKGNI AT OR ABOVE 2500 FIX KKGNF 2260 RNW 21 FIX KKGNH TRK 210 UNTIL 2500
+ TRANSITION KKGND FIX KKGND AT OR ABOVE 2500 SPEED 210
+ TRANSITION KKGNE FIX KKGNE AT OR ABOVE 2500 SPEED 210
+ TRANSITION KKGNG FIX KKGNG AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

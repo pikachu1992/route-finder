@@ -1,0 +1,34 @@
+//K15F (HASKELL MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEKLE LATLON N 32 49.265167 W 99 49.920167
+FIX STOWP LATLON N 33 16.622333 W 99 42.235166
+FIX WAGUN LATLON N 33 22.8685 W 100 30.541
+FIX WALIT LATLON N 33 23.769 W 99 41.067
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA18 FIX WALIT AT OR ABOVE 4400 FIX STOWP 3200 RNW 18 TRK 183 UNTIL 2025 TURN RIGHT DIRECT FIX OVERFLY WALIT AT OR ABOVE 4400 HOLD AT FIX WALIT RIGHT TURN INBOUNDCOURSE 183 LEGDIST 5
+ TRANSITION BEKLE FIX BEKLE FIX OVERFLY WALIT AT OR ABOVE 4400 HOLD AT FIX WALIT RIGHT TURN INBOUNDCOURSE 183 ALT 4400 LEGDIST 5
+ TRANSITION WAGUN FIX WAGUN FIX OVERFLY WALIT AT OR ABOVE 4400 HOLD AT FIX WALIT RIGHT TURN INBOUNDCOURSE 183 ALT 4400 LEGDIST 5
+ENDAPPROACHES

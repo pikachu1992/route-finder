@@ -1,0 +1,37 @@
+//KMXA (MANILA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLITH LATLON N 36 4.089167 W 90 9.209333
+FIX DUNLE LATLON N 35 43.307167 W 90 9.339
+FIX HATOP LATLON N 35 58.791833 W 90 9.242333
+FIX JAPAB LATLON N 35 51.828167 W 90 9.286166
+FIX JISEP LATLON N 35 48.5575 W 90 9.307166
+FIX JITRU LATLON N 35 55.615166 W 90 9.262166
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX BLITH AT OR ABOVE 2800 FIX HATOP 1800 FIX JITRU AT OR ABOVE 780 RNW 18 FIX OVERFLY DUNLE AT OR ABOVE 2600 HOLD AT FIX DUNLE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION BLITH HOLD AT FIX BLITH RIGHT TURN INBOUNDCOURSE 181 ALT 2800 LEGDIST 4
+APPROACH RNV36 FIX DUNLE AT OR ABOVE 2600 FIX JISEP 1800 FIX JAPAB AT OR ABOVE 760 RNW 36 TRK 001 UNTIL 531 FIX OVERFLY BLITH AT OR ABOVE 2800 HOLD AT FIX BLITH RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION DUNLE HOLD AT FIX DUNLE RIGHT TURN INBOUNDCOURSE 001 ALT 2600 LEGDIST 4
+ENDAPPROACHES

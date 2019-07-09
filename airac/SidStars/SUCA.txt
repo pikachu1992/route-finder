@@ -1,0 +1,39 @@
+//SUCA (LAGUNA DE LOS PATOS INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKNUS LATLON S 34 19.966 W 57 50.216
+FIX AKSET LATLON S 34 28.816 W 57 55.883
+FIX EGDOK LATLON S 34 32.248166 W 57 35.149
+FIX EGUPI LATLON S 34 25.33 W 57 50.905
+FIX GEBAR LATLON S 34 24.389 W 57 53.039
+FIX KUGUG LATLON S 34 29.66 W 57 41.056667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX GEBAR 2000 FIX OVERFLY EGUPI AT OR ABOVE 1420 RNW 13 TRK 127 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY GEBAR
+ TRANSITION AKNUS FIX AKNUS
+ TRANSITION AKSET FIX AKSET
+ TRANSITION GEBAR HOLD AT FIX GEBAR LEFT TURN INBOUNDCOURSE 127 ALT 2000 LEGTIME 1
+APPROACH RNV31 FIX EGDOK AT OR ABOVE 3080 FIX KUGUG 1520 RNW 31 TRK 307 UNTIL 470 TRK 050 UNTIL 3000 TURN RIGHT DIRECT FIX EGDOK
+ TRANSITION EGDOK HOLD AT FIX EGDOK LEFT TURN INBOUNDCOURSE 307 ALT 3080 LEGTIME 1
+ENDAPPROACHES

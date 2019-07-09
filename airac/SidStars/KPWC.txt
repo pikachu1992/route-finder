@@ -1,0 +1,43 @@
+//KPWC (PINE RIVER REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF34 LATLON N 46 37.939667 W 94 20.626166
+FIX IJUWU LATLON N 46 38.6125 W 94 20.713667
+FIX OVESE LATLON N 46 33.833833 W 94 18.575167
+FIX PI001 LATLON N 46 40.274272 W 94 21.608707
+FIX PI002 LATLON N 46 38.253323 W 94 16.079121
+FIX PI003 LATLON N 46 34.057137 W 94 18.847313
+FIX PKD LATLON N 46 53.889 W 95 4.2535
+FIX PWCNB LATLON N 46 43.6215 W 94 23.1
+FIX UDNEF LATLON N 46 32.358167 W 94 25.497
+FIX VUHNY LATLON N 46 35.3025 W 94 11.647166
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB34 FIX FF34 3100 RNW 34 FIX OVERFLY PWCNB TRK 340 UNTIL 3100 TURN RIGHT DIRECT FIX PWCNB HOLD AT FIX PWCNB RIGHT TURN INBOUNDCOURSE 340 LEGTIME 1
+ TRANSITION PKD FIX PKD FIX PWCNB AT OR ABOVE 3200 FIX PI001 AT OR ABOVE 3100 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3100 SPEED 210 FIX PI003 AT OR ABOVE 3100 SPEED 210
+APPROACH RNV34 FIX OVESE AT OR ABOVE 3100 FIX IJUWU 2900 RNW 34 TRK 340 UNTIL 2100 TURN RIGHT DIRECT FIX OVERFLY OVESE AT OR ABOVE 3100 HOLD AT FIX OVESE RIGHT TURN INBOUNDCOURSE 340 LEGDIST 4
+ TRANSITION OVESE HOLD AT FIX OVESE RIGHT TURN INBOUNDCOURSE 340 ALT 3100 LEGDIST 4
+ TRANSITION UDNEF FIX UDNEF AT OR ABOVE 3400
+ TRANSITION VUHNY FIX VUHNY AT OR ABOVE 3400
+ENDAPPROACHES

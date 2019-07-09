@@ -1,0 +1,42 @@
+//CYAX (LAC DU BONNET)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALNEK LATLON N 50 28.369667 W 95 50.9895
+FIX ALRAV LATLON N 50 9.201167 W 96 1.9695
+FIX BORAB LATLON N 50 29.401667 W 96 6.5615
+FIX DUKNU LATLON N 50 8.681 W 95 54.238333
+FIX ERBUP LATLON N 50 9.712834 W 96 9.7035
+FIX MARUR LATLON N 50 22.356833 W 95 59.839333
+FIX OMRIV LATLON N 50 14.1695 W 96 1.167334
+FIX OVBUM LATLON N 50 28.89 W 95 58.774
+FIX UKRIX LATLON N 50 22.928666 W 95 59.746333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX OVBUM AT OR ABOVE 2600 FIX UKRIX 2500 RNW 18 TURN LEFT DIRECT FIX ALNEK 2500 HOLD AT FIX ALNEK RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1
+ TRANSITION ALNEK FIX ALNEK
+ TRANSITION BORAB FIX BORAB
+APPROACH RNV36 FIX ALRAV AT OR ABOVE 2300 FIX OMRIV 2100 RNW 36 FIX OVERFLY MARUR 2400 HOLD AT FIX MARUR RIGHT TURN INBOUNDCOURSE 004 LEGTIME 1
+ TRANSITION DUKNU FIX DUKNU
+ TRANSITION ERBUP FIX ERBUP
+ENDAPPROACHES

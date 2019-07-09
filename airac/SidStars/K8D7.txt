@@ -1,0 +1,39 @@
+//K8D7 (CLARK CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOBUG LATLON N 44 49.978 W 97 37.406333
+FIX IYLUG LATLON N 44 57.332833 W 97 47.8635
+FIX WOLTA LATLON N 44 52.039667 W 97 40.3305
+FIX WOPOB LATLON N 45 0.843334 W 97 52.879
+FIX WUNOV LATLON N 44 46.456 W 97 32.422166
+FIX ZEVOB LATLON N 44 55.9835 W 97 45.94
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX WOPOB AT OR ABOVE 3400 FIX IYLUG 3400 FIX ZEVOB AT OR ABOVE 2780 RNW 13 TRK 131 UNTIL 2193 FIX OVERFLY WUNOV AT OR ABOVE 3400 HOLD AT FIX WUNOV RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4
+ TRANSITION WOPOB HOLD AT FIX WOPOB RIGHT TURN INBOUNDCOURSE 131 ALT 3400 LEGDIST 4
+APPROACH RNV31 FIX WUNOV AT OR ABOVE 3400 FIX HOBUG 3400 FIX WOLTA AT OR ABOVE 2460 RNW 31 TRK 311 UNTIL 2193 FIX OVERFLY WOPOB AT OR ABOVE 3400 HOLD AT FIX WOPOB RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4
+ TRANSITION WUNOV HOLD AT FIX WUNOV RIGHT TURN INBOUNDCOURSE 311 ALT 3400 LEGDIST 4
+ENDAPPROACHES

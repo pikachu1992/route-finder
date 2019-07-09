@@ -1,0 +1,43 @@
+//KBVN (ALBION MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMIVY LATLON N 41 33.569 W 97 56.682667
+FIX AMTAH LATLON N 41 53.854 W 98 10.0425
+FIX AYILO LATLON N 41 48.307166 W 98 6.374
+FIX JAYZU LATLON N 41 39.044666 W 98 0.273833
+FIX SAFIL LATLON N 41 35.7735 W 97 50.704667
+FIX SOQZU LATLON N 41 51.632666 W 98 16.039834
+FIX VAZRO LATLON N 41 31.357166 W 98 2.659667
+FIX VEJAL LATLON N 41 56.07 W 98 4.038334
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX AMTAH AT OR ABOVE 4300 FIX AYILO 3400 RNW 15 FIX OVERFLY AMIVY AT OR ABOVE 4300 HOLD AT FIX AMIVY RIGHT TURN INBOUNDCOURSE 328 LEGDIST 5
+ TRANSITION AMTAH HOLD AT FIX AMTAH RIGHT TURN INBOUNDCOURSE 148 ALT 4300 LEGDIST 5
+ TRANSITION SOQZU FIX SOQZU AT OR ABOVE 4300
+ TRANSITION VEJAL FIX VEJAL AT OR ABOVE 4300
+APPROACH RNV33 FIX AMIVY AT OR ABOVE 4300 FIX JAYZU 3400 RNW 33 FIX OVERFLY AMTAH AT OR ABOVE 4300 HOLD AT FIX AMTAH RIGHT TURN INBOUNDCOURSE 148 LEGDIST 5
+ TRANSITION AMIVY HOLD AT FIX AMIVY RIGHT TURN INBOUNDCOURSE 328 ALT 4300 LEGDIST 5
+ TRANSITION SAFIL FIX SAFIL AT OR ABOVE 4300
+ TRANSITION VAZRO FIX VAZRO AT OR ABOVE 4300
+ENDAPPROACHES

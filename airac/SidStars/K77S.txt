@@ -1,0 +1,40 @@
+//K77S (HOBBY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALFOR LATLON N 44 18.4955 W 123 9.119666
+FIX CURTI LATLON N 43 41.499667 W 123 8.4085
+FIX EUG LATLON N 44 7.253833 W 123 13.369834
+FIX IYAYE LATLON N 44 9.255167 W 123 2.302333
+FIX UWZAB LATLON N 44 0.875333 W 123 1.112167
+FIX WOSLO LATLON N 44 6.915334 W 123 1.953167
+FIX ZEMAM LATLON N 44 4.9145 W 123 1.685167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID 77S2 RNW 34 HDG 339 UNTIL 1700 FIX EUG 4000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV16 FIX IYAYE AT OR ABOVE 3800 FIX WOSLO AT OR ABOVE 3700 FIX ZEMAM 3500 FIX UWZAB AT OR ABOVE 2160 RNW 16 TRK 159 UNTIL 941 FIX OVERFLY CURTI AT OR ABOVE 6000 HOLD AT FIX CURTI LEFT TURN INBOUNDCOURSE 332 ALT 6000 LEGDIST 5
+ TRANSITION ALFOR FIX ALFOR
+ENDAPPROACHES

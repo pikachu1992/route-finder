@@ -1,0 +1,34 @@
+//KEFC (BELLE FOURCHE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COCAK LATLON N 44 40.981667 W 103 49.453
+FIX GAGPY LATLON N 44 36.278 W 103 45.990167
+FIX WUNKI LATLON N 44 29.533667 W 103 41.0435
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 18
+RNW 32
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX WUNKI AT OR ABOVE 7600 FIX GAGPY 5900 FIX COCAK AT OR ABOVE 4200 RNW 32 TRK 321 UNTIL 3800 TURN RIGHT DIRECT FIX OVERFLY WUNKI AT OR ABOVE 7600 HOLD AT FIX WUNKI RIGHT TURN INBOUNDCOURSE 321 ALT 7600 LEGDIST 7
+ TRANSITION WUNKI HOLD AT FIX WUNKI RIGHT TURN INBOUNDCOURSE 321 ALT 7600 LEGDIST 7
+ENDAPPROACHES

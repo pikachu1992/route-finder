@@ -1,0 +1,39 @@
+//KDTS (DESTIN EXECUTIVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AJLIP LATLON N 30 15.364667 W 86 20.555666
+FIX CEW LATLON N 30 49.5705 W 86 40.748666
+FIX ILOPE LATLON N 30 32.238334 W 86 35.688833
+FIX MEMSE LATLON N 30 18.964333 W 86 16.466666
+FIX NOZEC LATLON N 30 28.1435 W 86 32.005667
+FIX UFEBA LATLON N 30 19.855667 W 86 24.571834
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ILOPE AT OR ABOVE 2000 FIX NOZEC 1600 RNW 14 TRK 143 UNTIL 272 FIX OVERFLY AJLIP AT OR ABOVE 2000 HOLD AT FIX AJLIP RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4
+ TRANSITION CEW FIX CEW
+ TRANSITION ILOPE HOLD AT FIX ILOPE RIGHT TURN INBOUNDCOURSE 143 ALT 2000 LEGDIST 4
+APPROACH RNV32 FIX AJLIP AT OR ABOVE 2000 FIX UFEBA 1600 RNW 32 TRK 323 UNTIL 422 TURN LEFT DIRECT FIX OVERFLY AJLIP AT OR ABOVE 2000 HOLD AT FIX AJLIP RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4
+ TRANSITION AJLIP HOLD AT FIX AJLIP RIGHT TURN INBOUNDCOURSE 323 ALT 2000 LEGDIST 4
+ TRANSITION CEW FIX CEW FIX MEMSE AT OR ABOVE 2000
+ENDAPPROACHES

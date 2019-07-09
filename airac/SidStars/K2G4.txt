@@ -1,0 +1,40 @@
+//K2G4 (GARRETT CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HABEX LATLON N 39 37.017334 W 79 5.720167
+FIX JAXUM LATLON N 39 35.8765 W 79 13.342
+FIX LEASE LATLON N 39 34.496167 W 79 27.095333
+FIX MGW LATLON N 39 33.402833 W 79 51.624667
+FIX MOHLR LATLON N 39 34.103 W 79 36.1335
+FIX PINIC LATLON N 39 32.274167 W 79 37.026167
+FIX ZABSO LATLON N 39 33.7875 W 79 27.145
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX MOHLR AT OR ABOVE 5000 FIX LEASE 4600 RNW 09 TRK 092 UNTIL 3500 TURN RIGHT DIRECT FIX MGW AT OR ABOVE 5000 HOLD AT FIX MGW RIGHT TURN INBOUNDCOURSE 092 LEGTIME 1
+ TRANSITION MGW FIX MGW AT OR ABOVE 5000
+APPROACH RNV09 FIX PINIC AT OR ABOVE 5700 FIX ZABSO 4600 RNW 09 TRK 088 UNTIL 3183 FIX OVERFLY HABEX 5600 HOLD AT FIX HABEX RIGHT TURN INBOUNDCOURSE 268 LEGDIST 5
+ TRANSITION PINIC HOLD AT FIX PINIC RIGHT TURN INBOUNDCOURSE 088 ALT 5700 LEGDIST 5
+APPROACH RNV27 FIX HABEX AT OR ABOVE 5600 FIX JAXUM 4500 RNW 27 TRK 268 UNTIL 3175 FIX OVERFLY PINIC AT OR ABOVE 5700 HOLD AT FIX PINIC RIGHT TURN INBOUNDCOURSE 088 LEGDIST 5
+ TRANSITION HABEX HOLD AT FIX HABEX RIGHT TURN INBOUNDCOURSE 268 ALT 5600 LEGDIST 5
+ENDAPPROACHES

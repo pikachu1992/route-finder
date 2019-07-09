@@ -1,0 +1,41 @@
+//NZSL (SPRINGHILL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APABO LATLON S 36 11.725333 E 174 33.6225
+FIX BAMEX LATLON S 36 15.234167 E 174 33.397
+FIX GORKI LATLON S 36 14.226 E 174 33.0025
+FIX KAWAU LATLON S 36 26.292334 E 174 38.144833
+FIX SEKLA LATLON S 36 17.662834 E 174 32.1495
+FIX SEMKI LATLON S 36 18.238834 E 174 33.366833
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID GORKI1 RNW 16 RNW 34 FIX SEKLA AT OR ABOVE 900
+  TRANSITION APABO FIX OVERFLY GORKI FIX APABO
+  TRANSITION KAWAU FIX OVERFLY GORKI TURN RIGHT DIRECT FIX KAWAU
+ENDSIDS
+
+APPROACHES
+APPROACH RNV16 FIX APABO AT OR ABOVE 2100 FIX BAMEX 1450 FIX OVERFLY SEMKI 478 SPEED 110 RNW 16 TURN RIGHT DIRECT FIX APABO AT OR ABOVE 2500 SPEED 130
+ TRANSITION APABO HOLD AT FIX APABO RIGHT TURN INBOUNDCOURSE 164 ALT 2500 LEGTIME 1
+ENDAPPROACHES

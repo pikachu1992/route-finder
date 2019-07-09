@@ -1,0 +1,46 @@
+//CYLC (KIMMIRUT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADGAP LATLON N 62 48.552833 W 69 28.483834
+FIX ALKOX LATLON N 62 49.745 W 69 49.440334
+FIX DEMLU LATLON N 62 53.849333 W 70 0.977833
+FIX DURLI LATLON N 62 52.204834 W 69 56.3435
+FIX GORIB LATLON N 62 54.040333 W 70 1.517333
+FIX KARUR LATLON N 62 57.0925 W 70 10.164334
+FIX MASAN LATLON N 62 40.719167 W 69 41.93
+FIX MIVIM LATLON N 63 1.034333 W 70 3.456667
+FIX OLOMI LATLON N 62 53.145334 W 70 16.842
+FIX PUXAX LATLON N 62 47.909833 W 69 44.313
+FIX RADUX LATLON N 62 44.638667 W 69 35.221834
+FIX TAGBI LATLON N 62 47.717666 W 69 43.777333
+FIX UKTOT LATLON N 62 51.469834 W 69 54.277
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX KARUR AT OR ABOVE 1600 FIX GORIB 1500 FIX DURLI AT OR ABOVE 1000 FIX OVERFLY UKTOT 518 RNW 15 FIX OVERFLY PUXAX 2100 HOLD AT FIX PUXAX RIGHT TURN INBOUNDCOURSE 154 LEGTIME 1
+ TRANSITION MIVIM FIX MIVIM SPEED 140
+ TRANSITION OLOMI FIX OLOMI SPEED 140
+APPROACH RNV33 FIX RADUX AT OR ABOVE 2100 FIX TAGBI 1780 FIX OVERFLY ALKOX 722 RNW 33 FIX OVERFLY DEMLU 2200 HOLD AT FIX DEMLU RIGHT TURN INBOUNDCOURSE 333 SPEED 250 LEGTIME 1
+ TRANSITION ADGAP FIX ADGAP SPEED 140
+ TRANSITION MASAN FIX MASAN SPEED 140
+ENDAPPROACHES

@@ -1,0 +1,34 @@
+//SLGM (GUAYARAMERIN INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUPLI LATLON S 11 1.462 W 65 17.5655
+FIX ILSAP LATLON S 10 51.179666 W 65 24.239
+FIX IROLO LATLON S 11 0 W 65 30
+FIX KODSA LATLON S 11 6.3 W 65 18.933334
+FIX TODIR LATLON S 10 57.944833 W 65 19.849333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ34 FIX BUPLI AT OR ABOVE 3400 FIX TODIR 2100 RNW 34 FIX ILSAP TURN LEFT DIRECT FIX OVERFLY IROLO AT OR ABOVE 4000 HOLD AT FIX IROLO LEFT TURN INBOUNDCOURSE 107 LEGTIME 1
+ TRANSITION KODSA FIX KODSA AT OR ABOVE 5000
+ENDAPPROACHES

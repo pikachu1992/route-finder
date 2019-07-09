@@ -1,0 +1,37 @@
+//KCMD (CULLMAN REGL-FOLSOM FIELD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMUXY LATLON N 34 27.455833 W 86 47.424
+FIX CUSAG LATLON N 34 13.2865 W 86 52.494833
+FIX DOWDU LATLON N 34 10.522 W 86 53.480666
+FIX FISRO LATLON N 34 21.655333 W 86 49.503334
+FIX MELYE LATLON N 34 4.737833 W 86 55.54
+FIX ZEDNU LATLON N 34 18.7655 W 86 50.5375
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX MELYE AT OR ABOVE 3200 FIX DOWDU 2700 FIX CUSAG AT OR ABOVE 1780 RNW 02 TRK 020 UNTIL 1369 FIX OVERFLY AMUXY AT OR ABOVE 3700 HOLD AT FIX AMUXY RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4
+ TRANSITION MELYE HOLD AT FIX MELYE RIGHT TURN INBOUNDCOURSE 019 ALT 3200 LEGDIST 4
+APPROACH RNV20 FIX AMUXY AT OR ABOVE 3700 FIX FISRO 2700 FIX ZEDNU AT OR ABOVE 1740 RNW 20 TRK 200 UNTIL 1219 FIX OVERFLY MELYE AT OR ABOVE 3200 HOLD AT FIX MELYE RIGHT TURN INBOUNDCOURSE 019 LEGDIST 4
+ TRANSITION AMUXY HOLD AT FIX AMUXY RIGHT TURN INBOUNDCOURSE 200 ALT 3700 LEGDIST 4
+ENDAPPROACHES

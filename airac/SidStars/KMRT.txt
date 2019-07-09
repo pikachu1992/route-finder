@@ -1,0 +1,37 @@
+//KMRT (UNION CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KUTAW LATLON N 40 12.203333 W 83 34.4995
+FIX NESWU LATLON N 40 14.73 W 83 7.710667
+FIX YODTU LATLON N 40 12.999334 W 83 26.1815
+FIX ZEVAB LATLON N 40 13.965334 W 83 15.939
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 09
+RNW 26
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX KUTAW AT OR ABOVE 3000 FIX YODTU 2200 RNW 09 TRK 088 UNTIL 1421 FIX OVERFLY NESWU AT OR ABOVE 3000 HOLD AT FIX NESWU RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4
+ TRANSITION KUTAW HOLD AT FIX KUTAW RIGHT TURN INBOUNDCOURSE 088 ALT 3000 LEGDIST 4
+APPROACH RNV27 FIX NESWU AT OR ABOVE 3000 FIX ZEVAB 2200 RNW 27 TRK 268 UNTIL 1360 FIX OVERFLY KUTAW AT OR ABOVE 3000 HOLD AT FIX KUTAW RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4
+ TRANSITION NESWU HOLD AT FIX NESWU RIGHT TURN INBOUNDCOURSE 268 ALT 3000 LEGDIST 4
+ENDAPPROACHES

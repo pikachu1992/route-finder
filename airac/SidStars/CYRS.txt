@@ -1,0 +1,43 @@
+//CYRS (RED SUCKER LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALVAB LATLON N 54 9.340834 W 93 51.032833
+FIX ALVUB LATLON N 54 10.703833 W 93 15.872167
+FIX DUPOG LATLON N 54 10.3495 W 93 25.453333
+FIX IGSOT LATLON N 54 4.361333 W 93 50.438167
+FIX IPSED LATLON N 54 5.721667 W 93 15.3475
+FIX KARED LATLON N 54 15.685834 W 93 16.399
+FIX METVI LATLON N 54 10.390333 W 93 24.364
+FIX OTMOX LATLON N 54 9.729833 W 93 41.436833
+FIX UDPAD LATLON N 54 9.6855 W 93 42.548167
+FIX VISUB LATLON N 54 14.32 W 93 51.629833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ALVAB AT OR ABOVE 2400 FIX UDPAD 2400 RNW 09 FIX OVERFLY DUPOG 2200 HOLD AT FIX DUPOG RIGHT TURN INBOUNDCOURSE 087 LEGTIME 1
+ TRANSITION IGSOT FIX IGSOT SPEED 210
+ TRANSITION VISUB FIX VISUB SPEED 210
+APPROACH RNV27 FIX ALVUB AT OR ABOVE 2400 FIX METVI 2400 RNW 27 FIX OVERFLY OTMOX 2200 HOLD AT FIX OTMOX RIGHT TURN INBOUNDCOURSE 267 LEGTIME 1
+ TRANSITION IPSED FIX IPSED SPEED 210
+ TRANSITION KARED FIX KARED SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//K7N7 (SPITFIRE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLARE LATLON N 39 24.775 W 75 33.168334
+FIX CENAM LATLON N 39 46.546333 W 75 17.812667
+FIX FOMSO LATLON N 39 38.988167 W 75 36.708667
+FIX JIKMA LATLON N 39 41.747333 W 75 29.832167
+FIX MXE LATLON N 39 55.083 W 75 40.249333
+FIX POVAE LATLON N 39 49.264834 W 75 10.970666
+FIX RUUTH LATLON N 39 51.020666 W 74 59.986166
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX FOMSO AT OR ABOVE 2600 FIX JIKMA 1700 RNW 07 TRK 074 UNTIL 540 TURN RIGHT DIRECT FIX FOMSO AT OR ABOVE 2600 HOLD AT FIX FOMSO RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4
+ TRANSITION BLARE FIX BLARE
+ TRANSITION MXE FIX MXE FIX FOMSO AT OR ABOVE 2600 HOLD AT FIX FOMSO RIGHT TURN INBOUNDCOURSE 074 ALT 2600 LEGDIST 4
+APPROACH RNV25 FIX POVAE AT OR ABOVE 2600 FIX CENAM 1700 RNW 25 TRK 254 UNTIL 440 FIX OVERFLY FOMSO AT OR ABOVE 2600 HOLD AT FIX FOMSO RIGHT TURN INBOUNDCOURSE 074 LEGDIST 4
+ TRANSITION MXE FIX MXE FIX POVAE AT OR ABOVE 3500 HOLD AT FIX POVAE RIGHT TURN INBOUNDCOURSE 254 ALT 2600 LEGDIST 4
+ TRANSITION RUUTH FIX RUUTH
+ENDAPPROACHES

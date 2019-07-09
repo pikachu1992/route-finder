@@ -1,0 +1,33 @@
+//KN63 (MEADOW BROOK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DULII LATLON N 36 13.282 W 80 5.6975
+FIX GSO LATLON N 36 2.7415 W 79 58.5825
+FIX KAREN LATLON N 36 8.891 W 80 2.729
+FIX MAKRP LATLON N 36 17.936167 W 80 8.847334
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM34 FIX KAREN AT OR ABOVE 2500 FIX DULII 2000 FIX MAKRP 681 RNW 34 TRK 334 UNTIL 1031 TURN LEFT DIRECT FIX KAREN AT OR ABOVE 2500 HOLD AT FIX KAREN RIGHT TURN INBOUNDCOURSE 334 LEGTIME 1
+ TRANSITION GSO FIX GSO
+ENDAPPROACHES

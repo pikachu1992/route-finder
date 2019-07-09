@@ -1,0 +1,46 @@
+//CJW7 (CIGAR LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IKLEX LATLON N 58 1.255333 W 104 29.350667
+FIX ILOKU LATLON N 57 51.776833 W 104 30.724834
+FIX IMISO LATLON N 57 57.745333 W 104 29.860834
+FIX IPSUS LATLON N 58 8.8565 W 104 28.239667
+FIX KITUX LATLON N 58 14.8245 W 104 27.361834
+FIX MAXAP LATLON N 57 52.153834 W 104 40.059
+FIX MEPSO LATLON N 58 14.432 W 104 17.931
+FIX NADOT LATLON N 57 58.631666 W 104 29.732167
+FIX OLOKI LATLON N 58 1.615834 W 104 29.298167
+FIX OMODU LATLON N 58 7.720834 W 104 28.406167
+FIX ULIXA LATLON N 57 51.3885 W 104 21.394
+FIX XIDIR LATLON N 58 4.736833 W 104 28.842833
+FIX XOREP LATLON N 58 15.2055 W 104 36.796166
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX KITUX AT OR ABOVE 3300 SPEED 180 FIX IPSUS 3250 RNW 17 FIX OLOKI FIX OVERFLY NADOT 3500 HOLD AT FIX NADOT RIGHT TURN INBOUNDCOURSE 176 SPEED 200 LEGTIME 1
+ TRANSITION MEPSO FIX MEPSO
+ TRANSITION XOREP FIX XOREP
+APPROACH RNV35 FIX ILOKU AT OR ABOVE 3200 SPEED 180 FIX IMISO 3200 FIX IKLEX AT OR ABOVE 2050 RNW 35 FIX XIDIR FIX OVERFLY OMODU 3500 HOLD AT FIX OMODU RIGHT TURN INBOUNDCOURSE 356 SPEED 200 LEGTIME 1
+ TRANSITION MAXAP FIX MAXAP
+ TRANSITION ULIXA FIX ULIXA
+ENDAPPROACHES

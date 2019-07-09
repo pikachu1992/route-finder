@@ -1,0 +1,48 @@
+//RJAF (MATSUMOTO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 50VOR LATLON N 36 14.362834 E 137 54.985333
+FIX D029L LATLON N 36 20.489 E 138 0.7485
+FIX D034L LATLON N 36 20.053667 E 138 1.926
+FIX FKASI LATLON N 36 16.289 E 137 54.907
+FIX GAKTO LATLON N 36 21.3635 E 137 54.700333
+FIX HAPPO LATLON N 37 6.081667 E 137 53.3455
+FIX MA18 LATLON N 36 11.260166 E 137 55.111667
+FIX MBE LATLON N 36 9.3585 E 137 55.189
+FIX MBE05 LATLON N 36 14.364833 E 137 55.081
+FIX VOR10 LATLON N 36 19.367167 E 137 54.781333
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID HAPPO1
+ RNW 18 TRK 178 UNTIL 2700 HDG 321 INTERCEPT RADIAL 006 TO FIX HAPPO FIX HAPPO
+ RNW 36 TRK 358 UNTIL 2660 FIX HAPPO
+SID MBE1R
+ RNW 18 TRK 178 UNTIL 2700 HDG 321 INTERCEPT RADIAL 006 TO FIX MBE05 FIX OVERFLY MBE05 AT OR ABOVE 6000 TURN RIGHT DIRECT FIX MBE AT OR ABOVE 10000
+ RNW 36 TRK 358 UNTIL 2660 TRK 006 UNTIL 5900 TURN RIGHT DIRECT FIX MBE AT OR ABOVE 10000
+ENDSIDS
+
+APPROACHES
+APPROACH VDM18 FIX GAKTO AT OR ABOVE 4900 FIX VOR10 AT OR ABOVE 4500 FIX FKASI 4015 FIX 50VOR AT OR ABOVE 3401 FIX MA18 2415 RNW 18 FIX MBE TRK 186 UNTIL 8.0 FROM FIX MBE TURN LEFT DIRECT FIX MBE AT OR ABOVE 10000 HOLD AT FIX MBE RIGHT TURN INBOUNDCOURSE 034 SPEED 230 LEGTIME 1
+ TRANSITION MBE FIX MBE AT OR ABOVE 10000 FIX D034L FIX D029L AT OR ABOVE 6700
+ENDAPPROACHES

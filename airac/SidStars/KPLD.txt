@@ -1,0 +1,44 @@
+//KPLD (PORTLAND MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AJAYS LATLON N 40 34.799666 W 85 17.967334
+FIX CAXUV LATLON N 40 27.0045 W 85 4.0765
+FIX DANCR LATLON N 40 27.216334 W 84 52.598833
+FIX DIYEC LATLON N 40 26.845834 W 85 12.043333
+FIX FAXIG LATLON N 40 18.675167 W 85 13.7585
+FIX HIGLA LATLON N 40 22.912166 W 84 41.643334
+FIX MAPOL LATLON N 40 27.3515 W 84 44.674333
+FIX NADIR LATLON N 40 36.346166 W 84 33.869
+FIX WEPRI LATLON N 40 27.159667 W 84 55.766833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX DIYEC AT OR ABOVE 2500 FIX CAXUV 2000 RNW 09 TRK 092 UNTIL 1163 FIX OVERFLY MAPOL AT OR ABOVE 3000 HOLD AT FIX MAPOL RIGHT TURN INBOUNDCOURSE 272 LEGDIST 4
+ TRANSITION AJAYS FIX AJAYS
+ TRANSITION DIYEC HOLD AT FIX DIYEC RIGHT TURN INBOUNDCOURSE 091 ALT 2500 LEGDIST 4
+ TRANSITION FAXIG FIX FAXIG
+APPROACH RNV27 FIX MAPOL AT OR ABOVE 3000 FIX DANCR 2500 FIX WEPRI AT OR ABOVE 1720 RNW 27 TRK 272 UNTIL 1300 FIX OVERFLY DIYEC AT OR ABOVE 2500 HOLD AT FIX DIYEC RIGHT TURN INBOUNDCOURSE 091 LEGDIST 4
+ TRANSITION HIGLA FIX HIGLA
+ TRANSITION MAPOL HOLD AT FIX MAPOL RIGHT TURN INBOUNDCOURSE 272 ALT 3000 LEGDIST 4
+ TRANSITION NADIR FIX NADIR
+ENDAPPROACHES

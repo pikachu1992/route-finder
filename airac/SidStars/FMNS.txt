@@ -1,0 +1,44 @@
+//FMNS (SAMBAVA SOUTH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D139I LATLON S 14 22.156 E 50 17.7775
+FIX D360G LATLON S 14 10.2935 E 50 9.351
+FIX FN16 LATLON S 14 10.912333 E 50 6.911333
+FIX FN34 LATLON S 14 22.850666 E 50 13.300667
+FIX FQ16 LATLON S 14 11.159333 E 50 7.0695
+FIX FQ34 LATLON S 14 22.333 E 50 13.075
+FIX MQ34 LATLON S 14 18.727667 E 50 11.504833
+FIX SANB LATLON S 14 16.721666 E 50 10.631666
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB16 FIX FN16 2100 RNW 16 FIX OVERFLY SANB TRK 159 UNTIL 1300 TURN LEFT DIRECT FIX SANB 2200
+ TRANSITION SA1 FIX SANB AT OR ABOVE 2200 TRK 000 UNTIL 7.0 FROM FIX SANB
+ TRANSITION SA2 FIX SANB AT OR ABOVE 2200 TRK 351 UNTIL 9.0 FROM FIX SANB
+APPROACH NDB34 FIX FN34 2000 RNW 34 FIX OVERFLY SANB TRK 348 UNTIL 1100 TURN RIGHT DIRECT FIX SANB 3300
+ TRANSITION SA FIX SANB AT OR ABOVE 3300 TRK 139 UNTIL 7.0 FROM FIX SANB
+APPROACH NDM16 FIX FQ16 2100 RNW 16 TRK 159 UNTIL 1300 TURN LEFT DIRECT FIX SANB 2200
+ TRANSITION SA FIX SANB AT OR ABOVE 2200 FIX OVERFLY D360G AT OR ABOVE 2100
+APPROACH NDM34 FIX FQ34 2000 FIX MQ34 635 RNW 34 FIX OVERFLY SANB TURN RIGHT DIRECT FIX SANB 3300
+ TRANSITION SA FIX SANB AT OR ABOVE 3300 FIX OVERFLY D139I AT OR ABOVE 2000
+ENDAPPROACHES

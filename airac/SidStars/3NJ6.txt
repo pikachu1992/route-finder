@@ -1,0 +1,40 @@
+//3NJ6 (INDUCTOTHERM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARD LATLON N 40 15.2005 W 74 54.456667
+FIX EVODY LATLON N 39 55.71 W 74 51.3325
+FIX IPBEH LATLON N 39 50.671667 W 74 52.155167
+FIX OBAHE LATLON N 40 11.184833 W 74 48.7965
+FIX RUUTH LATLON N 39 51.020666 W 74 59.986166
+FIX TAHSU LATLON N 40 6.158833 W 74 49.623
+FIX WUGVA LATLON N 40 2.611333 W 74 50.204333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX IPBEH AT OR ABOVE 2100 FIX EVODY 1700 RNW 02 TRK 020 UNTIL 472 FIX OVERFLY OBAHE AT OR ABOVE 2000 HOLD AT FIX OBAHE RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4
+ TRANSITION IPBEH HOLD AT FIX IPBEH RIGHT TURN INBOUNDCOURSE 020 ALT 2100 LEGDIST 4
+ TRANSITION RUUTH FIX RUUTH
+APPROACH RNV20 FIX OBAHE AT OR ABOVE 2000 FIX TAHSU 1700 FIX WUGVA AT OR ABOVE 560 RNW 20 TRK 200 UNTIL 472 FIX OVERFLY IPBEH AT OR ABOVE 2100 HOLD AT FIX IPBEH RIGHT TURN INBOUNDCOURSE 020 LEGDIST 4
+ TRANSITION ARD FIX ARD
+ TRANSITION OBAHE HOLD AT FIX OBAHE RIGHT TURN INBOUNDCOURSE 200 ALT 2000 LEGDIST 4
+ENDAPPROACHES

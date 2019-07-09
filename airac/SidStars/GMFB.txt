@@ -1,0 +1,39 @@
+//GMFB (BOUARFA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRF LATLON N 32 30.857666 W 2 1.828667
+FIX D242H LATLON N 32 26.905667 W 2 10.057
+FIX FD09 LATLON N 32 30.848833 W 2 8.332166
+FIX MD09 LATLON N 32 30.8585 W 2 0.646166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM09 FIX FD09 5900 FIX BRF AT OR ABOVE 4160 FIX MD09 3836 RNW 09 TRK 091 UNTIL 5100 TURN RIGHT DIRECT FIX BRF 7100
+ TRANSITION BRF FIX BRF AT OR BELOW 7100 SPEED 210 FIX OVERFLY D242H AT OR ABOVE 5900
+ENDAPPROACHES
+
+GATES
+GATE 1 N 32 31.002 W 1 58.68
+GATE 2 N 32 31.002 W 1 58.641833
+GATE 3 N 32 31.002 W 1 58.6035
+ENDGATES

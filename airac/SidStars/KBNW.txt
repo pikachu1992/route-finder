@@ -1,0 +1,39 @@
+//KBNW (BOONE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKENE LATLON N 41 57.66 W 93 46.591333
+FIX CALUM LATLON N 41 52.323667 W 93 42.357
+FIX DETRO LATLON N 42 7.6205 W 93 54.529667
+FIX EPHIZ LATLON N 42 0.085834 W 93 48.520667
+FIX HOPWO LATLON N 42 12.9495 W 93 58.795834
+FIX LOCEC LATLON N 42 5.391 W 93 52.749167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 15
+RNW 20
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX HOPWO AT OR ABOVE 3000 FIX DETRO 2800 FIX LOCEC AT OR ABOVE 1960 RNW 15 TRK 146 UNTIL 1388 FIX OVERFLY CALUM AT OR ABOVE 4000 HOLD AT FIX CALUM RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION HOPWO HOLD AT FIX HOPWO RIGHT TURN INBOUNDCOURSE 146 ALT 3000 LEGDIST 4
+APPROACH RNV33 FIX CALUM AT OR ABOVE 4000 FIX AKENE 3000 FIX EPHIZ AT OR ABOVE 2100 RNW 33 TRK 326 UNTIL 1389 FIX OVERFLY HOPWO AT OR ABOVE 3000 HOLD AT FIX HOPWO RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4
+ TRANSITION CALUM HOLD AT FIX CALUM RIGHT TURN INBOUNDCOURSE 326 ALT 4000 LEGDIST 4
+ENDAPPROACHES

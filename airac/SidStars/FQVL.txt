@@ -1,0 +1,49 @@
+//FQVL (VILANKULO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EGTOD LATLON S 22 8.527166 E 35 28.225
+FIX GETUK LATLON S 22 12.610333 E 35 18.383
+FIX ITKOP LATLON S 21 51.509333 E 35 14.1975
+FIX NESUB LATLON S 21 53.550667 E 35 9.286667
+FIX NEXOM LATLON S 22 10.57 E 35 23.305166
+FIX UNPAT LATLON S 21 49.465667 E 35 19.106
+FIX VL500 LATLON S 21 56.092667 E 35 16.3855
+FIX VL600 LATLON S 22 5.259167 E 35 20.765333
+FIX VL601 LATLON S 22 3.2155 E 35 25.681667
+FIX VL700 LATLON S 22 5.986834 E 35 21.113167
+FIX VL800 LATLON S 21 56.82 E 35 16.733833
+FIX VL801 LATLON S 21 54.7825 E 35 21.645833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 17
+RNW 28
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX VL500 1600 RNW 17 FIX VL600 AT OR ABOVE 450 FIX VL601 FIX UNPAT AT OR ABOVE 2000 HOLD AT FIX UNPAT RIGHT TURN INBOUNDCOURSE 261 LEGTIME 1
+ TRANSITION ITKOP FIX ITKOP
+ TRANSITION NESUB FIX NESUB AT OR ABOVE 2600 SPEED 200 FIX ITKOP
+ TRANSITION UNPAT FIX UNPAT AT OR ABOVE 2600 SPEED 200 FIX ITKOP
+APPROACH RNV35 FIX VL700 1600 RNW 35 FIX VL800 AT OR ABOVE 450 FIX VL801 FIX EGTOD AT OR ABOVE 2000 HOLD AT FIX EGTOD LEFT TURN INBOUNDCOURSE 261 LEGTIME 1
+ TRANSITION EGTOD FIX EGTOD AT OR ABOVE 2600 SPEED 200 FIX NEXOM
+ TRANSITION GETUK FIX GETUK AT OR ABOVE 2600 SPEED 200 FIX NEXOM
+ TRANSITION NEXOM FIX NEXOM
+ENDAPPROACHES

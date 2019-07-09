@@ -1,0 +1,41 @@
+//KPLR (ST CLAIR CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEKLA LATLON N 33 27.924167 W 86 17.663167
+FIX EFBUB LATLON N 33 38.18 W 86 12.6825
+FIX HANDE LATLON N 33 18.74 W 86 31.407334
+FIX HANUR LATLON N 33 22.125667 W 86 20.466167
+FIX STAMP LATLON N 33 52.549 W 86 14.6055
+FIX TADUW LATLON N 33 43.9245 W 86 9.885
+FIX UTACE LATLON N 33 35.860834 W 86 13.81
+FIX WIKMU LATLON N 33 30.5845 W 86 16.3725
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX HANUR AT OR ABOVE 4000 FIX CEKLA 2400 FIX WIKMU AT OR ABOVE 1440 RNW 03 TRK 026 UNTIL 1200 TURN LEFT DIRECT FIX OVERFLY HANUR AT OR ABOVE 4000 HOLD AT FIX HANUR RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4
+ TRANSITION HANDE FIX HANDE
+ TRANSITION HANUR HOLD AT FIX HANUR RIGHT TURN INBOUNDCOURSE 026 ALT 4000 LEGDIST 4
+APPROACH RNV21 FIX TADUW AT OR ABOVE 3500 FIX EFBUB 2000 FIX UTACE AT OR ABOVE 1200 RNW 21 TRK 206 UNTIL 735 FIX OVERFLY HANUR AT OR ABOVE 4000 HOLD AT FIX HANUR RIGHT TURN INBOUNDCOURSE 026 LEGDIST 4
+ TRANSITION STAMP FIX STAMP
+ TRANSITION TADUW HOLD AT FIX TADUW RIGHT TURN INBOUNDCOURSE 206 ALT 3500 LEGDIST 4
+ENDAPPROACHES

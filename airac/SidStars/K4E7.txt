@@ -1,0 +1,34 @@
+//K4E7 (ELLENDALE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SOTHA LATLON N 46 11.2095 W 98 42.6425
+FIX WAFTS LATLON N 45 51.646 W 98 20.126167
+FIX YURUY LATLON N 45 57.1135 W 98 26.383166
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 17
+RNW 31
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX WAFTS AT OR ABOVE 3000 FIX YURUY 3000 RNW 31 TRK 314 UNTIL 1808 FIX OVERFLY SOTHA AT OR ABOVE 4000 HOLD AT FIX SOTHA RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4
+ TRANSITION WAFTS HOLD AT FIX WAFTS RIGHT TURN INBOUNDCOURSE 314 ALT 3000 LEGDIST 4
+ENDAPPROACHES

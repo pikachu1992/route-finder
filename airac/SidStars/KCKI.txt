@@ -1,0 +1,36 @@
+//KCKI (WILLIAMSBURG REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GEVCE LATLON N 33 34.674667 W 79 40.42
+FIX JERIN LATLON N 33 51.3775 W 80 2.455166
+FIX JODKI LATLON N 33 39.393167 W 79 46.621166
+FIX UTOGY LATLON N 33 46.672667 W 79 56.225
+FIX ZAMGA LATLON N 33 44.856167 W 79 53.8245
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX JERIN AT OR ABOVE 3000 FIX UTOGY 1700 FIX ZAMGA AT OR ABOVE 840 RNW 14 TRK 140 UNTIL 334 FIX OVERFLY GEVCE AT OR ABOVE 3000 HOLD AT FIX GEVCE RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4
+ TRANSITION JERIN HOLD AT FIX JERIN RIGHT TURN INBOUNDCOURSE 140 ALT 3000 LEGDIST 4
+APPROACH RNV32 FIX GEVCE AT OR ABOVE 3000 FIX JODKI 1700 RNW 32 TRK 320 UNTIL 317 FIX OVERFLY JERIN AT OR ABOVE 3000 HOLD AT FIX JERIN RIGHT TURN INBOUNDCOURSE 140 LEGDIST 4
+ TRANSITION GEVCE HOLD AT FIX GEVCE RIGHT TURN INBOUNDCOURSE 320 ALT 3000 LEGDIST 4
+ENDAPPROACHES

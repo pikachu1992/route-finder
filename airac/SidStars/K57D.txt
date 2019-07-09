@@ -1,0 +1,34 @@
+//K57D (RAY COMMUNITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HIGIG LATLON N 42 45.118166 W 82 41.189666
+FIX HODPI LATLON N 42 44.019667 W 83 1.450834
+FIX IKTIH LATLON N 42 43.338833 W 83 11.409167
+FIX OVUHU LATLON N 42 44.147666 W 82 56.5275
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA10 FIX IKTIH AT OR ABOVE 2500 FIX HODPI 2500 FIX OVUHU AT OR ABOVE 1340 RNW 10 TRK 094 UNTIL 2000 FIX OVERFLY HIGIG AT OR ABOVE 4000 HOLD AT FIX HIGIG RIGHT TURN INBOUNDCOURSE 262 ALT 4000 LEGDIST 4
+ENDAPPROACHES

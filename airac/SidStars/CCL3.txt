@@ -1,0 +1,43 @@
+//CCL3 (CHRISTINA LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALSAV LATLON N 55 35.649 W 111 9.416833
+FIX IGVOX LATLON N 55 41.247667 W 110 25.760167
+FIX LEVEV LATLON N 55 36.3045 W 110 26.970833
+FIX MURAP LATLON N 55 37.117834 W 110 37.452833
+FIX SAVOG LATLON N 55 39.030667 W 111 2.931167
+FIX TAMEN LATLON N 55 38.253334 W 110 52.432
+FIX UDMAS LATLON N 55 50.667667 W 110 36.204167
+FIX UKPOP LATLON N 55 43.979333 W 111 1.7945
+FIX ULGAB LATLON N 55 36.924667 W 110 34.949
+FIX URMON LATLON N 55 32.152166 W 110 27.983833
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX SAVOG AT OR ABOVE 3700 FIX TAMEN 3230 RNW 08 FIX OVERFLY ULGAB 3300 HOLD AT FIX ULGAB LEFT TURN INBOUNDCOURSE 090 SPEED 200 LEGTIME 1
+ TRANSITION ALSAV FIX ALSAV SPEED 210
+ TRANSITION UKPOP FIX UKPOP SPEED 210
+APPROACH RNV26 FIX LEVEV AT OR ABOVE 3300 FIX MURAP 3220 RNW 26 HDG 263 UNTIL 2500 TURN RIGHT DIRECT FIX OVERFLY UDMAS 3300 SPEED 210 HOLD AT FIX UDMAS RIGHT TURN INBOUNDCOURSE 030 SPEED 230 LEGTIME 1
+ TRANSITION IGVOX FIX IGVOX SPEED 210
+ TRANSITION URMON FIX URMON SPEED 210
+ENDAPPROACHES

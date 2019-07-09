@@ -1,0 +1,55 @@
+//CYJN (ST-JEAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 45 19.456909 W 73 32.236201
+FIX AF002 LATLON N 45 16.841174 W 73 33.326506
+FIX AF003 LATLON N 45 14.115523 W 73 33.371567
+FIX AF004 LATLON N 45 11.482497 W 73 32.370486
+FIX AF005 LATLON N 45 9.137304 W 73 30.399753
+FIX DATUR LATLON N 45 7.176 W 73 27.422666
+FIX PI001 LATLON N 45 12.516487 W 73 22.196873
+FIX PI002 LATLON N 45 11.841176 W 73 28.22392
+FIX PI003 LATLON N 45 7.253443 W 73 27.606964
+FIX XIGID LATLON N 45 21.632 W 73 30.298667
+FIX YJN LATLON N 45 15.348667 W 73 19.276834
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 06
+RNW 11
+RNW 20
+RNW 24
+RNW 29
+ENDRNWS
+
+SIDS
+SID CYJN5
+ RNW 02 HDG 015 UNTIL 540 HDG 015 VECTORS
+ RNW 06 HDG 060 UNTIL 540 HDG 025 VECTORS
+ RNW 11 HDG 105 UNTIL 540 HDG 105 VECTORS
+ RNW 20 HDG 195 UNTIL 540 HDG 195 VECTORS
+ RNW 24 HDG 240 UNTIL 540 HDG 240 VECTORS
+ RNW 29 HDG 285 UNTIL 540 HDG 285 VECTORS
+ENDSIDS
+
+APPROACHES
+APPROACH VOR06 FIX YJN 1100 RNW 06 TRK 051 UNTIL 540 HDG 025 UNTIL 3000 TURN LEFT DIRECT FIX YJN 3000 HOLD AT FIX YJN RIGHT TURN INBOUNDCOURSE 106 LEGTIME 1
+ TRANSITION XIGID FIX XIGID FIX AF001 FIX AF002 FIX AF003 FIX AF004 FIX AF005 FIX DATUR AT OR ABOVE 2000
+ TRANSITION YJN FIX PI001 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2000 SPEED 210 FIX PI003 AT OR ABOVE 2000 SPEED 210
+ENDAPPROACHES

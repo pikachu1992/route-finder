@@ -1,0 +1,38 @@
+//DAUK (SIDI MAHDI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D199G LATLON N 32 56.7995 E 6 2.619667
+FIX D199H LATLON N 32 55.852 E 6 2.233333
+FIX FD01 LATLON N 32 58.6945 E 6 3.392833
+FIX FS01 LATLON N 32 58.178 E 6 3.182
+FIX TGU LATLON N 33 3.431666 E 6 5.328
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VDM01 FIX FD01 2140 FIX TGU 379 RNW 01 TRK 019 UNTIL 1480 TURN RIGHT DIRECT FIX TGU 3250
+ TRANSITION TGU1 FIX TGU AT OR ABOVE 3250 TRK 172 UNTIL 8.0 FROM FIX TGU TURN RIGHT DIRECT FIX D199H AT OR ABOVE 2140
+ TRANSITION TGU2 FIX TGU AT OR ABOVE 3250 TRK 185 UNTIL 7.0 FROM FIX TGU TURN RIGHT DIRECT FIX D199G AT OR ABOVE 2140
+APPROACH VOR01 FIX FS01 2140 FIX TGU 390 RNW 01 TRK 019 UNTIL 1480 TURN RIGHT DIRECT FIX TGU 3250
+ TRANSITION TGU1 FIX TGU AT OR ABOVE 3250 TRK 172 UNTIL 7.0 FROM FIX TGU
+ TRANSITION TGU2 FIX TGU AT OR ABOVE 3250 TRK 185 UNTIL 5.8 FROM FIX TGU
+ENDAPPROACHES

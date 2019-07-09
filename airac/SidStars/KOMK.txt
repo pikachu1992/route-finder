@@ -1,0 +1,40 @@
+//KOMK (OMAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ENUVE LATLON N 48 20.5285 W 119 30.0985
+FIX EPH LATLON N 47 22.675166 W 119 25.440167
+FIX ETORY LATLON N 48 16.552166 W 119 29.486333
+FIX GETNG LATLON N 48 25.5095 W 119 31.649666
+FIX HVARD LATLON N 48 17.545834 W 119 30.268166
+FIX PAWYO LATLON N 48 10.068 W 119 29.5
+FIX WAYWE LATLON N 48 21.5225 W 119 30.251666
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+SIDS
+SID GETNG1 RNW 17 TRK 170 UNTIL 1701 FIX GETNG FIX HVARD FIX EPH AT OR ABOVE 4200
+ENDSIDS
+
+APPROACHES
+APPROACH GPS35 FIX ENUVE AT OR ABOVE 3900 FIX WAYWE 3600 RNW 35 TRK 335 UNTIL 1705 TURN LEFT DIRECT FIX PAWYO AT OR ABOVE 5000 HOLD AT FIX PAWYO RIGHT TURN INBOUNDCOURSE 158 LEGDIST 5
+ TRANSITION EPH FIX EPH FIX PAWYO AT OR ABOVE 6000 FIX ETORY AT OR ABOVE 5000
+ENDAPPROACHES

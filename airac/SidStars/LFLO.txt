@@ -1,0 +1,41 @@
+//LFLO (ROANNE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LO402 LATLON N 46 14.283334 E 4 14.515
+FIX LO404 LATLON N 46 17.91 E 3 56.286667
+FIX LO406 LATLON N 46 13.776667 E 4 4.443334
+FIX LO408 LATLON N 46 8.5 E 4 2.218333
+FIX RNNNB LATLON N 46 6.741667 E 4 2.226667
+FIX ROA LATLON N 46 3.55 E 3 59.956667
+FIX SINPO LATLON N 46 19.5 E 3 17
+FIX SNNB LATLON N 46 17.661667 E 4 7.283333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV20 FIX LO406 AT OR ABOVE 3700 SPEED 210 FIX LO408 2900 RNW 20 TRK 195 UNTIL 1700 TURN LEFT DIRECT FIX OVERFLY SNNB 3700 SPEED 160
+ TRANSITION LO402 FIX LO402 AT OR ABOVE 4900
+ TRANSITION SINPO FIX SINPO FIX LO404 AT OR ABOVE 5500
+ TRANSITION SN FIX SNNB AT OR ABOVE 3700
+APPROACH VOR20 FIX RNNNB 2400 RNW 20 FIX OVERFLY ROA AT OR ABOVE 1510 TURN LEFT DIRECT FIX RNNNB 3700 SPEED 170 FIX SNNB
+ TRANSITION SN HOLD AT FIX SNNB LEFT TURN INBOUNDCOURSE 326 ALT 3700 SPEED 210 LEGTIME 1 FIX SNNB TRK 326 UNTIL 0.5 FROM FIX SNNB TRK 146 INTERCEPT RADIAL 204 TO FIX RNNNB
+ENDAPPROACHES

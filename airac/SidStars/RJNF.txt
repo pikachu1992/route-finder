@@ -1,0 +1,41 @@
+//RJNF (FUKUI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AWARA LATLON N 36 17.989166 E 136 5.7865
+FIX GOZEN LATLON N 36 25.082 E 136 11.942833
+FIX KAGAR LATLON N 36 18.386167 E 136 12.566833
+FIX NF181 LATLON N 36 13.390667 E 136 13.009333
+FIX NF182 LATLON N 36 5.757833 E 136 13.683833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID AWARA1
+ RNW 18 HDG 184 UNTIL 800 TURN RIGHT DIRECT FIX AWARA
+ RNW 36 HDG 004 UNTIL 500 FIX AWARA
+ENDSIDS
+
+APPROACHES
+APPROACH RNV18 FIX KAGAR AT OR ABOVE 1500 FIX NF181 1500 RNW 18 FIX OVERFLY NF182 TURN RIGHT DIRECT FIX AWARA 3000 HOLD AT FIX AWARA LEFT TURN INBOUNDCOURSE 077 ALT 3000 SPEED 170 LEGDIST 4
+ TRANSITION AWARA FIX AWARA AT OR ABOVE 3000
+ TRANSITION GOZEN FIX GOZEN AT OR ABOVE 3000
+ENDAPPROACHES

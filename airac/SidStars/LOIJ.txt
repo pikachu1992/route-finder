@@ -1,0 +1,44 @@
+//LOIJ (ST JOHANN/TIROL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERKIR LATLON N 47 32.266667 E 12 0.533333
+FIX IJ601 LATLON N 47 30.435833 E 12 20.2595
+FIX IJ602 LATLON N 47 30.899 E 12 15.3265
+FIX IJ801 LATLON N 47 31.804834 E 12 8.473333
+FIX IJ802 LATLON N 47 31.574 E 12 12.3485
+FIX IJ803 LATLON N 47 31.249667 E 12 21.284167
+FIX IJ804 LATLON N 47 31.113167 E 12 25.096667
+FIX IJ805 LATLON N 47 35.412833 E 12 26.866834
+FIX IJ806 LATLON N 47 37.767 E 12 19.696
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+SIDS
+SID ERKI1G RNW 13 RNW 31 FIX IJ601 AT OR ABOVE 4400 FIX IJ602 AT OR ABOVE 5900 FIX OVERFLY ERKIR AT OR ABOVE 9000
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA13 FIX IJ801 AT OR ABOVE 6500 FIX IJ802 6000 FIX OVERFLY IJ803 3960 RNW 13 FIX OVERFLY IJ804 TURN LEFT DIRECT FIX IJ805 FIX IJ806 FIX ERKIR AT OR ABOVE 9000 HOLD AT FIX ERKIR RIGHT TURN INBOUNDCOURSE 092 ALT 9000 SPEED 170 LEGTIME 1
+ TRANSITION ERKIR FIX ERKIR AT OR ABOVE 9000
+APPROACH RNVA31 FIX IJ801 AT OR ABOVE 6500 FIX IJ802 6000 FIX OVERFLY IJ803 3960 RNW 31 FIX OVERFLY IJ804 TURN LEFT DIRECT FIX IJ805 FIX IJ806 FIX ERKIR AT OR ABOVE 9000 HOLD AT FIX ERKIR RIGHT TURN INBOUNDCOURSE 092 ALT 9000 SPEED 170 LEGTIME 1
+ TRANSITION ERKIR FIX ERKIR AT OR ABOVE 9000
+ENDAPPROACHES

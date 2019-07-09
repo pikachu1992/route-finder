@@ -1,0 +1,49 @@
+//YSTH (ST HELENS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX STHEA LATLON S 41 26.900833 E 148 32.816666
+FIX STHEB LATLON S 41 22.7965 E 148 38.164333
+FIX STHEC LATLON S 41 17.628833 E 148 34.884167
+FIX STHEF LATLON S 41 21.1595 E 148 25.062167
+FIX STHEH LATLON S 41 16.386334 E 148 23.1
+FIX STHEI LATLON S 41 21.981167 E 148 31.611833
+FIX STHEM LATLON S 41 20.331833 E 148 18.515167
+FIX STHWD LATLON S 41 22.843667 E 147 57.824666
+FIX STHWE LATLON S 41 17.702333 E 147 54.441667
+FIX STHWF LATLON S 41 19.199333 E 148 7.561333
+FIX STHWG LATLON S 41 13.547167 E 147 59.6875
+FIX STHWH LATLON S 41 20.843167 E 148 21.9995
+FIX STHWI LATLON S 41 18.450833 E 148 1.000834
+FIX STHWM LATLON S 41 20.249 E 148 16.748
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ08 FIX STHWI AT OR ABOVE 4540 FIX STHWF 2730 FIX OVERFLY STHWM 208 RNW 08 FIX STHWH TRK 084 UNTIL 4000
+ TRANSITION STHWD FIX STHWD AT OR ABOVE 6200
+ TRANSITION STHWE FIX STHWE AT OR ABOVE 6200
+ TRANSITION STHWG FIX STHWG AT OR ABOVE 6200
+APPROACH RNV26 FIX STHEI AT OR ABOVE 3590 FIX STHEF 2000 FIX OVERFLY STHEM 406 RNW 26 TURN RIGHT DIRECT FIX STHEH HDG 050 VECTORS
+ TRANSITION STHEA FIX STHEA AT OR ABOVE 4000
+ TRANSITION STHEB FIX STHEB AT OR ABOVE 4000
+ TRANSITION STHEC FIX STHEC AT OR ABOVE 4000
+ENDAPPROACHES

@@ -1,0 +1,38 @@
+//YSPE (STANTHORPE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SPEWD LATLON S 28 41.656 E 151 44.568
+FIX SPEWE LATLON S 28 36.877333 E 151 40.941167
+FIX SPEWF LATLON S 28 37.085666 E 151 52.301167
+FIX SPEWG LATLON S 28 32.2365 E 151 44.788667
+FIX SPEWH LATLON S 28 37.250666 E 152 1.389334
+FIX SPEWI LATLON S 28 36.9815 E 151 46.621166
+FIX SPEWM LATLON S 28 37.19 E 151 57.981167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ08 FIX SPEWI AT OR ABOVE 5600 FIX SPEWF 4600 FIX OVERFLY SPEWM 3011 RNW 08 FIX OVERFLY SPEWH HDG 280 VECTORS
+ TRANSITION SPEWD FIX SPEWD AT OR ABOVE 5600 SPEED 210
+ TRANSITION SPEWE FIX SPEWE AT OR ABOVE 5600 SPEED 210
+ TRANSITION SPEWG FIX SPEWG AT OR ABOVE 5600 SPEED 210
+ENDAPPROACHES

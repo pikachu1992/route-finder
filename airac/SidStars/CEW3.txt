@@ -1,0 +1,43 @@
+//CEW3 (ST PAUL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUXEV LATLON N 54 0.290167 W 111 31.554167
+FIX IGRUP LATLON N 53 52.718333 W 111 4.919333
+FIX IMUGU LATLON N 54 1.033834 W 111 41.645333
+FIX LIDAL LATLON N 54 0.468833 W 111 33.960167
+FIX SELEB LATLON N 53 58.161334 W 111 3.694333
+FIX TADOK LATLON N 53 58.944 W 111 13.7685
+FIX TIGAB LATLON N 53 58.761334 W 111 11.401166
+FIX URLUS LATLON N 54 6.482833 W 111 40.496167
+FIX XOTUB LATLON N 54 3.604166 W 111 2.463833
+FIX XUGAG LATLON N 53 55.5845 W 111 42.789334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX IMUGU AT OR ABOVE 4300 FIX DUXEV 3800 RNW 08 FIX OVERFLY TIGAB 4300 HOLD AT FIX TIGAB RIGHT TURN INBOUNDCOURSE 083 SPEED 175 LEGTIME 1
+ TRANSITION URLUS FIX URLUS
+ TRANSITION XUGAG FIX XUGAG
+APPROACH RNV26 FIX SELEB AT OR ABOVE 4300 FIX TADOK 3800 RNW 26 FIX OVERFLY LIDAL 4300 HOLD AT FIX LIDAL RIGHT TURN INBOUNDCOURSE 263 SPEED 175 LEGTIME 1
+ TRANSITION IGRUP FIX IGRUP
+ TRANSITION XOTUB FIX XOTUB
+ENDAPPROACHES

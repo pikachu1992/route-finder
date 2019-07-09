@@ -1,0 +1,44 @@
+//KSDY (SIDNEY-RICHLAND REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOSPE LATLON N 47 37.052666 W 104 15.188833
+FIX CATUM LATLON N 47 31.8005 W 104 18.588167
+FIX EXADE LATLON N 47 35.946334 W 104 32.676833
+FIX FANIX LATLON N 47 47.538 W 104 8.3615
+FIX GINBE LATLON N 48 0.591 W 103 54.732167
+FIX HAKET LATLON N 47 53.052167 W 104 4.750667
+FIX JUNEG LATLON N 47 39.3875 W 104 13.672834
+FIX LAMBE LATLON N 47 45.681667 W 104 21.013
+FIX OKAGE LATLON N 47 45.004166 W 104 10.015834
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 11
+RNW 19
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX CATUM AT OR ABOVE 4600 FIX BOSPE 3700 FIX JUNEG AT OR ABOVE 2880 RNW 01 TRK 015 UNTIL 2238 FIX OVERFLY HAKET AT OR ABOVE 4600 HOLD AT FIX HAKET RIGHT TURN INBOUNDCOURSE 195 LEGDIST 5
+ TRANSITION CATUM HOLD AT FIX CATUM RIGHT TURN INBOUNDCOURSE 015 ALT 4600 LEGDIST 5
+ TRANSITION EXADE FIX EXADE
+APPROACH RNV19 FIX HAKET AT OR ABOVE 4600 FIX FANIX 3700 FIX OKAGE AT OR ABOVE 2820 RNW 19 TRK 195 UNTIL 2360 FIX OVERFLY CATUM AT OR ABOVE 4600 HOLD AT FIX CATUM RIGHT TURN INBOUNDCOURSE 015 LEGDIST 5
+ TRANSITION GINBE FIX GINBE
+ TRANSITION LAMBE FIX LAMBE FIX OVERFLY HAKET AT OR ABOVE 4600 HOLD AT FIX HAKET RIGHT TURN INBOUNDCOURSE 195 ALT 4600 LEGDIST 5
+ENDAPPROACHES

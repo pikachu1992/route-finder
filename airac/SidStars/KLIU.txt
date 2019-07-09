@@ -1,0 +1,38 @@
+//KLIU (LITTLEFIELD BROWN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CATIG LATLON N 33 53.668667 W 102 23.877334
+FIX FLATT LATLON N 33 39.0325 W 102 20.851333
+FIX GOVTY LATLON N 33 44.517667 W 102 27.2795
+FIX HOGIX LATLON N 33 50.5455 W 102 25.039166
+FIX WINNS LATLON N 33 35.415334 W 102 48.562834
+FIX ZUBUM LATLON N 33 39.731666 W 102 31.630667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 13
+RNW 19
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX GOVTY AT OR ABOVE 6000 FIX HOGIX 5200 FIX CATIG AT OR ABOVE 4160 RNW 01 TRK 010 UNTIL 3982 TURN RIGHT DIRECT FIX OVERFLY FLATT AT OR ABOVE 6000 HOLD AT FIX FLATT RIGHT TURN INBOUNDCOURSE 255 LEGDIST 5
+ TRANSITION FLATT FIX FLATT
+ TRANSITION WINNS FIX WINNS FIX ZUBUM AT OR ABOVE 6100
+ENDAPPROACHES

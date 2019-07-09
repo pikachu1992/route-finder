@@ -1,0 +1,31 @@
+//SPEO (TTE FAP JAIME DE MONTREUIL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BTE LATLON S 9 8.852833 W 78 31.312667
+FIX FF19 LATLON S 9 2.62 W 78 30.547
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH VOR19 FIX FF19 2000 RNW 19 FIX OVERFLY BTE HDG 186 UNTIL 2000 TURN LEFT DIRECT FIX BTE HOLD AT FIX BTE LEFT TURN INBOUNDCOURSE 008 ALT 3000 LEGTIME 1
+ TRANSITION BTE FIX BTE AT OR ABOVE 3000 TRK 354 UNTIL 7.5 FROM FIX BTE
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//GATS (TESSALIT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ABNEB LATLON N 20 5.629834 E 0 48.897
+FIX ADOKO LATLON N 20 2.034167 E 0 52.6025
+FIX AKDEK LATLON N 20 27.120667 E 1 4.674167
+FIX BIMOL LATLON N 20 23.526167 E 1 8.389166
+FIX EBTAM LATLON N 20 19.927667 E 1 12.0985
+FIX TS501 LATLON N 20 9.1305 E 0 52.704167
+FIX TS502 LATLON N 20 17.607833 E 1 1.932833
+FIX TS503 LATLON N 20 20.028 E 1 4.5735
+FIX TS504 LATLON N 20 11.554 E 0 55.339166
+FIX ZIMOG LATLON N 20 9.224 E 0 45.188666
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ABNEB AT OR ABOVE 3900 SPEED 230 FIX TS501 3900 RNW 05 FIX OVERFLY TS502 TURN LEFT DIRECT FIX ZIMOG AT OR ABOVE 3900 SPEED 230
+ TRANSITION ADOKO FIX ADOKO AT OR ABOVE 3900 SPEED 230
+ TRANSITION ZIMOG FIX ZIMOG AT OR ABOVE 3900 SPEED 230
+APPROACH RNV23 FIX BIMOL AT OR ABOVE 3900 SPEED 230 FIX TS503 3900 RNW 23 FIX OVERFLY TS504 TURN RIGHT DIRECT FIX AKDEK AT OR ABOVE 3900 SPEED 230
+ TRANSITION AKDEK FIX AKDEK AT OR ABOVE 3900 SPEED 230
+ TRANSITION EBTAM FIX EBTAM AT OR ABOVE 3900 SPEED 230
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//K1M5 (PORTLAND MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COLBU LATLON N 36 23.984333 W 86 31.4245
+FIX DABFA LATLON N 36 30.768 W 86 29.781334
+FIX EBILY LATLON N 36 33.398833 W 86 29.142667
+FIX EDROY LATLON N 36 47.354333 W 86 25.740833
+FIX UPUNE LATLON N 36 40.573667 W 86 27.3965
+FIX VIGKU LATLON N 36 37.646833 W 86 28.109666
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX COLBU AT OR ABOVE 3000 FIX DABFA 2300 FIX EBILY AT OR ABOVE 1440 RNW 01 TRK 013 UNTIL 1090 FIX OVERFLY EDROY AT OR ABOVE 3000 HOLD AT FIX EDROY RIGHT TURN INBOUNDCOURSE 193 LEGDIST 4
+ TRANSITION COLBU HOLD AT FIX COLBU RIGHT TURN INBOUNDCOURSE 013 ALT 3000 LEGDIST 4
+APPROACH RNV19 FIX EDROY AT OR ABOVE 3000 FIX UPUNE 2300 FIX VIGKU AT OR ABOVE 1340 RNW 19 TRK 193 UNTIL 1020 FIX OVERFLY COLBU AT OR ABOVE 3000 HOLD AT FIX COLBU RIGHT TURN INBOUNDCOURSE 013 LEGDIST 4
+ TRANSITION EDROY HOLD AT FIX EDROY RIGHT TURN INBOUNDCOURSE 193 ALT 3000 LEGDIST 4
+ENDAPPROACHES

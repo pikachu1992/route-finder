@@ -1,0 +1,44 @@
+//CYML (CHARLEVOIX)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGMAV LATLON N 47 30.496166 W 69 52.390333
+FIX ALVOB LATLON N 47 29.648333 W 70 1.150667
+FIX BOKVA LATLON N 47 32.640334 W 70 7.059
+FIX DUMVI LATLON N 47 41.4765 W 69 55.407833
+FIX MURUG LATLON N 47 37.7465 W 70 17.191166
+FIX ONBOB LATLON N 47 46.7515 W 70 22.743167
+FIX PERPI LATLON N 47 38.717333 W 70 31.550833
+FIX RONSU LATLON N 47 42.735833 W 70 27.152666
+FIX SAXEM LATLON N 47 23.712334 W 69 59.893667
+FIX SILMU LATLON N 47 39.081 W 70 19.849667
+FIX TUDUB LATLON N 47 33.090167 W 70 7.949
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX RONSU AT OR ABOVE 3500 FIX SILMU 2900 FIX MURUG AT OR ABOVE 2070 RNW 15 FIX OVERFLY TUDUB 4100 HOLD AT FIX TUDUB RIGHT TURN INBOUNDCOURSE 144 SPEED 250 LEGTIME 1
+ TRANSITION ONBOB FIX ONBOB SPEED 210
+ TRANSITION PERPI FIX PERPI SPEED 210
+APPROACH RNV33 FIX ALVOB AT OR ABOVE 2600 FIX BOKVA 2600 RNW 33 HDG 323 UNTIL 1700 TURN RIGHT DIRECT FIX OVERFLY DUMVI 4200 SPEED 220 HOLD AT FIX DUMVI RIGHT TURN INBOUNDCOURSE 094 LEGTIME 1
+ TRANSITION AGMAV FIX AGMAV
+ TRANSITION SAXEM FIX SAXEM
+ENDAPPROACHES

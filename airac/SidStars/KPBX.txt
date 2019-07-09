@@ -1,0 +1,40 @@
+//KPBX (PIKE CO-HATCHER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CILOM LATLON N 37 32.985167 W 82 49.260167
+FIX GYMUS LATLON N 37 33.331166 W 82 41.4325
+FIX OBSEW LATLON N 37 34.341667 W 82 17.394667
+FIX PEAIR LATLON N 37 34.027 W 82 25.087166
+FIX XUYBU LATLON N 37 33.498334 W 82 37.573
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 09
+RNW 20
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH ILS27 FIX OBSEW AT OR ABOVE 4500 FIX PEAIR 3700 RNW 27 TRK 274 UNTIL 1870 FIX CILOM AT OR ABOVE 4500 HOLD AT FIX CILOM RIGHT TURN INBOUNDCOURSE 094 LEGDIST 5
+ TRANSITION OBSEW HOLD AT FIX OBSEW RIGHT TURN INBOUNDCOURSE 274 ALT 4500 LEGTIME 1
+APPROACH RNV09 FIX CILOM AT OR ABOVE 4500 FIX GYMUS 3200 FIX XUYBU AT OR ABOVE 2220 RNW 09 TRK 094 UNTIL 1709 FIX OVERFLY OBSEW AT OR ABOVE 4500 HOLD AT FIX OBSEW RIGHT TURN INBOUNDCOURSE 274 LEGDIST 5
+ TRANSITION CILOM HOLD AT FIX CILOM RIGHT TURN INBOUNDCOURSE 094 ALT 4500 LEGDIST 5
+APPROACH RNV27 FIX OBSEW AT OR ABOVE 4500 FIX PEAIR 3700 RNW 27 TRK 274 UNTIL 1663 FIX OVERFLY CILOM AT OR ABOVE 4500 HOLD AT FIX CILOM RIGHT TURN INBOUNDCOURSE 094 LEGDIST 5
+ TRANSITION OBSEW HOLD AT FIX OBSEW RIGHT TURN INBOUNDCOURSE 274 ALT 4500 LEGDIST 5
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//K0F2 (BOWIE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEKEX LATLON N 33 41.5905 W 97 47.1815
+FIX CELPO LATLON N 33 30.552667 W 97 45.881167
+FIX FENUP LATLON N 33 24.437833 W 97 45.163166
+FIX HERAM LATLON N 33 23.945167 W 97 51.106667
+FIX HIXEL LATLON N 33 47.064833 W 97 41.801167
+FIX JABEV LATLON N 33 46.575 W 97 47.771
+FIX JIRSO LATLON N 33 24.925834 W 97 39.2185
+FIX PEDUE LATLON N 33 46.080334 W 97 53.7395
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX JABEV AT OR ABOVE 2800 SPEED 180 FIX CEKEX 2800 RNW 17 TRK 170 UNTIL 1351 FIX OVERFLY FENUP AT OR ABOVE 3000 HOLD AT FIX FENUP RIGHT TURN INBOUNDCOURSE 350 LEGDIST 4
+ TRANSITION HIXEL FIX HIXEL SPEED 200
+ TRANSITION JABEV HOLD AT FIX JABEV RIGHT TURN INBOUNDCOURSE 170 ALT 2800 SPEED 180 LEGDIST 4
+ TRANSITION PEDUE FIX PEDUE SPEED 200
+APPROACH RNV35 FIX FENUP AT OR ABOVE 2900 SPEED 180 FIX CELPO 2800 RNW 35 TRK 350 UNTIL 1348 FIX OVERFLY JABEV AT OR ABOVE 2800 HOLD AT FIX JABEV RIGHT TURN INBOUNDCOURSE 170 LEGDIST 4
+ TRANSITION FENUP HOLD AT FIX FENUP RIGHT TURN INBOUNDCOURSE 350 ALT 2900 SPEED 180 LEGDIST 4
+ TRANSITION HERAM FIX HERAM
+ TRANSITION JIRSO FIX JIRSO
+ENDAPPROACHES

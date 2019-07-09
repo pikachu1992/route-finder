@@ -1,0 +1,42 @@
+//VVCM (CA MAU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF09 LATLON N 9 10.860167 E 105 6.2215
+FIX FF27 LATLON N 9 10.586833 E 105 15.124
+FIX HUHEU LATLON N 9 24.466667 E 105 19.016666
+FIX QLNB LATLON N 9 10.571666 E 105 10.601666
+FIX TRN LATLON N 10 5.001667 E 105 42.328834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID HUHEU
+ RNW 09 HDG 092 UNTIL 660 HDG 000 INTERCEPT RADIAL 031 TO FIX HUHEU FIX HUHEU FIX TRN
+ RNW 27 HDG 272 UNTIL 990 HDG 060 INTERCEPT RADIAL 031 TO FIX HUHEU FIX HUHEU FIX TRN
+ENDSIDS
+
+APPROACHES
+APPROACH NDB09 FIX FF09 1320 RNW 09 FIX OVERFLY QLNB TRK 094 UNTIL 1320 TURN LEFT DIRECT FIX QLNB 1810 HOLD AT FIX QLNB LEFT TURN INBOUNDCOURSE 256 ALT 1810 LEGTIME 1
+ TRANSITION QL FIX QLNB AT OR ABOVE 1810 TRK 256 UNTIL 6.0 FROM FIX QLNB
+APPROACH NDB27 FIX FF27 1320 RNW 27 FIX OVERFLY QLNB TRK 270 UNTIL 1320 TURN RIGHT DIRECT FIX QLNB 1810 HOLD AT FIX QLNB RIGHT TURN INBOUNDCOURSE 108 ALT 1810 LEGTIME 1
+ TRANSITION QL FIX QLNB AT OR ABOVE 1810 TRK 108 UNTIL 6.0 FROM FIX QLNB
+ENDAPPROACHES

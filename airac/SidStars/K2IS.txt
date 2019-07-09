@@ -1,0 +1,39 @@
+//K2IS (AIRGLADES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AHORE LATLON N 26 52.138834 W 81 12.097667
+FIX BLEED LATLON N 26 40.383334 W 80 58.879834
+FIX COXOK LATLON N 26 47.835667 W 81 7.250833
+FIX GILBI LATLON N 26 24.5295 W 80 43.741
+FIX NICHE LATLON N 26 58.038167 W 81 11.204167
+FIX SIGNL LATLON N 27 2.006666 W 81 7.429
+FIX VIGGO LATLON N 26 23.9455 W 80 50.6715
+FIX WODIX LATLON N 26 36.072 W 80 54.050167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX AHORE AT OR ABOVE 3000 FIX COXOK 1600 RNW 13 TRK 140 UNTIL 420 TURN LEFT DIRECT FIX OVERFLY SIGNL AT OR ABOVE 5000 HOLD AT FIX SIGNL RIGHT TURN INBOUNDCOURSE 225 ALT 5000 LEGDIST 4
+ TRANSITION SIGNL FIX SIGNL FIX NICHE AT OR ABOVE 4000
+APPROACH RNV31 FIX WODIX AT OR ABOVE 1800 FIX BLEED 1600 RNW 31 TRK 320 UNTIL 420 TURN LEFT DIRECT FIX OVERFLY WODIX AT OR ABOVE 1600 HOLD AT FIX WODIX RIGHT TURN INBOUNDCOURSE 320 LEGDIST 4
+ TRANSITION GILBI FIX GILBI FIX VIGGO AT OR ABOVE 2400
+ENDAPPROACHES

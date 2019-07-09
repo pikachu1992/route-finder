@@ -1,0 +1,47 @@
+//PHHN (HANA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOYEY LATLON N 20 54.699 W 156 0.67
+FIX GPYLE LATLON N 20 47.7235 W 155 49.769833
+FIX HALEU LATLON N 20 42.705167 W 155 49.78
+FIX IHEPA LATLON N 20 47.7375 W 156 0.016
+FIX INUCU LATLON N 20 47.732333 W 155 55.2415
+FIX LNBRG LATLON N 20 38.318 W 155 56.023834
+FIX OPANA LATLON N 20 56.6435 W 156 11.58
+FIX PULPS LATLON N 20 28.329667 W 155 53.957666
+FIX SARDS LATLON N 20 32.399 W 155 42.300667
+FIX SEYOL LATLON N 20 52.741834 W 155 49.7595
+FIX SIPAE LATLON N 20 47.734834 W 155 57.347666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID LNBRG2 RNW 08 HDG 079 UNTIL 578 FIX OVERFLY SIPAE FIX LNBRG SPEED 200
+ENDSIDS
+
+APPROACHES
+APPROACH RNV26 FIX GPYLE AT OR ABOVE 2500 FIX INUCU 1700 FIX OVERFLY IHEPA 255 RNW 26 TRK 259 UNTIL 478 TURN RIGHT DIRECT FIX OVERFLY GPYLE AT OR ABOVE 2500 HOLD AT FIX GPYLE RIGHT TURN INBOUNDCOURSE 259 LEGDIST 4
+ TRANSITION GPYLE HOLD AT FIX GPYLE RIGHT TURN INBOUNDCOURSE 259 ALT 2500 LEGDIST 4
+ TRANSITION OPANA FIX OPANA FIX GOYEY AT OR ABOVE 3800 FIX SEYOL AT OR ABOVE 3000
+ TRANSITION PULPS FIX PULPS FIX HALEU AT OR ABOVE 3000
+ TRANSITION SARDS FIX SARDS FIX HALEU AT OR ABOVE 3000
+ENDAPPROACHES

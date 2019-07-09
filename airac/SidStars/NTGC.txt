@@ -1,0 +1,46 @@
+//NTGC (TIKEHAU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GC401 LATLON S 15 8.415 W 148 18.74
+FIX GC402 LATLON S 15 5.951666 W 148 8.995
+FIX GC403 LATLON S 15 3.77 W 148 20.155
+FIX GC404 LATLON S 15 1.33 W 148 10.511666
+FIX KABLU LATLON S 15 4.815 W 148 25.04
+FIX KADER LATLON S 14 59.825 W 148 5.298334
+FIX KETOX LATLON S 15 4.683334 W 148 3.995
+FIX KEVOL LATLON S 15 9.676667 W 148 23.743333
+FIX KILIL LATLON S 15 14.536667 W 148 22.445
+FIX KIMEP LATLON S 15 9.541667 W 148 2.688334
+FIX OLKID LATLON S 15 7.22 W 148 14.01
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX KEVOL AT OR ABOVE 1500 FIX GC401 1500 RNW 06 TRK 063 UNTIL 800 TURN LEFT DIRECT FIX GC403 FIX KABLU TURN LEFT DIRECT FIX KEVOL AT OR ABOVE 1500
+ TRANSITION KABLU FIX KABLU AT OR ABOVE 1500
+ TRANSITION KILIL FIX KILIL AT OR ABOVE 1500
+ TRANSITION OLKID FIX OLKID AT OR ABOVE 1500 FIX GC403 FIX KABLU
+APPROACH RNV24 FIX KETOX AT OR ABOVE 1500 FIX GC402 1500 RNW 24 TRK 243 UNTIL 800 TURN RIGHT DIRECT FIX GC404 FIX KADER TURN RIGHT DIRECT FIX KETOX AT OR ABOVE 1500
+ TRANSITION KADER FIX KADER AT OR ABOVE 1500
+ TRANSITION KIMEP FIX KIMEP AT OR ABOVE 1500
+ TRANSITION OLKID FIX OLKID AT OR ABOVE 1500 FIX GC404 FIX KADER
+ENDAPPROACHES

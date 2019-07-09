@@ -1,0 +1,43 @@
+//K6J4 (SALUDA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVIGY LATLON N 34 0.875 W 81 46.717667
+FIX CIXUP LATLON N 34 6.164833 W 81 39.660667
+FIX CUBOK LATLON N 33 50.383834 W 81 48.627833
+FIX FISIK LATLON N 34 7.671334 W 81 51.567833
+FIX FONLU LATLON N 33 44.343334 W 81 49.724
+FIX JIVPO LATLON N 33 43.591 W 81 43.796666
+FIX ODODY LATLON N 34 6.9205 W 81 45.613333
+FIX TEPDE LATLON N 33 45.090833 W 81 55.653
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX FONLU AT OR ABOVE 2500 FIX CUBOK 2200 RNW 01 TRK 015 UNTIL 940 TURN LEFT DIRECT FIX OVERFLY FONLU AT OR ABOVE 2500 HOLD AT FIX FONLU LEFT TURN INBOUNDCOURSE 015 LEGDIST 4
+ TRANSITION FONLU HOLD AT FIX FONLU LEFT TURN INBOUNDCOURSE 015 ALT 2500 LEGDIST 4
+ TRANSITION JIVPO FIX JIVPO AT OR ABOVE 2500
+ TRANSITION TEPDE FIX TEPDE AT OR ABOVE 2500
+APPROACH RNV19 FIX ODODY AT OR ABOVE 2500 FIX AVIGY 2200 RNW 19 FIX OVERFLY FONLU AT OR ABOVE 2500 HOLD AT FIX FONLU LEFT TURN INBOUNDCOURSE 015 LEGDIST 4
+ TRANSITION CIXUP FIX CIXUP AT OR ABOVE 2500
+ TRANSITION FISIK FIX FISIK AT OR ABOVE 2500
+ TRANSITION ODODY HOLD AT FIX ODODY RIGHT TURN INBOUNDCOURSE 195 ALT 2500 LEGDIST 4
+ENDAPPROACHES

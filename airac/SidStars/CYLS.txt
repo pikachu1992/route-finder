@@ -1,0 +1,44 @@
+//CYLS (LAKE SIMCOE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAPEV LATLON N 44 29.012 W 79 36.675167
+FIX LEVIP LATLON N 44 29.440667 W 79 27.055
+FIX MURON LATLON N 44 23.501333 W 79 47.527166
+FIX MURVO LATLON N 44 34.793167 W 79 19.097666
+FIX NOXOR LATLON N 44 33.479666 W 79 48.440833
+FIX NUGUL LATLON N 44 24.811 W 79 18.267667
+FIX OBVEG LATLON N 44 28.878 W 79 39.620666
+FIX ODKIK LATLON N 44 29.440667 W 79 27.049166
+FIX PIDKA LATLON N 44 28.875 W 79 39.689333
+FIX ULINO LATLON N 44 29.802167 W 79 18.682
+FIX UMEDI LATLON N 44 28.4905 W 79 47.983333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX UMEDI AT OR ABOVE 3000 FIX OBVEG 2300 FIX DAPEV AT OR ABOVE 1630 RNW 10 FIX OVERFLY LEVIP 3100 HOLD AT FIX LEVIP RIGHT TURN INBOUNDCOURSE 097 LEGTIME 1
+ TRANSITION MURON FIX MURON
+ TRANSITION NOXOR FIX NOXOR
+APPROACH RNV28 FIX ULINO AT OR ABOVE 3000 FIX ODKIK 2300 RNW 28 FIX OVERFLY PIDKA 3100 HOLD AT FIX PIDKA RIGHT TURN INBOUNDCOURSE 277 LEGTIME 1
+ TRANSITION MURVO FIX MURVO
+ TRANSITION NUGUL FIX NUGUL
+ENDAPPROACHES

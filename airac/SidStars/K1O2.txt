@@ -1,0 +1,45 @@
+//K1O2 (LAMPSON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEVLA LATLON N 39 2.929 W 122 46.477
+FIX ENI LATLON N 39 3.193 W 123 16.459667
+FIX HEBLU LATLON N 39 8.695333 W 122 52.645333
+FIX MUFEL LATLON N 38 59.581333 W 122 54.043834
+FIX NADIE LATLON N 39 5.273833 W 122 54.083333
+FIX SAVPE LATLON N 39 11.249333 W 123 0.555833
+FIX TAPNE LATLON N 39 11.279333 W 122 54.125167
+FIX WEPLO LATLON N 39 14.265 W 123 5.637
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+SIDS
+SID LAKPT3 RNW 10 HDG 103 UNTIL 1880 FIX CEVLA FIX HEBLU SPEED 175 FIX ENI
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA10 FIX TAPNE AT OR ABOVE 5800 FIX NADIE 4700 FIX OVERFLY MUFEL 2580 RNW 10 TRK 164 UNTIL 2580 TURN LEFT DIRECT FIX OVERFLY WEPLO AT OR ABOVE 8000 HOLD AT FIX WEPLO RIGHT TURN INBOUNDCOURSE 021 LEGDIST 7
+ TRANSITION ENI FIX ENI FIX SAVPE AT OR ABOVE 6700
+ TRANSITION WEPLO FIX WEPLO FIX SAVPE AT OR ABOVE 6700
+APPROACH RNVA28 FIX TAPNE AT OR ABOVE 5800 FIX NADIE 4700 FIX OVERFLY MUFEL 2580 RNW 28 TRK 164 UNTIL 2580 TURN LEFT DIRECT FIX OVERFLY WEPLO AT OR ABOVE 8000 HOLD AT FIX WEPLO RIGHT TURN INBOUNDCOURSE 021 LEGDIST 7
+ TRANSITION ENI FIX ENI FIX SAVPE AT OR ABOVE 6700
+ TRANSITION WEPLO FIX WEPLO FIX SAVPE AT OR ABOVE 6700
+ENDAPPROACHES

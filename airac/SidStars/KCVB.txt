@@ -1,0 +1,42 @@
+//KCVB (CASTROVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIBRE LATLON N 29 40.2555 W 98 58.854167
+FIX CSI LATLON N 29 55.341334 W 99 12.869167
+FIX FIMUL LATLON N 29 24.464333 W 98 52.616167
+FIX IBDOW LATLON N 29 15.101 W 98 48.933167
+FIX JEDOL LATLON N 29 29.198333 W 98 54.482666
+FIX KICED LATLON N 29 38.636167 W 99 0.159167
+FIX POCPO LATLON N 29 23.114 W 98 52.084333
+FIX SHEOL LATLON N 29 9.4145 W 98 46.702166
+FIX SOMER LATLON N 29 9.745834 W 98 38.3745
+FIX TAAHD LATLON N 29 18.637667 W 98 50.323
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX JEDOL AT OR ABOVE 3000 FIX FIMUL 2000 FIX POCPO AT OR ABOVE 1540 RNW 16 TRK 157 UNTIL 1174 FIX OVERFLY SHEOL AT OR ABOVE 3000 HOLD AT FIX SHEOL LEFT TURN INBOUNDCOURSE 337 LEGDIST 4
+ TRANSITION CSI FIX CSI FIX BIBRE AT OR ABOVE 4100
+APPROACH RNV34 FIX SHEOL AT OR ABOVE 3000 FIX IBDOW 2500 FIX TAAHD AT OR ABOVE 1300 RNW 34 TRK 337 UNTIL 1300 TURN LEFT DIRECT FIX OVERFLY SHEOL AT OR ABOVE 3000 HOLD AT FIX SHEOL LEFT TURN INBOUNDCOURSE 337 LEGDIST 4
+ TRANSITION KICED FIX KICED FIX OVERFLY SHEOL AT OR ABOVE 3200 HOLD AT FIX SHEOL LEFT TURN INBOUNDCOURSE 337 ALT 3000 LEGDIST 4
+ TRANSITION SOMER FIX SOMER
+ENDAPPROACHES

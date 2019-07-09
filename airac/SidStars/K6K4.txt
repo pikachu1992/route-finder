@@ -1,0 +1,33 @@
+//K6K4 (FAIRVIEW MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CINOL LATLON N 36 7.097333 W 98 28.768834
+FIX GETLE LATLON N 36 28.858166 W 98 28.304333
+FIX JIMHU LATLON N 36 22.850167 W 98 28.433666
+FIX VARGS LATLON N 36 19.837166 W 98 28.498333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX GETLE AT OR ABOVE 3600 FIX JIMHU 2900 FIX VARGS AT OR ABOVE 1940 RNW 17 TRK 174 UNTIL 1592 FIX CINOL AT OR ABOVE 3600 HOLD AT FIX CINOL RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION GETLE HOLD AT FIX GETLE RIGHT TURN INBOUNDCOURSE 174 ALT 3600 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,33 @@
+//EPTM (TOMASZOW MAZOWIECKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CN29 LATLON N 51 31.8505 E 20 16.472666
+FIX NP LATLON N 51 34.595 E 20 7.441667
+FIX NPR LATLON N 51 33.911666 E 20 9.708334
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB29 FIX CN29 AT OR ABOVE 2000 FIX NPR 1350 FIX NP 833 RNW 29 TRK 290 UNTIL 1600 TURN RIGHT DIRECT FIX NPR 3000
+ TRANSITION NPR1 FIX NPR AT OR ABOVE 3000 TRK 143 UNTIL 5.3 FROM FIX NPR
+ TRANSITION NPR2 FIX NPR AT OR ABOVE 3000 TRK 129 UNTIL 6.0 FROM FIX NPR
+ENDAPPROACHES

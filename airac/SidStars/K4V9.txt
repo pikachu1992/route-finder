@@ -1,0 +1,46 @@
+//K4V9 (ANTELOPE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMDIZ LATLON N 42 11.827166 W 98 0.794666
+FIX CAGOD LATLON N 41 56.452 W 98 12.2475
+FIX ENEYA LATLON N 42 16.844167 W 97 52.386167
+FIX FERUG LATLON N 42 1.512334 W 98 3.878666
+FIX HEMED LATLON N 41 55.371667 W 98 5.706667
+FIX MODPY LATLON N 42 17.9375 W 97 58.96
+FIX OCOBO LATLON N 42 3.868 W 98 3.175834
+FIX PIVEE LATLON N 42 19.024667 W 98 5.5375
+FIX PLACA LATLON N 41 54.285 W 97 59.169667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 13
+RNW 19
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX HEMED AT OR ABOVE 4400 FIX FERUG 3400 FIX OCOBO AT OR ABOVE 2600 RNW 01 FIX OVERFLY MODPY AT OR ABOVE 4400 HOLD AT FIX MODPY RIGHT TURN INBOUNDCOURSE 188 LEGDIST 5
+ TRANSITION CAGOD FIX CAGOD AT OR ABOVE 4400
+ TRANSITION HEMED HOLD AT FIX HEMED RIGHT TURN INBOUNDCOURSE 008 ALT 4400 LEGDIST 5
+ TRANSITION PLACA FIX PLACA AT OR ABOVE 4400
+APPROACH RNV19 FIX MODPY AT OR ABOVE 4400 FIX AMDIZ 3400 RNW 19 FIX OVERFLY HEMED AT OR ABOVE 4400 HOLD AT FIX HEMED RIGHT TURN INBOUNDCOURSE 008 LEGDIST 5
+ TRANSITION ENEYA FIX ENEYA AT OR ABOVE 4400
+ TRANSITION MODPY HOLD AT FIX MODPY RIGHT TURN INBOUNDCOURSE 188 ALT 4400 LEGDIST 5
+ TRANSITION PIVEE FIX PIVEE AT OR ABOVE 4400
+ENDAPPROACHES

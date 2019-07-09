@@ -1,0 +1,39 @@
+//WAST (TEMINABUAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ST401 LATLON S 1 19.294 E 131 51.578333
+FIX ST402 LATLON S 1 21.121333 E 131 53.961167
+FIX ST403 LATLON S 1 23.554166 E 131 57.132334
+FIX ST404 LATLON S 1 28.4235 E 132 3.476666
+FIX ST501 LATLON S 1 34.098667 E 132 10.893667
+FIX ST502 LATLON S 1 32.315666 E 132 8.5035
+FIX ST503 LATLON S 1 29.854166 E 132 5.348
+FIX ST504 LATLON S 1 24.9925 E 131 59.000833
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX ST402 AT OR ABOVE 2500 FIX ST403 1750 RNW 13 FIX OVERFLY ST404 TURN RIGHT DIRECT FIX ST401 AT OR ABOVE 3000 HOLD AT FIX ST401 RIGHT TURN INBOUNDCOURSE 126 ALT 3000 LEGTIME 1
+ TRANSITION ST401 HOLD AT FIX ST401 RIGHT TURN INBOUNDCOURSE 126 ALT 3000 LEGTIME 1
+APPROACH RNV31 FIX ST502 AT OR ABOVE 2500 FIX ST503 1750 RNW 31 FIX OVERFLY ST504 TURN LEFT DIRECT FIX ST501 AT OR ABOVE 3000 HOLD AT FIX ST501 LEFT TURN INBOUNDCOURSE 306 ALT 3000 LEGTIME 1
+ TRANSITION ST501 HOLD AT FIX ST501 LEFT TURN INBOUNDCOURSE 306 ALT 3000 LEGTIME 1
+ENDAPPROACHES

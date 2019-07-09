@@ -1,0 +1,42 @@
+//ZMKD (KHOVD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D130G LATLON N 47 51.076667 E 91 46.480333
+FIX D155D LATLON N 47 52.7515 E 91 40.438166
+FIX FN34 LATLON N 47 48.2975 E 91 43.240834
+FIX IM LATLON N 47 55.971667 E 91 38.406667
+FIX KD101 LATLON N 47 46.355 E 91 57.078334
+FIX KD102 LATLON N 47 43.662167 E 91 50.834
+FIX KD103 LATLON N 47 47.304833 E 91 43.770167
+FIX KD104 LATLON N 48 7.173667 E 91 31.442333
+FIX KD105 LATLON N 48 9.091834 E 91 38.335166
+FIX KD106 LATLON N 47 58.295167 E 91 48.25
+FIX KD34M LATLON N 47 55.609 E 91 38.635166
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB34 FIX FN34 8210 FIX IM 5171 RNW 34 TRK 335 UNTIL 9850 TURN RIGHT DIRECT FIX IM HOLD AT FIX IM LEFT TURN INBOUNDCOURSE 155 ALT 9850 LEGTIME 1
+ TRANSITION IM FIX IM AT OR ABOVE 9850 FIX D155D AT OR ABOVE 9520 FIX OVERFLY D130G AT OR ABOVE 9520
+APPROACH RNV34 FIX KD102 AT OR ABOVE 9190 FIX KD103 8540 FIX OVERFLY KD34M 5313 RNW 34 FIX KD104 SPEED 185 FIX KD105 SPEED 185 FIX KD106 AT OR ABOVE 9850 SPEED 185 HOLD AT FIX KD106 LEFT TURN INBOUNDCOURSE 151 ALT 9850 SPEED 230 LEGTIME 1
+ TRANSITION KD101 FIX KD101 AT OR ABOVE 10830
+ENDAPPROACHES

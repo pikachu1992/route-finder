@@ -1,0 +1,49 @@
+//LPPI (PICO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40LOC LATLON N 38 33.826333 W 28 20.884667
+FIX CF27 LATLON N 38 35.488667 W 28 4.1855
+FIX CQ27 LATLON N 38 35.843666 W 28 10.007
+FIX D088N LATLON N 38 36.4595 W 28 6.261334
+FIX FF27 LATLON N 38 35.233333 W 28 6.716666
+FIX FQ27 LATLON N 38 34.399 W 28 18.742667
+FIX GOXAS LATLON N 38 36.683333 W 27 51.883333
+FIX MA27 LATLON N 38 33.4815 W 28 24.298834
+FIX PIKIX LATLON N 38 46.65 W 28 32.033333
+FIX PINB LATLON N 38 33.491666 W 28 24.193333
+FIX SOLGI LATLON N 38 37.494 W 28 1.960333
+FIX VELAS LATLON N 38 39.5315 W 28 21.510334
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH LOC27 FIX CF27 AT OR ABOVE 5000 FIX FF27 5000 FIX 40LOC AT OR ABOVE 1429 FIX MA27 570 RNW 27 HDG 349 UNTIL 5000 FIX PIKIX AT OR ABOVE 5000 HOLD AT FIX PIKIX LEFT TURN INBOUNDCOURSE 118 SPEED 230 LEGTIME 1
+ TRANSITION GOXAS FIX GOXAS AT OR ABOVE 5000
+APPROACH NDM27 FIX CQ27 AT OR ABOVE 4200 FIX FQ27 2000 FIX PINB 602 RNW 27 TRK 268 UNTIL 620 TURN RIGHT DIRECT FIX VELAS 5000 HOLD AT FIX VELAS RIGHT TURN INBOUNDCOURSE 247 ALT 5000 SPEED 230 LEGDIST 5
+ TRANSITION SOLGI FIX SOLGI AT OR ABOVE 5000 FIX D088N AT OR ABOVE 5000
+ENDAPPROACHES
+
+GATES
+GATE A1 N 38 33.166 W 28 26.662667
+GATE A2 N 38 33.170833 W 28 26.584667
+GATE A3 N 38 33.1755 W 28 26.537333
+ENDGATES

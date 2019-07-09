@@ -1,0 +1,43 @@
+//K3T3 (BOYCEVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGUDE LATLON N 45 7.761334 W 92 23.5165
+FIX BITLR LATLON N 44 53.042833 W 92 19.4425
+FIX EAU LATLON N 44 53.860166 W 91 28.712167
+FIX ENTAF LATLON N 45 25.7765 W 91 40.544167
+FIX IBIPE LATLON N 45 1.974833 W 92 9.488333
+FIX JANAR LATLON N 45 1.285834 W 92 17.897
+FIX MILGE LATLON N 45 2.155333 W 92 7.265333
+FIX OBIRE LATLON N 45 3.291334 W 91 53.007167
+FIX TUCOR LATLON N 45 3.946333 W 91 44.592667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX JANAR AT OR ABOVE 2800 FIX IBIPE 2800 FIX MILGE AT OR ABOVE 2280 RNW 08 TRK 083 UNTIL 1367 TURN LEFT DIRECT FIX OVERFLY JANAR AT OR ABOVE 2800 HOLD AT FIX JANAR RIGHT TURN INBOUNDCOURSE 083 LEGDIST 4
+ TRANSITION AGUDE FIX AGUDE
+ TRANSITION BITLR FIX BITLR
+ TRANSITION JANAR HOLD AT FIX JANAR RIGHT TURN INBOUNDCOURSE 083 ALT 2800 LEGDIST 4
+APPROACH RNV26 FIX TUCOR AT OR ABOVE 3200 FIX OBIRE 2800 RNW 26 TRK 264 UNTIL 1333 FIX OVERFLY JANAR AT OR ABOVE 2800 HOLD AT FIX JANAR RIGHT TURN INBOUNDCOURSE 083 LEGDIST 4
+ TRANSITION EAU FIX EAU
+ TRANSITION ENTAF FIX ENTAF
+ENDAPPROACHES

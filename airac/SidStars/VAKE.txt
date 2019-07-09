@@ -1,0 +1,38 @@
+//VAKE (KANDLA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FQ23 LATLON N 23 11.5305 E 70 10.949833
+FIX KDNB LATLON N 23 6.688333 E 70 6.231667
+FIX KND LATLON N 23 6.685 E 70 6.228334
+FIX MQ23 LATLON N 23 7.4305 E 70 6.954833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDM23 FIX FQ23 2100 FIX MQ23 357 RNW 23 TRK 222 UNTIL 2300 TURN LEFT DIRECT FIX KDNB 2300 HOLD AT FIX KDNB RIGHT TURN INBOUNDCOURSE 054 LEGTIME 1
+ TRANSITION KD FIX KDNB AT OR ABOVE 2300 TRK 054 UNTIL 7.5 FROM FIX KND
+ENDAPPROACHES
+
+GATES
+GATE 1 N 23 6.712166 E 70 6.281
+GATE 2 N 23 6.684833 E 70 6.249167
+ENDGATES

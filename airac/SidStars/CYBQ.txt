@@ -1,0 +1,43 @@
+//CYBQ (TADOULE LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MUVOB LATLON N 58 39.506333 W 98 47.951333
+FIX NAGOV LATLON N 58 44.254667 W 98 50.885
+FIX NUDOG LATLON N 58 45.140333 W 98 13.744333
+FIX OLOKO LATLON N 58 43.785667 W 98 22.070167
+FIX OMPEV LATLON N 58 43.65 W 98 22.900667
+FIX PIKBO LATLON N 58 40.378 W 98 10.893667
+FIX SESVI LATLON N 58 41.026333 W 98 38.831
+FIX SIMRI LATLON N 58 40.9345 W 98 39.384167
+FIX TALUT LATLON N 58 34.756834 W 98 45.030833
+FIX TIBAP LATLON N 58 49.9015 W 98 16.608167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX MUVOB AT OR ABOVE 2300 FIX SESVI 2300 RNW 07 FIX OVERFLY OLOKO 2300 HOLD AT FIX OLOKO RIGHT TURN INBOUNDCOURSE 070 LEGTIME 1
+ TRANSITION NAGOV FIX NAGOV SPEED 210
+ TRANSITION TALUT FIX TALUT SPEED 210
+APPROACH RNV25 FIX NUDOG AT OR ABOVE 2200 FIX OMPEV 2200 RNW 25 FIX OVERFLY SIMRI 2300 HOLD AT FIX SIMRI RIGHT TURN INBOUNDCOURSE 249 LEGTIME 1
+ TRANSITION PIKBO FIX PIKBO SPEED 210
+ TRANSITION TIBAP FIX TIBAP SPEED 210
+ENDAPPROACHES

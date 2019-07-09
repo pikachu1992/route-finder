@@ -1,0 +1,43 @@
+//CYCR (SINCLAIR MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EMASU LATLON N 54 34.548334 W 98 5.354167
+FIX IKNAS LATLON N 54 30.5035 W 98 0.3245
+FIX IKNOB LATLON N 54 39.654167 W 97 23.035834
+FIX KETMI LATLON N 54 39.368833 W 97 39.0745
+FIX LEXAX LATLON N 54 33.936 W 97 52.134833
+FIX SEDOK LATLON N 54 39.296333 W 97 39.251333
+FIX TAKUD LATLON N 54 42.7735 W 97 30.834334
+FIX URTAD LATLON N 54 26.455166 W 97 55.311334
+FIX URVUM LATLON N 54 48.065167 W 97 33.362833
+FIX VODUK LATLON N 54 34.005 W 97 51.967667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX IKNAS AT OR ABOVE 2500 FIX VODUK 2100 RNW 05 FIX OVERFLY KETMI 2500 HOLD AT FIX KETMI RIGHT TURN INBOUNDCOURSE 051 LEGTIME 1
+ TRANSITION EMASU FIX EMASU SPEED 210
+ TRANSITION URTAD FIX URTAD SPEED 210
+APPROACH RNV23 FIX TAKUD AT OR ABOVE 2100 FIX SEDOK 2100 RNW 23 FIX OVERFLY LEXAX 2500 HOLD AT FIX LEXAX RIGHT TURN INBOUNDCOURSE 231 LEGTIME 1
+ TRANSITION IKNOB FIX IKNOB
+ TRANSITION URVUM FIX URVUM
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//WADB (SULTAN MUHAMMAD SALAHUDDIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MA177 LATLON S 8 26.626333 E 118 41.303666
+FIX NMA LATLON S 8 32.048666 E 118 41.494
+FIX NQNB LATLON S 8 28.459834 E 117 24.284167
+FIX RGNB LATLON S 8 35.959333 E 120 28.799833
+FIX TELUK LATLON S 8 11.970167 E 118 40.7035
+FIX UNSEP LATLON S 6 57.648 E 125 48.132
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+STARS
+STAR NQ FIX NQNB FIX NMA TURN LEFT DIRECT FIX TELUK
+  RNW 14 RNW 32
+STAR RG FIX RGNB FIX NMA FIX TELUK
+  RNW 14 RNW 32
+STAR UNSEP FIX UNSEP FIX NMA FIX TELUK
+  RNW 14 RNW 32
+ENDSTARS
+
+APPROACHES
+APPROACH RNVR14 FIX TELUK 7000 FIX MA177 1950 RNW 14 TRK 177 UNTIL 4500 HDG 027 INTERCEPT RADIAL 357 TO FIX TELUK FIX TELUK AT OR ABOVE 7000
+APPROACH RNVR32 FIX TELUK 7000 FIX MA177 1950 RNW 32 TRK 177 UNTIL 4500 HDG 027 INTERCEPT RADIAL 357 TO FIX TELUK FIX TELUK AT OR ABOVE 7000
+ENDAPPROACHES

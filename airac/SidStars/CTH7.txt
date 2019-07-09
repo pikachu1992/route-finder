@@ -1,0 +1,43 @@
+//CTH7 (RIVIERE AUX SAUMONS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUSOX LATLON N 49 24.673 W 62 10.987333
+FIX ROPVO LATLON N 49 23.492 W 62 24.532333
+FIX ULUTU LATLON N 49 23.483 W 62 24.635167
+FIX URKOR LATLON N 49 30.4045 W 62 2.881667
+FIX URNUK LATLON N 49 20.501 W 62 0.855833
+FIX USBIX LATLON N 49 25.452833 W 62 1.867
+FIX VIXUD LATLON N 49 24.688834 W 62 10.805
+FIX XOXES LATLON N 49 17.738 W 62 32.5485
+FIX XUKEL LATLON N 49 22.689667 W 62 33.561
+FIX XULTU LATLON N 49 27.641 W 62 34.577
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX XUKEL AT OR ABOVE 1900 SPEED 180 FIX ROPVO 1670 RNW 10 FIX OVERFLY VIXUD 2100 HOLD AT FIX VIXUD RIGHT TURN INBOUNDCOURSE 103 ALT 2100 LEGTIME 1
+ TRANSITION XOXES FIX XOXES SPEED 210
+ TRANSITION XULTU FIX XULTU SPEED 210
+APPROACH RNV28 FIX USBIX AT OR ABOVE 1700 SPEED 180 FIX DUSOX 1700 RNW 28 FIX OVERFLY ULUTU 2100 HOLD AT FIX ULUTU RIGHT TURN INBOUNDCOURSE 283 ALT 2100 LEGTIME 1
+ TRANSITION URKOR FIX URKOR SPEED 210
+ TRANSITION URNUK FIX URNUK SPEED 210
+ENDAPPROACHES

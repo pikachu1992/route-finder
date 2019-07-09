@@ -1,0 +1,38 @@
+//K9G6 (PINE HILL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUF LATLON N 42 55.739833 W 78 38.7805
+FIX CLUNG LATLON N 43 3.286166 W 78 0.223
+FIX EYEVU LATLON N 43 10.2985 W 78 16.651333
+FIX HEDSI LATLON N 43 6.433834 W 78 22.553333
+FIX LEGGY LATLON N 43 2.428333 W 78 28.649167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB10 FIX LEGGY AT OR ABOVE 3300 FIX HEDSI 2400 FIX OVERFLY EYEVU 1360 RNW 10 TRK 059 UNTIL 1360 TURN LEFT DIRECT FIX OVERFLY LEGGY AT OR ABOVE 3300 HOLD AT FIX LEGGY RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4
+ TRANSITION BUF FIX BUF
+ TRANSITION CLUNG FIX CLUNG FIX LEGGY AT OR ABOVE 3300 HOLD AT FIX LEGGY RIGHT TURN INBOUNDCOURSE 059 ALT 3300 LEGDIST 4
+APPROACH RNVB28 FIX LEGGY AT OR ABOVE 3300 FIX HEDSI 2400 FIX OVERFLY EYEVU 1360 RNW 28 TRK 059 UNTIL 1360 TURN LEFT DIRECT FIX OVERFLY LEGGY AT OR ABOVE 3300 HOLD AT FIX LEGGY RIGHT TURN INBOUNDCOURSE 059 LEGDIST 4
+ TRANSITION BUF FIX BUF
+ TRANSITION CLUNG FIX CLUNG FIX LEGGY AT OR ABOVE 3300 HOLD AT FIX LEGGY RIGHT TURN INBOUNDCOURSE 059 ALT 3300 LEGDIST 4
+ENDAPPROACHES

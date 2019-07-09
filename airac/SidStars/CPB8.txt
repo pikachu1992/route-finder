@@ -1,0 +1,43 @@
+//CPB8 (BISTCHO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IGSUS LATLON N 59 39.352 W 118 28.366166
+FIX IGTOX LATLON N 59 37.168 W 118 11.169833
+FIX KAVGI LATLON N 59 40.549166 W 118 37.935833
+FIX KAVTI LATLON N 59 40.924834 W 117 59.5915
+FIX LEPUG LATLON N 59 45.488333 W 118 35.527333
+FIX LERAM LATLON N 59 31.067666 W 118 4.561
+FIX MAXUB LATLON N 59 35.609167 W 118 40.332334
+FIX MEBAT LATLON N 59 35.996666 W 118 2.082334
+FIX SAXAR LATLON N 59 39.408833 W 118 28.8175
+FIX SEBAV LATLON N 59 37.225667 W 118 11.620166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX KAVGI AT OR ABOVE 3600 SPEED 180 FIX IGSUS 3230 RNW 09 FIX OVERFLY IGTOX 3800 HOLD AT FIX IGTOX RIGHT TURN INBOUNDCOURSE 085 SPEED 250 LEGTIME 1
+ TRANSITION LEPUG FIX LEPUG SPEED 200
+ TRANSITION MAXUB FIX MAXUB SPEED 200
+APPROACH RNV27 FIX MEBAT AT OR ABOVE 3600 SPEED 180 FIX SEBAV 3270 RNW 27 FIX OVERFLY SAXAR 3600 HOLD AT FIX SAXAR RIGHT TURN INBOUNDCOURSE 265 SPEED 250 LEGTIME 1
+ TRANSITION KAVTI FIX KAVTI SPEED 200
+ TRANSITION LERAM FIX LERAM SPEED 200
+ENDAPPROACHES

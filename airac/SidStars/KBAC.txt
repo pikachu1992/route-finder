@@ -1,0 +1,50 @@
+//KBAC (BARNES CO MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHAFE LATLON N 46 48.5645 W 97 23.407667
+FIX CISGI LATLON N 47 4.361167 W 98 12.755833
+FIX HIDGA LATLON N 47 0.195 W 98 6.423167
+FIX HUHJO LATLON N 46 54.255 W 98 21.928
+FIX HUMIX LATLON N 46 52.760167 W 97 55.184666
+FIX JEVLO LATLON N 47 0.748667 W 98 17.828833
+FIX LECPU LATLON N 46 54.9745 W 97 58.5235
+FIX PIBBS LATLON N 46 48.575666 W 97 48.8945
+FIX RIPFE LATLON N 46 44.9805 W 97 53.969333
+FIX SEMJI LATLON N 46 58.232333 W 98 3.448667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 08
+RNW 13
+RNW 17
+RNW 23
+RNW 26
+RNW 31
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX CISGI AT OR ABOVE 3000 FIX HIDGA 3000 FIX SEMJI AT OR ABOVE 2040 RNW 13 FIX OVERFLY PIBBS AT OR ABOVE 3100 HOLD AT FIX PIBBS RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4
+ TRANSITION CISGI HOLD AT FIX CISGI RIGHT TURN INBOUNDCOURSE 127 ALT 3000 LEGDIST 4
+ TRANSITION HUHJO FIX HUHJO FIX JEVLO AT OR ABOVE 3000
+APPROACH RNV31 FIX PIBBS AT OR ABOVE 3100 FIX HUMIX 3100 FIX LECPU AT OR ABOVE 2040 RNW 31 FIX OVERFLY CISGI AT OR ABOVE 3000 HOLD AT FIX CISGI RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4
+ TRANSITION CHAFE FIX CHAFE
+ TRANSITION HUHJO FIX HUHJO FIX RIPFE AT OR ABOVE 3100
+ TRANSITION PIBBS HOLD AT FIX PIBBS RIGHT TURN INBOUNDCOURSE 307 ALT 3100 LEGDIST 4
+ENDAPPROACHES

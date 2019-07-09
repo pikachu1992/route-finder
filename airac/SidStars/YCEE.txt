@@ -1,0 +1,40 @@
+//YCEE (CLEVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEEEA LATLON S 33 38.045167 E 136 45.561833
+FIX CEEEB LATLON S 33 42.781667 E 136 49.453166
+FIX CEEEC LATLON S 33 47.458834 E 136 45.457
+FIX CEEEF LATLON S 33 42.685 E 136 37.466
+FIX CEEEH LATLON S 33 42.593833 E 136 27.876667
+FIX CEEEI LATLON S 33 42.735833 E 136 43.4595
+FIX CEEEM LATLON S 33 42.6295 E 136 31.472666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 18
+RNW 26
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX CEEEI AT OR ABOVE 2800 FIX CEEEF 2350 FIX OVERFLY CEEEM 762 RNW 26 FIX CEEEH TRK 264 UNTIL 2800
+ TRANSITION CEEEA FIX CEEEA AT OR ABOVE 2800 SPEED 230
+ TRANSITION CEEEB FIX CEEEB AT OR ABOVE 2800 SPEED 230
+ TRANSITION CEEEC FIX CEEEC AT OR ABOVE 2800 SPEED 230
+ENDAPPROACHES

@@ -1,0 +1,42 @@
+//YSII (SAIBAI I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SIIEA LATLON S 9 27.2315 E 142 49.8685
+FIX SIIEB LATLON S 9 32.958667 E 142 49.226666
+FIX SIIEC LATLON S 9 34.317833 E 142 43.584833
+FIX SIIEF LATLON S 9 26.319833 E 142 41.631
+FIX SIIEH LATLON S 9 26.939 E 142 37.036333
+FIX SIIEI LATLON S 9 29.639666 E 142 45.428167
+FIX SIIEM LATLON S 9 22.999333 E 142 37.835
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNVE12 FIX SIIEI AT OR ABOVE 2200 FIX SIIEF 1730 FIX OVERFLY SIIEM 142 RNW 12 TRK 306 UNTIL 520 TURN LEFT DIRECT FIX OVERFLY SIIEH HDG 146 VECTORS
+ TRANSITION SIIEA FIX SIIEA AT OR ABOVE 2200
+ TRANSITION SIIEB FIX SIIEB AT OR ABOVE 2200
+ TRANSITION SIIEC FIX SIIEC AT OR ABOVE 2200
+APPROACH RNVE30 FIX SIIEI AT OR ABOVE 2200 FIX SIIEF 1730 FIX OVERFLY SIIEM 142 RNW 30 TRK 306 UNTIL 520 TURN LEFT DIRECT FIX OVERFLY SIIEH HDG 146 VECTORS
+ TRANSITION SIIEA FIX SIIEA AT OR ABOVE 2200
+ TRANSITION SIIEB FIX SIIEB AT OR ABOVE 2200
+ TRANSITION SIIEC FIX SIIEC AT OR ABOVE 2200
+ENDAPPROACHES

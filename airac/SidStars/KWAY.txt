@@ -1,0 +1,38 @@
+//KWAY (GREENE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BURGS LATLON N 39 41.911 W 80 35.183167
+FIX GALLS LATLON N 39 49.5725 W 80 1.164334
+FIX PUNIY LATLON N 39 52.869 W 80 15.710666
+FIX RIPEE LATLON N 39 56.369167 W 79 52.576166
+FIX TIKKU LATLON N 39 55.202833 W 80 0.346166
+FIX ZUNKO LATLON N 39 51.675833 W 80 23.472667
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ZUNKO AT OR ABOVE 4000 FIX PUNIY 3000 RNW 09 TRK 088 UNTIL 1469 FIX OVERFLY RIPEE AT OR ABOVE 4000 HOLD AT FIX RIPEE RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4
+ TRANSITION BURGS FIX BURGS
+ TRANSITION ZUNKO HOLD AT FIX ZUNKO RIGHT TURN INBOUNDCOURSE 088 ALT 4000 LEGDIST 4
+APPROACH RNV27 FIX RIPEE AT OR ABOVE 4000 FIX TIKKU 2900 RNW 27 TRK 268 UNTIL 1469 FIX OVERFLY ZUNKO AT OR ABOVE 4000 HOLD AT FIX ZUNKO RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4
+ TRANSITION GALLS FIX GALLS FIX OVERFLY RIPEE AT OR ABOVE 4000 HOLD AT FIX RIPEE RIGHT TURN INBOUNDCOURSE 268 ALT 4000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//K20N (KINGSTON-ULSTER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BFINE LATLON N 41 53.510333 W 73 51.596833
+FIX FRLDI LATLON N 42 1.619167 W 73 59.131166
+FIX ILGEZ LATLON N 42 13.3045 W 73 53.640667
+FIX IMIBE LATLON N 42 2.991833 W 73 59.479834
+FIX ITTLE LATLON N 41 50.833166 W 73 48.614
+FIX JOEYL LATLON N 41 49.9145 W 73 42.320666
+FIX NEWMN LATLON N 41 59.849833 W 73 58.682
+FIX PWL LATLON N 41 46.186333 W 73 36.033167
+FIX WOBVU LATLON N 42 10.227 W 73 56.785166
+FIX ZUNLI LATLON N 41 56.1165 W 73 54.505667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX WOBVU AT OR ABOVE 3200 FIX IMIBE 1600 FIX FRLDI AT OR ABOVE 1080 FIX OVERFLY NEWMN 458 RNW 15 TRK 182 UNTIL 547 TURN LEFT DIRECT FIX OVERFLY JOEYL AT OR ABOVE 3000 HOLD AT FIX JOEYL RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4
+ TRANSITION ILGEZ FIX ILGEZ
+APPROACH RNV33 FIX ITTLE AT OR ABOVE 2900 FIX BFINE 2900 FIX ZUNLI AT OR ABOVE 1600 RNW 33 TRK 333 UNTIL 600 TURN RIGHT DIRECT FIX OVERFLY PWL AT OR ABOVE 3000 HOLD AT FIX PWL RIGHT TURN INBOUNDCOURSE 309 LEGDIST 4
+ TRANSITION PWL FIX PWL
+ENDAPPROACHES

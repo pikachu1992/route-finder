@@ -1,0 +1,49 @@
+//YMNE (MT KEITH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX WMEEA LATLON S 27 17.996333 E 120 48.173666
+FIX WMEEB LATLON S 27 23.641166 E 120 49.411834
+FIX WMEEC LATLON S 27 26.609167 E 120 43.890667
+FIX WMEEF LATLON S 27 19.1855 E 120 38.180833
+FIX WMEEH LATLON S 27 16.303667 E 120 30.945
+FIX WMEEI LATLON S 27 21.607 E 120 44.278
+FIX WMEEM LATLON S 27 17.529334 E 120 34.02
+FIX WMEWD LATLON S 27 16.536667 E 120 18.600167
+FIX WMEWE LATLON S 27 10.889 E 120 17.380834
+FIX WMEWF LATLON S 27 14.9775 E 120 27.623
+FIX WMEWG LATLON S 27 7.9315 E 120 22.896167
+FIX WMEWH LATLON S 27 18.655 E 120 36.8475
+FIX WMEWI LATLON S 27 12.933167 E 120 22.501166
+FIX WMEWM LATLON S 27 17.021833 E 120 32.7465
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ11 FIX WMEWI 3200 FIX WMEWF 3200 FIX OVERFLY WMEWM 1842 RNW 11 FIX WMEWH AT OR BELOW 3200 HDG 113 VECTORS
+ TRANSITION WMEWD FIX WMEWD 3200 SPEED 210
+ TRANSITION WMEWE FIX WMEWE 3200 SPEED 210
+ TRANSITION WMEWG FIX WMEWG 3200 SPEED 210
+APPROACH RNVZ29 FIX WMEEI AT OR ABOVE 3200 FIX WMEEF 3200 FIX OVERFLY WMEEM 1908 RNW 29 FIX WMEEH TRK 293 UNTIL 3200
+ TRANSITION WMEEA FIX WMEEA 3200 SPEED 210
+ TRANSITION WMEEB FIX WMEEB 3200 SPEED 210
+ TRANSITION WMEEC FIX WMEEC 3200 SPEED 210
+ENDAPPROACHES

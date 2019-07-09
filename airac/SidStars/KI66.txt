@@ -1,0 +1,43 @@
+//KI66 (CLINTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COMAS LATLON N 39 42.474 W 83 50.568167
+FIX CUSTA LATLON N 39 17.593333 W 83 53.181833
+FIX DINNE LATLON N 39 25.700666 W 83 54.8855
+FIX HITON LATLON N 39 40.099333 W 83 44.867
+FIX IKEYU LATLON N 39 34.5845 W 83 48.7135
+FIX NEKOE LATLON N 39 19.962 W 83 58.856666
+FIX SINRE LATLON N 39 22.326 W 84 4.538
+FIX YOSUN LATLON N 39 37.72 W 83 39.172333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX NEKOE AT OR ABOVE 3000 FIX DINNE 2600 RNW 03 TRK 033 UNTIL 1433 FIX OVERFLY HITON AT OR ABOVE 3000 HOLD AT FIX HITON RIGHT TURN INBOUNDCOURSE 213 LEGDIST 4
+ TRANSITION CUSTA FIX CUSTA AT OR ABOVE 3000
+ TRANSITION NEKOE HOLD AT FIX NEKOE RIGHT TURN INBOUNDCOURSE 033 ALT 3000 LEGDIST 4
+ TRANSITION SINRE FIX SINRE AT OR ABOVE 3000
+APPROACH RNV21 FIX HITON AT OR ABOVE 3000 FIX IKEYU 2600 RNW 21 FIX OVERFLY NEKOE AT OR ABOVE 3000 HOLD AT FIX NEKOE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4
+ TRANSITION COMAS FIX COMAS AT OR ABOVE 3100
+ TRANSITION HITON HOLD AT FIX HITON RIGHT TURN INBOUNDCOURSE 213 ALT 3000 LEGDIST 4
+ TRANSITION YOSUN FIX YOSUN AT OR ABOVE 3000
+ENDAPPROACHES

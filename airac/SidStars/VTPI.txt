@@ -1,0 +1,42 @@
+//VTPI (TAKHLI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D360U LATLON N 15 38.348333 E 100 17.7595
+FIX ITKL LATLON N 15 17.26 E 100 17.8515
+FIX PI002 LATLON N 15 23.285167 E 100 17.904167
+FIX PI003 LATLON N 15 29.309333 E 100 18.0425
+FIX PI004 LATLON N 15 29.464 E 100 10.795166
+FIX PI005 LATLON N 15 36.333667 E 100 17.767834
+FIX PI006 LATLON N 15 29.1505 E 100 25.289666
+FIX TLNB LATLON N 15 16.5575 E 100 17.851834
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH ILSY18 FIX PI003 AT OR ABOVE 3200 FIX PI002 2000 RNW 18 TRK 182 UNTIL 3000 TURN RIGHT DIRECT FIX OVERFLY PI003 AT OR ABOVE 3200 HOLD AT FIX PI003 RIGHT TURN INBOUNDCOURSE 182 ALT 3200 SPEED 230 LEGTIME 1
+ TRANSITION PI004 FIX PI004 AT OR ABOVE 4000
+ TRANSITION PI005 FIX PI005 AT OR ABOVE 4000
+ TRANSITION PI006 FIX PI006 AT OR ABOVE 4000
+APPROACH ILSZ18 FIX PI003 AT OR ABOVE 3200 FIX PI002 2000 RNW 18 TRK 182 UNTIL 3000 TURN RIGHT DIRECT FIX PI003 AT OR ABOVE 3200 HOLD AT FIX PI003 RIGHT TURN INBOUNDCOURSE 182 ALT 3200 SPEED 230 LEGTIME 1
+ TRANSITION D360U FIX D360U AT OR ABOVE 4000
+ TRANSITION TL FIX TLNB AT OR ABOVE 4000 TRK 344 UNTIL 12.0 FROM FIX ITKL
+ENDAPPROACHES

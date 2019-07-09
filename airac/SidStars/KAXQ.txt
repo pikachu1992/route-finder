@@ -1,0 +1,38 @@
+//KAXQ (CLARION CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADRAN LATLON N 41 9.618334 W 79 31.605334
+FIX CIP LATLON N 41 8.777666 W 79 27.4785
+FIX EARED LATLON N 40 57.5425 W 79 40.8065
+FIX LOCPI LATLON N 41 5.343833 W 79 37.1835
+FIX PUNCO LATLON N 41 21.827333 W 79 15.574166
+FIX WAMSO LATLON N 41 17.533667 W 79 21.228167
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX LOCPI AT OR ABOVE 3100 FIX ADRAN 3100 RNW 06 FIX OVERFLY PUNCO AT OR ABOVE 3500 HOLD AT FIX PUNCO RIGHT TURN INBOUNDCOURSE 235 LEGDIST 4
+ TRANSITION CIP FIX CIP FIX OVERFLY LOCPI AT OR ABOVE 3800 HOLD AT FIX LOCPI RIGHT TURN INBOUNDCOURSE 055 ALT 3100 LEGDIST 4
+ TRANSITION EARED FIX EARED
+APPROACH RNV24 FIX PUNCO AT OR ABOVE 3500 FIX WAMSO 3200 RNW 24 FIX OVERFLY LOCPI AT OR ABOVE 3100 HOLD AT FIX LOCPI RIGHT TURN INBOUNDCOURSE 055 LEGDIST 4
+ TRANSITION CIP FIX CIP FIX OVERFLY PUNCO AT OR ABOVE 3500 HOLD AT FIX PUNCO RIGHT TURN INBOUNDCOURSE 235 ALT 3500 LEGDIST 4
+ENDAPPROACHES

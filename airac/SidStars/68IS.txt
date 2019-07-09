@@ -1,0 +1,43 @@
+//68IS (CASA DE AERO PARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DPA LATLON N 41 53.421833 W 88 21.010333
+FIX GRIFT LATLON N 42 17.469 W 88 53.690333
+FIX HOPIR LATLON N 42 8.913 W 88 40.350667
+FIX KIYTE LATLON N 42 8.901 W 88 48.416833
+FIX MA327 LATLON N 42 8.871667 W 88 33.494833
+FIX PALID LATLON N 42 1.728 W 88 27.706667
+FIX SIMMN LATLON N 41 58.841167 W 88 52.706666
+FIX WARTS LATLON N 42 6.062666 W 88 31.215
+FIX YEARN LATLON N 42 4.532167 W 88 33.4475
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX KIYTE AT OR ABOVE 2600 FIX HOPIR 2400 RNW 09 TRK 092 UNTIL 1260 TURN RIGHT DIRECT FIX OVERFLY SIMMN AT OR ABOVE 2600 HOLD AT FIX SIMMN RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4
+ TRANSITION GRIFT FIX GRIFT
+ TRANSITION SIMMN FIX SIMMN
+APPROACH VORA09 FIX PALID AT OR ABOVE 2600 FIX WARTS 2100 FIX MA327 1500 RNW 09 TRK 327 UNTIL 1500 TURN LEFT DIRECT FIX YEARN AT OR ABOVE 2800 HOLD AT FIX YEARN LEFT TURN INBOUNDCOURSE 318 LEGTIME 1
+ TRANSITION DPA FIX DPA
+APPROACH VORA27 FIX PALID AT OR ABOVE 2600 FIX WARTS 2100 FIX MA327 1500 RNW 27 TRK 327 UNTIL 1500 TURN LEFT DIRECT FIX YEARN AT OR ABOVE 2800 HOLD AT FIX YEARN LEFT TURN INBOUNDCOURSE 318 LEGTIME 1
+ TRANSITION DPA FIX DPA
+ENDAPPROACHES

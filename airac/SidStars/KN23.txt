@@ -1,0 +1,44 @@
+//KN23 (SIDNEY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GROWS LATLON N 42 18.5535 W 75 41.959667
+FIX HNK LATLON N 42 3.7835 W 75 18.977
+FIX INADY LATLON N 42 12.5765 W 75 36.852167
+FIX LOTMY LATLON N 42 15.249 W 75 31.163
+FIX ODEBY LATLON N 42 24.479167 W 75 11.369
+FIX OTHID LATLON N 42 8.007667 W 75 32.977166
+FIX SIBJI LATLON N 42 20.981666 W 75 18.895166
+FIX UJTAP LATLON N 42 20.255333 W 75 20.4545
+FIX UZUBO LATLON N 42 18.9935 W 75 6.665833
+FIX ZAYAZ LATLON N 42 30.016834 W 75 15.974167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX INADY AT OR ABOVE 3600 FIX LOTMY 2700 RNW 07 TRK 071 UNTIL 1427 FIX OVERFLY ODEBY AT OR ABOVE 3700 HOLD AT FIX ODEBY RIGHT TURN INBOUNDCOURSE 251 LEGDIST 5
+ TRANSITION GROWS FIX GROWS
+ TRANSITION HNK FIX HNK FIX OTHID AT OR ABOVE 3900
+APPROACH RNV25 FIX ODEBY AT OR ABOVE 4500 FIX SIBJI 3000 FIX UJTAP AT OR ABOVE 2440 RNW 25 TRK 251 UNTIL 1427 FIX OVERFLY INADY AT OR ABOVE 3500 HOLD AT FIX INADY RIGHT TURN INBOUNDCOURSE 071 LEGDIST 4
+ TRANSITION ODEBY HOLD AT FIX ODEBY RIGHT TURN INBOUNDCOURSE 251 ALT 4500 LEGDIST 5
+ TRANSITION UZUBO FIX UZUBO AT OR ABOVE 5200
+ TRANSITION ZAYAZ FIX ZAYAZ AT OR ABOVE 4500
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CZGI (GODS RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVSEX LATLON N 54 50.443 W 94 22.519667
+FIX DUKLO LATLON N 54 50.339833 W 93 56.577334
+FIX KAXER LATLON N 54 50.418833 W 94 13.872
+FIX KEBKI LATLON N 54 50.334 W 93 55.571833
+FIX KEDGU LATLON N 54 55.433833 W 94 22.451
+FIX KEKRU LATLON N 54 45.287 W 93 46.9955
+FIX MEGBU LATLON N 54 55.268666 W 93 46.854334
+FIX MELKA LATLON N 54 45.452167 W 94 22.588
+FIX NAGPO LATLON N 54 50.4155 W 94 12.8665
+FIX NALVU LATLON N 54 50.277833 W 93 46.925
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX AVSEX AT OR ABOVE 2300 FIX KAXER 2250 RNW 09 FIX OVERFLY DUKLO 2200 HOLD AT FIX DUKLO RIGHT TURN INBOUNDCOURSE 091 LEGTIME 1
+ TRANSITION KEDGU FIX KEDGU
+ TRANSITION MELKA FIX MELKA
+APPROACH RNV27 FIX NALVU AT OR ABOVE 2300 FIX KEBKI 2270 RNW 27 FIX OVERFLY NAGPO 2200 HOLD AT FIX NAGPO RIGHT TURN INBOUNDCOURSE 271 LEGTIME 1
+ TRANSITION KEKRU FIX KEKRU
+ TRANSITION MEGBU FIX MEGBU
+ENDAPPROACHES

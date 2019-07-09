@@ -1,0 +1,36 @@
+//KC03 (NAPPANEE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GSH LATLON N 41 31.509334 W 86 1.677167
+FIX MAFDE LATLON N 41 26.750333 W 85 55.983667
+FIX PI001 LATLON N 41 34.068337 W 86 4.867606
+FIX PI002 LATLON N 41 38.365715 W 86 4.666804
+FIX PI003 LATLON N 41 38.816864 W 86 10.803894
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VORB09 FIX GSH 2600 FIX MAFDE 1420 RNW 09 TRK 138 UNTIL 1420 TURN LEFT DIRECT FIX GSH AT OR ABOVE 3000 HOLD AT FIX GSH RIGHT TURN INBOUNDCOURSE 090 LEGTIME 1
+ TRANSITION GSH FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+APPROACH VORB27 FIX GSH 2600 FIX MAFDE 1420 RNW 27 TRK 138 UNTIL 1420 TURN LEFT DIRECT FIX GSH AT OR ABOVE 3000 HOLD AT FIX GSH RIGHT TURN INBOUNDCOURSE 090 LEGTIME 1
+ TRANSITION GSH FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+ENDAPPROACHES

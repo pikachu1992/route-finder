@@ -1,0 +1,38 @@
+//KICL (SCHENCK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FAHHO LATLON N 40 40.814 W 95 3.082667
+FIX JOGOL LATLON N 40 32.661167 W 95 7.92
+FIX TICTO LATLON N 40 38.132167 W 95 4.676333
+FIX UKATE LATLON N 40 48.739834 W 94 58.358666
+FIX ZESSA LATLON N 40 54.206 W 94 55.088167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 13
+RNW 20
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX JOGOL AT OR ABOVE 3000 FIX TICTO 2700 FIX FAHHO AT OR ABOVE 1760 RNW 02 TRK 020 UNTIL 1241 FIX OVERFLY ZESSA AT OR ABOVE 3000 HOLD AT FIX ZESSA RIGHT TURN INBOUNDCOURSE 200 LEGDIST 4
+ TRANSITION JOGOL HOLD AT FIX JOGOL RIGHT TURN INBOUNDCOURSE 020 ALT 3000 LEGDIST 4
+APPROACH RNV20 FIX ZESSA AT OR ABOVE 3000 FIX UKATE 2800 RNW 20 TRK 200 UNTIL 1261 FIX OVERFLY JOGOL AT OR ABOVE 3000 HOLD AT FIX JOGOL RIGHT TURN INBOUNDCOURSE 020 LEGDIST 4
+ TRANSITION ZESSA HOLD AT FIX ZESSA RIGHT TURN INBOUNDCOURSE 200 ALT 3000 LEGDIST 4
+ENDAPPROACHES

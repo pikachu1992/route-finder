@@ -1,0 +1,38 @@
+//YMMI (MURRIN MURRIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MMISA LATLON S 28 55.271666 E 121 49.569334
+FIX MMISB LATLON S 28 55.248833 E 121 43.028833
+FIX MMISC LATLON S 28 49.839667 E 121 40.824
+FIX MMISF LATLON S 28 46.651667 E 121 49.929334
+FIX MMISH LATLON S 28 39.443167 E 121 55.700333
+FIX MMISI LATLON S 28 51.155833 E 121 46.317667
+FIX MMISM LATLON S 28 42.966 E 121 52.882166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ03 FIX MMISI AT OR ABOVE 3100 FIX MMISF 3100 FIX OVERFLY MMISM 1671 RNW 03 FIX OVERFLY MMISH HDG 291 VECTORS
+ TRANSITION MMISA FIX MMISA AT OR ABOVE 3100 SPEED 210
+ TRANSITION MMISB FIX MMISB AT OR ABOVE 3100 SPEED 210
+ TRANSITION MMISC FIX MMISC AT OR ABOVE 3100 SPEED 210
+ENDAPPROACHES

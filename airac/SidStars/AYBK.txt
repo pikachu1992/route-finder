@@ -1,0 +1,47 @@
+//AYBK (BUKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUK LATLON S 5 26.581 E 154 40.03
+FIX BUKNB LATLON S 5 26.581 E 154 40.03
+FIX FN22 LATLON S 5 21.492334 E 154 43.996333
+FIX MQ22 LATLON S 5 23.6115 E 154 42.2625
+FIX TANA LATLON S 5 17.752667 E 154 46.666166
+FIX YBKNA LATLON S 5 15.757333 E 154 45.304667
+FIX YBKNC LATLON S 5 16.774667 E 154 49.790167
+FIX YBKND LATLON S 5 21.348833 E 154 50.366333
+FIX YBKNF LATLON S 5 22.173167 E 154 43.847833
+FIX YBKNH LATLON S 5 34.921834 E 154 29.800667
+FIX YBKNI LATLON S 5 19.474 E 154 46.819166
+FIX YBKNM LATLON S 5 24.872 E 154 40.876
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH NDB22 FIX FN22 1600 FIX BUKNB 1000 RNW 22 TRK 211 UNTIL 2800 TURN RIGHT DIRECT FIX BUKNB
+ TRANSITION BUK FIX BUKNB AT OR ABOVE 2800 SPEED 180 TRK 046 UNTIL 9.0 FROM FIX BUKNB
+APPROACH GPS22 FIX YBKNI AT OR ABOVE 2000 FIX OVERFLY YBKNF 1000 FIX OVERFLY YBKNM 142 RNW 22 FIX YBKNH AT OR ABOVE 2800
+ TRANSITION YBKNA FIX YBKNA AT OR ABOVE 2800 SPEED 185
+ TRANSITION YBKNC FIX YBKNC AT OR ABOVE 2800 SPEED 185
+ TRANSITION YBKND FIX YBKND AT OR ABOVE 2800 SPEED 185
+APPROACH NDM22 FIX TANA 1600 SPEED 180 FIX MQ22 732 RNW 22 TRK 210 UNTIL 2800 TURN RIGHT DIRECT FIX BUKNB
+ TRANSITION BUK FIX BUKNB AT OR ABOVE 2800 SPEED 180 TRK 045 UNTIL 11.0 FROM FIX BUK
+ENDAPPROACHES

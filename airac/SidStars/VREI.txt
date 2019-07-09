@@ -1,0 +1,41 @@
+//VREI (IFURU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADBIS LATLON N 5 34.056667 E 73 7.508333
+FIX AVPOT LATLON N 5 52.075 E 73 5.461667
+FIX EI400 LATLON N 5 33.488333 E 73 2.525
+FIX EI401 LATLON N 5 36.983333 E 73 2.128333
+FIX EI402 LATLON N 5 51.506666 E 73 0.476666
+FIX EI403 LATLON N 5 48.011666 E 73 0.875
+FIX PEBKA LATLON N 5 50.938333 E 72 55.491667
+FIX PILOD LATLON N 5 32.92 E 72 57.541667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX EI402 AT OR ABOVE 1700 FIX EI403 1700 RNW 18 TRK 177 UNTIL 500 TURN LEFT DIRECT FIX OVERFLY AVPOT HOLD AT FIX AVPOT RIGHT TURN INBOUNDCOURSE 267 ALT 3000 LEGTIME 1
+ TRANSITION AVPOT FIX AVPOT
+ TRANSITION PEBKA FIX PEBKA
+APPROACH RNV36 FIX EI400 AT OR ABOVE 1700 FIX EI401 1700 RNW 36 TRK 357 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY ADBIS HOLD AT FIX ADBIS RIGHT TURN INBOUNDCOURSE 267 ALT 3000 LEGTIME 1
+ TRANSITION ADBIS FIX ADBIS
+ TRANSITION PILOD FIX PILOD
+ENDAPPROACHES

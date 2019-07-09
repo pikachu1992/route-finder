@@ -1,0 +1,40 @@
+//VAGD (GONDIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CI04Y LATLON N 21 27.761333 E 80 13.432834
+FIX CI04Z LATLON N 21 27.761333 E 80 13.432834
+FIX D223F LATLON N 21 27.617333 E 80 13.2835
+FIX D225F LATLON N 21 26.896834 E 80 12.537167
+FIX FI04Y LATLON N 21 28.337666 E 80 14.03
+FIX FI04Z LATLON N 21 28.337666 E 80 14.03
+FIX GDA LATLON N 21 31.93 E 80 17.611667
+FIX GNNB LATLON N 21 31.458334 E 80 17.395
+FIX RW04 LATLON N 21 31.081667 E 80 16.875
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH ILSY04 FIX CI04Y AT OR ABOVE 2500 FIX FI04Y 2270 RNW 04 TRK 044 UNTIL 2500 TURN LEFT DIRECT FIX GNNB 3800 HOLD AT FIX GNNB LEFT TURN INBOUNDCOURSE 228 LEGTIME 1
+ TRANSITION GN FIX GNNB AT OR ABOVE 3800 TRK 228 INTERCEPT RADIAL 224 TO FIX D225F FIX D225F AT OR ABOVE 2500 TRK 179 UNTIL 3.0 FROM FIX D225F
+APPROACH ILSZ04 FIX CI04Z AT OR ABOVE 2500 FIX FI04Z 2270 RNW 04 TRK 044 UNTIL 2500 TURN LEFT DIRECT FIX GDA 3800 HOLD AT FIX GDA LEFT TURN INBOUNDCOURSE 221 LEGTIME 1
+ TRANSITION GDA FIX GDA AT OR ABOVE 3800 TRK 221 INTERCEPT RADIAL 224 TO FIX D223F FIX D223F AT OR ABOVE 2500 TRK 179 UNTIL 3.0 FROM FIX D223F
+ENDAPPROACHES

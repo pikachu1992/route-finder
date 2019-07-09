@@ -1,0 +1,45 @@
+//KAGO (WEISER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CINAY LATLON N 33 17.466 W 93 12.878833
+FIX LOCIT LATLON N 33 8.142833 W 93 13.221667
+FIX OPAYA LATLON N 33 25.449334 W 93 18.561334
+FIX ORUBE LATLON N 33 2.081333 W 93 19.394167
+FIX PICOK LATLON N 33 1.771834 W 93 7.505167
+FIX REPAE LATLON N 33 1.929 W 93 13.4495
+FIX VOCCU LATLON N 33 25.139833 W 93 6.619333
+FIX WUROD LATLON N 33 19.279667 W 93 12.812
+FIX ZAGLO LATLON N 33 11.032166 W 93 13.115666
+FIX ZEPEX LATLON N 33 25.297 W 93 12.590167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX ZEPEX AT OR ABOVE 2000 FIX WUROD 2000 FIX CINAY AT OR ABOVE 1400 RNW 18 TRK 181 UNTIL 719 FIX OVERFLY REPAE AT OR ABOVE 2000 HOLD AT FIX REPAE RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION OPAYA FIX OPAYA
+ TRANSITION VOCCU FIX VOCCU
+ TRANSITION ZEPEX HOLD AT FIX ZEPEX RIGHT TURN INBOUNDCOURSE 181 ALT 2000 LEGDIST 4
+APPROACH RNV36 FIX REPAE AT OR ABOVE 2000 FIX LOCIT 2000 FIX ZAGLO AT OR ABOVE 1060 RNW 36 TRK 001 UNTIL 719 FIX OVERFLY ZEPEX AT OR ABOVE 2000 HOLD AT FIX ZEPEX RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION ORUBE FIX ORUBE
+ TRANSITION PICOK FIX PICOK
+ TRANSITION REPAE HOLD AT FIX REPAE RIGHT TURN INBOUNDCOURSE 001 ALT 2000 LEGDIST 4
+ENDAPPROACHES

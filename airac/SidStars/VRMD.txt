@@ -1,0 +1,50 @@
+//VRMD (DHARAVANDHOO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMBOW LATLON N 5 1.086667 E 73 14.035
+FIX ATURU LATLON N 5 13.055 E 72 59.55
+FIX BANDY LATLON N 5 5.676667 E 73 16.073333
+FIX DEEDI LATLON N 5 17.645 E 73 1.588333
+FIX HOSNY LATLON N 5 10.266667 E 73 18.111667
+FIX JACKY LATLON N 5 8.465 E 72 57.511667
+FIX KUMAD LATLON N 5 23.437166 E 73 8.159333
+FIX MD031 LATLON N 5 7.108333 E 73 12.868333
+FIX MD171 LATLON N 5 11.625 E 73 2.753333
+FIX NASIM LATLON N 4 56.3295 E 73 13.070833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+STARS
+STAR NASI1A FIX NASIM AT OR ABOVE 4000 FIX AMBOW AT OR ABOVE 3000
+  RNW 30
+STAR NASI1B FIX NASIM AT OR ABOVE 4000 FIX JACKY AT OR ABOVE 3000
+  RNW 12
+ENDSTARS
+
+APPROACHES
+APPROACH RNV12 FIX ATURU AT OR ABOVE 1700 FIX MD171 1700 RNW 12 TRK 117 UNTIL 3000 TURN LEFT DIRECT FIX OVERFLY KUMAD 6000 HOLD AT FIX KUMAD RIGHT TURN INBOUNDCOURSE 184 LEGTIME 1
+ TRANSITION DEEDI FIX DEEDI
+ TRANSITION JACKY FIX JACKY
+APPROACH RNV30 FIX BANDY AT OR ABOVE 1700 FIX MD031 1700 RNW 30 TRK 297 UNTIL 5500 TURN RIGHT DIRECT FIX OVERFLY KUMAD 6000 HOLD AT FIX KUMAD RIGHT TURN INBOUNDCOURSE 184 LEGTIME 1
+ TRANSITION AMBOW FIX AMBOW
+ TRANSITION HOSNY FIX HOSNY
+ENDAPPROACHES

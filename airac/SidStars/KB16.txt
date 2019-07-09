@@ -1,0 +1,46 @@
+//KB16 (WHITFORDS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEEPS LATLON N 42 49.221 W 76 59.080667
+FIX CALUG LATLON N 43 4.571333 W 76 39.253166
+FIX CAMVA LATLON N 43 5.113667 W 76 25.4365
+FIX DETVE LATLON N 43 5.370667 W 76 18.622
+FIX EBALE LATLON N 42 59.300333 W 76 45.682
+FIX EBIRE LATLON N 43 0.376333 W 76 18.265333
+FIX FALGI LATLON N 43 9.286834 W 76 46.448333
+FIX FAMEP LATLON N 43 10.365334 W 76 18.969
+FIX HOBKA LATLON N 43 4.2935 W 76 46.0645
+FIX LYSAN LATLON N 43 12.745 W 76 30.858833
+FIX SCIPO LATLON N 42 48.4845 W 76 28.761334
+FIX VESPE LATLON N 42 47.860667 W 76 6.528833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX HOBKA AT OR ABOVE 2700 FIX CALUG 2000 RNW 10 TRK 099 UNTIL 800 FIX DETVE AT OR ABOVE 3000 HOLD AT FIX DETVE RIGHT TURN INBOUNDCOURSE 279 LEGDIST 4
+ TRANSITION BEEPS FIX BEEPS FIX EBALE AT OR ABOVE 3600
+ TRANSITION LYSAN FIX LYSAN FIX FALGI AT OR ABOVE 3600
+APPROACH RNV28 FIX DETVE AT OR ABOVE 2700 FIX CAMVA 2000 RNW 28 TRK 279 UNTIL 800 FIX HOBKA AT OR ABOVE 3000 HOLD AT FIX HOBKA RIGHT TURN INBOUNDCOURSE 099 LEGDIST 4
+ TRANSITION LYSAN FIX LYSAN FIX FAMEP AT OR ABOVE 3500
+ TRANSITION SCIPO FIX SCIPO FIX EBIRE AT OR ABOVE 3600
+ TRANSITION VESPE FIX VESPE FIX EBIRE AT OR ABOVE 3600
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//CCP2 (EXPLOITS VALLEY BOTWOOD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXIVA LATLON N 49 6.7415 W 55 21.964166
+FIX EPNIX LATLON N 49 6.667 W 55 11.551667
+FIX ETBIL LATLON N 48 53.153 W 55 31.118666
+FIX FAUNC LATLON N 49 0.223333 W 55 31.391167
+FIX IPSEG LATLON N 48 59.9765 W 55 31.747
+FIX IRMAX LATLON N 49 0.035833 W 55 42.115
+FIX LONVI LATLON N 49 6.495167 W 55 22.321667
+FIX MAFOZ LATLON N 49 13.550666 W 55 22.596167
+FIX OLIGA LATLON N 49 10.111 W 55 17.0675
+FIX OVGAG LATLON N 48 56.596667 W 55 36.6105
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX OVGAG AT OR ABOVE 1800 FIX FAUNC 1650 RNW 06 FIX OVERFLY AXIVA 3000 HOLD AT FIX AXIVA RIGHT TURN INBOUNDCOURSE 063 LEGTIME 1
+ TRANSITION ETBIL FIX ETBIL
+ TRANSITION IRMAX FIX IRMAX
+APPROACH RNV24 FIX OLIGA AT OR ABOVE 2100 FIX LONVI 1640 RNW 24 FIX OVERFLY IPSEG 3000 HOLD AT FIX IPSEG RIGHT TURN INBOUNDCOURSE 243 LEGTIME 1
+ TRANSITION EPNIX FIX EPNIX
+ TRANSITION MAFOZ FIX MAFOZ
+ENDAPPROACHES

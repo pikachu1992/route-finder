@@ -1,0 +1,43 @@
+//K18A (FRANKLIN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IYITE LATLON N 34 22.0415 W 83 1.783166
+FIX IYUYO LATLON N 34 21.615 W 83 22.993834
+FIX JIXUB LATLON N 34 23.9075 W 82 54.770666
+FIX JOPRU LATLON N 34 12.0885 W 83 19.262666
+FIX KIYED LATLON N 34 28.677167 W 82 56.6155
+FIX LIYGE LATLON N 34 19.137334 W 82 52.929334
+FIX NURYI LATLON N 34 16.852 W 83 21.1265
+FIX ZAXUG LATLON N 34 18.737333 W 83 14.125834
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX NURYI AT OR ABOVE 3000 FIX ZAXUG 2500 RNW 08 FIX OVERFLY JIXUB AT OR ABOVE 3000 HOLD AT FIX JIXUB RIGHT TURN INBOUNDCOURSE 257 LEGDIST 4
+ TRANSITION IYUYO FIX IYUYO AT OR ABOVE 3000
+ TRANSITION JOPRU FIX JOPRU AT OR ABOVE 3100
+ TRANSITION NURYI HOLD AT FIX NURYI RIGHT TURN INBOUNDCOURSE 077 ALT 3000 LEGDIST 4
+APPROACH RNV26 FIX JIXUB AT OR ABOVE 3000 FIX IYITE 2500 RNW 26 FIX OVERFLY NURYI AT OR ABOVE 3000 HOLD AT FIX NURYI RIGHT TURN INBOUNDCOURSE 077 LEGDIST 4
+ TRANSITION JIXUB HOLD AT FIX JIXUB RIGHT TURN INBOUNDCOURSE 257 ALT 3000 LEGDIST 4
+ TRANSITION KIYED FIX KIYED AT OR ABOVE 3000
+ TRANSITION LIYGE FIX LIYGE AT OR ABOVE 3000
+ENDAPPROACHES

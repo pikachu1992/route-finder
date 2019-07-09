@@ -1,0 +1,33 @@
+//SLAG (APIAGUAIKI TUMPA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AG766 LATLON S 19 34.875833 W 63 57.154667
+FIX AG767 LATLON S 19 54.2705 W 63 54.768167
+FIX AG768 LATLON S 19 58.611167 W 63 52.104
+FIX AG769 LATLON S 20 5.122 W 63 48.105334
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ34 FIX AG768 AT OR ABOVE 7300 SPEED 160 FIX AG767 5500 RNW 34 FIX OVERFLY AG766 AT OR ABOVE 8500 SPEED 160 HOLD AT FIX AG766 LEFT TURN INBOUNDCOURSE 192 ALT 9000 SPEED 160 LEGTIME 1
+ TRANSITION AG769 FIX AG769 AT OR ABOVE 10000 SPEED 160
+ENDAPPROACHES

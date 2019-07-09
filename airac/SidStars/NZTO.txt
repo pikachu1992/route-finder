@@ -1,0 +1,47 @@
+//NZTO (TOKOROA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMURI LATLON S 38 22.688666 E 176 1.154333
+FIX ARIKA LATLON S 38 16.082833 E 176 15.238
+FIX FF13 LATLON S 38 10.029833 E 175 49.858166
+FIX FF31 LATLON S 38 18.596666 E 175 57.494167
+FIX GOSTI LATLON S 38 28.665167 E 175 51.209833
+FIX GUMAN LATLON S 38 32.120833 E 176 9.191666
+FIX KARBA LATLON S 38 11.146166 E 175 36.774833
+FIX LALAN LATLON S 38 0.495667 E 175 56.001167
+FIX MIKER LATLON S 37 55.459834 E 175 37.0585
+FIX WAIPA LATLON S 38 5.932333 E 175 46.218667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX WAIPA AT OR ABOVE 3000 FIX FF13 2750 RNW 13 TURN RIGHT DIRECT FIX WAIPA 3500
+ TRANSITION KARBA FIX KARBA
+ TRANSITION LALAN FIX LALAN
+ TRANSITION MIKER FIX MIKER
+ TRANSITION WAIPA HOLD AT FIX WAIPA RIGHT TURN INBOUNDCOURSE 125 ALT 3500 LEGTIME 1
+APPROACH RNV31 FIX AMURI AT OR ABOVE 3900 FIX FF31 3000 RNW 31 TRK 304 UNTIL 2100 TURN LEFT DIRECT FIX AMURI 4100
+ TRANSITION AMURI HOLD AT FIX AMURI RIGHT TURN INBOUNDCOURSE 305 ALT 4100 LEGTIME 1
+ TRANSITION ARIKA FIX ARIKA
+ TRANSITION GOSTI FIX GOSTI
+ TRANSITION GUMAN FIX GUMAN
+ENDAPPROACHES

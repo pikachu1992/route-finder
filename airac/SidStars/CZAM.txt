@@ -1,0 +1,43 @@
+//CZAM (SALMON ARM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUDPI LATLON N 50 22.909166 W 119 15.619834
+FIX ETMAS LATLON N 50 54.7215 W 119 23.601
+FIX FELKO LATLON N 50 34.406666 W 119 41.988167
+FIX IMAKU LATLON N 50 37.474834 W 119 10.106666
+FIX KEGPI LATLON N 50 40.981333 W 119 40.346167
+FIX MIDPO LATLON N 50 57.284167 W 119 13.306166
+FIX OVBIP LATLON N 50 54.5215 W 119 34.656
+FIX SUTNI LATLON N 51 0.592667 W 119 25.506
+FIX URTEG LATLON N 50 46.422833 W 119 18.722333
+FIX VIVUL LATLON N 50 49.8285 W 119 22.019666
+FIX XOSEM LATLON N 50 42.163166 W 119 14.613167
+FIX YNY LATLON N 50 40.669667 W 118 56.327333
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX ETMAS AT OR ABOVE 6500 SPEED 180 FIX VIVUL 5490 FIX URTEG AT OR ABOVE 4010 FIX OVERFLY XOSEM 2147 RNW 14 FIX IMAKU SPEED 200 FIX OVERFLY DUDPI 7300 HOLD AT FIX DUDPI RIGHT TURN INBOUNDCOURSE 177 SPEED 200 LEGTIME 1
+ TRANSITION FELKO FIX FELKO FIX KEGPI AT OR ABOVE 7300 FIX OVBIP AT OR ABOVE 7000 SPEED 210
+ TRANSITION SUTNI FIX SUTNI
+ TRANSITION YNY FIX YNY FIX MIDPO AT OR ABOVE 8600 SPEED 210
+ENDAPPROACHES

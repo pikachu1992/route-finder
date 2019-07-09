@@ -1,0 +1,43 @@
+//KEZZ (CAMERON MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKZUB LATLON N 39 33.766333 W 94 8.863166
+FIX APVIW LATLON N 39 48.9795 W 94 17.244
+FIX EDUWU LATLON N 39 53.963666 W 94 17.8645
+FIX FEGZI LATLON N 39 53.4825 W 94 24.334834
+FIX IGITE LATLON N 39 32.813666 W 94 21.737
+FIX OXIBE LATLON N 39 38.275834 W 94 15.9165
+FIX PUVOZ LATLON N 39 54.438833 W 94 11.392667
+FIX VANHI LATLON N 39 33.293 W 94 15.300833
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX EDUWU AT OR ABOVE 3000 FIX APVIW 2700 RNW 17 TRK 172 UNTIL 1290 FIX OVERFLY VANHI AT OR ABOVE 3000 HOLD AT FIX VANHI RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4
+ TRANSITION EDUWU HOLD AT FIX EDUWU RIGHT TURN INBOUNDCOURSE 172 ALT 3000 LEGDIST 4
+ TRANSITION FEGZI FIX FEGZI
+ TRANSITION PUVOZ FIX PUVOZ
+APPROACH RNV35 FIX VANHI AT OR ABOVE 3000 FIX OXIBE 2700 RNW 35 TRK 352 UNTIL 1285 FIX OVERFLY EDUWU AT OR ABOVE 3000 HOLD AT FIX EDUWU RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4
+ TRANSITION AKZUB FIX AKZUB
+ TRANSITION IGITE FIX IGITE
+ TRANSITION VANHI HOLD AT FIX VANHI RIGHT TURN INBOUNDCOURSE 352 ALT 3000 LEGDIST 4
+ENDAPPROACHES

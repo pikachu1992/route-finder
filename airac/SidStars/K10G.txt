@@ -1,0 +1,37 @@
+//K10G (HOLMES CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANNEX LATLON N 40 31.571167 W 82 11.992
+FIX BLUEY LATLON N 40 31.913666 W 82 4.136333
+FIX CLOZE LATLON N 40 32.0435 W 82 1.1045
+FIX DOLCI LATLON N 40 32.809333 W 81 42.538333
+FIX ESTRN LATLON N 40 32.491166 W 81 50.397667
+FIX FIGIT LATLON N 40 32.375 W 81 53.215166
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX ANNEX AT OR ABOVE 3000 FIX BLUEY 2800 FIX CLOZE AT OR ABOVE 2060 RNW 09 TRK 095 UNTIL 1600 FIX OVERFLY DOLCI AT OR ABOVE 3000 HOLD AT FIX DOLCI RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION ANNEX HOLD AT FIX ANNEX RIGHT TURN INBOUNDCOURSE 095 ALT 3000 LEGDIST 4
+APPROACH RNV27 FIX DOLCI AT OR ABOVE 3000 FIX ESTRN 2800 FIX FIGIT AT OR ABOVE 2100 RNW 27 TRK 275 UNTIL 1460 FIX OVERFLY ANNEX AT OR ABOVE 3000 HOLD AT FIX ANNEX RIGHT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION DOLCI HOLD AT FIX DOLCI RIGHT TURN INBOUNDCOURSE 275 ALT 3000 LEGDIST 4
+ENDAPPROACHES

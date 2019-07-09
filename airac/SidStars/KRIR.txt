@@ -1,0 +1,37 @@
+//KRIR (FLABOB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BAYJY LATLON N 34 0.441 W 117 47.135167
+FIX HASIV LATLON N 33 57.902 W 117 31.842167
+FIX JASER LATLON N 33 59.907667 W 117 41.050667
+FIX PDZ LATLON N 33 55.100167 W 117 31.799833
+FIX PRADO LATLON N 33 55.390166 W 117 47.028334
+FIX UZOHO LATLON N 33 58.906 W 117 36.4425
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA06 FIX JASER AT OR ABOVE 3800 FIX UZOHO AT OR ABOVE 3200 FIX HASIV 2700 RNW 06 TRK 064 UNTIL 1170 TURN RIGHT DIRECT FIX OVERFLY PDZ AT OR ABOVE 3200 HOLD AT FIX PDZ RIGHT TURN INBOUNDCOURSE 258 LEGDIST 4
+ TRANSITION BAYJY FIX BAYJY
+ TRANSITION JASER HOLD AT FIX JASER RIGHT TURN INBOUNDCOURSE 092 ALT 3800 LEGDIST 4
+ TRANSITION PRADO FIX PRADO
+ENDAPPROACHES

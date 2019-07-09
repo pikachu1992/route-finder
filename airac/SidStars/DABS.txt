@@ -1,0 +1,44 @@
+//DABS (CHEIKH LARBI TEBESSI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD11 LATLON N 35 33.752167 E 7 51.644
+FIX CD12 LATLON N 35 33.752167 E 7 51.644
+FIX FD11 LATLON N 35 30.045833 E 7 58.924166
+FIX FD12 LATLON N 35 30.045833 E 7 58.924166
+FIX FS11 LATLON N 35 30.129 E 7 56.2255
+FIX FS12 LATLON N 35 30.129 E 7 56.2255
+FIX TBS LATLON N 35 27.394 E 8 4.1175
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 12
+RNW 29
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH VDM11 FIX CD11 AT OR ABOVE 5780 FIX FD11 5020 FIX TBS 3410 RNW 11 TRK 106 UNTIL 7.0 FROM FIX TBS SPEED 210 TURN LEFT DIRECT FIX TBS 7680
+ TRANSITION TBS FIX TBS AT OR ABOVE 7680 TRK 283 UNTIL 12.0 FROM FIX TBS
+APPROACH VDM12 FIX CD12 AT OR ABOVE 5780 FIX FD12 5020 FIX TBS 3452 RNW 12 TRK 106 UNTIL 7.0 FROM FIX TBS SPEED 210 TURN LEFT DIRECT FIX TBS 7680
+ TRANSITION TBS FIX TBS AT OR ABOVE 7680 TRK 283 UNTIL 12.0 FROM FIX TBS
+APPROACH VOR11 FIX FS11 5780 FIX TBS 3438 RNW 11 TRK 106 UNTIL 4530 TURN LEFT DIRECT FIX TBS 7680
+ TRANSITION TBS FIX TBS AT OR ABOVE 7680 TRK 265 UNTIL 7.0 FROM FIX TBS
+APPROACH VOR12 FIX FS12 5780 FIX TBS 3479 RNW 12 TRK 106 UNTIL 4530 TURN LEFT DIRECT FIX TBS 7680
+ TRANSITION TBS FIX TBS AT OR ABOVE 7680 TRK 265 UNTIL 7.0 FROM FIX TBS
+ENDAPPROACHES

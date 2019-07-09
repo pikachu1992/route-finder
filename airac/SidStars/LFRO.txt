@@ -1,0 +1,42 @@
+//LFRO (LANNION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMOPO LATLON N 48 46.431667 W 3 13.94
+FIX CN29 LATLON N 48 41.9855 W 3 12.692167
+FIX LNNB LATLON N 48 43.156667 W 3 18.466667
+FIX MN29 LATLON N 48 45.004 W 3 27.089333
+FIX RO404 LATLON N 48 45.211667 W 3 8.181667
+FIX RO405 LATLON N 48 36.648334 W 3 12.331667
+FIX RO406 LATLON N 48 41.405 W 3 10.03
+FIX RO408 LATLON N 48 42.625 W 3 15.78
+FIX RO410 LATLON N 48 45.74 W 3 30.603334
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB29 FIX CN29 AT OR ABOVE 3000 FIX LNNB 2400 FIX MN29 500 RNW 29 TRK 290 UNTIL 800 TURN RIGHT DIRECT FIX LNNB 3000 SPEED 195
+ TRANSITION LN HOLD AT FIX LNNB LEFT TURN INBOUNDCOURSE 290 ALT 3000 SPEED 175 LEGTIME 1
+APPROACH RNV29 FIX RO406 AT OR ABOVE 3000 SPEED 195 FIX RO408 3000 RNW 29 FIX OVERFLY RO410 TURN RIGHT DIRECT FIX AMOPO AT OR ABOVE 3000 SPEED 185
+ TRANSITION AMOPO FIX AMOPO AT OR ABOVE 3000 SPEED 195 FIX RO404 AT OR ABOVE 3000 SPEED 195
+ TRANSITION RO404 FIX RO404 AT OR ABOVE 3000 SPEED 195
+ TRANSITION RO405 FIX RO405 AT OR ABOVE 3000 SPEED 210
+ENDAPPROACHES

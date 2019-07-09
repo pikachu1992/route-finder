@@ -1,0 +1,47 @@
+//CZJN (SWAN RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APMIV LATLON N 52 2.569834 W 101 18.517834
+FIX BOVIL LATLON N 51 57.389167 W 101 23.395333
+FIX DUTBI LATLON N 52 14.6715 W 100 57.6065
+FIX IMAVO LATLON N 51 59.892 W 101 30.392
+FIX PILDU LATLON N 52 19.721333 W 101 11.655167
+FIX SEGUS LATLON N 52 17.2 W 101 4.624166
+FIX TAMLA LATLON N 52 12.029 W 101 9.555167
+FIX TUBAG LATLON N 52 11.3225 W 101 10.227167
+FIX UKTUD LATLON N 52 5.8435 W 101 15.424333
+FIX VISBA LATLON N 51 54.879167 W 101 16.411667
+FIX VOKOB LATLON N 52 3.254666 W 101 17.8715
+FIX XOTUD LATLON N 52 8.7355 W 101 12.684167
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 08
+RNW 20
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX BOVIL AT OR ABOVE 3000 FIX APMIV 2800 RNW 02 FIX XOTUD FIX OVERFLY TUBAG 3900 SPEED 200 HOLD AT FIX TUBAG RIGHT TURN INBOUNDCOURSE 024 SPEED 175 LEGTIME 1
+ TRANSITION IMAVO FIX IMAVO SPEED 210
+ TRANSITION VISBA FIX VISBA SPEED 210
+APPROACH RNV20 FIX SEGUS AT OR ABOVE 2900 FIX TAMLA 2800 RNW 20 FIX UKTUD FIX OVERFLY VOKOB 3900 SPEED 200 HOLD AT FIX VOKOB RIGHT TURN INBOUNDCOURSE 204 SPEED 175 LEGTIME 1
+ TRANSITION DUTBI FIX DUTBI SPEED 210
+ TRANSITION PILDU FIX PILDU SPEED 210
+ENDAPPROACHES

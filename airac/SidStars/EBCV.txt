@@ -1,0 +1,33 @@
+//EBCV (SHAPE AT CHIEVRES AB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DISUK LATLON N 50 35.5465 E 3 58.799
+FIX HUL LATLON N 50 44.966666 E 4 38.5
+FIX USODU LATLON N 50 36.702833 E 4 9.366
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH ILS26 FIX USODU AT OR ABOVE 3000 FIX DISUK 1800 RNW 26 TRK 260 UNTIL 1400 HDG 066 INTERCEPT RADIAL 111 TO FIX USODU FIX USODU AT OR ABOVE 3000 HOLD AT FIX USODU RIGHT TURN INBOUNDCOURSE 261 ALT 8000 SPEED 230 LEGDIST 6
+ TRANSITION HUL FIX HUL AT OR ABOVE 3000
+APPROACH RNV26 FIX USODU AT OR ABOVE 3000 FIX DISUK 1800 RNW 26 TURN RIGHT DIRECT FIX OVERFLY USODU AT OR ABOVE 3000 HOLD AT FIX USODU RIGHT TURN INBOUNDCOURSE 260 ALT 8000 SPEED 230 LEGDIST 6
+ENDAPPROACHES

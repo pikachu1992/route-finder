@@ -1,0 +1,37 @@
+//SLTI (SAN MATIAS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GAXET LATLON S 16 22.005167 W 58 24.496166
+FIX KOGRA LATLON S 16 31.252 W 58 31.685167
+FIX LIXEL LATLON S 16 35.518667 W 58 27.673834
+FIX LOGIN LATLON S 16 20.0465 W 58 24.036334
+FIX PAPIT LATLON S 16 24.5645 W 58 32.143333
+FIX REDES LATLON S 16 30.6225 W 58 26.521667
+FIX SANGA LATLON S 16 25.726333 W 58 25.3705
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ03 FIX REDES AT OR ABOVE 2500 FIX SANGA 2500 FIX OVERFLY GAXET 937 RNW 03 FIX OVERFLY LOGIN FIX OVERFLY PAPIT AT OR ABOVE 3000 HOLD AT FIX PAPIT RIGHT TURN INBOUNDCOURSE 153 LEGTIME 1
+ TRANSITION KOGRA FIX KOGRA AT OR ABOVE 4000
+ TRANSITION LIXEL FIX LIXEL AT OR ABOVE 4000
+ENDAPPROACHES

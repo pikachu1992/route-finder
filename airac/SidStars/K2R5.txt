@@ -1,0 +1,35 @@
+//K2R5 (ST ELMO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEYPA LATLON N 30 33.006833 W 88 10.854833
+FIX HELMU LATLON N 30 40.728167 W 88 21.513
+FIX IFUJU LATLON N 30 27.856333 W 88 20.916833
+FIX OTUWI LATLON N 30 24.739 W 88 26.990666
+FIX PLEBE LATLON N 30 27.836833 W 88 26.625833
+FIX VICKI LATLON N 30 23.558833 W 88 37.699333
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX OTUWI AT OR ABOVE 2000 FIX IFUJU 1500 RNW 06 FIX DEYPA TURN LEFT DIRECT FIX HELMU FIX OVERFLY PLEBE AT OR ABOVE 2000 HOLD AT FIX PLEBE RIGHT TURN INBOUNDCOURSE 062 LEGDIST 4
+ TRANSITION VICKI FIX VICKI
+ENDAPPROACHES

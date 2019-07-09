@@ -1,0 +1,48 @@
+//SKVG (CANANGUCHAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LITOL LATLON N 0 48.744334 W 76 33.677333
+FIX LUVDO LATLON N 0 54.58 W 76 18.204334
+FIX NISBO LATLON N 0 53.614667 W 76 34.905334
+FIX OPTAM LATLON N 0 50.226 W 76 27.8715
+FIX SOVDI LATLON N 0 42.900167 W 76 32.204
+FIX TISLU LATLON N 1 8.116667 W 76 11.616667
+FIX VG901 LATLON N 0 53.6145 W 76 34.905667
+FIX VUDAK LATLON N 0 47.261 W 76 39.483167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+SIDS
+SID TISL2D RNW 17 TRK 171 UNTIL 1640 FIX OVERFLY VG901 AT OR ABOVE 2700 FIX LUVDO AT OR ABOVE 7000 FIX TISLU AT OR ABOVE 12000
+ENDSIDS
+
+STARS
+STAR TISL2E FIX TISLU AT OR ABOVE 12000 FIX OPTAM AT OR ABOVE 6000
+  RNW 35
+ENDSTARS
+
+APPROACHES
+APPROACH RNVZ35 FIX LITOL AT OR ABOVE 4000 FIX NISBO 2850 RNW 35 TURN RIGHT DIRECT FIX OPTAM AT OR ABOVE 6000 SPEED 150 HOLD AT FIX OPTAM LEFT TURN INBOUNDCOURSE 261 ALT 6000 SPEED 180 LEGTIME 1
+ TRANSITION OPTAM FIX OPTAM AT OR ABOVE 6000
+ TRANSITION SOVDI FIX SOVDI AT OR ABOVE 6000
+ TRANSITION VUDAK FIX VUDAK AT OR ABOVE 6000
+ENDAPPROACHES

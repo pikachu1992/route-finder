@@ -1,0 +1,43 @@
+//CKQ3 (NORTH SPIRIT LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IPTOB LATLON N 52 18.468 W 92 49.252667
+FIX NOXUM LATLON N 52 32.649167 W 93 4.832666
+FIX OTPIX LATLON N 52 32.362834 W 93 4.253167
+FIX OTSAT LATLON N 52 26.429167 W 92 52.293334
+FIX SERKO LATLON N 52 22.344334 W 92 44.114333
+FIX SUTUD LATLON N 52 36.416833 W 93 12.479333
+FIX UDNAT LATLON N 52 26.1345 W 92 51.701666
+FIX URMUS LATLON N 52 32.540167 W 93 17.643833
+FIX VILTI LATLON N 52 26.216833 W 92 38.961
+FIX VINPU LATLON N 52 40.289833 W 93 7.2995
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX SUTUD AT OR ABOVE 2700 FIX NOXUM 2700 RNW 13 FIX OVERFLY OTSAT 2600 HOLD AT FIX OTSAT RIGHT TURN INBOUNDCOURSE 130 LEGTIME 1
+ TRANSITION URMUS FIX URMUS
+ TRANSITION VINPU FIX VINPU
+APPROACH RNV31 FIX SERKO AT OR ABOVE 2700 FIX UDNAT 2700 RNW 31 FIX OVERFLY OTPIX 2700 HOLD AT FIX OTPIX RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1
+ TRANSITION IPTOB FIX IPTOB
+ TRANSITION VILTI FIX VILTI
+ENDAPPROACHES

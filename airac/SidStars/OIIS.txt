@@ -1,0 +1,31 @@
+//OIIS (SEMNAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN03 LATLON N 35 28.273834 E 53 23.3075
+FIX SMN LATLON N 35 35.906666 E 53 29.838334
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH NDB03 FIX FN03 6600 RNW 03 FIX SMN AT OR ABOVE 4120 TRK 104 UNTIL 7000 TURN RIGHT DIRECT FIX SMN 10000 HOLD AT FIX SMN LEFT TURN INBOUNDCOURSE 221 LEGTIME 1
+ TRANSITION SMN FIX SMN AT OR ABOVE 10000 TRK 194 UNTIL 9.3 FROM FIX SMN
+ENDAPPROACHES

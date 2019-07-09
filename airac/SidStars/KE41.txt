@@ -1,0 +1,38 @@
+//KE41 (REAGAN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COLKO LATLON N 31 22.579166 W 101 36.633833
+FIX HISPI LATLON N 31 24.438167 W 101 25.1535
+FIX IVIDE LATLON N 31 23.510833 W 101 30.894667
+FIX JEKAB LATLON N 31 0.334 W 101 25.817
+FIX RUGPY LATLON N 31 17.601833 W 101 29.5955
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 16
+RNW 27
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX IVIDE AT OR ABOVE 5000 FIX RUGPY 4500 RNW 16 TRK 161 UNTIL 3106 FIX OVERFLY JEKAB AT OR ABOVE 5000 HOLD AT FIX JEKAB RIGHT TURN INBOUNDCOURSE 341 LEGDIST 5
+ TRANSITION COLKO FIX COLKO AT OR ABOVE 5000
+ TRANSITION HISPI FIX HISPI AT OR ABOVE 5000
+ TRANSITION IVIDE HOLD AT FIX IVIDE RIGHT TURN INBOUNDCOURSE 161 ALT 5000 LEGDIST 5
+ENDAPPROACHES

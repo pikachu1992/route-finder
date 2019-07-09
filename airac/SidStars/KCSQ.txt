@@ -1,0 +1,45 @@
+//KCSQ (CRESTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIVIM LATLON N 41 6.7075 W 94 23.7755
+FIX FOVOB LATLON N 40 50.138 W 94 17.8605
+FIX HIBAV LATLON N 40 55.846333 W 94 19.892666
+FIX LARIY LATLON N 40 58.753333 W 94 20.929834
+FIX LYMAN LATLON N 41 17.388 W 94 49.699166
+FIX NOCSI LATLON N 41 12.426334 W 94 25.828834
+FIX RILGE LATLON N 40 43.596167 W 94 21.616834
+FIX SICON LATLON N 41 15.006833 W 94 38.188667
+FIX UKIPE LATLON N 41 20.233667 W 94 27.475166
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 16
+RNW 22
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX NOCSI AT OR ABOVE 3000 FIX CIVIM 3000 RNW 16 TRK 161 UNTIL 1539 FIX OVERFLY FOVOB AT OR ABOVE 3000 HOLD AT FIX FOVOB RIGHT TURN INBOUNDCOURSE 341 LEGDIST 5
+ TRANSITION LYMAN FIX LYMAN FIX SICON AT OR ABOVE 3000
+ TRANSITION NOCSI HOLD AT FIX NOCSI RIGHT TURN INBOUNDCOURSE 161 ALT 3000 LEGDIST 4
+ TRANSITION UKIPE FIX UKIPE
+APPROACH RNV34 FIX FOVOB AT OR ABOVE 3000 FIX HIBAV 3000 FIX LARIY AT OR ABOVE 2040 RNW 34 TRK 341 UNTIL 1700 FIX OVERFLY NOCSI AT OR ABOVE 3000 HOLD AT FIX NOCSI RIGHT TURN INBOUNDCOURSE 161 LEGDIST 4
+ TRANSITION FOVOB HOLD AT FIX FOVOB RIGHT TURN INBOUNDCOURSE 341 ALT 3000 LEGDIST 4
+ TRANSITION RILGE FIX RILGE
+ENDAPPROACHES

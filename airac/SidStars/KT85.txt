@@ -1,0 +1,36 @@
+//KT85 (YOAKUM MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAPVO LATLON N 29 7.2925 W 97 3.019333
+FIX COGAL LATLON N 29 10.903 W 96 59.058
+FIX COLIR LATLON N 29 15.098333 W 97 3.971833
+FIX FOSAL LATLON N 29 14.450167 W 96 55.020833
+FIX VCT LATLON N 28 54.019166 W 96 58.736
+FIX WEMAR LATLON N 29 39.619166 W 97 0.624167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX COGAL AT OR ABOVE 2000 FIX COLIR 2000 RNW 31 TRK 308 UNTIL 1000 TURN RIGHT DIRECT FIX OVERFLY FOSAL AT OR ABOVE 2000 HOLD AT FIX FOSAL LEFT TURN INBOUNDCOURSE 117 LEGDIST 4
+ TRANSITION VCT FIX VCT FIX CAPVO AT OR ABOVE 2000
+ TRANSITION WEMAR FIX WEMAR FIX FOSAL AT OR ABOVE 2000
+ENDAPPROACHES

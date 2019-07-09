@@ -1,0 +1,41 @@
+//BIDV (DJUPIVOGUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ABOTA LATLON N 64 20.616667 W 14 25.25
+FIX BARIR LATLON N 64 26.2 W 14 34.5
+FIX DVFC1 LATLON N 64 31.903333 W 14 16.034
+FIX DVIC1 LATLON N 64 26.264833 W 14 20.657
+FIX DVMC1 LATLON N 64 37.5395 W 14 11.379
+FIX OKLUM LATLON N 64 22.466666 W 14 9.983333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVC17 FIX DVFC1 2400 FIX OVERFLY DVMC1 500 RNW 17 TURN RIGHT DIRECT FIX OKLUM 2700 HOLD AT FIX OKLUM LEFT TURN INBOUNDCOURSE 321 ALT 2700 LEGTIME 1
+ TRANSITION ABOTA FIX ABOTA AT OR ABOVE 4600 FIX DVIC1 AT OR ABOVE 2700
+ TRANSITION BARIR FIX BARIR AT OR ABOVE 6000 FIX DVIC1 AT OR ABOVE 4000
+ TRANSITION OKLUM FIX OKLUM AT OR ABOVE 2700 FIX DVIC1 AT OR ABOVE 2700
+APPROACH RNVC35 FIX DVFC1 2400 FIX OVERFLY DVMC1 500 RNW 35 TURN RIGHT DIRECT FIX OKLUM 2700 HOLD AT FIX OKLUM LEFT TURN INBOUNDCOURSE 321 ALT 2700 LEGTIME 1
+ TRANSITION ABOTA FIX ABOTA AT OR ABOVE 4600 FIX DVIC1 AT OR ABOVE 2700
+ TRANSITION BARIR FIX BARIR AT OR ABOVE 6000 FIX DVIC1 AT OR ABOVE 4000
+ TRANSITION OKLUM FIX OKLUM AT OR ABOVE 2700 FIX DVIC1 AT OR ABOVE 2700
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//CJT4 (CUMBERLAND HOUSE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DETBU LATLON N 53 59.0325 W 102 26.851333
+FIX DUTON LATLON N 53 56.3205 W 102 12.325333
+FIX EPROG LATLON N 53 49.069166 W 102 1.061
+FIX KEVGA LATLON N 54 0.526333 W 102 34.934833
+FIX LOGSI LATLON N 53 56.990833 W 102 15.898166
+FIX MIVAB LATLON N 53 58.356167 W 101 55.997333
+FIX PIGDU LATLON N 54 5.712167 W 102 35.341667
+FIX RORPA LATLON N 53 55.779334 W 102 9.448834
+FIX SELOL LATLON N 53 58.497 W 102 23.968667
+FIX VIPGU LATLON N 53 57.830666 W 102 20.3915
+FIX VODUX LATLON N 53 56.398166 W 102 40.274333
+FIX XIDIB LATLON N 53 54.256834 W 102 1.396
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX KEVGA AT OR ABOVE 2700 SPEED 180 FIX DETBU 2610 FIX OVERFLY VIPGU 1341 RNW 10 FIX OVERFLY DUTON 2300 HOLD AT FIX DUTON RIGHT TURN INBOUNDCOURSE 100 SPEED 200 LEGTIME 1
+ TRANSITION PIGDU FIX PIGDU SPEED 210
+ TRANSITION VODUX FIX VODUX SPEED 210
+APPROACH RNV28 FIX XIDIB AT OR ABOVE 2600 SPEED 180 FIX RORPA 2520 FIX OVERFLY LOGSI 1247 RNW 28 FIX OVERFLY SELOL 2300 HOLD AT FIX SELOL RIGHT TURN INBOUNDCOURSE 280 SPEED 200 LEGTIME 1
+ TRANSITION EPROG FIX EPROG SPEED 210
+ TRANSITION MIVAB FIX MIVAB SPEED 210
+ENDAPPROACHES

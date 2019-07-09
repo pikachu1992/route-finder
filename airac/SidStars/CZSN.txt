@@ -1,0 +1,44 @@
+//CZSN (SOUTH INDIAN LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALNID LATLON N 56 42.902167 W 98 55.443
+FIX BODVA LATLON N 56 57.792334 W 98 52.209
+FIX DUPDU LATLON N 56 52.838167 W 98 53.289833
+FIX EMUXO LATLON N 56 46.392667 W 98 54.688834
+FIX ILOKI LATLON N 56 57.195167 W 98 43.1425
+FIX IRDIK LATLON N 56 36.666 W 98 47.672167
+FIX KELRI LATLON N 56 37.257667 W 98 56.657666
+FIX LOLDI LATLON N 56 51.347 W 98 53.614166
+FIX MUNVO LATLON N 56 58.3785 W 99 1.280167
+FIX UDMEP LATLON N 56 42.2125 W 98 55.591667
+FIX VEVRU LATLON N 56 37.838666 W 99 5.647834
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX BODVA AT OR ABOVE 2600 FIX DUPDU 2600 RNW 18 FIX OVERFLY ALNID 2500 HOLD AT FIX ALNID RIGHT TURN INBOUNDCOURSE 183 LEGTIME 1
+ TRANSITION ILOKI FIX ILOKI SPEED 210
+ TRANSITION MUNVO FIX MUNVO SPEED 210
+APPROACH RNV36 FIX KELRI AT OR ABOVE 2600 FIX UDMEP 2600 FIX OVERFLY EMUXO 1257 RNW 36 FIX OVERFLY LOLDI 2500 HOLD AT FIX LOLDI RIGHT TURN INBOUNDCOURSE 003 LEGTIME 1
+ TRANSITION IRDIK FIX IRDIK SPEED 210
+ TRANSITION VEVRU FIX VEVRU SPEED 210
+ENDAPPROACHES

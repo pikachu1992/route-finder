@@ -1,0 +1,33 @@
+//K5A1 (NORWALK-HURON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ETOTY LATLON N 41 14.665834 W 82 26.062
+FIX JOMKU LATLON N 41 14.679 W 82 30.373834
+FIX JUROL LATLON N 41 14.708 W 82 48.194833
+FIX OFUZU LATLON N 41 14.634667 W 82 18.111833
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX OFUZU AT OR ABOVE 3100 FIX ETOTY 2500 FIX JOMKU AT OR ABOVE 1460 RNW 28 TRK 276 UNTIL 1253 FIX OVERFLY JUROL AT OR ABOVE 3000 HOLD AT FIX JUROL RIGHT TURN INBOUNDCOURSE 096 LEGDIST 4
+ TRANSITION OFUZU HOLD AT FIX OFUZU RIGHT TURN INBOUNDCOURSE 276 ALT 3100 LEGDIST 4
+ENDAPPROACHES

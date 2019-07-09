@@ -1,0 +1,53 @@
+//YBLT (BALLARAT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLZND LATLON S 37 18.108 E 143 44.115334
+FIX BLZNE LATLON S 37 15.571667 E 143 50.563333
+FIX BLZNF LATLON S 37 25.467167 E 143 48.652834
+FIX BLZNG LATLON S 37 19.541666 E 143 55.757333
+FIX BLZNH LATLON S 37 34.372667 E 143 46.929
+FIX BLZNI LATLON S 37 20.5195 E 143 49.608667
+FIX BLZNM LATLON S 37 30.414667 E 143 47.696
+FIX BLZSA LATLON S 37 43.381667 E 143 51.171833
+FIX BLZSC LATLON S 37 41.946833 E 143 39.468334
+FIX BLZSF LATLON S 37 36.027334 E 143 46.608
+FIX BLZSH LATLON S 37 27.122 E 143 48.333
+FIX BLZSI LATLON S 37 40.974667 E 143 45.647666
+FIX BLZSM LATLON S 37 31.08 E 143 47.567167
+FIX ESDIG LATLON S 37 44.535 E 143 45.4
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 13
+RNW 18
+RNW 23
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ18 FIX BLZNI AT OR ABOVE 4660 FIX BLZNF 3070 FIX OVERFLY BLZNM 1476 RNW 18 FIX BLZNH TRK 178 UNTIL 4000
+ TRANSITION BLZND FIX BLZND AT OR ABOVE 4800
+ TRANSITION BLZNE FIX BLZNE AT OR ABOVE 4800
+ TRANSITION BLZNG FIX BLZNG AT OR ABOVE 4800
+APPROACH RNVZ36 FIX BLZSI AT OR ABOVE 4000 FIX BLZSF 3070 FIX OVERFLY BLZSM 1481 RNW 36 FIX BLZSH TRK 358 UNTIL 4000
+ TRANSITION BLZSA FIX BLZSA AT OR ABOVE 4000
+ TRANSITION BLZSC FIX BLZSC AT OR ABOVE 4000
+ TRANSITION ESDIG FIX ESDIG AT OR ABOVE 4000
+ENDAPPROACHES

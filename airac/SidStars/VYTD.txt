@@ -1,0 +1,40 @@
+//VYTD (THANDWE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF02 LATLON N 18 20.454167 E 94 15.659333
+FIX FN02 LATLON N 18 22.749167 E 94 15.42
+FIX FN20 LATLON N 18 32.463833 E 94 19.412167
+FIX MN02 LATLON N 18 25.791334 E 94 17.185834
+FIX TDE LATLON N 18 27.402833 E 94 17.745833
+FIX TDNB LATLON N 18 27.301166 E 94 18.062666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX FF02 2300 FIX TDE 17 RNW 02 TRK 000 UNTIL 2000 TURN LEFT DIRECT FIX TDE 4000 HOLD AT FIX TDE RIGHT TURN INBOUNDCOURSE 226 ALT 4000 LEGTIME 1
+ TRANSITION TDE1 FIX TDE AT OR ABOVE 4000 TRK 226 UNTIL 7.2 FROM FIX TDE
+ TRANSITION TDE2 FIX TDE AT OR ABOVE 4000 TRK 209 UNTIL 7.2 FROM FIX TDE
+APPROACH NDB02 FIX FN02 1660 FIX MN02 560 RNW 02 HDG 340 UNTIL 2000 TURN LEFT DIRECT FIX TDNB 3000 HOLD AT FIX TDNB RIGHT TURN INBOUNDCOURSE 240 ALT 3000 LEGTIME 1
+ TRANSITION TD1 FIX TDNB AT OR ABOVE 3000 TRK 240 UNTIL 5.3 FROM FIX TDNB
+ TRANSITION TD2 FIX TDNB AT OR ABOVE 3000 TRK 225 UNTIL 6.0 FROM FIX TDNB
+APPROACH NDB20 FIX FN20 1670 FIX TDNB 740 RNW 20 HDG 200 UNTIL 2000 TURN RIGHT DIRECT FIX TDNB 3000 HOLD AT FIX TDNB RIGHT TURN INBOUNDCOURSE 045 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,42 @@
+//KCXE (CHASE CITY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DOCMO LATLON N 36 51.025834 W 78 23.351167
+FIX FILOV LATLON N 36 36.054167 W 78 28.779334
+FIX GELYE LATLON N 36 42.108833 W 78 29.485667
+FIX JASUX LATLON N 36 35.582 W 78 34.961
+FIX NASAE LATLON N 36 58.663667 W 78 31.426667
+FIX OCAPI LATLON N 36 52.436666 W 78 30.695
+FIX SBV LATLON N 36 40.502333 W 79 0.87
+FIX TEROC LATLON N 36 58.1915 W 78 37.638667
+FIX YUDUG LATLON N 36 59.818667 W 78 21.929
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX NASAE AT OR ABOVE 3000 FIX OCAPI 2100 RNW 18 TRK 184 UNTIL 903 TURN LEFT DIRECT FIX OVERFLY DOCMO AT OR ABOVE 3000 HOLD AT FIX DOCMO LEFT TURN INBOUNDCOURSE 043 LEGDIST 4
+ TRANSITION SBV FIX SBV FIX TEROC AT OR ABOVE 3000
+ TRANSITION YUDUG FIX YUDUG
+APPROACH RNV36 FIX FILOV AT OR ABOVE 3000 FIX GELYE 2100 RNW 36 TRK 004 UNTIL 903 TURN RIGHT DIRECT FIX OVERFLY FILOV AT OR ABOVE 3000 HOLD AT FIX FILOV RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4
+ TRANSITION FILOV HOLD AT FIX FILOV RIGHT TURN INBOUNDCOURSE 004 ALT 3000 LEGDIST 4
+ TRANSITION SBV FIX SBV FIX JASUX AT OR ABOVE 3000
+ENDAPPROACHES

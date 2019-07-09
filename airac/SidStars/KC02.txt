@@ -1,0 +1,37 @@
+//KC02 (GRAND GENEVA RESORT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AZDAV LATLON N 42 47.145833 W 88 16.142666
+FIX BAE LATLON N 43 7.011167 W 88 17.060666
+FIX IKLIW LATLON N 42 39.134167 W 88 8.020333
+FIX OBK LATLON N 42 13.282667 W 87 57.097166
+FIX OWOZA LATLON N 42 43.141166 W 88 12.077167
+FIX TEHRA LATLON N 42 40.144667 W 88 17.505667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX OWOZA AT OR ABOVE 3000 FIX TEHRA 2500 RNW 23 TRK 237 UNTIL 1235 TURN LEFT DIRECT FIX OVERFLY OWOZA AT OR ABOVE 3000 HOLD AT FIX OWOZA RIGHT TURN INBOUNDCOURSE 237 LEGDIST 4
+ TRANSITION BAE FIX BAE FIX AZDAV AT OR ABOVE 3000
+ TRANSITION OBK FIX OBK FIX IKLIW AT OR ABOVE 3000
+ TRANSITION OWOZA HOLD AT FIX OWOZA RIGHT TURN INBOUNDCOURSE 237 ALT 3000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//LFQG (FOURCHAMBAULT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D234F LATLON N 46 54.103834 E 3 4.9075
+FIX MN30 LATLON N 46 59.669833 E 3 7.987667
+FIX NVNB LATLON N 46 57.338333 E 3 11.396666
+FIX QG403 LATLON N 46 51.078334 E 3 14.24
+FIX QG406 LATLON N 46 55.318333 E 3 18.101666
+FIX QG408 LATLON N 46 57.941666 E 3 11.985
+FIX QG411 LATLON N 47 1.095 E 3 4.606667
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB30 FIX NVNB 2100 FIX MN30 896 RNW 30 TRK 315 UNTIL 1010 TURN LEFT DIRECT FIX OVERFLY D234F 2100 SPEED 190 TURN LEFT DIRECT FIX NVNB
+ TRANSITION NV HOLD AT FIX NVNB LEFT TURN INBOUNDCOURSE 315 ALT 2100 LEGTIME 1
+APPROACH RNV30 FIX QG408 2100 RNW 30 FIX OVERFLY QG411 AT OR ABOVE 1010 TURN LEFT DIRECT FIX QG403 SPEED 150
+ TRANSITION QG403 FIX QG403 SPEED 220 FIX QG406 AT OR ABOVE 2700 SPEED 220
+ TRANSITION QG406 FIX QG406 AT OR ABOVE 2700 SPEED 220
+ENDAPPROACHES

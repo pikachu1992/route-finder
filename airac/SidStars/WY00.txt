@@ -1,0 +1,40 @@
+//WY00 (RED REFLET RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CORLI LATLON N 44 0.522167 W 107 30.702833
+FIX HILRE LATLON N 44 2.951 W 107 38.576666
+FIX JESKA LATLON N 43 58.225 W 107 23.292334
+FIX RANKK LATLON N 43 52.093667 W 107 45.735167
+FIX RFLAY LATLON N 43 59.015333 W 107 25.836667
+FIX RLY LATLON N 43 57.848333 W 107 57.050333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+SIDS
+SID RLY1 RNW 28 FIX RFLAY FIX RLY
+ENDSIDS
+
+APPROACHES
+APPROACH RNV10 FIX HILRE AT OR ABOVE 7000 FIX CORLI 6500 FIX OVERFLY JESKA 4616 RNW 10 TRK 102 UNTIL 5132 TURN RIGHT DIRECT FIX OVERFLY HILRE AT OR ABOVE 7000 HOLD AT FIX HILRE LEFT TURN INBOUNDCOURSE 102 LEGDIST 6
+ TRANSITION HILRE HOLD AT FIX HILRE LEFT TURN INBOUNDCOURSE 102 ALT 7000 LEGDIST 6
+ TRANSITION RANKK FIX RANKK
+ENDAPPROACHES

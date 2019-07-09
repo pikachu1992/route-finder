@@ -1,0 +1,38 @@
+//KSCD (MERKEL SYLACAUGA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYUCI LATLON N 33 10.337333 W 86 21.838667
+FIX FONKU LATLON N 33 10.350833 W 86 23.659
+FIX GOKYE LATLON N 33 10.399333 W 86 30.773833
+FIX HETOD LATLON N 33 10.247 W 86 10.9105
+FIX IMEXE LATLON N 33 10.176667 W 86 3.5085
+FIX LUYCI LATLON N 33 10.275167 W 86 14.110834
+FIX ZILIL LATLON N 33 10.213166 W 86 7.249
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX GOKYE AT OR ABOVE 3200 FIX FONKU 1900 FIX AYUCI AT OR ABOVE 1400 RNW 09 TRK 094 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY GOKYE AT OR ABOVE 3200 HOLD AT FIX GOKYE LEFT TURN INBOUNDCOURSE 093 LEGDIST 4
+ TRANSITION GOKYE HOLD AT FIX GOKYE LEFT TURN INBOUNDCOURSE 093 ALT 3200 LEGDIST 4
+APPROACH RNV27 FIX IMEXE AT OR ABOVE 3500 FIX ZILIL AT OR ABOVE 3300 FIX HETOD 2500 FIX LUYCI AT OR ABOVE 1600 RNW 27 TRK 274 UNTIL 802 FIX OVERFLY GOKYE AT OR ABOVE 3200 HOLD AT FIX GOKYE LEFT TURN INBOUNDCOURSE 093 LEGDIST 4
+ TRANSITION IMEXE HOLD AT FIX IMEXE RIGHT TURN INBOUNDCOURSE 274 ALT 3500 LEGDIST 4
+ENDAPPROACHES

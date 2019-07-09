@@ -1,0 +1,37 @@
+//CBQ7 (KEMESS CREEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IKLAV LATLON N 56 37.174667 W 126 26.579
+FIX ITPOR LATLON N 56 52.319167 W 126 42.06
+FIX KELRO LATLON N 56 57.237167 W 126 43.595833
+FIX ONDIG LATLON N 56 42.865333 W 126 36.747167
+FIX VEVPA LATLON N 57 2.903833 W 126 53.899166
+FIX VITOG LATLON N 56 47.400833 W 126 40.532333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA11 FIX ONDIG AT OR ABOVE 8100 FIX VITOG 7900 FIX ITPOR AT OR ABOVE 6280 FIX OVERFLY KELRO 5320 RNW 11 FIX OVERFLY VEVPA 9700 SPEED 165 HOLD AT FIX VEVPA RIGHT TURN INBOUNDCOURSE 292 SPEED 200 LEGTIME 1
+ TRANSITION IKLAV FIX IKLAV
+APPROACH RNVA29 FIX ONDIG AT OR ABOVE 8100 FIX VITOG 7900 FIX ITPOR AT OR ABOVE 6280 FIX OVERFLY KELRO 5320 RNW 29 FIX OVERFLY VEVPA 9700 SPEED 165 HOLD AT FIX VEVPA RIGHT TURN INBOUNDCOURSE 292 SPEED 200 LEGTIME 1
+ TRANSITION IKLAV FIX IKLAV
+ENDAPPROACHES

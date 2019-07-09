@@ -1,0 +1,37 @@
+//KOLZ (OELWEIN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EXUKE LATLON N 42 44.48 W 92 13.235333
+FIX IDUYO LATLON N 42 51.6255 W 92 3.729667
+FIX OFQIX LATLON N 42 44.552833 W 92 3.64
+FIX UDCEK LATLON N 42 48.0545 W 92 8.487167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 18
+RNW 31
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX UDCEK AT OR ABOVE 2900 FIX OFQIX 2700 RNW 13 TRK 132 UNTIL 2000 TURN RIGHT DIRECT FIX OVERFLY UDCEK AT OR ABOVE 2900 HOLD AT FIX UDCEK RIGHT TURN INBOUNDCOURSE 132 LEGDIST 4
+ TRANSITION EXUKE FIX EXUKE
+ TRANSITION IDUYO FIX IDUYO
+ TRANSITION UDCEK HOLD AT FIX UDCEK RIGHT TURN INBOUNDCOURSE 132 ALT 2900 LEGDIST 4
+ENDAPPROACHES

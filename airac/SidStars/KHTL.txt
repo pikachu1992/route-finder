@@ -1,0 +1,38 @@
+//KHTL (ROSCOMMON CO - BLODGETT MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COVLA LATLON N 44 21.796166 W 84 31.575667
+FIX FISTU LATLON N 44 21.405334 W 84 57.605666
+FIX HESER LATLON N 44 21.916166 W 84 21.903167
+FIX HILOT LATLON N 44 21.736166 W 84 36.034667
+FIX IBEME LATLON N 44 21.562166 W 84 47.929834
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX FISTU AT OR ABOVE 3300 FIX IBEME 2900 RNW 09 TRK 094 UNTIL 1520 FIX OVERFLY HESER AT OR ABOVE 3300 HOLD AT FIX HESER RIGHT TURN INBOUNDCOURSE 274 LEGDIST 4
+ TRANSITION FISTU HOLD AT FIX FISTU RIGHT TURN INBOUNDCOURSE 094 ALT 3300 LEGDIST 4
+APPROACH RNV27 FIX HESER AT OR ABOVE 3300 FIX COVLA 3000 FIX HILOT AT OR ABOVE 1980 RNW 27 TRK 274 UNTIL 1540 FIX OVERFLY FISTU AT OR ABOVE 3300 HOLD AT FIX FISTU RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4
+ TRANSITION HESER HOLD AT FIX HESER RIGHT TURN INBOUNDCOURSE 274 ALT 3300 LEGDIST 4
+ENDAPPROACHES

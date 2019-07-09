@@ -1,0 +1,32 @@
+//KFES (FESTUS MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARNOL LATLON N 38 15.861667 W 90 21.3955
+FIX DAYLO LATLON N 38 7.061167 W 90 23.914834
+FIX JATAG LATLON N 38 2.596333 W 90 24.6735
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA01 FIX JATAG AT OR ABOVE 2600 FIX DAYLO 1900 RNW 01 TRK 010 UNTIL 833 FIX OVERFLY ARNOL AT OR ABOVE 3000 HOLD AT FIX ARNOL LEFT TURN INBOUNDCOURSE 350 ALT 3000 LEGDIST 4
+ TRANSITION JATAG HOLD AT FIX JATAG RIGHT TURN INBOUNDCOURSE 010 ALT 2600 LEGDIST 4
+ENDAPPROACHES

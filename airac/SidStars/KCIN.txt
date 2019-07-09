@@ -1,0 +1,39 @@
+//KCIN (NEU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMABE LATLON N 42 12.1365 W 94 59.225167
+FIX COHGI LATLON N 41 53.322 W 94 35.396666
+FIX DOXNO LATLON N 41 58.424 W 94 41.825833
+FIX FOFEP LATLON N 42 7.049666 W 94 52.750166
+FIX YUGVU LATLON N 42 0.9845 W 94 45.061667
+FIX ZIDRI LATLON N 42 4.565833 W 94 49.597333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX AMABE AT OR ABOVE 3000 FIX FOFEP 3000 FIX ZIDRI AT OR ABOVE 1900 RNW 13 TRK 135 UNTIL 1453 FIX OVERFLY COHGI AT OR ABOVE 3000 HOLD AT FIX COHGI LEFT TURN INBOUNDCOURSE 315 LEGDIST 4
+ TRANSITION AMABE HOLD AT FIX AMABE RIGHT TURN INBOUNDCOURSE 135 ALT 3000 LEGDIST 4
+APPROACH RNV31 FIX COHGI AT OR ABOVE 3000 FIX DOXNO 3000 FIX YUGVU AT OR ABOVE 1860 RNW 31 TRK 315 UNTIL 1453 FIX OVERFLY AMABE AT OR ABOVE 3000 HOLD AT FIX AMABE RIGHT TURN INBOUNDCOURSE 135 LEGDIST 4
+ TRANSITION COHGI HOLD AT FIX COHGI LEFT TURN INBOUNDCOURSE 315 ALT 3000 LEGDIST 4
+ENDAPPROACHES

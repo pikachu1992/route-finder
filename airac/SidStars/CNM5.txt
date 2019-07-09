@@ -1,0 +1,43 @@
+//CNM5 (KINGFISHER LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EMLEM LATLON N 52 56.992 W 89 36.688
+FIX EMUTA LATLON N 53 4.4735 W 90 5.960833
+FIX IKBOM LATLON N 53 9.069667 W 90 2.721334
+FIX IKDAX LATLON N 53 1.587833 W 89 33.456334
+FIX KEVMA LATLON N 52 58.9515 W 89 44.293667
+FIX MUVID LATLON N 52 52.3945 W 89 39.908333
+FIX ODGUV LATLON N 52 59.875834 W 90 9.188833
+FIX UBVAG LATLON N 52 58.911 W 89 44.135833
+FIX UDGEG LATLON N 53 2.581166 W 89 58.496
+FIX XESAV LATLON N 53 2.537167 W 89 58.322666
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX EMUTA AT OR ABOVE 2400 FIX XESAV 2300 RNW 12 FIX OVERFLY UBVAG 2400 HOLD AT FIX UBVAG RIGHT TURN INBOUNDCOURSE 117 LEGTIME 1
+ TRANSITION IKBOM FIX IKBOM
+ TRANSITION ODGUV FIX ODGUV
+APPROACH RNV30 FIX EMLEM AT OR ABOVE 2400 FIX KEVMA 2300 RNW 30 FIX OVERFLY UDGEG 2400 HOLD AT FIX UDGEG RIGHT TURN INBOUNDCOURSE 297 LEGTIME 1
+ TRANSITION IKDAX FIX IKDAX
+ TRANSITION MUVID FIX MUVID
+ENDAPPROACHES

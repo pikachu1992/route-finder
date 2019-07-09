@@ -1,0 +1,37 @@
+//KCDH (HARRELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARIPE LATLON N 33 31.767667 W 92 46.871167
+FIX BUSGE LATLON N 33 48.779167 W 92 43.6215
+FIX HULOD LATLON N 33 42.9535 W 92 44.736833
+FIX JAVAB LATLON N 33 34.266167 W 92 46.395167
+FIX URAME LATLON N 33 25.955666 W 92 47.976667
+FIX XICEL LATLON N 33 40.469333 W 92 45.2115
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX URAME AT OR ABOVE 2700 FIX ARIPE 1800 FIX JAVAB AT OR ABOVE 980 RNW 01 TRK 007 UNTIL 421 FIX OVERFLY BUSGE AT OR ABOVE 2700 HOLD AT FIX BUSGE RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4
+ TRANSITION URAME HOLD AT FIX URAME RIGHT TURN INBOUNDCOURSE 007 ALT 2700 LEGDIST 4
+APPROACH RNV19 FIX BUSGE AT OR ABOVE 2700 FIX HULOD 1800 FIX XICEL AT OR ABOVE 1000 RNW 19 TRK 187 UNTIL 426 FIX OVERFLY URAME AT OR ABOVE 2700 HOLD AT FIX URAME RIGHT TURN INBOUNDCOURSE 007 LEGDIST 4
+ TRANSITION BUSGE HOLD AT FIX BUSGE RIGHT TURN INBOUNDCOURSE 187 ALT 2700 LEGDIST 4
+ENDAPPROACHES

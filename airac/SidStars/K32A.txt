@@ -1,0 +1,38 @@
+//K32A (DANVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EYIVI LATLON N 35 6.762833 W 93 32.391
+FIX KADNE LATLON N 35 3.935 W 93 20.093167
+FIX LATHS LATLON N 35 5.027167 W 93 45.629333
+FIX OSOME LATLON N 35 6.1345 W 93 37.206
+FIX PIRLE LATLON N 35 4.7625 W 93 8.649334
+FIX TIDLE LATLON N 35 5.582 W 93 41.418167
+FIX WORKO LATLON N 35 3.515333 W 93 18.276667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX LATHS AT OR ABOVE 4000 FIX TIDLE AT OR ABOVE 3400 FIX OSOME AT OR ABOVE 2800 FIX EYIVI 2100 RNW 11 TRK 105 UNTIL 793 FIX OVERFLY PIRLE AT OR ABOVE 3600 HOLD AT FIX PIRLE RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4
+ TRANSITION LATHS HOLD AT FIX LATHS RIGHT TURN INBOUNDCOURSE 080 ALT 4000 LEGDIST 4
+APPROACH RNV29 FIX PIRLE AT OR ABOVE 3600 FIX WORKO 2300 FIX KADNE AT OR ABOVE 1800 RNW 29 TRK 285 UNTIL 793 FIX EYIVI FIX OVERFLY LATHS AT OR ABOVE 4000 HOLD AT FIX LATHS RIGHT TURN INBOUNDCOURSE 080 LEGDIST 4
+ TRANSITION PIRLE HOLD AT FIX PIRLE RIGHT TURN INBOUNDCOURSE 260 ALT 3600 LEGDIST 4
+ENDAPPROACHES

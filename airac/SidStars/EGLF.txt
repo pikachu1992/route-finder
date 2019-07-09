@@ -1,0 +1,39 @@
+//EGLF (FARNBOROUGH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20LOC LATLON N 51 17.629834 W 0 43.325666
+FIX 32LOC LATLON N 51 18.191 W 0 41.636333
+FIX CF06 LATLON N 51 13.8295 W 0 54.699667
+FIX CF24 LATLON N 51 19.215667 W 0 38.552833
+FIX FF06 LATLON N 51 14.300167 W 0 53.2965
+FIX FF24 LATLON N 51 18.7485 W 0 39.9615
+FIX ML06 LATLON N 51 16.138667 W 0 47.805667
+FIX ML24 LATLON N 51 16.923334 W 0 45.4505
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH ILS06 FIX CF06 AT OR ABOVE 1900 FIX FF06 1900 RNW 06 TRK 062 UNTIL 1400 HDG 277 VECTORS
+APPROACH ILS24 FIX CF24 AT OR ABOVE 1900 FIX FF24 1900 RNW 24 TRK 242 UNTIL 1000 HDG 277 VECTORS
+APPROACH LOC06 FIX CF06 AT OR ABOVE 1900 FIX FF06 1900 FIX ML06 460 RNW 06 TRK 062 UNTIL 1400 HDG 277 VECTORS
+APPROACH LOC24 FIX CF24 AT OR ABOVE 1900 FIX FF24 1900 FIX 32LOC AT OR ABOVE 1460 FIX 20LOC AT OR ABOVE 1010 FIX ML24 456 RNW 24 TRK 242 UNTIL 1000 HDG 277 VECTORS
+ENDAPPROACHES

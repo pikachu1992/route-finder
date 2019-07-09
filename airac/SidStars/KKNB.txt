@@ -1,0 +1,45 @@
+//KKNB (KANAB MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BCE LATLON N 37 41.351167 W 112 18.233833
+FIX DEDKE LATLON N 36 48.874333 W 112 37.4805
+FIX HUROR LATLON N 36 53.467667 W 112 35.299333
+FIX JALMA LATLON N 36 33.575333 W 112 11.9975
+FIX JOVBA LATLON N 36 53.3925 W 112 25.608
+FIX KACIR LATLON N 36 59.514667 W 112 14.366833
+FIX OKADE LATLON N 36 56.276167 W 112 33.963334
+FIX SIGOY LATLON N 36 59.6875 W 112 32.338333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+SIDS
+SID KACIR2
+ RNW 01 HDG 006 INTERCEPT RADIAL 101 TO FIX KACIR SPEED 200 TURN RIGHT DIRECT FIX KACIR
+ RNW 19 HDG 186 INTERCEPT RADIAL 098 TO FIX JOVBA SPEED 200 FIX JOVBA FIX KACIR
+  TRANSITION BCE FIX BCE
+  TRANSITION JALMA FIX JALMA
+ENDSIDS
+
+APPROACHES
+APPROACH RNV01 FIX HUROR AT OR ABOVE 6900 FIX OKADE 6200 FIX SIGOY 5024 RNW 01 TRK 006 UNTIL 5268 TURN RIGHT DIRECT FIX DEDKE AT OR ABOVE 8200 HOLD AT FIX DEDKE RIGHT TURN INBOUNDCOURSE 006 LEGDIST 7
+ TRANSITION KACIR FIX KACIR FIX DEDKE AT OR ABOVE 8400 HOLD AT FIX DEDKE RIGHT TURN INBOUNDCOURSE 006 ALT 8200 LEGDIST 7
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//0TX1 (PECAN PLANTATION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEGAK LATLON N 32 18.558167 W 97 41.1445
+FIX CELTC LATLON N 32 10.152334 W 97 24.395333
+FIX FAVAP LATLON N 32 23.873167 W 97 39.984
+FIX HASUX LATLON N 32 31.370333 W 97 38.3705
+FIX JEN LATLON N 32 9.575333 W 97 52.660834
+FIX JOGOT LATLON N 32 30.479 W 97 32.551667
+FIX MQP LATLON N 32 43.570834 W 97 59.8465
+FIX RUPLE LATLON N 32 26.303167 W 97 39.448
+FIX STIES LATLON N 32 32.257166 W 97 44.191166
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV19 FIX HASUX AT OR ABOVE 3000 FIX RUPLE 2300 FIX FAVAP AT OR ABOVE 1500 RNW 19 TRK 187 UNTIL 1110 FIX CEGAK FIX OVERFLY JEN AT OR ABOVE 3000 HOLD AT FIX JEN RIGHT TURN INBOUNDCOURSE 275 LEGDIST 4
+ TRANSITION CELTC FIX CELTC FIX JOGOT AT OR ABOVE 3000
+ TRANSITION JEN FIX MQP FIX STIES AT OR ABOVE 3000
+ TRANSITION MQP FIX JEN FIX STIES AT OR ABOVE 3000
+ENDAPPROACHES

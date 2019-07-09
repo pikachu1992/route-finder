@@ -1,0 +1,39 @@
+//K6L3 (LISBON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAMAG LATLON N 46 31.828333 W 97 47.821333
+FIX CUKOB LATLON N 46 15.237167 W 97 34.010833
+FIX HAUTE LATLON N 46 24.725666 W 97 41.8885
+FIX JETGO LATLON N 46 22.440833 W 97 39.986833
+FIX WEBOB LATLON N 46 38.748 W 97 53.631
+FIX WERIR LATLON N 46 28.674 W 97 45.182833
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 14
+RNW 21
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX WEBOB AT OR ABOVE 3600 FIX CAMAG 3000 FIX WERIR AT OR ABOVE 1840 RNW 14 TRK 146 UNTIL 1540 FIX OVERFLY CUKOB AT OR ABOVE 3600 HOLD AT FIX CUKOB RIGHT TURN INBOUNDCOURSE 326 LEGDIST 4
+ TRANSITION WEBOB HOLD AT FIX WEBOB RIGHT TURN INBOUNDCOURSE 146 ALT 3600 LEGDIST 4
+APPROACH RNV32 FIX CUKOB AT OR ABOVE 3600 FIX JETGO 2800 FIX HAUTE AT OR ABOVE 1960 RNW 32 TRK 326 UNTIL 1519 FIX OVERFLY WEBOB AT OR ABOVE 3600 HOLD AT FIX WEBOB RIGHT TURN INBOUNDCOURSE 146 LEGDIST 4
+ TRANSITION CUKOB HOLD AT FIX CUKOB RIGHT TURN INBOUNDCOURSE 326 ALT 3600 LEGDIST 4
+ENDAPPROACHES

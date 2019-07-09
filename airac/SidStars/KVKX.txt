@@ -1,0 +1,50 @@
+//KVKX (POTOMAC)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BBONE LATLON N 38 37.502 W 78 49.430167
+FIX CRROL LATLON N 38 42.027334 W 77 1.519667
+FIX ESL LATLON N 39 13.5295 W 78 59.37
+FIX GILFF LATLON N 38 21.747667 W 77 26.089667
+FIX HIGPO LATLON N 38 22.268167 W 77 22.332833
+FIX IRONS LATLON N 38 31.866 W 77 6.365666
+FIX KVKX LATLON N 38 44.9185 W 76 57.355333
+FIX LLBEE LATLON N 38 35.120833 W 78 25.590667
+FIX LURAY LATLON N 38 35.915666 W 78 34.003834
+FIX SEALZ LATLON N 38 25.392667 W 79 17.436
+FIX TIKEE LATLON N 38 37.106167 W 78 14.927833
+FIX WOBUB LATLON N 38 37.904833 W 77 7.441667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+STARS
+STAR TIKEE3 FIX TIKEE FIX GILFF FIX OVERFLY HIGPO HDG 090 VECTORS
+ TRANSITION BBONE FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION ESL FIX ESL 19000 FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION SEALZ FIX SEALZ FIX LLBEE 9000
+  RNW 06 RNW 24
+ENDSTARS
+
+APPROACHES
+APPROACH RNV06 FIX WOBUB AT OR ABOVE 1700 FIX CRROL 1500 RNW 06 TRK 059 UNTIL 518 TURN RIGHT DIRECT FIX OVERFLY WOBUB AT OR ABOVE 1700 HOLD AT FIX WOBUB RIGHT TURN INBOUNDCOURSE 059 SPEED 175 LEGDIST 4
+ TRANSITION IRONS FIX IRONS
+ TRANSITION WOBUB HOLD AT FIX WOBUB RIGHT TURN INBOUNDCOURSE 059 ALT 1700 SPEED 175 LEGDIST 4
+ENDAPPROACHES

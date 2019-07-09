@@ -1,0 +1,37 @@
+//VYBM (BANMAW)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BMNB LATLON N 24 16.159667 E 97 14.909833
+FIX EP15 LATLON N 24 16.830167 E 97 14.6435
+FIX FF15 LATLON N 24 21.583667 E 97 12.7545
+FIX FF33 LATLON N 24 11.972 E 97 18.877667
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH NDB15 FIX FF15 2020 FIX OVERFLY EP15 425 FIX OVERFLY BMNB AT OR ABOVE 780 RNW 15 HDG 190 UNTIL 2000 TURN RIGHT DIRECT FIX BMNB 3000 HOLD AT FIX BMNB LEFT TURN INBOUNDCOURSE 011 LEGTIME 1
+ TRANSITION BM1 FIX BMNB AT OR ABOVE 3000 TRK 011 UNTIL 5.3 FROM FIX BMNB
+ TRANSITION BM2 FIX BMNB AT OR ABOVE 3000 TRK 356 UNTIL 7.5 FROM FIX BMNB
+APPROACH NDB33 FIX FF33 2020 RNW 33 FIX OVERFLY BMNB HDG 020 UNTIL 3000 TURN LEFT DIRECT FIX BMNB HOLD AT FIX BMNB RIGHT TURN INBOUNDCOURSE 170 LEGTIME 1
+ TRANSITION BM1 FIX BMNB AT OR ABOVE 3000 TRK 170 UNTIL 5.3 FROM FIX BMNB
+ TRANSITION BM2 FIX BMNB AT OR ABOVE 3000 TRK 155 UNTIL 7.8 FROM FIX BMNB
+ENDAPPROACHES

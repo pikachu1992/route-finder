@@ -1,0 +1,38 @@
+//AYKK (KIKORI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YKKWA LATLON S 7 23.294333 E 144 4.9025
+FIX YKKWB LATLON S 7 18.685 E 144 4.7985
+FIX YKKWC LATLON S 7 17.0105 E 144 9.100834
+FIX YKKWF LATLON S 7 23.145167 E 144 11.496667
+FIX YKKWH LATLON S 7 33.045334 E 144 17.301667
+FIX YKKWI LATLON S 7 20.915333 E 144 8.147333
+FIX YKKWM LATLON S 7 25.374667 E 144 14.846666
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH GPS12 FIX YKKWI AT OR ABOVE 2000 FIX OVERFLY YKKWF 1100 FIX OVERFLY YKKWM 87 RNW 12 TRK 118 UNTIL 1500 FIX YKKWH AT OR ABOVE 2200
+ TRANSITION YKKWA FIX YKKWA AT OR ABOVE 2200
+ TRANSITION YKKWB FIX YKKWB AT OR ABOVE 2200
+ TRANSITION YKKWC FIX YKKWC AT OR ABOVE 2200
+ENDAPPROACHES

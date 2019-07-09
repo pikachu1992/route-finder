@@ -1,0 +1,44 @@
+//KSEZ (SEDONA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOWSU LATLON N 34 39.344666 W 111 53.000333
+FIX EXUTY LATLON N 34 42.9285 W 111 57.235667
+FIX FETIN LATLON N 34 48.524666 W 111 50.2865
+FIX HEMUT LATLON N 34 42.858167 W 111 57.322834
+FIX JUWSO LATLON N 34 47.805833 W 112 3.014
+FIX LOMBB LATLON N 34 49.713334 W 111 48.807334
+FIX LYRIT LATLON N 34 46.636834 W 111 52.633333
+FIX MINGY LATLON N 34 32.9675 W 111 44.990333
+FIX OATES LATLON N 34 52.208666 W 111 42.562667
+FIX ZABUS LATLON N 34 36.853166 W 111 44.501666
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID OATES1 RNW 21 FIX FETIN FIX HEMUT FIX ZABUS FIX OATES
+ENDSIDS
+
+APPROACHES
+APPROACH GPS03 FIX EXUTY AT OR ABOVE 8000 FIX LYRIT 6600 FIX LOMBB 5200 RNW 03 TRK 033 UNTIL 5230 TURN RIGHT DIRECT FIX MINGY 12000 HOLD AT FIX MINGY RIGHT TURN INBOUNDCOURSE 220 LEGTIME 1
+ TRANSITION JUWSO FIX JUWSO
+ TRANSITION MINGY FIX MINGY FIX BOWSU AT OR ABOVE 9500
+ENDAPPROACHES

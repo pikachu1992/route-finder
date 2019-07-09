@@ -1,0 +1,51 @@
+//HEAZ (ALMAZA AB)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX A LATLON N 30 4.44 E 31 21.566666
+FIX ALTOX LATLON N 30 33.883333 E 31 16.366667
+FIX CAI LATLON N 30 9.12 E 31 25.433333
+FIX CI36 LATLON N 29 54.420667 E 31 21.3635
+FIX CRS LATLON N 29 36.616667 E 31 19.983334
+FIX CVO LATLON N 30 5.538334 E 31 23.305
+FIX D158J LATLON N 29 54.857833 E 31 25.140167
+FIX FI36 LATLON N 29 59.933167 E 31 21.473833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 18
+RNW 23
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH ILS36 FIX CI36 2500 FIX FI36 2500 RNW 36 TRK 357 UNTIL 3000
+ TRANSITION ALTOX FIX ALTOX AT OR ABOVE 12000 SPEED 210 FIX A AT OR ABOVE 4500 FIX OVERFLY D158J AT OR ABOVE 2500
+ TRANSITION CAI FIX CAI AT OR ABOVE 4500 SPEED 210 FIX A AT OR ABOVE 4500 FIX OVERFLY D158J AT OR ABOVE 2500
+ TRANSITION CRS FIX CRS AT OR ABOVE 12000 SPEED 210
+ TRANSITION CVO FIX CVO AT OR ABOVE 4500 SPEED 210 FIX A AT OR ABOVE 4500 FIX OVERFLY D158J AT OR ABOVE 2500
+ENDAPPROACHES
+
+GATES
+GATE 1 N 30 6.158333 E 31 21.721667
+GATE 2 N 30 6.145 E 31 21.721667
+GATE 3 N 30 6.13 E 31 21.721667
+GATE 4 N 30 6.113333 E 31 21.721667
+GATE 5 N 30 6.1 E 31 21.721667
+GATE 6 N 30 6.085 E 31 21.721667
+ENDGATES

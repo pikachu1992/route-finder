@@ -1,0 +1,46 @@
+//CZBM (BROMONT ROLAND DESOURDY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANSYL LATLON N 45 13.559666 W 72 59.404
+FIX ELBES LATLON N 45 27.562333 W 72 37.3175
+FIX ENEBO LATLON N 45 6.272333 W 72 45.930167
+FIX HAFIZ LATLON N 45 32.274167 W 72 34.943167
+FIX IGVEB LATLON N 45 26.749333 W 72 41.010167
+FIX IKBAV LATLON N 45 13.8945 W 72 48.371666
+FIX ILILA LATLON N 45 9.529333 W 72 52.15
+FIX IMUXI LATLON N 45 9.919333 W 72 52.659833
+FIX LIBUV LATLON N 45 25.893667 W 72 30.623
+FIX MACVL LATLON N 45 21.9065 W 72 40.156834
+FIX OBTID LATLON N 45 21.179666 W 72 32.985167
+FIX XOTMI LATLON N 45 15.699167 W 72 46.420667
+FIX XOVPU LATLON N 45 19.267834 W 72 42.722666
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX IMUXI AT OR ABOVE 2200 FIX IKBAV 1730 FIX XOTMI AT OR ABOVE 980 RNW 05 FIX OVERFLY IGVEB 3100 HOLD AT FIX IGVEB RIGHT TURN INBOUNDCOURSE 030 SPEED 200 LEGTIME 1
+ TRANSITION ANSYL FIX ANSYL
+ TRANSITION ENEBO FIX ENEBO
+APPROACH RNV23 FIX ELBES AT OR ABOVE 2900 FIX MACVL 2020 FIX XOVPU AT OR ABOVE 1000 RNW 23 FIX OVERFLY ILILA 3100 HOLD AT FIX ILILA RIGHT TURN INBOUNDCOURSE 230 SPEED 250 LEGTIME 1
+ TRANSITION HAFIZ FIX HAFIZ
+ TRANSITION OBTID FIX OBTID FIX LIBUV AT OR ABOVE 2900
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//CYDO (DOLBEAU-ST-FELICIEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVUVO LATLON N 48 47.584667 W 72 42.927667
+FIX BODGA LATLON N 48 46.414166 W 72 15.821666
+FIX DANIR LATLON N 48 43.343 W 72 35.693
+FIX IGSAN LATLON N 48 45.9785 W 72 6.321
+FIX IPVIG LATLON N 48 46.058 W 72 8.033666
+FIX LOKMO LATLON N 48 40.994666 W 72 6.851
+FIX MAPUG LATLON N 48 47.525333 W 72 41.491667
+FIX RESAT LATLON N 48 47.266667 W 72 35.313334
+FIX ROLDI LATLON N 48 50.962333 W 72 5.789333
+FIX TUKAV LATLON N 48 52.2525 W 72 34.829167
+FIX XETEP LATLON N 48 46.943167 W 72 27.7685
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX RESAT AT OR ABOVE 2200 FIX XETEP 1400 RNW 11 FIX OVERFLY IPVIG 3200 HOLD AT FIX IPVIG RIGHT TURN INBOUNDCOURSE 111 LEGTIME 1
+ TRANSITION AVUVO FIX AVUVO
+ TRANSITION DANIR FIX DANIR SPEED 210
+ TRANSITION TUKAV FIX TUKAV SPEED 210
+APPROACH RNV29 FIX IGSAN AT OR ABOVE 1700 FIX BODGA 1700 RNW 29 FIX OVERFLY MAPUG 3200 HOLD AT FIX MAPUG RIGHT TURN INBOUNDCOURSE 290 LEGTIME 1
+ TRANSITION LOKMO FIX LOKMO SPEED 210
+ TRANSITION ROLDI FIX ROLDI SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,45 @@
+//KTQH (TAHLEQUAH MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEDIK LATLON N 35 51.338666 W 95 0.485333
+FIX DOMIN LATLON N 36 1.159667 W 95 0.015
+FIX HOSAD LATLON N 35 45.040667 W 94 54.638333
+FIX JURMA LATLON N 35 45.430333 W 95 6.915167
+FIX PUNGE LATLON N 36 7.4595 W 95 5.888666
+FIX REVSE LATLON N 35 53.204 W 95 0.396167
+FIX SUBME LATLON N 35 45.238166 W 95 0.7765
+FIX WISES LATLON N 36 7.068167 W 94 53.554834
+FIX YASXU LATLON N 36 7.2665 W 94 59.7215
+FIX YELUN LATLON N 35 58.4305 W 95 0.145834
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX YASXU AT OR ABOVE 3000 FIX DOMIN 2500 FIX YELUN AT OR ABOVE 1600 RNW 17 FIX OVERFLY SUBME AT OR ABOVE 3100 HOLD AT FIX SUBME RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4
+ TRANSITION PUNGE FIX PUNGE AT OR ABOVE 3000
+ TRANSITION WISES FIX WISES AT OR ABOVE 3000
+ TRANSITION YASXU HOLD AT FIX YASXU RIGHT TURN INBOUNDCOURSE 177 ALT 3000 LEGDIST 4
+APPROACH RNV35 FIX SUBME AT OR ABOVE 3100 FIX CEDIK 2200 FIX REVSE AT OR ABOVE 1580 RNW 35 TRK 357 UNTIL 1124 FIX OVERFLY YASXU AT OR ABOVE 3000 HOLD AT FIX YASXU RIGHT TURN INBOUNDCOURSE 177 LEGDIST 4
+ TRANSITION HOSAD FIX HOSAD
+ TRANSITION JURMA FIX JURMA
+ TRANSITION SUBME HOLD AT FIX SUBME RIGHT TURN INBOUNDCOURSE 357 ALT 3100 LEGDIST 4
+ENDAPPROACHES

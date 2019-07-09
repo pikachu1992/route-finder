@@ -1,0 +1,31 @@
+//FVWN (HWANGE NATIONAL PARK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF08 LATLON S 18 41.418334 E 26 51.871333
+FIX PONB LATLON S 18 39.905 E 26 55.743334
+FIX WNNB LATLON S 18 38.476667 E 26 59.478334
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH NDB08 FIX CF08 AT OR ABOVE 5000 FIX PONB 4700 FIX WNNB 3784 RNW 08 HDG 078 UNTIL 5000
+ENDAPPROACHES

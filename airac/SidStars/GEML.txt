@@ -1,0 +1,50 @@
+//GEML (MELILLA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FU263 LATLON N 35 19.714667 W 2 46.439167
+FIX MIANB LATLON N 35 18.468334 W 2 57.331667
+FIX MU263 LATLON N 35 18.885 W 2 53.7
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH NDMB15 FIX FU263 2700 FIX MU263 1150 RNW 15 TRK 263 UNTIL 1150 TRK 128 INTERCEPT RADIAL 083 TO FIX MIANB SPEED 130 TRK 083 UNTIL 3500 TURN LEFT DIRECT FIX MIANB 3500
+ TRANSITION MIA HOLD AT FIX MIANB RIGHT TURN INBOUNDCOURSE 263 ALT 2700 LEGTIME 3
+APPROACH NDMB33 FIX FU263 2700 FIX MU263 1150 RNW 33 TRK 263 UNTIL 1150 TRK 128 INTERCEPT RADIAL 083 TO FIX MIANB SPEED 130 TRK 083 UNTIL 3500 TURN LEFT DIRECT FIX MIANB 3500
+ TRANSITION MIA HOLD AT FIX MIANB RIGHT TURN INBOUNDCOURSE 263 ALT 2700 LEGTIME 3
+ENDAPPROACHES
+
+GATES
+GATE G1 N 35 16.7105 W 2 57.420334
+GATE G2 N 35 16.705333 W 2 57.429667
+GATE G3 N 35 16.700333 W 2 57.438833
+GATE H5 N 35 16.597834 W 2 57.363667
+GATE L1 N 35 16.678 W 2 57.410833
+GATE L2 N 35 16.656 W 2 57.398666
+GATE L3 N 35 16.636166 W 2 57.3825
+GATE L4 N 35 16.616167 W 2 57.366334
+GATE L5 N 35 16.596167 W 2 57.349834
+GATE P2 N 35 16.657166 W 2 57.4155
+GATE P3 N 35 16.636834 W 2 57.399
+GATE P4 N 35 16.616833 W 2 57.382834
+GATE P5 N 35 16.596167 W 2 57.365833
+ENDGATES

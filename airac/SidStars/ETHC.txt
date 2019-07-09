@@ -1,0 +1,36 @@
+//ETHC (CELLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CELNB LATLON N 52 35.375333 E 10 1.767334
+FIX FN26 LATLON N 52 36.366 E 10 7.100333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID HC108 RNW 08 TRK 078 UNTIL 2000 HDG 078 VECTORS
+SID HC126 RNW 26 TRK 258 UNTIL 2000 HDG 258 VECTORS
+ENDSIDS
+
+APPROACHES
+APPROACH NDB26 FIX FN26 1400 RNW 26 TRK 250 UNTIL 1200 TURN RIGHT DIRECT FIX CELNB 2000 HOLD AT FIX CELNB RIGHT TURN INBOUNDCOURSE 094 LEGTIME 1
+ TRANSITION CEL FIX CELNB AT OR ABOVE 2000 SPEED 125 TRK 094 UNTIL 3.4 FROM FIX CELNB
+ENDAPPROACHES

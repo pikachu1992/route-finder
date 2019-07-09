@@ -1,0 +1,41 @@
+//CDT5 (BOUCTOUCHE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DUTUS LATLON N 46 32.973667 W 64 30.050666
+FIX DUVAR LATLON N 46 28.186667 W 64 27.968833
+FIX EBMUK LATLON N 46 31.531834 W 64 36.985667
+FIX ETLUK LATLON N 46 29.584166 W 64 46.290833
+FIX ILIRO LATLON N 46 37.76 W 64 32.138666
+FIX OISTR LATLON N 46 31.889167 W 64 35.270666
+FIX OMSAK LATLON N 46 28.125833 W 64 53.211334
+FIX TIDOD LATLON N 46 23.0375 W 64 57.8035
+FIX VIDVO LATLON N 46 29.228666 W 64 47.981167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX OMSAK AT OR ABOVE 1700 FIX ETLUK 1130 RNW 09 FIX OVERFLY OISTR 2300 HOLD AT FIX OISTR RIGHT TURN INBOUNDCOURSE 091 SPEED 175 LEGTIME 1
+ TRANSITION TIDOD FIX TIDOD
+APPROACH RNV27 FIX DUTUS AT OR ABOVE 1300 FIX EBMUK 1000 RNW 27 FIX OVERFLY VIDVO 2300 HOLD AT FIX VIDVO RIGHT TURN INBOUNDCOURSE 271 SPEED 175 LEGTIME 1
+ TRANSITION DUVAR FIX DUVAR
+ TRANSITION ILIRO FIX ILIRO
+ENDAPPROACHES

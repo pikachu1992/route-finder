@@ -1,0 +1,49 @@
+//PFAK (AKIAK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BET LATLON N 60 47.090167 W 161 49.459834
+FIX CABOT LATLON N 61 12.022 W 160 45.348833
+FIX CETIK LATLON N 61 1.8395 W 160 56.8355
+FIX DOLPE LATLON N 60 42.997 W 161 38.240833
+FIX FOSAV LATLON N 60 57.776666 W 161 5.872166
+FIX HOLIN LATLON N 60 51.037834 W 161 39.5055
+FIX PAYKO LATLON N 60 50.562667 W 161 21.769333
+FIX VIDDA LATLON N 60 52.684166 W 160 28.5515
+FIX WATNU LATLON N 60 46.472167 W 161 30.7005
+FIX WEEKE LATLON N 60 48.8535 W 161 25.237667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID AKIAK1
+ RNW 03 HDG 031 UNTIL 540 TURN RIGHT DIRECT FIX WEEKE FIX BET
+ RNW 21 HDG 211 UNTIL 540 FIX WEEKE FIX BET
+ENDSIDS
+
+APPROACHES
+APPROACH RNV03 FIX WATNU AT OR ABOVE 2000 FIX PAYKO 1700 RNW 03 TRK 031 UNTIL 440 FIX OVERFLY CETIK AT OR ABOVE 2000 HOLD AT FIX CETIK RIGHT TURN INBOUNDCOURSE 211 LEGDIST 4
+ TRANSITION DOLPE FIX DOLPE
+ TRANSITION HOLIN FIX HOLIN
+APPROACH RNV21 FIX CETIK AT OR ABOVE 2000 FIX FOSAV 1700 RNW 21 TRK 211 UNTIL 440 FIX OVERFLY WATNU AT OR ABOVE 2000 HOLD AT FIX WATNU RIGHT TURN INBOUNDCOURSE 031 LEGDIST 4
+ TRANSITION CABOT FIX CABOT
+ TRANSITION VIDDA FIX VIDDA
+ENDAPPROACHES

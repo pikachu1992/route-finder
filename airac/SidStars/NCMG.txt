@@ -1,0 +1,35 @@
+//NCMG (MANGAIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MANOM LATLON S 21 46.629833 W 158 5.9375
+FIX MG934 LATLON S 21 49.425667 W 157 57.657
+FIX ORASU LATLON S 21 41.203 W 157 57.679667
+FIX TUMPI LATLON S 21 45.321167 W 158 0.75
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX TUMPI AT OR ABOVE 2500 FIX MG934 1600 RNW 13 TRK 131 UNTIL 1000 TURN LEFT DIRECT FIX TUMPI 2500
+ TRANSITION MANOM FIX MANOM
+ TRANSITION ORASU FIX ORASU
+ TRANSITION TUMPI HOLD AT FIX TUMPI RIGHT TURN INBOUNDCOURSE 131 ALT 2500 LEGTIME 1
+ENDAPPROACHES

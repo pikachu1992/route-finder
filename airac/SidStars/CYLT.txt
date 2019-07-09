@@ -1,0 +1,39 @@
+//CYLT (ALERT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXEKO LATLON N 82 34.645333 W 61 45.885667
+FIX CF23 LATLON N 82 34.779167 W 61 44.8085
+FIX DUVOB LATLON N 82 37.928167 W 61 16.844666
+FIX IKBUR LATLON N 82 30.376834 W 60 26.746166
+FIX LTNB LATLON N 82 31.55 W 62 12.7
+FIX ODKUV LATLON N 82 41.179333 W 60 47.373833
+FIX RAFPO LATLON N 82 32.919 W 62 0.955166
+FIX XUDEG LATLON N 82 29.328667 W 62 31.470667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDM23 FIX CF23 AT OR ABOVE 1800 FIX RAFPO 910 FIX LTNB 248 RNW 23 TRK 028 UNTIL 500 TRK 010 UNTIL 2000 TURN RIGHT DIRECT FIX LTNB 2000 HOLD AT FIX LTNB RIGHT TURN INBOUNDCOURSE 028 LEGTIME 1
+APPROACH RNV23 FIX DUVOB AT OR ABOVE 2600 FIX AXEKO 1740 RNW 23 FIX OVERFLY XUDEG TURN RIGHT DIRECT FIX OVERFLY ODKUV AT OR ABOVE 3400 HOLD AT FIX ODKUV RIGHT TURN INBOUNDCOURSE 028 ALT 6600 SPEED 200 LEGDIST 4
+ TRANSITION IKBUR FIX IKBUR
+ TRANSITION ODKUV FIX ODKUV
+ENDAPPROACHES

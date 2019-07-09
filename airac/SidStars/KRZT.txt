@@ -1,0 +1,43 @@
+//KRZT (ROSS CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEYAY LATLON N 39 41.220167 W 82 55.426166
+FIX JEVMU LATLON N 39 32.3245 W 82 42.875833
+FIX JONEX LATLON N 39 35.008333 W 82 51.2365
+FIX KEFLI LATLON N 39 30.5815 W 82 56.4775
+FIX PI001 LATLON N 39 34.922159 W 82 57.198014
+FIX PI002 LATLON N 39 36.805357 W 82 52.181146
+FIX PI003 LATLON N 39 41.066909 W 82 54.446001
+FIX TARTO LATLON N 39 32.0845 W 82 37.800833
+FIX WUNRO LATLON N 39 28.969166 W 82 58.382167
+FIX XUB LATLON N 39 31.613 W 82 58.6765
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX JONEX AT OR ABOVE 3000 FIX KEFLI 2400 FIX WUNRO AT OR ABOVE 1700 RNW 23 TRK 227 UNTIL 1500 TURN RIGHT DIRECT FIX OVERFLY JONEX AT OR ABOVE 3000 HOLD AT FIX JONEX RIGHT TURN INBOUNDCOURSE 228 LEGDIST 4
+ TRANSITION DEYAY FIX DEYAY AT OR ABOVE 3000
+ TRANSITION JEVMU FIX JEVMU AT OR ABOVE 3000
+ TRANSITION JONEX HOLD AT FIX JONEX RIGHT TURN INBOUNDCOURSE 228 ALT 3000 LEGDIST 4
+APPROACH VOR23 FIX XUB 2300 RNW 23 TRK 204 UNTIL 3000 TURN RIGHT DIRECT FIX XUB HOLD AT FIX XUB LEFT TURN INBOUNDCOURSE 204 LEGTIME 1
+ TRANSITION TARTO FIX TARTO FIX XUB AT OR ABOVE 3000 FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+ENDAPPROACHES

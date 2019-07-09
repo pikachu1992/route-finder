@@ -1,0 +1,40 @@
+//KCGE (CAMBRIDGE-DORCHESTER REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOFER LATLON N 38 25.130666 W 76 16.755
+FIX GRACO LATLON N 38 56.496833 W 76 11.987
+FIX OVAYO LATLON N 38 41.729 W 76 10.575
+FIX PROFS LATLON N 38 22.998833 W 75 53.130334
+FIX SBY LATLON N 38 20.7 W 75 30.635
+FIX WUGUM LATLON N 38 27.931667 W 75 57.705667
+FIX ZADEP LATLON N 38 36.211333 W 76 5.415667
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA16 FIX OVAYO AT OR ABOVE 2000 FIX ZADEP 1700 RNW 16 TRK 154 UNTIL 420 FIX OVERFLY PROFS AT OR ABOVE 2000 HOLD AT FIX PROFS RIGHT TURN INBOUNDCOURSE 334 LEGDIST 4
+ TRANSITION GOFER FIX GOFER FIX OVERFLY OVAYO AT OR ABOVE 2000 HOLD AT FIX OVAYO RIGHT TURN INBOUNDCOURSE 154 ALT 2000 LEGDIST 4
+ TRANSITION GRACO FIX GRACO
+APPROACH RNV34 FIX PROFS AT OR ABOVE 2000 FIX WUGUM 1700 RNW 34 TRK 334 UNTIL 286 FIX OVERFLY OVAYO AT OR ABOVE 2000 HOLD AT FIX OVAYO RIGHT TURN INBOUNDCOURSE 154 LEGDIST 4
+ TRANSITION GOFER FIX GOFER FIX OVERFLY PROFS AT OR ABOVE 2000 HOLD AT FIX PROFS RIGHT TURN INBOUNDCOURSE 334 ALT 2000 LEGDIST 4
+ TRANSITION SBY FIX SBY
+ENDAPPROACHES

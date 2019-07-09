@@ -1,0 +1,39 @@
+//KD05 (GARRISON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EDHUC LATLON N 47 43.956 W 101 31.922333
+FIX EYMOV LATLON N 47 35.0935 W 101 21.036
+FIX OGZEV LATLON N 47 31.218833 W 101 16.302334
+FIX OLTIQ LATLON N 47 47.821667 W 101 36.697
+FIX SISOC LATLON N 47 41.553667 W 101 28.963166
+FIX XOMYY LATLON N 47 37.240166 W 101 23.665166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX OLTIQ AT OR ABOVE 3900 FIX EDHUC 3800 FIX SISOC AT OR ABOVE 2800 RNW 13 TRK 131 UNTIL 2500 TURN RIGHT DIRECT FIX OVERFLY OLTIQ AT OR ABOVE 3900 HOLD AT FIX OLTIQ RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4
+ TRANSITION OLTIQ HOLD AT FIX OLTIQ RIGHT TURN INBOUNDCOURSE 131 ALT 3900 LEGDIST 4
+APPROACH RNV31 FIX OGZEV AT OR ABOVE 3700 FIX EYMOV 3600 FIX XOMYY AT OR ABOVE 2700 RNW 31 TRK 311 UNTIL 2250 FIX OVERFLY OLTIQ AT OR ABOVE 3900 HOLD AT FIX OLTIQ RIGHT TURN INBOUNDCOURSE 131 LEGDIST 4
+ TRANSITION OGZEV HOLD AT FIX OGZEV RIGHT TURN INBOUNDCOURSE 311 ALT 3700 LEGDIST 4
+ENDAPPROACHES

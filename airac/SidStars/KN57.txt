@@ -1,0 +1,32 @@
+//KN57 (NEW GARDEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FROSE LATLON N 40 3.731 W 75 28.313333
+FIX MXE LATLON N 39 55.083 W 75 40.249333
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH VOR24 FIX MXE 2000 RNW 24 TRK 230 UNTIL 836 TURN RIGHT DIRECT FIX MXE AT OR ABOVE 2000 HOLD AT FIX MXE LEFT TURN INBOUNDCOURSE 236 LEGTIME 1
+ TRANSITION FROSE FIX FROSE
+ TRANSITION MXE HOLD AT FIX MXE LEFT TURN INBOUNDCOURSE 236 ALT 2000 LEGTIME 1
+ENDAPPROACHES

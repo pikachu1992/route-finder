@@ -1,0 +1,42 @@
+//BITN (THORSHOFN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20THR LATLON N 66 10.810333 W 15 20.798
+FIX ASTEM LATLON N 66 1.670833 W 15 36.212833
+FIX D032F LATLON N 66 18.865333 W 15 14.788333
+FIX FN20 LATLON N 66 18.109 W 15 19.662334
+FIX NODRU LATLON N 65 57.857666 W 15 25.183667
+FIX TNF01 LATLON N 66 7.972667 W 15 21.765167
+FIX TNI01 LATLON N 66 2.793667 W 15 23.521166
+FIX TNNB LATLON N 66 13.248334 W 15 19.873333
+FIX VESEM LATLON N 66 0.322 W 15 12.047833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH NDB19 FIX FN20 1600 RNW 19 FIX OVERFLY TNNB TRK 193 UNTIL 1000 TURN RIGHT DIRECT FIX TNNB 3000 HOLD AT FIX TNNB LEFT TURN INBOUNDCOURSE 032 LEGTIME 1
+ TRANSITION TN FIX TNNB AT OR ABOVE 3000 FIX OVERFLY D032F AT OR ABOVE 1600
+APPROACH RNV01 FIX TNI01 AT OR ABOVE 3100 FIX TNF01 1900 FIX 20THR AT OR ABOVE 840 RNW 01 TRK 019 UNTIL 1600 TURN LEFT DIRECT FIX ASTEM 3800 HOLD AT FIX ASTEM RIGHT TURN INBOUNDCOURSE 089 ALT 3800 LEGTIME 1
+ TRANSITION ASTEM FIX ASTEM AT OR ABOVE 3800
+ TRANSITION NODRU FIX NODRU AT OR ABOVE 4200
+ TRANSITION VESEM FIX VESEM AT OR ABOVE 3500
+ENDAPPROACHES

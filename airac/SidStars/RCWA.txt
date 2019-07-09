@@ -1,0 +1,37 @@
+//RCWA (WANG-AN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIVER LATLON N 23 25.038334 E 119 32.2265
+FIX GUMMY LATLON N 23 27.710833 E 119 33.7275
+FIX MKG LATLON N 23 35.726666 E 119 38.236667
+FIX RIPEN LATLON N 23 18.081667 E 119 41.639
+FIX TABOR LATLON N 23 20.7215 E 119 33.430834
+FIX TNN LATLON N 23 8.118334 E 120 12.371666
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+STARS
+STAR MA1F FIX MKG FIX GUMMY AT OR ABOVE 2000 FIX FIVER AT OR ABOVE 1500
+  RNW 02 RNW 20
+STAR SA1T FIX TNN FIX RIPEN AT OR ABOVE 4000 FIX TABOR AT OR ABOVE 1500
+  RNW 02 RNW 20
+ENDSTARS

@@ -1,0 +1,38 @@
+//CYSA (STRATFORD MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX LEREX LATLON N 43 19.861166 W 80 59.093833
+FIX LIVMO LATLON N 43 10.607167 W 81 4.286167
+FIX PI001 LATLON N 43 16.593419 W 81 0.816629
+FIX PI002 LATLON N 43 12.664756 W 80 58.416958
+FIX PI003 LATLON N 43 10.523606 W 81 4.007942
+FIX YXU LATLON N 43 2.274667 W 81 8.935834
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 17
+RNW 23
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH VDM05 FIX LIVMO AT OR ABOVE 3000 FIX LEREX 2910 RNW 05 TRK 030 UNTIL 3000 HDG 256 INTERCEPT RADIAL 210 TO FIX LEREX FIX LEREX 3000 HOLD AT FIX LEREX RIGHT TURN INBOUNDCOURSE 030 LEGTIME 1
+ TRANSITION LEREX FIX PI001 AT OR ABOVE 3000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 3000 SPEED 210 FIX PI003 AT OR ABOVE 3000 SPEED 210
+ TRANSITION YXU FIX YXU
+ENDAPPROACHES

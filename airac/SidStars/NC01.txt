@@ -1,0 +1,38 @@
+//NC01 (HARVEY POINT DEFENSE TESTING A)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BERTI LATLON N 36 3.1145 W 76 40.213834
+FIX EGGAB LATLON N 36 9.264667 W 76 18.179333
+FIX GIGTE LATLON N 35 56.339 W 76 23.5115
+FIX SUNNS LATLON N 36 26.412334 W 76 30.470167
+FIX UDUNE LATLON N 36 2.2525 W 76 21.076
+FIX VAPSY LATLON N 36 15.175333 W 76 15.73
+FIX ZADPA LATLON N 35 57.924667 W 76 29.353
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX GIGTE AT OR ABOVE 2000 FIX UDUNE 1100 RNW 03 FIX EGGAB FIX OVERFLY SUNNS AT OR ABOVE 2000 HOLD AT FIX SUNNS RIGHT TURN INBOUNDCOURSE 311 LEGDIST 4
+ TRANSITION BERTI FIX BERTI FIX ZADPA AT OR ABOVE 2000
+APPROACH RNV21 FIX VAPSY AT OR ABOVE 2000 FIX EGGAB 1100 RNW 21 FIX UDUNE FIX OVERFLY BERTI AT OR ABOVE 4000 HOLD AT FIX BERTI RIGHT TURN INBOUNDCOURSE 070 LEGDIST 4
+ TRANSITION SUNNS FIX SUNNS
+ENDAPPROACHES

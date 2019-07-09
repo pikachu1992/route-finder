@@ -1,0 +1,45 @@
+//FQNP (NAMPULA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IMSUM LATLON S 15 17.290834 E 39 12.648
+FIX ITPAB LATLON S 14 58.9845 E 39 24.745
+FIX NERIT LATLON S 15 10.060834 E 39 5.469667
+FIX NIBAX LATLON S 15 2.599166 E 39 28.331
+FIX NP500 LATLON S 15 10.192 E 39 12.781
+FIX NP600 LATLON S 15 3.919333 E 39 19.4795
+FIX NP601 LATLON S 15 7.533833 E 39 23.067
+FIX NP700 LATLON S 15 2.47 E 39 21.026167
+FIX NP800 LATLON S 15 9.439834 E 39 13.584334
+FIX NP801 LATLON S 15 5.824333 E 39 9.997333
+FIX OKNEV LATLON S 14 55.369 E 39 21.161
+FIX UTODO LATLON S 15 13.676333 E 39 9.057833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX NP500 3000 RNW 05 FIX NP600 AT OR ABOVE 1850 FIX NP601 FIX IMSUM AT OR ABOVE 5000 HOLD AT FIX IMSUM LEFT TURN INBOUNDCOURSE 324 ALT 5000 LEGTIME 1
+ TRANSITION IMSUM FIX IMSUM AT OR ABOVE 5000 SPEED 200 FIX UTODO AT OR ABOVE 4000
+ TRANSITION NERIT FIX NERIT AT OR ABOVE 5000 SPEED 200 FIX UTODO AT OR ABOVE 4000
+APPROACH RNV23 FIX NP700 3000 RNW 23 FIX NP800 AT OR ABOVE 1850 FIX NP801 FIX OKNEV AT OR ABOVE 5000 HOLD AT FIX OKNEV LEFT TURN INBOUNDCOURSE 144 ALT 5000 LEGTIME 1
+ TRANSITION IMSUM FIX IMSUM FIX NIBAX AT OR ABOVE 5000 SPEED 200 FIX ITPAB AT OR ABOVE 4000
+ TRANSITION OKNEV FIX OKNEV AT OR ABOVE 5000 SPEED 200 FIX ITPAB AT OR ABOVE 4000
+ENDAPPROACHES

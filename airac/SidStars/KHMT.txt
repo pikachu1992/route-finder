@@ -1,0 +1,37 @@
+//KHMT (HEMET-RYAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FOMIN LATLON N 33 41.904167 W 117 4.551167
+FIX HUMAN LATLON N 33 38.449 W 117 9.133834
+FIX HUMIT LATLON N 33 43.620667 W 117 2.271
+FIX OTEBE LATLON N 33 40.073 W 117 6.981167
+FIX SETER LATLON N 33 54.0605 W 117 6.5475
+FIX WESIN LATLON N 33 34.396 W 117 14.496667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 05
+RNW 22
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX HUMAN AT OR ABOVE 4000 FIX OTEBE 3400 FIX FOMIN AT OR ABOVE 2520 FIX HUMIT 1705 RNW 05 TRK 035 UNTIL 2500 TURN LEFT DIRECT FIX SETER AT OR ABOVE 7900 HOLD AT FIX SETER RIGHT TURN INBOUNDCOURSE 347 LEGDIST 7
+ TRANSITION WESIN FIX WESIN AT OR ABOVE 5500
+ENDAPPROACHES

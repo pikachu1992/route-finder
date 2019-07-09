@@ -1,0 +1,43 @@
+//K47K (MOUNDRIDGE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACUSE LATLON N 38 7.392 W 97 30.179
+FIX CAGDA LATLON N 38 23.845166 W 97 36.491833
+FIX CAPLA LATLON N 38 1.238833 W 97 23.869
+FIX DARSE LATLON N 38 23.8225 W 97 23.7715
+FIX DECAD LATLON N 38 1.2615 W 97 36.524
+FIX DEDAY LATLON N 38 17.694167 W 97 30.149333
+FIX DINDE LATLON N 38 1.2525 W 97 30.1965
+FIX EDIYE LATLON N 38 23.836667 W 97 30.131666
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX EDIYE AT OR ABOVE 4100 FIX DEDAY 3100 RNW 17 TRK 175 UNTIL 1889 FIX DINDE AT OR ABOVE 4100 HOLD AT FIX DINDE RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4
+ TRANSITION CAGDA FIX CAGDA AT OR ABOVE 4100
+ TRANSITION DARSE FIX DARSE AT OR ABOVE 4100
+ TRANSITION EDIYE HOLD AT FIX EDIYE RIGHT TURN INBOUNDCOURSE 175 ALT 4100 LEGDIST 4
+APPROACH RNV35 FIX DINDE AT OR ABOVE 4100 FIX ACUSE 3100 RNW 35 TRK 355 UNTIL 1889 FIX EDIYE AT OR ABOVE 4100 HOLD AT FIX EDIYE RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4
+ TRANSITION CAPLA FIX CAPLA AT OR ABOVE 4100
+ TRANSITION DECAD FIX DECAD AT OR ABOVE 4100
+ TRANSITION DINDE HOLD AT FIX DINDE RIGHT TURN INBOUNDCOURSE 355 ALT 4100 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,35 @@
+//KM43 (PRENTISS-JEFFERSON DAVIS CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BISYA LATLON N 31 32.998 W 89 49.439833
+FIX CESMA LATLON N 31 42.316667 W 90 6.423833
+FIX DADCA LATLON N 31 29.250167 W 89 42.642
+FIX OVIGE LATLON N 31 38.4365 W 89 59.336833
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX CESMA AT OR ABOVE 2000 FIX OVIGE 2000 RNW 12 TRK 124 UNTIL 770 FIX OVERFLY DADCA AT OR ABOVE 2000 HOLD AT FIX DADCA RIGHT TURN INBOUNDCOURSE 304 LEGDIST 4
+ TRANSITION CESMA HOLD AT FIX CESMA RIGHT TURN INBOUNDCOURSE 124 ALT 2000 LEGDIST 4
+APPROACH RNV30 FIX DADCA AT OR ABOVE 2000 FIX BISYA 2000 RNW 30 TRK 304 UNTIL 769 FIX OVERFLY CESMA AT OR ABOVE 2000 HOLD AT FIX CESMA RIGHT TURN INBOUNDCOURSE 124 LEGDIST 4
+ TRANSITION DADCA HOLD AT FIX DADCA RIGHT TURN INBOUNDCOURSE 304 ALT 2000 LEGDIST 4
+ENDAPPROACHES

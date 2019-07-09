@@ -1,0 +1,41 @@
+//YNRM (NARROMINE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX NRMWA LATLON S 32 10.4995 E 147 58.133833
+FIX NRMWB LATLON S 32 4.756166 E 147 57.717167
+FIX NRMWC LATLON S 32 2.461667 E 148 3.897334
+FIX NRMWF LATLON S 32 9.987667 E 148 7.7605
+FIX NRMWH LATLON S 32 20.161166 E 148 10.447667
+FIX NRMWI LATLON S 32 7.373666 E 148 2.7365
+FIX NRMWM LATLON S 32 12.598333 E 148 12.789334
+FIX NRMWT LATLON S 32 14.163167 E 148 15.809
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 11
+RNW 22
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ11 FIX NRMWI AT OR ABOVE 3700 FIX NRMWF 2510 FIX OVERFLY NRMWM 912 RNW 11 TRK 110 UNTIL 1282 FIX OVERFLY NRMWT TURN RIGHT DIRECT FIX NRMWH AT OR BELOW 3000 TRK 276 UNTIL 3700
+ TRANSITION NRMWA FIX NRMWA AT OR ABOVE 3700
+ TRANSITION NRMWB FIX NRMWB AT OR ABOVE 3700
+ TRANSITION NRMWC FIX NRMWC AT OR ABOVE 3700
+ENDAPPROACHES

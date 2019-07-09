@@ -1,0 +1,35 @@
+//AYKY (KUNAYE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF130 LATLON S 2 58.996667 E 152 34.0385
+FIX LHRNB LATLON S 3 2.689 E 152 37.585
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDMB12 FIX FF130 1800 FIX LHRNB 1200 RNW 12 TRK 040 UNTIL 3000 TURN LEFT DIRECT FIX LHRNB AT OR ABOVE 4000
+ TRANSITION LHR1 FIX LHRNB AT OR ABOVE 4000 TRK 326 UNTIL 10.5 FROM FIX LHRNB
+ TRANSITION LHR2 FIX LHRNB AT OR ABOVE 4000 TRK 326 UNTIL 9.0 FROM FIX LHRNB
+APPROACH NDMB30 FIX FF130 1800 FIX LHRNB 1200 RNW 30 TRK 040 UNTIL 3000 TURN LEFT DIRECT FIX LHRNB AT OR ABOVE 4000
+ TRANSITION LHR1 FIX LHRNB AT OR ABOVE 4000 TRK 326 UNTIL 10.5 FROM FIX LHRNB
+ TRANSITION LHR2 FIX LHRNB AT OR ABOVE 4000 TRK 326 UNTIL 9.0 FROM FIX LHRNB
+ENDAPPROACHES

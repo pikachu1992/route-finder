@@ -1,0 +1,47 @@
+//PANO (NONDALTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASVIW LATLON N 59 45.413833 W 155 15.202834
+FIX DILAY LATLON N 59 50.352667 W 155 1.705
+FIX FAGIN LATLON N 59 51.935833 W 155 32.721667
+FIX GIDLE LATLON N 59 56.262 W 154 54.273
+FIX HUMRA LATLON N 59 43.142333 W 155 3.833666
+FIX ILINB LATLON N 59 44.884667 W 154 54.578333
+FIX IYAYA LATLON N 59 57.804667 W 154 51.742166
+FIX JESUX LATLON N 59 57.842 W 154 51.845833
+FIX JURAS LATLON N 59 52.424 W 154 58.945
+FIX NUTUW LATLON N 59 33.293666 W 155 16.017334
+FIX RAKDE LATLON N 59 54.494167 W 154 56.179333
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID ILI2
+ RNW 20 FIX OVERFLY JESUX FIX GIDLE SPEED 160 FIX OVERFLY ILINB
+ENDSIDS
+
+APPROACHES
+APPROACH RNV02 FIX ASVIW AT OR ABOVE 5000 FIX DILAY 4100 FIX JURAS AT OR ABOVE 3160 FIX RAKDE AT OR ABOVE 1860 FIX OVERFLY IYAYA 712 RNW 02 TRK 020 UNTIL 714 TURN RIGHT DIRECT FIX OVERFLY HUMRA AT OR ABOVE 5000 HOLD AT FIX HUMRA LEFT TURN INBOUNDCOURSE 054 LEGDIST 5
+ TRANSITION FAGIN FIX FAGIN
+ TRANSITION HUMRA FIX HUMRA FIX OVERFLY ASVIW AT OR ABOVE 5000 HOLD AT FIX ASVIW RIGHT TURN INBOUNDCOURSE 040 ALT 5000 LEGDIST 5
+ TRANSITION NUTUW FIX NUTUW
+ENDAPPROACHES

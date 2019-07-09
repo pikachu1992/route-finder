@@ -1,0 +1,37 @@
+//KJTC (SPRINGERVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHAPN LATLON N 34 10.451666 W 109 16.500667
+FIX IFADE LATLON N 34 16.896667 W 109 12.214834
+FIX IWEDU LATLON N 34 12.512833 W 109 15.1315
+FIX MIKVE LATLON N 34 8.677333 W 109 17.678333
+FIX SJN LATLON N 34 25.4425 W 109 8.611834
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 11
+RNW 21
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV21 FIX IFADE AT OR ABOVE 9500 FIX IWEDU 8700 FIX CHAPN AT OR ABOVE 7900 FIX OVERFLY MIKVE 7216 RNW 21 TRK 197 UNTIL 7455 TURN RIGHT DIRECT FIX OVERFLY IFADE AT OR ABOVE 12000 HOLD AT FIX IFADE RIGHT TURN INBOUNDCOURSE 197 LEGDIST 7
+ TRANSITION IFADE HOLD AT FIX IFADE RIGHT TURN INBOUNDCOURSE 197 ALT 9500 LEGDIST 7
+ TRANSITION SJN FIX SJN
+ENDAPPROACHES

@@ -1,0 +1,39 @@
+//K47V (CURTIS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLUED LATLON N 40 45.7765 W 100 40.547333
+FIX FOBOX LATLON N 40 42.023 W 100 34.3875
+FIX HASEK LATLON N 40 31.443667 W 100 17.135833
+FIX INADE LATLON N 40 37.099333 W 100 26.338
+FIX JESIT LATLON N 40 39.769834 W 100 30.6995
+FIX JONEM LATLON N 40 35.212667 W 100 23.263333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 17
+RNW 30
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX BLUED AT OR ABOVE 5000 FIX FOBOX 4500 FIX JESIT AT OR ABOVE 3340 RNW 12 TRK 123 UNTIL 3002 FIX OVERFLY HASEK AT OR ABOVE 5000 HOLD AT FIX HASEK RIGHT TURN INBOUNDCOURSE 303 LEGDIST 5
+ TRANSITION BLUED HOLD AT FIX BLUED RIGHT TURN INBOUNDCOURSE 123 ALT 5000 LEGDIST 5
+APPROACH RNV30 FIX HASEK AT OR ABOVE 5000 FIX JONEM 4200 FIX INADE AT OR ABOVE 3240 RNW 30 TRK 303 UNTIL 3002 FIX OVERFLY BLUED AT OR ABOVE 5000 HOLD AT FIX BLUED RIGHT TURN INBOUNDCOURSE 123 LEGDIST 5
+ TRANSITION HASEK HOLD AT FIX HASEK RIGHT TURN INBOUNDCOURSE 303 ALT 5000 LEGDIST 5
+ENDAPPROACHES

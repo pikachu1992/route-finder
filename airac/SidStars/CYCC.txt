@@ -1,0 +1,41 @@
+//CYCC (CORNWALL REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADSIV LATLON N 45 10.349833 W 74 52.4355
+FIX DASAT LATLON N 45 3.320167 W 74 53.5035
+FIX GOVAK LATLON N 45 5.911667 W 74 40.989167
+FIX IGVIR LATLON N 45 5.455333 W 74 35.167834
+FIX KAPIX LATLON N 45 6.455167 W 74 48.006667
+FIX NOTIL LATLON N 45 1.829 W 74 20.119834
+FIX PUXAV LATLON N 45 10.974167 W 74 43.686167
+FIX SEMTA LATLON N 45 6.1305 W 74 28.037833
+FIX URLIB LATLON N 45 6.785833 W 74 21.039
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX KAPIX AT OR ABOVE 1800 FIX GOVAK 1700 FIX OVERFLY IGVIR 374 RNW 10 TURN LEFT DIRECT FIX OVERFLY ADSIV 3000 HOLD AT FIX ADSIV RIGHT TURN INBOUNDCOURSE 155 SPEED 200 LEGTIME 1
+ TRANSITION ADSIV FIX ADSIV
+ TRANSITION DASAT FIX DASAT
+APPROACH RNV28 FIX URLIB AT OR ABOVE 2200 FIX SEMTA 1500 RNW 28 TRK 276 UNTIL 580 FIX OVERFLY PUXAV 3000 HOLD AT FIX PUXAV RIGHT TURN INBOUNDCOURSE 338 SPEED 200 LEGTIME 1
+ TRANSITION NOTIL FIX NOTIL SPEED 210
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KMKN (COMANCHE CO-CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIRAR LATLON N 32 6.536167 W 98 36.260833
+FIX HOLEV LATLON N 31 52.743667 W 98 35.884834
+FIX HUPIN LATLON N 32 0.224666 W 98 36.0885
+FIX IRIYE LATLON N 31 57.9935 W 98 36.027667
+FIX WOKIT LATLON N 31 50.177333 W 98 35.815
+FIX ZALIR LATLON N 31 45.168 W 98 35.679
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX CIRAR AT OR ABOVE 4000 FIX HUPIN 2900 FIX IRIYE AT OR ABOVE 2180 RNW 17 TRK 173 UNTIL 1636 FIX OVERFLY ZALIR AT OR ABOVE 4000 HOLD AT FIX ZALIR RIGHT TURN INBOUNDCOURSE 353 LEGDIST 4
+ TRANSITION CIRAR HOLD AT FIX CIRAR RIGHT TURN INBOUNDCOURSE 173 ALT 4000 LEGDIST 4
+APPROACH RNV35 FIX ZALIR AT OR ABOVE 4000 FIX WOKIT 2900 FIX HOLEV AT OR ABOVE 2080 RNW 35 TRK 353 UNTIL 1720 FIX OVERFLY CIRAR AT OR ABOVE 4000 HOLD AT FIX CIRAR RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4
+ TRANSITION ZALIR HOLD AT FIX ZALIR RIGHT TURN INBOUNDCOURSE 353 ALT 4000 LEGDIST 4
+ENDAPPROACHES

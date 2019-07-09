@@ -1,0 +1,41 @@
+//SKPP (GUILLERMO LEON VALENCIA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF08 LATLON N 2 25.119334 W 76 51.526333
+FIX CLO LATLON N 3 24.116666 W 76 24.333334
+FIX CS08 LATLON N 2 25.953167 W 76 44.783167
+FIX D295M LATLON N 2 31.2585 W 76 48.762334
+FIX FF08 LATLON N 2 26.296166 W 76 42.006667
+FIX MA08 LATLON N 2 26.810833 W 76 37.841666
+FIX PPN LATLON N 2 26.933333 W 76 36.85
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID CLO3B RNW 26 TRK 255 UNTIL 6800 TRK 075 INTERCEPT RADIAL 016 TO FIX CLO SPEED 180 FIX CLO
+ENDSIDS
+
+APPROACHES
+APPROACH VDMY08 FIX CS08 AT OR ABOVE 8100 FIX FF08 7210 FIX MA08 5947 RNW 08 TRK 016 UNTIL 8000 TURN LEFT DIRECT FIX PPN AT OR ABOVE 11000 HOLD AT FIX PPN LEFT TURN INBOUNDCOURSE 088 SPEED 170 LEGTIME 1
+APPROACH VDMZ08 FIX CF08 AT OR ABOVE 9000 FIX FF08 7210 FIX MA08 5947 RNW 08 TRK 016 UNTIL 8000 TURN LEFT DIRECT FIX PPN AT OR ABOVE 11000 HOLD AT FIX PPN LEFT TURN INBOUNDCOURSE 088 SPEED 170 LEGTIME 1
+ TRANSITION D295M FIX D295M AT OR ABOVE 10000
+ENDAPPROACHES

@@ -1,0 +1,47 @@
+//KIML (IMPERIAL MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AQIMU LATLON N 40 20.998667 W 101 28.041
+FIX AXPUX LATLON N 40 40.314334 W 101 46.666
+FIX BENJU LATLON N 40 25.999834 W 101 32.842
+FIX HEXAP LATLON N 40 37.339834 W 101 51.947833
+FIX HOLYO LATLON N 40 32.5375 W 102 9.0905
+FIX JIKOS LATLON N 40 35.338834 W 101 41.847334
+FIX MCJEF LATLON N 40 5.1945 W 102 0.341167
+FIX SIJVI LATLON N 40 23.821834 W 101 23.001833
+FIX UYOGI LATLON N 40 42.873 W 101 40.884667
+FIX VIZQE LATLON N 40 18.038 W 101 33.311167
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 13
+RNW 21
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX AXPUX AT OR ABOVE 5100 FIX JIKOS 5100 RNW 13 FIX OVERFLY AQIMU AT OR ABOVE 5000 HOLD AT FIX AQIMU RIGHT TURN INBOUNDCOURSE 315 LEGDIST 5
+ TRANSITION AXPUX HOLD AT FIX AXPUX RIGHT TURN INBOUNDCOURSE 135 ALT 5100 LEGDIST 5
+ TRANSITION HOLYO FIX HOLYO FIX HEXAP AT OR ABOVE 5300
+ TRANSITION UYOGI FIX UYOGI
+APPROACH RNV31 FIX AQIMU AT OR ABOVE 5000 FIX BENJU 5000 RNW 31 FIX OVERFLY AXPUX AT OR ABOVE 5100 HOLD AT FIX AXPUX RIGHT TURN INBOUNDCOURSE 135 LEGDIST 5
+ TRANSITION AQIMU HOLD AT FIX AQIMU RIGHT TURN INBOUNDCOURSE 315 ALT 5000 LEGDIST 5
+ TRANSITION MCJEF FIX MCJEF FIX VIZQE AT OR ABOVE 5100
+ TRANSITION SIJVI FIX SIJVI
+ENDAPPROACHES

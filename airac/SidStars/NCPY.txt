@@ -1,0 +1,40 @@
+//NCPY (PENRHYN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKLEN LATLON S 9 14.785333 W 157 54.485666
+FIX FF14 LATLON S 8 56.204833 W 158 4.712
+FIX PY405 LATLON S 9 5.914834 W 157 59.232833
+FIX PYNB LATLON S 8 59.649833 W 158 2.6305
+FIX RIKSA LATLON S 9 9.650333 W 157 51.853667
+FIX TAMEV LATLON S 9 10.350167 W 157 56.8595
+FIX VIRUS LATLON S 9 14.083 W 158 0.242666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH NDB14 FIX FF14 1100 FIX PYNB 332 RNW 14 TRK 138 UNTIL 520 TURN RIGHT DIRECT FIX PYNB AT OR ABOVE 1500 HOLD AT FIX PYNB RIGHT TURN INBOUNDCOURSE 346 ALT 1500 LEGTIME 1
+ TRANSITION PY FIX PYNB AT OR ABOVE 1500 TRK 336 UNTIL 6.0 FROM FIX PYNB
+APPROACH RNV32 FIX TAMEV AT OR ABOVE 2500 FIX PY405 1600 RNW 32 TRK 322 UNTIL 1000 TURN LEFT DIRECT FIX VIRUS AT OR ABOVE 2500
+ TRANSITION AKLEN FIX AKLEN
+ TRANSITION RIKSA FIX RIKSA
+ TRANSITION VIRUS FIX VIRUS
+ENDAPPROACHES

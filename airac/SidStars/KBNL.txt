@@ -1,0 +1,46 @@
+//KBNL (BARNWELL RGNL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CATAV LATLON N 33 28.407 W 81 22.2055
+FIX CULPA LATLON N 33 4.693 W 81 18.506333
+FIX ENANE LATLON N 33 25.043 W 81 33.4625
+FIX FATSU LATLON N 33 26.727167 W 81 27.835834
+FIX HIKEL LATLON N 33 20.584 W 81 25.226666
+FIX HORIR LATLON N 33 6.3665 W 81 12.896833
+FIX ICUTE LATLON N 33 3.015334 W 81 24.112333
+FIX LODSE LATLON N 33 18.327334 W 81 24.269833
+FIX NANIE LATLON N 33 10.649666 W 81 21.0205
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 17
+RNW 23
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX FATSU AT OR ABOVE 2200 FIX HIKEL 1900 FIX LODSE AT OR ABOVE 1100 RNW 17 TRK 165 UNTIL 496 FIX OVERFLY CULPA AT OR ABOVE 2100 HOLD AT FIX CULPA RIGHT TURN INBOUNDCOURSE 345 LEGDIST 4
+ TRANSITION CATAV FIX CATAV
+ TRANSITION ENANE FIX ENANE
+ TRANSITION FATSU HOLD AT FIX FATSU RIGHT TURN INBOUNDCOURSE 165 ALT 2200 LEGDIST 4
+APPROACH RNV35 FIX CULPA AT OR ABOVE 2100 FIX NANIE 1800 RNW 35 TRK 345 UNTIL 646 FIX OVERFLY FATSU AT OR ABOVE 2200 HOLD AT FIX FATSU RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4
+ TRANSITION CULPA HOLD AT FIX CULPA RIGHT TURN INBOUNDCOURSE 345 ALT 2100 LEGDIST 4
+ TRANSITION HORIR FIX HORIR AT OR ABOVE 2100
+ TRANSITION ICUTE FIX ICUTE AT OR ABOVE 3000
+ENDAPPROACHES

@@ -1,0 +1,38 @@
+//K8A1 (GUNTERSVILLE MUN-STARNES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CATGO LATLON N 34 22.71 W 86 19.668
+FIX FIRLO LATLON N 34 25.740167 W 86 11.74
+FIX HANVI LATLON N 34 30.289834 W 85 59.776166
+FIX JOPED LATLON N 34 18.745 W 86 29.993833
+FIX JUVAT LATLON N 34 20.430167 W 86 25.612
+FIX ODAVE LATLON N 34 27.075 W 86 8.2375
+FIX PUNJI LATLON N 34 21.4525 W 86 22.948667
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX JOPED AT OR ABOVE 3000 FIX JUVAT AT OR ABOVE 2700 FIX PUNJI 2600 FIX CATGO AT OR ABOVE 1660 RNW 07 TRK 069 UNTIL 1400 TURN LEFT DIRECT FIX OVERFLY JOPED AT OR ABOVE 3000 HOLD AT FIX JOPED RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4
+ TRANSITION JOPED HOLD AT FIX JOPED RIGHT TURN INBOUNDCOURSE 069 ALT 3000 LEGDIST 4
+APPROACH RNV25 FIX HANVI AT OR ABOVE 3100 FIX ODAVE 2800 FIX FIRLO AT OR ABOVE 1740 RNW 25 TRK 249 UNTIL 1015 FIX OVERFLY JOPED AT OR ABOVE 3000 HOLD AT FIX JOPED RIGHT TURN INBOUNDCOURSE 069 LEGDIST 4
+ TRANSITION HANVI HOLD AT FIX HANVI RIGHT TURN INBOUNDCOURSE 249 ALT 3100 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,35 @@
+//KM13 (POPLARVILLE-PEARL RIVER CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FINOS LATLON N 30 52.479667 W 89 32.146667
+FIX ISOPE LATLON N 30 57.271166 W 89 33.849167
+FIX KAKME LATLON N 30 41.931833 W 89 28.409167
+FIX RISNE LATLON N 30 37.139 W 89 26.7155
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA16 FIX ISOPE AT OR ABOVE 2100 FIX FINOS 2000 RNW 16 TRK 165 UNTIL 720 FIX OVERFLY RISNE AT OR ABOVE 2000 HOLD AT FIX RISNE RIGHT TURN INBOUNDCOURSE 345 LEGDIST 4
+ TRANSITION ISOPE HOLD AT FIX ISOPE RIGHT TURN INBOUNDCOURSE 165 ALT 2100 LEGDIST 4
+APPROACH RNVB34 FIX RISNE AT OR ABOVE 2000 FIX KAKME 2000 RNW 34 TRK 345 UNTIL 720 FIX OVERFLY ISOPE AT OR ABOVE 2100 HOLD AT FIX ISOPE RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4
+ TRANSITION RISNE HOLD AT FIX RISNE RIGHT TURN INBOUNDCOURSE 345 ALT 2000 LEGDIST 4
+ENDAPPROACHES

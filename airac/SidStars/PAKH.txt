@@ -1,0 +1,41 @@
+//PAKH (AKHIOK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIYAN LATLON N 56 51.983833 W 154 8.831333
+FIX CEREM LATLON N 56 54.735167 W 154 10.176334
+FIX CODUR LATLON N 56 49.854667 W 154 30.923833
+FIX FONUR LATLON N 56 45.673 W 154 5.759167
+FIX GUBEY LATLON N 56 50.4455 W 154 8.080834
+FIX JOGMO LATLON N 57 7.455 W 154 47.1995
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+SIDS
+SID JOGMO1 RNW 04 HDG 044 UNTIL 1000 TURN RIGHT DIRECT FIX CODUR FIX JOGMO AT OR ABOVE 11000
+ENDSIDS
+
+APPROACHES
+APPROACH RNVA04 FIX GUBEY AT OR ABOVE 2000 FIX BIYAN 1600 FIX OVERFLY CEREM 540 RNW 04 TRK 327 UNTIL 540 TURN RIGHT DIRECT FIX OVERFLY FONUR AT OR ABOVE 3200 HOLD AT FIX FONUR RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4
+ TRANSITION JOGMO FIX JOGMO FIX FONUR AT OR ABOVE 3200 HOLD AT FIX FONUR RIGHT TURN INBOUNDCOURSE 327 ALT 3200 LEGDIST 4
+APPROACH RNVA22 FIX GUBEY AT OR ABOVE 2000 FIX BIYAN 1600 FIX OVERFLY CEREM 540 RNW 22 TRK 327 UNTIL 540 TURN RIGHT DIRECT FIX OVERFLY FONUR AT OR ABOVE 3200 HOLD AT FIX FONUR RIGHT TURN INBOUNDCOURSE 327 LEGDIST 4
+ TRANSITION JOGMO FIX JOGMO FIX FONUR AT OR ABOVE 3200 HOLD AT FIX FONUR RIGHT TURN INBOUNDCOURSE 327 ALT 3200 LEGDIST 4
+ENDAPPROACHES

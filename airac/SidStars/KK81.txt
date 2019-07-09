@@ -1,0 +1,37 @@
+//KK81 (MIAMI CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COPAC LATLON N 38 28.688167 W 94 58.9415
+FIX KUVEY LATLON N 38 23.173166 W 95 4.422334
+FIX ROKSE LATLON N 38 36.6945 W 94 50.953
+FIX SOKYO LATLON N 38 42.130333 W 94 45.507667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 15
+RNW 21
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX KUVEY AT OR ABOVE 3100 FIX COPAC 2600 RNW 03 TRK 035 UNTIL 1272 FIX OVERFLY SOKYO AT OR ABOVE 3100 HOLD AT FIX SOKYO RIGHT TURN INBOUNDCOURSE 215 LEGDIST 4
+ TRANSITION KUVEY HOLD AT FIX KUVEY RIGHT TURN INBOUNDCOURSE 035 ALT 3100 LEGDIST 4
+APPROACH RNV21 FIX SOKYO AT OR ABOVE 3100 FIX ROKSE 2600 RNW 21 TRK 215 UNTIL 1252 FIX OVERFLY KUVEY AT OR ABOVE 3100 HOLD AT FIX KUVEY RIGHT TURN INBOUNDCOURSE 035 LEGDIST 4
+ TRANSITION SOKYO HOLD AT FIX SOKYO RIGHT TURN INBOUNDCOURSE 215 ALT 3100 LEGDIST 4
+ENDAPPROACHES

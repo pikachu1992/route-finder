@@ -1,0 +1,39 @@
+//GE99 (HEAVENS LANDING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIMTA LATLON N 35 8.079 W 83 22.119667
+FIX DILLA LATLON N 34 58.845334 W 83 10.299167
+FIX FAXIV LATLON N 35 4.8755 W 83 17.435333
+FIX HAKIV LATLON N 35 0.1025 W 83 22.265666
+FIX HRS LATLON N 34 56.580334 W 83 54.940834
+FIX JAGEV LATLON N 35 1.8735 W 83 20.474833
+FIX LENPY LATLON N 35 1.669 W 83 12.757166
+FIX ODF LATLON N 34 41.752333 W 83 17.859667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX FAXIV AT OR ABOVE 7000 FIX JAGEV AT OR ABOVE 5800 FIX HAKIV 5100 RNW 23 TRK 225 UNTIL 3124 TURN LEFT DIRECT FIX OVERFLY DILLA AT OR ABOVE 8000 HOLD AT FIX DILLA RIGHT TURN INBOUNDCOURSE 272 LEGDIST 7
+ TRANSITION DILLA FIX DILLA FIX LENPY AT OR ABOVE 7000
+ TRANSITION HRS FIX HRS FIX CIMTA AT OR ABOVE 7700
+ TRANSITION ODF FIX ODF FIX OVERFLY FAXIV AT OR ABOVE 7100 HOLD AT FIX FAXIV RIGHT TURN INBOUNDCOURSE 225 ALT 7000 LEGDIST 7
+ENDAPPROACHES

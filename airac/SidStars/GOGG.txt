@@ -1,0 +1,34 @@
+//GOGG (ZIGUINCHOR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FV10 LATLON N 12 32.881166 W 16 22.975166
+FIX FV28 LATLON N 12 32.999833 W 16 11.1085
+FIX ZG LATLON N 12 33.451667 W 16 16.354333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VOR10 FIX FV10 1800 RNW 10 FIX OVERFLY ZG TRK 093 UNTIL 1800 TURN RIGHT DIRECT FIX ZG 1800
+ TRANSITION ZG FIX ZG AT OR ABOVE 2800 TRK 288 UNTIL 7.5 FROM FIX ZG
+APPROACH VOR28 FIX FV28 1800 FIX ZG 180 RNW 28 TRK 276 UNTIL 1800 TURN LEFT DIRECT FIX ZG 1800
+ TRANSITION ZG FIX ZG AT OR ABOVE 2800 TRK 121 UNTIL 6.0 FROM FIX ZG
+ENDAPPROACHES

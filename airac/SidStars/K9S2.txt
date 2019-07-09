@@ -1,0 +1,36 @@
+//K9S2 (SCOBEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DOGNE LATLON N 48 51.4655 W 105 31.088833
+FIX GEMPE LATLON N 48 54.927167 W 105 36.551333
+FIX GGW LATLON N 48 12.918334 W 106 37.525166
+FIX ISN LATLON N 48 15.205 W 103 45.04
+FIX NIJBU LATLON N 48 51.3205 W 105 41.7935
+FIX ROGUU LATLON N 48 44.393333 W 105 30.893167
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX GEMPE AT OR ABOVE 4500 FIX DOGNE 3700 RNW 12 TRK 122 UNTIL 3600 TURN RIGHT DIRECT FIX OVERFLY NIJBU AT OR ABOVE 6000 HOLD AT FIX NIJBU RIGHT TURN INBOUNDCOURSE 032 LEGDIST 4
+ TRANSITION GGW FIX GGW FIX NIJBU AT OR ABOVE 6000
+ TRANSITION ISN FIX ISN FIX ROGUU AT OR ABOVE 6000 FIX NIJBU AT OR ABOVE 6000
+ENDAPPROACHES

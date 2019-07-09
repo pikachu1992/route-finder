@@ -1,0 +1,37 @@
+//SETR (TARAPOA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COCNB LATLON S 0 26.883334 W 76 59.71
+FIX FF30 LATLON S 0 10.013333 W 76 16.097167
+FIX TRP04 LATLON S 0 7.678166 W 76 15.5955
+FIX TRPNB LATLON S 0 7.883333 W 76 19.483333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+SIDS
+SID DEP1 RNW 12 TRK 125 UNTIL 1220 FIX TRPNB AT OR ABOVE 1400 TRK 120 UNTIL 3.9 FROM FIX TRPNB TURN LEFT DIRECT FIX TRP04 AT OR ABOVE 2300 FIX TRPNB AT OR ABOVE 3000 FIX COCNB
+ENDSIDS
+
+APPROACHES
+APPROACH NDB30 FIX FF30 2300 FIX TRPNB 1009 RNW 30 TRK 305 UNTIL 2200 TURN RIGHT DIRECT FIX TRPNB 3000 HOLD AT FIX TRPNB RIGHT TURN INBOUNDCOURSE 150 LEGTIME 1
+ TRANSITION TRP FIX TRPNB AT OR ABOVE 3000 TRK 150 UNTIL 4.0 FROM FIX TRPNB
+ENDAPPROACHES

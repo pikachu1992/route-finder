@@ -1,0 +1,36 @@
+//K0R0 (COLUMBIA-MARION CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CECAK LATLON N 31 16.416833 W 89 50.997167
+FIX HULNA LATLON N 31 11.7175 W 89 58.44
+FIX NATVE LATLON N 31 20.260166 W 89 44.891833
+FIX NERAE LATLON N 31 23.835 W 89 39.198167
+FIX ZOSOG LATLON N 31 15.338167 W 89 52.707667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX HULNA AT OR ABOVE 2400 FIX ZOSOG 1500 FIX CECAK AT OR ABOVE 920 RNW 05 TRK 054 UNTIL 494 FIX OVERFLY NERAE AT OR ABOVE 2400 HOLD AT FIX NERAE RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4
+ TRANSITION HULNA HOLD AT FIX HULNA RIGHT TURN INBOUNDCOURSE 054 ALT 2400 LEGDIST 4
+APPROACH RNV23 FIX NERAE AT OR ABOVE 2400 FIX NATVE 1500 RNW 23 TRK 234 UNTIL 534 FIX OVERFLY HULNA AT OR ABOVE 2400 HOLD AT FIX HULNA RIGHT TURN INBOUNDCOURSE 054 LEGDIST 4
+ TRANSITION NERAE HOLD AT FIX NERAE RIGHT TURN INBOUNDCOURSE 234 ALT 2400 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,36 @@
+//KW41 (CRISFIELD-SOMERSET CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARICE LATLON N 37 41.3275 W 75 44.5395
+FIX HIMBA LATLON N 37 53.605834 W 75 38.9475
+FIX JOMUG LATLON N 37 57.515666 W 75 44.472334
+FIX SWL LATLON N 38 3.395666 W 75 27.834
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 14
+RNW 24
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB32 FIX HIMBA AT OR ABOVE 2000 FIX JOMUG 1700 RNW 32 TRK 322 UNTIL 404 TURN RIGHT DIRECT FIX OVERFLY SWL AT OR ABOVE 2000 HOLD AT FIX SWL RIGHT TURN INBOUNDCOURSE 232 LEGDIST 4
+ TRANSITION ARICE FIX ARICE
+ TRANSITION SWL FIX SWL
+ENDAPPROACHES

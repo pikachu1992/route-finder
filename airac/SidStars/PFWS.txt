@@ -1,0 +1,45 @@
+//PFWS (SOUTH NAKNEK NR2)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HIPUM LATLON N 58 52.049333 W 157 16.966333
+FIX JIVEM LATLON N 58 32.072666 W 156 43.563334
+FIX KRAIT LATLON N 58 38.107834 W 156 53.563667
+FIX OCITA LATLON N 58 57.304 W 157 5.355667
+FIX TIKGU LATLON N 58 46.777166 W 157 28.5185
+FIX WOMLI LATLON N 58 37.2785 W 156 31.9815
+FIX ZEROM LATLON N 58 26.8495 W 156 55.088
+FIX ZESIL LATLON N 58 46.044 W 157 6.8335
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 13
+RNW 23
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX HIPUM AT OR ABOVE 3000 FIX ZESIL 1800 RNW 13 TRK 126 UNTIL 700 TURN RIGHT DIRECT FIX OVERFLY TIKGU AT OR ABOVE 3200 HOLD AT FIX TIKGU RIGHT TURN INBOUNDCOURSE 036 LEGDIST 4
+ TRANSITION HIPUM HOLD AT FIX HIPUM RIGHT TURN INBOUNDCOURSE 126 ALT 3000 LEGDIST 4
+ TRANSITION OCITA FIX OCITA
+ TRANSITION TIKGU FIX TIKGU
+APPROACH RNV31 FIX JIVEM AT OR ABOVE 3000 FIX KRAIT 1800 RNW 31 TRK 306 UNTIL 700 FIX OVERFLY TIKGU AT OR ABOVE 3200 HOLD AT FIX TIKGU RIGHT TURN INBOUNDCOURSE 036 LEGDIST 4
+ TRANSITION JIVEM HOLD AT FIX JIVEM RIGHT TURN INBOUNDCOURSE 306 ALT 3000 LEGDIST 4
+ TRANSITION WOMLI FIX WOMLI
+ TRANSITION ZEROM FIX ZEROM
+ENDAPPROACHES

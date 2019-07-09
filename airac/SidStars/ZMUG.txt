@@ -1,0 +1,41 @@
+//ZMUG (DEGLII TSAGAAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MN31 LATLON N 50 2.778667 E 91 58.321834
+FIX TURUN LATLON N 49 40.35 E 94 22.35
+FIX UGOBI LATLON N 49 5.733334 E 91 41.983333
+FIX USNB LATLON N 50 0.718333 E 92 1.743334
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+SIDS
+SID TURU1A RNW 31 TRK 310 UNTIL 5250 TRK 129 INTERCEPT RADIAL 099 TO FIX TURUN FIX TURUN
+SID TURU1B RNW 13 TRK 130 UNTIL 6570 TRK 069 INTERCEPT RADIAL 099 TO FIX TURUN FIX TURUN
+SID UGOB1A RNW 31 TRK 310 UNTIL 5250 TURN RIGHT DIRECT FIX USNB FIX UGOBI
+SID UGOB1B RNW 13 TRK 130 UNTIL 8860 TRK 220 INTERCEPT RADIAL 190 TO FIX UGOBI FIX UGOBI
+ENDSIDS
+
+APPROACHES
+APPROACH NDB31 FIX USNB 4520 FIX MN31 3415 RNW 31 TRK 310 UNTIL 5580 TURN RIGHT DIRECT FIX USNB 7880 HOLD AT FIX USNB RIGHT TURN INBOUNDCOURSE 310 ALT 7880 LEGTIME 1
+ TRANSITION US1 HOLD AT FIX USNB RIGHT TURN INBOUNDCOURSE 310 ALT 5910 SPEED 160 LEGTIME 1
+ TRANSITION US2 HOLD AT FIX USNB RIGHT TURN INBOUNDCOURSE 310 ALT 5910 SPEED 120 LEGTIME 2
+ENDAPPROACHES

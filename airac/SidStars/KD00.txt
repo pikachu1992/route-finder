@@ -1,0 +1,38 @@
+//KD00 (NORMAN CO ADA/TWIN VALLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IRILE LATLON N 47 1.254667 W 96 27.6595
+FIX JODSO LATLON N 47 20.8165 W 96 27.725666
+FIX JOWZI LATLON N 47 10.664833 W 96 20.48
+FIX NINDE LATLON N 47 7.356167 W 96 9.990833
+FIX ODOHU LATLON N 47 5.1795 W 96 16.5795
+FIX STRAW LATLON N 47 8.025833 W 95 31.707334
+FIX WELEB LATLON N 47 13.690166 W 96 22.633834
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV33 FIX ODOHU AT OR ABOVE 3000 FIX JOWZI 2700 FIX WELEB AT OR ABOVE 1600 RNW 33 TRK 329 UNTIL 1354 FIX OVERFLY JODSO AT OR ABOVE 3300 HOLD AT FIX JODSO RIGHT TURN INBOUNDCOURSE 149 ALT 3300 LEGDIST 4
+ TRANSITION IRILE FIX IRILE
+ TRANSITION ODOHU HOLD AT FIX ODOHU RIGHT TURN INBOUNDCOURSE 329 ALT 3000 LEGDIST 4
+ TRANSITION STRAW FIX STRAW FIX NINDE AT OR ABOVE 3400
+ENDAPPROACHES

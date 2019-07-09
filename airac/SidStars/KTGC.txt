@@ -1,0 +1,44 @@
+//KTGC (GIBSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASUGE LATLON N 35 53.775167 W 88 51.353167
+FIX BRUKE LATLON N 35 45.374 W 89 2.907334
+FIX CAGIK LATLON N 35 42.909167 W 88 43.487833
+FIX EGOGE LATLON N 36 8.987666 W 88 58.424333
+FIX JISIR LATLON N 36 1.324667 W 88 49.9035
+FIX JUSMA LATLON N 35 50.5505 W 88 51.971
+FIX KUDCE LATLON N 35 44.148167 W 88 53.195167
+FIX PUYTI LATLON N 36 7.756 W 88 48.665
+FIX UJBAK LATLON N 36 6.511 W 88 38.910667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX KUDCE AT OR ABOVE 2600 FIX JUSMA 2000 FIX ASUGE AT OR ABOVE 960 RNW 01 TRK 011 UNTIL 720 FIX OVERFLY PUYTI AT OR ABOVE 2600 HOLD AT FIX PUYTI RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION BRUKE FIX BRUKE
+ TRANSITION CAGIK FIX CAGIK
+ TRANSITION KUDCE HOLD AT FIX KUDCE RIGHT TURN INBOUNDCOURSE 011 ALT 2600 LEGDIST 4
+APPROACH RNV19 FIX PUYTI AT OR ABOVE 2600 FIX JISIR 2000 RNW 19 TRK 191 UNTIL 758 FIX OVERFLY KUDCE AT OR ABOVE 2600 HOLD AT FIX KUDCE RIGHT TURN INBOUNDCOURSE 011 LEGDIST 4
+ TRANSITION EGOGE FIX EGOGE
+ TRANSITION PUYTI HOLD AT FIX PUYTI RIGHT TURN INBOUNDCOURSE 191 ALT 2600 LEGDIST 4
+ TRANSITION UJBAK FIX UJBAK
+ENDAPPROACHES

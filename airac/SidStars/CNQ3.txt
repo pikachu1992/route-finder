@@ -1,0 +1,37 @@
+//CNQ3 (NIAGARA CENTRAL DOROTHY RUNGEL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX METMI LATLON N 42 54.922 W 79 24.915
+FIX NADGU LATLON N 42 58.194 W 79 20.231167
+FIX ROGDU LATLON N 42 51.472333 W 79 29.839333
+FIX TAKDO LATLON N 42 47.851166 W 79 25.1525
+FIX VIGPO LATLON N 42 55.090166 W 79 34.535333
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 16
+RNW 23
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX ROGDU AT OR ABOVE 2800 FIX METMI 2300 FIX OVERFLY NADGU 788 RNW 05 HDG 057 UNTIL 1600 TURN LEFT DIRECT FIX OVERFLY VIGPO 2800 HOLD AT FIX VIGPO RIGHT TURN INBOUNDCOURSE 147 LEGTIME 1
+ TRANSITION TAKDO FIX TAKDO SPEED 210
+ TRANSITION VIGPO FIX VIGPO SPEED 210
+ENDAPPROACHES

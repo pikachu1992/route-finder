@@ -1,0 +1,35 @@
+//GMMB (BENSLIMANE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20VOR LATLON N 33 36.949 W 7 10.974833
+FIX 40VOR LATLON N 33 35.389834 W 7 9.470833
+FIX BNS LATLON N 33 38.508334 W 7 12.48
+FIX D120J LATLON N 33 33.952 W 7 1.816667
+FIX FD32 LATLON N 33 33.050666 W 7 7.216667
+FIX MD32 LATLON N 33 37.728667 W 7 11.727334
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH VDM32 FIX FD32 3000 FIX 40VOR AT OR ABOVE 2070 FIX 20VOR AT OR ABOVE 1430 FIX MD32 1111 RNW 32 TRK 324 UNTIL 1111 HDG 075 INTERCEPT RADIAL 120 FROM FIX BNS SPEED 185 TRK 120 VECTORS
+ TRANSITION BNS FIX BNS AT OR ABOVE 3000 SPEED 220 FIX OVERFLY D120J AT OR ABOVE 3000
+ENDAPPROACHES

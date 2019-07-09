@@ -1,0 +1,41 @@
+//MPBO (JOSE EZEQUIEL HALL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARMIS LATLON N 9 14.896667 W 82 24.445
+FIX BT701 LATLON N 9 20.913334 W 82 6.641666
+FIX BT901 LATLON N 9 19.913333 W 82 24.73
+FIX ESIPI LATLON N 9 15.896666 W 82 6.361667
+FIX KIBIL LATLON N 9 20.138333 W 82 20.69
+FIX KOMDI LATLON N 9 20.69 W 82 10.68
+FIX SIMIX LATLON N 9 25.928333 W 82 6.92
+FIX TOROG LATLON N 9 24.928333 W 82 25.013333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX BT901 AT OR ABOVE 2500 FIX KIBIL 1700 RNW 09 TRK 089 UNTIL 700 TURN LEFT DIRECT FIX OVERFLY TOROG AT OR ABOVE 4000 HOLD AT FIX TOROG LEFT TURN INBOUNDCOURSE 179 ALT 4000 SPEED 230 LEGTIME 1
+ TRANSITION ARMIS FIX ARMIS AT OR ABOVE 4000
+ TRANSITION TOROG FIX TOROG AT OR ABOVE 4000
+APPROACH RNV27 FIX BT701 AT OR ABOVE 2500 FIX KOMDI 1300 RNW 27 TRK 269 UNTIL 700 TURN RIGHT DIRECT FIX OVERFLY SIMIX AT OR ABOVE 4000 HOLD AT FIX SIMIX RIGHT TURN INBOUNDCOURSE 179 ALT 4000 SPEED 230 LEGTIME 1
+ TRANSITION ESIPI FIX ESIPI AT OR ABOVE 4000
+ TRANSITION SIMIX FIX SIMIX AT OR ABOVE 4000
+ENDAPPROACHES

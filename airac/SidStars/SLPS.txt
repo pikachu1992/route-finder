@@ -1,0 +1,37 @@
+//SLPS (TTE. AV. SALVADOR OGAYA G. INT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF23 LATLON S 18 52.319 W 57 45.980167
+FIX ISIRU LATLON S 18 57.279334 W 57 48.414334
+FIX OGRIS LATLON S 18 47.490833 W 57 50.7545
+FIX OPROL LATLON S 19 3.227333 W 57 52.348333
+FIX PAMET LATLON S 19 7.475666 W 57 55.159834
+FIX PSZNB LATLON S 18 58.688333 W 57 49.1
+FIX TIKLU LATLON S 19 6.416333 W 58 0.321334
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH NDB23 FIX FF23 2500 FIX PSZNB 840 RNW 23 TRK 218 UNTIL 840 TRK 250 UNTIL 3000
+APPROACH RNVZ05 FIX PAMET AT OR ABOVE 3700 FIX OPROL 2100 RNW 05 FIX OVERFLY ISIRU FIX OVERFLY OGRIS AT OR ABOVE 4000 HOLD AT FIX OGRIS RIGHT TURN INBOUNDCOURSE 181 LEGTIME 1
+ TRANSITION TIKLU FIX TIKLU AT OR ABOVE 5000
+ENDAPPROACHES

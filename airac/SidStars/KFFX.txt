@@ -1,0 +1,45 @@
+//KFFX (FREMONT MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DOSYA LATLON N 43 14.954 W 85 52.8555
+FIX HEVMI LATLON N 43 14.891167 W 86 6.538
+FIX NOBNY LATLON N 43 31.976333 W 85 59.843333
+FIX OJANA LATLON N 43 38.138333 W 85 59.896667
+FIX PAMEQ LATLON N 43 38.166334 W 85 53.011667
+FIX RUBUC LATLON N 43 38.1035 W 86 6.779
+FIX SACOL LATLON N 43 14.926 W 85 59.696833
+FIX ZORHO LATLON N 43 21.024833 W 85 59.749
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 10
+RNW 19
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX SACOL AT OR ABOVE 2900 FIX ZORHO 2300 RNW 01 TRK 004 UNTIL 1036 FIX OVERFLY OJANA AT OR ABOVE 2900 HOLD AT FIX OJANA RIGHT TURN INBOUNDCOURSE 184 LEGDIST 4
+ TRANSITION DOSYA FIX DOSYA
+ TRANSITION HEVMI FIX HEVMI
+ TRANSITION SACOL HOLD AT FIX SACOL RIGHT TURN INBOUNDCOURSE 004 ALT 2900 LEGDIST 4
+APPROACH RNV19 FIX OJANA AT OR ABOVE 2900 FIX NOBNY 2500 RNW 19 TRK 184 UNTIL 1074 FIX OVERFLY SACOL AT OR ABOVE 2900 HOLD AT FIX SACOL RIGHT TURN INBOUNDCOURSE 004 LEGDIST 4
+ TRANSITION OJANA HOLD AT FIX OJANA RIGHT TURN INBOUNDCOURSE 184 ALT 2900 LEGDIST 4
+ TRANSITION PAMEQ FIX PAMEQ
+ TRANSITION RUBUC FIX RUBUC
+ENDAPPROACHES

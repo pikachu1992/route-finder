@@ -1,0 +1,42 @@
+//HKOK (OLKIOMBO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APRAK LATLON S 1 23.119834 E 35 17.789833
+FIX ESTAB LATLON S 1 17.168833 E 34 55.509667
+FIX NESIB LATLON S 1 16.89 E 35 17.0205
+FIX NIBIT LATLON S 1 24.651833 E 35 5.568334
+FIX UDKOR LATLON S 1 23.141666 E 34 54.690167
+FIX UTINI LATLON S 1 22.376167 E 35 23.732333
+FIX UTODA LATLON S 1 23.8635 E 35 11.846833
+FIX UVOTO LATLON S 1 20.798333 E 34 49.1705
+FIX XALIM LATLON S 1 23.971166 E 35 0.623167
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX UDKOR AT OR ABOVE 7800 FIX XALIM 6900 FIX OVERFLY NIBIT 5283 RNW 09 TURN LEFT DIRECT FIX OVERFLY ESTAB AT OR ABOVE 8600 HOLD AT FIX ESTAB RIGHT TURN INBOUNDCOURSE 278 ALT 8600 LEGTIME 1
+ TRANSITION ESTAB FIX ESTAB AT OR ABOVE 8600
+ TRANSITION UVOTO FIX UVOTO AT OR ABOVE 8600
+APPROACH RNV27 FIX APRAK AT OR ABOVE 7100 FIX UTODA 6600 RNW 27 TURN RIGHT DIRECT FIX OVERFLY NESIB AT OR ABOVE 8600 HOLD AT FIX NESIB LEFT TURN INBOUNDCOURSE 083 ALT 8600 LEGTIME 1
+ TRANSITION NESIB FIX NESIB AT OR ABOVE 8600
+ TRANSITION UTINI FIX UTINI AT OR ABOVE 8600
+ENDAPPROACHES

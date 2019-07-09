@@ -1,0 +1,38 @@
+//RKSG (A-511 DESIDERIO AAF)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GOGVE LATLON N 36 55.693834 E 127 4.752167
+FIX JOMBA LATLON N 36 54.220834 E 127 6.823667
+FIX KRATT LATLON N 36 50.165666 E 127 12.516167
+FIX NUKKE LATLON N 37 10.035667 E 126 52.504333
+FIX SOT LATLON N 37 5.661667 E 127 1.899833
+FIX SUZZZ LATLON N 36 59.342 E 126 59.6115
+FIX TIKME LATLON N 36 51.494833 E 127 10.652167
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH ILS32 FIX TIKME AT OR ABOVE 3000 FIX JOMBA 1900 RNW 32 TRK 318 UNTIL 1700 FIX SOT AT OR ABOVE 4000 HOLD AT FIX SOT LEFT TURN INBOUNDCOURSE 160 LEGTIME 1
+ TRANSITION SOT FIX SOT FIX KRATT AT OR ABOVE 4000 HOLD AT FIX KRATT LEFT TURN INBOUNDCOURSE 318 ALT 3200 LEGTIME 1
+APPROACH RNV32 FIX KRATT AT OR ABOVE 3200 FIX TIKME AT OR ABOVE 3000 FIX JOMBA 1900 FIX GOGVE AT OR ABOVE 1060 RNW 32 TRK 319 UNTIL 453 FIX SUZZZ FIX OVERFLY NUKKE AT OR ABOVE 3500 HOLD AT FIX NUKKE LEFT TURN INBOUNDCOURSE 158 ALT 6000 SPEED 230 LEGDIST 4
+ TRANSITION SOT FIX SOT FIX OVERFLY KRATT AT OR ABOVE 4000 HOLD AT FIX KRATT LEFT TURN INBOUNDCOURSE 319 ALT 3200 SPEED 230 LEGDIST 4
+ENDAPPROACHES

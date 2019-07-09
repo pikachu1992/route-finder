@@ -1,0 +1,43 @@
+//CEP3 (BARRHEAD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUDAP LATLON N 54 5.801167 W 114 37.729834
+FIX IMATU LATLON N 54 5.791333 W 114 6.977833
+FIX LEVUR LATLON N 54 11.572834 W 114 45.679
+FIX ONBOM LATLON N 54 0.001 W 114 7.018834
+FIX PERKU LATLON N 54 11.5815 W 114 6.936667
+FIX ROMVO LATLON N 53 59.992333 W 114 45.581666
+FIX SEKOL LATLON N 54 5.8065 W 114 14.931167
+FIX USDAM LATLON N 54 5.782667 W 114 45.630334
+FIX VIMDO LATLON N 54 5.805 W 114 35.4395
+FIX VIRNI LATLON N 54 5.809166 W 114 17.168666
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX USDAM AT OR ABOVE 3900 SPEED 180 FIX VIMDO 3800 RNW 07 FIX OVERFLY SEKOL 4000 HOLD AT FIX SEKOL RIGHT TURN INBOUNDCOURSE 074 SPEED 175 LEGTIME 1
+ TRANSITION LEVUR FIX LEVUR SPEED 210
+ TRANSITION ROMVO FIX ROMVO SPEED 210
+APPROACH RNV25 FIX IMATU AT OR ABOVE 3800 SPEED 180 FIX VIRNI 3800 RNW 25 FIX OVERFLY BUDAP 4000 HOLD AT FIX BUDAP RIGHT TURN INBOUNDCOURSE 254 SPEED 175 LEGTIME 1
+ TRANSITION ONBOM FIX ONBOM SPEED 210
+ TRANSITION PERKU FIX PERKU SPEED 210
+ENDAPPROACHES

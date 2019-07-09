@@ -1,0 +1,43 @@
+//PAML (MANLEY HOT SPRINGS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DAFTY LATLON N 64 56.718 W 150 42.861
+FIX ENEBE LATLON N 65 3.11 W 150 32.194166
+FIX FIRBI LATLON N 64 58.324667 W 150 39.696
+FIX HIKAT LATLON N 64 54.550667 W 150 47.116333
+FIX HOBOM LATLON N 65 6.381334 W 149 34.887667
+FIX JODOG LATLON N 65 4.071833 W 150 30.245333
+FIX MOKIE LATLON N 65 0.2295 W 150 38.0115
+FIX OLSEE LATLON N 64 38.88 W 150 30.139333
+FIX SHUNT LATLON N 65 6.5245 W 150 14.999333
+FIX SPLAY LATLON N 64 49.849667 W 150 56.413667
+FIX TADUE LATLON N 64 53.227834 W 151 33.051334
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX SHUNT AT OR ABOVE 3000 FIX JODOG 2600 FIX ENEBE AT OR ABOVE 2100 FIX OVERFLY MOKIE 593 RNW 18 TRK 203 UNTIL 675 FIX OVERFLY OLSEE AT OR ABOVE 4400 HOLD AT FIX OLSEE RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4
+ TRANSITION HOBOM FIX HOBOM
+APPROACH RNV36 FIX SPLAY AT OR ABOVE 2800 FIX HIKAT 2100 FIX DAFTY AT OR ABOVE 1200 FIX OVERFLY FIRBI 537 RNW 36 TRK 022 UNTIL 675 TURN RIGHT DIRECT FIX OVERFLY OLSEE AT OR ABOVE 4400 HOLD AT FIX OLSEE RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4
+ TRANSITION OLSEE FIX OLSEE
+ TRANSITION TADUE FIX TADUE
+ENDAPPROACHES

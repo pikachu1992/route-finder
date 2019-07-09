@@ -1,0 +1,47 @@
+//HTZA (ABEID AMANI KARUME INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD36 LATLON S 6 18.683 E 39 14.052
+FIX IMTOM LATLON S 6 1.704334 E 39 12.33
+FIX IMVIV LATLON S 6 6.703333 E 39 12.83
+FIX NEVAB LATLON S 6 1.101833 E 39 18.321167
+FIX OKPOL LATLON S 5 55.7055 E 39 11.728
+FIX UBVES LATLON S 6 12.050167 E 39 38.595667
+FIX UDNUR LATLON S 6 2.305834 E 39 6.336833
+FIX ZV LATLON S 6 14.685833 E 39 13.632167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM36 FIX FD36 1500 FIX ZV 222 RNW 36 TRK 356 UNTIL 900 TURN LEFT DIRECT FIX ZV 1700 HOLD AT FIX ZV RIGHT TURN INBOUNDCOURSE 356 LEGTIME 1
+ TRANSITION ZV
+APPROACH RNV18 FIX IMTOM AT OR ABOVE 2000 FIX IMVIV 2000 RNW 18 TRK 176 UNTIL 2000 TURN LEFT DIRECT FIX OVERFLY UBVES AT OR ABOVE 3000 SPEED 230 HOLD AT FIX UBVES LEFT TURN INBOUNDCOURSE 266 ALT 3000 SPEED 230 LEGTIME 1
+ TRANSITION NEVAB FIX NEVAB AT OR ABOVE 2000 SPEED 230
+ TRANSITION OKPOL FIX OKPOL AT OR ABOVE 2000 SPEED 230
+ TRANSITION UDNUR FIX UDNUR AT OR ABOVE 2000 SPEED 230
+ENDAPPROACHES
+
+GATES
+GATE 1 S 6 13.128833 E 39 13.344667
+GATE 2 S 6 13.073333 E 39 13.327166
+GATE 3 S 6 13.100333 E 39 13.329833
+ENDGATES

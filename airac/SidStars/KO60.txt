@@ -1,0 +1,34 @@
+//KO60 (CLOVERDALE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIMAX LATLON N 38 40.636166 W 122 55.143667
+FIX HOTIN LATLON N 38 35.4535 W 122 51.274166
+FIX NATIC LATLON N 38 52.289833 W 123 14.4915
+FIX STS LATLON N 38 30.491167 W 122 48.637
+FIX TAKUY LATLON N 38 44.903333 W 122 58.338
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX HOTIN AT OR ABOVE 3100 FIX CIMAX 2500 FIX OVERFLY TAKUY 865 RNW 32 TRK 314 UNTIL 865 FIX OVERFLY NATIC AT OR ABOVE 6000 HOLD AT FIX NATIC LEFT TURN INBOUNDCOURSE 336 LEGDIST 4
+ TRANSITION STS FIX STS
+ENDAPPROACHES

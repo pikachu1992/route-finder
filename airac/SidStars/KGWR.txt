@@ -1,0 +1,39 @@
+//KGWR (GWINNER-MELROE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASABE LATLON N 46 16.004167 W 97 39.775166
+FIX BUMGE LATLON N 46 10.7015 W 97 37.56
+FIX CORWN LATLON N 46 7.782833 W 97 36.3435
+FIX FILON LATLON N 46 23.853 W 97 43.067666
+FIX JIMOD LATLON N 46 18.0935 W 97 40.65
+FIX WASWK LATLON N 46 2.020834 W 97 33.948667
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 16
+RNW 24
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX FILON AT OR ABOVE 3500 FIX JIMOD 2900 FIX ASABE AT OR ABOVE 2180 RNW 16 TRK 160 UNTIL 1507 FIX OVERFLY WASWK AT OR ABOVE 3500 HOLD AT FIX WASWK RIGHT TURN INBOUNDCOURSE 340 LEGDIST 4
+ TRANSITION FILON HOLD AT FIX FILON RIGHT TURN INBOUNDCOURSE 160 ALT 3500 LEGDIST 4
+APPROACH RNV34 FIX WASWK AT OR ABOVE 3500 FIX CORWN 2900 FIX BUMGE AT OR ABOVE 1920 RNW 34 TRK 340 UNTIL 1507 FIX OVERFLY FILON AT OR ABOVE 3500 HOLD AT FIX FILON RIGHT TURN INBOUNDCOURSE 160 LEGDIST 4
+ TRANSITION WASWK HOLD AT FIX WASWK RIGHT TURN INBOUNDCOURSE 340 ALT 3500 LEGDIST 4
+ENDAPPROACHES

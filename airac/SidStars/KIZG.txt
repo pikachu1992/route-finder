@@ -1,0 +1,34 @@
+//KIZG (EASTERN SLOPES REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANDRU LATLON N 43 54.159667 W 70 46.9575
+FIX HIRMN LATLON N 43 56.033 W 70 50.446
+FIX SERPA LATLON N 43 50.391334 W 70 39.947833
+FIX USNEC LATLON N 44 6.340333 W 70 50.102666
+FIX WESOV LATLON N 44 3.4655 W 70 40.981
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX SERPA AT OR ABOVE 3600 FIX ANDRU AT OR ABOVE 3100 FIX HIRMN 2200 RNW 32 TRK 324 UNTIL 1040 TURN RIGHT DIRECT FIX USNEC FIX WESOV FIX OVERFLY SERPA AT OR ABOVE 3600 HOLD AT FIX SERPA LEFT TURN INBOUNDCOURSE 324 LEGDIST 4
+ TRANSITION SERPA HOLD AT FIX SERPA LEFT TURN INBOUNDCOURSE 324 ALT 3600 LEGDIST 4
+ENDAPPROACHES

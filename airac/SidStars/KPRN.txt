@@ -1,0 +1,43 @@
+//KPRN (MAC CRENSHAW MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AJOXO LATLON N 31 45.1735 W 86 23.4365
+FIX DEPEN LATLON N 31 59.509166 W 86 45.382
+FIX ISOPY LATLON N 32 2.755333 W 86 40.902
+FIX ISRAW LATLON N 31 46.800833 W 86 32.7295
+FIX OWABE LATLON N 31 54.891 W 86 40.774834
+FIX TAZMA LATLON N 31 41.938667 W 86 27.9135
+FIX UGMUF LATLON N 31 38.701166 W 86 32.385334
+FIX ULASY LATLON N 31 56.2605 W 86 49.856666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX DEPEN AT OR ABOVE 3000 FIX OWABE 2100 RNW 14 TRK 142 UNTIL 851 TURN RIGHT DIRECT FIX DEPEN AT OR ABOVE 3000 HOLD AT FIX DEPEN RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4
+ TRANSITION DEPEN HOLD AT FIX DEPEN RIGHT TURN INBOUNDCOURSE 142 ALT 3000 LEGDIST 4
+ TRANSITION ISOPY FIX ISOPY AT OR ABOVE 3000
+ TRANSITION ULASY FIX ULASY AT OR ABOVE 3000
+APPROACH RNV32 FIX TAZMA AT OR ABOVE 3000 FIX ISRAW 2000 RNW 32 TRK 322 UNTIL 780 FIX DEPEN AT OR ABOVE 3000 HOLD AT FIX DEPEN RIGHT TURN INBOUNDCOURSE 142 LEGDIST 4
+ TRANSITION AJOXO FIX AJOXO AT OR ABOVE 3000
+ TRANSITION TAZMA HOLD AT FIX TAZMA RIGHT TURN INBOUNDCOURSE 322 ALT 3000 LEGDIST 4
+ TRANSITION UGMUF FIX UGMUF AT OR ABOVE 3000
+ENDAPPROACHES

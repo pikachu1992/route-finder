@@ -1,0 +1,43 @@
+//KTMK (TILLAMOOK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EYCEH LATLON N 45 34.191167 W 124 5.6785
+FIX FETUJ LATLON N 45 37.080833 W 123 56.598
+FIX INSAJ LATLON N 45 31.8375 W 123 53.225167
+FIX JEQEF LATLON N 45 39.957833 W 123 47.503834
+FIX QUCYO LATLON N 45 25.9135 W 123 49.427167
+FIX ULKAW LATLON N 45 7.915333 W 123 59.911667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 13
+RNW 19
+RNW 31
+ENDRNWS
+
+SIDS
+SID FETUJ3 RNW 31 HDG 316 UNTIL 540 FIX OVERFLY FETUJ AT OR ABOVE 5000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV13 FIX FETUJ AT OR ABOVE 4500 FIX INSAJ 2800 FIX OVERFLY QUCYO 266 RNW 13 TRK 136 UNTIL 439 FIX OVERFLY ULKAW AT OR ABOVE 5000 HOLD AT FIX ULKAW RIGHT TURN INBOUNDCOURSE 165 LEGDIST 4
+ TRANSITION EYCEH FIX EYCEH
+ TRANSITION FETUJ HOLD AT FIX FETUJ RIGHT TURN INBOUNDCOURSE 136 ALT 4500 LEGDIST 5
+ TRANSITION JEQEF FIX JEQEF
+ENDAPPROACHES

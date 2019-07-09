@@ -1,0 +1,44 @@
+//KM19 (NEWPORT REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARG LATLON N 36 6.601166 W 90 57.221666
+FIX HILLE LATLON N 35 6.303167 W 91 6.23
+FIX JOHRU LATLON N 35 32.699666 W 91 10.650833
+FIX JORIG LATLON N 35 52.607 W 91 3.946333
+FIX NEKLY LATLON N 35 51.678833 W 91 10.236334
+FIX RUPPS LATLON N 35 43.863167 W 91 8.127667
+FIX SEDBY LATLON N 35 43.555 W 91 10.414166
+FIX VURHU LATLON N 35 22.999834 W 91 10.861667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 18
+RNW 22
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VDM18 FIX JORIG AT OR ABOVE 2200 FIX RUPPS 2000 RNW 18 TRK 197 UNTIL 2000 TURN LEFT DIRECT FIX RUPPS HOLD AT FIX RUPPS RIGHT TURN INBOUNDCOURSE 197 LEGTIME 1
+ TRANSITION ARG FIX ARG
+APPROACH RNV18 FIX NEKLY AT OR ABOVE 3000 FIX SEDBY 1800 RNW 18 FIX OVERFLY VURHU AT OR ABOVE 3000 HOLD AT FIX VURHU RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION NEKLY HOLD AT FIX NEKLY RIGHT TURN INBOUNDCOURSE 181 ALT 3000 LEGDIST 4
+APPROACH RNV36 FIX VURHU AT OR ABOVE 3000 FIX JOHRU 2000 RNW 36 FIX OVERFLY NEKLY AT OR ABOVE 3000 HOLD AT FIX NEKLY RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION HILLE FIX HILLE
+ TRANSITION VURHU HOLD AT FIX VURHU RIGHT TURN INBOUNDCOURSE 001 ALT 3000 LEGDIST 4
+ENDAPPROACHES

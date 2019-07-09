@@ -1,0 +1,34 @@
+//KW75 (HUMMEL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CCV LATLON N 37 20.852333 W 75 59.859167
+FIX HCM LATLON N 37 26.919667 W 76 42.681167
+FIX IFESO LATLON N 37 32.983166 W 76 26.529667
+FIX JUBJI LATLON N 37 27.988667 W 76 26.104
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH GPS01 FIX JUBJI AT OR ABOVE 1600 FIX IFESO 1100 RNW 01 TRK 006 UNTIL 430 TURN RIGHT DIRECT FIX JUBJI AT OR ABOVE 1600 HOLD AT FIX JUBJI RIGHT TURN INBOUNDCOURSE 006 LEGTIME 1
+ TRANSITION CCV FIX CCV
+ TRANSITION HCM FIX HCM
+ENDAPPROACHES

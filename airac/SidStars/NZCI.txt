@@ -1,0 +1,43 @@
+//NZCI (CHATHAM IS/TUUTA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BENRA LATLON S 43 47.1405 W 176 43.665833
+FIX CI452 LATLON S 43 50.368834 W 176 34.977167
+FIX CI704 LATLON S 43 47.055 W 176 20.873666
+FIX ESDUN LATLON S 43 50.257 W 176 12.181
+FIX IDPUB LATLON S 43 40.744834 W 176 16.4425
+FIX MAVGI LATLON S 43 45.501334 W 176 14.314667
+FIX RUKDU LATLON S 43 51.901667 W 176 41.5545
+FIX UPSIT LATLON S 43 56.662 W 176 39.4375
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX RUKDU AT OR ABOVE 2000 FIX CI452 1680 RNW 05 FIX MAVGI 2000
+ TRANSITION BENRA FIX BENRA
+ TRANSITION RUKDU HOLD AT FIX RUKDU RIGHT TURN INBOUNDCOURSE 047 ALT 2000 LEGTIME 1
+ TRANSITION UPSIT FIX UPSIT
+APPROACH RNV23 FIX MAVGI AT OR ABOVE 2000 FIX CI704 1670 RNW 23 FIX RUKDU 2000
+ TRANSITION ESDUN FIX ESDUN
+ TRANSITION IDPUB FIX IDPUB
+ TRANSITION MAVGI HOLD AT FIX MAVGI RIGHT TURN INBOUNDCOURSE 227 ALT 2000 LEGTIME 1
+ENDAPPROACHES

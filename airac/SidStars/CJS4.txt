@@ -1,0 +1,39 @@
+//CJS4 (MOOSE JAW MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADRID LATLON N 50 38.4585 W 105 31.223333
+FIX DAMUS LATLON N 50 20.963333 W 105 3.917333
+FIX DANAX LATLON N 50 29.242166 W 105 28.2075
+FIX GOPAL LATLON N 50 33.476333 W 105 34.861667
+FIX KEGBI LATLON N 50 18.663167 W 105 11.712334
+FIX LETUM LATLON N 50 22.913333 W 105 18.317167
+FIX MEBAD LATLON N 50 29.796 W 105 29.076334
+FIX RESET LATLON N 50 29.054333 W 105 7.508167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX GOPAL AT OR ABOVE 3300 FIX DANAX 3300 RNW 13 TURN LEFT DIRECT FIX OVERFLY RESET 3900 HOLD AT FIX RESET RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1
+ TRANSITION ADRID FIX ADRID
+APPROACH RNV31 FIX KEGBI AT OR ABOVE 3300 FIX LETUM 3300 RNW 31 FIX OVERFLY MEBAD 3300 HOLD AT FIX MEBAD RIGHT TURN INBOUNDCOURSE 305 LEGTIME 1
+ TRANSITION DAMUS FIX DAMUS
+ENDAPPROACHES

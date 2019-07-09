@@ -1,0 +1,37 @@
+//KM53 (HUMBOLDT MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAVTO LATLON N 35 39.810334 W 89 2.473667
+FIX FASKA LATLON N 35 56.379833 W 88 42.552167
+FIX FELIV LATLON N 35 44.18 W 88 57.240167
+FIX WOKMU LATLON N 35 52.022167 W 88 47.811667
+FIX XEFVI LATLON N 35 45.963 W 88 55.100833
+FIX XITRY LATLON N 35 50.226334 W 88 49.974833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX CAVTO AT OR ABOVE 3000 FIX FELIV 2100 FIX XEFVI AT OR ABOVE 1300 RNW 04 TRK 046 UNTIL 780 FIX OVERFLY FASKA AT OR ABOVE 3000 HOLD AT FIX FASKA RIGHT TURN INBOUNDCOURSE 227 LEGDIST 4
+ TRANSITION CAVTO HOLD AT FIX CAVTO RIGHT TURN INBOUNDCOURSE 046 ALT 3000 LEGDIST 4
+APPROACH RNV22 FIX FASKA AT OR ABOVE 3000 FIX WOKMU 2100 FIX XITRY AT OR ABOVE 1300 RNW 22 TRK 226 UNTIL 701 FIX OVERFLY CAVTO AT OR ABOVE 3000 HOLD AT FIX CAVTO RIGHT TURN INBOUNDCOURSE 046 LEGDIST 4
+ TRANSITION FASKA HOLD AT FIX FASKA RIGHT TURN INBOUNDCOURSE 227 ALT 3000 LEGDIST 4
+ENDAPPROACHES

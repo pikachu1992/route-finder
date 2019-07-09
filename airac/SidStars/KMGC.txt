@@ -1,0 +1,39 @@
+//KMGC (MICHIGAN CITY MUN-PHILLIPS FIE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EXCAP LATLON N 41 52.892833 W 86 43.972333
+FIX GIJ LATLON N 41 46.116667 W 86 19.107
+FIX JAYMR LATLON N 41 41.487667 W 86 54.635
+FIX LAPMY LATLON N 41 47.215834 W 86 46.791
+FIX MAHRE LATLON N 41 43.2235 W 86 41.486833
+FIX MATBL LATLON N 41 42.228334 W 86 49.050334
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV20 FIX EXCAP AT OR ABOVE 2600 FIX LAPMY 2300 RNW 20 TRK 203 UNTIL 1060 TURN RIGHT DIRECT FIX OVERFLY EXCAP AT OR ABOVE 2600 HOLD AT FIX EXCAP RIGHT TURN INBOUNDCOURSE 203 LEGDIST 4
+ TRANSITION EXCAP HOLD AT FIX EXCAP RIGHT TURN INBOUNDCOURSE 203 ALT 2600 LEGDIST 4
+APPROACH VORA02 FIX MAHRE 3000 FIX MATBL 1580 RNW 02 FIX JAYMR AT OR ABOVE 3000 HOLD AT FIX JAYMR LEFT TURN INBOUNDCOURSE 260 LEGTIME 1
+ TRANSITION GIJ FIX GIJ FIX MAHRE AT OR ABOVE 3000 HOLD AT FIX MAHRE LEFT TURN INBOUNDCOURSE 260 ALT 3000 LEGTIME 1
+APPROACH VORA20 FIX MAHRE 3000 FIX MATBL 1580 RNW 20 FIX JAYMR AT OR ABOVE 3000 HOLD AT FIX JAYMR LEFT TURN INBOUNDCOURSE 260 LEGTIME 1
+ TRANSITION GIJ FIX GIJ FIX MAHRE AT OR ABOVE 3000 HOLD AT FIX MAHRE LEFT TURN INBOUNDCOURSE 260 ALT 3000 LEGTIME 1
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//KOQW (MAQUOKETA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARYED LATLON N 42 5.512333 W 90 45.916333
+FIX IXODY LATLON N 42 8.054167 W 90 47.528167
+FIX NAZVI LATLON N 41 53.137333 W 90 38.102
+FIX UPGEF LATLON N 42 13.480834 W 90 50.9775
+FIX WETOK LATLON N 42 0.677333 W 90 42.8565
+FIX YOPGU LATLON N 41 58.565833 W 90 41.523
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX UPGEF AT OR ABOVE 3000 FIX IXODY 2500 FIX ARYED AT OR ABOVE 1600 RNW 15 FIX OVERFLY NAZVI AT OR ABOVE 3000 HOLD AT FIX NAZVI RIGHT TURN INBOUNDCOURSE 335 LEGDIST 4
+ TRANSITION UPGEF HOLD AT FIX UPGEF RIGHT TURN INBOUNDCOURSE 155 ALT 3000 LEGDIST 4
+APPROACH RNV33 FIX NAZVI AT OR ABOVE 3000 FIX YOPGU 2500 FIX WETOK AT OR ABOVE 1620 RNW 33 TRK 335 UNTIL 1036 FIX OVERFLY UPGEF AT OR ABOVE 3000 HOLD AT FIX UPGEF RIGHT TURN INBOUNDCOURSE 155 LEGDIST 4
+ TRANSITION NAZVI HOLD AT FIX NAZVI RIGHT TURN INBOUNDCOURSE 335 ALT 3000 LEGDIST 4
+ENDAPPROACHES

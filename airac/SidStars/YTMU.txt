@@ -1,0 +1,42 @@
+//YTMU (TUMUT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX TMUSA LATLON S 35 30.478667 E 148 8.798666
+FIX TMUSB LATLON S 35 34.417333 E 148 11.695333
+FIX TMUSC LATLON S 35 33.536167 E 148 17.215834
+FIX TMUSF LATLON S 35 27.095666 E 148 15.675833
+FIX TMUSI LATLON S 35 30.7565 E 148 13.6865
+FIX TMUSM LATLON S 35 17.136 E 148 14.386667
+FIX TMUST LATLON S 35 9.007834 E 148 8.477167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVS17 FIX TMUSI AT OR ABOVE 6240 FIX TMUSF 4800 FIX OVERFLY TMUSM 1184 RNW 17 FIX OVERFLY TMUST TURN LEFT DIRECT FIX TMUSA AT OR ABOVE 6900
+ TRANSITION TMUSA FIX TMUSA AT OR ABOVE 6900
+ TRANSITION TMUSB FIX TMUSB AT OR ABOVE 6900
+ TRANSITION TMUSC FIX TMUSC AT OR ABOVE 6900
+APPROACH RNVS35 FIX TMUSI AT OR ABOVE 6240 FIX TMUSF 4800 FIX OVERFLY TMUSM 1184 RNW 35 FIX OVERFLY TMUST TURN LEFT DIRECT FIX TMUSA AT OR ABOVE 6900
+ TRANSITION TMUSA FIX TMUSA AT OR ABOVE 6900
+ TRANSITION TMUSB FIX TMUSB AT OR ABOVE 6900
+ TRANSITION TMUSC FIX TMUSC AT OR ABOVE 6900
+ENDAPPROACHES

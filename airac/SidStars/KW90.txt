@@ -1,0 +1,43 @@
+//KW90 (NEW LONDON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYARA LATLON N 37 3.672667 W 79 31.415333
+FIX CIYAT LATLON N 37 22.541666 W 79 22.026167
+FIX FABSA LATLON N 37 25.4855 W 79 22.9115
+FIX GIPKE LATLON N 37 28.513667 W 79 27.624667
+FIX JOPIS LATLON N 37 28.63 W 79 23.858666
+FIX LUCLI LATLON N 37 31.3735 W 79 18.854
+FIX PROSE LATLON N 37 27.998167 W 79 43.624166
+FIX SYCAM LATLON N 37 1.0495 W 79 16.2795
+FIX ZOPLU LATLON N 37 7.189 W 79 17.427667
+FIX ZOTOB LATLON N 37 12.105833 W 79 18.897
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JOPIS AT OR ABOVE 4600 FIX FABSA AT OR ABOVE 3800 FIX CIYAT 2900 RNW 18 TRK 176 UNTIL 1242 FIX ZOTOB FIX OVERFLY AYARA AT OR ABOVE 4000 HOLD AT FIX AYARA RIGHT TURN INBOUNDCOURSE 239 LEGDIST 4
+ TRANSITION LUCLI FIX LUCLI
+ TRANSITION PROSE FIX PROSE FIX GIPKE AT OR ABOVE 5700
+APPROACH RNV36 FIX ZOPLU AT OR ABOVE 3000 FIX ZOTOB 2100 RNW 36 TRK 356 UNTIL 1242 FIX CIYAT FIX OVERFLY LUCLI AT OR ABOVE 4700 HOLD AT FIX LUCLI LEFT TURN INBOUNDCOURSE 176 LEGDIST 5
+ TRANSITION AYARA FIX AYARA
+ TRANSITION SYCAM FIX SYCAM
+ENDAPPROACHES

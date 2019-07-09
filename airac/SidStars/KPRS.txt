@@ -1,0 +1,36 @@
+//KPRS (PRESIDIO LELY INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FAVAD LATLON N 29 38.378833 W 104 14.803166
+FIX IMEGY LATLON N 29 39.820333 W 104 7.772
+FIX MRF LATLON N 30 17.902333 W 103 57.285334
+FIX MUDOE LATLON N 29 38.053166 W 104 21.6825
+FIX SEBTE LATLON N 29 38.194834 W 104 18.704666
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA17 FIX IMEGY AT OR ABOVE 6700 FIX FAVAD 5000 FIX SEBTE AT OR ABOVE 3860 FIX OVERFLY MUDOE 3520 RNW 17 TRK 260 UNTIL 3520 TURN RIGHT DIRECT FIX IMEGY FIX OVERFLY MRF AT OR ABOVE 9000 HOLD AT FIX MRF RIGHT TURN INBOUNDCOURSE 187 LEGDIST 7
+ TRANSITION MRF FIX MRF AT OR ABOVE 9000
+APPROACH RNVA35 FIX IMEGY AT OR ABOVE 6700 FIX FAVAD 5000 FIX SEBTE AT OR ABOVE 3860 FIX OVERFLY MUDOE 3520 RNW 35 TRK 260 UNTIL 3520 TURN RIGHT DIRECT FIX IMEGY FIX OVERFLY MRF AT OR ABOVE 9000 HOLD AT FIX MRF RIGHT TURN INBOUNDCOURSE 187 LEGDIST 7
+ TRANSITION MRF FIX MRF AT OR ABOVE 9000
+ENDAPPROACHES

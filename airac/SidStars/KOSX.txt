@@ -1,0 +1,43 @@
+//KOSX (KOSCIUSKO-ATTALA CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEPGE LATLON N 33 17.127167 W 89 37.257
+FIX EHAKE LATLON N 33 9.312 W 89 36.789
+FIX EHEBU LATLON N 33 1.4955 W 89 28.235333
+FIX GUDRE LATLON N 32 57.069833 W 89 23.407667
+FIX IGB LATLON N 33 29.129167 W 88 30.815333
+FIX JINED LATLON N 33 13.729333 W 89 41.638333
+FIX PULCO LATLON N 33 0.457667 W 89 19.029
+FIX SQS LATLON N 33 27.831 W 90 16.641
+FIX VELLU LATLON N 33 7.236667 W 89 34.514666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX JINED AT OR ABOVE 2100 FIX EHAKE 2100 FIX VELLU AT OR ABOVE 1180 RNW 14 TRK 137 UNTIL 894 FIX OVERFLY GUDRE AT OR ABOVE 2200 HOLD AT FIX GUDRE RIGHT TURN INBOUNDCOURSE 317 LEGDIST 4
+ TRANSITION IGB FIX IGB FIX DEPGE AT OR ABOVE 2800
+ TRANSITION JINED HOLD AT FIX JINED RIGHT TURN INBOUNDCOURSE 137 ALT 2100 LEGDIST 4
+ TRANSITION SQS FIX SQS
+APPROACH RNV32 FIX GUDRE AT OR ABOVE 2200 FIX EHEBU 2100 RNW 32 TRK 317 UNTIL 894 FIX OVERFLY JINED AT OR ABOVE 2100 HOLD AT FIX JINED RIGHT TURN INBOUNDCOURSE 137 LEGDIST 4
+ TRANSITION IGB FIX IGB FIX PULCO AT OR ABOVE 2200
+ TRANSITION SQS FIX SQS FIX OVERFLY GUDRE AT OR ABOVE 2200 HOLD AT FIX GUDRE RIGHT TURN INBOUNDCOURSE 317 ALT 2200 LEGDIST 4
+ENDAPPROACHES

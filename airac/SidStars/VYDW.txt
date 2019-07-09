@@ -1,0 +1,39 @@
+//VYDW (DAWEI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D177H LATLON N 13 58.018333 E 98 12.982166
+FIX DWI LATLON N 14 6.033667 E 98 12.408167
+FIX DWINB LATLON N 14 5.976833 E 98 12.027667
+FIX EP16 LATLON N 14 6.502333 E 98 11.9035
+FIX FF16 LATLON N 14 11.494834 E 98 9.797666
+FIX FN16 LATLON N 14 11.163167 E 98 10.800167
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDM16 FIX FF16 1850 RNW 16 FIX OVERFLY DWI FIX OVERFLY D177H TURN RIGHT DIRECT FIX DWI 4000 HOLD AT FIX DWI RIGHT TURN INBOUNDCOURSE 009 ALT 4000 LEGTIME 1
+ TRANSITION DWI1 FIX DWI AT OR ABOVE 4000 TRK 009 UNTIL 7.5 FROM FIX DWI
+ TRANSITION DWI2 FIX DWI AT OR ABOVE 4000 TRK 348 UNTIL 7.5 FROM FIX DWI
+APPROACH NDB16 FIX FN16 1720 FIX OVERFLY EP16 123 FIX OVERFLY DWINB AT OR ABOVE 490 RNW 16 HDG 180 UNTIL 2000 TURN RIGHT DIRECT FIX DWINB 3000 HOLD AT FIX DWINB RIGHT TURN INBOUNDCOURSE 018 LEGTIME 1
+ TRANSITION DWI1 FIX DWINB AT OR ABOVE 3000 TRK 018 UNTIL 5.3 FROM FIX DWINB
+ TRANSITION DWI2 FIX DWINB AT OR ABOVE 3000 TRK 003 UNTIL 7.5 FROM FIX DWINB
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//K63C (ADAMS CO LEGION)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BANKY LATLON N 44 19.2715 W 89 35.003833
+FIX COSRO LATLON N 43 52.454333 W 89 43.6555
+FIX DLL LATLON N 43 33.05 W 89 45.817333
+FIX EDZIV LATLON N 43 45.719666 W 89 46.633667
+FIX HURST LATLON N 43 56.161333 W 90 12.2095
+FIX NUFYO LATLON N 43 50.2895 W 89 34.351834
+FIX ULHUV LATLON N 43 48.007333 W 89 40.496666
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 15
+RNW 26
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV33 FIX ULHUV AT OR ABOVE 2800 FIX COSRO 2800 RNW 33 TRK 334 UNTIL 2000 TURN RIGHT DIRECT FIX OVERFLY ULHUV AT OR ABOVE 2800 HOLD AT FIX ULHUV RIGHT TURN INBOUNDCOURSE 334 LEGDIST 4
+ TRANSITION BANKY FIX BANKY FIX NUFYO AT OR ABOVE 2800
+ TRANSITION DLL FIX DLL
+ TRANSITION HURST FIX HURST FIX EDZIV AT OR ABOVE 2800
+ TRANSITION ULHUV HOLD AT FIX ULHUV RIGHT TURN INBOUNDCOURSE 334 ALT 2800 LEGDIST 4
+ENDAPPROACHES

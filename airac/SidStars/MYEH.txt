@@ -1,0 +1,50 @@
+//MYEH (NORTH ELEUTHERA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CHOIE LATLON N 25 27.237167 W 76 44.468333
+FIX FEGIG LATLON N 25 20.8715 W 77 17.934667
+FIX HEKOP LATLON N 25 14.249167 W 77 33.0855
+FIX HODOD LATLON N 25 12.3595 W 76 56.711167
+FIX JATEX LATLON N 25 32.072167 W 76 54.941167
+FIX JEDIK LATLON N 25 24.265166 W 76 52.676833
+FIX LENKY LATLON N 25 29.838167 W 76 37.294333
+FIX LOBNE LATLON N 25 26.562167 W 76 46.3365
+FIX MAPRE LATLON N 25 19.623667 W 76 50.585333
+FIX ZOLGO LATLON N 25 28.906166 W 76 54.770833
+FIX ZUTUN LATLON N 24 57.798667 W 77 14.830333
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+SIDS
+SID CHOIE2 RNW 25 FIX OVERFLY CHOIE AT OR ABOVE 631
+  TRANSITION HEKOP FIX FEGIG AT OR ABOVE 3000 FIX HEKOP
+  TRANSITION ZUTUN FIX HODOD AT OR ABOVE 3000 FIX ZUTUN
+SID LENKY2 RNW 07 FIX OVERFLY LENKY AT OR ABOVE 645
+  TRANSITION HEKOP TURN LEFT DIRECT FIX JATEX AT OR ABOVE 3000 FIX FEGIG FIX HEKOP
+  TRANSITION ZUTUN TURN RIGHT DIRECT FIX HODOD AT OR ABOVE 3000 FIX ZUTUN
+ENDSIDS
+
+APPROACHES
+APPROACH RNV07 FIX JEDIK AT OR ABOVE 2300 FIX LOBNE 1600 RNW 07 TRK 076 UNTIL 430 TURN LEFT DIRECT FIX OVERFLY ZOLGO AT OR ABOVE 2300 HOLD AT FIX ZOLGO RIGHT TURN INBOUNDCOURSE 166 LEGTIME 1
+ TRANSITION MAPRE FIX MAPRE
+ TRANSITION ZOLGO FIX ZOLGO
+ENDAPPROACHES

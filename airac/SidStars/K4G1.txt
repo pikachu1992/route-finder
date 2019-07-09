@@ -1,0 +1,33 @@
+//K4G1 (GREENVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARTSY LATLON N 41 30.624 W 80 27.6645
+FIX HAGAR LATLON N 41 27.642 W 80 15.269833
+FIX MORNG LATLON N 41 35.641166 W 80 33.183
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 15
+RNW 23
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB15 FIX MORNG AT OR ABOVE 2700 FIX ARTSY 2700 RNW 15 TRK 149 UNTIL 1606 FIX OVERFLY HAGAR AT OR ABOVE 2900 HOLD AT FIX HAGAR RIGHT TURN INBOUNDCOURSE 087 LEGDIST 4
+ENDAPPROACHES

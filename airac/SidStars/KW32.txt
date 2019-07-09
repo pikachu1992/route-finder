@@ -1,0 +1,49 @@
+//KW32 (WASHINGTON EXECUTIVE/HYDE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BBONE LATLON N 38 37.502 W 78 49.430167
+FIX CAPAL LATLON N 38 40.684 W 77 0.631667
+FIX ESL LATLON N 39 13.5295 W 78 59.37
+FIX EVIPE LATLON N 38 36.9005 W 77 4.809667
+FIX GILFF LATLON N 38 21.747667 W 77 26.089667
+FIX HIGPO LATLON N 38 22.268167 W 77 22.332833
+FIX IRONS LATLON N 38 31.866 W 77 6.365666
+FIX KW32 LATLON N 38 44.895667 W 76 55.969
+FIX LLBEE LATLON N 38 35.120833 W 78 25.590667
+FIX LURAY LATLON N 38 35.915666 W 78 34.003834
+FIX SEALZ LATLON N 38 25.392667 W 79 17.436
+FIX TIKEE LATLON N 38 37.106167 W 78 14.927833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+STARS
+STAR TIKEE3 FIX TIKEE FIX GILFF FIX OVERFLY HIGPO HDG 090 VECTORS
+ TRANSITION BBONE FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION ESL FIX ESL 19000 FIX BBONE FIX LURAY FIX LLBEE 9000
+ TRANSITION SEALZ FIX SEALZ FIX LLBEE 9000
+  RNW 05 RNW 23
+ENDSTARS
+
+APPROACHES
+APPROACH RNV05 FIX EVIPE AT OR ABOVE 2000 FIX CAPAL 2000 RNW 05 TRK 052 UNTIL 660 TURN RIGHT DIRECT FIX OVERFLY EVIPE AT OR ABOVE 2000 HOLD AT FIX EVIPE RIGHT TURN INBOUNDCOURSE 052 LEGDIST 4
+ TRANSITION IRONS FIX IRONS
+ENDAPPROACHES

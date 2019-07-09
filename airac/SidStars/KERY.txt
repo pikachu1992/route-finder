@@ -1,0 +1,46 @@
+//KERY (LUCE CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUSIR LATLON N 46 16.971 W 85 20.370334
+FIX DIHZE LATLON N 46 14.848333 W 85 12.132167
+FIX EKOPE LATLON N 46 19.738 W 85 31.183834
+FIX HETOG LATLON N 46 18.046166 W 85 45.491167
+FIX IYDAY LATLON N 46 20.6445 W 85 34.744166
+FIX NARPE LATLON N 46 19.531834 W 85 9.613667
+FIX OBDUW LATLON N 46 22.741667 W 85 43.0175
+FIX PANAY LATLON N 46 27.436166 W 85 40.536833
+FIX PIZSU LATLON N 46 10.163833 W 85 14.6435
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 11
+RNW 22
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX OBDUW AT OR ABOVE 2700 FIX IYDAY 2500 FIX EKOPE AT OR ABOVE 1640 RNW 11 TRK 116 UNTIL 1259 FIX OVERFLY DIHZE AT OR ABOVE 2700 HOLD AT FIX DIHZE RIGHT TURN INBOUNDCOURSE 296 LEGDIST 4
+ TRANSITION HETOG FIX HETOG AT OR ABOVE 2700
+ TRANSITION OBDUW HOLD AT FIX OBDUW RIGHT TURN INBOUNDCOURSE 116 ALT 2700 LEGDIST 4
+ TRANSITION PANAY FIX PANAY AT OR ABOVE 2700
+APPROACH RNV29 FIX DIHZE AT OR ABOVE 2700 FIX CUSIR 2500 RNW 29 FIX OVERFLY OBDUW AT OR ABOVE 2700 HOLD AT FIX OBDUW RIGHT TURN INBOUNDCOURSE 116 LEGDIST 4
+ TRANSITION DIHZE HOLD AT FIX DIHZE RIGHT TURN INBOUNDCOURSE 296 ALT 2700 LEGDIST 4
+ TRANSITION NARPE FIX NARPE AT OR ABOVE 2700
+ TRANSITION PIZSU FIX PIZSU AT OR ABOVE 2700
+ENDAPPROACHES

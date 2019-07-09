@@ -1,0 +1,33 @@
+//K00R (LIVINGSTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGEVE LATLON N 30 37.660834 W 94 56.363
+FIX BOBKO LATLON N 30 34.397333 W 94 51.966167
+FIX DAS LATLON N 30 11.382667 W 94 38.699
+FIX DILKS LATLON N 30 40.432667 W 95 0.104167
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV30 FIX BOBKO AT OR ABOVE 2000 FIX AGEVE 1800 FIX DILKS 446 RNW 30 TRK 305 UNTIL 1000 TURN RIGHT DIRECT FIX BOBKO AT OR ABOVE 2000 HOLD AT FIX BOBKO RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4
+ TRANSITION DAS FIX DAS FIX BOBKO AT OR ABOVE 2000 HOLD AT FIX BOBKO RIGHT TURN INBOUNDCOURSE 305 LEGDIST 4
+ENDAPPROACHES

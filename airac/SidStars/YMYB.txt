@@ -1,0 +1,49 @@
+//YMYB (MARYBOROUGH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MBHND LATLON S 25 23.088334 E 152 37.78
+FIX MBHNE LATLON S 25 20.116667 E 152 41.481667
+FIX MBHNF LATLON S 25 27.393334 E 152 42.39
+FIX MBHNG LATLON S 25 22.26 E 152 45.821666
+FIX MBHNH LATLON S 25 33.373333 E 152 43.136666
+FIX MBHNI LATLON S 25 24.003334 E 152 41.966666
+FIX MBHSA LATLON S 25 42.648334 E 152 49.535
+FIX MBHSB LATLON S 25 46.46 E 152 44.776667
+FIX MBHSC LATLON S 25 43.713334 E 152 39.193333
+FIX MBHSF LATLON S 25 36.491666 E 152 43.526666
+FIX MBHSH LATLON S 25 28.515 E 152 42.53
+FIX MBHSI LATLON S 25 41.476667 E 152 44.151667
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 17
+RNW 30
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ17 FIX MBHNI 2000 FIX MBHNF 1040 RNW 17 FIX MBHNH TRK 163 UNTIL 2000
+ TRANSITION MBHND FIX MBHND 2000 SPEED 210
+ TRANSITION MBHNE FIX MBHNE 2000 SPEED 210
+ TRANSITION MBHNG FIX MBHNG 2000 SPEED 210
+APPROACH RNVZ35 FIX MBHSI AT OR ABOVE 3100 FIX MBHSF 1770 RNW 35 FIX OVERFLY MBHSH HDG 163 VECTORS
+ TRANSITION MBHSA FIX MBHSA AT OR ABOVE 3100 SPEED 210
+ TRANSITION MBHSB FIX MBHSB AT OR ABOVE 3100 SPEED 210
+ TRANSITION MBHSC FIX MBHSC AT OR ABOVE 3100 SPEED 210
+ENDAPPROACHES

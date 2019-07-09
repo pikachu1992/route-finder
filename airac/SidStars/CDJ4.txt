@@ -1,0 +1,44 @@
+//CDJ4 (CLEARWATER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APDES LATLON N 46 45.177833 W 66 56.913
+FIX AVASA LATLON N 46 40.487333 W 66 42.741334
+FIX BOPON LATLON N 46 37.874167 W 66 34.901666
+FIX ETKUB LATLON N 46 44.236333 W 66 54.058166
+FIX ILUMO LATLON N 46 52.726333 W 67 1.3345
+FIX IMAPA LATLON N 46 42.819833 W 66 31.413
+FIX NORAS LATLON N 46 47.765666 W 67 4.788
+FIX OBNUB LATLON N 46 39.897667 W 66 40.968667
+FIX OKOXI LATLON N 46 32.926667 W 66 38.379667
+FIX UDPES LATLON N 46 42.803333 W 67 8.231
+FIX XOVBO LATLON N 46 45.682166 W 66 58.444667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX NORAS AT OR ABOVE 3200 SPEED 180 FIX APDES 3000 FIX ETKUB AT OR ABOVE 2280 RNW 14 FIX OVERFLY OBNUB 3700 HOLD AT FIX OBNUB RIGHT TURN INBOUNDCOURSE 134 SPEED 200 LEGTIME 1
+ TRANSITION ILUMO FIX ILUMO SPEED 200
+ TRANSITION UDPES FIX UDPES SPEED 200
+APPROACH RNV32 FIX BOPON AT OR ABOVE 3300 SPEED 180 FIX AVASA 3300 RNW 32 FIX OVERFLY XOVBO 3700 HOLD AT FIX XOVBO RIGHT TURN INBOUNDCOURSE 314 SPEED 200 LEGTIME 1
+ TRANSITION IMAPA FIX IMAPA SPEED 200
+ TRANSITION OKOXI FIX OKOXI SPEED 200
+ENDAPPROACHES

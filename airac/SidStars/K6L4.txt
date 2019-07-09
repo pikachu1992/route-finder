@@ -1,0 +1,45 @@
+//K6L4 (LOGAN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CELLI LATLON N 38 1.695833 W 82 16.696834
+FIX DANBE LATLON N 37 54.1555 W 81 49.2875
+FIX DRUGS LATLON N 37 39.4255 W 82 5.466
+FIX FEDEX LATLON N 38 4.212833 W 81 42.508166
+FIX HUMOS LATLON N 37 48.973 W 82 13.052
+FIX IYIYI LATLON N 37 52.722 W 81 52.1755
+FIX LIENS LATLON N 37 57.339667 W 81 42.857167
+FIX LOWAK LATLON N 37 49.029833 W 81 59.593834
+FIX MYNAS LATLON N 37 45.296333 W 82 7.066667
+FIX SLINK LATLON N 37 28.067167 W 81 57.016834
+FIX TERRN LATLON N 37 51.737167 W 81 29.928334
+FIX VARNY LATLON N 37 49.9055 W 81 57.837
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX MYNAS AT OR ABOVE 3800 FIX LOWAK 3000 FIX VARNY AT OR ABOVE 2460 RNW 06 TRK 065 UNTIL 1963 FIX OVERFLY LIENS AT OR ABOVE 4500 HOLD AT FIX LIENS RIGHT TURN INBOUNDCOURSE 245 LEGDIST 5
+ TRANSITION CELLI FIX CELLI FIX HUMOS AT OR ABOVE 3800
+ TRANSITION SLINK FIX SLINK FIX DRUGS AT OR ABOVE 5000
+APPROACH RNV24 FIX LIENS AT OR ABOVE 4500 FIX DANBE 3300 FIX IYIYI AT OR ABOVE 2440 RNW 24 TRK 245 UNTIL 1916 FIX OVERFLY MYNAS AT OR ABOVE 3800 HOLD AT FIX MYNAS RIGHT TURN INBOUNDCOURSE 065 LEGDIST 4
+ TRANSITION FEDEX FIX FEDEX AT OR ABOVE 5500
+ TRANSITION TERRN FIX TERRN
+ENDAPPROACHES

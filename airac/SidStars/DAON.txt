@@ -1,0 +1,39 @@
+//DAON (ZENATA-MESSALI EL HADJ)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D066J LATLON N 35 4.914833 W 1 16.277666
+FIX D066K LATLON N 35 5.338667 W 1 15.168667
+FIX FD25 LATLON N 35 4.410833 W 1 17.6
+FIX MD25 LATLON N 35 1.578167 W 1 25.002833
+FIX TLM LATLON N 35 0.901166 W 1 26.768666
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH VDM25 FIX FD25 3450 FIX MD25 1319 RNW 25 TRK 246 UNTIL 3030 TURN LEFT DIRECT FIX TLM 4600 SPEED 220
+ TRANSITION TLM1 FIX TLM AT OR ABOVE 4600 TRK 044 UNTIL 10.5 FROM FIX TLM TURN RIGHT DIRECT FIX D066K AT OR ABOVE 3450
+ TRANSITION TLM2 FIX TLM AT OR ABOVE 4600 TRK 052 UNTIL 9.5 FROM FIX TLM TURN RIGHT DIRECT FIX D066J AT OR ABOVE 3450
+ENDAPPROACHES
+
+GATES
+GATE TLM N 35 1 W 1 27
+ENDGATES

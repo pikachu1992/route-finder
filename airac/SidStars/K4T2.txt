@@ -1,0 +1,42 @@
+//K4T2 (COPELAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEBEW LATLON N 32 56.172 W 97 29.3005
+FIX CAPUV LATLON N 33 1.842833 W 97 29.841667
+FIX EXTUV LATLON N 32 45.115834 W 97 38.9485
+FIX ITUHY LATLON N 32 46.046833 W 97 28.336667
+FIX MQP LATLON N 32 43.570834 W 97 59.8465
+FIX ODGOY LATLON N 33 11.382167 W 97 30.755
+FIX REZYU LATLON N 33 11.277 W 97 41.4785
+FIX RUJHI LATLON N 32 52.838333 W 97 28.982666
+FIX UNYUK LATLON N 33 12.219667 W 97 18.286333
+FIX ZEBAV LATLON N 33 4.3915 W 97 30.085333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ODGOY AT OR ABOVE 3000 FIX ZEBAV 2400 FIX CAPUV AT OR ABOVE 1580 RNW 17 TRK 171 UNTIL 1200 TURN RIGHT DIRECT FIX OVERFLY ODGOY AT OR ABOVE 3100 HOLD AT FIX ODGOY RIGHT TURN INBOUNDCOURSE 171 LEGDIST 4
+ TRANSITION MQP FIX MQP FIX REZYU AT OR ABOVE 3000
+ TRANSITION UNYUK FIX UNYUK
+APPROACH RNV35 FIX ITUHY AT OR ABOVE 3000 FIX RUJHI 2400 FIX BEBEW AT OR ABOVE 1320 RNW 35 TRK 351 UNTIL 925 FIX OVERFLY ODGOY AT OR ABOVE 3100 HOLD AT FIX ODGOY RIGHT TURN INBOUNDCOURSE 171 LEGDIST 4
+ TRANSITION MQP FIX MQP FIX EXTUV AT OR ABOVE 3000
+ENDAPPROACHES

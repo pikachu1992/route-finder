@@ -1,0 +1,40 @@
+//KRWL (RAWLINS MUN/HARVEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARFEJ LATLON N 42 10.436167 W 107 10.843667
+FIX CEXIT LATLON N 41 48.108833 W 106 49.249834
+FIX CKW LATLON N 41 45.3425 W 107 34.919
+FIX EFWOV LATLON N 41 45.861 W 107 16.555834
+FIX FIKLA LATLON N 41 56.341667 W 106 57.183833
+FIX HESNU LATLON N 41 52.237 W 107 4.796
+FIX KLASH LATLON N 41 34.392334 W 106 44.975167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 10
+RNW 22
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV22 FIX FIKLA AT OR ABOVE 10100 FIX HESNU 8800 RNW 22 TRK 224 UNTIL 7131 FIX EFWOV FIX OVERFLY CKW AT OR ABOVE 11700 HOLD AT FIX CKW RIGHT TURN INBOUNDCOURSE 254 LEGDIST 7
+ TRANSITION ARFEJ FIX ARFEJ
+ TRANSITION CKW FIX CKW FIX OVERFLY FIKLA AT OR ABOVE 10100 HOLD AT FIX FIKLA RIGHT TURN INBOUNDCOURSE 224 ALT 10100 LEGDIST 7
+ TRANSITION KLASH FIX KLASH FIX CEXIT AT OR ABOVE 10100
+ENDAPPROACHES

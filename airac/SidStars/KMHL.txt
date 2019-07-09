@@ -1,0 +1,43 @@
+//KMHL (MARSHALL MEML MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ENEZO LATLON N 39 16.171 W 93 18.242333
+FIX GOCOL LATLON N 38 52.994 W 93 12.301333
+FIX GOXJY LATLON N 39 16.090166 W 93 11.805
+FIX KESVL LATLON N 39 16.003333 W 93 5.367833
+FIX NASSI LATLON N 39 8.3845 W 93 11.971
+FIX OCAVA LATLON N 39 2.789 W 93 12.091333
+FIX YEMBO LATLON N 39 0.32 W 93 12.144334
+FIX YISLU LATLON N 39 11.086667 W 93 11.913
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 18
+RNW 27
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX GOXJY AT OR ABOVE 3000 FIX YISLU 2600 FIX NASSI AT OR ABOVE 1620 RNW 18 TRK 178 UNTIL 1179 FIX OVERFLY GOCOL AT OR ABOVE 3000 HOLD AT FIX GOCOL RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION ENEZO FIX ENEZO AT OR ABOVE 3000
+ TRANSITION GOXJY HOLD AT FIX GOXJY RIGHT TURN INBOUNDCOURSE 178 ALT 3000 LEGDIST 4
+ TRANSITION KESVL FIX KESVL AT OR ABOVE 3000
+APPROACH RNV36 FIX GOCOL AT OR ABOVE 3000 FIX YEMBO 2400 FIX OCAVA AT OR ABOVE 1600 RNW 36 TRK 358 UNTIL 1029 FIX OVERFLY GOXJY AT OR ABOVE 3000 HOLD AT FIX GOXJY RIGHT TURN INBOUNDCOURSE 178 LEGDIST 4
+ TRANSITION GOCOL HOLD AT FIX GOCOL RIGHT TURN INBOUNDCOURSE 358 ALT 3000 LEGDIST 4
+ENDAPPROACHES

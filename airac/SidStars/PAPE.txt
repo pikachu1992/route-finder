@@ -1,0 +1,39 @@
+//PAPE (PERRYVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CILAC LATLON N 55 40 W 159 30
+FIX ECALI LATLON N 55 49.098334 W 159 18.457667
+FIX GESSE LATLON N 55 32.286334 W 159 52.673
+FIX GEYED LATLON N 55 53.980667 W 159 10.180834
+FIX WAREX LATLON N 55 45.0425 W 159 23.617
+FIX ZOLOP LATLON N 55 35.782667 W 159 14.504833
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+SIDS
+SID CILAC3 RNW 20 HDG 203 UNTIL 530 FIX OVERFLY CILAC AT OR ABOVE 10000 HOLD AT FIX CILAC RIGHT TURN INBOUNDCOURSE 317 ALT 10000 LEGDIST 6
+ENDSIDS
+
+APPROACHES
+APPROACH RNV02 FIX WAREX AT OR ABOVE 4100 FIX ECALI 2600 FIX OVERFLY GEYED 141 RNW 02 TRK 032 UNTIL 430 TURN RIGHT DIRECT FIX ZOLOP SPEED 230 FIX GESSE AT OR ABOVE 9000 HOLD AT FIX GESSE RIGHT TURN INBOUNDCOURSE 040 ALT 9000 LEGDIST 7
+ TRANSITION GESSE FIX GESSE
+ENDAPPROACHES

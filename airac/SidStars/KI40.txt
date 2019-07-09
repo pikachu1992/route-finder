@@ -1,0 +1,40 @@
+//KI40 (DOWNING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEDDE LATLON N 40 27.142166 W 81 42.612667
+FIX BPANE LATLON N 40 21.004667 W 81 48.754166
+FIX CYCLO LATLON N 40 13.407 W 81 51.714167
+FIX HODOK LATLON N 40 7.422 W 81 52.366
+FIX IRACU LATLON N 40 22.373833 W 81 47.386166
+FIX MABEF LATLON N 40 18.2655 W 81 51.185666
+FIX ZZV LATLON N 39 56.451667 W 81 53.556
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV22 FIX BEDDE AT OR ABOVE 3400 FIX IRACU 2400 FIX BPANE AT OR ABOVE 1840 RNW 22 TRK 224 UNTIL 1400 TURN RIGHT DIRECT FIX OVERFLY BEDDE AT OR ABOVE 3400 HOLD AT FIX BEDDE RIGHT TURN INBOUNDCOURSE 224 LEGDIST 4
+ TRANSITION BEDDE HOLD AT FIX BEDDE RIGHT TURN INBOUNDCOURSE 224 ALT 3400 LEGDIST 4
+APPROACH VORA04 FIX HODOK AT OR ABOVE 2700 FIX CYCLO 2700 FIX MABEF 1780 RNW 04 TRK 011 UNTIL 2700 HDG 140 INTERCEPT RADIAL 191 TO FIX CYCLO FIX CYCLO HOLD AT FIX CYCLO RIGHT TURN INBOUNDCOURSE 011 LEGTIME 1
+ TRANSITION ZZV FIX ZZV
+APPROACH VORA22 FIX HODOK AT OR ABOVE 2700 FIX CYCLO 2700 FIX MABEF 1780 RNW 22 TRK 011 UNTIL 2700 HDG 140 INTERCEPT RADIAL 191 TO FIX CYCLO FIX CYCLO HOLD AT FIX CYCLO RIGHT TURN INBOUNDCOURSE 011 LEGTIME 1
+ TRANSITION ZZV FIX ZZV
+ENDAPPROACHES

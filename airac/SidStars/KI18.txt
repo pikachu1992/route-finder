@@ -1,0 +1,43 @@
+//KI18 (JACKSON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUSTO LATLON N 38 40.6135 W 81 47.681333
+FIX ERFAM LATLON N 38 51.913333 W 81 51.981833
+FIX FARLN LATLON N 39 22.623833 W 81 50.9095
+FIX GEMEH LATLON N 39 5.198 W 81 42.309167
+FIX HNN LATLON N 38 45.2475 W 82 1.57
+FIX MORAN LATLON N 39 5.663833 W 81 30.102167
+FIX NOCPO LATLON N 38 59.630333 W 81 46.371667
+FIX VUNJU LATLON N 38 46.365833 W 81 56.000167
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX VUNJU AT OR ABOVE 2600 FIX ERFAM 2100 RNW 04 TRK 037 UNTIL 1158 FIX OVERFLY GEMEH AT OR ABOVE 2700 HOLD AT FIX GEMEH RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4
+ TRANSITION CUSTO FIX CUSTO
+ TRANSITION HNN FIX HNN
+ TRANSITION MORAN FIX MORAN FIX OVERFLY VUNJU AT OR ABOVE 2700 HOLD AT FIX VUNJU RIGHT TURN INBOUNDCOURSE 037 ALT 2600 LEGDIST 4
+APPROACH RNV22 FIX GEMEH AT OR ABOVE 2700 FIX NOCPO 2100 RNW 22 TRK 217 UNTIL 1158 FIX OVERFLY VUNJU AT OR ABOVE 2600 HOLD AT FIX VUNJU RIGHT TURN INBOUNDCOURSE 037 LEGDIST 4
+ TRANSITION FARLN FIX FARLN
+ TRANSITION GEMEH HOLD AT FIX GEMEH RIGHT TURN INBOUNDCOURSE 217 ALT 2700 LEGDIST 4
+ TRANSITION MORAN FIX MORAN
+ENDAPPROACHES

@@ -1,0 +1,47 @@
+//SVMT (GEN. JOSE TADEO MONAGAS INTL.)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 9 34.622742 W 63 9.764941
+FIX AF002 LATLON N 9 35.302157 W 63 12.906934
+FIX AF003 LATLON N 9 36.917232 W 63 15.675496
+FIX AF004 LATLON N 9 45.040367 W 63 19.32692
+FIX AF005 LATLON N 9 43.039888 W 63 19.210655
+FIX AF006 LATLON N 9 41.102406 W 63 18.692151
+FIX D179J LATLON N 9 34.902167 W 63 6.57
+FIX D252J LATLON N 9 39.280834 W 63 17.776166
+FIX D298J LATLON N 9 47.034667 W 63 19.017667
+FIX FF06 LATLON N 9 42.317 W 63 12.8825
+FIX MA06 LATLON N 9 44.393666 W 63 9.5335
+FIX MEREY LATLON N 9 47.734333 W 62 54.328667
+FIX MUN LATLON N 9 44.606666 W 63 9.19
+FIX PI001 LATLON N 9 42.751729 W 63 12.201331
+FIX PI002 LATLON N 9 38.561915 W 63 13.182483
+FIX PI003 LATLON N 9 39.305683 W 63 17.792328
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH VDM06 FIX FF06 1700 FIX MA06 271 RNW 06 TRK 072 UNTIL 620 FIX MEREY AT OR ABOVE 3000 HOLD AT FIX MEREY RIGHT TURN INBOUNDCOURSE 272 ALT 3000 LEGTIME 1
+ TRANSITION D179J FIX D179J FIX AF001 FIX AF002 FIX AF003 FIX D252J AT OR ABOVE 2200
+ TRANSITION D298J FIX D298J FIX AF004 FIX AF005 FIX AF006 FIX D252J AT OR ABOVE 2200
+ TRANSITION MUN FIX MUN AT OR ABOVE 4000 FIX PI001 AT OR ABOVE 2200 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2200 SPEED 210 FIX PI003 AT OR ABOVE 2200 SPEED 210
+ENDAPPROACHES

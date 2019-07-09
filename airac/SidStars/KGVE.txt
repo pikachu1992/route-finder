@@ -1,0 +1,42 @@
+//KGVE (GORDONSVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AFLAT LATLON N 38 1.524833 W 78 17.667
+FIX BUTAY LATLON N 38 17.151833 W 78 2.232334
+FIX DROPN LATLON N 38 3.0575 W 78 23.689
+FIX HAKON LATLON N 38 13.208167 W 78 6.140833
+FIX HOODE LATLON N 38 27.359833 W 78 10.827833
+FIX KALEC LATLON N 38 21.3935 W 78 5.6055
+FIX MAZKO LATLON N 38 15.719833 W 77 56.417167
+FIX OSABE LATLON N 38 5.473166 W 78 13.7805
+FIX TURCO LATLON N 37 54.236333 W 78 18.711334
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA05 FIX AFLAT AT OR ABOVE 3000 FIX OSABE 2000 RNW 05 TRK 048 UNTIL 854 TURN RIGHT DIRECT FIX OVERFLY TURCO AT OR ABOVE 3300 HOLD AT FIX TURCO RIGHT TURN INBOUNDCOURSE 016 LEGDIST 4
+ TRANSITION DROPN FIX DROPN
+ TRANSITION TURCO FIX TURCO
+APPROACH RNVB23 FIX BUTAY AT OR ABOVE 2600 FIX HAKON 2000 RNW 23 TRK 228 UNTIL 854 TURN LEFT DIRECT FIX OVERFLY MAZKO AT OR ABOVE 3000 HOLD AT FIX MAZKO RIGHT TURN INBOUNDCOURSE 297 LEGDIST 4
+ TRANSITION HOODE FIX HOODE FIX KALEC AT OR ABOVE 3200
+ TRANSITION MAZKO FIX MAZKO
+ENDAPPROACHES

@@ -1,0 +1,40 @@
+//KF70 (FRENCH VALLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIVET LATLON N 34 2.116 W 117 23.396333
+FIX DANNN LATLON N 33 41.417333 W 117 5.873167
+FIX DISEY LATLON N 33 38.651666 W 117 6.602333
+FIX ECULU LATLON N 33 43.612 W 117 5.294
+FIX GAREY LATLON N 34 9.979834 W 117 13.934
+FIX JESEX LATLON N 33 50.61 W 117 14.630333
+FIX KELTE LATLON N 33 58.61 W 117 2.919667
+FIX TANNR LATLON N 33 28.598333 W 117 9.682166
+FIX TIQMU LATLON N 33 48.630334 W 117 3.967667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX TIQMU AT OR ABOVE 4600 FIX ECULU AT OR ABOVE 3800 FIX DANNN 3500 FIX DISEY AT OR ABOVE 2600 RNW 18 TRK 179 UNTIL 2500 TURN RIGHT DIRECT FIX OVERFLY JESEX AT OR ABOVE 5000 HOLD AT FIX JESEX LEFT TURN INBOUNDCOURSE 090 LEGDIST 5
+ TRANSITION CIVET FIX CIVET FIX JESEX AT OR ABOVE 6800
+ TRANSITION GAREY FIX GAREY FIX KELTE AT OR ABOVE 9000
+ TRANSITION TANNR FIX TANNR FIX OVERFLY TIQMU AT OR ABOVE 4600 HOLD AT FIX TIQMU RIGHT TURN INBOUNDCOURSE 179 ALT 4600 LEGDIST 5
+ENDAPPROACHES

@@ -1,0 +1,52 @@
+//OIBJ (JAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 40VOR LATLON N 27 51.498833 E 52 16.798
+FIX AF001 LATLON N 28 5.709137 E 52 15.103754
+FIX AF002 LATLON N 28 4.124996 E 52 10.916337
+FIX AF003 LATLON N 28 1.720454 E 52 7.266356
+FIX CD11 LATLON N 27 56.397167 E 52 8.266333
+FIX D301Q LATLON N 27 58.660166 E 52 4.398167
+FIX D355S LATLON N 28 8.335834 E 52 19.5335
+FIX FD11 LATLON N 27 52.5815 E 52 14.898334
+FIX JAM LATLON N 27 49.306667 E 52 20.576666
+FIX JAMNB LATLON N 27 49.391666 E 52 20.376667
+FIX KATAG LATLON N 28 23.766667 E 52 18.683333
+FIX MD11 LATLON N 27 50.398667 E 52 18.6845
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID KATA1A RNW 29 TRK 293 UNTIL 2572 TRK 301 UNTIL 5500 HDG 025 INTERCEPT RADIAL 355 TO FIX KATAG FIX KATAG
+ENDSIDS
+
+STARS
+STAR KATA1A FIX KATAG FIX D355S FIX AF001 FIX AF002 FIX AF003 FIX D301Q
+  RNW 11
+STAR KATA1C FIX KATAG FIX D355S FIX JAMNB
+  RNW 11 RNW 29
+ENDSTARS
+
+APPROACHES
+APPROACH VDM11 FIX CD11 AT OR ABOVE 6200 FIX FD11 4400 FIX 40VOR AT OR ABOVE 3600 FIX MD11 2848 RNW 11 TRK 121 UNTIL 2848 TRK 085 UNTIL 5000 TURN LEFT DIRECT FIX D301Q 7500 HOLD AT FIX D301Q RIGHT TURN INBOUNDCOURSE 121 SPEED 230 LEGTIME 1
+ TRANSITION D301Q FIX D301Q AT OR ABOVE 7500 SPEED 220
+ENDAPPROACHES

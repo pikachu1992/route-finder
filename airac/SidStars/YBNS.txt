@@ -1,0 +1,40 @@
+//YBNS (BAIRNSDALE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BNSEA LATLON S 37 40.8145 E 147 44.1905
+FIX BNSEB LATLON S 37 43.178666 E 147 52.336667
+FIX BNSEC LATLON S 37 50.0695 E 147 52.333
+FIX BNSEF LATLON S 37 50.059834 E 147 39.9295
+FIX BNSEH LATLON S 37 57.837833 E 147 33.521666
+FIX BNSEI LATLON S 37 46.619333 E 147 46.1355
+FIX BNSEM LATLON S 37 52.9265 E 147 34.753834
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 13
+RNW 22
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ22 FIX BNSEI AT OR ABOVE 3500 FIX BNSEF 1880 FIX OVERFLY BNSEM 291 RNW 22 TRK 222 UNTIL 670 TURN LEFT DIRECT FIX BNSEH TRK 150 UNTIL 1900
+ TRANSITION BNSEA FIX BNSEA AT OR ABOVE 5800 SPEED 210
+ TRANSITION BNSEB FIX BNSEB AT OR ABOVE 3500 SPEED 210
+ TRANSITION BNSEC FIX BNSEC AT OR ABOVE 3500 SPEED 210
+ENDAPPROACHES

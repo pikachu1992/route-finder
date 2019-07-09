@@ -1,0 +1,37 @@
+//FQTT (CHINGOZI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EPTUV LATLON S 16 10.504834 E 33 33.1235
+FIX NETEP LATLON S 15 55.686667 E 33 43.871167
+FIX OKSUR LATLON S 15 55.446667 E 33 33.496166
+FIX TT500 LATLON S 16 0.587167 E 33 38.559667
+FIX TT600 LATLON S 16 10.625833 E 33 38.311333
+FIX TT601 LATLON S 16 10.744834 E 33 43.505333
+FIX UVIXA LATLON S 15 55.567667 E 33 38.683667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV19 FIX TT500 2100 RNW 19 FIX TT600 FIX TT601 FIX NETEP AT OR ABOVE 4000 HOLD AT FIX NETEP LEFT TURN INBOUNDCOURSE 278 LEGTIME 1
+ TRANSITION EPTUV FIX EPTUV FIX OKSUR AT OR ABOVE 4000 SPEED 200 FIX UVIXA
+ TRANSITION NETEP FIX NETEP AT OR ABOVE 4000 SPEED 200 FIX UVIXA
+ENDAPPROACHES

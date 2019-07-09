@@ -1,0 +1,47 @@
+//CYGD (GODERICH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANANU LATLON N 43 43.2355 W 81 37.623
+FIX IKBOB LATLON N 43 56.587166 W 81 50.091334
+FIX IPSUR LATLON N 43 48.679 W 81 58.5545
+FIX MUSPA LATLON N 43 48.958166 W 81 47.774666
+FIX OMPAK LATLON N 43 52.634333 W 81 54.3275
+FIX OMSUG LATLON N 43 39.543167 W 81 31.104167
+FIX SAVUB LATLON N 43 43.481833 W 81 26.857834
+FIX UKRIB LATLON N 43 35.602 W 81 35.341166
+FIX URKUK LATLON N 43 48.891667 W 81 47.656333
+FIX VIPMI LATLON N 43 43.259666 W 81 37.665667
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 10
+RNW 14
+RNW 23
+RNW 28
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX OMPAK AT OR ABOVE 2100 FIX MUSPA 2100 RNW 14 FIX OVERFLY VIPMI 5500 HOLD AT FIX VIPMI RIGHT TURN INBOUNDCOURSE 137 SPEED 250 LEGTIME 1
+ TRANSITION IKBOB FIX IKBOB SPEED 210
+ TRANSITION IPSUR FIX IPSUR SPEED 210
+APPROACH RNV32 FIX OMSUG AT OR ABOVE 2500 FIX ANANU 2100 RNW 32 FIX OVERFLY URKUK 5500 HOLD AT FIX URKUK LEFT TURN INBOUNDCOURSE 317 SPEED 250 LEGTIME 1
+ TRANSITION SAVUB FIX SAVUB SPEED 210
+ TRANSITION UKRIB FIX UKRIB SPEED 210
+ENDAPPROACHES

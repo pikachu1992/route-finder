@@ -1,0 +1,40 @@
+//SKSA (COLONIZADORES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALGIG LATLON N 7 0.866666 W 71 15.266666
+FIX FF34 LATLON N 6 53.470166 W 71 49.055167
+FIX NEBOX LATLON N 7 2.25 W 72 29.05
+FIX SVANB LATLON N 6 57.15 W 71 51.633334
+FIX TME LATLON N 6 27.183334 W 71 45.233333
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID ALGI1A RNW 16 TRK 158 UNTIL 1080 TRK 126 UNTIL 3000 HDG 063 INTERCEPT RADIAL 093 TO FIX ALGIG FIX ALGIG
+SID NEBOX1 RNW 16 TRK 158 UNTIL 1080 TRK 126 UNTIL 3000 HDG 327 INTERCEPT RADIAL 357 TO FIX SVANB FIX SVANB HOLD AT FIX SVANB RIGHT TURN INBOUNDCOURSE 334 ALT 11000 LEGTIME 1 FIX NEBOX
+SID TME1E RNW 16 TRK 158 UNTIL 1080 TRK 126 UNTIL 3000 HDG 207 INTERCEPT RADIAL 177 TO FIX TME FIX TME
+ENDSIDS
+
+APPROACHES
+APPROACH NDB34 FIX FF34 1600 RNW 34 FIX OVERFLY SVANB HOLD AT FIX SVANB RIGHT TURN INBOUNDCOURSE 334 ALT 3000 LEGTIME 1
+ TRANSITION SVA HOLD AT FIX SVANB RIGHT TURN INBOUNDCOURSE 334 ALT 1600 LEGTIME 2
+ENDAPPROACHES

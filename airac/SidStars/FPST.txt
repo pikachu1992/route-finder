@@ -1,0 +1,38 @@
+//FPST (SAO TOME INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D113G LATLON N 0 20.201167 E 6 49.605
+FIX D117G LATLON N 0 19.958 E 6 49.4555
+FIX EN29 LATLON N 0 22.412833 E 6 43.224833
+FIX FN29 LATLON N 0 20.9405 E 6 47.472
+FIX FS29 LATLON N 0 20.822 E 6 47.434
+FIX SPNB LATLON N 0 22.4915 E 6 42.998167
+FIX STM LATLON N 0 22.706833 E 6 43.0235
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH NDB29 FIX FN29 1500 FIX OVERFLY EN29 66 FIX SPNB AT OR ABOVE 440 RNW 29 TRK 000 UNTIL 4000 TURN LEFT DIRECT FIX SPNB 4000
+ TRANSITION SP FIX D113G AT OR ABOVE 1500 TRK 158 UNTIL 4.3 FROM FIX D113G
+APPROACH VOR29 FIX FS29 1500 RNW 29 FIX STM AT OR ABOVE 440 TRK 000 UNTIL 4000 TURN LEFT DIRECT FIX STM
+ TRANSITION STM FIX D117G AT OR ABOVE 1500 TRK 162 UNTIL 4.3 FROM FIX D117G
+ENDAPPROACHES

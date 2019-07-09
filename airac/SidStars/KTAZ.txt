@@ -1,0 +1,47 @@
+//KTAZ (TAYLORVILLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALQOV LATLON N 39 43.504333 W 89 13.3395
+FIX AXC LATLON N 39 44.251333 W 88 51.385834
+FIX AXFIC LATLON N 39 45.436834 W 89 25.767833
+FIX CEBHY LATLON N 39 43.448833 W 89 19.8195
+FIX DAYRE LATLON N 39 18.1625 W 89 19.438
+FIX EHAXO LATLON N 39 37.364666 W 89 19.727167
+FIX JEPUB LATLON N 39 26.514334 W 89 19.5635
+FIX SPI LATLON N 39 50.384 W 89 40.664167
+FIX VLA LATLON N 39 5.630333 W 89 9.734666
+ENDFIXES
+
+RNWS
+RNW 09L
+RNW 09R
+RNW 18
+RNW 27L
+RNW 27R
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX CEBHY AT OR ABOVE 2300 FIX EHAXO 2300 RNW 18 TRK 179 UNTIL 1022 FIX OVERFLY DAYRE AT OR ABOVE 2500 HOLD AT FIX DAYRE RIGHT TURN INBOUNDCOURSE 359 LEGDIST 4
+ TRANSITION AXC FIX AXC FIX ALQOV AT OR ABOVE 4000
+ TRANSITION CEBHY HOLD AT FIX CEBHY LEFT TURN INBOUNDCOURSE 179 ALT 2300 LEGDIST 4
+ TRANSITION SPI FIX SPI FIX AXFIC AT OR ABOVE 4000
+APPROACH RNV36 FIX DAYRE AT OR ABOVE 2500 FIX JEPUB 2300 RNW 36 TRK 359 UNTIL 1022 FIX OVERFLY CEBHY AT OR ABOVE 2300 HOLD AT FIX CEBHY LEFT TURN INBOUNDCOURSE 179 LEGDIST 4
+ TRANSITION DAYRE HOLD AT FIX DAYRE RIGHT TURN INBOUNDCOURSE 359 ALT 2500 LEGDIST 4
+ TRANSITION VLA FIX VLA
+ENDAPPROACHES

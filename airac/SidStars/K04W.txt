@@ -1,0 +1,39 @@
+//K04W (FIELD OF DREAMS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CIVOL LATLON N 45 47.334667 W 93 24.5395
+FIX FITAN LATLON N 46 6.083833 W 92 38.832667
+FIX HISMA LATLON N 45 59.298833 W 93 0.207
+FIX JASNI LATLON N 45 56.7035 W 93 8.3015
+FIX KAYEK LATLON N 45 52.150667 W 93 5.3455
+FIX LINDR LATLON N 46 9.705667 W 93 25.8125
+FIX RZN LATLON N 45 49.226666 W 92 22.471
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX JASNI AT OR ABOVE 3000 FIX HISMA 2600 RNW 06 TRK 065 UNTIL 1421 FIX OVERFLY FITAN AT OR ABOVE 3000 HOLD AT FIX FITAN RIGHT TURN INBOUNDCOURSE 246 LEGDIST 4
+ TRANSITION CIVOL FIX CIVOL
+ TRANSITION JASNI HOLD AT FIX JASNI RIGHT TURN INBOUNDCOURSE 065 ALT 3000 LEGDIST 4
+ TRANSITION LINDR FIX LINDR
+ TRANSITION RZN FIX RZN FIX KAYEK AT OR ABOVE 3000
+ENDAPPROACHES

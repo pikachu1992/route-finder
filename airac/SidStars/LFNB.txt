@@ -1,0 +1,35 @@
+//LFNB (BRENOUX)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FNB12 LATLON N 44 35.176667 E 3 21.978334
+FIX INB12 LATLON N 44 38.898334 E 3 14.638333
+FIX MEN LATLON N 44 36.501667 E 3 9.745
+FIX NB502 LATLON N 44 42.978334 E 3 16.226666
+FIX NB510 LATLON N 44 29.175 E 3 33.75
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX INB12 7000 FIX FNB12 7000 RNW 12 FIX OVERFLY NB510 AT OR BELOW 7000 SPEED 130 TURN RIGHT DIRECT FIX MEN 7000 SPEED 130 HOLD AT FIX MEN LEFT TURN INBOUNDCOURSE 055 ALT 7000 SPEED 170 LEGTIME 1
+ TRANSITION MEN FIX MEN AT OR ABOVE 7000
+ TRANSITION NB502 FIX NB502 AT OR ABOVE 7400
+ENDAPPROACHES

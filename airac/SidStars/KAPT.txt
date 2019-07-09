@@ -1,0 +1,43 @@
+//KAPT (MARION CO-BROWN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADMIT LATLON N 34 41.205667 W 85 31.930333
+FIX CUKVA LATLON N 34 59.0595 W 85 37.752
+FIX CUYAS LATLON N 35 4.867834 W 85 34.753667
+FIX FARAD LATLON N 35 23.2125 W 85 25.578
+FIX GEKEF LATLON N 34 57.696833 W 85 38.4545
+FIX GICEG LATLON N 34 54.049834 W 85 46.934
+FIX GQO LATLON N 34 57.6765 W 85 9.202166
+FIX HINIV LATLON N 34 50.140834 W 85 35.744666
+FIX ITIYO LATLON N 35 3.023833 W 85 35.7055
+FIX NOGIC LATLON N 35 18.949 W 85 54.3775
+FIX OSEPE LATLON N 34 52.0975 W 85 41.337167
+FIX ZIPOP LATLON N 34 54.956333 W 85 39.866333
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX ZIPOP AT OR ABOVE 3100 FIX GEKEF 2700 FIX CUKVA AT OR ABOVE 2240 FIX OVERFLY ITIYO 841 RNW 04 TRK 025 UNTIL 1500 FIX CUYAS FIX OVERFLY FARAD AT OR ABOVE 4000 HOLD AT FIX FARAD RIGHT TURN INBOUNDCOURSE 024 LEGDIST 5
+ TRANSITION ADMIT FIX ADMIT FIX HINIV AT OR ABOVE 4000 FIX OSEPE AT OR ABOVE 3200
+ TRANSITION GQO FIX GQO FIX HINIV AT OR ABOVE 4000 FIX OSEPE AT OR ABOVE 3200
+ TRANSITION NOGIC FIX NOGIC FIX GICEG AT OR ABOVE 4000 FIX OSEPE AT OR ABOVE 3200
+ENDAPPROACHES

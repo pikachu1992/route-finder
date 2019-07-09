@@ -1,0 +1,43 @@
+//KHAB (MARION CO-RANKIN FITE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CADBO LATLON N 33 55.411667 W 88 6.3615
+FIX CESRO LATLON N 34 18.944666 W 88 5.460667
+FIX DEPST LATLON N 33 55.249834 W 88 0.356167
+FIX DUVBY LATLON N 34 18.782833 W 87 59.4275
+FIX EBAHU LATLON N 34 18.616 W 87 53.394667
+FIX FEGMI LATLON N 34 12.220333 W 87 59.687333
+FIX HALEC LATLON N 34 1.724167 W 88 0.1015
+FIX JAGPA LATLON N 33 55.083 W 87 54.351167
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX DUVBY AT OR ABOVE 2400 FIX FEGMI 2000 RNW 18 FIX OVERFLY DEPST AT OR ABOVE 2400 HOLD AT FIX DEPST RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION CESRO FIX CESRO AT OR ABOVE 2400
+ TRANSITION DUVBY HOLD AT FIX DUVBY RIGHT TURN INBOUNDCOURSE 181 ALT 2400 LEGDIST 4
+ TRANSITION EBAHU FIX EBAHU AT OR ABOVE 2500
+APPROACH RNV36 FIX DEPST AT OR ABOVE 2400 FIX HALEC 2000 RNW 36 FIX OVERFLY DUVBY AT OR ABOVE 2400 HOLD AT FIX DUVBY RIGHT TURN INBOUNDCOURSE 181 LEGDIST 4
+ TRANSITION CADBO FIX CADBO AT OR ABOVE 2400
+ TRANSITION DEPST HOLD AT FIX DEPST RIGHT TURN INBOUNDCOURSE 001 ALT 2400 LEGDIST 4
+ TRANSITION JAGPA FIX JAGPA AT OR ABOVE 2600
+ENDAPPROACHES

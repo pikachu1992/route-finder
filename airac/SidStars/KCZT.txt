@@ -1,0 +1,42 @@
+//KCZT (DIMMIT CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADDIL LATLON N 28 24.115 W 99 40.961
+FIX AVDUW LATLON N 28 27.599333 W 99 45.0385
+FIX COT LATLON N 28 27.721 W 99 7.112666
+FIX ETIKY LATLON N 28 29.725834 W 99 47.5305
+FIX ETUYA LATLON N 28 24.228833 W 99 33.024334
+FIX FIZVY LATLON N 28 33.014 W 99 51.389333
+FIX WEGID LATLON N 28 39.899833 W 99 59.4905
+FIX WUNOX LATLON N 28 47.1215 W 99 51.600667
+FIX YISBO LATLON N 28 35.035166 W 99 53.764333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX WEGID AT OR ABOVE 3000 FIX YISBO 2200 FIX FIZVY AT OR ABOVE 1260 RNW 13 TRK 127 UNTIL 940 FIX OVERFLY ADDIL AT OR ABOVE 3000 HOLD AT FIX ADDIL RIGHT TURN INBOUNDCOURSE 307 LEGDIST 4
+ TRANSITION COT FIX COT FIX WUNOX AT OR ABOVE 3000
+ TRANSITION WEGID HOLD AT FIX WEGID RIGHT TURN INBOUNDCOURSE 127 ALT 3000 LEGDIST 4
+APPROACH RNV31 FIX ADDIL AT OR ABOVE 3000 FIX AVDUW 2200 FIX ETIKY AT OR ABOVE 1220 RNW 31 TRK 307 UNTIL 925 FIX OVERFLY WEGID AT OR ABOVE 3000 HOLD AT FIX WEGID RIGHT TURN INBOUNDCOURSE 127 LEGDIST 4
+ TRANSITION ADDIL HOLD AT FIX ADDIL RIGHT TURN INBOUNDCOURSE 307 ALT 3000 LEGDIST 4
+ TRANSITION COT FIX COT FIX ETUYA AT OR ABOVE 3000
+ENDAPPROACHES

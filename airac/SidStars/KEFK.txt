@@ -1,0 +1,40 @@
+//KEFK (NORTHEAST KINGDOM INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AHTON LATLON N 44 46.273166 W 72 9.965666
+FIX ANEES LATLON N 44 38.945 W 71 59.913833
+FIX BML LATLON N 44 38.004334 W 71 11.1675
+FIX LUNFI LATLON N 44 41.540666 W 72 7.494167
+FIX PLOTT LATLON N 44 33.299 W 72 12.043834
+FIX ROMUW LATLON N 44 49.921667 W 72 11.873666
+FIX YISXI LATLON N 44 43.907 W 72 8.729167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 18
+RNW 23
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX LUNFI AT OR ABOVE 4800 FIX YISXI AT OR ABOVE 4000 FIX AHTON 3200 FIX ROMUW AT OR ABOVE 1960 RNW 36 TRK 357 UNTIL 2300 TURN LEFT DIRECT FIX OVERFLY LUNFI AT OR ABOVE 4800 HOLD AT FIX LUNFI RIGHT TURN INBOUNDCOURSE 357 LEGDIST 5
+ TRANSITION BML FIX BML FIX ANEES AT OR ABOVE 6000
+ TRANSITION LUNFI HOLD AT FIX LUNFI RIGHT TURN INBOUNDCOURSE 357 ALT 4800 LEGDIST 5
+ TRANSITION PLOTT FIX PLOTT
+ENDAPPROACHES

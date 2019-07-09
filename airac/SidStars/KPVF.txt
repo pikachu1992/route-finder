@@ -1,0 +1,36 @@
+//KPVF (PLACERVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAWDE LATLON N 38 41.3365 W 120 50.473
+FIX CORLY LATLON N 38 43.309667 W 121 4.410167
+FIX FAMSO LATLON N 38 31.101334 W 120 59.169334
+FIX MUREQ LATLON N 38 29.040167 W 120 50.646667
+FIX TRIPP LATLON N 38 37.802833 W 120 59.236166
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX TRIPP AT OR ABOVE 4000 FIX CAWDE 4000 RNW 05 TRK 049 UNTIL 3050 TURN RIGHT DIRECT FIX OVERFLY TRIPP AT OR ABOVE 4500 HOLD AT FIX TRIPP RIGHT TURN INBOUNDCOURSE 049 LEGDIST 4
+ TRANSITION CORLY FIX CORLY
+ TRANSITION MUREQ FIX MUREQ FIX FAMSO AT OR ABOVE 5000
+ TRANSITION TRIPP HOLD AT FIX TRIPP RIGHT TURN INBOUNDCOURSE 049 ALT 4000 LEGDIST 4
+ENDAPPROACHES

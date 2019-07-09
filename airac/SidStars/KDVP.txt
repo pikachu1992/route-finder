@@ -1,0 +1,35 @@
+//KDVP (SLAYTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APEWO LATLON N 43 53.819833 W 95 46.956667
+FIX IZAWE LATLON N 44 4.621834 W 95 46.956667
+FIX JEYZO LATLON N 43 48.959833 W 95 46.956667
+FIX OMEHI LATLON N 44 9.625834 W 95 46.956667
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX OMEHI AT OR ABOVE 3300 FIX IZAWE 3300 RNW 17 TRK 176 UNTIL 2023 FIX OVERFLY JEYZO AT OR ABOVE 3400 HOLD AT FIX JEYZO RIGHT TURN INBOUNDCOURSE 356 LEGDIST 4
+ TRANSITION OMEHI HOLD AT FIX OMEHI RIGHT TURN INBOUNDCOURSE 176 ALT 3300 LEGDIST 4
+APPROACH RNV35 FIX JEYZO AT OR ABOVE 3400 FIX APEWO 3300 RNW 35 TRK 356 UNTIL 2023 FIX OVERFLY OMEHI AT OR ABOVE 3300 HOLD AT FIX OMEHI RIGHT TURN INBOUNDCOURSE 176 LEGDIST 4
+ TRANSITION JEYZO HOLD AT FIX JEYZO RIGHT TURN INBOUNDCOURSE 356 ALT 3400 LEGDIST 4
+ENDAPPROACHES

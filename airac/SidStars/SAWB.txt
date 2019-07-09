@@ -1,0 +1,38 @@
+//SAWB (VICECOMODORO MARAMBIO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 20VOR LATLON S 64 13.3355 W 56 32.955
+FIX 60VOR LATLON S 64 11.833667 W 56 24.476666
+FIX CF23 LATLON S 64 10.701833 W 56 18.128
+FIX D316I LATLON S 64 6.552334 W 56 48.375167
+FIX D316J LATLON S 64 5.714666 W 56 49.610666
+FIX FF23 LATLON S 64 11.079667 W 56 20.243167
+FIX MBI LATLON S 64 14.083333 W 56 37.2
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH VDMY23 FIX CF23 FIX FF23 3400 FIX 60VOR AT OR ABOVE 2800 FIX 20VOR AT OR ABOVE 1550 FIX MBI 739 RNW 23 TRK 237 UNTIL 2500
+ TRANSITION D316J FIX D316J FIX D316I
+APPROACH VDMZ23 FIX FF23 3400 FIX 60VOR AT OR ABOVE 2800 FIX 20VOR AT OR ABOVE 1550 FIX MBI 739 RNW 23 TRK 237 UNTIL 4000
+ TRANSITION MBI FIX MBI TRK 077 UNTIL 8.0 FROM FIX MBI
+ENDAPPROACHES

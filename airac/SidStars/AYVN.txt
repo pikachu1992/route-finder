@@ -1,0 +1,43 @@
+//AYVN (VANIMO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D107O LATLON S 2 46.1135 E 141 32.188834
+FIX FN287 LATLON S 2 43.2335 E 141 24.724667
+FIX FQ287 LATLON S 2 44.313667 E 141 27.523667
+FIX MQ287 LATLON S 2 41.433167 E 141 20.059834
+FIX VNO LATLON S 2 40.713 E 141 18.194
+FIX VNONB LATLON S 2 40.713 E 141 18.194
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDMB12 FIX FN287 2500 FIX VNONB 1300 RNW 12 TRK 005 UNTIL 3500
+ TRANSITION VNO FIX VNONB AT OR ABOVE 4500 TRK 086 UNTIL 7.0 FROM FIX VNONB
+APPROACH NDMM12 FIX FQ287 2300 FIX MQ287 770 RNW 12 TRK 005 UNTIL 3500
+ TRANSITION D107O FIX D107O AT OR ABOVE 3300
+ TRANSITION VNO FIX VNONB AT OR ABOVE 4500 TRK 086 UNTIL 10.0 FROM FIX VNO
+APPROACH NDMB30 FIX FN287 2500 FIX VNONB 1300 RNW 30 TRK 005 UNTIL 3500
+ TRANSITION VNO FIX VNONB AT OR ABOVE 4500 TRK 086 UNTIL 7.0 FROM FIX VNONB
+APPROACH NDMM30 FIX FQ287 2300 FIX MQ287 770 RNW 30 TRK 005 UNTIL 3500
+ TRANSITION D107O FIX D107O AT OR ABOVE 3300
+ TRANSITION VNO FIX VNONB AT OR ABOVE 4500 TRK 086 UNTIL 10.0 FROM FIX VNO
+ENDAPPROACHES

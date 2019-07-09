@@ -1,0 +1,37 @@
+//KBUB (CRAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GREYY LATLON N 41 35.535833 W 99 3.331
+FIX IBOTY LATLON N 41 43.365667 W 99 7.3285
+FIX KODEE LATLON N 41 41.1435 W 99 6.192167
+FIX RUGTE LATLON N 41 57.795667 W 99 14.743333
+FIX SEYOT LATLON N 41 52.196167 W 99 11.858666
+FIX TORLE LATLON N 41 49.756166 W 99 10.6045
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV15 FIX RUGTE AT OR ABOVE 4100 FIX SEYOT 4000 FIX TORLE AT OR ABOVE 3160 RNW 15 TRK 152 UNTIL 2468 FIX OVERFLY GREYY AT OR ABOVE 4400 HOLD AT FIX GREYY RIGHT TURN INBOUNDCOURSE 332 LEGDIST 5
+ TRANSITION RUGTE HOLD AT FIX RUGTE RIGHT TURN INBOUNDCOURSE 152 ALT 4100 LEGDIST 5
+APPROACH RNV33 FIX GREYY AT OR ABOVE 4400 FIX KODEE 4000 FIX IBOTY AT OR ABOVE 3240 RNW 33 TRK 332 UNTIL 2583 FIX OVERFLY RUGTE AT OR ABOVE 4100 HOLD AT FIX RUGTE RIGHT TURN INBOUNDCOURSE 152 LEGDIST 5
+ TRANSITION GREYY HOLD AT FIX GREYY RIGHT TURN INBOUNDCOURSE 332 ALT 4400 LEGDIST 5
+ENDAPPROACHES

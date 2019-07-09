@@ -1,0 +1,40 @@
+//KM01 (GENERAL DEWITT SPAIN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FAXIP LATLON N 35 23.6135 W 90 6.615334
+FIX GQE LATLON N 35 20.821834 W 90 28.6895
+FIX MEM LATLON N 35 0.906334 W 89 58.992167
+FIX PI001 LATLON N 35 21.409411 W 90 6.836315
+FIX PI002 LATLON N 35 23.360054 W 90 11.535973
+FIX PI003 LATLON N 35 27.590412 W 90 9.304005
+FIX SHLBY LATLON N 35 18.080833 W 90 5.510167
+FIX VAGDY LATLON N 35 17.348666 W 90 4.785167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX FAXIP AT OR ABOVE 3000 FIX VAGDY 1900 RNW 17 TRK 167 UNTIL 1100 TURN RIGHT DIRECT FIX OVERFLY FAXIP AT OR ABOVE 3000 HOLD AT FIX FAXIP RIGHT TURN INBOUNDCOURSE 167 LEGDIST 4
+ TRANSITION FAXIP HOLD AT FIX FAXIP RIGHT TURN INBOUNDCOURSE 167 ALT 3000 LEGDIST 4
+APPROACH VOR17 FIX SHLBY 2500 RNW 17 TRK 162 UNTIL 1500 HDG 320 INTERCEPT RADIAL 290 TO FIX GQE FIX GQE AT OR ABOVE 2500
+ TRANSITION GQE FIX GQE FIX SHLBY AT OR ABOVE 3000 FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ TRANSITION MEM FIX MEM FIX SHLBY AT OR ABOVE 3000 FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

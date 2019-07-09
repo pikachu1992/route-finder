@@ -1,0 +1,41 @@
+//K1F0 (ARDMORE DOWNTOWN EXECUTIVE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADM LATLON N 34 12.695167 W 97 10.093667
+FIX AUSTE LATLON N 34 3.394834 W 97 7.265833
+FIX JULKU LATLON N 34 24.863833 W 96 59.606333
+FIX KALVY LATLON N 34 14.564167 W 97 7.458
+FIX VAAMP LATLON N 33 56.072833 W 97 7.140167
+FIX VILLE LATLON N 34 21.816 W 97 7.583167
+FIX WIKVO LATLON N 34 5.802833 W 97 7.307167
+FIX ZALUN LATLON N 34 25.688666 W 97 15.029333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX VILLE AT OR ABOVE 3000 FIX KALVY 2600 RNW 17 TRK 175 UNTIL 1245 FIX OVERFLY VAAMP AT OR ABOVE 3000 HOLD AT FIX VAAMP RIGHT TURN INBOUNDCOURSE 355 LEGDIST 4
+ TRANSITION ADM FIX ADM FIX OVERFLY VILLE AT OR ABOVE 3000 HOLD AT FIX VILLE RIGHT TURN INBOUNDCOURSE 175 ALT 3000 LEGDIST 4
+ TRANSITION JULKU FIX JULKU
+ TRANSITION ZALUN FIX ZALUN
+APPROACH RNV35 FIX VAAMP AT OR ABOVE 3000 FIX AUSTE 2500 FIX WIKVO AT OR ABOVE 1700 RNW 35 TRK 355 UNTIL 1200 FIX OVERFLY VILLE AT OR ABOVE 3000 HOLD AT FIX VILLE RIGHT TURN INBOUNDCOURSE 175 LEGDIST 4
+ TRANSITION ADM FIX ADM FIX OVERFLY VAAMP AT OR ABOVE 3000 HOLD AT FIX VAAMP RIGHT TURN INBOUNDCOURSE 355 ALT 3000 LEGDIST 4
+ENDAPPROACHES

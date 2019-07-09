@@ -1,0 +1,38 @@
+//KT30 (MC KINLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COT LATLON N 28 27.721 W 99 7.112666
+FIX FEELS LATLON N 28 37.7375 W 99 6.915167
+FIX MAJVO LATLON N 28 48.764666 W 99 6.6965
+FIX MANLY LATLON N 28 43.752167 W 99 6.796
+FIX OXUKE LATLON N 28 34.5465 W 98 58.806667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA13 FIX FEELS AT OR ABOVE 2500 FIX MANLY 2500 FIX MAJVO 1120 RNW 13 TRK 352 UNTIL 1120 TURN LEFT DIRECT FIX COT AT OR ABOVE 2500 HOLD AT FIX COT RIGHT TURN INBOUNDCOURSE 257 LEGTIME 1
+ TRANSITION COT FIX COT
+ TRANSITION OXUKE FIX OXUKE
+APPROACH VDMA31 FIX FEELS AT OR ABOVE 2500 FIX MANLY 2500 FIX MAJVO 1120 RNW 31 TRK 352 UNTIL 1120 TURN LEFT DIRECT FIX COT AT OR ABOVE 2500 HOLD AT FIX COT RIGHT TURN INBOUNDCOURSE 257 LEGTIME 1
+ TRANSITION COT FIX COT
+ TRANSITION OXUKE FIX OXUKE
+ENDAPPROACHES

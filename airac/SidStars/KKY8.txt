@@ -1,0 +1,36 @@
+//KKY8 (HANCOCK CO-LEWIS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKVEH LATLON N 37 53.110333 W 86 56.147
+FIX CAGUV LATLON N 38 1.472666 W 86 46.467334
+FIX MCKVR LATLON N 38 6.5555 W 86 40.557833
+FIX SUCVO LATLON N 37 48.084 W 87 1.939667
+FIX ZERUP LATLON N 37 59.426833 W 86 48.8405
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX SUCVO AT OR ABOVE 3000 FIX AKVEH 2100 RNW 05 TRK 045 UNTIL 812 FIX OVERFLY MCKVR AT OR ABOVE 3000 HOLD AT FIX MCKVR RIGHT TURN INBOUNDCOURSE 226 LEGDIST 4
+ TRANSITION SUCVO HOLD AT FIX SUCVO RIGHT TURN INBOUNDCOURSE 045 ALT 3000 LEGDIST 4
+APPROACH RNV23 FIX MCKVR AT OR ABOVE 3000 FIX CAGUV 2300 FIX ZERUP AT OR ABOVE 1360 RNW 23 TRK 226 UNTIL 812 FIX OVERFLY SUCVO AT OR ABOVE 3000 HOLD AT FIX SUCVO RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4
+ TRANSITION MCKVR HOLD AT FIX MCKVR RIGHT TURN INBOUNDCOURSE 226 ALT 3000 LEGDIST 4
+ENDAPPROACHES

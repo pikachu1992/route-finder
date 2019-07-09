@@ -1,0 +1,40 @@
+//PFSH (SHAKTOOLIK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEWEJ LATLON N 64 12.484166 W 160 51.888167
+FIX CAQKU LATLON N 64 8.727667 W 161 13.056667
+FIX DIEGG LATLON N 64 24.8745 W 161 15.912667
+FIX FANUB LATLON N 64 10.612333 W 161 2.484334
+FIX MEALT LATLON N 64 35.194834 W 161 25.784666
+FIX PARZY LATLON N 64 16.446833 W 161 7.947833
+FIX SEBKY LATLON N 64 29.6365 W 161 20.451
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX MEALT AT OR ABOVE 2500 FIX SEBKY 2500 FIX DIEGG AT OR ABOVE 840 RNW 14 TRK 143 UNTIL 271 FIX OVERFLY FANUB AT OR ABOVE 3500 HOLD AT FIX FANUB RIGHT TURN INBOUNDCOURSE 323 LEGDIST 4
+ TRANSITION MEALT HOLD AT FIX MEALT RIGHT TURN INBOUNDCOURSE 143 ALT 2500 LEGDIST 4
+APPROACH RNV32 FIX FANUB AT OR ABOVE 3500 FIX PARZY 2000 RNW 32 FIX OVERFLY MEALT AT OR ABOVE 2500 HOLD AT FIX MEALT RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4
+ TRANSITION BEWEJ FIX BEWEJ AT OR ABOVE 6000
+ TRANSITION CAQKU FIX CAQKU AT OR ABOVE 3500
+ TRANSITION FANUB HOLD AT FIX FANUB RIGHT TURN INBOUNDCOURSE 323 ALT 3500 LEGDIST 4
+ENDAPPROACHES

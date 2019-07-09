@@ -1,0 +1,46 @@
+//KLLR (LITTLE RIVER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMAKR LATLON N 39 0 W 123 45
+FIX CETNI LATLON N 39 14.368667 W 123 42.986
+FIX EBYIB LATLON N 39 17.2155 W 123 47.697833
+FIX ENI LATLON N 39 3.193 W 123 16.459667
+FIX MEMVE LATLON N 39 10.686167 W 123 36.9085
+FIX RAKPE LATLON N 39 13.0605 W 123 40.825166
+FIX SAVJO LATLON N 39 5.498333 W 123 28.378166
+FIX VECEM LATLON N 39 7.877666 W 123 53.215333
+FIX WIMUK LATLON N 38 57.474 W 123 23.129333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID LTLRV1
+ RNW 11 FIX OVERFLY CETNI FIX AMAKR FIX ENI
+ RNW 29 FIX EBYIB TURN LEFT DIRECT FIX VECEM FIX AMAKR FIX ENI
+ENDSIDS
+
+APPROACHES
+APPROACH RNV29 FIX SAVJO AT OR ABOVE 5200 FIX MEMVE 3100 FIX RAKPE AT OR ABOVE 1860 RNW 29 TRK 293 UNTIL 974 TURN LEFT DIRECT FIX OVERFLY AMAKR AT OR ABOVE 6000 HOLD AT FIX AMAKR RIGHT TURN INBOUNDCOURSE 073 LEGDIST 5
+ TRANSITION ENI FIX ENI
+ TRANSITION SAVJO HOLD AT FIX SAVJO LEFT TURN INBOUNDCOURSE 293 ALT 5200 LEGDIST 5
+ TRANSITION WIMUK FIX WIMUK
+ENDAPPROACHES

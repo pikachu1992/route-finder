@@ -1,0 +1,36 @@
+//KDYA (DEMOPOLIS REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADTOP LATLON N 32 23.265167 W 88 2.218
+FIX AFPAD LATLON N 32 32.414167 W 87 52.2335
+FIX BATGE LATLON N 32 18.847166 W 88 7.022
+FIX CUBNO LATLON N 32 36.822167 W 87 47.405167
+FIX RIPNE LATLON N 32 29.603 W 87 55.306834
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX BATGE AT OR ABOVE 3000 FIX ADTOP 2000 RNW 04 TRK 045 UNTIL 362 FIX OVERFLY CUBNO AT OR ABOVE 3000 HOLD AT FIX CUBNO RIGHT TURN INBOUNDCOURSE 225 LEGDIST 4
+ TRANSITION BATGE HOLD AT FIX BATGE RIGHT TURN INBOUNDCOURSE 045 ALT 3000 LEGDIST 4
+APPROACH RNV22 FIX CUBNO AT OR ABOVE 3000 FIX AFPAD 2000 FIX RIPNE AT OR ABOVE 780 RNW 22 TRK 225 UNTIL 369 FIX OVERFLY BATGE AT OR ABOVE 3000 HOLD AT FIX BATGE RIGHT TURN INBOUNDCOURSE 045 LEGDIST 4
+ TRANSITION CUBNO HOLD AT FIX CUBNO RIGHT TURN INBOUNDCOURSE 225 ALT 3000 LEGDIST 4
+ENDAPPROACHES

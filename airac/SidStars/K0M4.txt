@@ -1,0 +1,43 @@
+//K0M4 (BENTON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARCHE LATLON N 36 5.224333 W 88 3.5
+FIX BETIE LATLON N 36 7.498 W 87 54.024667
+FIX CHEKA LATLON N 36 10.363166 W 87 59.087833
+FIX MAWBU LATLON N 36 13.224667 W 88 4.157167
+FIX OBOSY LATLON N 35 53.620834 W 88 20.903
+FIX PITKE LATLON N 35 47.918167 W 88 10.7915
+FIX TEMSE LATLON N 35 50.771333 W 88 15.844166
+FIX WADKI LATLON N 35 55.926 W 88 11.4525
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX TEMSE AT OR ABOVE 2500 FIX WADKI 2200 RNW 04 FIX OVERFLY CHEKA AT OR ABOVE 2500 HOLD AT FIX CHEKA RIGHT TURN INBOUNDCOURSE 217 LEGDIST 4
+ TRANSITION OBOSY FIX OBOSY AT OR ABOVE 2500
+ TRANSITION PITKE FIX PITKE AT OR ABOVE 2500
+ TRANSITION TEMSE HOLD AT FIX TEMSE RIGHT TURN INBOUNDCOURSE 037 ALT 2500 LEGDIST 4
+APPROACH RNV22 FIX CHEKA AT OR ABOVE 2500 FIX ARCHE 2200 RNW 22 FIX OVERFLY TEMSE AT OR ABOVE 2500 HOLD AT FIX TEMSE RIGHT TURN INBOUNDCOURSE 037 LEGDIST 4
+ TRANSITION BETIE FIX BETIE AT OR ABOVE 2500
+ TRANSITION CHEKA HOLD AT FIX CHEKA RIGHT TURN INBOUNDCOURSE 217 ALT 2500 LEGDIST 4
+ TRANSITION MAWBU FIX MAWBU AT OR ABOVE 2500
+ENDAPPROACHES

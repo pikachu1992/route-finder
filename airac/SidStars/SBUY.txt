@@ -1,0 +1,50 @@
+//SBUY (URUCU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF09 LATLON S 4 53.354167 W 65 25.684834
+FIX KOVTO LATLON S 4 50.33 W 65 48.18
+FIX KOVUM LATLON S 4 58.62 W 65 47.4
+FIX KOXEK LATLON S 4 26.48 W 65 16.57
+FIX MAVRU LATLON S 4 26.45 W 65 15.8
+FIX MUPAK LATLON S 5 15.28 W 65 6.18
+FIX OPRUR LATLON S 5 15.04 W 65 5.42
+FIX URCNB LATLON S 4 53.19 W 65 20.99
+FIX UY001 LATLON S 4 51.29 W 65 13.15
+FIX UY002 LATLON S 5 0.89 W 65 10.2
+FIX UY006 LATLON S 4 54.2 W 65 26.57
+FIX UY007 LATLON S 4 43.14 W 65 31.36
+FIX UY008 LATLON S 5 6.17 W 65 25.14
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+SIDS
+SID KOVTO RNW 27 FIX UY006 SPEED 190 FIX UY007 FIX KOVTO
+SID KOVUM RNW 09 FIX UY001 SPEED 190 FIX UY002 TURN RIGHT DIRECT FIX KOVUM
+SID KOXEK RNW 27 FIX UY006 SPEED 190 FIX UY007 FIX KOXEK
+SID MAVRU RNW 09 FIX UY001 SPEED 190 FIX MAVRU
+SID MUPAK RNW 27 FIX UY006 SPEED 190 FIX UY008 FIX MUPAK
+SID OPRUR RNW 09 FIX UY001 SPEED 190 FIX UY002 FIX OPRUR
+ENDSIDS
+
+APPROACHES
+APPROACH NDB09 FIX FF09 1540 RNW 09 FIX OVERFLY URCNB TRK 097 UNTIL 2000 TURN RIGHT DIRECT FIX URCNB HOLD AT FIX URCNB LEFT TURN INBOUNDCOURSE 298 LEGTIME 1
+ENDAPPROACHES

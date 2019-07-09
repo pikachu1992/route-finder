@@ -1,0 +1,37 @@
+//KPHH (SWINNIE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF36 LATLON N 33 20.932834 W 79 30.0755
+FIX KIMMY LATLON N 33 16.386167 W 79 30.156
+FIX PHH LATLON N 33 27.0875 W 79 31.634333
+FIX PI001 LATLON N 33 23.663932 W 79 30.762745
+FIX PI002 LATLON N 33 20.057123 W 79 33.565865
+FIX PI003 LATLON N 33 17.30561 W 79 29.147111
+FIX WESEL LATLON N 33 26.9175 W 79 52.895833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH NDB36 FIX FF36 2000 RNW 36 FIX PHH AT OR ABOVE 427 TRK 354 UNTIL 1100 TURN RIGHT DIRECT FIX PHH AT OR ABOVE 2000 HOLD AT FIX PHH RIGHT TURN INBOUNDCOURSE 354 LEGTIME 1
+ TRANSITION KIMMY FIX KIMMY FIX PHH AT OR ABOVE 2000 FIX PI001 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2000 SPEED 210 FIX PI003 AT OR ABOVE 2000 SPEED 210
+ TRANSITION WESEL FIX WESEL FIX PHH AT OR ABOVE 2000 FIX PI001 AT OR ABOVE 2000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2000 SPEED 210 FIX PI003 AT OR ABOVE 2000 SPEED 210
+ENDAPPROACHES

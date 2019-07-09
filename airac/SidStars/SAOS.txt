@@ -1,0 +1,38 @@
+//SAOS (STA. ROSA DE CONLARA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 46VOR LATLON S 32 26.847334 W 65 12.498167
+FIX 66VOR LATLON S 32 28.773667 W 65 13.1505
+FIX CD02 LATLON S 32 33.492667 W 65 14.7505
+FIX FD02 LATLON S 32 32.048167 W 65 14.260333
+FIX FS02 LATLON S 32 31.374 W 65 14.031833
+FIX MD02 LATLON S 32 24.921 W 65 11.8465
+FIX SRC LATLON S 32 22.416667 W 65 11
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX CD02 AT OR ABOVE 4600 FIX FD02 4600 FIX 66VOR AT OR ABOVE 3600 FIX 46VOR AT OR ABOVE 3000 FIX MD02 2466 RNW 02 TRK 017 UNTIL 4000
+ TRANSITION SRC FIX SRC TRK 210 UNTIL 11.5 FROM FIX SRC
+APPROACH VOR02 FIX FS02 4600 RNW 02 FIX SRC AT OR ABOVE 2420 HDG 017 UNTIL 4000
+ TRANSITION SRC FIX SRC TRK 210 UNTIL 10.0 FROM FIX SRC
+ENDAPPROACHES

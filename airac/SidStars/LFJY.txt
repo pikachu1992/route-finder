@@ -1,0 +1,41 @@
+//LFJY (CHAMBLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JY400 LATLON N 49 12.918334 E 5 40.403333
+FIX JY402 LATLON N 49 12.425 E 5 50
+FIX JY404 LATLON N 49 11.731667 E 6 3.083333
+FIX JY406 LATLON N 49 7.801667 E 6 4.14
+FIX JY408 LATLON N 49 5.261666 E 5 59.441666
+FIX JY420 LATLON N 49 0.295 E 5 50.3
+FIX MTZNB LATLON N 49 16.568333 E 6 12.516667
+ENDFIXES
+
+RNWS
+RNW 05C
+RNW 05L
+RNW 05R
+RNW 23C
+RNW 23L
+RNW 23R
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23LA FIX JY406 AT OR ABOVE 2600 FIX JY408 2600 SPEED 160 RNW 23L FIX OVERFLY JY420 TURN RIGHT DIRECT FIX JY400 2600 SPEED 240
+ TRANSITION JY400 FIX JY400 AT OR ABOVE 2600 SPEED 240 FIX JY402 AT OR BELOW 5500 FIX JY404 AT OR BELOW 3000 AT OR ABOVE 2600 SPEED 220
+ TRANSITION MTZ FIX MTZNB AT OR ABOVE 5000 SPEED 240 FIX JY404 AT OR BELOW 3000 AT OR ABOVE 2600 SPEED 220
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//XA89 (FAITH RANCH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX COT LATLON N 28 27.721 W 99 7.112666
+FIX HUNOM LATLON N 28 10.734667 W 99 59.781
+FIX INJUV LATLON N 28 27.031667 W 100 5.997833
+FIX IXENE LATLON N 28 14.375833 W 100 2.539
+FIX JOMIK LATLON N 28 22.349167 W 100 8.591333
+FIX WATMU LATLON N 28 2.713333 W 99 53.718334
+FIX WIMTI LATLON N 28 8.256334 W 99 57.905833
+FIX YELUK LATLON N 28 16.756166 W 100 4.343833
+FIX YICUD LATLON N 28 28.979833 W 99 59.556833
+FIX ZUBIN LATLON N 28 3.24 W 99 44.696
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX JOMIK AT OR ABOVE 3000 FIX YELUK 2300 FIX IXENE AT OR ABOVE 1380 RNW 14 TRK 140 UNTIL 1200 FIX OVERFLY ZUBIN AT OR ABOVE 4000 HOLD AT FIX ZUBIN RIGHT TURN INBOUNDCOURSE 260 LEGDIST 4
+ TRANSITION COT FIX COT FIX YICUD AT OR ABOVE 4000 FIX INJUV AT OR ABOVE 3000
+APPROACH RNV32 FIX WATMU AT OR ABOVE 3000 FIX WIMTI 2300 FIX HUNOM AT OR ABOVE 1340 RNW 32 TRK 320 UNTIL 1200 FIX OVERFLY YICUD AT OR ABOVE 4000 HOLD AT FIX YICUD RIGHT TURN INBOUNDCOURSE 245 LEGDIST 4
+ TRANSITION COT FIX COT FIX ZUBIN AT OR ABOVE 4000
+ENDAPPROACHES

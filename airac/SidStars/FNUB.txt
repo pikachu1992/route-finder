@@ -1,0 +1,39 @@
+//FNUB (MUKANKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX G180P LATLON S 14 50.1 E 13 46.6
+FIX G270F LATLON S 14 55.2 E 13 41.7
+FIX G270L LATLON S 14 55 E 13 46.8
+FIX G270P LATLON S 14 54.9 E 13 52
+FIX G360P LATLON S 15 0.1 E 13 47
+FIX MR28 LATLON S 14 55.4 E 13 36.3
+FIX UB090 LATLON S 14 50.6 E 13 31.1
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX G270L AT OR ABOVE 7600 FIX G270F 7600 FIX OVERFLY MR28 6016 RNW 28 TRK 275 UNTIL 6180 TURN RIGHT DIRECT FIX G180P 9000
+ TRANSITION G180P FIX G180P AT OR ABOVE 9000
+ TRANSITION G270P FIX G270P AT OR ABOVE 9000
+ TRANSITION G360P FIX G360P AT OR ABOVE 9000
+ TRANSITION UB090 FIX UB090 AT OR ABOVE 10000 FIX G180P AT OR ABOVE 9000
+ENDAPPROACHES

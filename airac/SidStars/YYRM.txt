@@ -1,0 +1,49 @@
+//YYRM (YARRAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX YRMED LATLON S 38 31.293833 E 147 1.491167
+FIX YRMEE LATLON S 38 36.455167 E 147 4.695167
+FIX YRMEF LATLON S 38 34.878 E 146 52.099166
+FIX YRMEG LATLON S 38 40.5835 E 146 59.607167
+FIX YRMEH LATLON S 38 33.7605 E 146 43.2875
+FIX YRMEI LATLON S 38 35.6695 E 146 58.396
+FIX YRMWA LATLON S 38 36.6785 E 146 28.904666
+FIX YRMWB LATLON S 38 31.501 E 146 25.743334
+FIX YRMWF LATLON S 38 33.125333 E 146 38.319667
+FIX YRMWH LATLON S 38 34.408667 E 146 48.387667
+FIX YRMWI LATLON S 38 32.316 E 146 32.030333
+FIX YRMWJ LATLON S 38 28.872833 E 146 31.205833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 09
+RNW 23
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ09 FIX YRMWI AT OR ABOVE 3380 FIX YRMWF 1790 RNW 09 FIX OVERFLY YRMWH HDG 245 VECTORS
+ TRANSITION YRMWA FIX YRMWA AT OR ABOVE 3900 SPEED 210
+ TRANSITION YRMWB FIX YRMWB AT OR ABOVE 3900 SPEED 210
+ TRANSITION YRMWJ FIX YRMWJ AT OR ABOVE 3900 SPEED 210
+APPROACH RNVZ27 FIX YRMEI AT OR ABOVE 2600 FIX YRMEF 1790 RNW 27 FIX OVERFLY YRMEH HDG 100 VECTORS
+ TRANSITION YRMED FIX YRMED AT OR ABOVE 2600 SPEED 210
+ TRANSITION YRMEE FIX YRMEE AT OR ABOVE 2600 SPEED 210
+ TRANSITION YRMEG FIX YRMEG AT OR ABOVE 2600 SPEED 210
+ENDAPPROACHES

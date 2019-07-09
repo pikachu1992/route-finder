@@ -1,0 +1,37 @@
+//K6Y1 (BOIS BLANC ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PLN LATLON N 45 37.838833 W 84 39.8465
+FIX UQLIZ LATLON N 45 45.654667 W 84 25.555166
+FIX WETMA LATLON N 45 47.061833 W 84 46.260167
+FIX WEVNU LATLON N 45 44.855 W 84 14.187
+FIX YANUN LATLON N 45 46.492166 W 84 37.764
+FIX ZEPSU LATLON N 45 45.448333 W 84 22.596
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX WETMA AT OR ABOVE 2300 FIX YANUN 2300 RNW 10 TRK 102 UNTIL 1060 FIX OVERFLY WEVNU AT OR ABOVE 4000 HOLD AT FIX WEVNU RIGHT TURN INBOUNDCOURSE 282 LEGDIST 4
+ TRANSITION PLN FIX PLN FIX OVERFLY WETMA AT OR ABOVE 2400 HOLD AT FIX WETMA RIGHT TURN INBOUNDCOURSE 101 ALT 2300 LEGDIST 4
+APPROACH RNV28 FIX WEVNU AT OR ABOVE 2300 FIX ZEPSU 2300 FIX UQLIZ AT OR ABOVE 1620 RNW 28 TRK 282 UNTIL 1040 FIX OVERFLY PLN AT OR ABOVE 3000 HOLD AT FIX PLN RIGHT TURN INBOUNDCOURSE 075 LEGDIST 4
+ TRANSITION PLN FIX PLN FIX OVERFLY WEVNU AT OR ABOVE 2400 HOLD AT FIX WEVNU RIGHT TURN INBOUNDCOURSE 282 ALT 2300 LEGDIST 4
+ENDAPPROACHES

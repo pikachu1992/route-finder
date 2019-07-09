@@ -1,0 +1,36 @@
+//CPR7 (RICHARD W LEVAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APREM LATLON N 43 42.9785 W 81 10.244333
+FIX BODLU LATLON N 43 51.588 W 81 3.22
+FIX DUSIG LATLON N 43 47.284166 W 81 6.736333
+FIX KITUL LATLON N 43 50.619667 W 81 14.543666
+FIX PEKNO LATLON N 43 49.826 W 81 12.682834
+FIX URSED LATLON N 43 55.229333 W 81 25.392667
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX DUSIG AT OR ABOVE 2600 FIX PEKNO 2400 FIX KITUL AT OR ABOVE 1900 RNW 31 FIX OVERFLY URSED 5500 HOLD AT FIX URSED RIGHT TURN INBOUNDCOURSE 310 LEGTIME 1
+ TRANSITION APREM FIX APREM SPEED 210
+ TRANSITION BODLU FIX BODLU SPEED 210
+ENDAPPROACHES

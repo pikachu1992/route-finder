@@ -1,0 +1,43 @@
+//CEH5 (RED EARTH CREEK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANVOM LATLON N 56 18.163667 W 115 8.204833
+FIX APNIL LATLON N 56 37.077334 W 115 22.5145
+FIX DUMDA LATLON N 56 24.43 W 114 53.320333
+FIX IGVON LATLON N 56 23.6855 W 115 4.034333
+FIX IKNET LATLON N 56 41.826 W 115 29.135666
+FIX LEVAM LATLON N 56 36.5025 W 115 21.7155
+FIX LIBIX LATLON N 56 47.359166 W 115 24.972667
+FIX OMIVI LATLON N 56 29.036167 W 115 11.3845
+FIX SASIG LATLON N 56 41.029834 W 115 39.919667
+FIX TOTER LATLON N 56 28.450667 W 115 10.578167
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX IKNET AT OR ABOVE 3500 SPEED 180 FIX APNIL 3450 RNW 13 FIX OVERFLY OMIVI 3900 HOLD AT FIX OMIVI RIGHT TURN INBOUNDCOURSE 127 SPEED 175 LEGTIME 1
+ TRANSITION LIBIX FIX LIBIX SPEED 210
+ TRANSITION SASIG FIX SASIG SPEED 210
+APPROACH RNV31 FIX IGVON AT OR ABOVE 3600 SPEED 180 FIX TOTER 3480 RNW 31 FIX OVERFLY LEVAM 3900 HOLD AT FIX LEVAM RIGHT TURN INBOUNDCOURSE 307 SPEED 175 LEGTIME 1
+ TRANSITION ANVOM FIX ANVOM SPEED 210
+ TRANSITION DUMDA FIX DUMDA SPEED 210
+ENDAPPROACHES

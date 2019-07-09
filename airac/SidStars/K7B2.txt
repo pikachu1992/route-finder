@@ -1,0 +1,43 @@
+//K7B2 (NORTHAMPTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAAHL LATLON N 42 23.738333 W 72 54.878
+FIX CEKLU LATLON N 42 22.837667 W 72 42.205
+FIX CTR LATLON N 42 17.479166 W 72 56.963666
+FIX EXBEB LATLON N 42 24.606334 W 72 45.311
+FIX GRABB LATLON N 42 24.204334 W 72 33.807667
+FIX HHEPP LATLON N 42 31.678834 W 72 46.661
+FIX MA219 LATLON N 42 20.583833 W 72 36.105334
+FIX SMUTZ LATLON N 42 27.709834 W 72 50.773834
+FIX TEDEE LATLON N 42 28.729 W 72 30.929333
+FIX WARIC LATLON N 42 37.7 W 72 30.628667
+FIX ZALON LATLON N 42 21.801 W 72 40.387
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH VDMB14 FIX TEDEE AT OR ABOVE 3000 FIX GRABB 2500 FIX MA219 1300 RNW 14 FIX CTR AT OR ABOVE 4000 HOLD AT FIX CTR RIGHT TURN INBOUNDCOURSE 275 LEGTIME 1
+APPROACH VDMB32 FIX TEDEE AT OR ABOVE 3000 FIX GRABB 2500 FIX MA219 1300 RNW 32 FIX CTR AT OR ABOVE 4000 HOLD AT FIX CTR RIGHT TURN INBOUNDCOURSE 275 LEGTIME 1
+APPROACH RNV14 FIX SMUTZ AT OR ABOVE 3500 FIX EXBEB 2700 FIX CEKLU AT OR ABOVE 1740 FIX ZALON AT OR ABOVE 1180 RNW 14 TRK 143 UNTIL 521 TURN LEFT DIRECT FIX OVERFLY GRABB AT OR ABOVE 3000 HOLD AT FIX GRABB RIGHT TURN INBOUNDCOURSE 264 LEGDIST 4
+ TRANSITION CTR FIX CTR FIX CAAHL AT OR ABOVE 3700
+ TRANSITION WARIC FIX WARIC FIX HHEPP AT OR ABOVE 4000
+ENDAPPROACHES

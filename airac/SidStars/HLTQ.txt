@@ -1,0 +1,38 @@
+//HLTQ (TOBRUK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD02 LATLON N 31 41.744167 E 23 47.389166
+FIX CD20 LATLON N 32 2.825167 E 23 56.613667
+FIX FD02 LATLON N 31 45.948833 E 23 50.578
+FIX FD20 LATLON N 31 57.8635 E 23 55.794
+FIX MD02 LATLON N 31 49.311833 E 23 53.1325
+FIX MD20 LATLON N 31 53.397833 E 23 55.0575
+FIX TBQ LATLON N 31 51.413167 E 23 54.730667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH VDM02 FIX CD02 AT OR ABOVE 3000 FIX FD02 2250 FIX MD02 1039 RNW 02 FIX TBQ AT OR ABOVE 1039 TRK 030 UNTIL 2000 TURN LEFT DIRECT FIX TBQ 3000 HOLD AT FIX TBQ RIGHT TURN INBOUNDCOURSE 210 LEGTIME 1
+ TRANSITION TBQ FIX TBQ AT OR ABOVE 3000 FIX CD02 AT OR ABOVE 3000 TRK 255 UNTIL 4.3 FROM FIX CD02
+APPROACH VDM20 FIX CD20 AT OR ABOVE 3000 FIX FD20 2450 FIX MD20 932 RNW 20 FIX TBQ AT OR ABOVE 932 TRK 185 UNTIL 2000 TURN RIGHT DIRECT FIX TBQ 3000 HOLD AT FIX TBQ LEFT TURN INBOUNDCOURSE 005 LEGTIME 1
+ TRANSITION TBQ FIX TBQ AT OR ABOVE 3000 FIX CD20 AT OR ABOVE 3000 TRK 320 UNTIL 4.3 FROM FIX CD20
+ENDAPPROACHES

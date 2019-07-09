@@ -1,0 +1,47 @@
+//OITP (PARSABADE MOGHAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CD29 LATLON N 39 31.7895 E 48 5.014834
+FIX D183L LATLON N 39 24.285167 E 47 51.314666
+FIX D183T LATLON N 39 16.350334 E 47 49.932167
+FIX FD29 LATLON N 39 33.9905 E 47 59.2095
+FIX MD29 LATLON N 39 35.528333 E 47 55.142333
+FIX TUKDO LATLON N 38 46.433333 E 47 44.766667
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID TUKD1C RNW 29 TRK 286 UNTIL 660 TRK 153 INTERCEPT RADIAL 183 TO FIX TUKDO FIX TUKDO
+SID TUKD1D RNW 11 TRK 106 UNTIL 660 TRK 213 INTERCEPT RADIAL 183 TO FIX TUKDO FIX TUKDO
+SID TUKD1E RNW 29 TRK 286 UNTIL 660 TRK 143 INTERCEPT RADIAL 188 TO FIX TUKDO FIX TUKDO AT OR ABOVE 11000
+SID TUKD1F RNW 11 TRK 106 UNTIL 660 TRK 143 INTERCEPT RADIAL 188 TO FIX TUKDO FIX TUKDO AT OR ABOVE 11000
+ENDSIDS
+
+STARS
+STAR TUKD1C FIX TUKDO FIX D183T FIX D183L
+  RNW 11 RNW 29
+ENDSTARS
+
+APPROACHES
+APPROACH VDM29 FIX CD29 AT OR ABOVE 2300 FIX FD29 1400 FIX OVERFLY MD29 672 RNW 29 TURN LEFT DIRECT FIX D183L 4000 HOLD AT FIX D183L LEFT TURN INBOUNDCOURSE 003 SPEED 220 LEGTIME 1
+ TRANSITION D183L FIX D183L AT OR ABOVE 4000
+ENDAPPROACHES

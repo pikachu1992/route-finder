@@ -1,0 +1,35 @@
+//HLMS (MISRATA INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FD15 LATLON N 32 23.957666 E 15 0.906167
+FIX FD33 LATLON N 32 14.610334 E 15 7.785667
+FIX MD33 LATLON N 32 18.435 E 15 4.974167
+FIX MIS LATLON N 32 18.86 E 15 4.661666
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH VDM15 FIX FD15 1500 RNW 15 FIX MIS AT OR ABOVE 440 TRK 146 UNTIL 1500 TURN RIGHT DIRECT FIX MIS 2000 HOLD AT FIX MIS LEFT TURN INBOUNDCOURSE 326 LEGTIME 1
+ TRANSITION MIS FIX MIS AT OR ABOVE 2000 SPEED 210 FIX FD15 AT OR ABOVE 1500 TRK 281 UNTIL 4.3 FROM FIX FD15
+APPROACH VDM33 FIX FD33 1500 FIX MD33 270 RNW 33 FIX MIS AT OR ABOVE 440 TRK 326 UNTIL 1500 TURN LEFT DIRECT FIX MIS 2000 HOLD AT FIX MIS RIGHT TURN INBOUNDCOURSE 146 LEGTIME 1
+ TRANSITION MIS FIX MIS AT OR ABOVE 2000 SPEED 210 FIX FD33 AT OR ABOVE 1500 TRK 191 UNTIL 4.3 FROM FIX FD33
+ENDAPPROACHES

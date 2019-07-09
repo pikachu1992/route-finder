@@ -1,0 +1,36 @@
+//KIKG (KLEBERG CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CRP LATLON N 27 54.226 W 97 26.692834
+FIX IHPOP LATLON N 27 41.211167 W 98 9.546833
+FIX JOYRY LATLON N 27 36.5965 W 98 5.194
+FIX OREAN LATLON N 27 26.5135 W 97 55.711667
+FIX PUNVE LATLON N 27 43.791334 W 98 6.096334
+FIX ZUNIK LATLON N 27 34.736666 W 98 3.442
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX IHPOP AT OR ABOVE 2000 FIX JOYRY 1500 FIX ZUNIK AT OR ABOVE 700 RNW 13 FIX OVERFLY OREAN AT OR ABOVE 2000 HOLD AT FIX OREAN RIGHT TURN INBOUNDCOURSE 314 LEGDIST 4
+ TRANSITION CRP FIX CRP FIX PUNVE AT OR ABOVE 2000
+ TRANSITION IHPOP HOLD AT FIX IHPOP RIGHT TURN INBOUNDCOURSE 134 ALT 2000 LEGDIST 4
+ENDAPPROACHES

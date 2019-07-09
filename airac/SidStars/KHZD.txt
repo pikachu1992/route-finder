@@ -1,0 +1,45 @@
+//KHZD (CARROLL CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAKEK LATLON N 36 21.185833 W 88 30.6875
+FIX FAMPA LATLON N 36 16.811 W 88 24.732
+FIX HEHKY LATLON N 36 18.790166 W 88 17.071834
+FIX HEIDI LATLON N 36 10.913167 W 88 26.312666
+FIX JEVBO LATLON N 36 3.054833 W 88 28.412666
+FIX JOEEY LATLON N 35 59.798167 W 88 29.281
+FIX WARAV LATLON N 35 53.903 W 88 30.849667
+FIX WETKI LATLON N 36 7.856666 W 88 27.130333
+FIX ZAVDU LATLON N 35 51.909 W 88 38.464
+FIX ZOBMO LATLON N 35 49.528 W 88 24.928333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX WARAV AT OR ABOVE 2200 FIX JOEEY 2200 FIX JEVBO AT OR ABOVE 1140 RNW 01 TRK 014 UNTIL 745 FIX OVERFLY FAMPA AT OR ABOVE 2200 HOLD AT FIX FAMPA RIGHT TURN INBOUNDCOURSE 194 LEGDIST 4
+ TRANSITION WARAV HOLD AT FIX WARAV RIGHT TURN INBOUNDCOURSE 014 ALT 2200 LEGDIST 4
+ TRANSITION ZAVDU FIX ZAVDU
+ TRANSITION ZOBMO FIX ZOBMO
+APPROACH RNV19 FIX FAMPA AT OR ABOVE 2200 FIX HEIDI 2200 FIX WETKI AT OR ABOVE 1200 RNW 19 TRK 194 UNTIL 798 FIX OVERFLY WARAV AT OR ABOVE 2200 HOLD AT FIX WARAV RIGHT TURN INBOUNDCOURSE 014 LEGDIST 4
+ TRANSITION CAKEK FIX CAKEK
+ TRANSITION FAMPA HOLD AT FIX FAMPA RIGHT TURN INBOUNDCOURSE 194 ALT 2200 LEGDIST 4
+ TRANSITION HEHKY FIX HEHKY
+ENDAPPROACHES

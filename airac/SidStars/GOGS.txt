@@ -1,0 +1,41 @@
+//GOGS (CAP SKIRRING)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FN15 LATLON N 12 28.664167 W 16 49.240166
+FIX GS001 LATLON N 12 30.343333 W 16 58.331666
+FIX GS002 LATLON N 12 36.993334 W 16 51.515
+FIX GS003 LATLON N 12 28.171667 W 16 49.371667
+FIX GS004 LATLON N 12 23.891666 W 16 45.053333
+FIX GS005 LATLON N 12 21.038333 W 16 42.176666
+FIX GS006 LATLON N 12 15.99 W 16 53.308333
+FIX OXITA LATLON N 12 32.45 W 16 53.691667
+FIX SKNNB LATLON N 12 23.195 W 16 44.568334
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH NDB15 FIX FN15 2000 RNW 15 FIX OVERFLY SKNNB TRK 149 UNTIL 1500 HDG 329 VECTORS
+APPROACH RNV15 FIX OXITA AT OR ABOVE 2000 FIX GS003 2000 RNW 15 FIX OVERFLY GS004 FIX OVERFLY GS005 TURN RIGHT DIRECT FIX OVERFLY GS006 2000 SPEED 230
+ TRANSITION GS001 FIX GS001 SPEED 230
+ TRANSITION GS002 FIX GS002 SPEED 230
+ TRANSITION OXITA HOLD AT FIX OXITA LEFT TURN INBOUNDCOURSE 145 ALT 2000 SPEED 230 LEGTIME 1
+ENDAPPROACHES

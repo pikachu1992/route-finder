@@ -1,0 +1,37 @@
+//KELZ (WELLSVILLE MUN/TARANTINE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HALOS LATLON N 42 6.622333 W 77 53.584834
+FIX IYRIH LATLON N 42 6.601834 W 77 55.993333
+FIX JILKU LATLON N 42 6.511667 W 78 5.536834
+FIX NEVGE LATLON N 42 6.424333 W 78 13.652333
+FIX PAYIV LATLON N 42 6.685834 W 77 45.405167
+FIX UTVIW LATLON N 42 6.532 W 78 3.524167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX NEVGE AT OR ABOVE 4900 FIX JILKU 3500 FIX UTVIW AT OR ABOVE 3020 RNW 10 TRK 097 UNTIL 2374 FIX OVERFLY PAYIV AT OR ABOVE 4900 HOLD AT FIX PAYIV RIGHT TURN INBOUNDCOURSE 277 LEGDIST 5
+ TRANSITION NEVGE HOLD AT FIX NEVGE RIGHT TURN INBOUNDCOURSE 097 ALT 4900 LEGDIST 5
+APPROACH RNV28 FIX PAYIV AT OR ABOVE 4900 FIX HALOS 3400 FIX IYRIH AT OR ABOVE 2820 RNW 28 TRK 277 UNTIL 2311 FIX OVERFLY NEVGE AT OR ABOVE 4900 HOLD AT FIX NEVGE RIGHT TURN INBOUNDCOURSE 097 ALT 4900 LEGDIST 5
+ TRANSITION PAYIV HOLD AT FIX PAYIV RIGHT TURN INBOUNDCOURSE 277 ALT 4900 LEGDIST 5
+ENDAPPROACHES

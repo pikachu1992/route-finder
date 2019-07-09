@@ -1,0 +1,39 @@
+//KGTG (GRANTSBURG MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OSVEC LATLON N 45 45.292 W 92 33.633833
+FIX VITUY LATLON N 45 46.8895 W 92 37.469333
+FIX WOVUR LATLON N 45 50.4695 W 92 46.095
+FIX WUGAX LATLON N 45 41.7075 W 92 25.0595
+FIX YIDUK LATLON N 45 54.029333 W 92 54.716167
+FIX ZELPU LATLON N 45 48.7755 W 92 42.008167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 12
+RNW 23
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX YIDUK AT OR ABOVE 3400 FIX WOVUR 2500 FIX ZELPU AT OR ABOVE 1440 RNW 12 TRK 121 UNTIL 1300 FIX OVERFLY WUGAX AT OR ABOVE 3400 HOLD AT FIX WUGAX RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4
+ TRANSITION YIDUK HOLD AT FIX YIDUK RIGHT TURN INBOUNDCOURSE 121 ALT 3400 LEGDIST 4
+APPROACH RNV30 FIX WUGAX AT OR ABOVE 3400 FIX OSVEC 2500 FIX VITUY AT OR ABOVE 1500 RNW 30 TRK 301 UNTIL 1320 FIX OVERFLY YIDUK AT OR ABOVE 3400 HOLD AT FIX YIDUK RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4
+ TRANSITION WUGAX HOLD AT FIX WUGAX RIGHT TURN INBOUNDCOURSE 301 ALT 3400 LEGDIST 4
+ENDAPPROACHES

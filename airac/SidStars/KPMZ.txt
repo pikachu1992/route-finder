@@ -1,0 +1,41 @@
+//KPMZ (PLYMOUTH MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FATVO LATLON N 36 0.068 W 76 41.0975
+FIX FOPCE LATLON N 35 36.553834 W 76 50.141833
+FIX LARME LATLON N 35 45.7295 W 76 46.623334
+FIX MAXIF LATLON N 35 39.502834 W 77 1.737334
+FIX PEARS LATLON N 35 47.206 W 76 57.032833
+FIX UZJOX LATLON N 35 43.340833 W 76 47.540167
+FIX WESBU LATLON N 36 3.000167 W 76 52.627333
+FIX ZUHAX LATLON N 35 53.655833 W 76 43.573166
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX FOPCE AT OR ABOVE 1700 FIX UZJOX 1700 FIX LARME AT OR ABOVE 900 RNW 03 TRK 027 UNTIL 436 TURN LEFT DIRECT FIX OVERFLY MAXIF AT OR ABOVE 2000 HOLD AT FIX MAXIF RIGHT TURN INBOUNDCOURSE 117 LEGDIST 4
+ TRANSITION MAXIF FIX MAXIF
+ TRANSITION PEARS FIX PEARS FIX OVERFLY FOPCE AT OR ABOVE 1700 HOLD AT FIX FOPCE LEFT TURN INBOUNDCOURSE 027 ALT 1700 LEGDIST 4
+APPROACH RNV21 FIX FATVO AT OR ABOVE 2000 FIX ZUHAX 1600 RNW 21 TRK 207 UNTIL 436 TURN RIGHT DIRECT FIX OVERFLY WESBU AT OR ABOVE 2000 HOLD AT FIX WESBU RIGHT TURN INBOUNDCOURSE 117 LEGDIST 4
+ TRANSITION PEARS FIX PEARS FIX OVERFLY FATVO AT OR ABOVE 2000 HOLD AT FIX FATVO RIGHT TURN INBOUNDCOURSE 207 ALT 2000 LEGDIST 4
+ TRANSITION WESBU FIX WESBU
+ENDAPPROACHES

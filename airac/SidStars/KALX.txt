@@ -1,0 +1,37 @@
+//KALX (RUSSELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BILLP LATLON N 32 48.643166 W 85 57.457834
+FIX JOPIB LATLON N 33 6.83 W 85 58.391833
+FIX JUBKI LATLON N 32 52.135667 W 85 57.636167
+FIX KUCEG LATLON N 33 1.414834 W 85 58.112833
+FIX TATME LATLON N 32 42.639167 W 85 57.149833
+FIX WALNI LATLON N 32 57.330833 W 85 57.902833
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX JOPIB AT OR ABOVE 3600 FIX KUCEG 2700 FIX WALNI AT OR ABOVE 1400 RNW 18 TRK 182 UNTIL 1061 FIX OVERFLY TATME AT OR ABOVE 3000 HOLD AT FIX TATME RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION JOPIB HOLD AT FIX JOPIB RIGHT TURN INBOUNDCOURSE 182 ALT 3600 LEGDIST 4
+APPROACH RNV36 FIX TATME AT OR ABOVE 3000 FIX BILLP 2500 FIX JUBKI AT OR ABOVE 1380 RNW 36 TRK 002 UNTIL 1100 TURN LEFT DIRECT FIX OVERFLY TATME AT OR ABOVE 3000 HOLD AT FIX TATME RIGHT TURN INBOUNDCOURSE 002 LEGDIST 4
+ TRANSITION TATME HOLD AT FIX TATME RIGHT TURN INBOUNDCOURSE 002 ALT 3000 LEGDIST 4
+ENDAPPROACHES

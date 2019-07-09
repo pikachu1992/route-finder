@@ -1,0 +1,38 @@
+//DAUE (EL GOLEA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FS36 LATLON N 30 29.503333 E 2 51.6995
+FIX MNA LATLON N 30 33.512833 E 2 51.6995
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 18
+RNW 28
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH VOR36 FIX FS36 2790 FIX MNA 1576 RNW 36 TRK 000 UNTIL 2790 TURN LEFT DIRECT FIX MNA 3250
+ TRANSITION MNA1 FIX MNA AT OR ABOVE 3250 TRK 153 UNTIL 7.0 FROM FIX MNA
+ TRANSITION MNA2 FIX MNA AT OR ABOVE 3250 TRK 160 UNTIL 6.0 FROM FIX MNA
+ENDAPPROACHES
+
+GATES
+GATE 0 N 30 34 E 2 51.8
+ENDGATES

@@ -1,0 +1,36 @@
+//1VA1 (MICRO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FIVRO LATLON N 36 45.239666 W 80 22.692
+FIX HENBY LATLON N 36 43.169167 W 80 1.4885
+FIX SIPNY LATLON N 36 45.807667 W 80 20.550334
+FIX UFOVA LATLON N 36 42.615833 W 80 32.542667
+FIX WILIZ LATLON N 36 52.497833 W 80 32.502167
+FIX ZONAB LATLON N 36 47.371166 W 80 14.6405
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX ZONAB AT OR ABOVE 5100 FIX SIPNY 4500 FIX FIVRO AT OR ABOVE 3920 RNW 26 TRK 258 UNTIL 3364 FIX OVERFLY UFOVA AT OR ABOVE 5000 HOLD AT FIX UFOVA RIGHT TURN INBOUNDCOURSE 078 LEGDIST 5
+ TRANSITION HENBY FIX HENBY
+ TRANSITION WILIZ FIX WILIZ FIX OVERFLY ZONAB AT OR ABOVE 5800 HOLD AT FIX ZONAB RIGHT TURN INBOUNDCOURSE 258 ALT 5100 LEGDIST 5
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//K42J (KEYSTONE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AMLAW LATLON N 29 45.9275 W 82 16.132667
+FIX BUHAR LATLON N 29 38.845333 W 82 8.005834
+FIX CANCO LATLON N 29 49.4855 W 82 3.937
+FIX DIPZI LATLON N 29 46.717166 W 82 7.111333
+FIX GNV LATLON N 29 41.526833 W 82 16.378333
+FIX TAYLA LATLON N 29 47.211 W 82 7.694833
+FIX TOLBY LATLON N 29 42.3875 W 82 12.066833
+FIX TURLE LATLON N 29 49.596167 W 82 4.042
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 11
+RNW 23
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH VDM05 FIX GNV AT OR ABOVE 3000 FIX TAYLA 1800 FIX TURLE 536 RNW 05 TRK 057 UNTIL 596 TURN LEFT DIRECT FIX GNV AT OR ABOVE 3000 HOLD AT FIX GNV RIGHT TURN INBOUNDCOURSE 057 LEGTIME 1
+ TRANSITION GNV HOLD AT FIX GNV RIGHT TURN INBOUNDCOURSE 057 ALT 3000 LEGTIME 1
+APPROACH RNV05 FIX TOLBY AT OR ABOVE 3000 FIX DIPZI 1800 FIX OVERFLY CANCO 540 RNW 05 TRK 050 UNTIL 596 TURN LEFT DIRECT FIX OVERFLY TOLBY AT OR ABOVE 3000 HOLD AT FIX TOLBY RIGHT TURN INBOUNDCOURSE 050 LEGDIST 4
+ TRANSITION AMLAW FIX AMLAW AT OR ABOVE 3000
+ TRANSITION BUHAR FIX BUHAR AT OR ABOVE 3000
+ TRANSITION TOLBY HOLD AT FIX TOLBY RIGHT TURN INBOUNDCOURSE 050 ALT 3000 LEGDIST 4
+ENDAPPROACHES

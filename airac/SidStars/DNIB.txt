@@ -1,0 +1,51 @@
+//DNIB (IBADAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEGOV LATLON N 7 15.267 E 3 46.661333
+FIX IB400 LATLON N 7 15.874333 E 3 53.749834
+FIX IB500 LATLON N 7 27.638666 E 4 3.672667
+FIX IB600 LATLON N 7 12.604834 E 3 57.6595
+FIX IB700 LATLON N 7 24.402167 E 4 7.523833
+FIX IVLOL LATLON N 7 8.188333 E 3 47.269834
+FIX KOBVO LATLON N 7 8.795 E 3 54.357167
+FIX OVRUX LATLON N 7 28.245167 E 4 10.7655
+FIX SEXUL LATLON N 7 34.717 E 4 3.064166
+FIX VOLGO LATLON N 7 35.324 E 4 10.158334
+FIX XUNRU LATLON N 7 31.481333 E 4 6.915334
+FIX XURGI LATLON N 7 12.031333 E 3 50.509667
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX XURGI 3500 SPEED 200 FIX IB400 3000 RNW 04 TURN RIGHT DIRECT FIX IB600 FIX KOBVO SPEED 200 FIX XURGI HOLD AT FIX XURGI LEFT TURN INBOUNDCOURSE 043 ALT 3500 SPEED 230 LEGTIME 1
+ TRANSITION DEGOV FIX DEGOV
+ TRANSITION IVLOL FIX IVLOL
+ TRANSITION KOBVO FIX KOBVO
+APPROACH RNV22 FIX XUNRU 3500 SPEED 200 FIX IB500 3000 RNW 22 TURN LEFT DIRECT FIX IB700 FIX OVRUX SPEED 200 FIX XUNRU HOLD AT FIX XUNRU RIGHT TURN INBOUNDCOURSE 223 ALT 3500 SPEED 230 LEGTIME 1
+ TRANSITION OVRUX FIX OVRUX
+ TRANSITION SEXUL FIX SEXUL
+ TRANSITION VOLGO FIX VOLGO
+ENDAPPROACHES
+
+GATES
+GATE IBA N 7 21.65 E 3 58.683334
+ENDGATES

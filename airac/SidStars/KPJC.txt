@@ -1,0 +1,42 @@
+//KPJC (ZELIENOPLE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AJAPA LATLON N 40 54.573667 W 80 11.8735
+FIX CETPU LATLON N 40 33.5625 W 80 14.523334
+FIX CIBAT LATLON N 40 45.252833 W 80 8.667167
+FIX DEUSO LATLON N 40 59.457833 W 80 13.557167
+FIX EDAPY LATLON N 40 37.371 W 80 5.969
+FIX EWC LATLON N 40 49.496 W 80 12.692666
+FIX HODOS LATLON N 40 51.5215 W 80 10.821667
+FIX OTIKE LATLON N 40 42.228667 W 80 7.630667
+FIX VOLAN LATLON N 41 8.0585 W 80 8.671834
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX DEUSO AT OR ABOVE 3000 FIX AJAPA 3000 FIX HODOS AT OR ABOVE 1960 RNW 17 TRK 174 UNTIL 1298 FIX OVERFLY EDAPY AT OR ABOVE 3100 HOLD AT FIX EDAPY RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION EWC FIX EWC FIX OVERFLY DEUSO AT OR ABOVE 3000 HOLD AT FIX DEUSO RIGHT TURN INBOUNDCOURSE 174 ALT 3000 LEGDIST 4
+ TRANSITION VOLAN FIX VOLAN
+APPROACH RNV35 FIX EDAPY AT OR ABOVE 3100 FIX OTIKE 2800 FIX CIBAT AT OR ABOVE 1780 RNW 35 TRK 354 UNTIL 1298 FIX OVERFLY DEUSO AT OR ABOVE 3000 HOLD AT FIX DEUSO RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION CETPU FIX CETPU
+ TRANSITION EWC FIX EWC FIX OVERFLY EDAPY AT OR ABOVE 3100 HOLD AT FIX EDAPY RIGHT TURN INBOUNDCOURSE 354 ALT 3100 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,34 @@
+//K0A9 (ELIZABETHTON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACABE LATLON N 36 17.623667 W 82 19.447166
+FIX CABYA LATLON N 36 14.915333 W 82 24.697333
+FIX TAKEN LATLON N 36 20.213 W 82 28.220333
+FIX ZURVI LATLON N 36 19.1585 W 82 16.466167
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX ACABE AT OR ABOVE 4600 FIX ZURVI 3700 RNW 06 TRK 064 UNTIL 1993 TURN RIGHT DIRECT FIX OVERFLY CABYA AT OR ABOVE 5300 HOLD AT FIX CABYA LEFT TURN INBOUNDCOURSE 063 LEGDIST 5
+ TRANSITION CABYA HOLD AT FIX CABYA LEFT TURN INBOUNDCOURSE 063 ALT 5300 LEGDIST 5
+ TRANSITION TAKEN FIX TAKEN FIX CABYA AT OR ABOVE 5300
+ENDAPPROACHES

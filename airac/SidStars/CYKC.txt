@@ -1,0 +1,47 @@
+//CYKC (COLLINS BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANVEM LATLON N 58 23.829833 W 103 28.907167
+FIX AVADI LATLON N 58 9.582667 W 103 46.193333
+FIX DUXIS LATLON N 58 1.854334 W 103 44.3155
+FIX LOLMI LATLON N 58 4.5295 W 103 52.257667
+FIX NUDUR LATLON N 58 7.1965 W 104 0.2195
+FIX OMSUM LATLON N 58 12.847834 W 103 42.256333
+FIX ONDAX LATLON N 58 18.015334 W 103 35.995834
+FIX OTIVI LATLON N 58 12.129 W 103 43.124167
+FIX PEPSU LATLON N 58 10.6985 W 103 44.8495
+FIX RESAD LATLON N 58 26.521 W 103 36.912167
+FIX USBET LATLON N 58 21.1305 W 103 20.922667
+FIX VOBOP LATLON N 58 18.790667 W 103 35.053166
+FIX XONPI LATLON N 58 10.3235 W 103 45.301333
+FIX XUBIT LATLON N 58 15.4935 W 103 39.055667
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNV02 FIX LOLMI AT OR ABOVE 3000 SPEED 180 FIX AVADI 2970 FIX PEPSU AT OR ABOVE 2560 FIX OTIVI AT OR ABOVE 2010 RNW 02 FIX XUBIT FIX OVERFLY ONDAX 3200 HOLD AT FIX ONDAX RIGHT TURN INBOUNDCOURSE 024 SPEED 200 LEGTIME 1
+ TRANSITION DUXIS FIX DUXIS
+ TRANSITION NUDUR FIX NUDUR
+APPROACH RNV20 FIX ANVEM AT OR ABOVE 3000 SPEED 180 FIX VOBOP 3000 RNW 20 FIX OMSUM FIX OVERFLY XONPI 3200 HOLD AT FIX XONPI RIGHT TURN INBOUNDCOURSE 204 SPEED 200 LEGTIME 1
+ TRANSITION RESAD FIX RESAD
+ TRANSITION USBET FIX USBET
+ENDAPPROACHES

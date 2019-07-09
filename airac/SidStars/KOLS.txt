@@ -1,0 +1,43 @@
+//KOLS (NOGALES INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARVEY LATLON N 31 41.642833 W 110 58.848
+FIX INKLE LATLON N 31 36.813334 W 110 59.637667
+FIX MAFBI LATLON N 31 25.747333 W 110 51.552833
+FIX OLS LATLON N 31 24.897334 W 110 50.933833
+FIX TUS LATLON N 32 5.712167 W 110 54.891334
+FIX VALVE LATLON N 31 29.996 W 110 54.652333
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID OLS2 FIX TUS
+ RNW 03 TRK 034 UNTIL 4360 HDG 296 INTERCEPT RADIAL 326 TO FIX ARVEY FIX ARVEY
+ RNW 21 TRK 214 UNTIL 4360 HDG 356 INTERCEPT RADIAL 326 TO FIX ARVEY FIX ARVEY
+ENDSIDS
+
+APPROACHES
+APPROACH VDMB03 FIX INKLE AT OR ABOVE 9000 FIX VALVE 7000 FIX MAFBI 5200 RNW 03 TRK 136 UNTIL 5200 TRK 316 UNTIL 7600 TURN LEFT DIRECT FIX OLS AT OR ABOVE 10000
+ TRANSITION ARVEY FIX ARVEY
+APPROACH VDMB21 FIX INKLE AT OR ABOVE 9000 FIX VALVE 7000 FIX MAFBI 5200 RNW 21 TRK 136 UNTIL 5200 TRK 316 UNTIL 7600 TURN LEFT DIRECT FIX OLS AT OR ABOVE 10000
+ TRANSITION ARVEY FIX ARVEY
+ENDAPPROACHES

@@ -1,0 +1,34 @@
+//CYUT (NAUJAAT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EBGUM LATLON N 66 28.1625 W 86 9.961166
+FIX PI001 LATLON N 66 34.417549 W 86 8.990626
+FIX PI002 LATLON N 66 38.691506 W 86 10.180895
+FIX PI003 LATLON N 66 39.457287 W 85 58.647884
+FIX YUTNB LATLON N 66 31.699166 W 86 14.530834
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH NDB34 FIX EBGUM 1080 RNW 34 FIX OVERFLY YUTNB TRK 035 UNTIL 2400 TURN LEFT DIRECT FIX YUTNB 2400 HOLD AT FIX YUTNB RIGHT TURN INBOUNDCOURSE 035 LEGTIME 1
+ TRANSITION YUT FIX PI001 AT OR ABOVE 1600 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 1600 SPEED 210 FIX PI003 AT OR ABOVE 1600 SPEED 210
+ENDAPPROACHES

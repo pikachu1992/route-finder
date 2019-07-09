@@ -1,0 +1,39 @@
+//KY63 (ELBOW LAKE MUN-PRIDE OF THE PR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BLADE LATLON N 45 55.0945 W 95 54.793667
+FIX GOBLR LATLON N 46 3.075167 W 96 4.230833
+FIX HUFFY LATLON N 46 7.699166 W 96 9.726
+FIX JORNI LATLON N 46 1.156834 W 96 1.957166
+FIX TOWED LATLON N 45 50.473834 W 95 49.356667
+FIX YABUT LATLON N 45 56.868 W 95 56.885666
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 14
+RNW 29
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX HUFFY AT OR ABOVE 3300 FIX GOBLR 2800 FIX JORNI AT OR ABOVE 2000 RNW 14 TRK 138 UNTIL 1453 FIX OVERFLY TOWED AT OR ABOVE 3300 HOLD AT FIX TOWED RIGHT TURN INBOUNDCOURSE 319 LEGDIST 4
+ TRANSITION HUFFY HOLD AT FIX HUFFY RIGHT TURN INBOUNDCOURSE 138 ALT 3300 LEGDIST 4
+APPROACH RNV32 FIX TOWED AT OR ABOVE 3300 FIX BLADE 2800 FIX YABUT AT OR ABOVE 2060 RNW 32 TRK 319 UNTIL 1450 FIX OVERFLY HUFFY AT OR ABOVE 3300 HOLD AT FIX HUFFY RIGHT TURN INBOUNDCOURSE 138 LEGDIST 4
+ TRANSITION TOWED HOLD AT FIX TOWED RIGHT TURN INBOUNDCOURSE 319 ALT 3300 LEGDIST 4
+ENDAPPROACHES

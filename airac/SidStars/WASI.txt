@@ -1,0 +1,39 @@
+//WASI (INANWATAN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX SI401 LATLON S 2 8.5555 E 131 57.4695
+FIX SI402 LATLON S 2 8.331833 E 132 0.455
+FIX SI403 LATLON S 2 8.048333 E 132 4.418666
+FIX SI404 LATLON S 2 7.428167 E 132 12.399833
+FIX SI405 LATLON S 2 6.731833 E 132 21.737167
+FIX SI406 LATLON S 2 6.957 E 132 18.750334
+FIX SI407 LATLON S 2 7.255166 E 132 14.768833
+FIX SI408 LATLON S 2 7.855834 E 132 6.805834
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX SI402 AT OR ABOVE 2500 FIX SI403 1700 RNW 08 FIX OVERFLY SI404 TURN RIGHT DIRECT FIX SI401 AT OR ABOVE 3000 HOLD AT FIX SI401 RIGHT TURN INBOUNDCOURSE 084 LEGTIME 1
+ TRANSITION SI401 HOLD AT FIX SI401 RIGHT TURN INBOUNDCOURSE 084 ALT 3000 LEGTIME 1
+APPROACH RNV26 FIX SI406 AT OR ABOVE 2500 FIX SI407 1700 RNW 26 FIX OVERFLY SI408 TURN LEFT DIRECT FIX SI405 AT OR ABOVE 3000 HOLD AT FIX SI405 RIGHT TURN INBOUNDCOURSE 264 LEGTIME 1
+ TRANSITION SI405 HOLD AT FIX SI405 RIGHT TURN INBOUNDCOURSE 264 ALT 3000 LEGTIME 1
+ENDAPPROACHES

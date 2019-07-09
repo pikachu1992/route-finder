@@ -1,0 +1,47 @@
+//KMJQ (JACKSON MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUCPA LATLON N 43 43.079 W 95 4.174
+FIX DEELE LATLON N 43 35.0165 W 94 54.331333
+FIX FETGI LATLON N 43 47.6445 W 95 9.774667
+FIX GOPEC LATLON N 44 6.648833 W 95 19.623334
+FIX GRUVE LATLON N 43 21.281833 W 94 51.552
+FIX JOMDO LATLON N 43 53.622334 W 95 0.477167
+FIX MCQIN LATLON N 43 30.422167 W 94 48.7495
+FIX OTG LATLON N 43 38.815 W 95 34.9175
+FIX WIPLY LATLON N 43 35.584166 W 94 40.341833
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 13
+RNW 22
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX FETGI AT OR ABOVE 3100 FIX CUCPA 3100 RNW 13 TRK 134 UNTIL 1696 FIX OVERFLY MCQIN AT OR ABOVE 4200 HOLD AT FIX MCQIN RIGHT TURN INBOUNDCOURSE 315 LEGDIST 5
+ TRANSITION FETGI HOLD AT FIX FETGI RIGHT TURN INBOUNDCOURSE 134 ALT 3100 LEGDIST 4
+ TRANSITION GOPEC FIX GOPEC
+ TRANSITION JOMDO FIX JOMDO
+ TRANSITION OTG FIX OTG
+APPROACH RNV31 FIX MCQIN AT OR ABOVE 4200 FIX DEELE 3100 RNW 31 TRK 315 UNTIL 1697 FIX OVERFLY FETGI AT OR ABOVE 3100 HOLD AT FIX FETGI RIGHT TURN INBOUNDCOURSE 134 LEGDIST 4
+ TRANSITION GRUVE FIX GRUVE
+ TRANSITION MCQIN HOLD AT FIX MCQIN RIGHT TURN INBOUNDCOURSE 315 ALT 4200 LEGDIST 5
+ TRANSITION WIPLY FIX WIPLY
+ENDAPPROACHES

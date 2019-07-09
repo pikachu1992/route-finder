@@ -1,0 +1,45 @@
+//K41U (MANTI-EPHRAIM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRIGM LATLON N 39 17.488 W 111 39.887833
+FIX DTA LATLON N 39 18.132667 W 112 30.333334
+FIX OOLIT LATLON N 39 14.772167 W 111 43.428667
+FIX PUC LATLON N 39 36.1915 W 110 45.211667
+FIX RPEEN LATLON N 39 9.8465 W 111 49.833
+FIX SANPT LATLON N 39 37.873834 W 111 32.597833
+FIX TMPLE LATLON N 39 16.082167 W 111 41.7215
+FIX WKARA LATLON N 39 5.598667 W 111 55.337833
+FIX WUXOT LATLON N 39 9.962833 W 111 43.405834
+FIX YMONT LATLON N 40 1.7965 W 111 30.150667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+SIDS
+SID WUXOT1 RNW 21 HDG 214 UNTIL 6020 FIX WUXOT FIX DTA 10300
+SID YMONT1 RNW 03 HDG 034 UNTIL 6020 FIX SANPT FIX YMONT 13000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV03 FIX WKARA AT OR ABOVE 11800 FIX RPEEN AT OR ABOVE 9900 FIX OOLIT 7700 FIX TMPLE AT OR ABOVE 7100 FIX BRIGM AT OR ABOVE 6460 RNW 03 TRK 034 UNTIL 5960 FIX SANPT FIX OVERFLY YMONT AT OR ABOVE 13000 HOLD AT FIX YMONT RIGHT TURN INBOUNDCOURSE 296 LEGDIST 8
+ TRANSITION DTA FIX DTA
+ TRANSITION PUC FIX PUC FIX OVERFLY WKARA AT OR ABOVE 13200 HOLD AT FIX WKARA RIGHT TURN INBOUNDCOURSE 034 ALT 11800 LEGDIST 7
+ENDAPPROACHES

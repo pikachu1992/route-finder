@@ -1,0 +1,37 @@
+//KHOC (HIGHLAND CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CVG LATLON N 39 0.958834 W 84 42.200833
+FIX GAILL LATLON N 39 35.465666 W 83 25.163666
+FIX JENUG LATLON N 39 15.2305 W 83 26.4855
+FIX XUB LATLON N 39 31.613 W 82 58.6765
+FIX YIYUL LATLON N 39 13.602667 W 83 28.923
+FIX ZETAV LATLON N 39 19.7905 W 83 19.64
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX ZETAV AT OR ABOVE 3000 FIX JENUG 2800 FIX YIYUL AT OR ABOVE 2000 RNW 23 TRK 234 UNTIL 1600 TURN LEFT DIRECT FIX OVERFLY ZETAV AT OR ABOVE 3000 HOLD AT FIX ZETAV RIGHT TURN INBOUNDCOURSE 234 LEGDIST 4
+ TRANSITION CVG FIX CVG FIX OVERFLY ZETAV AT OR ABOVE 3000 HOLD AT FIX ZETAV RIGHT TURN INBOUNDCOURSE 234 ALT 3000 LEGDIST 4
+ TRANSITION GAILL FIX GAILL
+ TRANSITION XUB FIX XUB
+ENDAPPROACHES

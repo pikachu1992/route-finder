@@ -1,0 +1,37 @@
+//K7K5 (KENMARE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EWIRU LATLON N 48 40.036667 W 101 47.25
+FIX EWRAF LATLON N 48 40.036667 W 102 18.431167
+FIX IJKOJ LATLON N 48 45.033167 W 101 47.223667
+FIX MOT LATLON N 48 15.620167 W 101 17.224333
+FIX OZFEJ LATLON N 48 40.05 W 101 54.793
+FIX ULSUW LATLON N 48 35.040334 W 101 47.276333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV26 FIX EWIRU AT OR ABOVE 3900 FIX OZFEJ 3600 RNW 26 TRK 260 UNTIL 2362 FIX EWRAF AT OR ABOVE 3900 HOLD AT FIX EWRAF RIGHT TURN INBOUNDCOURSE 080 LEGDIST 4
+ TRANSITION EWIRU HOLD AT FIX EWIRU RIGHT TURN INBOUNDCOURSE 260 ALT 3900 LEGDIST 4
+ TRANSITION IJKOJ FIX IJKOJ
+ TRANSITION MOT FIX MOT FIX ULSUW AT OR ABOVE 3900
+ENDAPPROACHES

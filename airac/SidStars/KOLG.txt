@@ -1,0 +1,36 @@
+//KOLG (SOLON SPRINGS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BARUM LATLON N 46 31.707167 W 92 15.081167
+FIX GRASS LATLON N 46 21.168667 W 91 6.881333
+FIX HEBON LATLON N 46 29.176166 W 91 46.955
+FIX LERVE LATLON N 46 24.223834 W 91 47.932333
+FIX SIDKE LATLON N 46 29.848 W 91 54.126167
+FIX TELUE LATLON N 46 28.496666 W 91 39.786833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV19 FIX HEBON AT OR ABOVE 2800 FIX LERVE 2800 RNW 19 TRK 187 UNTIL 1502 TURN RIGHT DIRECT FIX HEBON AT OR ABOVE 2800 HOLD AT FIX HEBON RIGHT TURN INBOUNDCOURSE 187 LEGDIST 4
+ TRANSITION BARUM FIX BARUM FIX SIDKE AT OR ABOVE 3000
+ TRANSITION GRASS FIX GRASS FIX TELUE AT OR ABOVE 3000
+ENDAPPROACHES

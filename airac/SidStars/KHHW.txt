@@ -1,0 +1,42 @@
+//KHHW (STAN STAMPER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGISM LATLON N 34 7.347667 W 95 32.5385
+FIX CABSO LATLON N 33 56.7025 W 95 32.508833
+FIX HUKIT LATLON N 34 5.153833 W 95 32.5325
+FIX JASGU LATLON N 34 13.358167 W 95 32.555333
+FIX MLC LATLON N 34 50.9665 W 95 46.940666
+FIX PRX LATLON N 33 32.542667 W 95 26.8975
+FIX ROTAE LATLON N 33 47.1855 W 95 32.4825
+FIX WUNIN LATLON N 34 19.368667 W 95 32.572166
+FIX ZERAL LATLON N 33 53.196334 W 95 32.499167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX JASGU AT OR ABOVE 4000 FIX AGISM 2200 FIX HUKIT AT OR ABOVE 1500 RNW 17 TRK 178 UNTIL 820 FIX OVERFLY ZERAL AT OR ABOVE 2500 HOLD AT FIX ZERAL RIGHT TURN INBOUNDCOURSE 358 LEGDIST 4
+ TRANSITION MLC FIX MLC FIX WUNIN AT OR ABOVE 4000
+ TRANSITION PRX FIX PRX FIX OVERFLY JASGU AT OR ABOVE 4000 HOLD AT FIX JASGU RIGHT TURN INBOUNDCOURSE 178 ALT 4000 LEGDIST 4
+APPROACH RNV35 FIX ZERAL AT OR ABOVE 2500 FIX CABSO 2200 RNW 35 TRK 358 UNTIL 822 FIX OVERFLY JASGU AT OR ABOVE 4000 HOLD AT FIX JASGU RIGHT TURN INBOUNDCOURSE 178 ALT 4000 LEGDIST 4
+ TRANSITION PRX FIX PRX FIX ROTAE AT OR ABOVE 2500
+ TRANSITION ZERAL HOLD AT FIX ZERAL RIGHT TURN INBOUNDCOURSE 358 ALT 2500 LEGDIST 4
+ENDAPPROACHES

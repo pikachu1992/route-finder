@@ -1,0 +1,37 @@
+//KMCZ (MARTIN CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BUTGE LATLON N 35 49.795834 W 77 11.7375
+FIX FABDA LATLON N 35 47.063833 W 77 13.2115
+FIX HOBVU LATLON N 35 53.575333 W 77 9.6955
+FIX NASIE LATLON N 35 56.3705 W 77 8.183333
+FIX TALOE LATLON N 35 42.5245 W 77 15.656833
+FIX WOBGO LATLON N 36 0.907667 W 77 5.724334
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX TALOE AT OR ABOVE 2400 FIX FABDA 1600 FIX BUTGE AT OR ABOVE 640 RNW 03 TRK 033 UNTIL 327 FIX OVERFLY WOBGO AT OR ABOVE 2400 HOLD AT FIX WOBGO RIGHT TURN INBOUNDCOURSE 213 LEGDIST 4
+ TRANSITION TALOE HOLD AT FIX TALOE RIGHT TURN INBOUNDCOURSE 033 ALT 2400 LEGDIST 4
+APPROACH RNV21 FIX WOBGO AT OR ABOVE 2400 FIX NASIE 1600 FIX HOBVU AT OR ABOVE 620 RNW 21 TRK 213 UNTIL 336 FIX OVERFLY TALOE AT OR ABOVE 2400 HOLD AT FIX TALOE RIGHT TURN INBOUNDCOURSE 033 LEGDIST 4
+ TRANSITION WOBGO HOLD AT FIX WOBGO RIGHT TURN INBOUNDCOURSE 213 ALT 2400 LEGDIST 4
+ENDAPPROACHES

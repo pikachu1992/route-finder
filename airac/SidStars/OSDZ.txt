@@ -1,0 +1,37 @@
+//OSDZ (DEIR ZZOR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DRZ LATLON N 35 17.516666 E 40 9.226667
+FIX FS28 LATLON N 35 15.114167 E 40 17.258167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH VOR28 FIX FS28 2500 RNW 28 FIX DRZ AT OR ABOVE 1100 HOLD AT FIX DRZ RIGHT TURN INBOUNDCOURSE 286 ALT 4000 SPEED 185 LEGTIME 1
+ TRANSITION DRZ1 FIX DRZ AT OR ABOVE 4000 SPEED 210 TRK 088 UNTIL 10.0 FROM FIX DRZ
+ TRANSITION DRZ2 FIX DRZ AT OR ABOVE 4000 SPEED 210 TRK 094 UNTIL 10.0 FROM FIX DRZ
+ENDAPPROACHES
+
+GATES
+GATE S1 N 35 17.216333 E 40 11.202833
+GATE S2 N 35 17.189833 E 40 11.191
+ENDGATES

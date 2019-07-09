@@ -1,0 +1,37 @@
+//K0I8 (CYNTHIANA-HARRISON CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DATAC LATLON N 38 18.931667 W 84 3.175
+FIX HUCIX LATLON N 38 23.513167 W 84 24.082
+FIX UZXAM LATLON N 38 22.643 W 84 20.084666
+FIX WAKVU LATLON N 38 21.343333 W 84 14.138167
+FIX ZIXEN LATLON N 38 25.025167 W 84 31.0555
+FIX ZUTOM LATLON N 38 20.464667 W 84 10.133833
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX ZIXEN AT OR ABOVE 3000 FIX HUCIX 2500 FIX UZXAM AT OR ABOVE 1460 RNW 11 TRK 111 UNTIL 1121 FIX OVERFLY DATAC AT OR ABOVE 3000 HOLD AT FIX DATAC RIGHT TURN INBOUNDCOURSE 292 LEGDIST 4
+ TRANSITION ZIXEN HOLD AT FIX ZIXEN RIGHT TURN INBOUNDCOURSE 111 ALT 3000 LEGDIST 4
+APPROACH RNV29 FIX DATAC AT OR ABOVE 3000 FIX ZUTOM 2500 FIX WAKVU AT OR ABOVE 1440 RNW 29 TRK 292 UNTIL 1121 FIX OVERFLY ZIXEN AT OR ABOVE 3000 HOLD AT FIX ZIXEN RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4
+ TRANSITION DATAC HOLD AT FIX DATAC RIGHT TURN INBOUNDCOURSE 292 ALT 3000 LEGDIST 4
+ENDAPPROACHES

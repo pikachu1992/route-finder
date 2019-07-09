@@ -1,0 +1,37 @@
+//DAUT (TIMIMOUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D237H LATLON N 29 9.076166 E 0 7.911
+FIX D237I LATLON N 29 8.514667 E 0 6.964834
+FIX FF06 LATLON N 29 10.199 E 0 9.8035
+FIX TIO LATLON N 29 13.564834 E 0 15.485666
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH VDM06 FIX FF06 3120 FIX TIO 1174 RNW 06 TRK 057 UNTIL 2790 TURN LEFT DIRECT FIX TIO 5420
+ TRANSITION TIO1 FIX TIO AT OR ABOVE 5420 TRK 209 UNTIL 9.0 FROM FIX TIO TURN RIGHT DIRECT FIX D237I AT OR ABOVE 3120
+ TRANSITION TIO2 FIX TIO AT OR ABOVE 5420 TRK 221 UNTIL 8.0 FROM FIX TIO TURN RIGHT DIRECT FIX D237H
+APPROACH VOR06 FIX FF06 3120 FIX TIO 1174 RNW 06 TRK 057 UNTIL 2790 TURN LEFT DIRECT FIX TIO 5420
+ TRANSITION TIO1 FIX TIO AT OR ABOVE 5420 TRK 209 UNTIL 7.0 FROM FIX TIO
+ TRANSITION TIO2 FIX TIO AT OR ABOVE 5420 TRK 223 UNTIL 9.0 FROM FIX TIO
+ENDAPPROACHES

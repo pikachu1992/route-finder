@@ -1,0 +1,38 @@
+//YTEE (TREPELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX TEENC LATLON S 21 42.5415 E 140 41.122667
+FIX TEEND LATLON S 21 37.097666 E 140 43.131334
+FIX TEENE LATLON S 21 36.997667 E 140 49.288667
+FIX TEENF LATLON S 21 45.220333 E 140 49.4445
+FIX TEENH LATLON S 21 52.119334 E 140 54.8185
+FIX TEENI LATLON S 21 41.1595 E 140 46.2865
+FIX TEENM LATLON S 21 49.278167 E 140 52.604
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ14 FIX TEENI AT OR ABOVE 2900 FIX TEENF 2710 FIX OVERFLY TEENM 1113 RNW 14 FIX TEENH TRK 138 UNTIL 2900
+ TRANSITION TEENC FIX TEENC AT OR ABOVE 2900 SPEED 230
+ TRANSITION TEEND FIX TEEND AT OR ABOVE 2900 SPEED 230
+ TRANSITION TEENE FIX TEENE AT OR ABOVE 2900 SPEED 230
+ENDAPPROACHES

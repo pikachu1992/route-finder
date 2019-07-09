@@ -1,0 +1,37 @@
+//LFHV (TARARE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HV401 LATLON N 46 7.578334 E 4 45.536666
+FIX HV402 LATLON N 46 7.72 E 4 31.16
+FIX HV406 LATLON N 46 7.653334 E 4 38.348333
+FIX HV408 LATLON N 46 2.655 E 4 38.246666
+FIX HV410 LATLON N 45 52.466666 E 4 38.041667
+FIX TALAR LATLON N 45 57.383333 E 4 36.261667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA18 FIX HV408 4000 RNW 18 FIX OVERFLY HV410 TURN RIGHT DIRECT FIX TALAR 4500 HOLD AT FIX TALAR LEFT TURN INBOUNDCOURSE 121 SPEED 170 LEGTIME 1
+ TRANSITION HV401 FIX HV401 AT OR ABOVE 4100 FIX HV406 AT OR ABOVE 4000
+ TRANSITION HV402 FIX HV402 AT OR ABOVE 4500 FIX HV406 AT OR ABOVE 4000
+ TRANSITION HV406 FIX HV406 AT OR ABOVE 4500
+ENDAPPROACHES

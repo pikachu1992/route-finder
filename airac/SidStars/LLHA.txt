@@ -1,0 +1,33 @@
+//LLHA (HAIFA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX MERVA LATLON N 32 46.9 E 34 32.633333
+FIX ZAHAV LATLON N 32 48.866666 E 34 48.6
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+STARS
+STAR GALI1A FIX MERVA 5000 FIX OVERFLY ZAHAV AT OR BELOW 5000 AT OR ABOVE 3000
+  RNW 16 RNW 34
+STAR GALI1B FIX MERVA 5000 FIX OVERFLY ZAHAV 5000
+  RNW 16 RNW 34
+ENDSTARS

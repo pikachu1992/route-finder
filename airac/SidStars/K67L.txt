@@ -1,0 +1,36 @@
+//K67L (MESQUITE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APEJY LATLON N 36 41.858833 W 114 10.164833
+FIX ESSDE LATLON N 36 45.24 W 114 7.312667
+FIX JONOT LATLON N 36 36.021167 W 114 20.251
+FIX MMM LATLON N 36 46.155167 W 114 16.647167
+FIX OYUDU LATLON N 36 49.405 W 114 3.760834
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH RNVY02 FIX JONOT AT OR ABOVE 6400 FIX APEJY 4900 FIX OVERFLY OYUDU 1995 RNW 02 TRK 023 UNTIL 4600 TURN LEFT DIRECT FIX OVERFLY MMM AT OR ABOVE 11000 HOLD AT FIX MMM LEFT TURN INBOUNDCOURSE 041 ALT 11000 LEGDIST 7
+ TRANSITION MMM FIX MMM FIX OVERFLY JONOT AT OR ABOVE 6400 HOLD AT FIX JONOT LEFT TURN INBOUNDCOURSE 043 ALT 6400 LEGDIST 7
+APPROACH RNVZ02 FIX JONOT AT OR ABOVE 6400 FIX APEJY 4900 FIX ESSDE AT OR ABOVE 3600 FIX OVERFLY OYUDU 1995 RNW 02 TRK 023 UNTIL 2400 TURN LEFT DIRECT FIX OVERFLY MMM AT OR ABOVE 11000 HOLD AT FIX MMM LEFT TURN INBOUNDCOURSE 041 ALT 11000 LEGDIST 7
+ TRANSITION MMM FIX MMM FIX OVERFLY JONOT AT OR ABOVE 6400 HOLD AT FIX JONOT LEFT TURN INBOUNDCOURSE 043 ALT 6400 LEGDIST 7
+ENDAPPROACHES

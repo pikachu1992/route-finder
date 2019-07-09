@@ -1,0 +1,42 @@
+//KE45 (PINE MOUNTAIN LAKE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 25THR LATLON N 37 50.142167 W 120 7.7905
+FIX BAGBY LATLON N 37 37.052167 W 120 9.459
+FIX COCPE LATLON N 37 44.822833 W 120 1.215167
+FIX HOFED LATLON N 37 46.534667 W 120 26.868334
+FIX HONEZ LATLON N 37 47.307833 W 120 42.811166
+FIX IJOBA LATLON N 37 48.688166 W 120 5.2225
+FIX JEYCU LATLON N 37 47.915333 W 120 4.4205
+FIX JISAV LATLON N 37 52.2715 W 120 12.645167
+FIX PIYHE LATLON N 37 53.501333 W 120 16.810333
+FIX UPCIM LATLON N 37 55.2955 W 120 22.905833
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH GPS27 FIX JEYCU AT OR ABOVE 5000 FIX IJOBA 4700 FIX 25THR AT OR ABOVE 3700 RNW 27 TRK 291 UNTIL 3330 FIX OVERFLY UPCIM AT OR ABOVE 4500 HOLD AT FIX UPCIM RIGHT TURN INBOUNDCOURSE 095 LEGTIME 1
+ TRANSITION BAGBY FIX BAGBY FIX COCPE AT OR ABOVE 5300
+APPROACH RNV09 FIX UPCIM AT OR ABOVE 4500 FIX PIYHE 4500 FIX OVERFLY JISAV 3365 RNW 09 TURN RIGHT DIRECT FIX OVERFLY HOFED AT OR ABOVE 7000 HOLD AT FIX HOFED RIGHT TURN INBOUNDCOURSE 005 LEGDIST 7
+ TRANSITION HOFED FIX HOFED
+ TRANSITION HONEZ FIX HONEZ
+ENDAPPROACHES

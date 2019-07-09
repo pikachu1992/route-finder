@@ -1,0 +1,41 @@
+//MMPQ (AEROPUERTO DE PALENQUE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF10 LATLON N 17 34.4395 W 92 9.943333
+FIX CF28 LATLON N 17 29.734 W 91 52.8415
+FIX FF10 LATLON N 17 33.610834 W 92 6.924334
+FIX FF28 LATLON N 17 30.566167 W 91 55.8585
+FIX PQE LATLON N 17 32.228167 W 92 1.893667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+SIDS
+SID PQE1A RNW 10 FIX PQE TRK 102 UNTIL 7.0 FROM FIX PQE TURN LEFT DIRECT FIX PQE
+SID PQE1B RNW 28 FIX PQE TRK 282 UNTIL 7.0 FROM FIX PQE TURN RIGHT DIRECT FIX PQE
+ENDSIDS
+
+APPROACHES
+APPROACH VDM10 FIX CF10 AT OR ABOVE 2800 FIX FF10 1900 FIX PQE 269 RNW 10 TRK 102 UNTIL 7.0 FROM FIX PQE TURN LEFT DIRECT FIX PQE AT OR ABOVE 5000
+ TRANSITION PQE FIX PQE AT OR ABOVE 5000 TRK 304 UNTIL 8.0 FROM FIX PQE
+APPROACH VDM28 FIX CF28 AT OR ABOVE 2500 FIX FF28 1600 RNW 28 FIX OVERFLY PQE TRK 282 UNTIL 7.0 FROM FIX PQE TURN RIGHT DIRECT FIX PQE AT OR ABOVE 5000
+ TRANSITION PQE FIX PQE AT OR ABOVE 5000 TRK 081 UNTIL 9.0 FROM FIX PQE
+ENDAPPROACHES

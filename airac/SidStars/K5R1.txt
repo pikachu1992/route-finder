@@ -1,0 +1,37 @@
+//K5R1 (WILCOX)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEVUN LATLON N 31 29.786333 W 88 17.018833
+FIX JOVOK LATLON N 31 32.314834 W 88 22.068833
+FIX UZJEP LATLON N 31 28.314 W 88 14.083166
+FIX WIPAR LATLON N 31 21.793333 W 88 1.125167
+FIX YOSLU LATLON N 31 25.818167 W 88 9.115
+FIX ZEDEG LATLON N 31 24.331834 W 88 6.161333
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH RNV12 FIX JOVOK AT OR ABOVE 2000 FIX CEVUN 1800 FIX UZJEP AT OR ABOVE 860 RNW 12 TRK 121 UNTIL 566 FIX OVERFLY WIPAR AT OR ABOVE 2000 HOLD AT FIX WIPAR RIGHT TURN INBOUNDCOURSE 301 LEGDIST 4
+ TRANSITION JOVOK HOLD AT FIX JOVOK RIGHT TURN INBOUNDCOURSE 121 ALT 2000 LEGDIST 4
+APPROACH RNV30 FIX WIPAR AT OR ABOVE 2000 FIX ZEDEG 1800 FIX YOSLU AT OR ABOVE 860 RNW 30 TRK 301 UNTIL 566 FIX OVERFLY JOVOK AT OR ABOVE 2000 HOLD AT FIX JOVOK RIGHT TURN INBOUNDCOURSE 121 LEGDIST 4
+ TRANSITION WIPAR HOLD AT FIX WIPAR RIGHT TURN INBOUNDCOURSE 301 ALT 2000 LEGDIST 4
+ENDAPPROACHES

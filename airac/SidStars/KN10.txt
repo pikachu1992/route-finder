@@ -1,0 +1,41 @@
+//KN10 (PERKIOMEN VALLEY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HIKES LATLON N 40 22.932167 W 75 36.915
+FIX MAZIE LATLON N 40 19.325833 W 75 6.588
+FIX PTW LATLON N 40 13.333834 W 75 33.615
+FIX SPERY LATLON N 40 4.841167 W 75 43.628
+FIX VAYCU LATLON N 40 13.440334 W 75 19.337833
+FIX VIDTU LATLON N 40 14.624 W 75 12.898333
+FIX YOPUS LATLON N 40 9.8215 W 75 38.806834
+FIX ZURVO LATLON N 40 11.0265 W 75 32.360333
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNVB09 FIX YOPUS AT OR ABOVE 2600 FIX ZURVO 1900 RNW 09 TRK 088 UNTIL 680 TURN LEFT DIRECT FIX OVERFLY YOPUS AT OR ABOVE 2600 HOLD AT FIX YOPUS RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4
+ TRANSITION HIKES FIX HIKES FIX OVERFLY YOPUS AT OR ABOVE 2600 HOLD AT FIX YOPUS RIGHT TURN INBOUNDCOURSE 088 ALT 2600 LEGDIST 4
+ TRANSITION SPERY FIX SPERY
+APPROACH RNVC27 FIX VIDTU AT OR ABOVE 2200 FIX VAYCU 1900 RNW 27 TRK 268 UNTIL 680 TURN RIGHT DIRECT FIX OVERFLY VIDTU AT OR ABOVE 2200 HOLD AT FIX VIDTU RIGHT TURN INBOUNDCOURSE 269 LEGDIST 4
+ TRANSITION MAZIE FIX MAZIE
+ TRANSITION PTW FIX PTW FIX OVERFLY VIDTU AT OR ABOVE 2200 HOLD AT FIX VIDTU RIGHT TURN INBOUNDCOURSE 269 ALT 2200 LEGDIST 4
+ENDAPPROACHES

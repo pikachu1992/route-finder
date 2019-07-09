@@ -1,0 +1,48 @@
+//FNHU (ALBANO MACHADO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HU201 LATLON S 12 45.479666 E 15 28.805333
+FIX HU202 LATLON S 12 51.5165 E 15 33.914167
+FIX HU203 LATLON S 12 41.638834 E 15 35.7705
+FIX HU204 LATLON S 12 46.577833 E 15 34.842667
+FIX HU205 LATLON S 12 47.491 E 15 39.874333
+FIX HU206 LATLON S 12 48.402833 E 15 44.906666
+FIX HU207 LATLON S 12 51.391166 E 16 1.460167
+FIX HU208 LATLON S 12 45.545333 E 15 57.354
+FIX HU209 LATLON S 12 55.423166 E 15 55.497334
+FIX HU210 LATLON S 12 50.484334 E 15 56.426
+FIX HU211 LATLON S 12 49.575833 E 15 51.392333
+FIX HU212 LATLON S 12 48.665666 E 15 46.359334
+FIX HU213 LATLON S 12 47.491 E 15 39.874333
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX HU204 AT OR ABOVE 8200 FIX HU205 7200 FIX OVERFLY HU206 5640 RNW 11 FIX OVERFLY HU207 9000
+ TRANSITION HU201 FIX HU201 AT OR ABOVE 11000
+ TRANSITION HU202 FIX HU202 AT OR ABOVE 9000
+ TRANSITION HU203 FIX HU203 AT OR ABOVE 9000
+APPROACH RNV29 FIX HU210 AT OR ABOVE 7500 FIX HU211 7200 FIX OVERFLY HU212 5617 RNW 29 FIX OVERFLY HU213 FIX OVERFLY HU202 9000
+ TRANSITION HU207 FIX HU207 AT OR ABOVE 9000
+ TRANSITION HU208 FIX HU208 AT OR ABOVE 9000
+ TRANSITION HU209 FIX HU209 AT OR ABOVE 9000
+ENDAPPROACHES

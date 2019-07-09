@@ -1,0 +1,33 @@
+//KD57 (GLEN ULLIN REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PRIGS LATLON N 46 43.732 W 101 37.455833
+FIX RAGLY LATLON N 46 46.028 W 101 43.914167
+FIX SUETY LATLON N 46 47.610334 W 101 48.380666
+FIX TROKE LATLON N 46 53.953834 W 102 6.4135
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV29 FIX PRIGS AT OR ABOVE 4600 FIX RAGLY 4000 FIX SUETY AT OR ABOVE 2900 RNW 29 TRK 290 UNTIL 2341 FIX OVERFLY TROKE AT OR ABOVE 4600 HOLD AT FIX TROKE RIGHT TURN INBOUNDCOURSE 110 LEGDIST 5
+ TRANSITION PRIGS HOLD AT FIX PRIGS RIGHT TURN INBOUNDCOURSE 290 ALT 4600 LEGDIST 5
+ENDAPPROACHES

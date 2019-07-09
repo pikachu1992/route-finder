@@ -1,0 +1,49 @@
+//WBAK (ANDUKI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AK05D LATLON N 4 38.2415 E 114 22.907666
+FIX AK23D LATLON N 4 37.99 E 114 22.548
+FIX DOVIL LATLON N 4 46.365334 E 114 22.575334
+FIX DUNAX LATLON N 4 35.9785 E 114 19.672834
+FIX KABLO LATLON N 4 37.569 E 114 16.723
+FIX KALVI LATLON N 5 8.715 E 114 42.394333
+FIX LANOT LATLON N 4 59.786 E 114 35.365166
+FIX LANOV LATLON N 4 47.3205 E 114 30.577
+FIX LERNA LATLON N 4 40.456166 E 114 20.823334
+FIX MIBUX LATLON N 5 10.895 E 114 39.640166
+FIX OLMIR LATLON N 4 39.24 E 114 18.019834
+FIX OLTAG LATLON N 5 1.587667 E 114 32.313833
+FIX RUSIL LATLON N 4 40.010833 E 114 25.437167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+SIDS
+SID DEP05 RNW 05 FIX OVERFLY AK05D FIX RUSIL AT OR BELOW 1500 FIX DOVIL 1500 FIX OLTAG 1500 FIX MIBUX 1500
+SID DEP23 RNW 23 FIX OVERFLY AK23D FIX DUNAX AT OR BELOW 1500 TURN RIGHT DIRECT FIX OLMIR 1500 FIX OLTAG 1500 FIX MIBUX 1500
+ENDSIDS
+
+STARS
+STAR ARR05 FIX KALVI 2500 FIX LANOT 2500 FIX LANOV 2500 FIX LERNA 2500 FIX KABLO AT OR ABOVE 1500
+  RNW 05
+STAR ARR23 FIX KALVI 2500 FIX LANOT 2500 FIX LANOV 2500
+  RNW 23
+ENDSTARS

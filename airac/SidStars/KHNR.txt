@@ -1,0 +1,46 @@
+//KHNR (HARLAN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXCED LATLON N 41 30.241 W 95 17.412667
+FIX BYIES LATLON N 41 25.698833 W 95 14.625667
+FIX CHUUI LATLON N 41 46.575 W 95 20.131
+FIX DULAH LATLON N 41 42.364333 W 95 32.248333
+FIX GIGAW LATLON N 41 23.601 W 95 20.658334
+FIX GLENE LATLON N 41 27.080666 W 95 30.299
+FIX IJENE LATLON N 41 44.472334 W 95 26.193
+FIX KALWE LATLON N 41 39.934166 W 95 23.385
+FIX MADUP LATLON N 41 56.4375 W 95 6.006167
+FIX PSFIC LATLON N 41 16.0395 W 94 59.871
+FIX ULEBE LATLON N 41 27.791333 W 95 8.586667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 15
+RNW 21
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH GPS15 FIX IJENE AT OR ABOVE 3000 FIX KALWE 3000 RNW 15 TRK 150 UNTIL 2000 FIX GLENE AT OR ABOVE 3600 HOLD AT FIX GLENE RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1
+ TRANSITION GLENE FIX GLENE FIX DULAH AT OR ABOVE 3500
+ TRANSITION MADUP FIX MADUP FIX CHUUI AT OR ABOVE 3000
+APPROACH GPS33 FIX BYIES AT OR ABOVE 3000 FIX AXCED 2800 RNW 33 TRK 330 UNTIL 2000 TURN LEFT DIRECT FIX GLENE AT OR ABOVE 3600 HOLD AT FIX GLENE RIGHT TURN INBOUNDCOURSE 024 LEGTIME 1
+ TRANSITION GLENE FIX GLENE FIX GIGAW AT OR ABOVE 3600
+ TRANSITION PSFIC FIX PSFIC FIX ULEBE AT OR ABOVE 3000
+ENDAPPROACHES

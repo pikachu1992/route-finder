@@ -1,0 +1,39 @@
+//BGMV (MESTERSVIG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KUNUG LATLON N 71 56.952667 W 22 52.098167
+FIX MA32 LATLON N 72 13.6085 W 23 50.539333
+FIX MV32F LATLON N 72 11.885666 W 23 36.1855
+FIX MV32I LATLON N 72 6.310333 W 22 50.984
+FIX MVM01 LATLON N 72 14.727833 W 23 59.968333
+FIX MVM02 LATLON N 72 15.383333 W 23 32.616667
+FIX NANUK LATLON N 72 9.999833 W 22 40.0835
+FIX RAMIG LATLON N 72 4.2225 W 22 34.525166
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV32 FIX MV32I AT OR ABOVE 5300 FIX MV32F 2000 FIX OVERFLY MA32 493 RNW 32 FIX OVERFLY MVM01 TURN RIGHT DIRECT FIX MVM02 AT OR ABOVE 6500 FIX RAMIG HOLD AT FIX RAMIG RIGHT TURN INBOUNDCOURSE 312 SPEED 240 LEGTIME 1
+ TRANSITION KUNUG FIX KUNUG AT OR ABOVE 8500
+ TRANSITION NANUK FIX NANUK AT OR ABOVE 7100
+ TRANSITION RAMIG FIX RAMIG AT OR ABOVE 6500
+ENDAPPROACHES

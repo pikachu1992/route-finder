@@ -1,0 +1,48 @@
+//PATE (TELLER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATAYI LATLON N 65 13.987166 W 167 5.121667
+FIX AVEYU LATLON N 65 19.561 W 165 53.386166
+FIX BICAC LATLON N 65 14.325833 W 166 32.590667
+FIX DITAY LATLON N 65 14.578166 W 165 53.2655
+FIX GUYEL LATLON N 65 14.189333 W 166 47.084833
+FIX GUYET LATLON N 65 14.5065 W 166 7.526666
+FIX HAKEX LATLON N 65 9.595333 W 165 53.1455
+FIX JIPAK LATLON N 65 6.539333 W 166 46.666
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+SIDS
+SID JIPAK2
+ RNW 07 HDG 075 UNTIL 800 TURN RIGHT DIRECT FIX JIPAK
+ RNW 25 HDG 255 UNTIL 800 FIX JIPAK
+ENDSIDS
+
+APPROACHES
+APPROACH RNV07 FIX GUYEL AT OR ABOVE 3400 FIX BICAC 1900 RNW 07 TRK 075 UNTIL 1020 FIX DITAY AT OR ABOVE 3400 HOLD AT FIX DITAY RIGHT TURN INBOUNDCOURSE 255 LEGDIST 4
+ TRANSITION ATAYI FIX ATAYI
+ TRANSITION JIPAK FIX JIPAK
+APPROACH RNV25 FIX DITAY AT OR ABOVE 3400 FIX GUYET 2000 RNW 25 TRK 255 UNTIL 1260 FIX ATAYI AT OR ABOVE 4000 HOLD AT FIX ATAYI RIGHT TURN INBOUNDCOURSE 119 LEGDIST 4
+ TRANSITION AVEYU FIX AVEYU AT OR ABOVE 3700
+ TRANSITION DITAY HOLD AT FIX DITAY RIGHT TURN INBOUNDCOURSE 255 ALT 3400 LEGDIST 4
+ TRANSITION HAKEX FIX HAKEX AT OR ABOVE 3400
+ENDAPPROACHES

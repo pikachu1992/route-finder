@@ -1,0 +1,38 @@
+//K5C1 (BOERNE STAGE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUROP LATLON N 29 39.773167 W 98 41.2395
+FIX CUSUL LATLON N 29 47.702666 W 98 42.191666
+FIX EMEGY LATLON N 29 45.993833 W 98 41.986166
+FIX FIDGU LATLON N 29 53.6705 W 98 42.910834
+FIX JEGUM LATLON N 29 46.95 W 98 42.100834
+FIX MEDIN LATLON N 29 48.415166 W 98 54.018167
+FIX OWEKY LATLON N 29 33.0095 W 98 40.429333
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX FIDGU AT OR ABOVE 4100 FIX CUSUL 2700 FIX EMEGY AT OR ABOVE 2140 RNW 17 TRK 169 UNTIL 1900 TURN RIGHT DIRECT FIX OVERFLY MEDIN AT OR ABOVE 4100
+ TRANSITION FIDGU HOLD AT FIX FIDGU RIGHT TURN INBOUNDCOURSE 169 ALT 4100 LEGDIST 5
+APPROACH RNV35 FIX OWEKY AT OR ABOVE 3200 FIX CUROP 2500 RNW 35 TRK 349 UNTIL 1785 FIX JEGUM FIX OVERFLY MEDIN AT OR ABOVE 4100
+ TRANSITION OWEKY HOLD AT FIX OWEKY LEFT TURN INBOUNDCOURSE 349 ALT 3200 LEGDIST 4
+ENDAPPROACHES

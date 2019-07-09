@@ -1,0 +1,41 @@
+//FLSK (SIMON MWANSA KAPWEPWE INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D279G LATLON S 12 59.31 E 28 32.855333
+FIX FS10L LATLON S 12 59.505334 E 28 35.2165
+FIX NWNB LATLON S 12 59.7 E 28 35.2
+FIX VND LATLON S 12 59.9 E 28 40
+ENDFIXES
+
+RNWS
+RNW 10L
+RNW 10R
+RNW 28L
+RNW 28R
+ENDRNWS
+
+APPROACHES
+APPROACH NDB10L FIX NWNB 5300 RNW 10L TRK 097 UNTIL 4567 HDG 097 VECTORS
+ TRANSITION NW HOLD AT FIX NWNB LEFT TURN INBOUNDCOURSE 097 ALT 6000 LEGTIME 2
+APPROACH VOR10L FIX FS10L 5400 RNW 10L FIX VND AT OR ABOVE 4567 HDG 099 VECTORS
+ TRANSITION VND FIX VND AT OR ABOVE 6000 FIX D279G AT OR ABOVE 6000 TRK 324 UNTIL 4.3 FROM FIX D279G
+ENDAPPROACHES
+
+GATES
+GATE NLA S 12 59.733334 E 28 39.933334
+ENDGATES

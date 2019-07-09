@@ -1,0 +1,45 @@
+//K2V6 (YUMA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CEMAP LATLON N 39 52.911833 W 102 41.005667
+FIX GNARR LATLON N 40 0.8725 W 102 42.114167
+FIX HUNCH LATLON N 40 11.699167 W 102 43.6285
+FIX OUNCE LATLON N 39 53.965166 W 102 28.086
+FIX PATNE LATLON N 40 19.659 W 102 44.747
+FIX RASPS LATLON N 39 51.834667 W 102 53.918833
+FIX SYLIS LATLON N 40 20.719 W 102 31.7435
+FIX ZAROT LATLON N 40 18.574667 W 102 57.743666
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 16
+RNW 30
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX PATNE AT OR ABOVE 7000 FIX HUNCH 5800 RNW 16 TRK 167 UNTIL 4382 FIX OVERFLY CEMAP AT OR ABOVE 7000 HOLD AT FIX CEMAP RIGHT TURN INBOUNDCOURSE 347 LEGDIST 7
+ TRANSITION PATNE HOLD AT FIX PATNE RIGHT TURN INBOUNDCOURSE 167 ALT 7000 LEGDIST 7
+ TRANSITION SYLIS FIX SYLIS
+ TRANSITION ZAROT FIX ZAROT
+APPROACH RNV34 FIX CEMAP AT OR ABOVE 7000 FIX GNARR 5800 RNW 34 TRK 347 UNTIL 4333 FIX OVERFLY PATNE AT OR ABOVE 7000 HOLD AT FIX PATNE RIGHT TURN INBOUNDCOURSE 167 LEGDIST 7
+ TRANSITION CEMAP HOLD AT FIX CEMAP RIGHT TURN INBOUNDCOURSE 347 ALT 7000 LEGDIST 7
+ TRANSITION OUNCE FIX OUNCE
+ TRANSITION RASPS FIX RASPS
+ENDAPPROACHES

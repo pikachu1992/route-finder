@@ -1,0 +1,36 @@
+//K38D (SALEM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACO LATLON N 41 6.474167 W 81 12.0915
+FIX GEOFF LATLON N 40 59.565 W 80 57.5335
+FIX MADWI LATLON N 40 57.0065 W 80 52.170667
+ENDFIXES
+
+RNWS
+RNW 10L
+RNW 10R
+RNW 28L
+RNW 28R
+ENDRNWS
+
+APPROACHES
+APPROACH VOR10LA FIX ACO AT OR ABOVE 3000 FIX GEOFF 3000 FIX MADWI 1720 RNW 10L TRK 126 UNTIL 1720 TURN LEFT DIRECT FIX GEOFF AT OR ABOVE 3000 HOLD AT FIX GEOFF RIGHT TURN INBOUNDCOURSE 126 LEGTIME 1
+APPROACH VOR10RA FIX ACO AT OR ABOVE 3000 FIX GEOFF 3000 FIX MADWI 1720 RNW 10R TRK 126 UNTIL 1720 TURN LEFT DIRECT FIX GEOFF AT OR ABOVE 3000 HOLD AT FIX GEOFF RIGHT TURN INBOUNDCOURSE 126 LEGTIME 1
+APPROACH VOR28LA FIX ACO AT OR ABOVE 3000 FIX GEOFF 3000 FIX MADWI 1720 RNW 28L TRK 126 UNTIL 1720 TURN LEFT DIRECT FIX GEOFF AT OR ABOVE 3000 HOLD AT FIX GEOFF RIGHT TURN INBOUNDCOURSE 126 LEGTIME 1
+APPROACH VOR28RA FIX ACO AT OR ABOVE 3000 FIX GEOFF 3000 FIX MADWI 1720 RNW 28R TRK 126 UNTIL 1720 TURN LEFT DIRECT FIX GEOFF AT OR ABOVE 3000 HOLD AT FIX GEOFF RIGHT TURN INBOUNDCOURSE 126 LEGTIME 1
+ENDAPPROACHES

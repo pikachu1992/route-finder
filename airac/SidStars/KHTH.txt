@@ -1,0 +1,40 @@
+//KHTH (HAWTHORNE INDUSTRIAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX IGUVE LATLON N 38 29.4745 W 118 29.760667
+FIX KUWXU LATLON N 38 33.216667 W 118 10.066667
+FIX MVA LATLON N 38 33.918 W 118 1.971167
+FIX OWILU LATLON N 38 28.816667 W 118 24.316667
+FIX PUBIW LATLON N 38 30.9265 W 118 33.536666
+FIX WUDIN LATLON N 38 32.096666 W 118 18.120667
+FIX YERIN LATLON N 38 58.781167 W 118 57.6985
+FIX YIYUR LATLON N 38 28.725667 W 118 27.8165
+FIX ZICYO LATLON N 38 51.916667 W 118 42.983333
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 15
+RNW 28
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNV28 FIX WUDIN AT OR ABOVE 7900 FIX OWILU AT OR ABOVE 7900 FIX YIYUR 7500 FIX IGUVE AT OR ABOVE 6840 FIX PUBIW AT OR ABOVE 5580 RNW 28 TRK 283 UNTIL 4750 FIX ZICYO FIX OVERFLY YERIN AT OR ABOVE 10000 HOLD AT FIX YERIN LEFT TURN INBOUNDCOURSE 002 LEGDIST 7
+ TRANSITION MVA FIX MVA FIX KUWXU AT OR ABOVE 9800
+ENDAPPROACHES

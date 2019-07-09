@@ -1,0 +1,39 @@
+//SVPC (GEN. BARTOLOME SALOM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 10 37.754567 W 67 59.658135
+FIX AF002 LATLON N 10 38.86784 W 68 2.726816
+FIX AF003 LATLON N 10 38.966069 W 68 5.996469
+FIX D059J LATLON N 10 35.772167 W 67 57.122167
+FIX FD120 LATLON N 10 32.319833 W 68 14.2675
+FIX KOTUL LATLON N 10 46.5 W 67 44.2
+FIX MD120 LATLON N 10 30.686333 W 68 9.4675
+FIX MORON LATLON N 10 38.080333 W 68 9.120167
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA11 FIX FD120 2700 FIX OVERFLY MD120 1670 RNW 11 TURN LEFT DIRECT FIX MORON AT OR ABOVE 5000
+ TRANSITION KOTUL FIX KOTUL AT OR ABOVE 8000 FIX D059J AT OR ABOVE 8000 FIX AF001 FIX AF002 FIX AF003 FIX MORON AT OR ABOVE 2700
+APPROACH VDMA29 FIX FD120 2700 FIX OVERFLY MD120 1670 RNW 29 TURN LEFT DIRECT FIX MORON AT OR ABOVE 5000
+ TRANSITION KOTUL FIX KOTUL AT OR ABOVE 8000 FIX D059J AT OR ABOVE 8000 FIX AF001 FIX AF002 FIX AF003 FIX MORON AT OR ABOVE 2700
+ENDAPPROACHES

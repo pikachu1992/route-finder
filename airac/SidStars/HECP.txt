@@ -1,0 +1,45 @@
+//HECP (CAPITAL INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CF01L LATLON N 29 49.696667 E 31 45.423334
+FIX CP712 LATLON N 29 44.423333 E 31 34.885
+FIX CP713 LATLON N 29 49.696667 E 31 45.423334
+FIX CP714 LATLON N 29 58.405 E 31 48.138334
+FIX CP715 LATLON N 30 10.141667 E 31 51.81
+FIX CVO LATLON N 30 5.538334 E 31 23.305
+FIX D150W LATLON N 29 44.423333 E 31 34.885
+FIX FF01L LATLON N 29 58.405 E 31 48.138334
+FIX RW01L LATLON N 30 3.388333 E 31 49.696
+ENDFIXES
+
+RNWS
+RNW 01L
+RNW 01R
+RNW 02
+RNW 19L
+RNW 19R
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH ILS01L FIX CF01L AT OR ABOVE 3300 FIX FF01L 2500 RNW 01L TRK 011 UNTIL 1900 TURN LEFT DIRECT FIX CVO 6000 HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 013 ALT 6000 LEGTIME 1
+ TRANSITION CVO FIX CVO FIX D150W AT OR ABOVE 3300 TRK 056 UNTIL 6.6 FROM FIX D150W
+APPROACH RNV01L FIX CP713 3300 FIX CP714 2500 RNW 01L FIX CP715 AT OR ABOVE 2400 TURN LEFT DIRECT FIX CVO AT OR ABOVE 6000 HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 048 ALT 6000 LEGTIME 1
+ TRANSITION CP712 FIX CP712 AT OR ABOVE 4000
+ TRANSITION CVO FIX CVO AT OR ABOVE 6000 FIX CP712 AT OR ABOVE 4000
+ENDAPPROACHES

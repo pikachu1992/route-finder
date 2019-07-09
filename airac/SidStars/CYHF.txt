@@ -1,0 +1,43 @@
+//CYHF (HEARST MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APDOM LATLON N 49 46.770334 W 83 37.7775
+FIX APGEB LATLON N 49 49.5045 W 83 26.486333
+FIX BOXOP LATLON N 49 51.980333 W 83 33.1955
+FIX DETGA LATLON N 49 54.4495 W 83 39.916166
+FIX EBMIG LATLON N 49 38.8125 W 83 44.739167
+FIX IGSED LATLON N 49 38.902 W 83 44.661167
+FIX UDLOX LATLON N 49 33.684334 W 83 49.202167
+FIX UKVUG LATLON N 49 46.859666 W 83 37.699
+FIX VESVI LATLON N 49 31.224 W 83 42.521333
+FIX VIMVU LATLON N 49 36.138334 W 83 55.894333
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX UDLOX AT OR ABOVE 2200 FIX IGSED 2200 RNW 04 FIX OVERFLY UKVUG 2500 HOLD AT FIX UKVUG RIGHT TURN INBOUNDCOURSE 039 LEGTIME 1
+ TRANSITION VESVI FIX VESVI SPEED 210
+ TRANSITION VIMVU FIX VIMVU SPEED 210
+APPROACH RNV22 FIX BOXOP AT OR ABOVE 2200 FIX APDOM 2200 RNW 22 FIX OVERFLY EBMIG 2400 HOLD AT FIX EBMIG RIGHT TURN INBOUNDCOURSE 219 LEGTIME 1
+ TRANSITION APGEB FIX APGEB SPEED 210
+ TRANSITION DETGA FIX DETGA SPEED 210
+ENDAPPROACHES

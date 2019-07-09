@@ -1,0 +1,41 @@
+//KW95 (OCRACOKE I)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAXIT LATLON N 35 2.082833 W 76 3.822667
+FIX DEPNE LATLON N 34 58.888166 W 76 8.510167
+FIX FILVO LATLON N 35 6.594833 W 76 16.289333
+FIX JELIK LATLON N 35 20.965834 W 75 55.147667
+FIX KASVE LATLON N 35 13.241333 W 75 47.379667
+FIX LAMGE LATLON N 35 10.053334 W 75 52.084667
+FIX MUTVE LATLON N 35 18.832 W 75 37.2465
+FIX PUNGO LATLON N 35 36.633167 W 76 27.055166
+FIX ZOLMN LATLON N 35 38.705833 W 75 24.456833
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX DEPNE AT OR ABOVE 3000 FIX CAXIT 2000 RNW 06 TRK 059 UNTIL 405 TURN LEFT DIRECT FIX PUNGO AT OR ABOVE 6000 HOLD AT FIX PUNGO RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4
+ TRANSITION PUNGO FIX PUNGO FIX FILVO AT OR ABOVE 6000
+APPROACH RNV24 FIX KASVE AT OR ABOVE 3000 FIX LAMGE 2000 RNW 24 TRK 239 UNTIL 405 TURN RIGHT DIRECT FIX PUNGO AT OR ABOVE 6000 HOLD AT FIX PUNGO RIGHT TURN INBOUNDCOURSE 130 LEGDIST 4
+ TRANSITION PUNGO FIX PUNGO FIX JELIK AT OR ABOVE 6000
+ TRANSITION ZOLMN FIX ZOLMN FIX MUTVE AT OR ABOVE 6000
+ENDAPPROACHES

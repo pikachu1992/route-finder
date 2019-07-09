@@ -1,0 +1,35 @@
+//WAPS (MATHILDA BATLAYERI)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX PS401 LATLON S 7 48.5555 E 131 15.3885
+FIX PS501 LATLON S 7 53.337167 E 131 25.264
+FIX TANIM LATLON S 7 46.36 E 131 10.857833
+FIX YAMDE LATLON S 7 53.42 E 131 30.303167
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX TANIM AT OR ABOVE 3000 FIX PS401 2000 RNW 11 TURN LEFT DIRECT FIX TANIM 3000
+ TRANSITION TANIM HOLD AT FIX TANIM RIGHT TURN INBOUNDCOURSE 114 ALT 3000 LEGTIME 1
+APPROACH RNV29 FIX YAMDE AT OR ABOVE 3000 FIX PS501 2000 RNW 29 TURN RIGHT DIRECT FIX YAMDE 3000
+ TRANSITION YAMDE HOLD AT FIX YAMDE RIGHT TURN INBOUNDCOURSE 269 ALT 3000 LEGTIME 1
+ENDAPPROACHES

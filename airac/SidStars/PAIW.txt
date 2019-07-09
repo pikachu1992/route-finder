@@ -1,0 +1,41 @@
+//PAIW (WALES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ATAYI LATLON N 65 13.987166 W 167 5.121667
+FIX COGNU LATLON N 65 48.487166 W 167 50.103
+FIX COLEG LATLON N 65 42.349333 W 168 0.2455
+FIX DIDGE LATLON N 65 38.521 W 168 5.275667
+FIX FOROD LATLON N 65 31.381333 W 168 11.378833
+FIX HOSLO LATLON N 65 24.918 W 168 10.9855
+FIX SADLY LATLON N 65 40.414 W 168 2.792
+FIX TNCNB LATLON N 65 33.703834 W 167 55.488167
+FIX ZUKES LATLON N 65 36.543167 W 168 5.9905
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX COGNU AT OR ABOVE 2600 FIX COLEG 1700 FIX SADLY AT OR ABOVE 1000 FIX OVERFLY DIDGE 313 RNW 18 TRK 200 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY COGNU AT OR ABOVE 2600 HOLD AT FIX COGNU RIGHT TURN INBOUNDCOURSE 206 LEGDIST 4
+ TRANSITION COGNU HOLD AT FIX COGNU RIGHT TURN INBOUNDCOURSE 206 ALT 2600 LEGDIST 4
+APPROACH RNV36 FIX HOSLO AT OR ABOVE 2900 FIX FOROD 2000 FIX OVERFLY ZUKES 204 RNW 36 TRK 015 UNTIL 426 FIX OVERFLY COGNU AT OR ABOVE 3000 HOLD AT FIX COGNU RIGHT TURN INBOUNDCOURSE 197 LEGDIST 4
+ TRANSITION ATAYI FIX ATAYI
+ TRANSITION TNC FIX TNCNB FIX OVERFLY HOSLO AT OR ABOVE 3200 HOLD AT FIX HOSLO RIGHT TURN INBOUNDCOURSE 351 ALT 2900 LEGDIST 4
+ENDAPPROACHES

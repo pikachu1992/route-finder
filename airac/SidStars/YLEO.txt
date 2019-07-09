@@ -1,0 +1,45 @@
+//YLEO (LEONORA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FF04 LATLON S 28 56.468333 E 121 15.112834
+FIX LEONA LATLON S 28 40.029334 E 121 22.980667
+FIX LEONB LATLON S 28 52.730833 E 121 19.217167
+FIX LEONC LATLON S 28 40.201333 E 121 29.499334
+FIX LEOND LATLON S 28 45.659666 E 121 31.5495
+FIX LEONF LATLON S 28 48.238667 E 121 22.699166
+FIX LEONH LATLON S 28 54.6645 E 121 17.246666
+FIX LEONI LATLON S 28 44.220833 E 121 26.101333
+FIX LEONM LATLON S 28 52.255166 E 121 19.2925
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 12
+RNW 22
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB04 FIX FF04 2600 RNW 04 FIX OVERFLY LEONB TRK 043 UNTIL 3100
+ TRANSITION LEO1 FIX LEONB AT OR ABOVE 3100 SPEED 210 TRK 255 UNTIL 5.3 FROM FIX LEONB
+ TRANSITION LEO2 FIX LEONB AT OR ABOVE 3100 SPEED 210 TRK 237 UNTIL 7.5 FROM FIX LEONB
+APPROACH RNV22 FIX LEONI AT OR ABOVE 3100 FIX LEONF 2950 FIX OVERFLY LEONM 1356 RNW 22 FIX LEONH TRK 215 UNTIL 3100
+ TRANSITION LEONA FIX LEONA AT OR ABOVE 3100 SPEED 210
+ TRANSITION LEONC FIX LEONC AT OR ABOVE 3100 SPEED 210
+ TRANSITION LEOND FIX LEOND AT OR ABOVE 3100 SPEED 210
+ENDAPPROACHES

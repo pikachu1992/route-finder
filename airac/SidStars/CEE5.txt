@@ -1,0 +1,43 @@
+//CEE5 (WABASCA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX APNUR LATLON N 55 57.6395 W 113 58.649666
+FIX DUSEL LATLON N 55 57.7475 W 113 28.903333
+FIX DUTOG LATLON N 55 57.5715 W 114 9.323833
+FIX ERBOT LATLON N 55 57.625667 W 114 1.031833
+FIX GABIP LATLON N 55 57.7225 W 113 39.578666
+FIX KIREG LATLON N 55 57.7295 W 113 37.1615
+FIX LOKMI LATLON N 56 3.436166 W 113 28.932833
+FIX OMTUX LATLON N 56 3.259667 W 114 9.452333
+FIX OTODA LATLON N 55 52.058833 W 113 28.874167
+FIX RABEX LATLON N 55 51.883166 W 114 9.196
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX DUTOG AT OR ABOVE 3600 SPEED 180 FIX APNUR 3500 RNW 07 FIX OVERFLY KIREG 4500 HOLD AT FIX KIREG RIGHT TURN INBOUNDCOURSE 074 SPEED 200 LEGTIME 1
+ TRANSITION OMTUX FIX OMTUX SPEED 210
+ TRANSITION RABEX FIX RABEX SPEED 210
+APPROACH RNV25 FIX DUSEL AT OR ABOVE 3600 SPEED 180 FIX GABIP 3500 RNW 25 FIX OVERFLY ERBOT 4500 HOLD AT FIX ERBOT RIGHT TURN INBOUNDCOURSE 254 SPEED 200 LEGTIME 1
+ TRANSITION LOKMI FIX LOKMI SPEED 210
+ TRANSITION OTODA FIX OTODA SPEED 210
+ENDAPPROACHES

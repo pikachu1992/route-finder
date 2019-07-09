@@ -1,0 +1,35 @@
+//NGNU (NIKUNAU)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BEKTA LATLON S 1 25.6335 E 176 16.7175
+FIX DAKAL LATLON S 1 18.499 E 176 14.249167
+FIX NIKUM LATLON S 1 21.614167 E 176 16.773334
+FIX NU601 LATLON S 1 20.292167 E 176 20.545166
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+APPROACHES
+APPROACH RNV06 FIX NIKUM AT OR ABOVE 2500 FIX NU601 1300 RNW 06 TRK 061 UNTIL 1000 TURN LEFT DIRECT FIX NIKUM AT OR ABOVE 2500
+ TRANSITION BEKTA FIX BEKTA AT OR ABOVE 2500
+ TRANSITION DAKAL FIX DAKAL AT OR ABOVE 2500
+ TRANSITION NIKUM HOLD AT FIX NIKUM RIGHT TURN INBOUNDCOURSE 061 ALT 2500 LEGTIME 1
+ENDAPPROACHES

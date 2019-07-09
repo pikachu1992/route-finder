@@ -1,0 +1,34 @@
+//FNDU (KAMAKENZO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAITA LATLON S 7 36.787834 E 20 44.252666
+FIX DEMBE LATLON S 7 30.582 E 20 37.121833
+FIX KANDA LATLON S 7 28.6045 E 20 45.127667
+FIX SOMBO LATLON S 7 32.390333 E 20 41.8185
+ENDFIXES
+
+RNWS
+RNW 04
+RNW 22
+ENDRNWS
+
+APPROACHES
+APPROACH RNV04 FIX SOMBO AT OR ABOVE 4240 FIX KANDA 4240 RNW 04 TRK 042 UNTIL 4000 TURN RIGHT DIRECT FIX CAITA HOLD AT FIX CAITA RIGHT TURN INBOUNDCOURSE 332 ALT 5500 LEGTIME 1
+ TRANSITION CAITA FIX CAITA
+ TRANSITION DEMBE FIX DEMBE
+ENDAPPROACHES

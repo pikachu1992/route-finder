@@ -1,0 +1,39 @@
+//BIKR (SAUDARKROKUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 094AT LATLON N 65 28.107833 W 19 21.043667
+FIX 184AT LATLON N 65 24.691834 W 19 27.030667
+FIX 3NM LATLON N 65 31.052167 W 19 29.441
+FIX KRF36 LATLON N 65 34.0055 W 19 30.566
+FIX KRI36 LATLON N 65 27.645334 W 19 28.148666
+FIX OGMOR LATLON N 65 28.565 W 19 13.934
+FIX PEVAX LATLON N 65 21.738 W 19 25.917
+FIX TUGNU LATLON N 65 26.7035 W 19 42.346667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX KRF36 3200 RNW 36 TRK 004 UNTIL 1600 TURN RIGHT DIRECT FIX PEVAX 5100 HOLD AT FIX PEVAX RIGHT TURN INBOUNDCOURSE 004 ALT 5100 LEGTIME 1
+ TRANSITION OGMOR FIX OGMOR AT OR ABOVE 6000 FIX 094AT AT OR ABOVE 5000 FIX KRI36 AT OR ABOVE 4400 FIX 3NM AT OR ABOVE 3600
+ TRANSITION PEVAX FIX PEVAX AT OR ABOVE 5700 FIX 184AT AT OR ABOVE 5100 FIX KRI36 AT OR ABOVE 4400 FIX 3NM AT OR ABOVE 3600
+ TRANSITION TUGNU FIX TUGNU AT OR ABOVE 5000 FIX KRI36 AT OR ABOVE 4700 FIX 3NM AT OR ABOVE 3600
+ENDAPPROACHES

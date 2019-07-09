@@ -1,0 +1,44 @@
+//FMSD (TOLAGNARO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 69DME LATLON S 24 58.211833 E 47 3.348667
+FIX FDN LATLON S 25 2.26 E 46 57.183334
+FIX FN08 LATLON S 25 8.160167 E 46 50.965
+FIX FN26 LATLON S 24 56.595667 E 47 5.784
+FIX FQ08 LATLON S 25 7.835333 E 46 51.310166
+FIX FQ26 LATLON S 24 56.558666 E 47 5.839667
+FIX MQ08 LATLON S 25 4.589833 E 46 54.755833
+FIX VSPNB LATLON S 25 2.288333 E 46 57.196667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH NDB08 FIX FN08 2500 RNW 08 FIX OVERFLY VSPNB TURN RIGHT DIRECT FIX VSPNB 4500
+ TRANSITION VSP FIX VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 8.8 FROM FIX VSPNB
+APPROACH NDB26 FIX FN26 3000 RNW 26 FIX OVERFLY VSPNB TRK 258 UNTIL 2800 TURN LEFT DIRECT FIX VSPNB 3300
+ TRANSITION VSP FIX VSPNB AT OR ABOVE 3300 TRK 092 UNTIL 10.5 FROM FIX VSPNB
+APPROACH NDM08 FIX FQ08 2500 FIX MQ08 984 RNW 08 FIX OVERFLY VSPNB TURN RIGHT DIRECT FIX VSPNB 4500
+ TRANSITION VSP1 FIX VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 11.5 FROM FIX FDN
+ TRANSITION VSP2 FIX VSPNB AT OR ABOVE 4500 TRK 224 UNTIL 11.1 FROM FIX FDN
+APPROACH NDM26 FIX FQ26 3000 FIX 69DME AT OR ABOVE 2130 RNW 26 TRK 256 UNTIL 2800 TURN LEFT DIRECT FIX VSPNB 3300
+ TRANSITION VSP FIX VSPNB AT OR ABOVE 3300 TRK 092 UNTIL 9.9 FROM FIX FDN
+ENDAPPROACHES

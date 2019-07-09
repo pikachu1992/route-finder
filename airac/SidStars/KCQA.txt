@@ -1,0 +1,43 @@
+//KCQA (LAKEFIELD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AVOXE LATLON N 40 27.566 W 84 48.4635
+FIX COLMI LATLON N 40 22.604167 W 84 47.619667
+FIX EKLLR LATLON N 40 32.5265 W 84 49.320667
+FIX EVOCO LATLON N 40 28.346333 W 84 40.664833
+FIX EVOZU LATLON N 40 29.7215 W 84 26.697833
+FIX ICREB LATLON N 40 25.513667 W 84 18.068
+FIX IZZIE LATLON N 40 30.477833 W 84 18.8875
+FIX LUSHU LATLON N 40 35.441833 W 84 19.709
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX AVOXE AT OR ABOVE 3000 FIX EVOCO 2600 RNW 08 FIX EVOZU FIX OVERFLY ICREB AT OR ABOVE 3000 HOLD AT FIX ICREB RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4
+ TRANSITION AVOXE HOLD AT FIX AVOXE RIGHT TURN INBOUNDCOURSE 086 ALT 3000 LEGDIST 4
+ TRANSITION COLMI FIX COLMI AT OR ABOVE 3000
+ TRANSITION EKLLR FIX EKLLR AT OR ABOVE 3000
+APPROACH RNV26 FIX IZZIE AT OR ABOVE 3000 FIX EVOZU 2600 RNW 26 FIX EVOCO FIX OVERFLY COLMI AT OR ABOVE 3000 HOLD AT FIX COLMI RIGHT TURN INBOUNDCOURSE 357 LEGDIST 4
+ TRANSITION ICREB FIX ICREB AT OR ABOVE 3000
+ TRANSITION IZZIE HOLD AT FIX IZZIE RIGHT TURN INBOUNDCOURSE 267 ALT 3000 LEGDIST 4
+ TRANSITION LUSHU FIX LUSHU AT OR ABOVE 3000
+ENDAPPROACHES

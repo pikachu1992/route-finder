@@ -1,0 +1,47 @@
+//CCZ3 (CLARENVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ANVOK LATLON N 48 18.205333 W 53 51.359167
+FIX BIMKA LATLON N 48 15.582 W 53 57.553834
+FIX IGRUT LATLON N 48 14.859334 W 53 59.256167
+FIX IGTOK LATLON N 48 18.902666 W 53 49.708
+FIX LIBEK LATLON N 48 5.905667 W 54 6.366
+FIX LOLRO LATLON N 48 17.8855 W 53 38.092333
+FIX OMSOR LATLON N 48 18.9815 W 53 49.5215
+FIX SILSA LATLON N 48 17.377166 W 53 53.317333
+FIX TETED LATLON N 48 22.1055 W 53 42.104833
+FIX TEVAB LATLON N 48 10.125334 W 54 10.364
+FIX UBVIT LATLON N 48 12.8995 W 54 3.864
+FIX ULENO LATLON N 48 14.3425 W 54 14.373
+FIX VISUK LATLON N 48 26.323 W 53 46.1285
+FIX XUDSU LATLON N 48 13.350833 W 54 2.804
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX TEVAB AT OR ABOVE 2400 FIX XUDSU 2050 FIX IGRUT AT OR ABOVE 1120 RNW 08 FIX SILSA FIX OVERFLY OMSOR 2400 HOLD AT FIX OMSOR RIGHT TURN INBOUNDCOURSE 077 LEGTIME 1
+ TRANSITION LIBEK FIX LIBEK
+ TRANSITION ULENO FIX ULENO
+APPROACH RNV26 FIX TETED AT OR ABOVE 1800 FIX IGTOK 1590 FIX ANVOK AT OR ABOVE 1180 RNW 26 FIX BIMKA FIX OVERFLY UBVIT 2400 HOLD AT FIX UBVIT RIGHT TURN INBOUNDCOURSE 257 LEGTIME 1
+ TRANSITION LOLRO FIX LOLRO
+ TRANSITION VISUK FIX VISUK
+ENDAPPROACHES

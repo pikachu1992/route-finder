@@ -1,0 +1,51 @@
+//WAEL (OESMAN SADIK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BULI LATLON N 0 55.166666 E 128 22.95
+FIX EL401 LATLON S 0 43.085167 E 127 21.199834
+FIX EL402 LATLON S 0 40.661167 E 127 25.572
+FIX EL403 LATLON S 0 37.7815 E 127 24.4645
+FIX GUGUS LATLON S 0 54.4 E 127 9.8
+FIX KAO LATLON N 1 11.0995 E 127 53.6495
+FIX KUPAL LATLON S 0 36.747667 E 127 17.734667
+FIX RUMBO LATLON S 0 3.438334 E 125 53.815166
+FIX TRN LATLON N 0 50.454833 E 127 22.475833
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 24
+ENDRNWS
+
+STARS
+STAR BULI1A FIX BULI FIX KUPAL
+  RNW 06
+STAR GUGU1A FIX GUGUS FIX KUPAL
+  RNW 06
+STAR KAO1A FIX KAO FIX KUPAL
+  RNW 06
+STAR RUMB1A FIX RUMBO FIX KUPAL
+  RNW 06
+STAR TRN1A FIX TRN FIX KUPAL
+  RNW 06
+ENDSTARS
+
+APPROACHES
+APPROACH RNV06 FIX EL401 AT OR ABOVE 3500 FIX EL402 2350 RNW 06 TURN LEFT DIRECT FIX EL403 FIX KUPAL AT OR ABOVE 6500 SPEED 160
+ TRANSITION KUPAL FIX KUPAL AT OR ABOVE 6500
+ENDAPPROACHES

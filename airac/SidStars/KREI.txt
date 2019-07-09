@@ -1,0 +1,38 @@
+//KREI (REDLANDS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ERGOH LATLON N 34 0.106834 W 117 8.782667
+FIX HDF LATLON N 33 46.579834 W 117 11.1195
+FIX LUHLU LATLON N 34 5.109667 W 117 8.782667
+FIX PDZ LATLON N 33 55.100167 W 117 31.799833
+FIX WEEDD LATLON N 33 54.156667 W 117 8.782667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA08 FIX WEEDD AT OR ABOVE 6000 FIX ERGOH 4500 FIX OVERFLY LUHLU 3820 RNW 08 TURN LEFT DIRECT FIX OVERFLY WEEDD AT OR ABOVE 7000 SPEED 230 HOLD AT FIX WEEDD RIGHT TURN INBOUNDCOURSE 346 ALT 7000 LEGDIST 5
+ TRANSITION HDF FIX HDF
+ TRANSITION PDZ FIX PDZ FIX OVERFLY WEEDD AT OR ABOVE 6000 HOLD AT FIX WEEDD RIGHT TURN INBOUNDCOURSE 346 ALT 6000 LEGDIST 5
+APPROACH RNVA26 FIX WEEDD AT OR ABOVE 6000 FIX ERGOH 4500 FIX OVERFLY LUHLU 3820 RNW 26 TURN LEFT DIRECT FIX OVERFLY WEEDD AT OR ABOVE 7000 SPEED 230 HOLD AT FIX WEEDD RIGHT TURN INBOUNDCOURSE 346 ALT 7000 LEGDIST 5
+ TRANSITION HDF FIX HDF
+ TRANSITION PDZ FIX PDZ FIX OVERFLY WEEDD AT OR ABOVE 6000 HOLD AT FIX WEEDD RIGHT TURN INBOUNDCOURSE 346 ALT 6000 LEGDIST 5
+ENDAPPROACHES

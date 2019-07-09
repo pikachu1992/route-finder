@@ -1,0 +1,47 @@
+//RCKW (HENGCHUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 22 7.999512 E 120 41.404257
+FIX AF002 LATLON N 22 6.74926 E 120 39.711376
+FIX AF003 LATLON N 22 2.074136 E 120 35.989192
+FIX AF004 LATLON N 22 3.753564 E 120 36.989927
+FIX D292H LATLON N 21 58.277 E 120 42.478333
+FIX D292O LATLON N 22 0.5555 E 120 35.353333
+FIX D313O LATLON N 22 5.322334 E 120 38.232667
+FIX FONGA LATLON N 22 9.1935 E 120 43.533
+FIX HCN LATLON N 21 55.666667 E 120 50.615
+FIX HOWAN LATLON N 22 3.583333 E 120 40.466666
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+STARS
+STAR FA1A FIX FONGA FIX AF001 FIX AF002 FIX D313O FIX OVERFLY HOWAN 3300
+  RNW 14 RNW 32
+STAR HC1H FIX HCN FIX D292H FIX D292O FIX AF003 FIX AF004 FIX D313O FIX OVERFLY HOWAN 3300
+  RNW 14 RNW 32
+ENDSTARS
+
+GATES
+GATE 1 N 22 2.401 E 120 43.969667
+GATE 2 N 22 2.382667 E 120 43.987
+GATE 3 N 22 2.364334 E 120 44.004334
+ENDGATES

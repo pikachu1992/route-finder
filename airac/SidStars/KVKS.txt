@@ -1,0 +1,37 @@
+//KVKS (VICKSBURG MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ADIVE LATLON N 32 2.854333 W 90 57.494666
+FIX CAVOD LATLON N 32 12.201167 W 90 56.029
+FIX DOGME LATLON N 32 8.814833 W 90 56.5605
+FIX USEZU LATLON N 32 17.064334 W 90 55.265
+FIX WIVNI LATLON N 32 25.802333 W 90 53.8895
+FIX ZOKLU LATLON N 32 19.838666 W 90 54.828833
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX ADIVE AT OR ABOVE 2000 FIX DOGME 1800 FIX CAVOD AT OR ABOVE 700 RNW 01 TRK 008 UNTIL 507 FIX OVERFLY WIVNI AT OR ABOVE 2000 HOLD AT FIX WIVNI RIGHT TURN INBOUNDCOURSE 188 LEGDIST 4
+ TRANSITION ADIVE HOLD AT FIX ADIVE RIGHT TURN INBOUNDCOURSE 008 ALT 2000 LEGDIST 4
+APPROACH RNV19 FIX WIVNI AT OR ABOVE 2000 FIX ZOKLU 1800 FIX USEZU AT OR ABOVE 900 RNW 19 TRK 188 UNTIL 507 FIX OVERFLY ADIVE AT OR ABOVE 2000 HOLD AT FIX ADIVE RIGHT TURN INBOUNDCOURSE 008 LEGDIST 4
+ TRANSITION WIVNI HOLD AT FIX WIVNI RIGHT TURN INBOUNDCOURSE 188 ALT 2000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,38 @@
+//SBCI (BRIG LYSIAS A RODRIGUES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CNA LATLON S 7 19.123834 W 47 27.289166
+FIX NOVOI LATLON S 9 48.44 W 48 12.67
+FIX TIZA LATLON S 6 52 W 47 27.22
+FIX VIRU LATLON S 7 45.28 W 47 34.52
+FIX YTZ LATLON S 5 31.433333 W 47 26.9905
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID TIZA
+ RNW 11 TRK 106 UNTIL 1950 HDG 350 INTERCEPT RADIAL 021 TO FIX TIZA FIX TIZA FIX YTZ
+ RNW 29 TRK 286 UNTIL 2200 HDG 050 INTERCEPT RADIAL 021 TO FIX TIZA FIX TIZA FIX YTZ
+SID VIRU
+ RNW 11 TRK 106 UNTIL 1950 HDG 245 INTERCEPT RADIAL 217 TO FIX VIRU FIX VIRU FIX NOVOI
+ RNW 29 TRK 286 UNTIL 2200 HDG 185 INTERCEPT RADIAL 217 TO FIX VIRU FIX VIRU FIX NOVOI
+ENDSIDS

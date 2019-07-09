@@ -1,0 +1,49 @@
+//YBGO (BALGO HILL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BGOND LATLON S 20 1.585 E 127 47.36
+FIX BGONE LATLON S 19 56.238334 E 127 49.616666
+FIX BGONF LATLON S 20 4.631666 E 127 55.441667
+FIX BGONG LATLON S 19 56.411666 E 127 55.703333
+FIX BGONH LATLON S 20 12.185 E 128 0.688333
+FIX BGONI LATLON S 20 0.435 E 127 52.528333
+FIX BGONM LATLON S 20 8.828333 E 127 58.355
+FIX BGOSA LATLON S 20 16.973333 E 128 10.001666
+FIX BGOSB LATLON S 20 22.323334 E 128 7.748333
+FIX BGOSC LATLON S 20 22.153333 E 128 1.645
+FIX BGOSF LATLON S 20 13.935 E 128 1.905
+FIX BGOSH LATLON S 20 7.221667 E 127 57.24
+FIX BGOSI LATLON S 20 18.128333 E 128 4.825
+FIX BGOSM LATLON S 20 9.738334 E 127 58.988333
+ENDFIXES
+
+RNWS
+RNW 15
+RNW 33
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ15 FIX BGONI AT OR ABOVE 2800 FIX BGONF 2800 FIX OVERFLY BGONM 1449 RNW 15 FIX BGONH TRK 144 UNTIL 2800
+ TRANSITION BGOND FIX BGOND AT OR ABOVE 2800 SPEED 210
+ TRANSITION BGONE FIX BGONE AT OR ABOVE 2800 SPEED 210
+ TRANSITION BGONG FIX BGONG AT OR ABOVE 2800 SPEED 210
+APPROACH RNV33 FIX BGOSI AT OR ABOVE 3300 FIX BGOSF 3150 FIX OVERFLY BGOSM 1562 RNW 33 FIX BGOSH TRK 324 UNTIL 2800
+ TRANSITION BGOSA FIX BGOSA AT OR ABOVE 3300 SPEED 210
+ TRANSITION BGOSB FIX BGOSB AT OR ABOVE 3300 SPEED 210
+ TRANSITION BGOSC FIX BGOSC AT OR ABOVE 3300 SPEED 210
+ENDAPPROACHES

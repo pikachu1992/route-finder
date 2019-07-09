@@ -1,0 +1,35 @@
+//KSOY (SIOUX CENTER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AYDOS LATLON N 43 13.357166 W 96 11.3565
+FIX CUBEX LATLON N 43 23.199 W 96 14.35
+FIX FIBIK LATLON N 43 23.4245 W 96 8.423333
+FIX OBDEZ LATLON N 43 19.380167 W 96 11.477666
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV18 FIX OBDEZ AT OR ABOVE 4000 FIX AYDOS 3100 RNW 18 TRK 174 UNTIL 1850 TURN RIGHT DIRECT FIX OVERFLY CUBEX AT OR ABOVE 4000 HOLD AT FIX CUBEX RIGHT TURN INBOUNDCOURSE 057 LEGDIST 4
+ TRANSITION CUBEX FIX CUBEX
+ TRANSITION FIBIK FIX FIBIK
+ TRANSITION OBDEZ HOLD AT FIX OBDEZ RIGHT TURN INBOUNDCOURSE 174 ALT 4000 LEGDIST 4
+ENDAPPROACHES

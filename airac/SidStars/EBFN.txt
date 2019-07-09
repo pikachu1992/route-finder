@@ -1,0 +1,39 @@
+//EBFN (KOKSIJDE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX D149H LATLON N 50 58.760167 E 2 45.429
+FIX D149P LATLON N 50 51.831167 E 2 51.726833
+FIX FD29 LATLON N 51 3.230333 E 2 46.725167
+FIX KOK LATLON N 51 5.683333 E 2 39.1
+FIX KOK29 LATLON N 50 48.968 E 3 16.5565
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+SIDS
+SID FN11 RNW 11 TRK 107 UNTIL 500 TRK 184 INTERCEPT RADIAL 149 TO FIX D149H FIX D149H AT OR BELOW 4500 FIX OVERFLY D149P AT OR ABOVE 4500 FIX KOK29
+SID FN29 RNW 29 TRK 287 UNTIL 500 TRK 108 INTERCEPT RADIAL 149 TO FIX D149H FIX D149H AT OR BELOW 4500 FIX OVERFLY D149P AT OR ABOVE 4500 FIX KOK29
+ENDSIDS
+
+APPROACHES
+APPROACH VDM29 FIX FD29 1500 RNW 29 FIX KOK TRK 296 UNTIL 3.0 FROM FIX KOK TURN LEFT DIRECT FIX KOK 2000 SPEED 210
+ TRANSITION KOK FIX KOK AT OR BELOW 4500 AT OR ABOVE 2000 TRK 131 UNTIL 6.0 FROM FIX KOK
+ENDAPPROACHES

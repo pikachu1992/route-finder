@@ -1,0 +1,49 @@
+//YCTM (COOTAMUNDRA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CTMNA LATLON S 34 24.98 E 147 54.728333
+FIX CTMNC LATLON S 34 21.165 E 147 59.91
+FIX CTMNF LATLON S 34 31.115 E 148 1.306667
+FIX CTMNH LATLON S 34 39.573334 E 148 2.496667
+FIX CTMNI LATLON S 34 26.14 E 148 0.608333
+FIX CTMNM LATLON S 34 36.09 E 148 2.005
+FIX CTMSE LATLON S 34 49.16 E 148 9.595
+FIX CTMSF LATLON S 34 43.03 E 148 2.983333
+FIX CTMSG LATLON S 34 52.978333 E 148 4.391666
+FIX CTMSH LATLON S 34 35.07 E 148 1.861667
+FIX CTMSI LATLON S 34 48.005 E 148 3.686666
+FIX CTMSJ LATLON S 34 50.248333 E 147 58.256666
+FIX CTMSM LATLON S 34 38.055 E 148 2.281667
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 16
+RNW 28
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNVZ16 FIX CTMNI AT OR ABOVE 4600 FIX CTMNF 3050 FIX OVERFLY CTMNM 1456 RNW 16 FIX OVERFLY CTMNH HDG 327 VECTORS
+ TRANSITION CTMNA FIX CTMNA AT OR ABOVE 4600
+ TRANSITION CTMNC FIX CTMNC AT OR ABOVE 4600
+APPROACH RNVZ34 FIX CTMSI AT OR ABOVE 4200 FIX CTMSF 2890 FIX OVERFLY CTMSM 1296 RNW 34 FIX OVERFLY CTMSH HDG 177 VECTORS
+ TRANSITION CTMSE FIX CTMSE AT OR ABOVE 4200
+ TRANSITION CTMSG FIX CTMSG AT OR ABOVE 4200
+ TRANSITION CTMSJ FIX CTMSJ AT OR ABOVE 4200
+ENDAPPROACHES

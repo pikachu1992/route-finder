@@ -1,0 +1,45 @@
+//EDME (EGGENFELDEN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BIBAG LATLON N 48 23.823 E 12 44.986834
+FIX EKLEN LATLON N 48 24.158333 E 12 53.71
+FIX ME010 LATLON N 48 23.958 E 12 49.500667
+FIX ME011 LATLON N 48 23.053834 E 12 37.599334
+FIX ME014 LATLON N 48 26.076167 E 12 47.9885
+FIX ME015 LATLON N 48 25.466833 E 12 37.84
+FIX ME020 LATLON N 48 28.114 E 12 52.576834
+FIX ME021 LATLON N 48 28.338334 E 12 58.570834
+FIX ME022 LATLON N 48 24.352333 E 12 58.903667
+FIX ME023 LATLON N 48 23.57 E 12 37.5305
+FIX ME024 LATLON N 48 26.209333 E 12 38.430667
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+SIDS
+SID BIBA1L RNW 26 TRK 264 UNTIL 1800 FIX OVERFLY ME011 TRK 256 UNTIL 3000 TURN RIGHT DIRECT FIX ME015 FIX BIBAG 5000
+SID BIBA1R RNW 08 TRK 084 UNTIL 1800 FIX OVERFLY ME010 TRK 084 UNTIL 3500 TURN LEFT DIRECT FIX ME014 FIX BIBAG 5000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV26 FIX ME022 AT OR ABOVE 3500 FIX EKLEN 3500 RNW 26 FIX OVERFLY ME023 AT OR ABOVE 3500 TRK 264 UNTIL 3500 TURN RIGHT DIRECT FIX ME024 FIX BIBAG 5000
+ TRANSITION BIBAG FIX BIBAG AT OR ABOVE 5000 FIX ME020 AT OR ABOVE 4700 FIX ME021 AT OR ABOVE 4700
+ENDAPPROACHES

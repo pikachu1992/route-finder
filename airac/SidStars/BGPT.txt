@@ -1,0 +1,45 @@
+//BGPT (PAAMIUT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX 2NM LATLON N 61 53.204167 W 49 22.485833
+FIX BAMUG LATLON N 61 48.975667 W 49 34.2375
+FIX DOPOK LATLON N 62 6.683333 W 50 3.216667
+FIX GENSA LATLON N 61 48.027 W 49 19.472333
+FIX KUVIG LATLON N 62 9.75 W 49 54.8
+FIX LOBKA LATLON N 62 12.783334 W 49 46.366667
+FIX NANOK LATLON N 61 55.011667 W 49 17.432833
+FIX NOVGO LATLON N 62 5.8 W 49 48.3
+FIX PT351 LATLON N 61 51.997667 W 49 25.849166
+FIX PT352 LATLON N 61 55.328666 W 49 31.2275
+FIX ROPKI LATLON N 62 1.05 W 49 40.533334
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX KUVIG AT OR ABOVE 3500 FIX NOVGO 2700 FIX OVERFLY ROPKI 167 RNW 17 TRK 168 UNTIL 1600 TURN RIGHT DIRECT FIX DOPOK 3500
+ TRANSITION DOPOK FIX DOPOK
+ TRANSITION LOBKA FIX LOBKA
+APPROACH RNVA35 FIX PT351 3200 FIX PT352 2900 RNW 35 TRK 348 UNTIL 1500 TURN LEFT DIRECT FIX BAMUG 3200 HOLD AT FIX BAMUG RIGHT TURN INBOUNDCOURSE 078 ALT 3200 LEGTIME 1
+ TRANSITION BAMUG FIX BAMUG AT OR ABOVE 3800
+ TRANSITION GENSA FIX GENSA AT OR ABOVE 4500
+ TRANSITION NANOK FIX NANOK AT OR ABOVE 4800 FIX 2NM AT OR ABOVE 3800
+ENDAPPROACHES

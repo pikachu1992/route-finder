@@ -1,0 +1,37 @@
+//K87I (YAZOO CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARUKY LATLON N 33 2.975 W 90 29.051666
+FIX FEMIK LATLON N 32 55.911 W 90 28.192
+FIX TEZLU LATLON N 32 47.400667 W 90 27.158833
+FIX UTASY LATLON N 32 42.416833 W 90 26.555333
+FIX UTDOL LATLON N 32 57.9915 W 90 28.444834
+FIX ZIGEL LATLON N 32 50.107166 W 90 27.487
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ARUKY AT OR ABOVE 2000 FIX UTDOL 1600 FIX FEMIK AT OR ABOVE 920 RNW 17 TRK 174 UNTIL 460 FIX OVERFLY UTASY AT OR ABOVE 2000 HOLD AT FIX UTASY RIGHT TURN INBOUNDCOURSE 354 LEGDIST 4
+ TRANSITION ARUKY HOLD AT FIX ARUKY RIGHT TURN INBOUNDCOURSE 174 ALT 2000 LEGDIST 4
+APPROACH RNV35 FIX UTASY AT OR ABOVE 2000 FIX TEZLU 1800 FIX ZIGEL AT OR ABOVE 920 RNW 35 TRK 354 UNTIL 460 FIX OVERFLY ARUKY AT OR ABOVE 2000 HOLD AT FIX ARUKY RIGHT TURN INBOUNDCOURSE 174 LEGDIST 4
+ TRANSITION UTASY HOLD AT FIX UTASY RIGHT TURN INBOUNDCOURSE 354 ALT 2000 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,41 @@
+//KPSB (MID-STATE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ETG LATLON N 41 12.897 W 78 8.565334
+FIX JEKUR LATLON N 41 2.747333 W 78 10.850167
+FIX PI001 LATLON N 40 56.453395 W 77 55.36372
+FIX PI002 LATLON N 41 0.493799 W 77 53.414798
+FIX PI003 LATLON N 40 59.191312 W 77 47.556752
+FIX PSB LATLON N 40 54.9755 W 77 59.563
+FIX WIDIP LATLON N 40 56.475667 W 78 7.170334
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 16
+RNW 24
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV16 FIX JEKUR AT OR ABOVE 4400 FIX WIDIP 3000 RNW 16 TRK 167 UNTIL 2800 TURN RIGHT DIRECT FIX OVERFLY JEKUR AT OR ABOVE 4400 HOLD AT FIX JEKUR RIGHT TURN INBOUNDCOURSE 167 LEGDIST 5
+ TRANSITION ETG FIX ETG
+ TRANSITION PSB FIX PSB FIX OVERFLY JEKUR AT OR ABOVE 4400 HOLD AT FIX JEKUR RIGHT TURN INBOUNDCOURSE 167 ALT 4400 LEGDIST 5
+APPROACH VOR24 FIX PSB 3500 RNW 24 TRK 256 UNTIL 2350 TURN RIGHT DIRECT FIX PSB AT OR ABOVE 4000 HOLD AT FIX PSB RIGHT TURN INBOUNDCOURSE 256 LEGTIME 1
+ TRANSITION PSB FIX PI001 AT OR ABOVE 4000 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 4000 SPEED 210 FIX PI003 AT OR ABOVE 4000 SPEED 210
+ENDAPPROACHES

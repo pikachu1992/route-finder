@@ -1,0 +1,43 @@
+//LTBG (BANDIRMA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AF001 LATLON N 40 0.285902 E 27 49.710035
+FIX AF002 LATLON N 39 59.393097 E 27 53.795102
+FIX ALGAN LATLON N 40 7.74 E 27 50.44
+FIX BDM LATLON N 40 19.005 E 27 58.925
+FIX CF36 LATLON N 40 7.627834 E 27 58.385
+FIX D177O LATLON N 40 3.602833 E 27 58.225
+FIX D177T LATLON N 39 59.002 E 27 58.016833
+FIX D205T LATLON N 40 1.659167 E 27 45.907
+FIX EKNEL LATLON N 40 3.430333 E 27 58.214
+FIX FF36 LATLON N 40 9.629 E 27 58.434
+FIX IBDM LATLON N 40 18.438334 E 27 58.558333
+FIX LAVSU LATLON N 39 58.427666 E 27 58.071
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH ILSY36 FIX CF36 AT OR ABOVE 3000 FIX FF36 3000 RNW 36 TRK 356 UNTIL 4.0 FROM FIX IBDM TURN RIGHT DIRECT FIX EKNEL AT OR ABOVE 4300
+ TRANSITION LAVSU FIX LAVSU AT OR BELOW 5800 AT OR ABOVE 4300 FIX OVERFLY EKNEL 4300
+APPROACH ILSZ36 FIX CF36 AT OR ABOVE 3000 FIX FF36 3000 RNW 36 TRK 356 UNTIL 570 TRK 353 UNTIL 4.0 FROM FIX BDM TURN RIGHT DIRECT FIX D205T AT OR ABOVE 5500
+ TRANSITION ALGAN FIX ALGAN FIX D205T FIX AF001 FIX AF002 FIX D177T AT OR ABOVE 5500 FIX D177O AT OR ABOVE 4200
+ENDAPPROACHES

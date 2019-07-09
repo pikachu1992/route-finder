@@ -1,0 +1,35 @@
+//KCNP (RAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CNPNB LATLON N 41 4.599334 W 102 27.533
+FIX ENIWU LATLON N 41 1.444667 W 102 24.279334
+FIX PI001 LATLON N 41 1.840708 W 102 24.676512
+FIX PI002 LATLON N 41 1.314365 W 102 19.019543
+FIX PI003 LATLON N 40 56.714435 W 102 19.382177
+FIX SNY LATLON N 41 5.8 W 102 58.98
+ENDFIXES
+
+RNWS
+RNW 12
+RNW 30
+ENDRNWS
+
+APPROACHES
+APPROACH NDB30 FIX ENIWU 4960 FIX CNPNB 3722 RNW 30 TRK 312 UNTIL 5500 TURN RIGHT DIRECT FIX CNPNB HOLD AT FIX CNPNB RIGHT TURN INBOUNDCOURSE 312 LEGTIME 1
+ TRANSITION SNY FIX SNY FIX CNPNB AT OR ABOVE 5900 FIX PI001 AT OR ABOVE 5500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 5500 SPEED 210 FIX PI003 AT OR ABOVE 5500 SPEED 210
+ENDAPPROACHES

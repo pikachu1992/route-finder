@@ -1,0 +1,43 @@
+//KCVH (HOLLISTER MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAMAF LATLON N 36 47.365 W 121 18.527167
+FIX HARTU LATLON N 36 40.815334 W 121 11.948833
+FIX IGRUC LATLON N 36 42.6225 W 121 13.916167
+FIX JINDI LATLON N 36 45.461833 W 121 16.675333
+FIX KAZWY LATLON N 36 49.79 W 121 20.8895
+FIX KEKDY LATLON N 36 39.786 W 121 16.914
+FIX RANCK LATLON N 36 35.498333 W 121 6.172834
+FIX RUDNY LATLON N 36 37.424333 W 121 19.4065
+FIX SANTY LATLON N 36 58.754333 W 122 4.3845
+FIX WAKAM LATLON N 36 38.182166 W 121 9.086167
+FIX ZEDOX LATLON N 36 56.407166 W 121 27.353
+ENDFIXES
+
+RNWS
+RNW 06
+RNW 13
+RNW 24
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX IGRUC AT OR ABOVE 4000 FIX JINDI AT OR ABOVE 3300 FIX CAMAF 2700 FIX KAZWY AT OR ABOVE 1580 RNW 31 FIX ZEDOX FIX OVERFLY SANTY AT OR ABOVE 7000 HOLD AT FIX SANTY RIGHT TURN INBOUNDCOURSE 095 LEGDIST 7
+ TRANSITION RANCK FIX RANCK FIX WAKAM AT OR ABOVE 5400 FIX HARTU AT OR ABOVE 4600
+ TRANSITION RUDNY FIX RUDNY FIX KEKDY AT OR ABOVE 5200
+ENDAPPROACHES

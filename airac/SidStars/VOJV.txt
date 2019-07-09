@@ -1,0 +1,33 @@
+//VOJV (JINDAL VIJAYANAGAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX EN13 LATLON N 15 10.6415 E 76 37.663333
+FIX FN13 LATLON N 15 15.244333 E 76 33.8235
+FIX VNNB LATLON N 15 10.561667 E 76 37.73
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH NDB13 FIX FN13 3700 FIX OVERFLY EN13 1687 FIX OVERFLY VNNB AT OR ABOVE 2070 RNW 13 TRK 142 UNTIL 3700 TURN RIGHT DIRECT FIX VNNB 4900 HOLD AT FIX VNNB RIGHT TURN INBOUNDCOURSE 343 ALT 4900 LEGTIME 1
+ TRANSITION VN1 FIX VNNB AT OR ABOVE 4900 SPEED 180 TRK 343 UNTIL 6.0 FROM FIX VNNB
+ TRANSITION VN2 FIX VNNB AT OR ABOVE 4900 SPEED 180 TRK 334 UNTIL 6.0 FROM FIX VNNB
+ENDAPPROACHES

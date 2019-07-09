@@ -1,0 +1,38 @@
+//OEST (SHABITAH)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KUTRA LATLON N 22 45.441667 E 53 12.463333
+FIX MD13 LATLON N 22 43.246834 E 53 15.9565
+FIX MD31 LATLON N 22 42.017 E 53 17.659333
+FIX NABIT LATLON N 22 39.418333 E 53 20.813333
+FIX SBT LATLON N 22 42.748333 E 53 16.768333
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH VDM13 FIX KUTRA 1800 FIX MD13 566 RNW 13 TRK 122 UNTIL 2000 TURN RIGHT DIRECT FIX SBT 2000 HOLD AT FIX SBT LEFT TURN INBOUNDCOURSE 310 LEGTIME 1
+ TRANSITION KUTRA HOLD AT FIX KUTRA RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1
+ TRANSITION SBT FIX SBT AT OR ABOVE 2000 FIX KUTRA HOLD AT FIX KUTRA RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1
+APPROACH VDM31 FIX NABIT 1800 FIX MD31 569 RNW 31 TRK 310 UNTIL 2000 TURN LEFT DIRECT FIX SBT HOLD AT FIX SBT RIGHT TURN INBOUNDCOURSE 122 ALT 2000 LEGTIME 1
+ TRANSITION NABIT HOLD AT FIX NABIT LEFT TURN INBOUNDCOURSE 310 ALT 2000 LEGTIME 1
+ TRANSITION SBT FIX SBT AT OR ABOVE 2000 FIX NABIT HOLD AT FIX NABIT LEFT TURN INBOUNDCOURSE 310 ALT 2000 LEGTIME 1
+ENDAPPROACHES

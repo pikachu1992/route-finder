@@ -1,0 +1,37 @@
+//KK79 (JETMORE MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GLEDS LATLON N 38 0.915 W 99 53.6175
+FIX HOGAS LATLON N 38 4.117166 W 99 53.543833
+FIX JEMOR LATLON N 37 47.4215 W 99 53.926166
+FIX OFAYS LATLON N 38 10.723166 W 99 53.391833
+FIX SLIPE LATLON N 37 57.2195 W 99 53.702
+FIX TOXIC LATLON N 37 54.028 W 99 53.775167
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX OFAYS AT OR ABOVE 5000 FIX HOGAS 4000 FIX GLEDS AT OR ABOVE 2980 RNW 17 TRK 173 UNTIL 2767 FIX JEMOR AT OR ABOVE 5000 HOLD AT FIX JEMOR RIGHT TURN INBOUNDCOURSE 353 LEGDIST 5
+ TRANSITION OFAYS HOLD AT FIX OFAYS LEFT TURN INBOUNDCOURSE 173 ALT 5000 LEGDIST 5
+APPROACH RNV35 FIX JEMOR AT OR ABOVE 5000 FIX TOXIC 4000 FIX SLIPE AT OR ABOVE 2980 RNW 35 TRK 353 UNTIL 2767 FIX OFAYS AT OR ABOVE 5000 HOLD AT FIX OFAYS LEFT TURN INBOUNDCOURSE 173 LEGDIST 5
+ TRANSITION JEMOR HOLD AT FIX JEMOR RIGHT TURN INBOUNDCOURSE 353 ALT 5000 LEGDIST 5
+ENDAPPROACHES

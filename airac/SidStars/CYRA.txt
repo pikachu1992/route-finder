@@ -1,0 +1,45 @@
+//CYRA (RAE LAKES)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AXUNI LATLON N 64 11.527 W 117 44.730833
+FIX BORUV LATLON N 64 2.3665 W 116 52.654667
+FIX BOVIG LATLON N 64 10.720333 W 117 26.9315
+FIX DENGO LATLON N 63 59.975 W 117 3.169
+FIX EBGES LATLON N 63 55.429166 W 117 8.951167
+FIX LEXOP LATLON N 64 18.4655 W 117 28.279667
+FIX NAPDU LATLON N 64 8.934 W 117 22.949833
+FIX OVBOL LATLON N 64 13.935667 W 117 34.1305
+FIX OVIDI LATLON N 63 58.901666 W 117 0.819667
+FIX PURAR LATLON N 64 15 W 117 36.5225
+FIX SEBAL LATLON N 64 3.21 W 117 10.276
+FIX UKULI LATLON N 64 4.858834 W 117 13.913833
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX PURAR AT OR ABOVE 2700 FIX BOVIG 2470 FIX NAPDU AT OR ABOVE 1620 RNW 14 FIX OVERFLY DENGO 2700 HOLD AT FIX DENGO RIGHT TURN INBOUNDCOURSE 012 LEGTIME 1
+ TRANSITION AXUNI FIX AXUNI
+ TRANSITION LEXOP FIX LEXOP
+APPROACH RNV32 FIX OVIDI AT OR ABOVE 2700 FIX SEBAL 2400 FIX UKULI AT OR ABOVE 1800 RNW 32 FIX OVERFLY OVBOL 2700 HOLD AT FIX OVBOL RIGHT TURN INBOUNDCOURSE 030 LEGTIME 1
+ TRANSITION BORUV FIX BORUV
+ TRANSITION EBGES FIX EBGES
+ENDAPPROACHES

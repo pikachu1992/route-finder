@@ -1,0 +1,39 @@
+//20GA (SMALL JR/STOCKMAR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ARPPE LATLON N 33 36.289834 W 85 14.217
+FIX CARAN LATLON N 33 57.556 W 85 8.962667
+FIX EARRL LATLON N 33 45.602333 W 85 0.570334
+FIX MARSL LATLON N 33 50.8045 W 85 7.6225
+FIX PPEGE LATLON N 33 45.798 W 85 7.813166
+FIX RRNDA LATLON N 33 40.791334 W 85 8.0035
+FIX SMMAL LATLON N 33 45.490667 W 84 56.5445
+FIX TEMPO LATLON N 33 36.678167 W 85 2.318167
+ENDFIXES
+
+RNWS
+RNW 10
+RNW 28
+ENDRNWS
+
+APPROACHES
+APPROACH RNV10 FIX PPEGE AT OR ABOVE 3000 FIX EARRL 3000 FIX SMMAL AT OR ABOVE 1900 RNW 10 TRK 095 UNTIL 1510 TURN LEFT DIRECT FIX OVERFLY PPEGE AT OR ABOVE 3000 HOLD AT FIX PPEGE LEFT TURN INBOUNDCOURSE 095 LEGDIST 4
+ TRANSITION ARPPE FIX ARPPE FIX RRNDA AT OR ABOVE 3800
+ TRANSITION CARAN FIX CARAN FIX MARSL AT OR ABOVE 3700
+ TRANSITION TEMPO FIX TEMPO FIX RRNDA AT OR ABOVE 3700
+ENDAPPROACHES

@@ -1,0 +1,44 @@
+//K05U (EUREKA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX FESGO LATLON N 40 6.286333 W 115 52.628167
+FIX INGOL LATLON N 39 40.4845 W 115 4.7655
+FIX JEBEG LATLON N 40 13.171 W 115 25.080334
+FIX LECED LATLON N 39 24.7735 W 116 6.431
+FIX RAPYO LATLON N 39 16.892833 W 116 0.811667
+FIX SAYOT LATLON N 39 42.723334 W 115 58.585667
+FIX SIKEE LATLON N 40 23.080667 W 115 31.340333
+FIX YANKU LATLON N 40 20.306666 W 115 29.620166
+FIX ZIGBI LATLON N 39 51.552167 W 115 56.361667
+FIX ZOKPU LATLON N 40 10.428667 W 115 56.148667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+SIDS
+SID MINES1 RNW 36 HDG 358 UNTIL 6500 FIX ZOKPU FIX YANKU AT OR ABOVE 14000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV18 FIX ZIGBI AT OR ABOVE 10700 FIX SAYOT 7900 RNW 18 TRK 178 UNTIL 6358 FIX LECED FIX RAPYO FIX OVERFLY INGOL AT OR ABOVE 14000 HOLD AT FIX INGOL RIGHT TURN INBOUNDCOURSE 141 LEGDIST 8
+ TRANSITION JEBEG FIX JEBEG FIX FESGO AT OR ABOVE 13100
+ TRANSITION SIKEE FIX SIKEE FIX FESGO AT OR ABOVE 13100
+ENDAPPROACHES

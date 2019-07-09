@@ -1,0 +1,43 @@
+//PAKI (KIPNUK)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HIXTE LATLON N 60 9.6655 W 164 16.264166
+FIX JOSQO LATLON N 60 9.259834 W 164 0.277333
+FIX JUXUG LATLON N 59 42.1015 W 163 47.3095
+FIX LIYEK LATLON N 59 42.933667 W 164 18.8515
+FIX WIPIP LATLON N 60 1.292 W 164 1.12
+FIX WOMSA LATLON N 59 42.533333 W 164 3.077167
+FIX ZERPU LATLON N 60 8.822 W 163 44.2975
+FIX ZIVTO LATLON N 59 50.501833 W 164 2.250334
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX JOSQO AT OR ABOVE 2400 FIX WIPIP 1700 RNW 17 TRK 173 UNTIL 500 TURN LEFT DIRECT FIX OVERFLY JOSQO AT OR ABOVE 2400 HOLD AT FIX JOSQO RIGHT TURN INBOUNDCOURSE 173 LEGDIST 4
+ TRANSITION HIXTE FIX HIXTE
+ TRANSITION JOSQO HOLD AT FIX JOSQO RIGHT TURN INBOUNDCOURSE 173 ALT 2400 LEGDIST 4
+ TRANSITION ZERPU FIX ZERPU
+APPROACH RNV35 FIX WOMSA AT OR ABOVE 2400 FIX ZIVTO 1700 RNW 35 TRK 353 UNTIL 500 FIX OVERFLY ZERPU AT OR ABOVE 2400 HOLD AT FIX ZERPU RIGHT TURN INBOUNDCOURSE 263 ALT 2400 LEGDIST 4
+ TRANSITION JUXUG FIX JUXUG
+ TRANSITION LIYEK FIX LIYEK
+ TRANSITION WOMSA HOLD AT FIX WOMSA RIGHT TURN INBOUNDCOURSE 353 ALT 2400 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,37 @@
+//K5G7 (BLUFFTON)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALPEW LATLON N 40 56.049334 W 83 47.230834
+FIX CUDOD LATLON N 40 59.897333 W 83 40.776
+FIX FBC LATLON N 40 57.32 W 83 45.3615
+FIX PI001 LATLON N 40 59.661102 W 83 41.915428
+FIX PI002 LATLON N 41 3.955202 W 83 41.616942
+FIX PI003 LATLON N 41 4.004317 W 83 35.504748
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV23 FIX CUDOD AT OR ABOVE 2400 FIX ALPEW 2300 RNW 23 TRK 237 UNTIL 1251 TURN RIGHT DIRECT FIX OVERFLY FBC AT OR ABOVE 2500 HOLD AT FIX FBC RIGHT TURN INBOUNDCOURSE 236 LEGDIST 4
+ TRANSITION FBC FIX FBC FIX OVERFLY CUDOD AT OR ABOVE 2400 HOLD AT FIX CUDOD RIGHT TURN INBOUNDCOURSE 237 ALT 2400 LEGDIST 4
+APPROACH VOR23 FIX FBC 2500 RNW 23 TRK 233 UNTIL 2500 TURN RIGHT DIRECT FIX FBC HOLD AT FIX FBC RIGHT TURN INBOUNDCOURSE 233 LEGTIME 1
+ TRANSITION FBC FIX PI001 AT OR ABOVE 2500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 2500 SPEED 210 FIX PI003 AT OR ABOVE 2500 SPEED 210
+ENDAPPROACHES

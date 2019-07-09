@@ -1,0 +1,32 @@
+//FABE (BHISHO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BOV LATLON S 32 54.378667 E 27 16.166666
+FIX CI08 LATLON S 32 58.751666 E 27 7.916167
+FIX FI08 LATLON S 32 57.648667 E 27 9.900833
+FIX RW08 LATLON S 32 54.201833 E 27 16.0915
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH ILS08 FIX CI08 AT OR ABOVE 4000 FIX FI08 4000 RNW 08 FIX BOV AT OR ABOVE 4000 TRK 085 UNTIL 7.0 FROM FIX BOV TURN RIGHT DIRECT FIX BOV 4000 SPEED 200
+ENDAPPROACHES

@@ -1,0 +1,43 @@
+//KBPI (MILEY MEML)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BPI LATLON N 42 34.766833 W 110 6.552833
+FIX FF31 LATLON N 42 31.308667 W 110 1.714834
+FIX GRIPS LATLON N 41 47.637667 W 110 5.635333
+FIX HICDE LATLON N 42 30.402334 W 110 2.652167
+FIX JITJU LATLON N 42 26.584667 W 109 58.286167
+FIX OTAYI LATLON N 42 16.679167 W 110 0.1705
+FIX PI001 LATLON N 42 32.334683 W 110 3.135859
+FIX PI002 LATLON N 42 32.407261 W 109 57.300731
+FIX PI003 LATLON N 42 27.813352 W 109 56.80181
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 13
+RNW 26
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV31 FIX JITJU AT OR ABOVE 9000 FIX HICDE 8400 RNW 31 TRK 312 UNTIL 7394 TURN RIGHT DIRECT FIX OVERFLY JITJU AT OR ABOVE 9000 HOLD AT FIX JITJU RIGHT TURN INBOUNDCOURSE 312 LEGDIST 4
+ TRANSITION BPI FIX BPI FIX OVERFLY JITJU AT OR ABOVE 9600 HOLD AT FIX JITJU RIGHT TURN INBOUNDCOURSE 312 ALT 9000 LEGDIST 4
+ TRANSITION GRIPS FIX GRIPS FIX OTAYI AT OR ABOVE 9600
+APPROACH VOR31 FIX FF31 8500 RNW 31 FIX BPI AT OR ABOVE 7390 TRK 118 UNTIL 10000 TURN RIGHT DIRECT FIX BPI HOLD AT FIX BPI RIGHT TURN INBOUNDCOURSE 298 LEGTIME 1
+ TRANSITION BPI FIX PI001 AT OR ABOVE 8500 SPEED 210 FIX OVERFLY PI002 AT OR ABOVE 8500 SPEED 210 FIX PI003 AT OR ABOVE 8500 SPEED 210
+ENDAPPROACHES

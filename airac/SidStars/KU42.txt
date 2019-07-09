@@ -1,0 +1,45 @@
+//KU42 (SOUTH VALLEY REGIONAL AIRPORT)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ACIPO LATLON N 40 32.2305 W 111 58.7135
+FIX CELOD LATLON N 40 39.634667 W 112 0.001166
+FIX DUYDE LATLON N 40 40.661333 W 112 0.179833
+FIX FFU LATLON N 40 16.493666 W 111 56.431834
+FIX HOKEG LATLON N 40 34.749 W 111 59.152
+FIX HOKIT LATLON N 40 34.412833 W 111 59.092834
+FIX KITBE LATLON N 40 46.253167 W 112 5.7245
+FIX KOCEN LATLON N 40 20.7645 W 111 57.002666
+FIX LODME LATLON N 40 27.538 W 111 57.899167
+FIX STACO LATLON N 40 49.331833 W 112 25.175833
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+SIDS
+SID SVALY1
+ RNW 16 HDG 158 UNTIL 5107 FIX HOKEG FIX OVERFLY FFU AT OR ABOVE 9000
+ RNW 34 HDG 338 UNTIL 5107 FIX OVERFLY CELOD TURN RIGHT DIRECT FIX OVERFLY FFU AT OR ABOVE 9000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV34 FIX FFU AT OR ABOVE 9000 FIX KOCEN AT OR ABOVE 9000 FIX LODME 7600 FIX ACIPO AT OR ABOVE 6080 FIX HOKIT AT OR ABOVE 5380 RNW 34 TRK 338 UNTIL 4881 FIX DUYDE FIX KITBE FIX OVERFLY STACO AT OR ABOVE 9000 HOLD AT FIX STACO RIGHT TURN INBOUNDCOURSE 071 LEGDIST 7
+ TRANSITION FFU HOLD AT FIX FFU RIGHT TURN INBOUNDCOURSE 340 ALT 9000 LEGDIST 7
+ENDAPPROACHES

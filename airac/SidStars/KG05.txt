@@ -1,0 +1,35 @@
+//KG05 (FINLEYVILLE)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HOLUX LATLON N 40 28.3105 W 80 12.3825
+FIX TOCAR LATLON N 40 18.445 W 80 6.166333
+FIX WAKOB LATLON N 40 23.398166 W 80 13.623167
+FIX YOWED LATLON N 40 21.647666 W 80 19.752667
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA14 FIX WAKOB AT OR ABOVE 4100 FIX TOCAR 3000 RNW 14 TRK 138 UNTIL 1636 TURN RIGHT DIRECT FIX OVERFLY WAKOB AT OR ABOVE 4100 HOLD AT FIX WAKOB RIGHT TURN INBOUNDCOURSE 138 LEGDIST 5
+ TRANSITION HOLUX FIX HOLUX
+ TRANSITION WAKOB HOLD AT FIX WAKOB RIGHT TURN INBOUNDCOURSE 138 ALT 4100 LEGDIST 5
+ TRANSITION YOWED FIX YOWED
+ENDAPPROACHES

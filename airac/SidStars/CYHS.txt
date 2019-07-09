@@ -1,0 +1,47 @@
+//CYHS (SAUGEEN MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DEBTU LATLON N 44 21.066 W 81 10.6765
+FIX EMDAG LATLON N 44 2.816833 W 81 4.1795
+FIX ILIVO LATLON N 44 20.815 W 81 3.0195
+FIX KEGSI LATLON N 44 20.555333 W 80 55.363667
+FIX LEXIR LATLON N 44 14.821333 W 81 3.407167
+FIX LOLDA LATLON N 44 16.144667 W 81 3.321667
+FIX MIBDA LATLON N 43 58.042333 W 81 4.485334
+FIX PERVO LATLON N 44 4.036333 W 81 4.101334
+FIX RODVA LATLON N 43 58.292 W 81 12.0935
+FIX SIMTI LATLON N 43 57.784333 W 80 56.878333
+FIX VESLO LATLON N 43 52.547833 W 81 4.836167
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 09
+RNW 19
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX MIBDA AT OR ABOVE 2700 SPEED 180 FIX PERVO 2600 RNW 01 FIX OVERFLY LOLDA 3200 HOLD AT FIX LOLDA RIGHT TURN INBOUNDCOURSE 012 SPEED 200 LEGTIME 1
+ TRANSITION RODVA FIX RODVA SPEED 210
+ TRANSITION SIMTI FIX SIMTI SPEED 210
+ TRANSITION VESLO FIX VESLO
+APPROACH RNV19 FIX ILIVO AT OR ABOVE 2700 SPEED 180 FIX LEXIR 2600 RNW 19 FIX OVERFLY EMDAG 3200 HOLD AT FIX EMDAG RIGHT TURN INBOUNDCOURSE 192 SPEED 200 LEGTIME 1
+ TRANSITION DEBTU FIX DEBTU SPEED 210
+ TRANSITION KEGSI FIX KEGSI SPEED 210
+ENDAPPROACHES

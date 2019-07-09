@@ -1,0 +1,32 @@
+//K6M2 (HORSESHOE BEND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX OTSAY LATLON N 36 19.239167 W 91 55.689334
+FIX WIVOV LATLON N 36 8.434667 W 91 36.937667
+FIX ZUKNA LATLON N 36 10.179167 W 91 39.953666
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA31 FIX WIVOV AT OR ABOVE 3000 FIX ZUKNA 2400 RNW 31 TRK 305 UNTIL 1190 FIX OVERFLY OTSAY AT OR ABOVE 3500 HOLD AT FIX OTSAY RIGHT TURN INBOUNDCOURSE 125 LEGDIST 4
+ TRANSITION WIVOV HOLD AT FIX WIVOV RIGHT TURN INBOUNDCOURSE 306 ALT 3000 LEGDIST 4
+ENDAPPROACHES

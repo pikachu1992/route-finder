@@ -1,0 +1,37 @@
+//K6G5 (BARNESVILLE-BRADFIELD)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AIR LATLON N 40 1.0215 W 80 49.033667
+FIX AVACA LATLON N 40 0.833833 W 80 56.975
+FIX BAFEL LATLON N 40 0.423167 W 81 4.633667
+FIX KESEC LATLON N 40 0.297167 W 81 8.354167
+FIX KRABB LATLON N 40 0.468167 W 81 4.7695
+FIX LORES LATLON N 39 58.435166 W 81 26.596
+ENDFIXES
+
+RNWS
+RNW 09
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH VDM27 FIX AIR AT OR ABOVE 3000 FIX BAFEL 3000 RNW 27 TRK 274 UNTIL 3000 TURN LEFT DIRECT FIX BAFEL HOLD AT FIX BAFEL RIGHT TURN INBOUNDCOURSE 274 LEGTIME 1
+ TRANSITION BAFEL HOLD AT FIX BAFEL RIGHT TURN INBOUNDCOURSE 274 ALT 3000 LEGTIME 1
+APPROACH RNV27 FIX AVACA AT OR ABOVE 3400 FIX KRABB 2900 FIX KESEC AT OR ABOVE 2020 RNW 27 TRK 274 UNTIL 1712 FIX LORES 3000 HOLD AT FIX LORES RIGHT TURN INBOUNDCOURSE 094 LEGDIST 4
+ TRANSITION AVACA HOLD AT FIX AVACA RIGHT TURN INBOUNDCOURSE 275 ALT 3400 LEGDIST 4
+ENDAPPROACHES

@@ -1,0 +1,32 @@
+//K3S8 (GRANTS PASS)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KOLER LATLON N 42 46.082666 W 123 17.6355
+FIX KUSHI LATLON N 42 35.1695 W 123 28.190167
+FIX WALVI LATLON N 42 39.080167 W 123 32.412
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNVA13 FIX WALVI AT OR ABOVE 5700 FIX KUSHI 4700 RNW 13 TRK 124 UNTIL 3200 TURN RIGHT DIRECT FIX OVERFLY WALVI AT OR ABOVE 6600 HOLD AT FIX WALVI RIGHT TURN INBOUNDCOURSE 124 LEGDIST 5
+ TRANSITION KOLER FIX KOLER FIX OVERFLY WALVI AT OR ABOVE 6200 HOLD AT FIX WALVI RIGHT TURN INBOUNDCOURSE 124 ALT 5700 LEGDIST 5
+ENDAPPROACHES

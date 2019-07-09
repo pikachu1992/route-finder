@@ -1,0 +1,44 @@
+//K99N (BAMBERG CO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CUGUS LATLON N 33 22.365167 W 81 1.851
+FIX CUMOB LATLON N 33 6.245333 W 81 11.905
+FIX HORIM LATLON N 33 14.1265 W 81 11.207167
+FIX HURVO LATLON N 33 26.782667 W 80 56.816833
+FIX JIKOM LATLON N 33 9.698167 W 81 16.219
+FIX NUXUE LATLON N 33 30.244166 W 81 1.137667
+FIX WULKA LATLON N 33 23.318666 W 80 52.501834
+FIX YILDU LATLON N 33 13.1485 W 81 20.538667
+FIX ZODUG LATLON N 33 16.0265 W 81 9.053167
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX JIKOM AT OR ABOVE 2500 FIX HORIM 2000 FIX ZODUG AT OR ABOVE 1140 RNW 05 TRK 051 UNTIL 631 FIX OVERFLY HURVO AT OR ABOVE 2500 HOLD AT FIX HURVO RIGHT TURN INBOUNDCOURSE 231 LEGDIST 4
+ TRANSITION CUMOB FIX CUMOB AT OR ABOVE 2500
+ TRANSITION JIKOM HOLD AT FIX JIKOM RIGHT TURN INBOUNDCOURSE 051 ALT 2500 LEGDIST 4
+ TRANSITION YILDU FIX YILDU AT OR ABOVE 2500
+APPROACH RNV23 FIX HURVO AT OR ABOVE 2500 FIX CUGUS 2000 RNW 23 TRK 231 UNTIL 631 FIX OVERFLY JIKOM AT OR ABOVE 2500 HOLD AT FIX JIKOM RIGHT TURN INBOUNDCOURSE 051 LEGDIST 4
+ TRANSITION HURVO HOLD AT FIX HURVO RIGHT TURN INBOUNDCOURSE 231 ALT 2500 LEGDIST 4
+ TRANSITION NUXUE FIX NUXUE AT OR ABOVE 2500
+ TRANSITION WULKA FIX WULKA AT OR ABOVE 2500
+ENDAPPROACHES

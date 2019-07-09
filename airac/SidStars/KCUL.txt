@@ -1,0 +1,35 @@
+//KCUL (CARMI MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX HORAV LATLON N 37 51.561334 W 88 16.1655
+FIX LRLEI LATLON N 37 59.767333 W 88 7.4155
+FIX UXZOR LATLON N 37 52.760666 W 88 7.455667
+FIX WESON LATLON N 37 47.452333 W 87 55.524667
+ENDFIXES
+
+RNWS
+RNW 18
+RNW 36
+ENDRNWS
+
+APPROACHES
+APPROACH RNV36 FIX UXZOR AT OR ABOVE 2100 FIX LRLEI 2100 RNW 36 TRK 001 UNTIL 1500 TURN RIGHT DIRECT FIX OVERFLY UXZOR AT OR ABOVE 2100 HOLD AT FIX UXZOR RIGHT TURN INBOUNDCOURSE 001 LEGDIST 4
+ TRANSITION HORAV FIX HORAV
+ TRANSITION UXZOR HOLD AT FIX UXZOR RIGHT TURN INBOUNDCOURSE 001 ALT 2100 LEGDIST 4
+ TRANSITION WESON FIX WESON
+ENDAPPROACHES

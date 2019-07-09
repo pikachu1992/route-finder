@@ -1,0 +1,40 @@
+//BINF (NORDFJORDUR)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BAMSI LATLON N 65 19.835 W 13 15.1205
+FIX NESOK LATLON N 65 15.379333 W 13 9.787
+FIX NFCP1 LATLON N 65 13.592333 W 13 18.286834
+FIX NFCP2 LATLON N 65 11.347333 W 13 28.884667
+FIX UNDIN LATLON N 65 10.920334 W 13 4.483333
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNVC08 FIX NFCP1 2100 FIX OVERFLY NFCP2 500 SPEED 130 RNW 08 TURN RIGHT DIRECT FIX NESOK AT OR ABOVE 1500 SPEED 130 HOLD AT FIX NESOK LEFT TURN INBOUNDCOURSE 254 ALT 2900 LEGTIME 1
+ TRANSITION BAMSI FIX BAMSI AT OR ABOVE 4600 FIX NESOK AT OR ABOVE 2900
+ TRANSITION NESOK FIX NESOK 2900
+ TRANSITION UNDIN FIX UNDIN AT OR ABOVE 4600 FIX NESOK AT OR ABOVE 2900
+APPROACH RNVC26 FIX NFCP1 2100 FIX OVERFLY NFCP2 500 SPEED 130 RNW 26 TURN RIGHT DIRECT FIX NESOK AT OR ABOVE 1500 SPEED 130 HOLD AT FIX NESOK LEFT TURN INBOUNDCOURSE 254 ALT 2900 LEGTIME 1
+ TRANSITION BAMSI FIX BAMSI AT OR ABOVE 4600 FIX NESOK AT OR ABOVE 2900
+ TRANSITION NESOK FIX NESOK 2900
+ TRANSITION UNDIN FIX UNDIN AT OR ABOVE 4600 FIX NESOK AT OR ABOVE 2900
+ENDAPPROACHES

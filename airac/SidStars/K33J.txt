@@ -1,0 +1,37 @@
+//K33J (GENEVA MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX QASQO LATLON N 31 3.883166 W 85 54.836
+FIX RURAE LATLON N 31 4.588333 W 85 57.4635
+FIX SOVRE LATLON N 31 6.626 W 86 5.077166
+FIX TIYUN LATLON N 31 2.401166 W 85 49.326667
+FIX USPEC LATLON N 31 1.7245 W 85 46.816333
+FIX VUTUC LATLON N 30 59.668667 W 85 39.211166
+ENDFIXES
+
+RNWS
+RNW 11
+RNW 29
+ENDRNWS
+
+APPROACHES
+APPROACH RNV11 FIX SOVRE AT OR ABOVE 2000 FIX RURAE 1800 FIX QASQO AT OR ABOVE 920 RNW 11 TRK 111 UNTIL 500 FIX OVERFLY VUTUC AT OR ABOVE 2000 HOLD AT FIX VUTUC RIGHT TURN INBOUNDCOURSE 291 LEGDIST 4
+ TRANSITION SOVRE HOLD AT FIX SOVRE RIGHT TURN INBOUNDCOURSE 111 ALT 2000 LEGDIST 4
+APPROACH RNV29 FIX VUTUC AT OR ABOVE 2000 FIX USPEC 1800 FIX TIYUN AT OR ABOVE 960 RNW 29 TRK 291 UNTIL 500 FIX OVERFLY SOVRE AT OR ABOVE 2000 HOLD AT FIX SOVRE RIGHT TURN INBOUNDCOURSE 111 LEGDIST 4
+ TRANSITION VUTUC HOLD AT FIX VUTUC RIGHT TURN INBOUNDCOURSE 291 ALT 2000 LEGDIST 4
+ENDAPPROACHES

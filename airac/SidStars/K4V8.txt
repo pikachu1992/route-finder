@@ -1,0 +1,38 @@
+//K4V8 (DEERFIELD VALLEY REGL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CAM LATLON N 42 59.657333 W 73 20.641166
+FIX CTR LATLON N 42 17.479166 W 72 56.963666
+FIX GRAVE LATLON N 42 46.789 W 73 22.3485
+FIX GRISY LATLON N 42 41.773333 W 72 53.502334
+FIX ICURO LATLON N 42 49.531667 W 72 52.5855
+FIX WARIC LATLON N 42 37.7 W 72 30.628667
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX GRISY AT OR ABOVE 5000 FIX ICURO 3900 RNW 01 TRK 020 UNTIL 2353 TURN RIGHT DIRECT FIX OVERFLY GRISY AT OR ABOVE 5000 HOLD AT FIX GRISY RIGHT TURN INBOUNDCOURSE 020 LEGDIST 4
+ TRANSITION CAM FIX CAM FIX GRAVE AT OR ABOVE 5000
+ TRANSITION CTR FIX CTR
+ TRANSITION GRISY HOLD AT FIX GRISY RIGHT TURN INBOUNDCOURSE 020 ALT 5000 LEGDIST 4
+ TRANSITION WARIC FIX WARIC
+ENDAPPROACHES

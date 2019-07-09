@@ -1,0 +1,39 @@
+//KCLW (CLEARWATER)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BRDGE LATLON N 27 27.155 W 82 8.062333
+FIX JSTRM LATLON N 27 41.5095 W 82 25.351166
+FIX LBV LATLON N 26 49.691167 W 81 23.486333
+FIX PHK LATLON N 26 46.9645 W 80 41.486
+FIX PIE LATLON N 27 54.465833 W 82 41.0585
+FIX ROGAN LATLON N 27 15.047666 W 81 53.5715
+FIX RSW LATLON N 26 31.7925 W 81 46.546
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+STARS
+STAR BRDGE8 FIX BRDGE FIX JSTRM FIX PIE
+ TRANSITION LBV FIX LBV FIX ROGAN
+ TRANSITION PHK FIX PHK
+ TRANSITION RSW FIX RSW FIX ROGAN
+  RNW 16 RNW 34
+ENDSTARS

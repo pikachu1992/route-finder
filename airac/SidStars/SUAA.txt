@@ -1,0 +1,35 @@
+//SUAA (ANGEL S ADAMI INTL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ASINB LATLON S 34 47.371667 W 56 15.781667
+FIX FN19 LATLON S 34 42.9475 W 56 16.5345
+FIX ILMAS LATLON S 34 37.003 W 56 16.6195
+FIX IREDU LATLON S 34 42.003 W 56 16.270166
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH NDB19 FIX FN19 1500 RNW 19 FIX ASINB AT OR ABOVE 574 TRK 180 UNTIL 2000 TURN RIGHT DIRECT FIX ASINB
+ TRANSITION ASI FIX ASINB AT OR ABOVE 3000 TRK 345 UNTIL 10.5 FROM FIX ASINB
+APPROACH RNV19 FIX ILMAS AT OR ABOVE 3000 FIX IREDU 1800 RNW 19 TRK 185 UNTIL 2000 TURN RIGHT DIRECT FIX ILMAS AT OR ABOVE 3000
+ TRANSITION ILMAS HOLD AT FIX ILMAS RIGHT TURN INBOUNDCOURSE 185 ALT 3000 LEGTIME 1
+ENDAPPROACHES

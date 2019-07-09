@@ -1,0 +1,38 @@
+//WASO (BABO)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BMNB LATLON S 2 32.138333 E 133 26.396666
+FIX FN02 LATLON S 2 36.063667 E 133 23.9575
+FIX FN20 LATLON S 2 27.390167 E 133 27.8405
+ENDFIXES
+
+RNWS
+RNW 02
+RNW 20
+ENDRNWS
+
+APPROACHES
+APPROACH NDBY02 FIX FN02 1500 RNW 02 FIX OVERFLY BMNB TRK 030 UNTIL 1500 TURN LEFT DIRECT FIX BMNB 2500 HOLD AT FIX BMNB LEFT TURN INBOUNDCOURSE 182 ALT 2500 LEGTIME 1
+ TRANSITION BM FIX BMNB AT OR ABOVE 2500 TRK 182 UNTIL 7.0 FROM FIX BMNB
+APPROACH NDBZ02 FIX FN02 1500 RNW 02 FIX OVERFLY BMNB TRK 030 UNTIL 1500 TURN LEFT DIRECT FIX BMNB 2500 HOLD AT FIX BMNB LEFT TURN INBOUNDCOURSE 192 ALT 2500 LEGTIME 1
+ TRANSITION BM FIX BMNB AT OR ABOVE 2500 TRK 192 UNTIL 6.0 FROM FIX BMNB
+APPROACH NDBY20 FIX FN20 1500 RNW 20 FIX OVERFLY BMNB TRK 195 UNTIL 1500 TURN RIGHT DIRECT FIX BMNB 2500 HOLD AT FIX BMNB LEFT TURN INBOUNDCOURSE 042 ALT 2500 LEGTIME 1
+ TRANSITION BM FIX BMNB AT OR ABOVE 2500 TRK 042 UNTIL 7.0 FROM FIX BMNB
+APPROACH NDBZ20 FIX FN20 1500 RNW 20 FIX OVERFLY BMNB TRK 195 UNTIL 1500 TURN RIGHT DIRECT FIX BMNB 2500 HOLD AT FIX BMNB LEFT TURN INBOUNDCOURSE 033 ALT 2500 LEGTIME 1
+ TRANSITION BM FIX BMNB AT OR ABOVE 2500 TRK 033 UNTIL 6.0 FROM FIX BMNB
+ENDAPPROACHES

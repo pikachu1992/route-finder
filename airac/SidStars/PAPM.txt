@@ -1,0 +1,37 @@
+//PAPM (PLATINUM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AKUWU LATLON N 59 19 W 161 52
+FIX CAYRO LATLON N 59 6.0975 W 161 54.221167
+FIX FELTI LATLON N 59 11.287166 W 161 58.984
+FIX JEPRU LATLON N 59 3.337333 W 161 51.698
+FIX OSENB LATLON N 60 47.4785 W 161 52.3655
+FIX TOGNB LATLON N 59 3.8325 W 160 22.54
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+APPROACHES
+APPROACH RNV14 FIX FELTI AT OR ABOVE 2500 FIX CAYRO 1700 FIX JEPRU AT OR ABOVE 720 RNW 14 TRK 144 UNTIL 420 TURN RIGHT DIRECT FIX OVERFLY FELTI AT OR ABOVE 2500 HOLD AT FIX FELTI LEFT TURN INBOUNDCOURSE 144 LEGDIST 4
+ TRANSITION FELTI HOLD AT FIX FELTI LEFT TURN INBOUNDCOURSE 144 ALT 2500 LEGDIST 4
+ TRANSITION OSE FIX OSENB FIX AKUWU AT OR ABOVE 3500
+ TRANSITION TOG FIX TOGNB FIX AKUWU AT OR ABOVE 5000
+ENDAPPROACHES

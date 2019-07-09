@@ -1,0 +1,38 @@
+//YAUR (AURUKUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AURSA LATLON S 13 31.326167 E 141 51.946834
+FIX AURSB LATLON S 13 36.012833 E 141 48.522334
+FIX AURSC LATLON S 13 34.466 E 141 42.849334
+FIX AURSF LATLON S 13 26.540833 E 141 45.108
+FIX AURSH LATLON S 13 18.9625 E 141 42.379667
+FIX AURSI LATLON S 13 31.277 E 141 46.8145
+FIX AURSM LATLON S 13 21.8045 E 141 43.4025
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH RNV34 FIX AURSI AT OR ABOVE 1800 FIX AURSF 1760 FIX OVERFLY AURSM 165 RNW 34 FIX OVERFLY AURSH HDG 170 VECTORS
+ TRANSITION AURSA FIX AURSA AT OR ABOVE 1800 SPEED 210
+ TRANSITION AURSB FIX AURSB AT OR ABOVE 1800 SPEED 210
+ TRANSITION AURSC FIX AURSC AT OR ABOVE 1800 SPEED 210
+ENDAPPROACHES

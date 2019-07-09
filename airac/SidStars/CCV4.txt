@@ -1,0 +1,45 @@
+//CCV4 (BELL ISLAND)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX AGLAS LATLON N 47 37.534667 W 53 0.112667
+FIX BESUX LATLON N 47 29.738 W 52 59.549167
+FIX DURGI LATLON N 47 41.282666 W 52 50.126833
+FIX GOPUM LATLON N 47 35.139667 W 53 2.779834
+FIX IKBES LATLON N 47 35.744 W 53 11.348
+FIX MIVUL LATLON N 47 32.7435 W 53 5.443
+FIX OBVIV LATLON N 47 38.4745 W 52 57.970166
+FIX PESKU LATLON N 47 45.699167 W 52 53.591833
+FIX RESEV LATLON N 47 36.1275 W 53 4.4955
+FIX TILUB LATLON N 47 41.524 W 52 55.658333
+FIX TOTOG LATLON N 47 40.103333 W 52 44.470834
+FIX UDLOB LATLON N 47 39.879667 W 52 54.050167
+ENDFIXES
+
+RNWS
+RNW 08
+RNW 26
+ENDRNWS
+
+APPROACHES
+APPROACH RNV08 FIX MIVUL AT OR ABOVE 1700 SPEED 140 FIX GOPUM 1450 FIX OVERFLY AGLAS 493 RNW 08 FIX OVERFLY TILUB 2000 HOLD AT FIX TILUB LEFT TURN INBOUNDCOURSE 056 SPEED 175 LEGTIME 1
+ TRANSITION BESUX FIX BESUX SPEED 140
+ TRANSITION IKBES FIX IKBES SPEED 140
+APPROACH RNV26 FIX DURGI AT OR ABOVE 2000 SPEED 140 FIX UDLOB 1600 FIX OVERFLY OBVIV 417 RNW 26 FIX OVERFLY RESEV 2000 HOLD AT FIX RESEV RIGHT TURN INBOUNDCOURSE 261 SPEED 175 LEGTIME 1
+ TRANSITION PESKU FIX PESKU SPEED 140
+ TRANSITION TOTOG FIX TOTOG SPEED 140
+ENDAPPROACHES

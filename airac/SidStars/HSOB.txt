@@ -1,0 +1,48 @@
+//HSOB (EL OBEID)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX ALKUM LATLON N 12 54.71 E 30 16.86
+FIX ELEXA LATLON N 13 27.86 E 30 16.93
+FIX ENAPA LATLON N 13 3.43 E 30 13.06
+FIX GESUM LATLON N 13 23.66 E 30 11.08
+FIX IMDOD LATLON N 13 2.05 E 30 12.84
+FIX IMTAP LATLON N 13 22.12 E 30 21.21
+FIX IMTOG LATLON N 13 16.33 E 30 15.1
+FIX ITKAL LATLON N 12 55.49 E 30 11.8
+FIX LALGA LATLON N 12 50.52 E 30 11.02
+FIX LONIX LATLON N 13 6.4 E 30 13.53
+FIX MISOB LATLON N 13 14.95 E 30 14.88
+FIX NABGA LATLON N 12 56.25 E 30 6.74
+FIX RAMLU LATLON N 13 22.89 E 30 16.14
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX ITKAL AT OR ABOVE 6200 FIX ENAPA 3570 FIX LONIX AT OR ABOVE 2620 RNW 01 FIX OVERFLY IMTOG 4100
+ TRANSITION ALKUM FIX ALKUM AT OR ABOVE 7800
+ TRANSITION LALGA FIX LALGA AT OR ABOVE 7800
+ TRANSITION NABGA FIX NABGA AT OR ABOVE 7800
+APPROACH RNV19 FIX RAMLU AT OR ABOVE 6100 FIX MISOB 3550 RNW 19 FIX OVERFLY IMDOD 4100
+ TRANSITION ELEXA FIX ELEXA AT OR ABOVE 7700
+ TRANSITION GESUM FIX GESUM AT OR ABOVE 7700
+ TRANSITION IMTAP FIX IMTAP AT OR ABOVE 7700
+ENDAPPROACHES

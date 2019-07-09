@@ -1,0 +1,37 @@
+//WAKJ (KIMAM)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KJ501 LATLON S 7 50.6215 E 138 41.9675
+FIX KJ502 LATLON S 7 52.617334 E 138 44.233
+FIX KJ503 LATLON S 7 55.278334 E 138 47.2535
+FIX KJ601 LATLON S 8 6.820333 E 139 0.3615
+FIX KJ602 LATLON S 8 4.824667 E 138 58.094666
+FIX KJ603 LATLON S 8 2.164 E 138 55.0725
+ENDFIXES
+
+RNWS
+RNW 13
+RNW 31
+ENDRNWS
+
+APPROACHES
+APPROACH RNV13 FIX KJ502 AT OR ABOVE 2500 FIX KJ503 1650 RNW 13 TURN RIGHT DIRECT FIX OVERFLY KJ501 AT OR ABOVE 2500 HOLD AT FIX KJ501 RIGHT TURN INBOUNDCOURSE 128 ALT 2500 LEGTIME 1
+ TRANSITION KJ501 HOLD AT FIX KJ501 RIGHT TURN INBOUNDCOURSE 128 ALT 2500 LEGTIME 1
+APPROACH RNV31 FIX KJ602 AT OR ABOVE 2500 FIX KJ603 1650 RNW 31 TURN LEFT DIRECT FIX KJ601 2500 HOLD AT FIX KJ601 RIGHT TURN INBOUNDCOURSE 308 ALT 2500 LEGTIME 1
+ TRANSITION KJ601 HOLD AT FIX KJ601 RIGHT TURN INBOUNDCOURSE 308 ALT 2500 LEGTIME 1
+ENDAPPROACHES

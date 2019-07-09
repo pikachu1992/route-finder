@@ -1,0 +1,43 @@
+//CJY4 (SANDY BAY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX KITUG LATLON N 55 30.4785 W 102 23.699666
+FIX MIPOD LATLON N 55 30.2545 W 102 24.432334
+FIX NALRI LATLON N 55 23.054333 W 102 27.578
+FIX OKOTI LATLON N 55 27.884167 W 102 32.166
+FIX PIKBI LATLON N 55 42.384667 W 102 4.961833
+FIX SASUX LATLON N 55 34.970833 W 102 8.918666
+FIX TUKUM LATLON N 55 32.711 W 102 36.772667
+FIX URLUV LATLON N 55 37.538167 W 102 0.4015
+FIX XOVIR LATLON N 55 32.688833 W 101 55.893167
+FIX XUBDI LATLON N 55 35.193167 W 102 8.183
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX OKOTI AT OR ABOVE 2700 SPEED 180 FIX MIPOD 2650 RNW 05 FIX OVERFLY SASUX 2500 HOLD AT FIX SASUX RIGHT TURN INBOUNDCOURSE 054 SPEED 200 LEGTIME 1
+ TRANSITION NALRI FIX NALRI SPEED 210
+ TRANSITION TUKUM FIX TUKUM SPEED 210
+APPROACH RNV23 FIX URLUV AT OR ABOVE 2700 SPEED 180 FIX XUBDI 2630 RNW 23 FIX OVERFLY KITUG 2500 HOLD AT FIX KITUG RIGHT TURN INBOUNDCOURSE 234 SPEED 200 LEGTIME 1
+ TRANSITION PIKBI FIX PIKBI SPEED 210
+ TRANSITION XOVIR FIX XOVIR SPEED 210
+ENDAPPROACHES

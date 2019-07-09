@@ -1,0 +1,41 @@
+//KHSE (MITCHELL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BECAC LATLON N 35 14.3745 W 75 36.312
+FIX CULAT LATLON N 35 12.524833 W 75 54.817333
+FIX HULIP LATLON N 35 7.7795 W 75 48.532
+FIX IPKOH LATLON N 35 24.0945 W 75 28.887833
+FIX JIKON LATLON N 35 11.083166 W 75 42.419333
+FIX ONOKY LATLON N 35 18.110666 W 75 32.245834
+FIX OTMIE LATLON N 35 32.484334 W 75 29.064334
+FIX PUNGO LATLON N 35 36.633167 W 76 27.055166
+FIX ZOLMN LATLON N 35 38.705833 W 75 24.456833
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX HULIP AT OR ABOVE 2000 FIX JIKON 1700 RNW 07 TRK 067 UNTIL 500 TURN LEFT DIRECT FIX CULAT AT OR ABOVE 6000 HOLD AT FIX CULAT RIGHT TURN INBOUNDCOURSE 143 LEGDIST 4
+ TRANSITION PUNGO FIX PUNGO FIX CULAT AT OR ABOVE 5200
+APPROACH RNV25 FIX IPKOH AT OR ABOVE 3000 FIX ONOKY 1800 FIX BECAC 213 RNW 25 TRK 232 UNTIL 520 TURN RIGHT DIRECT FIX ZOLMN AT OR ABOVE 6000 HOLD AT FIX ZOLMN RIGHT TURN INBOUNDCOURSE 221 LEGDIST 5
+ TRANSITION PUNGO FIX PUNGO FIX OTMIE AT OR ABOVE 6000
+ TRANSITION ZOLMN FIX ZOLMN FIX OTMIE AT OR ABOVE 6000
+ENDAPPROACHES

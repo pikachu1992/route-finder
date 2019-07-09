@@ -1,0 +1,40 @@
+//KOKH (EISENBERG)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CVV LATLON N 48 14.681666 W 122 43.465
+FIX ICILA LATLON N 48 26.328667 W 122 55.702166
+FIX ISLND LATLON N 48 25.038167 W 122 41.341667
+FIX JEKPO LATLON N 48 15.108833 W 122 46.827334
+FIX LUCRI LATLON N 48 15.123167 W 122 55.660834
+FIX ORCUS LATLON N 48 20.659 W 123 7.7335
+FIX VUCUS LATLON N 48 15.092666 W 122 40.8225
+FIX WATTR LATLON N 48 8.355833 W 122 56.466167
+ENDFIXES
+
+RNWS
+RNW 07
+RNW 25
+ENDRNWS
+
+APPROACHES
+APPROACH RNV07 FIX LUCRI AT OR ABOVE 1800 FIX JEKPO 1500 FIX OVERFLY VUCUS 620 RNW 07 TRK 071 UNTIL 620 TURN RIGHT DIRECT FIX OVERFLY CVV AT OR ABOVE 3400 HOLD AT FIX CVV LEFT TURN INBOUNDCOURSE 346 LEGDIST 5
+ TRANSITION CVV FIX CVV FIX OVERFLY LUCRI AT OR ABOVE 2600 HOLD AT FIX LUCRI RIGHT TURN INBOUNDCOURSE 071 ALT 1800 LEGDIST 4
+ TRANSITION ISLND FIX ISLND FIX ICILA AT OR ABOVE 3100
+ TRANSITION ORCUS FIX ORCUS
+ TRANSITION WATTR FIX WATTR FIX OVERFLY LUCRI AT OR ABOVE 2500 HOLD AT FIX LUCRI RIGHT TURN INBOUNDCOURSE 071 ALT 1800 LEGDIST 4
+ENDAPPROACHES

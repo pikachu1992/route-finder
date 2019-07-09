@@ -1,0 +1,43 @@
+//K77F (WINTERS MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX DONAW LATLON N 31 59.200166 W 99 59.131667
+FIX FILEP LATLON N 31 47.167834 W 99 59.23
+FIX GEREC LATLON N 32 1.483667 W 99 59.112833
+FIX OWENN LATLON N 31 41.6645 W 100 17.145667
+FIX PADYI LATLON N 31 55.064333 W 99 59.1655
+FIX ROXAE LATLON N 32 6.495334 W 99 59.071667
+FIX SAVHE LATLON N 31 52.197 W 99 59.189
+FIX SHEPP LATLON N 32 13.1675 W 100 0.294167
+FIX TQA LATLON N 32 14.1445 W 99 49.007
+ENDFIXES
+
+RNWS
+RNW 17
+RNW 35
+ENDRNWS
+
+APPROACHES
+APPROACH RNV17 FIX ROXAE AT OR ABOVE 4000 FIX GEREC 3300 FIX DONAW AT OR ABOVE 2560 RNW 17 TRK 172 UNTIL 2271 FIX OVERFLY FILEP AT OR ABOVE 3400 HOLD AT FIX FILEP RIGHT TURN INBOUNDCOURSE 352 LEGDIST 4
+ TRANSITION ROXAE HOLD AT FIX ROXAE RIGHT TURN INBOUNDCOURSE 172 ALT 4000 LEGDIST 4
+ TRANSITION SHEPP FIX SHEPP
+ TRANSITION TQA FIX TQA
+APPROACH RNV35 FIX FILEP AT OR ABOVE 4000 FIX SAVHE 3300 FIX PADYI AT OR ABOVE 2380 RNW 35 TRK 352 UNTIL 2240 FIX OVERFLY ROXAE AT OR ABOVE 4000 HOLD AT FIX ROXAE RIGHT TURN INBOUNDCOURSE 172 LEGDIST 4
+ TRANSITION OWENN FIX OWENN
+ TRANSITION TQA FIX TQA FIX OVERFLY FILEP AT OR ABOVE 4000 HOLD AT FIX FILEP RIGHT TURN INBOUNDCOURSE 352 ALT 4000 LEGDIST 4
+ENDAPPROACHES

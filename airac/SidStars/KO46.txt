@@ -1,0 +1,42 @@
+//KO46 (WEED)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CANKI LATLON N 41 33.490834 W 122 29.1835
+FIX DIMGE LATLON N 41 36.779167 W 122 28.6175
+FIX EHPUG LATLON N 41 46.996166 W 122 31.105166
+FIX FOBRO LATLON N 41 57.4155 W 122 36.955834
+FIX GRENA LATLON N 41 43.521833 W 122 29.162
+FIX HIVEG LATLON N 41 50.469833 W 122 33.051833
+FIX ISAVE LATLON N 41 53.791333 W 122 25.508167
+FIX KLAMA LATLON N 42 11.299667 W 122 44.806166
+FIX ZIXIB LATLON N 41 29.876167 W 122 27.826333
+ENDFIXES
+
+RNWS
+RNW 14
+RNW 32
+ENDRNWS
+
+SIDS
+SID FOBRO1 RNW 32 HDG 324 UNTIL 3443 FIX DIMGE FIX FOBRO AT OR ABOVE 12000
+ENDSIDS
+
+APPROACHES
+APPROACH RNV14 FIX DIMGE AT OR ABOVE 5100 FIX CANKI 4600 FIX OVERFLY ZIXIB 3208 RNW 14 TRK 150 UNTIL 3343 TURN LEFT DIRECT FIX GRENA AT OR ABOVE 9100 SPEED 185 FIX ISAVE FIX OVERFLY KLAMA AT OR ABOVE 9100 HOLD AT FIX KLAMA RIGHT TURN INBOUNDCOURSE 143 LEGDIST 7
+ TRANSITION KLAMA FIX KLAMA FIX FOBRO AT OR ABOVE 9700 FIX HIVEG AT OR ABOVE 8000 FIX EHPUG AT OR ABOVE 7400 FIX GRENA AT OR ABOVE 6700
+ENDAPPROACHES

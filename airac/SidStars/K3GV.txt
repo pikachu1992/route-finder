@@ -1,0 +1,39 @@
+//K3GV (EAST KANSAS CITY)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX GIRFA LATLON N 39 1.069834 W 94 26.659
+FIX GOKLY LATLON N 39 0.611666 W 94 0.060167
+FIX YICHO LATLON N 39 0.948167 W 94 18.962167
+FIX YIXER LATLON N 39 0.731833 W 94 6.473
+FIX ZOBUG LATLON N 39 0.770666 W 94 8.617166
+FIX ZULSA LATLON N 39 0.912667 W 94 16.815833
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 09
+RNW 23
+RNW 27
+ENDRNWS
+
+APPROACHES
+APPROACH RNV09 FIX GIRFA AT OR ABOVE 3100 FIX YICHO 2600 FIX ZULSA AT OR ABOVE 1920 RNW 09 TRK 088 UNTIL 1235 FIX OVERFLY GOKLY AT OR ABOVE 3100 HOLD AT FIX GOKLY RIGHT TURN INBOUNDCOURSE 268 LEGDIST 4
+ TRANSITION GIRFA HOLD AT FIX GIRFA RIGHT TURN INBOUNDCOURSE 088 ALT 3100 LEGDIST 4
+APPROACH RNV27 FIX GOKLY AT OR ABOVE 3100 FIX YIXER 2600 FIX ZOBUG AT OR ABOVE 1960 RNW 27 TRK 268 UNTIL 1235 FIX OVERFLY GIRFA AT OR ABOVE 3100 HOLD AT FIX GIRFA RIGHT TURN INBOUNDCOURSE 088 LEGDIST 4
+ TRANSITION GOKLY HOLD AT FIX GOKLY RIGHT TURN INBOUNDCOURSE 268 ALT 3100 LEGDIST 4
+ENDAPPROACHES

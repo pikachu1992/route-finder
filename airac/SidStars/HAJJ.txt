@@ -1,0 +1,47 @@
+//HAJJ (GARAD WILWAL)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX JJ001 LATLON N 9 32.993333 E 42 55.421666
+FIX JJ002 LATLON N 9 33.746666 E 43 2.35
+FIX JJ003 LATLON N 9 27.543334 E 43 5.426666
+FIX JJ004 LATLON N 9 28.461667 E 42 59.426666
+FIX JJ005 LATLON N 9 26.7 E 42 58.453333
+FIX JJ006 LATLON N 9 24.938333 E 42 57.48
+FIX JJ111 LATLON N 9 12.343333 E 42 44.02
+FIX JJ112 LATLON N 9 6.141667 E 42 47.101667
+FIX JJ113 LATLON N 9 6.895 E 42 54.016667
+FIX JJ114 LATLON N 9 11.426666 E 42 50.016667
+FIX JJ115 LATLON N 9 13.188334 E 42 50.99
+FIX JJ116 LATLON N 9 14.95 E 42 51.961667
+ENDFIXES
+
+RNWS
+RNW 03
+RNW 21
+ENDRNWS
+
+APPROACHES
+APPROACH RNV03 FIX JJ114 AT OR ABOVE 8000 FIX JJ115 AT OR ABOVE 7570 FIX JJ116 7570 RNW 03 TRK 027 UNTIL 8200 TURN LEFT DIRECT FIX JJ111 10000
+ TRANSITION JJ111 FIX JJ111 AT OR ABOVE 10000
+ TRANSITION JJ112 FIX JJ112 AT OR ABOVE 10000
+ TRANSITION JJ113 FIX JJ113 AT OR ABOVE 10000
+APPROACH RNV21 FIX JJ004 AT OR ABOVE 8000 FIX JJ005 AT OR ABOVE 7530 FIX JJ006 7530 RNW 21 TRK 207 UNTIL 8400 TURN RIGHT DIRECT FIX JJ001 10000
+ TRANSITION JJ001 FIX JJ001 AT OR ABOVE 10000
+ TRANSITION JJ002 FIX JJ002 AT OR ABOVE 10000
+ TRANSITION JJ003 FIX JJ003 AT OR ABOVE 10000
+ENDAPPROACHES

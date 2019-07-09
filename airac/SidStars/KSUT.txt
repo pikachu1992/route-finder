@@ -1,0 +1,43 @@
+//KSUT (CAPE FEAR REGL JETPORT/HOWIE F)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX BILLL LATLON N 34 12.741334 W 78 5.791166
+FIX BRUNS LATLON N 33 50.867666 W 78 17.541
+FIX CHAMS LATLON N 33 58.928666 W 78 27.635333
+FIX HOWWE LATLON N 33 47.586833 W 78 13.006166
+FIX INIMY LATLON N 33 59.872667 W 78 0.197167
+FIX JONDE LATLON N 33 59.516 W 78 0.570833
+FIX JONUM LATLON N 33 57.653 W 78 2.518
+FIX ORRTN LATLON N 34 4.645667 W 77 55.197833
+FIX SWICK LATLON N 34 8.315666 W 77 59.339833
+FIX WIVAN LATLON N 33 52.125833 W 78 8.284
+FIX WYLMS LATLON N 34 5.984 W 78 16.5045
+ENDFIXES
+
+RNWS
+RNW 05
+RNW 23
+ENDRNWS
+
+APPROACHES
+APPROACH RNV05 FIX HOWWE AT OR ABOVE 1600 FIX WIVAN 1500 RNW 05 TRK 049 UNTIL 274 FIX JONDE TURN LEFT DIRECT FIX OVERFLY WYLMS AT OR ABOVE 3000 HOLD AT FIX WYLMS RIGHT TURN INBOUNDCOURSE 191 LEGDIST 4
+ TRANSITION CHAMS FIX CHAMS FIX BRUNS AT OR ABOVE 2000
+ TRANSITION WYLMS FIX WYLMS FIX BRUNS AT OR ABOVE 2000
+APPROACH RNV23 FIX ORRTN AT OR ABOVE 1700 FIX INIMY 1700 FIX JONUM AT OR ABOVE 720 RNW 23 TRK 229 UNTIL 500 TURN RIGHT DIRECT FIX OVERFLY SWICK AT OR ABOVE 3000 HOLD AT FIX SWICK RIGHT TURN INBOUNDCOURSE 145 LEGDIST 4
+ TRANSITION BILLL FIX BILLL FIX SWICK AT OR ABOVE 3000
+ENDAPPROACHES

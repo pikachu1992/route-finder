@@ -1,0 +1,43 @@
+//YCPT (CARRAPATEENA)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CPTNE LATLON S 31 4.175167 E 137 30.822
+FIX CPTNF LATLON S 31 13.891166 E 137 27.962666
+FIX CPTNG LATLON S 31 10.260833 E 137 35.043334
+FIX CPTNH LATLON S 31 21.98 E 137 25.574333
+FIX CPTNI LATLON S 31 9.033334 E 137 29.3935
+FIX CPTSA LATLON S 31 29.2245 E 137 29.461834
+FIX CPTSB LATLON S 31 32.8495 E 137 22.353833
+FIX CPTSF LATLON S 31 23.136 E 137 25.232333
+FIX CPTSH LATLON S 31 15.047333 E 137 27.621667
+FIX CPTSI LATLON S 31 27.993 E 137 23.794333
+ENDFIXES
+
+RNWS
+RNW 01
+RNW 19
+ENDRNWS
+
+APPROACHES
+APPROACH RNV01 FIX CPTSI AT OR ABOVE 2200 FIX CPTSF 2100 RNW 01 FIX CPTSH TRK 007 UNTIL 2200
+ TRANSITION CPTSA FIX CPTSA AT OR ABOVE 2200
+ TRANSITION CPTSB FIX CPTSB AT OR ABOVE 2200
+APPROACH RNV19 FIX CPTNI AT OR ABOVE 2200 FIX CPTNF 2100 RNW 19 FIX CPTNH TRK 187 UNTIL 2200
+ TRANSITION CPTNE FIX CPTNE AT OR ABOVE 2200
+ TRANSITION CPTNG FIX CPTNG AT OR ABOVE 2200
+ENDAPPROACHES

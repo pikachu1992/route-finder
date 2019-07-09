@@ -1,0 +1,34 @@
+//KS12 (ALBANY MUN)
+//Worldwide Navigation Database
+//Exported via DFD v1.0 19.0603
+//Software copyright (c) 2019 Richard Stefan, NAVData-Service
+//Support available via forum at http://forum.navigraph.com
+//
+//Data provided by Navigraph - www.navigraph.com
+//Source data copyright (c) 2019 Jeppesen
+//This data may be used for ground based recreational computer game
+//simulation software only, and may not be recompiled, interpreted,
+//or distributed for any purpose without the written consent of Navigraph.
+//The contents of this database is dated and must not be used for real
+//world navigation as it is unlawful and unsafe to do so.
+//
+//------------------------------------------------------
+//AIRAC Cycle : 1907 (20/JUN/2019 - 18/JUL/2019) - Ver.1
+//------------------------------------------------------
+FIXES
+FIX CVO LATLON N 44 29.974166 W 123 17.620166
+FIX EZEJI LATLON N 44 34.370833 W 123 10.184833
+FIX MABUY LATLON N 44 37.806334 W 123 4.3535
+ENDFIXES
+
+RNWS
+RNW 16
+RNW 34
+ENDRNWS
+
+APPROACHES
+APPROACH VDMA16 FIX CVO AT OR ABOVE 3500 FIX EZEJI 2500 FIX MABUY 940 RNW 16 TRK 032 UNTIL 940 TURN LEFT DIRECT FIX CVO AT OR ABOVE 3500 HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 032 LEGTIME 1
+ TRANSITION CVO HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 032 ALT 3500 LEGTIME 1
+APPROACH VDMA34 FIX CVO AT OR ABOVE 3500 FIX EZEJI 2500 FIX MABUY 940 RNW 34 TRK 032 UNTIL 940 TURN LEFT DIRECT FIX CVO AT OR ABOVE 3500 HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 032 LEGTIME 1
+ TRANSITION CVO HOLD AT FIX CVO RIGHT TURN INBOUNDCOURSE 032 ALT 3500 LEGTIME 1
+ENDAPPROACHES
