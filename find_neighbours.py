@@ -64,6 +64,8 @@ class FindNeighbours(): #devolver o node e os 2 vizinhos
     def validate_neighbour(self, neighbour):
         if '' in neighbour:
             return None
+        if 'N' in neighbour or 'N\n' in neighbour:
+            return None
         return neighbour 
 
     def get_neighbours_nodes(self, node_lines):
