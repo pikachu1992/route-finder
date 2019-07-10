@@ -1,4 +1,5 @@
 import heapq
+import math
 from heuristics import Heuristics
 
 class Node:
@@ -20,11 +21,75 @@ class Node:
         return self.name
 
 class RouteMap:
+
+    def __init__(self):
+        try:
+            self.file_readlines = open('airac/AIRWAY.txt', 'r').readlines()
+        except:
+            self.file_readlines = []
+
+    def parseline(self, line):
+        node = line[:6]       
+        neighbours = line[6:] 
+
+        return [node, neighbours]
+
+    def calculate_cost(self, *args):
+        try:
+            if len(args) == 2:
+                args = (*args[0], *args[1])
+            xa, ya, xb, yb = args
+        except TypeError as crap:
+            raise ValueError() from crap
+
+        R = 6378137 # earth radius in meters
+        # (source: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html)
+
+        phi1, phi2 = math.radians(xa), math.radians(xb)
+        dphi       = math.radians(xb - xa)
+        dlambda    = math.radians(yb - ya)
+
+        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
+
+        return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+
+    def find_node_lines(self, node_name, file_lines):
+        node_lines = []
+        for line in file_lines:
+            if line.startswith(';'):
+                continue
+            elif line.split("\t")[0] == node_name:
+                node_lines.append(self.parseline(line.split('\t')))
+        return node_lines
+
+    def validate_neighbour(self, neighbour):
+        if '' in neighbour:
+            return None
+        if 'N' in neighbour or 'N\n' in neighbour:
+            return None
+        return neighbour 
+
     def get_node_neighbours(self, node):
         """Returns: (tuple) cost, node
         """
-        raise NotImplemented()
+        neighbour_nodes = []
+        neighbour_0 = None
+        neighbour_1 = None
 
+        for line in self.find_node_lines(node, self.file_readlines):
+            node = line[0]
+            neighbours = line[1]
+
+            self.validate_neighbour(neighbours[:5])
+            neighbour_0 = self.validate_neighbour(neighbours[:5])
+            neighbour_1 = self.validate_neighbour(neighbours[5:])
+
+            if neighbour_0 is not None:
+                neighbour_nodes.append((self.calculate_cost(float(node[1]), float(node[2]), float(neighbour_0[1]), float(neighbour_0[2])), neighbour_0))
+            if neighbour_1 is not None:
+                neighbour_nodes.append((self.calculate_cost(float(node[1]), float(node[2]), float(neighbour_1[1]), float(neighbour_1[2])), neighbour_1))
+        return neighbour_nodes
+print(RouteMap().get_node_neighbours("LIS"))
 class HeapQueue:
     def __init__(self, items):
         self._heap = items
