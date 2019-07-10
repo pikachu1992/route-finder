@@ -29,28 +29,65 @@ FS Navigator files:
 """
 from collections import defaultdict
 
-from route_finder import RouteMap
+class FsNavigatorMap():
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
 
-def _read_airway_file(path):
-    with open(path, 'r') as f:
-        lines = f.readlines()
-    return [line.strip().split('\t') for line in lines if not line.strip().startswith(';')]
+        file_lines = self._read_file()
+        self.nodes, self.neighbours = self._parse_lines(file_lines)
 
-def _parse_airway_node(node):
-    pass
+    def _read_file(self):
+        lines = []
+        with open('fsnavigator/Bin/AIRWAY.txt', 'r') as f:
+            lines = f.readlines()
+        return lines
 
-def _parse_airway_neighbours(neighbours):
-    pass
+    def _parse_lines(self, lines):
+        lines = [line.strip().split('\t') for line in lines if not line.strip().startswith(';')]
+        nodes = dict()
+        neighbours = defaultdict(list)
+        for line in lines:
+            node = line[:6]
+            node_neighbours = line[6:]
+            node = self._parse_airway_node(node)
+            node_neighbours = self._parse_airway_neighbours(node_neighbours)
+            neighbours[node] = [*neighbours[node], *node_neighbours]
+            nodes[node.name] = node
+        return nodes, neighbours
 
-NEIGHBOURS = defaultdict(list)
-# _AIRWAY_LINES = _read_airway_file('fsnavigator/Bin/AIRWAY.txt')
-# for line in _AIRWAY_LINES:
-#     node = line[:6]
-#     neighbours = line[6:]
-#     node = _parse_airway_node(node)
-#     neighbours = _parse_airway_neighbours(neighbours)
-#     NEIGHBOURS[node].append(*neighbours)
+    def _parse_airway_node(self, node):
+        return Node(40.881944, -8.115, 'PESUL')
 
-class FsNavigatorMap(RouteMap):
+    def _parse_airway_neighbours(self, neighbours):
+        return []
+
+class RouteMap():
+    def __init__(self, *args, map, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        self._map = map
+        self._neighbours = neighbours
+
     def get_node_neighbours(self, node):
-        return NEIGHBOURS[node]
+        return self._map.neighbours[node]
+
+    def get_node(self, name):
+        return self._map.nodes[name]
+
+class Node:
+    def __init__(self, x, y, name):
+        self.x = x
+        self.y = y
+        self.name = name
+
+    def __eq__(self, other):
+        return self.name == other.name if isinstance(other, Node) else False
+
+    def __gt__(self, other):
+        return self.name > other.name
+
+    def __hash__(self):
+        return self.name.__hash__() * 13
+
+    def __repr__(self):
+        return self.name

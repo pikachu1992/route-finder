@@ -1,29 +1,6 @@
 import heapq
 from heuristics import Heuristics
-
-class Node:
-    def __init__(self, x, y, name, parent=None):
-        self.x = x
-        self.y = y
-        self.name = name
-
-    def __eq__(self, other):
-        return self.name == other.name if isinstance(other, Node) else False
-
-    def __gt__(self, other):
-        return self.name > other.name
-
-    def __hash__(self):
-        return self.name.__hash__() * 13
-
-    def __repr__(self):
-        return self.name
-
-class RouteMap:
-    def get_node_neighbours(self, node):
-        """Returns: (tuple) cost, node
-        """
-        raise NotImplemented()
+from fsnavigator_map import RouteMap, Node
 
 class HeapQueue:
     def __init__(self, items):
@@ -43,10 +20,10 @@ class HeapQueue:
         return len(self._heap)
 
 class RouteFinder(RouteMap, Heuristics):
-    def __init__(self, start_node, end_node):
+    def __init__(self, *, start, end):
         super().__init__()
-        self.start_node = start_node
-        self.end_node = end_node
+        self.start_node = start
+        self.end_node = end
         self.closed_list = {}
 
     def find(self):
