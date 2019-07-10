@@ -28,6 +28,7 @@ FS Navigator files:
 
 """
 from collections import defaultdict
+import math
 
 class FsNavigatorMap():
     def __init__(self, *args, **kwargs):
@@ -55,9 +56,29 @@ class FsNavigatorMap():
             for neighbour in node_neighbours:
                 neighbour.via = node.via
                 neighbour.via_type = node.via_type
+                neighbour.cost = self._calc_cost(node.x, node.y, neighbour.x, neighbour.y)
             neighbours[node] = [*neighbours[node], *node_neighbours]
             nodes[node.name] = Node(node.x, node.y, node.name)
         return nodes, neighbours
+
+    def _calc_cost(self, *args):
+        try:
+            if len(args) == 2:
+                args = (*args[0], *args[1])
+            xa, ya, xb, yb = args
+        except TypeError as crap:
+            raise ValueError() from crap
+
+        R = 6378137 # earth radius in meters
+        # (source: https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html)
+
+        phi1, phi2 = math.radians(xa), math.radians(xb)
+        dphi       = math.radians(xb - xa)
+        dlambda    = math.radians(yb - ya)
+
+        a = math.sin(dphi / 2)**2 + math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2)**2
+
+        return 2 * R * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
     def _parse_airway_node(self, node):
         """PESUL	40.881944	-8.115000	14	W2	    L"""
@@ -73,8 +94,12 @@ class FsNavigatorMap():
             if len(item) != 5:
                 continue
 
-            name, lat, lng, _, _ = item
-            _neighbours.append(Node(lat, lng, name))
+            name, lat, lng, _, can_fly = item
+            can_fly = can_fly == 'Y'
+            if not can_fly:
+                continue
+
+            _neighbours.append(Node(float(lat), float(lng), name))
         return _neighbours
 
 class RouteMap():
@@ -82,7 +107,7 @@ class RouteMap():
         super().__init__(*args, **kwargs)
 
         self._map = map
-        self._neighbours = neighbours
+        self._neighbours = map.neighbours
 
     def get_node_neighbours(self, node):
         return self._map.neighbours[node]
@@ -91,10 +116,11 @@ class RouteMap():
         return self._map.nodes[name]
 
 class Node:
-    def __init__(self, x, y, name, via=None, via_type=None):
+    def __init__(self, x, y, name, cost=None, via=None, via_type=None):
         self.x = x
         self.y = y
         self.name = name
+        self.cost = cost
         self.via = via
         self.via_type = via_type
 

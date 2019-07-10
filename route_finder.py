@@ -20,8 +20,8 @@ class HeapQueue:
         return len(self._heap)
 
 class RouteFinder(RouteMap, Heuristics):
-    def __init__(self, *, start, end):
-        super().__init__()
+    def __init__(self, *args, start, end, **kwargs):
+        super().__init__(*args, **kwargs)
         self.start_node = start
         self.end_node = end
         self.closed_list = {}
@@ -36,12 +36,12 @@ class RouteFinder(RouteMap, Heuristics):
 
             if node == self.end_node:
                 break
-            for neighbour_g, neighbour in super().get_node_neighbours(node):
+            for neighbour in super().get_node_neighbours(node):
                 if neighbour in self.closed_list:
                     continue
 
                 h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
-                g = neighbour_g + node_g
+                g = neighbour.cost + node_g
                 f = g + h
 
                 open_list.push((f, g, neighbour, node))
