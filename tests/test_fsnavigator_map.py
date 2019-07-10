@@ -31,11 +31,12 @@ class TestParseAirwayNode(TestCase):
 
     def test_neighboursAreAccessibleViaNode(self):
         pesul = self.map.nodes['PESUL']
-        via = 'W2'
-        via_type = 'L'
-        prt = Node('PRT', 41.273000	-8.687833, via, via_type)
-        vis = Node('VIS', 40.723417, -7.885833, via, via_type)
+        prt = self.map.nodes['PRT']
         neighbours = self.map.neighbours[pesul]
         self.assertEqual(len(neighbours), 2)
         self.assertIn(prt, neighbours)
-        self.assertIn(vis, neighbours)
+        for neighbour in neighbours:
+            if neighbour == prt:
+                self.assertEqual(neighbour.via, 'W2')
+                self.assertEqual(neighbour.via_type, 'L')
+

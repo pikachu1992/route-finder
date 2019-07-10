@@ -51,7 +51,10 @@ class FsNavigatorMap():
             node = line[:6]
             node_neighbours = line[6:]
             node = self._parse_airway_node(node)
-            node_neighbours = self._parse_airway_neighbours(node_neighbours)
+            node_neighbours = list(self._parse_airway_neighbours(node_neighbours))
+            for neighbour in node_neighbours:
+                neighbour.via = node.via
+                neighbour.via_type = node.via_type
             neighbours[node] = [*neighbours[node], *node_neighbours]
             nodes[node.name] = Node(node.x, node.y, node.name)
         return nodes, neighbours
@@ -62,7 +65,17 @@ class FsNavigatorMap():
         return Node(float(lat), float(lng), name, via, via_type)
 
     def _parse_airway_neighbours(self, neighbours):
-        return []
+        split_at = 2 if neighbours[0] == '0' else 5
+        left = neighbours[:split_at]
+        right = neighbours[split_at:]
+        _neighbours = list()
+        for item in [left, right]:
+            if len(item) != 5:
+                continue
+
+            name, lat, lng, _, _ = item
+            _neighbours.append(Node(lat, lng, name))
+        return _neighbours
 
 class RouteMap():
     def __init__(self, *args, map, **kwargs):
