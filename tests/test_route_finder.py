@@ -83,3 +83,16 @@ class TestAPythagoreanTriangle(TestCase):
         self.assertEqual(
             self.finder.nodes,
             [NODES['A1'], NODES['C3'], NODES['D4'], NODES['E5']])
+
+class TestShortHopsVsShortPath(TestCase):
+    def setUp(self):
+        finder = TestFinder(NODES['A1'], NODES['E5'])
+        finder.connect(NODES['A1'], NODES['C3'])
+        finder.connect(NODES['C3'], NODES['D4'])
+        finder.connect(NODES['D4'], NODES['E5'])
+        finder.connect(NODES['A1'], NODES['E5'])
+        self.finder = finder
+
+    def test_followsShortestPath(self):
+        self.finder.find()
+        self.assertEqual(self.finder.nodes, [NODES['A1'], NODES['E5']])
