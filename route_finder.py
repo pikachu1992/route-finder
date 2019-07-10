@@ -35,21 +35,25 @@ class RouteFinder(RouteMap, Heuristics):
             self.closed_list[node] = (node_g, parent)
 
             if node == self.end_node:
-                break
-            for neighbour in super().get_node_neighbours(node):
+                return
+
+            for neighbour_g, neighbour in super().get_node_neighbours(node):
                 if neighbour in self.closed_list:
                     continue
 
-                h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
-                g = neighbour.cost + node_g
+                h = super().astar_heuristic(neighbour.x, neighbour.y, self.end_node.x, self.end_node.y)
+                g = neighbour_g + node_g
                 f = g + h
 
                 open_list.push((f, g, neighbour, node))
+        raise RuntimeError('Unable to find route.')
 
     @property
     def nodes(self):
+        return self._path_to(self.end_node)
+
+    def _path_to(self, node):
         result = []
-        node = self.end_node
         while node:
             result.append(node)
             _, node = self.closed_list[node]

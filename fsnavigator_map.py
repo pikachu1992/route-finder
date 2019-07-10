@@ -56,7 +56,7 @@ class FsNavigatorMap():
             for neighbour in node_neighbours:
                 neighbour.via = node.via
                 neighbour.via_type = node.via_type
-                neighbour.cost = self._calc_cost(node.x, node.y, neighbour.x, neighbour.y)
+            node_neighbours = [(self._calc_cost(node.x, node.y, neighbour.x, neighbour.y), neighbour) for neighbour in node_neighbours]
             neighbours[node] = [*neighbours[node], *node_neighbours]
             nodes[node.name] = Node(node.x, node.y, node.name)
         return nodes, neighbours
@@ -116,11 +116,10 @@ class RouteMap():
         return self._map.nodes[name]
 
 class Node:
-    def __init__(self, x, y, name, cost=None, via=None, via_type=None):
+    def __init__(self, x, y, name, via=None, via_type=None):
         self.x = x
         self.y = y
         self.name = name
-        self.cost = cost
         self.via = via
         self.via_type = via_type
 

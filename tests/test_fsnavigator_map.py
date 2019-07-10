@@ -35,11 +35,12 @@ class TestParseAirwayNode(TestCase):
         prt = self.map.nodes['PRT']
         neighbours = self.map.neighbours[pesul]
         self.assertEqual(len(neighbours), 2)
-        self.assertIn(prt, neighbours)
-        for neighbour in neighbours:
+        for _, neighbour in neighbours:
             if neighbour == prt:
                 self.assertEqual(neighbour.via, 'W2')
                 self.assertEqual(neighbour.via_type, 'L')
+                return
+        self.assertFalse(True)
 
         ekmar = self.map.nodes['EKMAR']
         neighbours = self.map.neighbours[ekmar]
