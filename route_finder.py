@@ -64,7 +64,7 @@ class RouteFinder(RouteMap, Heuristics):
                 if neighbour in self.closed_list:
                     continue
 
-                h = super().astar_heuristic(node.x, node.y, neighbour.x, neighbour.y)
+                h = super().astar_heuristic(neighbour.x, neighbour.y, self.end_node.x, self.end_node.y)
                 g = neighbour_g + node_g
                 f = g + h
 
