@@ -60,18 +60,3 @@ class TestRouteFinderTestMap(TestCase):
         route.find()
         self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
         # self.assertEqual(route.distance, 3)
-
-class TestRouteFinderDoesntWalkRoutesThatGetFarther(TestCase):
-    def test_startAtAEndAtC_doesNotWalkS(self):
-        class WalkSFailsMap(TestMap):
-            def get_node_neighbours(self, node):
-                if node == TestMap.node_s:
-                    raise RuntimeError()
-                else:
-                    return super().get_node_neighbours(node)
-        class TestRouteFinder(RouteFinder, WalkSFailsMap):
-            pass
-        route = TestRouteFinder(TestMap.node_a, TestMap.node_c)
-        route.find()
-        self.assertEqual(route.nodes,
-            [TestMap.node_a, TestMap.node_b, TestMap.node_c])
