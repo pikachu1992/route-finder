@@ -18,8 +18,6 @@ class TestParseAirwayNode(TestCase):
     def test_allNodesHaveRequiredInfo(self):
         for node in self.map.nodes.values():
             self.assertIsNotNone(node.name)
-            self.assertIsInstance(node.x, float)
-            self.assertIsInstance(node.y, float)
             self.assertIsNone(node.via)
             self.assertIsNone(node.via_type)
 

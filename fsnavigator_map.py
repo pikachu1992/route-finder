@@ -117,8 +117,8 @@ class RouteMap():
 
 class Node:
     def __init__(self, x, y, name, via=None, via_type=None):
-        self.x = x
-        self.y = y
+        self.x = float(x)
+        self.y = float(y)
         self.name = name
         self.via = via
         self.via_type = via_type
