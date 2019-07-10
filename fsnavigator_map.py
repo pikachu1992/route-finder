@@ -47,6 +47,7 @@ class FsNavigatorMap():
         nodes = dict()
         neighbours = defaultdict(list)
         for line in lines:
+            line = [i.strip() for i in line]
             node = line[:6]
             node_neighbours = line[6:]
             node = self._parse_airway_node(node)
@@ -57,7 +58,6 @@ class FsNavigatorMap():
 
     def _parse_airway_node(self, node):
         """PESUL	40.881944	-8.115000	14	W2	    L"""
-        node = [i.strip() for i in node]
         name, lat, lng, _, via, via_type = node
         return Node(float(lat), float(lng), name, via, via_type)
 

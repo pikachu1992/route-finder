@@ -1,29 +1,41 @@
 from unittest import TestCase
 
-from fsnavigator_map import FsNavigatorMap
+from fsnavigator_map import FsNavigatorMap, Node
 
 class TestFsNavigatorMap(FsNavigatorMap):
     def _read_file(self):
         return [
             'PESUL	40.881944	-8.115000	14	W2	    L	PRT	    41.273000	-8.687833	0	    Y	VIS	    40.723417	-7.885833	9500	Y',
-            'ODLIX	38.678889	-9.317222	14	Y207	B	LIS	    38.887750	-9.162806	9500	N	EKMAR	38.557500	-9.521389	9500	Y'
+            'PRT	    41.273000	-8.687833	14	W2	    L	0	                                    N	PESUL	40.881944	-8.115000	9500	Y',
+            'EKMAR	38.557500	-9.521389	14	Y207	B	ODLIX	38.678889	-9.317222	9500	N	0	                                    N'
         ]
 
 class TestParseAirwayNode(TestCase):
     def setUp(self):
         self.map = TestFsNavigatorMap()
 
-    def test_canParseNodeInfo(self):
-        node = self.map.nodes['PESUL']
-        self.assertEqual(node.name, 'PESUL')
-        self.assertEqual(node.x, 40.881944)
-        self.assertEqual(node.y, -8.115000)
-        self.assertEqual(node.via, None)
-        self.assertEqual(node.via_type, None)
+    def test_allNodesHaveRequiredInfo(self):
+        for node in self.map.nodes.values():
+            self.assertIsNotNone(node.name)
+            self.assertIsInstance(node.x, float)
+            self.assertIsInstance(node.y, float)
+            self.assertIsNone(node.via)
+            self.assertIsNone(node.via_type)
 
-        node = self.map.nodes['ODLIX']
-        self.assertEqual(node.name, 'ODLIX')
-        self.assertEqual(node.x, 38.678889)
-        self.assertEqual(node.y, -9.317222)
-        self.assertEqual(node.via, None)
-        self.assertEqual(node.via_type, None)
+    def test_nodesAreAccessiblePerName(self):
+        for name, lat, lng in [('PESUL', 40.881944, -8.115000), ('PRT', 41.273000, -8.687833)]:
+            node = self.map.nodes[name]
+            self.assertEqual(node.name, name)
+            self.assertEqual(node.x, lat)
+            self.assertEqual(node.y, lng)
+
+    def test_neighboursAreAccessibleViaNode(self):
+        pesul = self.map.nodes['PESUL']
+        via = 'W2'
+        via_type = 'L'
+        prt = Node('PRT', 41.273000	-8.687833, via, via_type)
+        vis = Node('VIS', 40.723417, -7.885833, via, via_type)
+        neighbours = self.map.neighbours[pesul]
+        self.assertEqual(len(neighbours), 2)
+        self.assertIn(prt, neighbours)
+        self.assertIn(vis, neighbours)
