@@ -15,13 +15,15 @@ class TestParseAirwayNode(TestCase):
 
     def test_canParseNodeInfo(self):
         node = self.map.nodes['PESUL']
+        self.assertEqual(node.name, 'PESUL')
         self.assertEqual(node.x, 40.881944)
         self.assertEqual(node.y, -8.115000)
-        self.assertEqual(node.via, 'W2')
-        self.assertEqual(node.via_type, 'L')
+        self.assertEqual(node.via, None)
+        self.assertEqual(node.via_type, None)
 
         node = self.map.nodes['ODLIX']
+        self.assertEqual(node.name, 'ODLIX')
         self.assertEqual(node.x, 38.678889)
         self.assertEqual(node.y, -9.317222)
-        self.assertEqual(node.via, 'Y207')
-        self.assertEqual(node.via_type, 'B')
+        self.assertEqual(node.via, None)
+        self.assertEqual(node.via_type, None)

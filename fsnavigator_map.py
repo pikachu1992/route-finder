@@ -52,7 +52,7 @@ class FsNavigatorMap():
             node = self._parse_airway_node(node)
             node_neighbours = self._parse_airway_neighbours(node_neighbours)
             neighbours[node] = [*neighbours[node], *node_neighbours]
-            nodes[node.name] = node
+            nodes[node.name] = Node(node.x, node.y, node.name)
         return nodes, neighbours
 
     def _parse_airway_node(self, node):
