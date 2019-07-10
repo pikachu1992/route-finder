@@ -58,7 +58,8 @@ class RouteFinder(RouteMap, Heuristics):
             self.closed_list[node] = (node_g, parent)
 
             if node == self.end_node:
-                break
+                return
+
             for neighbour_g, neighbour in super().get_node_neighbours(node):
                 if neighbour in self.closed_list:
                     continue
@@ -68,11 +69,14 @@ class RouteFinder(RouteMap, Heuristics):
                 f = g + h
 
                 open_list.push((f, g, neighbour, node))
+        raise RuntimeError('Unable to find route.')
 
     @property
     def nodes(self):
+        return self._path_to(self.end_node)
+
+    def _path_to(self, node):
         result = []
-        node = self.end_node
         while node:
             result.append(node)
             _, node = self.closed_list[node]

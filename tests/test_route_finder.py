@@ -1,62 +1,85 @@
 from unittest import TestCase
+from math import sqrt
+from collections import defaultdict
 
 from route_finder import RouteFinder, RouteMap, Node
 
+def generate_nodes():
+    collumns = ['A', 'B', 'C', 'D', 'E']
+    nodes = dict()
+    for x in range(5):
+        for y in range(5):
+            collumn = collumns[x]
+            name = f'{collumn}{y + 1}'
+            nodes[name] = Node(x, y, name)
+    return nodes
+
+NODES = generate_nodes()
+
 class TestMap(RouteMap):
-    node_s = Node(0, 0, 'S')
-    node_a = Node(0, 1, 'A')
-    node_e = Node(1, 1, 'E')
-    node_b = Node(0, 2, 'B')
-    node_c = Node(1, 2, 'C')
-
+    """A base test map composed of a 5 by 5 grid, where A1 is 0,0 and E5 is 4,4.
+    """
     def __init__(self):
-        self.neighbours = {
-            TestMap.node_s: [(1, TestMap.node_a)],
-            TestMap.node_a: [(1, TestMap.node_e), (1, TestMap.node_s), (1, TestMap.node_b)],
-            TestMap.node_e: [(1, TestMap.node_c), (1, TestMap.node_a)],
-            TestMap.node_b: [(1, TestMap.node_a), (1, TestMap.node_c)],
-            TestMap.node_c: [(1, TestMap.node_e), (1, TestMap.node_b)]
-        }
+        self.neighbours = defaultdict(list)
+
+    def _dist(self, node_a, node_b):
+        """Simulate a smaller earth in terms of distance between lat, lng coordinates.
+        """
+        return sqrt(((node_a.x - node_b.x) ** 2) + ((node_a.y - node_b.y) ** 2)) * 6371
+
+    def connect(self, node_a, node_b):
+        dist = self._dist(node_a, node_b)
+        self.neighbours[node_a].append((dist, node_b))
+        self.neighbours[node_b].append((dist, node_a))
 
     def get_node_neighbours(self, node):
-        return self.neighbours[node]
+        try:
+            return self.neighbours[node]
+        except KeyError:
+            return []
 
-class TwoNodeMap(TestMap):
-    def get_node_neighbours(self, node):
-        return [(1, self.node_b)]
+class TestFinder(RouteFinder, TestMap):
+    pass
 
-class ThreeNodeMap(TestMap):
-    def __init__(self):
-        super().__init__()
-        self.neighbours = {
-            self.node_s: [(1, self.node_a)],
-            self.node_a: [(1, self.node_e)],
-            self.node_e: [(1, self.node_a)]
-        }
+class TestNoConnections(TestCase):
+    def setUp(self):
+        self.finder = TestFinder(NODES['A1'], NODES['A2'])
+    def test_withNoConnections_raiseError(self):
+        with self.assertRaisesRegex(RuntimeError, 'Unable to find route.'):
+            self.finder.find()
 
-class TestRouteFinderTwoNodeMap(TestCase):
-    def test_startAtAEndAtB_returnsAB(self):
-        class TestRouteFinder(RouteFinder, TwoNodeMap):
-            pass
-        route = TestRouteFinder(TestMap.node_a, TestMap.node_b)
-        route.find()
-        self.assertEqual(route.nodes, [TestMap.node_a, TestMap.node_b])
-        # self.assertEqual(route.distance, 1)
+class TestSinglePath(TestCase):
+    def setUp(self):
+        finder = TestFinder(NODES['A1'], NODES['A2'])
+        finder.connect(NODES['A1'], NODES['A2'])
+        self.finder = finder
 
-class TestRouteFinderThreeNodeMap(TestCase):
-    def test_startAtSEndAtE_returnsSAE(self):
-        class TestRouteFinder(RouteFinder, ThreeNodeMap):
-            pass
-        route = TestRouteFinder(TestMap.node_s, TestMap.node_e)
-        route.find()
-        self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
-        # self.assertEqual(route.distance, 3)
+    def test_A1LeadsA2_returnsA1A2(self):
+        self.finder.find()
+        self.assertEqual(self.finder.nodes, [NODES['A1'], NODES['A2']])
 
-class TestRouteFinderTestMap(TestCase):
-    def test_startAtSEndAtE_returnsSAE(self):
-        class TestRouteFinder(RouteFinder, TestMap):
-            pass
-        route = TestRouteFinder(TestMap.node_s, TestMap.node_e)
-        route.find()
-        self.assertEqual(route.nodes, [TestMap.node_s, TestMap.node_a, TestMap.node_e])
-        # self.assertEqual(route.distance, 3)
+class TestSinglePath3Nodes(TestCase):
+    def setUp(self):
+        finder = TestFinder(NODES['A1'], NODES['B2'])
+        finder.connect(NODES['A1'], NODES['A2'])
+        finder.connect(NODES['A2'], NODES['B2'])
+        self.finder = finder
+    def test_A1LeadsA2LeadsB2_returnsA1A2B2(self):
+        self.finder.find()
+        self.assertEqual(self.finder.nodes, [NODES['A1'], NODES['A2'], NODES['B2']])
+
+class TestAPythagoreanTriangle(TestCase):
+    def setUp(self):
+        finder = TestFinder(NODES['A1'], NODES['E5'])
+        finder.connect(NODES['A1'], NODES['C3'])
+        finder.connect(NODES['C3'], NODES['D4'])
+        finder.connect(NODES['D4'], NODES['E5'])
+        finder.connect(NODES['A1'], NODES['C5'])
+        finder.connect(NODES['C5'], NODES['E5'])
+        self.finder = finder
+
+    def test_followsHypotenuse(self):
+        self.finder.find()
+        self.assertEqual(
+            self.finder.nodes,
+            [NODES['A1'], NODES['C3'], NODES['D4'], NODES['E5']])
