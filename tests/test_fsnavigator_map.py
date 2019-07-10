@@ -7,7 +7,8 @@ class TestFsNavigatorMap(FsNavigatorMap):
         return [
             'PESUL	40.881944	-8.115000	14	W2	    L	PRT	    41.273000	-8.687833	0	    Y	VIS	    40.723417	-7.885833	9500	Y',
             'PRT	    41.273000	-8.687833	14	W2	    L	0	                                    N	PESUL	40.881944	-8.115000	9500	Y',
-            'EKMAR	38.557500	-9.521389	14	Y207	B	ODLIX	38.678889	-9.317222	9500	N	0	                                    N'
+            'EKMAR	38.557500	-9.521389	14	Y207	B	ODLIX	38.678889	-9.317222	9500	N	0	                                    N',
+            'ODLIX	38.678889	-9.317222	14	Y207	B	LIS	38.887750	-9.162806	9500	N	EKMAR	38.557500	-9.521389	9500	Y'
         ]
 
 class TestParseAirwayNode(TestCase):
@@ -40,3 +41,6 @@ class TestParseAirwayNode(TestCase):
                 self.assertEqual(neighbour.via, 'W2')
                 self.assertEqual(neighbour.via_type, 'L')
 
+        ekmar = self.map.nodes['EKMAR']
+        neighbours = self.map.neighbours[ekmar]
+        self.assertEqual(len(neighbours), 0)
