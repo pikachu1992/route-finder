@@ -56,7 +56,10 @@ class FsNavigatorMap():
         return nodes, neighbours
 
     def _parse_airway_node(self, node):
-        return Node(40.881944, -8.115, 'PESUL')
+        """PESUL	40.881944	-8.115000	14	W2	    L"""
+        node = [i.strip() for i in node]
+        name, lat, lng, _, via, via_type = node
+        return Node(float(lat), float(lng), name, via, via_type)
 
     def _parse_airway_neighbours(self, neighbours):
         return []
@@ -75,10 +78,12 @@ class RouteMap():
         return self._map.nodes[name]
 
 class Node:
-    def __init__(self, x, y, name):
+    def __init__(self, x, y, name, via=None, via_type=None):
         self.x = x
         self.y = y
         self.name = name
+        self.via = via
+        self.via_type = via_type
 
     def __eq__(self, other):
         return self.name == other.name if isinstance(other, Node) else False

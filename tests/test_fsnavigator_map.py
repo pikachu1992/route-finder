@@ -25,5 +25,3 @@ class TestParseAirwayNode(TestCase):
         self.assertEqual(node.y, -9.317222)
         self.assertEqual(node.via, 'Y207')
         self.assertEqual(node.via_type, 'B')
-
-    def test_canParseNeighboursForNode(self):
