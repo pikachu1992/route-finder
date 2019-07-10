@@ -11,11 +11,11 @@ class TestMap(RouteMap):
 
     def __init__(self):
         self.neighbours = {
-            TestMap.node_s: [(10, TestMap.node_a)],
-            TestMap.node_a: [(10, TestMap.node_e), (10, TestMap.node_s), (10, TestMap.node_b)],
-            TestMap.node_e: [(10, TestMap.node_c), (10, TestMap.node_a)],
-            TestMap.node_b: [(10, TestMap.node_a), (10, TestMap.node_c)],
-            TestMap.node_c: [(10, TestMap.node_e), (10, TestMap.node_b)]
+            TestMap.node_s: [(1, TestMap.node_a)],
+            TestMap.node_a: [(1, TestMap.node_e), (1, TestMap.node_s), (1, TestMap.node_b)],
+            TestMap.node_e: [(1, TestMap.node_c), (1, TestMap.node_a)],
+            TestMap.node_b: [(1, TestMap.node_a), (1, TestMap.node_c)],
+            TestMap.node_c: [(1, TestMap.node_e), (1, TestMap.node_b)]
         }
 
     def get_node_neighbours(self, node):
@@ -23,15 +23,15 @@ class TestMap(RouteMap):
 
 class TwoNodeMap(TestMap):
     def get_node_neighbours(self, node):
-        return [(10, self.node_b)]
+        return [(1, self.node_b)]
 
 class ThreeNodeMap(TestMap):
     def __init__(self):
         super().__init__()
         self.neighbours = {
-            self.node_s: [(10, self.node_a)],
-            self.node_a: [(10, self.node_e)],
-            self.node_e: [(10, self.node_a)]
+            self.node_s: [(1, self.node_a)],
+            self.node_a: [(1, self.node_e)],
+            self.node_e: [(1, self.node_a)]
         }
 
 class TestRouteFinderTwoNodeMap(TestCase):
