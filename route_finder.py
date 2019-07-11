@@ -35,6 +35,7 @@ class RouteFinder(RouteMap, Heuristics):
             self.closed_list[node] = (node_g, parent)
 
             if node == self.end_node:
+                self.end_node = node
                 return
 
             for neighbour_g, neighbour in super().get_node_neighbours(node):
