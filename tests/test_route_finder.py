@@ -27,10 +27,10 @@ class TestMap(RouteMap):
         """
         return sqrt(((node_a.x - node_b.x) ** 2) + ((node_a.y - node_b.y) ** 2)) * 6371
 
-    def connect(self, node_a, node_b):
+    def connect(self, node_a, node_b, via=None):
         dist = self._dist(node_a, node_b)
+        node_b.via = via
         self.neighbours[node_a].append((dist, node_b))
-        self.neighbours[node_b].append((dist, node_a))
 
     def get_node_neighbours(self, node):
         try:
@@ -96,3 +96,13 @@ class TestShortHopsVsShortPath(TestCase):
     def test_followsShortestPath(self):
         self.finder.find()
         self.assertEqual(self.finder.nodes, [NODES['A1'], NODES['E5']])
+
+class TestAtcRoute(TestCase):
+    def setUp(self):
+        finder = TestFinder(start=NODES['A1'], end=NODES['A2'])
+        finder.connect(NODES['A1'], NODES['A2'], 'A')
+        finder.find()
+        self.finder = finder
+
+    def test_showsVia(self):
+        self.assertEqual(self.finder.atc_route, 'A1 A A2')

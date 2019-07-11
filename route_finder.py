@@ -59,3 +59,13 @@ class RouteFinder(RouteMap, Heuristics):
             _, node = self.closed_list[node]
         result.reverse()
         return result
+
+    @property
+    def atc_route(self):
+        route = []
+        for node in self.nodes:
+            if node.via:
+                route.append(f'{node.via} {node.name}')
+            else:
+                route.append(f'{node.name}')
+        return ' '.join(route)
