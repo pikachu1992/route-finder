@@ -98,11 +98,16 @@ class TestShortHopsVsShortPath(TestCase):
         self.assertEqual(self.finder.nodes, [NODES['A1'], NODES['E5']])
 
 class TestAtcRoute(TestCase):
-    def setUp(self):
+    def test_showsVia(self):
         finder = TestFinder(start=NODES['A1'], end=NODES['A2'])
         finder.connect(NODES['A1'], NODES['A2'], 'A')
         finder.find()
-        self.finder = finder
+        self.assertEqual(finder.atc_route, 'A1 A A2')
 
-    def test_showsVia(self):
-        self.assertEqual(self.finder.atc_route, 'A1 A A2')
+    def test_showsGroupedVias(self):
+        finder = TestFinder(start=NODES['A1'], end=NODES['B3'])
+        finder.connect(NODES['A1'], NODES['B1'], 'AB')
+        finder.connect(NODES['B1'], NODES['B2'], 'B')
+        finder.connect(NODES['B2'], NODES['B3'], 'B')
+        finder.find()
+        self.assertEqual(finder.atc_route, 'A1 AB B1 B B3')
