@@ -1,4 +1,7 @@
-# airway data
+# binary map data
+.map
+
+# raw map data
 fsnavigator/
 
 # virtual environments
