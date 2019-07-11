@@ -1,6 +1,7 @@
 from unittest import TestCase
 from math import sqrt
 from collections import defaultdict
+from copy import copy
 
 from route_finder import RouteFinder, RouteMap, Node
 
@@ -29,6 +30,7 @@ class TestMap(RouteMap):
 
     def connect(self, node_a, node_b, via=None):
         dist = self._dist(node_a, node_b)
+        node_b = copy(node_b)
         node_b.via = via
         self.neighbours[node_a].append((dist, node_b))
 
@@ -111,3 +113,14 @@ class TestAtcRoute(TestCase):
         finder.connect(NODES['B2'], NODES['B3'], 'B')
         finder.find()
         self.assertEqual(finder.atc_route, 'A1 AB B1 B B3')
+
+    def tests_showsLastViaAndNode(self):
+        finder = TestFinder(start=NODES['A1'], end=NODES['E5'])
+        finder.connect(NODES['A1'], NODES['B1'], 'AB')
+        finder.connect(NODES['B1'], NODES['B2'], 'B')
+        finder.connect(NODES['B2'], NODES['B3'], 'B')
+        finder.connect(NODES['B3'], NODES['B5'], 'B')
+        finder.connect(NODES['B5'], NODES['E5'], 'BE')
+        finder.connect(NODES['C5'], NODES['E5'], 'CE')
+        finder.find()
+        self.assertEqual(finder.atc_route, 'A1 AB B1 B B5 BE E5')
