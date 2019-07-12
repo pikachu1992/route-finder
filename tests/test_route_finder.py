@@ -3,7 +3,8 @@ from math import sqrt
 from collections import defaultdict
 from copy import copy
 
-from route_finder import RouteFinder, RouteMap, Node
+from route_finder import RouteFinder, RouteMap, Node, Heuristics
+from heuristics import pytaghorian
 
 def generate_nodes():
     collumns = ['A', 'B', 'C', 'D', 'E']
@@ -40,7 +41,11 @@ class TestMap(RouteMap):
         except KeyError:
             return []
 
-class TestFinder(RouteFinder, TestMap):
+class TestHeuristic(Heuristics):
+    def astar_heuristic(self, *args):
+        return pytaghorian(*args)
+
+class TestFinder(RouteFinder, TestMap, TestHeuristic):
     pass
 
 class TestNoConnections(TestCase):

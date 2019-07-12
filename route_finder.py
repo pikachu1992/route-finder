@@ -1,6 +1,10 @@
 import heapq
-from heuristics import Heuristics
+from heuristics import haversine
 from fsnavigator_map import RouteMap, Node
+
+class Heuristics:
+    def astar_heuristic(self, *args):
+        return haversine(*args)
 
 class HeapQueue:
     def __init__(self, items):
