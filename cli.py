@@ -7,6 +7,13 @@ import click
 from fsnavigator_map import FsNavigatorMap
 from route_finder import RouteFinder
 
+def get_map():
+    try:
+        with open('.map', 'rb') as file:
+            return pickle.load(file)
+    except TypeError:
+        return FsNavigatorMap()
+
 @click.group()
 def cli():
     pass
@@ -20,12 +27,21 @@ def build():
     with open('.map', 'wb') as file:
         pickle.dump(map, file)
 
-def get_map():
-    try:
-        with open('.map', 'rb') as file:
-            return pickle.load(file)
-    except TypeError:
-        return FsNavigatorMap()
+@cli.command()
+@click.argument('name')
+def node(name):
+    map = get_map()
+    node = map.nodes[name]
+    click.echo(f'{node.name} {node.x},{node.y}')
+
+@cli.command()
+@click.argument('name')
+def neighbours(name):
+    map = get_map()
+    node = map.nodes[name]
+    click.echo(node)
+    for _, neighbour in map.neighbours[node]:
+        click.echo(f'{neighbour.name} {neighbour.x},{neighbour.y} {neighbour.via}')
 
 @cli.command()
 @click.argument('start')
