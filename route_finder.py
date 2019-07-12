@@ -9,10 +9,18 @@ class Heuristics:
 class HeapQueue:
     def __init__(self, items):
         self._heap = items
+        self._g_cache = dict()
         heapq.heapify(self._heap)
 
     def push(self, item):
-        heapq.heappush(self._heap, item)
+        f, g, node, _ = item
+        try:
+            cached_g = self._g_cache[node]
+            if g < cached_g:
+                raise KeyError
+        except KeyError:
+            self._g_cache[node] = g
+            heapq.heappush(self._heap, item)
 
     def pop(self):
         return heapq.heappop(self._heap)
