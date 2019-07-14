@@ -16,7 +16,7 @@ def build():
     stats = time()
     map = FsNavigatorMap()
     stats = time() - stats
-    print(f'Route map built in {stats:.1f}s.')
+    return f'Route map built in {stats:.1f}s.'
     with open('.map', 'wb') as file:
         pickle.dump(map, file)
 
